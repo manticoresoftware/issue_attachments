@@ -1,0 +1,217 @@
+------- FATAL: CRASH DUMP -------
+[Wed Oct  5 15:04:06.282 2022] [    1]
+
+--- crashed SphinxQL request dump ---
+DESC exact_article_1 like 'tc_sph_attr%'
+--- request dump end ---
+--- local index: <87>5<AC><9E>x^@^@rticle_1
+Manticore 4.2.0 15e927b28@211223 release
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with Clang 11.0.0
+Configured with flags: Configured with these definitions: -DDISTR_BUILD=rhel8 -DUSE_SYSLOG=1 -DWITH_GALERA=1 -DWITH_RE2=1 -DWITH_RE2_FORCE_STATIC=1 -DWITH_STEMMER=1 -DWITH_STEMMER_FORCE_STATIC=1 -DWITH_ICU=1 -DWITH_ICU_FORCE_STATIC=1 -DWITH_SSL=1 -DWITH_ZLIB=1 -DWITH_ODBC=1 -DDL_ODBC=1 -DODBC_LIB=libodbc.so.2 -DWITH_EXPAT=1 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DWITH_ICONV=1 -DWITH_MYSQL=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmariadb.so.3 -DWITH_POSTGRESQL=1 -DDL_POSTGRESQL=1 -DPOSTGRESQL_LIB=libpq.so.5 -DLOCALDATADIR=/var/lib/manticore/data -DFULL_SHARE_DIR=/usr/share/manticore
+Host OS is Linux x86_64
+Stack bottom = 0x789ad0064000, thread stack size = 0x20000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x20000)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x20000, stack=0x789ad0060000, stacksize=0x20000)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd[0x5a7870]
+/usr/bin/searchd[0x47a02f]
+/lib64/libpthread.so.0(+0x12c20)[0x789eb619bc20]
+/usr/bin/searchd[0x5ff925]
+/usr/bin/searchd[0x5fd37a]
+/usr/bin/searchd[0x4dc7a6]
+/usr/bin/searchd[0x490ed8]
+/usr/bin/searchd[0x491e5e]
+/usr/bin/searchd[0x48e253]
+/usr/bin/searchd[0x4b37e6]
+/usr/bin/searchd[0x4b7060]
+/usr/bin/searchd[0x4e0e47]
+/usr/bin/searchd[0x46e314]
+/usr/bin/searchd[0x46bc4b]
+/usr/bin/searchd[0xd5d67c]
+/usr/bin/searchd[0xd7756f]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the manual
+(https://manual.manticoresearch.com/Reporting_bugs)
+Dump with GDB is not available
+--- BT to source lines (depth 16): ---
+??:0
+??:0
+??:0
+??:?
+??:?
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:?
+??:?
+--- BT to source lines finished ---
+--- active threads ---
+thd 0 (work_2), proto mysql, state query, command select
+--- Totally 2 threads, and 1 client-working threads ---
+------- CRASH DUMP END -------
+[Wed Oct  5 15:04:09.054 2022] [1] DEBUG: StartGlobalWorkpool
+[Wed Oct  5 15:04:09.054 2022] [1] starting daemon version '4.2.0 15e927b28@211223 release' ...
+[Wed Oct  5 15:04:09.054 2022] [1] listening on all interfaces for mysql, port=9306
+[Wed Oct  5 15:04:09.054 2022] [1] DEBUG: 'rt_flush_period' - nothing specified, using default value 36000000000
+[Wed Oct  5 15:04:09.054 2022] [9] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.054 2022] [9] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Wed Oct  5 15:04:09.054 2022] [9] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.055 2022] [9] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.055 2022] [9] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Wed Oct  5 15:04:09.055 2022] [9] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.152 2022] [9] DEBUG: Locking the index via file /srv/sphinx/shop-index/article/exact_1.spl
+[Wed Oct  5 15:04:09.152 2022] [9] DEBUG: lock /srv/sphinx/shop-index/article/exact_1.spl success
+[Wed Oct  5 15:04:09.185 2022] [9] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.185 2022] [9] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Wed Oct  5 15:04:09.185 2022] [9] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.282 2022] [9] DEBUG: Locking the index via file /srv/sphinx/shop-index/article/default_1.spl
+[Wed Oct  5 15:04:09.282 2022] [9] DEBUG: lock /srv/sphinx/shop-index/article/default_1.spl success
+[Wed Oct  5 15:04:09.319 2022] [9] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.319 2022] [9] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Wed Oct  5 15:04:09.319 2022] [9] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.430 2022] [9] DEBUG: Locking the index via file /srv/sphinx/shop-index/article/ignore_1.spl
+[Wed Oct  5 15:04:09.430 2022] [9] DEBUG: lock /srv/sphinx/shop-index/article/ignore_1.spl success
+[Wed Oct  5 15:04:09.461 2022] [9] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.461 2022] [9] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Wed Oct  5 15:04:09.461 2022] [9] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.564 2022] [9] DEBUG: Locking the index via file /srv/sphinx/shop-index/article/soundex_1.spl
+[Wed Oct  5 15:04:09.564 2022] [9] DEBUG: lock /srv/sphinx/shop-index/article/soundex_1.spl success
+[Wed Oct  5 15:04:09.589 2022] [9] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.589 2022] [9] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Wed Oct  5 15:04:09.589 2022] [9] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Wed Oct  5 15:04:09.594 2022] [1] DEBUG: expression stack for creation 176
+[Wed Oct  5 15:04:09.594 2022] [1] DEBUG: expression stack for eval/deletion 32
+[Wed Oct  5 15:04:09.601 2022] [1] DEBUG: filter stack delta 208
+[Wed Oct  5 15:04:09.602 2022] [1] DEBUG: 'binlog_max_log_size' - nothing specified, using default value 268435456
+[Wed Oct  5 15:04:09.602 2022] [1] DEBUG: MAC address ae:06:eb:dc:f8:04 for uuid-short server_id
+[Wed Oct  5 15:04:09.602 2022] [1] DEBUG: uid-short server_id 58, started 108306249, seed 4181157531533443072
+[Wed Oct  5 15:04:09.603 2022] [21] binlog: replaying log /srv/sphinx/binlog//binlog.001
+[Wed Oct  5 15:04:09.604 2022] [21] binlog: replay stats: 0 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 0 pq-add-delete, 0 indexes
+[Wed Oct  5 15:04:09.604 2022] [21] binlog: finished replaying /srv/sphinx/binlog//binlog.001; 0.0 MB in 0.000 sec
+[Wed Oct  5 15:04:09.604 2022] [21] binlog: finished replaying total 1 in 0.000 sec
+[Wed Oct  5 15:04:09.604 2022] [21] DEBUG: SaveMeta: Done.
+[Wed Oct  5 15:04:09.604 2022] [22] prereading 10 indexes
+[Wed Oct  5 15:04:09.604 2022] [22] DEBUG: prereading index 'exact_article_1'
+[Wed Oct  5 15:04:09.604 2022] [22] DEBUG: CSphIndex_VLN::Preread invoked 'exact_article_1'(/srv/sphinx/shop-index/article/exact_1)
+[Wed Oct  5 15:04:09.864 2022] [22] DEBUG: Preread successfully finished
+[Wed Oct  5 15:04:09.866 2022] [22] DEBUG: prereaded index 'exact_article_1' in 0.262 sec
+[Wed Oct  5 15:04:09.866 2022] [22] DEBUG: prereading index 'delta_exact_article_1'
+[Wed Oct  5 15:04:09.866 2022] [22] DEBUG: prereaded index 'delta_exact_article_1' in 0.000 sec
+[Wed Oct  5 15:04:09.866 2022] [22] DEBUG: prereading index 'default_article_1'
+[Wed Oct  5 15:04:09.866 2022] [22] DEBUG: CSphIndex_VLN::Preread invoked 'default_article_1'(/srv/sphinx/shop-index/article/default_1)
+[Wed Oct  5 15:04:10.125 2022] [22] DEBUG: Preread successfully finished
+[Wed Oct  5 15:04:10.128 2022] [22] DEBUG: prereaded index 'default_article_1' in 0.263 sec
+[Wed Oct  5 15:04:10.128 2022] [22] DEBUG: prereading index 'delta_default_article_1'
+[Wed Oct  5 15:04:10.128 2022] [22] DEBUG: prereaded index 'delta_default_article_1' in 0.000 sec
+[Wed Oct  5 15:04:10.128 2022] [22] DEBUG: prereading index 'ignore_article_1'
+[Wed Oct  5 15:04:10.128 2022] [22] DEBUG: CSphIndex_VLN::Preread invoked 'ignore_article_1'(/srv/sphinx/shop-index/article/ignore_1)
+[Wed Oct  5 15:04:10.384 2022] [22] DEBUG: Preread successfully finished
+[Wed Oct  5 15:04:10.385 2022] [22] DEBUG: prereaded index 'ignore_article_1' in 0.257 sec
+[Wed Oct  5 15:04:10.385 2022] [22] DEBUG: prereading index 'delta_ignore_article_1'
+[Wed Oct  5 15:04:10.385 2022] [22] DEBUG: prereaded index 'delta_ignore_article_1' in 0.000 sec
+[Wed Oct  5 15:04:10.385 2022] [22] DEBUG: prereading index 'soundex_article_1'
+[Wed Oct  5 15:04:10.385 2022] [22] DEBUG: CSphIndex_VLN::Preread invoked 'soundex_article_1'(/srv/sphinx/shop-index/article/soundex_1)
+[Wed Oct  5 15:04:10.697 2022] [22] DEBUG: Preread successfully finished
+[Wed Oct  5 15:04:10.698 2022] [22] DEBUG: prereaded index 'soundex_article_1' in 0.313 sec
+[Wed Oct  5 15:04:10.698 2022] [22] DEBUG: prereading index 'delta_soundex_article_1'
+[Wed Oct  5 15:04:10.698 2022] [22] DEBUG: prereaded index 'delta_soundex_article_1' in 0.000 sec
+[Wed Oct  5 15:04:10.698 2022] [22] prereaded 8 indexes in 1.094 sec
+[Wed Oct  5 15:04:10.698 2022] [1] accepting connections
+------- FATAL: CRASH DUMP -------
+[Wed Oct  5 15:12:52.687 2022] [    1]
+
+--- crashed SphinxQL request dump ---
+SELECT id, tc_sph_attr_filters,tc_sph_attr_tc_class_id , (if(tc_sph_attr_oxartnum
+= 'duravit', 1, if(tc_sph_attr_oxean = 'duravit', 1, if(tc_sph_attr_oxmpn = 'duravit',
+ 1, 0)))) as sort_expr0,(ceil(tc_sph_attr_tc_salesrank / (weight() + if(tc_sph_attr_tc_is_procure
+= 0, 10000, 0) + if(tc_sph_attr_tc_is_own_brand = 1, 20000, 0) + if(tc_sph_attr_tcku_is_shadow
+= 0, 20000, 0)) * 1000000)) as sort_expr1,  IN(tc_sph_attr_tcku_section_id, 'c63c9e16c6acf3e3e70b4eaa071afa30',
+ '2644be2c254e9d1e278352ebf1f4bbb7','908eb1518262188cae24c8b5da1c468a','2241ed8153dae734e4272a69a6c3ca85',
+ '0392e4906093d5aa41c001de06b4a7b3','a46e050e15136b34fbbdac148e1e814d','bda663199694f9ac346b73a9cffbc83f')
+as col_1 FROM ignore_article_1,delta_ignore_article_1,default_article_1,delta_default_article_1,
+ exact_article_1,delta_exact_article_1 WHERE  MATCH('@(tc_properties,tc_main_category,
+oxtitle,tc_all_categories,tc_manufacturer,oxvarselect,oxsearchkeys,oxshortdesc,oxtags,
+tc_attributes,tc_optimized_search_word,tc_product_group,tc_oxomi_product_groups,tc_oxomi_product_lines,
+tc_oxomi_classifications) (\"duravit\" | \"*duravit*\")') AND tc_sph_attr_oxactive=1
+AND tc_sph_attr_lang = 0 AND tc_sph_attr_oxissearch=1 AND  col_1 = 1 ORDER BY sort_expr0
+desc, sort_expr1 asc, tc_sph_attr_oxtitle asc LIMIT 0,0 OPTION max_matches=24, index_weights=(ignore_article_1=51,
+delta_ignore_article_1=51,default_article_1=60, delta_default_article_1=60,exact_article_1=150,
+delta_exact_article_1=150),field_weights=(tc_properties=1500,tc_main_category=900,
+oxtitle=900,tc_all_categories=600,tc_manufacturer=600,oxvarselect=100, oxsearchkeys=800,
+oxshortdesc=1,oxtags=1,tc_attributes=1,tc_optimized_search_word=1, tc_product_group=600,
+tc_oxomi_product_groups=500,tc_oxomi_product_lines=500,tc_oxomi_classifications=500)
+facet tc_sph_attr_filters distinct limit 60000
+--- request dump end ---
+--- local index:exact_article_1
+Manticore 4.2.0 15e927b28@211223 release
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with Clang 11.0.0
+Configured with flags: Configured with these definitions: -DDISTR_BUILD=rhel8 -DUSE_SYSLOG=1 -DWITH_GALERA=1 -DWITH_RE2=1 -DWITH_RE2_FORCE_STATIC=1 -DWITH_STEMMER=1 -DWITH_STEMMER_FORCE_STATIC=1 -DWITH_ICU=1 -DWITH_ICU_FORCE_STATIC=1 -DWITH_SSL=1 -DWITH_ZLIB=1 -DWITH_ODBC=1 -DDL_ODBC=1 -DODBC_LIB=libodbc.so.2 -DWITH_EXPAT=1 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DWITH_ICONV=1 -DWITH_MYSQL=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmariadb.so.3 -DWITH_POSTGRESQL=1 -DDL_POSTGRESQL=1 -DPOSTGRESQL_LIB=libpq.so.5 -DLOCALDATADIR=/var/lib/manticore/data -DFULL_SHARE_DIR=/usr/share/manticore
+Host OS is Linux x86_64
+Stack bottom = 0x7ff274043fd0, thread stack size = 0x20000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x20000)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x20000, stack=0x7ff274040000, stacksize=0x20000)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd[0x5a7870]
+/usr/bin/searchd[0x47a02f]
+/lib64/libpthread.so.0(+0x12c20)[0x7ff65b3dac20]
+/lib64/libc.so.6(cfree+0x21)[0x7ff65b089101]
+/usr/bin/searchd[0xc86cf2]
+/usr/bin/searchd[0x5c69ff]
+/usr/bin/searchd[0x64439f]
+/usr/bin/searchd[0x4910e9]
+/usr/bin/searchd[0x491e5e]
+/usr/bin/searchd[0x48e253]
+/usr/bin/searchd[0x4b37e6]
+/usr/bin/searchd[0x4b7060]
+/usr/bin/searchd[0x4e0e47]
+/usr/bin/searchd[0x46e314]
+/usr/bin/searchd[0x46bc4b]
+/usr/bin/searchd[0xd5d67c]
+/usr/bin/searchd[0xd7756f]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the manual
+(https://manual.manticoresearch.com/Reporting_bugs)
+Dump with GDB is not available
+--- BT to source lines (depth 17): ---
+??:0
+??:0
+??:0
+??:0
+??:?
+??:?
+??:?
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:?
+??:?
+--- BT to source lines finished ---
+--- active threads ---
+thd 0 (work_8), proto mysql, state query, command select
+--- Totally 2 threads, and 1 client-working threads ---
+------- CRASH DUMP END -------
