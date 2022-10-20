@@ -1,0 +1,151 @@
+[Mon Oct 17 10:32:45.664 2022] [9420] using config file 'D:\manticore\manticore.conf.in' (14084 chars)...
+[Mon Oct 17 10:32:45.665 2022] [9420] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+[Mon Oct 17 10:32:45.665 2022] [9420] DEBUG: 'network_timeout' - nothing specified, using default value 5000000
+[Mon Oct 17 10:32:45.665 2022] [9420] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+[Mon Oct 17 10:32:45.665 2022] [9420] DEBUG: 'client_timeout' - nothing specified, using default value 300000000
+[Mon Oct 17 10:32:45.665 2022] [9420] DEBUG: SetMaxChildrenThreads to 2
+[Mon Oct 17 10:32:45.665 2022] [9420] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'read_buffer_docs' - nothing specified, using default value 262144
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'read_buffer_hits' - nothing specified, using default value 262144
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+[Mon Oct 17 10:32:45.666 2022] [9420] DEBUG: StartGlobalWorkpool
+[Mon Oct 17 10:32:45.666 2022] [9420] starting daemon version '5.0.2 348514c86@220530 dev' ...
+[Mon Oct 17 10:32:45.667 2022] [9420] listening on 127.0.0.1:9312 for sphinx and http(s)
+[Mon Oct 17 10:32:45.667 2022] [9420] listening on 127.0.0.1:9306 for mysql
+[Mon Oct 17 10:32:45.667 2022] [9420] listening on 127.0.0.1:9308 for sphinx and http(s)
+[Mon Oct 17 10:32:45.667 2022] [9420] listening on 127.0.0.1:9318 for VIP sphinx and http(s)
+[Mon Oct 17 10:32:45.667 2022] [9420] DEBUG: 'rt_flush_period' - nothing specified, using default value 36000000000
+[Mon Oct 17 10:32:45.667 2022] [28396] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Mon Oct 17 10:32:45.667 2022] [28396] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Mon Oct 17 10:32:45.667 2022] [28396] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Manticore 5.0.2 348514c86@220530 dev
+Copyright (c) 2001-2016, Andrew Aksyonoff
+Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+
+precaching index 'gnanetra'
+[Mon Oct 17 10:32:45.757 2022] [28396] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Mon Oct 17 10:32:45.757 2022] [28396] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Mon Oct 17 10:32:45.757 2022] [28396] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+precaching index 'gnanetraa'
+[Mon Oct 17 10:32:45.757 2022] [28396] WARNING: index 'gnanetraa': prealloc: failed to open D:\manticore\indexdir\gnanetraa\gnanetra.lock: No such file or directory - NOT SERVING
+[Mon Oct 17 10:32:45.757 2022] [28396] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Mon Oct 17 10:32:45.757 2022] [28396] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Mon Oct 17 10:32:45.757 2022] [28396] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+precaching index 'markup'
+[Mon Oct 17 10:32:45.785 2022] [28396] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Mon Oct 17 10:32:45.785 2022] [28396] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Mon Oct 17 10:32:45.785 2022] [28396] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+precaching index 'markupa'
+[Mon Oct 17 10:32:45.785 2022] [28396] WARNING: index 'markupa': prealloc: failed to open D:\manticore\indexdir\markupa\markup.lock: No such file or directory - NOT SERVING
+[Mon Oct 17 10:32:45.785 2022] [28396] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Mon Oct 17 10:32:45.785 2022] [28396] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Mon Oct 17 10:32:45.785 2022] [28396] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+precaching index 'products'
+[Mon Oct 17 10:32:45.785 2022] [28396] WARNING: index 'products': prealloc: failed to open D:\manticore\indexdir\products\products.lock: No such file or directory - NOT SERVING
+[Mon Oct 17 10:32:45.785 2022] [28396] RPL: 0 clusters loaded from config
+[Mon Oct 17 10:32:45.786 2022] [9420] DEBUG: expression stack for creation is 0. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=0 to store this value persistent for this binary
+[Mon Oct 17 10:32:45.787 2022] [9420] DEBUG: expression stack for eval/deletion is 80. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=80 to store this value persistent for this binary
+[Mon Oct 17 10:32:45.789 2022] [9420] DEBUG: filter stack delta is 192. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=192 to store this value persistent for this binary
+[Mon Oct 17 10:32:45.792 2022] [9420] DEBUG: uid-short server_id 0, started 100000, seed 1677721600000
+[Mon Oct 17 10:32:45.792 2022] [28396] binlog: replaying log D:\manticore\share\binlog/binlog.001
+[Mon Oct 17 10:32:45.792 2022] [28396] binlog: replay stats: 0 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 0 pq-add-delete, 0 indexes
+[Mon Oct 17 10:32:45.792 2022] [28396] binlog: finished replaying D:\manticore\share\binlog/binlog.001; 0.0 MB in 0.000 sec
+[Mon Oct 17 10:32:45.792 2022] [28396] binlog: replaying log D:\manticore\share\binlog/binlog.002
+[Mon Oct 17 10:32:45.794 2022] [28396] binlog: replay stats: 0 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 0 pq-add-delete, 0 indexes
+[Mon Oct 17 10:32:45.794 2022] [28396] binlog: finished replaying D:\manticore\share\binlog/binlog.002; 0.0 MB in 0.000 sec
+[Mon Oct 17 10:32:45.794 2022] [28396] binlog: finished replaying total 2 in 0.001 sec
+[Mon Oct 17 10:32:45.796 2022] [28396] DEBUG: SaveMeta: Done (D:\manticore\share\binlog/binlog.meta.new)
+[Mon Oct 17 10:32:45.796 2022] [28396] prereading 2 indexes
+[Mon Oct 17 10:32:45.796 2022] [28396] DEBUG: prereading index 'gnanetra'
+[Mon Oct 17 10:32:45.796 2022] [28396] DEBUG: CSphIndex_VLN::Preread invoked 'D:\manticore\indexdir\gnanetra\gnanetra.78'(D:\manticore\indexdir\gnanetra\gnanetra.78)
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: Setup wakeup as 1296, -1
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: SetupEvent [0] new 1296 events 768
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: SetupEvent [0] for 1296 events 768
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: setup listener as 440, -1
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: SetupEvent [1] new 440 events 768
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: SetupEvent [1] for 440 events 768
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: setup listener as 444, -1
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: SetupEvent [2] new 444 events 768
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: SetupEvent [2] for 444 events 768
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: setup listener as 448, -1
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: SetupEvent [3] new 448 events 768
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: SetupEvent [3] for 448 events 768
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: setup listener as 452, -1
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: SetupEvent [4] new 452 events 768
+[Mon Oct 17 10:32:45.797 2022] [9420] DEBUG: SetupEvent [4] for 452 events 768
+[Mon Oct 17 10:32:45.797 2022] [9420] accepting connections
+[Mon Oct 17 10:32:45.799 2022] [28396] DEBUG: Preread successfully finished
+[Mon Oct 17 10:32:45.799 2022] [28396] DEBUG: CSphIndex_VLN::Preread invoked 'D:\manticore\indexdir\gnanetra\gnanetra.79'(D:\manticore\indexdir\gnanetra\gnanetra.79)
+[Mon Oct 17 10:32:45.802 2022] [28396] DEBUG: Preread successfully finished
+[Mon Oct 17 10:32:45.802 2022] [28396] DEBUG: CSphIndex_VLN::Preread invoked 'D:\manticore\indexdir\gnanetra\gnanetra.80'(D:\manticore\indexdir\gnanetra\gnanetra.80)
+[Mon Oct 17 10:32:45.805 2022] [28396] DEBUG: Preread successfully finished
+[Mon Oct 17 10:32:45.805 2022] [28396] DEBUG: CSphIndex_VLN::Preread invoked 'D:\manticore\indexdir\gnanetra\gnanetra.77'(D:\manticore\indexdir\gnanetra\gnanetra.77)
+[Mon Oct 17 10:32:45.808 2022] [28396] DEBUG: Preread successfully finished
+[Mon Oct 17 10:32:45.808 2022] [28396] DEBUG: CSphIndex_VLN::Preread invoked 'D:\manticore\indexdir\gnanetra\gnanetra.81'(D:\manticore\indexdir\gnanetra\gnanetra.81)
+[Mon Oct 17 10:32:45.809 2022] [28396] DEBUG: Preread successfully finished
+[Mon Oct 17 10:32:45.809 2022] [28396] DEBUG: CSphIndex_VLN::Preread invoked 'D:\manticore\indexdir\gnanetra\gnanetra.82'(D:\manticore\indexdir\gnanetra\gnanetra.82)
+[Mon Oct 17 10:32:45.809 2022] [28396] DEBUG: Preread successfully finished
+[Mon Oct 17 10:32:45.812 2022] [28396] DEBUG: prereaded index 'gnanetra' in 0.015 sec
+[Mon Oct 17 10:32:45.812 2022] [28396] DEBUG: prereading index 'markup'
+[Mon Oct 17 10:32:45.812 2022] [28396] DEBUG: CSphIndex_VLN::Preread invoked 'D:\manticore\indexdir\markup\markup.0'(D:\manticore\indexdir\markup\markup.0)
+[Mon Oct 17 10:32:45.813 2022] [28396] DEBUG: Preread successfully finished
+[Mon Oct 17 10:32:45.813 2022] [28396] DEBUG: CSphIndex_VLN::Preread invoked 'D:\manticore\indexdir\markup\markup.1'(D:\manticore\indexdir\markup\markup.1)
+[Mon Oct 17 10:32:45.814 2022] [28396] DEBUG: Preread successfully finished
+[Mon Oct 17 10:32:45.814 2022] [28396] DEBUG: CSphIndex_VLN::Preread invoked 'D:\manticore\indexdir\markup\markup.2'(D:\manticore\indexdir\markup\markup.2)
+[Mon Oct 17 10:32:45.815 2022] [28396] DEBUG: Preread successfully finished
+[Mon Oct 17 10:32:45.816 2022] [28396] DEBUG: prereaded index 'markup' in 0.005 sec
+[Mon Oct 17 10:32:45.816 2022] [28396] prereaded 2 indexes in 0.020 sec
+[Mon Oct 17 10:33:00.998 2022] [9884] DEBUG: Wait returned 1 events
+[Mon Oct 17 10:33:00.998 2022] [9884] DEBUG: got events=1, tick=1, interrupted=0
+[Mon Oct 17 10:33:00.998 2022] [9884] DEBUG: operator++ on m_iIterEv as matched 448 and 256
+[Mon Oct 17 10:33:00.998 2022] [9884] DEBUG: [3] tEv.revents = 256 for 448(448)
+[Mon Oct 17 10:33:00.998 2022] [9884] DEBUG: -~-~-~-~-~-~-~-~ MT sched created -~-~-~-~-~-~-~-~
+[Mon Oct 17 10:33:00.998 2022] [9884] DEBUG: 00000039672A1BA0 accepted sphinx and http(s), sock=1304, tick=1
+[Mon Oct 17 10:33:00.998 2022] [9884] DEBUG: 00000039672A1BA0 accepted 1 connections all, tick=1
+[Mon Oct 17 10:33:00.999 2022] [28396] DEBUG: SockRecv 1304, for 134217728 bytes
+[Mon Oct 17 10:33:00.999 2022] [28396] DEBUG: =========== AsyncRecvNBChunk 672 when read 134217728 bytes
+[Mon Oct 17 10:33:00.999 2022] [28396] DEBUG: AsyncRecvNBChunk 672 bytes (0 requested)
+[Mon Oct 17 10:33:00.999 2022] [28396] DEBUG: +++++ Probing revealed 672 bytes: HTTP
+[Mon Oct 17 10:33:00.999 2022] [28396] DEBUG: DiscardProcessed(0) iPos=0->0, iLen=672->672
+[Mon Oct 17 10:33:00.999 2022] [28396] DEBUG: Tick coro search
+[Mon Oct 17 10:33:00.999 2022] [28396] DEBUG: Started: 0
+/* Mon Oct 17 10:33:01.004 2022 conn 1 real 0.005 wall 0.006 found 4 */ SELECT transcript FROM gnanetra WHERE MATCH('"quantum theory" NEAR/10 wall NEAR/10 billion') AND date_attr BETWEEN 10000 AND 100000000 AND length BETWEEN 0 AND 1000000 ORDER BY weight() desc LIMIT 0,50 OPTION max_matches=50, ranker=wordcount, cutoff=0, field_weights=(title=3, date=3, location=3, info=2, eventtype=3);
+[Mon Oct 17 10:33:01.004 2022] [20256] DEBUG: DiscardProcessed(672) iPos=672->0, iLen=672->0
+[Mon Oct 17 10:33:01.004 2022] [20256] DEBUG: AsyncSend 1718 bytes
+[Mon Oct 17 10:33:01.005 2022] [20256] DEBUG: DiscardProcessed(0) iPos=0->0, iLen=0->0
+[Mon Oct 17 10:33:01.005 2022] [20256] DEBUG: SockRecv 1304, for 134217728 bytes
+[Mon Oct 17 10:33:01.005 2022] [20256] DEBUG: =========== AsyncRecvNBChunk -1 when read 134217728 bytes
+[Mon Oct 17 10:33:01.005 2022] [20256] DEBUG: AsyncRecvNBChunk -1 bytes (1 requested)
+[Mon Oct 17 10:33:01.005 2022] [20256] DEBUG: Still need to receive 1 bytes...
+[Mon Oct 17 10:33:01.005 2022] [20256] DEBUG: Coro::YieldWith (m_iEvent=17), timeout 99994
+[Mon Oct 17 10:33:01.005 2022] [20256] DEBUG: AddAction action as 1304, events 17, timeout -473274914
+[Mon Oct 17 10:33:01.005 2022] [20256] DEBUG: Kick
+[Mon Oct 17 10:33:01.005 2022] [9884] DEBUG: Wait returned 1 events
+[Mon Oct 17 10:33:01.005 2022] [9884] DEBUG: got events=1, tick=2, interrupted=0
+[Mon Oct 17 10:33:01.005 2022] [9884] DEBUG: operator++ on m_iIterEv as matched 1296 and 256
+[Mon Oct 17 10:33:01.005 2022] [9884] DEBUG: [0] tEv.revents = 256 for 1296(1296)
+[Mon Oct 17 10:33:01.005 2022] [9884] DEBUG: SetupEvent [5] new 1304 events 768
+[Mon Oct 17 10:33:01.005 2022] [9884] DEBUG: SetupEvent [5] for 1304 events 768
+[Mon Oct 17 10:33:01.014 2022] [9884] DEBUG: Wait returned 1 events
+[Mon Oct 17 10:33:01.014 2022] [9884] DEBUG: got events=1, tick=3, interrupted=0
+[Mon Oct 17 10:33:01.014 2022] [9884] DEBUG: operator++ on m_iIterEv as matched 1304 and 2
+[Mon Oct 17 10:33:01.014 2022] [9884] DEBUG: [5] tEv.revents = 2 for 1304(1304)
+[Mon Oct 17 10:33:01.014 2022] [9884] DEBUG: RemoveEvent()
+[Mon Oct 17 10:33:01.014 2022] [9884] DEBUG: RemoveEvent for -1, fd=1304
+[Mon Oct 17 10:33:01.014 2022] [28396] DEBUG: EngageWaiterAndYield awake (m_iSock=1304, events=5)
+[Mon Oct 17 10:33:01.014 2022] [28396] DEBUG: AsyncNetInputBuffer_c::AppendData: error 0 (No error) return -1
+[Mon Oct 17 10:33:01.014 2022] [28396] DEBUG: Destroying and closing sock=1304
+[Mon Oct 17 10:33:01.014 2022] [28396] DEBUG: SockWrapper_c::Impl_c::~Impl_c (); sent 1718, received 672
