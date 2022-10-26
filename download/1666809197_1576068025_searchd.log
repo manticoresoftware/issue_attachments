@@ -1,0 +1,246 @@
+[Wed Dec 11 11:03:17.214 2019] [2100] listening on all interfaces, port=9312
+[Wed Dec 11 11:03:17.214 2019] [2100] listening on all interfaces, port=9306
+[Wed Dec 11 11:03:17.240 2019] [4364] prereading 1 indexes
+[Wed Dec 11 11:03:17.240 2019] [2100] accepting connections
+[Wed Dec 11 11:03:17.240 2019] [4364] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 11:04:49.842 2019] [2100] caught SIGTERM, shutting down
+[Wed Dec 11 11:04:49.895 2019] [2100] rt: index idx_text_recognition_results: ramchunk saved in 0.002 sec
+[Wed Dec 11 11:04:49.897 2019] [2100] shutdown complete
+[Wed Dec 11 11:07:07.550 2019] [5116] listening on all interfaces, port=9312
+[Wed Dec 11 11:07:07.551 2019] [5116] listening on all interfaces, port=9306
+[Wed Dec 11 11:07:07.557 2019] [2340] prereading 1 indexes
+[Wed Dec 11 11:07:07.557 2019] [5116] accepting connections
+[Wed Dec 11 11:07:07.557 2019] [2340] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 11:54:18.837 2019] [5116] caught SIGTERM, shutting down
+[Wed Dec 11 11:54:18.889 2019] [5116] rt: index idx_text_recognition_results: ramchunk saved in 0.002 sec
+[Wed Dec 11 11:54:18.891 2019] [5116] shutdown complete
+[Wed Dec 11 11:54:20.991 2019] [4732] listening on all interfaces, port=9312
+[Wed Dec 11 11:54:20.992 2019] [4732] listening on all interfaces, port=9306
+[Wed Dec 11 11:54:20.998 2019] [2896] prereading 1 indexes
+[Wed Dec 11 11:54:20.998 2019] [4732] accepting connections
+[Wed Dec 11 11:54:20.998 2019] [2896] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 11:56:24.681 2019] [4732] caught SIGTERM, shutting down
+[Wed Dec 11 11:56:24.734 2019] [4732] rt: index idx_text_recognition_results: ramchunk saved in 0.002 sec
+[Wed Dec 11 11:56:24.735 2019] [4732] shutdown complete
+[Wed Dec 11 11:56:25.527 2019] [1140] listening on all interfaces, port=9312
+[Wed Dec 11 11:56:25.528 2019] [1140] listening on all interfaces, port=9306
+[Wed Dec 11 11:56:25.528 2019] [1140] WARNING: WARNING: index 'idx_text_recognition_results': prefix_fields and infix_fields has no effect with dict=keywords, ignoring
+
+[Wed Dec 11 11:56:25.535 2019] [5108] prereading 1 indexes
+[Wed Dec 11 11:56:25.535 2019] [1140] accepting connections
+[Wed Dec 11 11:56:25.535 2019] [5108] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 11:57:44.045 2019] [1140] caught SIGTERM, shutting down
+[Wed Dec 11 11:57:44.098 2019] [1140] rt: index idx_text_recognition_results: ramchunk saved in 0.002 sec
+[Wed Dec 11 11:57:44.099 2019] [1140] shutdown complete
+[Wed Dec 11 11:57:44.712 2019] [3568] listening on all interfaces, port=9312
+[Wed Dec 11 11:57:44.712 2019] [3568] listening on all interfaces, port=9306
+[Wed Dec 11 11:57:44.720 2019] [4388] prereading 1 indexes
+[Wed Dec 11 11:57:44.720 2019] [3568] accepting connections
+[Wed Dec 11 11:57:44.720 2019] [4388] prereaded 1 indexes in 0.001 sec
+[Wed Dec 11 11:59:12.135 2019] [1964] FATAL: out of memory (unable to allocate 274877906944 bytes)
+[Wed Dec 11 11:59:27.951 2019] [4784] listening on all interfaces, port=9312
+[Wed Dec 11 11:59:27.952 2019] [4784] listening on all interfaces, port=9306
+[Wed Dec 11 11:59:27.956 2019] [4784] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 11:59:28.027 2019] [4784] binlog: index idx_text_recognition_results: recovered from tid 1618 to tid 2322
+[Wed Dec 11 11:59:28.028 2019] [4784] binlog: replay stats: 704 rows in 704 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 11:59:28.028 2019] [4784] binlog: finished replaying ..\log/binlog.001; 1.9 MB in 0.071 sec
+[Wed Dec 11 11:59:28.028 2019] [4784] binlog: finished replaying total 1 in 0.072 sec
+[Wed Dec 11 11:59:28.029 2019] [4268] prereading 1 indexes
+[Wed Dec 11 11:59:28.029 2019] [4784] accepting connections
+[Wed Dec 11 11:59:28.030 2019] [4268] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 11:59:31.484 2019] [4752] FATAL: out of memory (unable to allocate 18014398509481984 bytes)
+[Wed Dec 11 12:08:53.752 2019] [2868] listening on all interfaces, port=9312
+[Wed Dec 11 12:08:53.752 2019] [2868] listening on all interfaces, port=9306
+[Wed Dec 11 12:08:53.756 2019] [2868] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:08:53.903 2019] [2868] binlog: index idx_text_recognition_results: recovered from tid 2322 to tid 3708
+[Wed Dec 11 12:08:53.903 2019] [2868] binlog: replay stats: 1386 rows in 1386 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:08:53.904 2019] [2868] binlog: finished replaying ..\log/binlog.001; 3.5 MB in 0.146 sec
+[Wed Dec 11 12:08:53.905 2019] [2868] binlog: finished replaying total 1 in 0.148 sec
+[Wed Dec 11 12:08:53.906 2019] [3104] prereading 1 indexes
+[Wed Dec 11 12:08:53.906 2019] [2868] accepting connections
+[Wed Dec 11 12:08:53.906 2019] [3104] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 12:18:53.975 2019] [5048] FATAL: out of memory (unable to allocate 274877906944 bytes)
+[Wed Dec 11 12:20:23.879 2019] [1140] listening on all interfaces, port=9312
+[Wed Dec 11 12:20:23.879 2019] [1140] listening on all interfaces, port=9306
+[Wed Dec 11 12:20:23.884 2019] [1140] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:20:23.959 2019] [1140] binlog: index idx_text_recognition_results: recovered from tid 3734 to tid 4469
+[Wed Dec 11 12:20:23.959 2019] [1140] binlog: replay stats: 735 rows in 735 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:20:23.960 2019] [1140] binlog: finished replaying ..\log/binlog.001; 1.9 MB in 0.074 sec
+[Wed Dec 11 12:20:23.960 2019] [1140] binlog: finished replaying total 1 in 0.075 sec
+[Wed Dec 11 12:20:23.961 2019] [5060] prereading 1 indexes
+[Wed Dec 11 12:20:23.961 2019] [1140] accepting connections
+[Wed Dec 11 12:20:23.961 2019] [5060] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 12:23:55.563 2019] [1140] caught SIGTERM, shutting down
+[Wed Dec 11 12:23:55.616 2019] [1140] rt: index idx_text_recognition_results: ramchunk saved in 0.003 sec
+[Wed Dec 11 12:23:55.618 2019] [1140] shutdown complete
+[Wed Dec 11 12:23:56.656 2019] [2756] listening on all interfaces, port=9312
+[Wed Dec 11 12:23:56.657 2019] [2756] listening on all interfaces, port=9306
+[Wed Dec 11 12:23:56.663 2019] [2756] accepting connections
+[Wed Dec 11 12:23:56.663 2019] [4632] prereading 1 indexes
+[Wed Dec 11 12:23:56.664 2019] [4632] prereaded 1 indexes in 0.001 sec
+[Wed Dec 11 12:23:58.211 2019] [2712] FATAL: out of memory (unable to allocate 18014398509481984 bytes)
+[Wed Dec 11 12:24:03.089 2019] [4620] listening on all interfaces, port=9312
+[Wed Dec 11 12:24:03.089 2019] [4620] listening on all interfaces, port=9306
+[Wed Dec 11 12:24:03.093 2019] [4620] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:24:03.096 2019] [4620] binlog: index idx_text_recognition_results: recovered from tid 10942 to tid 11023
+[Wed Dec 11 12:24:03.097 2019] [4620] binlog: replay stats: 81 rows in 81 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:24:03.098 2019] [4620] binlog: finished replaying ..\log/binlog.001; 0.1 MB in 0.003 sec
+[Wed Dec 11 12:24:03.098 2019] [4620] binlog: finished replaying total 1 in 0.005 sec
+[Wed Dec 11 12:24:03.099 2019] [4620] accepting connections
+[Wed Dec 11 12:24:03.099 2019] [4444] prereading 1 indexes
+[Wed Dec 11 12:24:03.100 2019] [4444] prereaded 1 indexes in 0.001 sec
+[Wed Dec 11 12:24:05.771 2019] [5104] FATAL: out of memory (unable to allocate 274877906944 bytes)
+[Wed Dec 11 12:26:17.121 2019] [656] listening on all interfaces, port=9312
+[Wed Dec 11 12:26:17.122 2019] [656] listening on all interfaces, port=9306
+[Wed Dec 11 12:26:17.126 2019] [656] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:26:17.134 2019] [656] binlog: index idx_text_recognition_results: recovered from tid 11023 to tid 11150
+[Wed Dec 11 12:26:17.135 2019] [656] binlog: replay stats: 127 rows in 127 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:26:17.136 2019] [656] binlog: finished replaying ..\log/binlog.001; 0.3 MB in 0.007 sec
+[Wed Dec 11 12:26:17.136 2019] [656] binlog: finished replaying total 1 in 0.009 sec
+[Wed Dec 11 12:26:17.137 2019] [656] accepting connections
+[Wed Dec 11 12:26:17.137 2019] [4148] prereading 1 indexes
+[Wed Dec 11 12:26:17.138 2019] [4148] prereaded 1 indexes in 0.001 sec
+[Wed Dec 11 12:26:19.557 2019] [2420] FATAL: out of memory (unable to allocate 18014398509481984 bytes)
+[Wed Dec 11 12:31:12.077 2019] [4496] listening on all interfaces, port=9312
+[Wed Dec 11 12:31:12.078 2019] [4496] listening on all interfaces, port=9306
+[Wed Dec 11 12:31:12.084 2019] [4496] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:31:12.205 2019] [4496] binlog: index idx_text_recognition_results: recovered from tid 11150 to tid 12290
+[Wed Dec 11 12:31:12.206 2019] [4496] binlog: replay stats: 1140 rows in 1140 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:31:12.208 2019] [4496] binlog: finished replaying ..\log/binlog.001; 3.0 MB in 0.120 sec
+[Wed Dec 11 12:31:12.209 2019] [4496] binlog: finished replaying total 1 in 0.125 sec
+[Wed Dec 11 12:31:12.211 2019] [2132] prereading 1 indexes
+[Wed Dec 11 12:31:12.211 2019] [4496] accepting connections
+[Wed Dec 11 12:31:12.211 2019] [2132] prereaded 1 indexes in 0.001 sec
+[Wed Dec 11 12:31:13.995 2019] [3156] FATAL: out of memory (unable to allocate 18014398509481984 bytes)
+[Wed Dec 11 12:31:24.437 2019] [4460] listening on all interfaces, port=9312
+[Wed Dec 11 12:31:24.438 2019] [4460] listening on all interfaces, port=9306
+[Wed Dec 11 12:31:24.444 2019] [4460] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:31:24.542 2019] [4460] binlog: index idx_text_recognition_results: recovered from tid 12290 to tid 13229
+[Wed Dec 11 12:31:24.544 2019] [4460] binlog: replay stats: 939 rows in 939 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:31:24.545 2019] [4460] binlog: finished replaying ..\log/binlog.001; 2.5 MB in 0.097 sec
+[Wed Dec 11 12:31:24.546 2019] [4460] binlog: finished replaying total 1 in 0.102 sec
+[Wed Dec 11 12:31:24.548 2019] [2340] prereading 1 indexes
+[Wed Dec 11 12:31:24.548 2019] [4460] accepting connections
+[Wed Dec 11 12:31:24.549 2019] [2340] prereaded 1 indexes in 0.001 sec
+[Wed Dec 11 12:31:26.541 2019] [1672] FATAL: out of memory (unable to allocate 274877906944 bytes)
+[Wed Dec 11 12:31:48.241 2019] [4764] listening on all interfaces, port=9312
+[Wed Dec 11 12:31:48.241 2019] [4764] listening on all interfaces, port=9306
+[Wed Dec 11 12:31:48.245 2019] [4764] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:31:48.253 2019] [4764] binlog: index idx_text_recognition_results: recovered from tid 13229 to tid 13354
+[Wed Dec 11 12:31:48.253 2019] [4764] binlog: replay stats: 125 rows in 125 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:31:48.254 2019] [4764] binlog: finished replaying ..\log/binlog.001; 0.3 MB in 0.007 sec
+[Wed Dec 11 12:31:48.254 2019] [4764] binlog: finished replaying total 1 in 0.008 sec
+[Wed Dec 11 12:31:48.255 2019] [1244] prereading 1 indexes
+[Wed Dec 11 12:31:48.255 2019] [4764] accepting connections
+[Wed Dec 11 12:31:48.256 2019] [1244] prereaded 1 indexes in 0.001 sec
+[Wed Dec 11 12:31:50.455 2019] [3824] FATAL: out of memory (unable to allocate 18014398509481984 bytes)
+[Wed Dec 11 12:34:59.217 2019] [4160] listening on all interfaces, port=9312
+[Wed Dec 11 12:34:59.218 2019] [4160] listening on all interfaces, port=9306
+[Wed Dec 11 12:34:59.221 2019] [4160] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:34:59.231 2019] [4160] binlog: index idx_text_recognition_results: recovered from tid 13354 to tid 13502
+[Wed Dec 11 12:34:59.232 2019] [4160] binlog: replay stats: 148 rows in 148 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:34:59.233 2019] [4160] binlog: finished replaying ..\log/binlog.001; 0.3 MB in 0.009 sec
+[Wed Dec 11 12:34:59.233 2019] [4160] binlog: finished replaying total 1 in 0.011 sec
+[Wed Dec 11 12:34:59.234 2019] [2924] prereading 1 indexes
+[Wed Dec 11 12:34:59.234 2019] [4160] accepting connections
+[Wed Dec 11 12:34:59.234 2019] [2924] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 12:35:41.663 2019] [4500] FATAL: out of memory (unable to allocate 274877906944 bytes)
+[Wed Dec 11 12:38:56.089 2019] [2892] listening on all interfaces, port=9312
+[Wed Dec 11 12:38:56.090 2019] [2892] listening on all interfaces, port=9306
+[Wed Dec 11 12:38:56.094 2019] [2892] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:38:56.123 2019] [2892] binlog: index idx_text_recognition_results: recovered from tid 15120 to tid 15458
+[Wed Dec 11 12:38:56.124 2019] [2892] binlog: replay stats: 338 rows in 338 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:38:56.124 2019] [2892] binlog: finished replaying ..\log/binlog.001; 0.9 MB in 0.028 sec
+[Wed Dec 11 12:38:56.125 2019] [2892] binlog: finished replaying total 1 in 0.030 sec
+[Wed Dec 11 12:38:56.126 2019] [1672] prereading 1 indexes
+[Wed Dec 11 12:38:56.126 2019] [2892] accepting connections
+[Wed Dec 11 12:38:56.126 2019] [1672] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 12:39:01.619 2019] [4120] FATAL: out of memory (unable to allocate 274877906944 bytes)
+[Wed Dec 11 12:39:40.073 2019] [4824] listening on all interfaces, port=9312
+[Wed Dec 11 12:39:40.074 2019] [4824] listening on all interfaces, port=9306
+[Wed Dec 11 12:39:40.079 2019] [4824] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:39:40.086 2019] [4824] binlog: index idx_text_recognition_results: recovered from tid 17076 to tid 17198
+[Wed Dec 11 12:39:40.087 2019] [4824] binlog: replay stats: 122 rows in 122 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:39:40.087 2019] [4824] binlog: finished replaying ..\log/binlog.001; 0.3 MB in 0.007 sec
+[Wed Dec 11 12:39:40.088 2019] [4824] binlog: finished replaying total 1 in 0.009 sec
+[Wed Dec 11 12:39:40.089 2019] [4824] accepting connections
+[Wed Dec 11 12:39:40.089 2019] [476] prereading 1 indexes
+[Wed Dec 11 12:39:40.090 2019] [476] prereaded 1 indexes in 0.001 sec
+[Wed Dec 11 12:39:44.759 2019] [5104] FATAL: out of memory (unable to allocate 274877906944 bytes)
+[Wed Dec 11 12:43:47.994 2019] [2756] listening on all interfaces, port=9312
+[Wed Dec 11 12:43:47.994 2019] [2756] listening on all interfaces, port=9306
+[Wed Dec 11 12:43:47.998 2019] [2756] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:43:47.998 2019] [2756] WARNING: binlog: commit: unexpected tid (index=idx_text_recognition_results, indextid=0, logtid=18817, pos=66)
+[Wed Dec 11 12:43:48.003 2019] [2756] binlog: index idx_text_recognition_results: recovered from tid 0 to tid 18867
+[Wed Dec 11 12:43:48.003 2019] [2756] binlog: replay stats: 51 rows in 51 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:43:48.004 2019] [2756] binlog: finished replaying ..\log/binlog.001; 0.1 MB in 0.004 sec
+[Wed Dec 11 12:43:48.004 2019] [2756] binlog: finished replaying total 1 in 0.006 sec
+[Wed Dec 11 12:43:48.005 2019] [4876] prereading 1 indexes
+[Wed Dec 11 12:43:48.005 2019] [2756] accepting connections
+[Wed Dec 11 12:43:48.005 2019] [4876] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 12:43:49.732 2019] [2320] FATAL: out of memory (unable to allocate 18014398509481984 bytes)
+[Wed Dec 11 12:47:55.194 2019] [4480] listening on all interfaces, port=9312
+[Wed Dec 11 12:47:55.194 2019] [4480] listening on all interfaces, port=9306
+[Wed Dec 11 12:47:55.198 2019] [4480] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:47:55.314 2019] [4480] binlog: index idx_text_recognition_results: recovered from tid 18867 to tid 19355
+[Wed Dec 11 12:47:55.315 2019] [4480] binlog: replay stats: 488 rows in 488 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:47:55.315 2019] [4480] binlog: finished replaying ..\log/binlog.001; 1.3 MB in 0.116 sec
+[Wed Dec 11 12:47:55.315 2019] [4480] binlog: finished replaying total 1 in 0.117 sec
+[Wed Dec 11 12:47:55.316 2019] [3180] prereading 1 indexes
+[Wed Dec 11 12:47:55.316 2019] [4480] accepting connections
+[Wed Dec 11 12:47:55.316 2019] [3180] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 12:47:56.616 2019] [2892] FATAL: out of memory (unable to allocate 274877906944 bytes)
+[Wed Dec 11 12:48:04.017 2019] [4468] listening on all interfaces, port=9312
+[Wed Dec 11 12:48:04.018 2019] [4468] listening on all interfaces, port=9306
+[Wed Dec 11 12:48:04.023 2019] [4468] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 12:48:04.023 2019] [4468] binlog: index idx_text_recognition_results: recovered from tid 19355 to tid 19360
+[Wed Dec 11 12:48:04.024 2019] [4468] binlog: replay stats: 5 rows in 5 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 12:48:04.024 2019] [4468] binlog: finished replaying ..\log/binlog.001; 0.0 MB in 0.000 sec
+[Wed Dec 11 12:48:04.024 2019] [4468] binlog: finished replaying total 1 in 0.001 sec
+[Wed Dec 11 12:48:04.025 2019] [4244] prereading 1 indexes
+[Wed Dec 11 12:48:04.025 2019] [4468] accepting connections
+[Wed Dec 11 12:48:04.025 2019] [4244] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 12:51:54.102 2019] [4468] caught SIGTERM, shutting down
+[Wed Dec 11 12:51:54.154 2019] [4468] rt: index idx_text_recognition_results: ramchunk saved in 0.001 sec
+[Wed Dec 11 12:51:54.155 2019] [4468] shutdown complete
+[Wed Dec 11 13:19:41.246 2019] [1932] listening on all interfaces, port=9312
+[Wed Dec 11 13:19:41.246 2019] [1932] listening on all interfaces, port=9306
+[Wed Dec 11 13:19:41.249 2019] [1264] prereading 1 indexes
+[Wed Dec 11 13:19:41.249 2019] [1932] accepting connections
+[Wed Dec 11 13:19:41.250 2019] [1264] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 13:20:06.487 2019] [4460] FATAL: out of memory (unable to allocate 9007199254740992 bytes)
+[Wed Dec 11 13:21:01.284 2019] [3584] listening on all interfaces, port=9312
+[Wed Dec 11 13:21:01.284 2019] [3584] listening on all interfaces, port=9306
+[Wed Dec 11 13:21:01.288 2019] [3584] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 13:21:01.288 2019] [3584] WARNING: binlog: commit: unexpected tid (index=idx_text_recognition_results, indextid=0, logtid=19361, pos=66)
+[Wed Dec 11 13:21:01.296 2019] [3584] binlog: index idx_text_recognition_results: recovered from tid 0 to tid 19502
+[Wed Dec 11 13:21:01.296 2019] [3584] binlog: replay stats: 142 rows in 142 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 13:21:01.296 2019] [3584] binlog: finished replaying ..\log/binlog.001; 0.3 MB in 0.008 sec
+[Wed Dec 11 13:21:01.296 2019] [3584] binlog: finished replaying total 1 in 0.008 sec
+[Wed Dec 11 13:21:01.297 2019] [4696] prereading 1 indexes
+[Wed Dec 11 13:21:01.297 2019] [3584] accepting connections
+[Wed Dec 11 13:21:01.297 2019] [4696] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 13:21:05.044 2019] [3156] FATAL: out of memory (unable to allocate 274877906944 bytes)
+[Wed Dec 11 13:21:36.155 2019] [3112] listening on all interfaces, port=9312
+[Wed Dec 11 13:21:36.155 2019] [3112] listening on all interfaces, port=9306
+[Wed Dec 11 13:21:36.159 2019] [3112] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 13:21:36.167 2019] [3112] binlog: index idx_text_recognition_results: recovered from tid 19502 to tid 19637
+[Wed Dec 11 13:21:36.168 2019] [3112] binlog: replay stats: 135 rows in 135 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 13:21:36.169 2019] [3112] binlog: finished replaying ..\log/binlog.001; 0.3 MB in 0.007 sec
+[Wed Dec 11 13:21:36.169 2019] [3112] binlog: finished replaying total 1 in 0.009 sec
+[Wed Dec 11 13:21:36.170 2019] [3620] prereading 1 indexes
+[Wed Dec 11 13:21:36.170 2019] [3112] accepting connections
+[Wed Dec 11 13:21:36.170 2019] [3620] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 13:22:01.519 2019] [4232] FATAL: out of memory (unable to allocate 18014398509481984 bytes)
+[Wed Dec 11 13:25:31.431 2019] [1804] listening on all interfaces, port=9312
+[Wed Dec 11 13:25:31.432 2019] [1804] listening on all interfaces, port=9306
+[Wed Dec 11 13:25:31.437 2019] [1804] binlog: replaying log ..\log/binlog.001
+[Wed Dec 11 13:25:31.437 2019] [1804] WARNING: binlog: commit: unexpected tid (index=idx_text_recognition_results, indextid=0, logtid=21256, pos=66)
+[Wed Dec 11 13:25:31.466 2019] [1804] binlog: index idx_text_recognition_results: recovered from tid 0 to tid 21599
+[Wed Dec 11 13:25:31.466 2019] [1804] binlog: replay stats: 344 rows in 344 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Wed Dec 11 13:25:31.467 2019] [1804] binlog: finished replaying ..\log/binlog.001; 0.9 MB in 0.028 sec
+[Wed Dec 11 13:25:31.467 2019] [1804] binlog: finished replaying total 1 in 0.030 sec
+[Wed Dec 11 13:25:31.469 2019] [1960] prereading 1 indexes
+[Wed Dec 11 13:25:31.469 2019] [1804] accepting connections
+[Wed Dec 11 13:25:31.469 2019] [1960] prereaded 1 indexes in 0.000 sec
+[Wed Dec 11 13:25:37.101 2019] [3620] FATAL: out of memory (unable to allocate 18014398509481984 bytes)
