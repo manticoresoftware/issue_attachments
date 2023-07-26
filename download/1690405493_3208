@@ -1,0 +1,582 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="with-top-bar " lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<title>Make manticore and manticore-tools depend on specific versions of buddy and backup (#3208) · Issues · manticoresearch / Manticore Search · GitLab</title>
+<script nonce="ehJxdgwStP/UlwxfSN7+nw==">
+//<![CDATA[
+window.gon={};gon.features={"preserveUnchangedMarkdown":false,"contentEditorOnIssues":true,"serviceDeskNewNoteEmailNativeAttachments":true,"savedReplies":true,"issuesGridView":false,"serviceDeskTicket":false,"issuesListDrawer":false,"workItems":true,"issueAssigneesWidget":false,"workItemsMvc":false,"workItemsMvc2":false,"epicWidgetEditConfirmation":false,"movedMrSidebar":true,"moveCloseIntoDropdown":false,"summarizeComments":false,"generateDescriptionAi":false};gon.licensed_features={"escalationPolicies":false};
+//]]>
+</script>
+<script nonce="ehJxdgwStP/UlwxfSN7+nw==">
+//<![CDATA[
+window.uploads_path = "/manticoresearch/dev/uploads";
+
+
+
+//]]>
+</script>
+<script nonce="ehJxdgwStP/UlwxfSN7+nw==">
+//<![CDATA[
+var gl = window.gl || {};
+gl.startup_calls = {"/manticoresearch/dev/-/issues/3208/related_branches":{},"/manticoresearch/dev/-/issues/3208/discussions.json?per_page=20":{},"/manticoresearch/dev/-/issues/3208.json?serializer=sidebar_extras":{}};
+gl.startup_graphql_calls = [{"query":"query getDesignList($fullPath: ID!, $iid: String!, $atVersion: DesignManagementVersionID) {\n  project(fullPath: $fullPath) {\n    __typename\n    id\n    issue(iid: $iid) {\n      __typename\n      id\n      designCollection {\n        __typename\n        copyState\n        designs(atVersion: $atVersion) {\n          __typename\n          nodes {\n            __typename\n            id\n            event\n            filename\n            notesCount\n            image\n            imageV432x230\n            currentUserTodos(state: pending) {\n              __typename\n              nodes {\n                __typename\n                id\n              }\n            }\n          }\n        }\n        versions {\n          __typename\n          nodes {\n            __typename\n            id\n            sha\n            createdAt\n            author {\n              __typename\n              id\n              name\n              avatarUrl\n            }\n          }\n        }\n      }\n    }\n  }\n}\n","variables":{"fullPath":"manticoresearch/dev","iid":"3208","atVersion":null}},{"query":"query permissions($fullPath: ID!, $iid: String!) {\n  project(fullPath: $fullPath) {\n    __typename\n    id\n    issue(iid: $iid) {\n      __typename\n      id\n      userPermissions {\n        __typename\n        createDesign\n      }\n    }\n  }\n}\n","variables":{"fullPath":"manticoresearch/dev","iid":"3208"}}];
+
+if (gl.startup_calls && window.fetch) {
+  Object.keys(gl.startup_calls).forEach(apiCall => {
+   gl.startup_calls[apiCall] = {
+      fetchCall: fetch(apiCall, {
+        // Emulate XHR for Rails AJAX request checks
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest'
+        },
+        // fetch won’t send cookies in older browsers, unless you set the credentials init option.
+        // We set to `same-origin` which is default value in modern browsers.
+        // See https://github.com/whatwg/fetch/pull/585 for more information.
+        credentials: 'same-origin'
+      })
+    };
+  });
+}
+if (gl.startup_graphql_calls && window.fetch) {
+  const headers = {"X-CSRF-Token":"Upnlyf0Y3Peray_xU4Sbp2SSQcgUqhNYuGiOqx3REuswadmJxj07jkUffc5pYw8Zn0ln16P5irkbduNrdBg8eQ","x-gitlab-feature-category":"team_planning"};
+  const url = `https://gitlab.com/api/graphql`
+
+  const opts = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      ...headers,
+    }
+  };
+
+  gl.startup_graphql_calls = gl.startup_graphql_calls.map(call => ({
+    ...call,
+    fetchCall: fetch(url, {
+      ...opts,
+      credentials: 'same-origin',
+      body: JSON.stringify(call)
+    })
+  }))
+}
+
+
+//]]>
+</script>
+
+
+<link rel="stylesheet" href="/assets/themes/theme_indigo-3331cd49e4ca5527df9ebb4ec47e8d1463168d5a75df83bf264da79f38af4c96.css" />
+
+<link rel="stylesheet" href="/assets/application-c9115fb70fc3916c23b839288a73d9fe7064fdccf5b18786a633dbb7edcb1179.css" media="all" />
+<link rel="stylesheet" href="/assets/page_bundles/design_management-5f445d9d7482681275c909ec475485d46c496383ae0cde8f07c3728eba8072c5.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/incidents-dc798239907cec6b2e194fde0d101f15e30fe3e81afe57a0c245845d3fe1ff48.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/issues_show-467ebfe27343f2ae452ad9054c16090daeaa5130d5517ca5fbf00a60ee0a4ab8.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/work_items-9802a7cb0d83dd852531fb6355865e1f764f9ed1c33f480aed998e35434b5cb7.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/issuable-12c6bf1c1fee9d4e6f41f96fd96b153ce0a88480ae3981241973c51842f3dfe5.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/promotions-e99055642bdb75905bda2f589e1f80d7cb0d4314315b8981061b847fde32f532.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/promotions-e99055642bdb75905bda2f589e1f80d7cb0d4314315b8981061b847fde32f532.css" media="all" />
+<link rel="stylesheet" href="/assets/application_utilities-de29fbf7d8a2b158eb7ee5a047460444de87ebc965da75055432d930a3d29dde.css" media="all" />
+
+
+<link rel="stylesheet" href="/assets/fonts-171e1863d044918ea3bbaacf2a559ccaac603904aa851c3add5b714fa7066468.css" media="all" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-d4bf6efd4d4cafbf52e7bdc180f805995f08252441f5fcb74b733728fda3e82a.css" media="all" />
+
+<script src="/assets/webpack/runtime.b64c0556.bundle.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/main.8083882a.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/tracker.4bb5c763.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script nonce="ehJxdgwStP/UlwxfSN7+nw==">
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"snowplow.trx.gitlab.net","cookieDomain":".gitlab.com","appId":"gitlab","formTracking":true,"linkClickTracking":true}
+
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-0-9","data":{"environment":"production","source":"gitlab-rails","plan":"free","extra":{"new_nav":true},"user_id":2801001,"namespace_id":1843808,"project_id":3858465,"context_generated_at":"2023-07-26T21:04:53.698Z"}}
+gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace1843808/project3858465/-/issues/3208";
+
+
+//]]>
+</script>
+<link rel="preload" href="/assets/application_utilities-de29fbf7d8a2b158eb7ee5a047460444de87ebc965da75055432d930a3d29dde.css" as="style" type="text/css" nonce="3U/7buUBz69mL97cO2VdoQ==">
+<link rel="preload" href="/assets/application-c9115fb70fc3916c23b839288a73d9fe7064fdccf5b18786a633dbb7edcb1179.css" as="style" type="text/css" nonce="3U/7buUBz69mL97cO2VdoQ==">
+<link rel="preload" href="/assets/highlight/themes/white-d4bf6efd4d4cafbf52e7bdc180f805995f08252441f5fcb74b733728fda3e82a.css" as="style" type="text/css" nonce="3U/7buUBz69mL97cO2VdoQ==">
+<link crossorigin="" href="https://snowplow.trx.gitlab.net" rel="preconnect">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-1e0a5107ea3bbd4be93e8ad2c503467e43166cd37e4293570b490e0812ede98b.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-08d2c5e8ff8fd3d2d6ec55bc7713380f8981c35f9d2df14e12b835464d6e8f23.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-38e58d8df29485a20c550da1d0111e2c2169f6dcbcf894f2cd3afbdd97bcc588.woff2" rel="preload">
+<link rel="preload" href="/assets/fonts-171e1863d044918ea3bbaacf2a559ccaac603904aa851c3add5b714fa7066468.css" as="style" type="text/css" nonce="3U/7buUBz69mL97cO2VdoQ==">
+
+
+
+<script src="/assets/webpack/sentry.1b8f7276.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+
+
+<script src="/assets/webpack/commons-pages.groups.new-pages.import.gitlab_projects.new-pages.import.manifest.new-pages.projects.n-4e5d09f9.da71f202.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.search.show-super_sidebar.d8d0dc90.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/super_sidebar.a3384907.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/shortcutsBundle.320bb564.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.groups.boards-pages.groups.details-pages.groups.epic_boards-pages.groups.show-pages.gr-71149389.3bd6bce0.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-initGFMInput-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.new-pages.gro-bbf4c1ee.7b0f2b67.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.new-pages.groups.epics.sho-33fb4601.bd1f5c0d.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.admin.runners.show-pages.groups.achievements-pages.groups.analytics.dashboards-pages.g-354250a0.cf1e6259.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.new-pages.groups.epics.sho-4c355841.249ff6aa.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.new-pages.groups.epics.sho-0ea214e2.add0dcdc.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.new-pages.groups.epics.sho-7b85013f.7aa2b162.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/13.aafb5843.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/15.c2eb48a4.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.groups.epics.show-pages.groups.milestones.edit-pages.groups.milestones.new-pages.group-b6561599.dc98b705.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.dashboard.issues-pages.groups.boards-pages.groups.epic_boards-pages.groups.epics.show--de0604aa.e73b5fc3.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/21.c55c8bdc.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/22.071767cc.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.groups.epics.show-pages.groups.issues-pages.groups.merge_requests-pages.groups.roadmap-0a967b41.46283e02.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.dashboard.issues-pages.groups.issues-pages.groups.merge_requests-pages.projects.incide-72bed0ea.53cbf8de.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.groups.issues-pages.groups.merge_requests-pages.projects.incidents.show-pages.projects-719d1a74.0ce7e02e.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/commons-pages.groups.epics.show-pages.groups.merge_requests-pages.groups.roadmap.show-pages.projects-71a91f8a.a0126e3f.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<script src="/assets/webpack/pages.projects.issues.show.f576ef3b.chunk.js" defer="defer" nonce="ehJxdgwStP/UlwxfSN7+nw=="></script>
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="Make manticore and manticore-tools depend on specific versions of buddy and backup (#3208) · Issues · manticoresearch / Manticore Search · GitLab" property="og:title">
+<meta content="Now packages &quot;manticore&quot; and &quot;manticore-tools&quot; depend on just &quot;manticore-backup&quot; and &quot;manticore-buddy&quot;:  [root@d4861a449291 pkg]#..." property="og:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/3858465/download.jpg" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.com/manticoresearch/dev/-/issues/3208" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="Make manticore and manticore-tools depend on specific versions of buddy and backup (#3208) · Issues · manticoresearch / Manticore Search · GitLab" property="twitter:title">
+<meta content="Now packages &quot;manticore&quot; and &quot;manticore-tools&quot; depend on just &quot;manticore-backup&quot; and &quot;manticore-buddy&quot;:  [root@d4861a449291 pkg]#..." property="twitter:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/3858465/download.jpg" property="twitter:image">
+<meta property="twitter:label1" content="Author"><meta property="twitter:data1" content="Sergey Nikolaev"><meta property="twitter:label2" content="Assignee"><meta property="twitter:data2" content="Aleksey N. Vinogradov">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="31CumJdRjENuzbI1IvWXQRaGMYH3OHINEzj2PSQrbTK9oJLYrHRrOoC54AoYEgP_7V0XnkBr6-ywJpv9TeJDoA" />
+<meta name="csp-nonce" content="ehJxdgwStP/UlwxfSN7+nw==" />
+<meta name="action-cable-url" content="/-/cable" />
+<link href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+
+
+
+
+<meta content="Now packages &quot;manticore&quot; and &quot;manticore-tools&quot; depend on just &quot;manticore-backup&quot; and &quot;manticore-buddy&quot;:  [root@d4861a449291 pkg]#..." name="description">
+<meta content="#292961" name="theme-color">
+</head>
+
+<body class="ui-indigo tab-width-8 gl-browser-generic gl-platform-other" data-find-file="/manticoresearch/dev/-/find_file/master" data-group="manticoresearch" data-group-full-path="manticoresearch" data-namespace-id="1843808" data-page="projects:issues:show" data-page-type-id="3208" data-project="dev" data-project-id="3858465">
+<script nonce="ehJxdgwStP/UlwxfSN7+nw==">
+//<![CDATA[
+gl = window.gl || {};
+gl.GfmAutoComplete = gl.GfmAutoComplete || {};
+gl.GfmAutoComplete.dataSources = {"members":"/manticoresearch/dev/-/autocomplete_sources/members?type=Issue\u0026type_id=3208","issues":"/manticoresearch/dev/-/autocomplete_sources/issues","mergeRequests":"/manticoresearch/dev/-/autocomplete_sources/merge_requests","labels":"/manticoresearch/dev/-/autocomplete_sources/labels?type=Issue\u0026type_id=3208","milestones":"/manticoresearch/dev/-/autocomplete_sources/milestones","commands":"/manticoresearch/dev/-/autocomplete_sources/commands?type=Issue\u0026type_id=3208","snippets":"/manticoresearch/dev/-/autocomplete_sources/snippets","contacts":"/manticoresearch/dev/-/autocomplete_sources/contacts?type=Issue\u0026type_id=3208"};
+
+
+//]]>
+</script>
+<script nonce="ehJxdgwStP/UlwxfSN7+nw==">
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isGeneric":true,"isOther":true};
+
+
+//]]>
+</script>
+
+
+
+<style>
+  body {
+    --header-height: 0px;
+  }
+</style>
+<div class="layout-page hide-when-top-nav-responsive-open page-gutter right-sidebar-expanded page-with-super-sidebar">
+<aside class="js-super-sidebar super-sidebar super-sidebar-loading" data-command-palette="{&quot;project_files_url&quot;:&quot;/manticoresearch/dev/-/files/master?format=json&quot;,&quot;project_blob_url&quot;:&quot;/manticoresearch/dev/-/blob/master&quot;}" data-force-desktop-expanded-sidebar="" data-root-path="/" data-sidebar="{&quot;current_menu_items&quot;:[{&quot;id&quot;:&quot;project_overview&quot;,&quot;title&quot;:&quot;Project overview&quot;,&quot;icon&quot;:&quot;project&quot;,&quot;link&quot;:&quot;/manticoresearch/dev&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project rspec-project-link&quot;,&quot;is_active&quot;:false},{&quot;title&quot;:&quot;Manage&quot;,&quot;icon&quot;:&quot;users&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/activity&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;activity&quot;,&quot;title&quot;:&quot;Activity&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/activity&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project-activity&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;members&quot;,&quot;title&quot;:&quot;Members&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/project_members&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;labels&quot;,&quot;title&quot;:&quot;Labels&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/labels&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Plan&quot;,&quot;icon&quot;:&quot;planning&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/issues&quot;,&quot;is_active&quot;:true,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;project_issue_list&quot;,&quot;title&quot;:&quot;Issues&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/issues&quot;,&quot;pill_count&quot;:&quot;747&quot;,&quot;link_classes&quot;:&quot;shortcuts-issues has-sub-items&quot;,&quot;is_active&quot;:true},{&quot;id&quot;:&quot;boards&quot;,&quot;title&quot;:&quot;Issue boards&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/boards&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-issue-boards&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;milestones&quot;,&quot;title&quot;:&quot;Milestones&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/milestones&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_wiki&quot;,&quot;title&quot;:&quot;Wiki&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/wikis/home&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-wiki&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Code&quot;,&quot;icon&quot;:&quot;code&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/merge_requests&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;project_merge_request_list&quot;,&quot;title&quot;:&quot;Merge requests&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/merge_requests&quot;,&quot;pill_count&quot;:&quot;2&quot;,&quot;link_classes&quot;:&quot;shortcuts-merge_requests&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;files&quot;,&quot;title&quot;:&quot;Repository&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/tree/master&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-tree&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;branches&quot;,&quot;title&quot;:&quot;Branches&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/branches&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;commits&quot;,&quot;title&quot;:&quot;Commits&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/commits/master?ref_type=heads&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-commits&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;tags&quot;,&quot;title&quot;:&quot;Tags&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/tags&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;graphs&quot;,&quot;title&quot;:&quot;Repository graph&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/network/master?ref_type=heads&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-network&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;compare&quot;,&quot;title&quot;:&quot;Compare revisions&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/compare?from=master\u0026to=master&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_snippets&quot;,&quot;title&quot;:&quot;Snippets&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/snippets&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-snippets&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Build&quot;,&quot;icon&quot;:&quot;rocket&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipelines&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;pipelines&quot;,&quot;title&quot;:&quot;Pipelines&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipelines&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-pipelines&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;jobs&quot;,&quot;title&quot;:&quot;Jobs&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/jobs&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pipelines_editor&quot;,&quot;title&quot;:&quot;Pipeline editor&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/ci/editor?branch_name=master&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pipeline_schedules&quot;,&quot;title&quot;:&quot;Pipeline schedules&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipeline_schedules&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;artifacts&quot;,&quot;title&quot;:&quot;Artifacts&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/artifacts&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Secure&quot;,&quot;icon&quot;:&quot;shield&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/audit_events&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;audit_events&quot;,&quot;title&quot;:&quot;Audit events&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/audit_events&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;configuration&quot;,&quot;title&quot;:&quot;Security configuration&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/security/configuration&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Deploy&quot;,&quot;icon&quot;:&quot;deployments&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/releases&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;releases&quot;,&quot;title&quot;:&quot;Releases&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/releases&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-deployments-releases&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;feature_flags&quot;,&quot;title&quot;:&quot;Feature flags&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/feature_flags&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-feature-flags&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;container_registry&quot;,&quot;title&quot;:&quot;Container Registry&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/container_registry&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pages&quot;,&quot;title&quot;:&quot;Pages&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/pages&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Operate&quot;,&quot;icon&quot;:&quot;cloud-pod&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/environments&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;environments&quot;,&quot;title&quot;:&quot;Environments&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/environments&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-environments&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;kubernetes&quot;,&quot;title&quot;:&quot;Kubernetes clusters&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/clusters&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-kubernetes&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;terraform_states&quot;,&quot;title&quot;:&quot;Terraform states&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/terraform&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;google_cloud&quot;,&quot;title&quot;:&quot;Google Cloud&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/google_cloud/configuration&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:&quot;monitor&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/error_tracking&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;error_tracking&quot;,&quot;title&quot;:&quot;Error Tracking&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/error_tracking&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;alert_management&quot;,&quot;title&quot;:&quot;Alerts&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/alert_management&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;incidents&quot;,&quot;title&quot;:&quot;Incidents&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/incidents&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;service_desk&quot;,&quot;title&quot;:&quot;Service Desk&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/issues/service_desk&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Analyze&quot;,&quot;icon&quot;:&quot;chart&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/value_stream_analytics&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;cycle_analytics&quot;,&quot;title&quot;:&quot;Value stream analytics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/value_stream_analytics&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project-cycle-analytics&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;contributors&quot;,&quot;title&quot;:&quot;Contributor statistics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/graphs/master?ref_type=heads&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;ci_cd_analytics&quot;,&quot;title&quot;:&quot;CI/CD analytics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipelines/charts&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;repository_analytics&quot;,&quot;title&quot;:&quot;Repository analytics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/graphs/master/charts&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-repository-charts&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;model_experiments&quot;,&quot;title&quot;:&quot;Model experiments&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/ml/experiments&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Settings&quot;,&quot;icon&quot;:&quot;settings&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/edit&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;general&quot;,&quot;title&quot;:&quot;General&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/edit&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;integrations&quot;,&quot;title&quot;:&quot;Integrations&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/integrations&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;webhooks&quot;,&quot;title&quot;:&quot;Webhooks&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/hooks&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;access_tokens&quot;,&quot;title&quot;:&quot;Access Tokens&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/access_tokens&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;repository&quot;,&quot;title&quot;:&quot;Repository&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/repository&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;merge_request_settings&quot;,&quot;title&quot;:&quot;Merge requests&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/merge_requests&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;ci_cd&quot;,&quot;title&quot;:&quot;CI/CD&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/ci_cd&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;packages_and_registries&quot;,&quot;title&quot;:&quot;Packages and registries&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/packages_and_registries&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;monitor&quot;,&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/operations&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;usage_quotas&quot;,&quot;title&quot;:&quot;Usage Quotas&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/usage_quotas&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:true}],&quot;current_context_header&quot;:{&quot;title&quot;:&quot;Manticore Search&quot;,&quot;avatar&quot;:&quot;/uploads/-/system/project/avatar/3858465/download.jpg&quot;,&quot;id&quot;:3858465},&quot;name&quot;:&quot;manticore_bot&quot;,&quot;username&quot;:&quot;manticore_bot&quot;,&quot;avatar_url&quot;:&quot;https://secure.gravatar.com/avatar/e5d8eaba32898b9b901210d0d5a8c383?s=80\u0026d=identicon&quot;,&quot;has_link_to_profile&quot;:true,&quot;link_to_profile&quot;:&quot;https://gitlab.com/manticore_bot&quot;,&quot;logo_url&quot;:null,&quot;status&quot;:{&quot;can_update&quot;:true,&quot;busy&quot;:null,&quot;customized&quot;:null,&quot;availability&quot;:&quot;&quot;,&quot;emoji&quot;:null,&quot;message_html&quot;:null,&quot;message&quot;:null,&quot;clear_after&quot;:null},&quot;settings&quot;:{&quot;has_settings&quot;:true,&quot;profile_path&quot;:&quot;/-/profile&quot;,&quot;profile_preferences_path&quot;:&quot;/-/profile/preferences&quot;},&quot;user_counts&quot;:{&quot;assigned_issues&quot;:0,&quot;assigned_merge_requests&quot;:0,&quot;review_requested_merge_requests&quot;:0,&quot;todos&quot;:0,&quot;last_update&quot;:1690405493784},&quot;can_sign_out&quot;:true,&quot;sign_out_link&quot;:&quot;/users/sign_out&quot;,&quot;issues_dashboard_path&quot;:&quot;/dashboard/issues?assignee_username=manticore_bot&quot;,&quot;todos_dashboard_path&quot;:&quot;/dashboard/todos&quot;,&quot;create_new_menu_groups&quot;:[{&quot;name&quot;:&quot;In this project&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New issue&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/issues/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_issue&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_issue&quot;}},{&quot;text&quot;:&quot;New merge request&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/merge_requests/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_mr&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_mr&quot;}},{&quot;text&quot;:&quot;New snippet&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/snippets/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_snippet&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_snippet&quot;}},{&quot;text&quot;:&quot;Invite members&quot;,&quot;href&quot;:null,&quot;component&quot;:&quot;invite_members&quot;,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;invite&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;invite&quot;}}]},{&quot;name&quot;:&quot;In GitLab&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New project/repository&quot;,&quot;href&quot;:&quot;/projects/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_project&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_project&quot;}},{&quot;text&quot;:&quot;New group&quot;,&quot;href&quot;:&quot;/groups/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_group&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_group&quot;}},{&quot;text&quot;:&quot;New snippet&quot;,&quot;href&quot;:&quot;/-/snippets/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_snippet&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_snippet&quot;}}]}],&quot;merge_request_menu&quot;:[{&quot;name&quot;:&quot;Merge requests&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;Assigned&quot;,&quot;href&quot;:&quot;/dashboard/merge_requests?assignee_username=manticore_bot&quot;,&quot;count&quot;:0,&quot;userCount&quot;:&quot;assigned_merge_requests&quot;,&quot;extraAttrs&quot;:{&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-label&quot;:&quot;merge_requests_assigned&quot;,&quot;data-track-property&quot;:&quot;nav_core_menu&quot;,&quot;class&quot;:&quot;dashboard-shortcuts-merge_requests&quot;}},{&quot;text&quot;:&quot;Review requests&quot;,&quot;href&quot;:&quot;/dashboard/merge_requests?reviewer_username=manticore_bot&quot;,&quot;count&quot;:0,&quot;userCount&quot;:&quot;review_requested_merge_requests&quot;,&quot;extraAttrs&quot;:{&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-label&quot;:&quot;merge_requests_to_review&quot;,&quot;data-track-property&quot;:&quot;nav_core_menu&quot;,&quot;class&quot;:&quot;dashboard-shortcuts-review_requests&quot;}}]}],&quot;projects_path&quot;:&quot;/dashboard/projects&quot;,&quot;groups_path&quot;:&quot;/dashboard/groups&quot;,&quot;support_path&quot;:&quot;https://about.gitlab.com/get-help/&quot;,&quot;display_whats_new&quot;:true,&quot;whats_new_most_recent_release_items_count&quot;:5,&quot;whats_new_version_digest&quot;:&quot;ca111af52506d69a6f80f5dc78081a21817623e4e2c16f3a7b1e97cc026708b6&quot;,&quot;show_version_check&quot;:false,&quot;gitlab_version&quot;:{&quot;major&quot;:16,&quot;minor&quot;:3,&quot;patch&quot;:0,&quot;suffix_s&quot;:&quot;&quot;},&quot;gitlab_version_check&quot;:{&quot;latest_stable_versions&quot;:[],&quot;latest_version&quot;:&quot;16.2.1&quot;,&quot;severity&quot;:&quot;success&quot;,&quot;critical_vulnerability&quot;:false,&quot;details&quot;:&quot;&quot;},&quot;gitlab_com_but_not_canary&quot;:true,&quot;gitlab_com_and_canary&quot;:null,&quot;canary_toggle_com_url&quot;:&quot;https://next.gitlab.com&quot;,&quot;current_context&quot;:{&quot;namespace&quot;:&quot;projects&quot;,&quot;item&quot;:{&quot;id&quot;:3858465,&quot;name&quot;:&quot;Manticore Search&quot;,&quot;namespace&quot;:&quot;manticoresearch / Manticore Search&quot;,&quot;webUrl&quot;:&quot;/manticoresearch/dev&quot;,&quot;avatarUrl&quot;:&quot;/uploads/-/system/project/avatar/3858465/download.jpg&quot;}},&quot;context_switcher_links&quot;:[{&quot;title&quot;:&quot;Your work&quot;,&quot;link&quot;:&quot;/&quot;,&quot;icon&quot;:&quot;work&quot;},{&quot;title&quot;:&quot;Explore&quot;,&quot;link&quot;:&quot;/explore&quot;,&quot;icon&quot;:&quot;compass&quot;}],&quot;search&quot;:{&quot;search_path&quot;:&quot;/search&quot;,&quot;issues_path&quot;:&quot;/dashboard/issues&quot;,&quot;mr_path&quot;:&quot;/dashboard/merge_requests&quot;,&quot;autocomplete_path&quot;:&quot;/search/autocomplete&quot;,&quot;search_context&quot;:{&quot;group&quot;:{&quot;id&quot;:1843808,&quot;name&quot;:&quot;manticoresearch&quot;,&quot;full_name&quot;:&quot;manticoresearch&quot;},&quot;group_metadata&quot;:{&quot;issues_path&quot;:&quot;/groups/manticoresearch/-/issues&quot;,&quot;mr_path&quot;:&quot;/groups/manticoresearch/-/merge_requests&quot;},&quot;project&quot;:{&quot;id&quot;:3858465,&quot;name&quot;:&quot;Manticore Search&quot;},&quot;project_metadata&quot;:{&quot;mr_path&quot;:&quot;/manticoresearch/dev/-/merge_requests&quot;,&quot;issues_path&quot;:&quot;/manticoresearch/dev/-/issues&quot;},&quot;code_search&quot;:false,&quot;scope&quot;:&quot;issues&quot;,&quot;for_snippets&quot;:null}},&quot;pinned_items&quot;:[&quot;project_issue_list&quot;,&quot;project_merge_request_list&quot;],&quot;panel_type&quot;:&quot;project&quot;,&quot;update_pins_url&quot;:&quot;https://gitlab.com/-/users/pins&quot;,&quot;is_impersonating&quot;:false,&quot;stop_impersonation_path&quot;:&quot;/admin/impersonation&quot;,&quot;shortcut_links&quot;:[{&quot;title&quot;:&quot;Milestones&quot;,&quot;href&quot;:&quot;/dashboard/milestones&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-milestones&quot;},{&quot;title&quot;:&quot;Snippets&quot;,&quot;href&quot;:&quot;/dashboard/snippets&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-snippets&quot;},{&quot;title&quot;:&quot;Activity&quot;,&quot;href&quot;:&quot;/dashboard/activity&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-activity&quot;},{&quot;title&quot;:&quot;Create a new issue&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/issues/new&quot;,&quot;css_class&quot;:&quot;shortcuts-new-issue&quot;}],&quot;show_tanuki_bot&quot;:false,&quot;trial&quot;:{&quot;has_start_trial&quot;:false,&quot;url&quot;:&quot;/-/trials/new?glm_content=top-right-dropdown\u0026glm_source=gitlab.com&quot;}}" data-toggle-new-nav-endpoint="https://gitlab.com/-/profile/preferences"></aside>
+<div data-version-digest="ca111af52506d69a6f80f5dc78081a21817623e4e2c16f3a7b1e97cc026708b6" id="whats-new-app"></div>
+
+<div class="content-wrapper">
+<div class="mobile-overlay"></div>
+
+<div class="alert-wrapper gl-force-block-formatting-context">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top-bar-fixed container-fluid" data-testid="top-bar">
+<div class="top-bar-container gl-display-flex gl-align-items-center gl-gap-2">
+<button class="gl-button btn btn-icon btn-md btn-default btn-default-tertiary js-super-sidebar-toggle-expand super-sidebar-toggle gl-ml-n3" title="Expand sidebar" aria-controls="super-sidebar" aria-expanded="false" aria-label="Navigation sidebar" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="sidebar-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#sidebar"></use></svg>
+
+</button>
+<nav aria-label="Breadcrumbs" class="breadcrumbs" data-qa-selector="breadcrumb_links_content" data-testid="breadcrumb-links">
+<ul class="list-unstyled breadcrumbs-list js-breadcrumbs-list">
+<li><a class="group-path breadcrumb-item-text js-breadcrumb-item-text " href="/manticoresearch"><img alt="manticoresearch" class="avatar-tile lazy" width="15" height="15" data-src="/uploads/-/system/group/avatar/1843808/manticore-logo-central.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />manticoresearch</a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#chevron-lg-right"></use></svg></li> <li><a href="/manticoresearch/dev"><img alt="Manticore Search" class="avatar-tile lazy" width="15" height="15" data-src="/uploads/-/system/project/avatar/3858465/download.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="breadcrumb-item-text js-breadcrumb-item-text">Manticore Search</span></a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#chevron-lg-right"></use></svg></li>
+<li><a href="/manticoresearch/dev/-/issues">Issues</a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#chevron-lg-right"></use></svg></li>
+
+<li data-qa-selector="breadcrumb_current_link" data-testid="breadcrumb-current-link">
+<a href="/manticoresearch/dev/-/issues/3208">#3208</a>
+</li>
+</ul>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"manticoresearch","item":"https://gitlab.com/manticoresearch"},{"@type":"ListItem","position":2,"name":"Manticore Search","item":"https://gitlab.com/manticoresearch/dev"},{"@type":"ListItem","position":3,"name":"Issues","item":"https://gitlab.com/manticoresearch/dev/-/issues"},{"@type":"ListItem","position":4,"name":"#3208","item":"https://gitlab.com/manticoresearch/dev/-/issues/3208"}]}
+
+</script>
+</nav>
+
+
+
+</div>
+</div>
+
+</div>
+<div class="container-fluid container-limited limit-container-width project-highlight-puc">
+<main class="content" id="content-body" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+<div class="flash-container flash-container-page sticky" data-qa-selector="flash_container">
+</div>
+
+
+<div class="js-invite-members-modal" data-access-levels="{&quot;Guest&quot;:10,&quot;Reporter&quot;:20,&quot;Developer&quot;:30,&quot;Maintainer&quot;:40}" data-default-access-level="10" data-full-path="manticoresearch/dev" data-help-link="https://gitlab.com/help/user/permissions" data-id="3858465" data-is-project="true" data-name="Manticore Search" data-reload-page-on-submit="false" data-root-id="1843808"></div>
+
+
+
+<div class="detail-page-header">
+<div class="detail-page-header-body gl-flex-wrap">
+<span class="gl-badge badge badge-pill badge-info md  issuable-status-badge gl-mr-3 issuable-status-badge-closed"><svg class="s16 gl-icon gl-badge-icon gl-mr-0! gl-mr-2" data-testid="issue-closed-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#issue-closed"></use></svg><div class="gl-display-none gl-sm-display-block gl-ml-2">
+Closed
+</div>
+</span><span class="gl-badge badge badge-pill badge-success md hidden issuable-status-badge gl-mr-3 issuable-status-badge-open"><svg class="s16 gl-icon gl-badge-icon gl-mr-0! gl-mr-2" data-testid="issues-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#issues"></use></svg><span class="gl-display-none gl-sm-display-block gl-ml-2">
+Open
+</span>
+</span><div data-hidden="false" id="js-issuable-header-warnings"></div>
+<span class="gl-mr-2" aria-hidden="true"><svg class="s16 gl-icon gl-vertical-align-middle gl-text-gray-500" data-testid="issue-type-issue-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#issue-type-issue"></use></svg></span><span class="gl-mr-2">Issue created <time class="js-timeago" title="Jan 3, 2023 9:24am" datetime="2023-01-03T09:24:27Z" data-toggle="tooltip" data-placement="top" data-container="body">Jan 03, 2023</time> by </span><strong><a class="author-link js-user-link d-none d-sm-inline-block" data-user-id="1458921" data-username="snikolaev" data-name="Sergey Nikolaev" href="/snikolaev"><img width="24" class="avatar avatar-inline s24 lazy" alt="" data-src="https://secure.gravatar.com/avatar/28fcb5736d668a79c0c3ab9a288ff8e9?s=48&amp;d=identicon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="author">Sergey Nikolaev</span></a><a class="author-link js-user-link d-inline d-sm-none" data-user-id="1458921" data-username="snikolaev" data-name="Sergey Nikolaev" href="/snikolaev"><span class="author">@snikolaev</span></a></strong><span class="user-access-role has-tooltip d-none d-xl-inline-block gl-ml-3 " title="This user has the owner role in the Manticore Search project.">Owner</span><span class="has-tooltip gl-ml-2" title="1st contribution!"></span>
+<a class="gl-button btn btn-icon btn-md btn-default gl-float-right gl-display-block gl-sm-display-none! gutter-toggle issuable-gutter-toggle js-sidebar-toggle" href="#"><svg class="s16 gl-icon gl-button-icon " data-testid="chevron-double-lg-left-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#chevron-double-lg-left"></use></svg>
+
+</a>
+</div>
+<div class="js-issue-header-actions" data-can-create-incident="true" data-can-create-issue="true" data-can-destroy-issue="false" data-can-promote-to-epic="false" data-can-reopen-issue="true" data-can-report-spam="false" data-can-update-issue="true" data-iid="3208" data-is-issue-author="false" data-issuable-email-address="incoming+manticoresearch-dev-3858465-mmsnmd94hewpkuvm2gv62lwo-issue-3208@incoming.gitlab.com" data-issuable-id="121150884" data-issue-path="/manticoresearch/dev/-/issues/3208" data-issue-type="issue" data-new-issue-path="/manticoresearch/dev/-/issues/new?add_related_issue=3208" data-project-path="manticoresearch/dev" data-report-abuse-path="/-/abuse_reports/add_category" data-reported-from-url="https://gitlab.com/manticoresearch/dev/-/issues/3208" data-reported-user-id="1458921" data-submit-as-spam-path="/manticoresearch/dev/-/issues/3208/mark_as_spam"></div>
+</div>
+
+<div class="issue-details issuable-details js-issue-details">
+<div class="detail-page-description content-block js-detail-page-description gl-pt-3 gl-pb-0 gl-border-none">
+<div data-full-path="manticoresearch/dev" data-initial="{&quot;endpoint&quot;:&quot;/manticoresearch/dev/-/issues/3208&quot;,&quot;updateEndpoint&quot;:&quot;/manticoresearch/dev/-/issues/3208.json&quot;,&quot;canUpdate&quot;:true,&quot;canDestroy&quot;:false,&quot;issuableRef&quot;:&quot;#3208&quot;,&quot;markdownPreviewPath&quot;:&quot;/manticoresearch/dev/preview_markdown?target_id=3208\u0026target_type=Issue&quot;,&quot;markdownDocsPath&quot;:&quot;/help/user/markdown&quot;,&quot;lockVersion&quot;:0,&quot;state&quot;:&quot;closed&quot;,&quot;issuableTemplateNamesPath&quot;:&quot;/manticoresearch/dev/description_templates/names/issue&quot;,&quot;initialTitleHtml&quot;:&quot;Make manticore and manticore-tools depend on specific versions of buddy and backup&quot;,&quot;initialTitleText&quot;:&quot;Make manticore and manticore-tools depend on specific versions of buddy and backup&quot;,&quot;initialDescriptionHtml&quot;:&quot;\u003cp data-sourcepos=\&quot;1:1-1:103\&quot; dir=\&quot;auto\&quot;\u003eNow packages \&quot;manticore\&quot; and \&quot;manticore-tools\&quot; depend on just \&quot;manticore-backup\&quot; and \&quot;manticore-buddy\&quot;:\u003c/p\u003e\u0026#x000A;\u003cdiv class=\&quot;gl-relative markdown-code-block js-markdown-code\&quot;\u003e\u0026#x000A;\u003cpre data-sourcepos=\&quot;3:1-13:3\&quot; lang=\&quot;plaintext\&quot; class=\&quot;code highlight js-syntax-highlight language-plaintext\&quot; data-canonical-lang=\&quot;\&quot; v-pre=\&quot;true\&quot;\u003e\u003ccode\u003e\u003cspan id=\&quot;LC1\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003e[root@d4861a449291 pkg]# rpm -qp --requires manticore-tools-5.0.3_230102.cab1cca1b-1.el7.centos.x86_64.rpm |grep manticore\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC2\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003emanticore-backup\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC3\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003e\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC4\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003e[root@d4861a449291 pkg]# rpm -qp --requires manticore-5.0.3_230102.cab1cca1b-1.el7.centos.x86_64.rpm |grep manticore\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC5\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003emanticore-buddy\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC6\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003emanticore-devel = 5.0.3_230102.cab1cca1b-1.el7.centos\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC7\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003emanticore-icudata\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC8\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003emanticore-server = 5.0.3_230102.cab1cca1b-1.el7.centos\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC9\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003emanticore-tools = 5.0.3_230102.cab1cca1b-1.el7.centos\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\u0026#x000A;\u003ccopy-code\u003e\u003c/copy-code\u003e\u0026#x000A;\u003c/div\u003e\u0026#x000A;\u003cp data-sourcepos=\&quot;15:1-15:104\&quot; dir=\&quot;auto\&quot;\u003ewhich means that yum will find the latest possible versions of \&quot;manticore-backup\&quot; and \&quot;manticore-buddy\&quot;.\u003c/p\u003e\u0026#x000A;\u003cp data-sourcepos=\&quot;17:1-17:328\&quot; dir=\&quot;auto\&quot;\u003eIt may cause problems in future when one wants to install say Manticore 6 when there&#39;s already Manticore 7 available with newer versions of Buddy/Backup that are already not compatible with Manticore 6. To avoid this we need to make the packages depend on specific versions of buddy/backup like it&#39;s done for the other packages.\u003c/p\u003e\u0026#x000A;\u003cp data-sourcepos=\&quot;19:1-19:77\&quot; dir=\&quot;auto\&quot;\u003eWe can do it manually in the upcoming release branch by updating these lines:\u003c/p\u003e\u0026#x000A;\u003cdiv class=\&quot;gl-relative markdown-code-block js-markdown-code\&quot;\u003e\u0026#x000A;\u003cpre data-sourcepos=\&quot;21:1-26:3\&quot; lang=\&quot;plaintext\&quot; class=\&quot;code highlight js-syntax-highlight language-plaintext\&quot; data-canonical-lang=\&quot;\&quot; v-pre=\&quot;true\&quot;\u003e\u003ccode\u003e\u003cspan id=\&quot;LC1\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003e➜  cmake git:(master) ✗ egrep -i \&quot;manticore-buddy|manticore-backup\&quot; -r *|egrep \&quot;DEPENDS|REQUIRES\&quot;\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC2\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003ebuilds/CommonDeb.cmake:seta ( CPACK_DEBIAN_META_PACKAGE_DEPENDS \&quot;manticore-server (= ${CPACK_PACKAGE_VERSION}), manticore-tools (= ${CPACK_PACKAGE_VERSION}), manticore-dev (= ${CPACK_PACKAGE_VERSION}), manticore-icudata-65l, manticore-buddy\&quot; )\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC3\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003ebuilds/CommonRpm.cmake:set ( CPACK_RPM_TOOLS_PACKAGE_REQUIRES \&quot;manticore-backup\&quot; )\u003c/span\u003e\u0026#x000A;\u003cspan id=\&quot;LC4\&quot; class=\&quot;line\&quot; lang=\&quot;plaintext\&quot;\u003ebuilds/CommonRpm.cmake:set ( CPACK_RPM_META_PACKAGE_REQUIRES \&quot;manticore-server = ${MYVER}, manticore-tools = ${MYVER}, manticore-devel = ${MYVER}, manticore-icudata, manticore-buddy\&quot; )\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\u0026#x000A;\u003ccopy-code\u003e\u003c/copy-code\u003e\u0026#x000A;\u003c/div\u003e\u0026#x000A;\u003cp data-sourcepos=\&quot;28:1-28:216\&quot; dir=\&quot;auto\&quot;\u003ebut it may be more convenient in future to maintain and integrate with \u003ccode\u003ebuddy_src.txt\u003c/code\u003e and \u003ccode\u003ebackup_src.txt\u003c/code\u003e as it was planned here \u003ca href=\&quot;https://docs.google.com/document/d/1UqZdKxsS8t7oKGgwwRY42aiuN08VTC5irg-6fgTiDrc/edit#\&quot; rel=\&quot;nofollow noreferrer noopener\&quot; target=\&quot;_blank\&quot;\u003ehttps://docs.google.com/document/d/1UqZdKxsS8t7oKGgwwRY42aiuN08VTC5irg-6fgTiDrc/edit#\u003c/a\u003e\u003c/p\u003e&quot;,&quot;initialDescriptionText&quot;:&quot;Now packages \&quot;manticore\&quot; and \&quot;manticore-tools\&quot; depend on just \&quot;manticore-backup\&quot; and \&quot;manticore-buddy\&quot;:\n\n```\n[root@d4861a449291 pkg]# rpm -qp --requires manticore-tools-5.0.3_230102.cab1cca1b-1.el7.centos.x86_64.rpm |grep manticore\nmanticore-backup\n\n[root@d4861a449291 pkg]# rpm -qp --requires manticore-5.0.3_230102.cab1cca1b-1.el7.centos.x86_64.rpm |grep manticore\nmanticore-buddy\nmanticore-devel = 5.0.3_230102.cab1cca1b-1.el7.centos\nmanticore-icudata\nmanticore-server = 5.0.3_230102.cab1cca1b-1.el7.centos\nmanticore-tools = 5.0.3_230102.cab1cca1b-1.el7.centos\n```\n\nwhich means that yum will find the latest possible versions of \&quot;manticore-backup\&quot; and \&quot;manticore-buddy\&quot;.\n\nIt may cause problems in future when one wants to install say Manticore 6 when there&#39;s already Manticore 7 available with newer versions of Buddy/Backup that are already not compatible with Manticore 6. To avoid this we need to make the packages depend on specific versions of buddy/backup like it&#39;s done for the other packages.\n\nWe can do it manually in the upcoming release branch by updating these lines:\n\n```\n➜  cmake git:(master) ✗ egrep -i \&quot;manticore-buddy|manticore-backup\&quot; -r *|egrep \&quot;DEPENDS|REQUIRES\&quot;\nbuilds/CommonDeb.cmake:seta ( CPACK_DEBIAN_META_PACKAGE_DEPENDS \&quot;manticore-server (= ${CPACK_PACKAGE_VERSION}), manticore-tools (= ${CPACK_PACKAGE_VERSION}), manticore-dev (= ${CPACK_PACKAGE_VERSION}), manticore-icudata-65l, manticore-buddy\&quot; )\nbuilds/CommonRpm.cmake:set ( CPACK_RPM_TOOLS_PACKAGE_REQUIRES \&quot;manticore-backup\&quot; )\nbuilds/CommonRpm.cmake:set ( CPACK_RPM_META_PACKAGE_REQUIRES \&quot;manticore-server = ${MYVER}, manticore-tools = ${MYVER}, manticore-devel = ${MYVER}, manticore-icudata, manticore-buddy\&quot; )\n```\n\nbut it may be more convenient in future to maintain and integrate with `buddy_src.txt` and `backup_src.txt` as it was planned here https://docs.google.com/document/d/1UqZdKxsS8t7oKGgwwRY42aiuN08VTC5irg-6fgTiDrc/edit#&quot;,&quot;initialTaskCompletionStatus&quot;:{&quot;count&quot;:0,&quot;completed_count&quot;:0},&quot;hasClosingMergeRequest&quot;:false,&quot;issueType&quot;:&quot;issue&quot;,&quot;zoomMeetingUrl&quot;:null,&quot;sentryIssueIdentifier&quot;:null,&quot;iid&quot;:&quot;3208&quot;,&quot;isHidden&quot;:false,&quot;canCreateIncident&quot;:true,&quot;publishedIncidentUrl&quot;:null,&quot;slaFeatureAvailable&quot;:&quot;false&quot;,&quot;uploadMetricsFeatureAvailable&quot;:&quot;false&quot;,&quot;projectId&quot;:3858465,&quot;projectPath&quot;:&quot;dev&quot;,&quot;projectNamespace&quot;:&quot;manticoresearch&quot;,&quot;canAdmin&quot;:true,&quot;hasIssueWeightsFeature&quot;:false,&quot;hasIterationsFeature&quot;:false,&quot;canAdminRelation&quot;:true}" data-issuable-id="121150884" data-register-path="/users/sign_up?redirect_to_referer=yes" data-sign-in-path="/users/sign_in?redirect_to_referer=yes" id="js-issuable-app">
+<div class="title-container">
+<h1 class="title page-title gl-font-size-h-display">Make manticore and manticore-tools depend on specific versions of buddy and backup</h1>
+</div>
+<div class="description">
+<div class="md"><p data-sourcepos="1:1-1:103" dir="auto">Now packages "manticore" and "manticore-tools" depend on just "manticore-backup" and "manticore-buddy":</p>&#x000A;<div class="gl-relative markdown-code-block js-markdown-code">&#x000A;<pre data-sourcepos="3:1-13:3" lang="plaintext" class="code highlight js-syntax-highlight language-plaintext" data-canonical-lang="" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">[root@d4861a449291 pkg]# rpm -qp --requires manticore-tools-5.0.3_230102.cab1cca1b-1.el7.centos.x86_64.rpm |grep manticore</span>&#x000A;<span id="LC2" class="line" lang="plaintext">manticore-backup</span>&#x000A;<span id="LC3" class="line" lang="plaintext"></span>&#x000A;<span id="LC4" class="line" lang="plaintext">[root@d4861a449291 pkg]# rpm -qp --requires manticore-5.0.3_230102.cab1cca1b-1.el7.centos.x86_64.rpm |grep manticore</span>&#x000A;<span id="LC5" class="line" lang="plaintext">manticore-buddy</span>&#x000A;<span id="LC6" class="line" lang="plaintext">manticore-devel = 5.0.3_230102.cab1cca1b-1.el7.centos</span>&#x000A;<span id="LC7" class="line" lang="plaintext">manticore-icudata</span>&#x000A;<span id="LC8" class="line" lang="plaintext">manticore-server = 5.0.3_230102.cab1cca1b-1.el7.centos</span>&#x000A;<span id="LC9" class="line" lang="plaintext">manticore-tools = 5.0.3_230102.cab1cca1b-1.el7.centos</span></code></pre>&#x000A;<copy-code></copy-code>&#x000A;</div>&#x000A;<p data-sourcepos="15:1-15:104" dir="auto">which means that yum will find the latest possible versions of "manticore-backup" and "manticore-buddy".</p>&#x000A;<p data-sourcepos="17:1-17:328" dir="auto">It may cause problems in future when one wants to install say Manticore 6 when there's already Manticore 7 available with newer versions of Buddy/Backup that are already not compatible with Manticore 6. To avoid this we need to make the packages depend on specific versions of buddy/backup like it's done for the other packages.</p>&#x000A;<p data-sourcepos="19:1-19:77" dir="auto">We can do it manually in the upcoming release branch by updating these lines:</p>&#x000A;<div class="gl-relative markdown-code-block js-markdown-code">&#x000A;<pre data-sourcepos="21:1-26:3" lang="plaintext" class="code highlight js-syntax-highlight language-plaintext" data-canonical-lang="" v-pre="true"><code><span id="LC1" class="line" lang="plaintext">➜  cmake git:(master) ✗ egrep -i "manticore-buddy|manticore-backup" -r *|egrep "DEPENDS|REQUIRES"</span>&#x000A;<span id="LC2" class="line" lang="plaintext">builds/CommonDeb.cmake:seta ( CPACK_DEBIAN_META_PACKAGE_DEPENDS "manticore-server (= ${CPACK_PACKAGE_VERSION}), manticore-tools (= ${CPACK_PACKAGE_VERSION}), manticore-dev (= ${CPACK_PACKAGE_VERSION}), manticore-icudata-65l, manticore-buddy" )</span>&#x000A;<span id="LC3" class="line" lang="plaintext">builds/CommonRpm.cmake:set ( CPACK_RPM_TOOLS_PACKAGE_REQUIRES "manticore-backup" )</span>&#x000A;<span id="LC4" class="line" lang="plaintext">builds/CommonRpm.cmake:set ( CPACK_RPM_META_PACKAGE_REQUIRES "manticore-server = ${MYVER}, manticore-tools = ${MYVER}, manticore-devel = ${MYVER}, manticore-icudata, manticore-buddy" )</span></code></pre>&#x000A;<copy-code></copy-code>&#x000A;</div>&#x000A;<p data-sourcepos="28:1-28:216" dir="auto">but it may be more convenient in future to maintain and integrate with <code>buddy_src.txt</code> and <code>backup_src.txt</code> as it was planned here <a href="https://docs.google.com/document/d/1UqZdKxsS8t7oKGgwwRY42aiuN08VTC5irg-6fgTiDrc/edit#" rel="nofollow noreferrer noopener" target="_blank">https://docs.google.com/document/d/1UqZdKxsS8t7oKGgwwRY42aiuN08VTC5irg-6fgTiDrc/edit#</a></p></div>
+</div>
+
+</div>
+<div class="js-issue-widgets">
+<div class="emoji-block emoji-block-sticky">
+<div class="row gl-m-0 gl-justify-content-space-between">
+<div class="js-noteable-awards">
+<div class="gl-display-flex gl-flex-wrap gl-justify-content-space-between gl-pt-3">
+<div data-can-award-emoji="true" data-path="/api/v4/projects/3858465/issues/3208/award_emoji" id="js-vue-awards-block"></div>
+
+</div>
+
+</div>
+<div class="new-branch-col gl-font-size-0 gl-my-2">
+<div class="create-mr-dropdown-wrap d-inline-block full-width-mobile js-create-mr" data-can-create-path="/manticoresearch/dev/-/issues/3208/can_create_branch" data-create-branch-path="/manticoresearch/dev/-/branches?branch_name=3208-make-manticore-and-manticore-tools-depend-on-specific-versions-of-buddy-and-backup&amp;format=json&amp;issue_iid=3208&amp;ref=master" data-create-mr-path="/manticoresearch/dev/-/merge_requests/new?merge_request%5Bissue_iid%5D=3208&amp;merge_request%5Bsource_branch%5D=3208-make-manticore-and-manticore-tools-depend-on-specific-versions-of-buddy-and-backup&amp;merge_request%5Btarget_branch%5D=master" data-is-confidential="false" data-project-id="3858465" data-project-path="manticoresearch/dev" data-refs-path="/manticoresearch/dev/refs?search=">
+<div class="btn-group unavailable">
+<button disabled="disabled" type="button" class="gl-button btn btn-md btn-default "><span class="gl-button-text">
+<span class="gl-spinner-container js-create-mr-spinner gl-button-icon gl-display-none" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+<span class="text">
+Checking branch availability…
+</span>
+
+</span>
+
+</button></div>
+<div class="btn-group available hidden">
+<button class="gl-button btn btn-md btn-confirm js-create-merge-request" data-action="create-mr" type="button"><span class="gl-button-text">
+<span class="gl-spinner-container js-create-mr-spinner js-spinner gl-display-none" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+Create merge request
+
+</span>
+
+</button><button class="gl-button btn btn-icon btn-md btn-confirm js-dropdown-toggle dropdown-toggle create-merge-request-dropdown-toggle" data-dropdown-trigger="#create-merge-request-dropdown" data-display="static" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="chevron-down-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#chevron-down"></use></svg>
+
+</button>
+<div class="droplab-dropdown">
+<ul class="create-merge-request-dropdown-menu dropdown-menu dropdown-menu-right gl-show-field-errors" data-dropdown id="create-merge-request-dropdown">
+<li class="droplab-item-selected" data-text="Create merge request" data-value="create-mr" role="button">
+<div class="menu-item text-nowrap">
+<svg class="s16 icon" data-testid="check-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#check"></use></svg>
+Create merge request and branch
+</div>
+</li>
+<li class="" data-text="Create branch" data-value="create-branch" role="button">
+<div class="menu-item">
+<svg class="s16 icon" data-testid="check-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#check"></use></svg>
+Create branch
+</div>
+</li>
+<li class="divider droplab-item-ignore"></li>
+<li class="droplab-item-ignore gl-ml-3 gl-mr-3 gl-mt-5">
+<div class="form-group">
+<label for="new-branch-name">
+Branch name
+</label>
+<input class="js-branch-name form-control gl-form-input" id="new-branch-name" placeholder="3208-make-manticore-and-manticore-tools-depend-on-specific-versions-of-buddy-and-backup" type="text" value="3208-make-manticore-and-manticore-tools-depend-on-specific-versions-of-buddy-and-backup">
+<span class="js-branch-message form-text"></span>
+</div>
+<div class="form-group">
+<label for="source-name">
+Source (branch or tag)
+</label>
+<input class="js-ref ref form-control gl-form-input" data-value="master" id="source-name" placeholder="master" type="text" value="master">
+<span class="js-ref-message form-text"></span>
+</div>
+<div class="form-group">
+<button class="gl-button btn btn-md btn-confirm js-create-target" data-action="create-mr" type="button"><span class="gl-button-text">
+Create merge request
+
+</span>
+
+</button></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="js-issue-widgets">
+
+<div class="js-design-management" data-issue-iid="3208" data-issue-path="/manticoresearch/dev/-/issues/3208" data-new-comment-template-path="/-/profile/comment_templates" data-project-path="manticoresearch/dev" data-register-path="/users/sign_up?redirect_to_referer=yes" data-sign-in-path="/users/sign_in?redirect_to_referer=yes"></div>
+
+<div class="js-work-item-links-root" data-full-path="manticoresearch/dev" data-issuable-id="121150884" data-issuable-iid="3208" data-register-path="/users/sign_up?redirect_to_referer=yes" data-sign-in-path="/users/sign_in?redirect_to_referer=yes" data-wi-full-path="manticoresearch/dev" data-wi-has-issuable-health-status-feature="false" data-wi-has-issue-weights-feature="false" data-wi-has-iterations-feature="false" data-wi-has-okrs-feature="false" data-wi-issues-list-path="/manticoresearch/dev/-/issues" data-wi-new-comment-template-path="/-/profile/comment_templates" data-wi-register-path="/users/sign_up?redirect_to_referer=yes" data-wi-report-abuse-path="/-/abuse_reports/add_category" data-wi-sign-in-path="/users/sign_in?redirect_to_referer=yes"></div>
+
+
+<div class="js-related-issues-root" data-can-add-related-issues="true" data-endpoint="/manticoresearch/dev/-/issues/3208/links" data-full-path="manticoresearch/dev" data-has-issue-weights-feature="false" data-has-iterations-feature="false" data-help-path="/help/user/project/issues/related_issues" data-report-abuse-path="/-/abuse_reports/add_category" data-show-categorized-issues="false"></div>
+
+<div data-endpoint="/api/v4/projects/3858465/issues/3208/related_merge_requests" data-project-namespace="manticoresearch" data-project-path="dev" id="js-related-merge-requests"></div>
+<div data-url="/manticoresearch/dev/-/issues/3208/related_branches" id="related-branches">
+</div>
+</div>
+<div class="js-issue-widgets">
+<section class="issuable-discussion js-vue-notes-event">
+<div data-can-add-timeline-events="true" data-current-user-data="{&quot;id&quot;:2801001,&quot;username&quot;:&quot;manticore_bot&quot;,&quot;name&quot;:&quot;manticore_bot&quot;,&quot;state&quot;:&quot;active&quot;,&quot;avatar_url&quot;:&quot;https://secure.gravatar.com/avatar/e5d8eaba32898b9b901210d0d5a8c383?s=80\u0026d=identicon&quot;,&quot;web_url&quot;:&quot;https://gitlab.com/manticore_bot&quot;,&quot;show_status&quot;:false,&quot;path&quot;:&quot;/manticore_bot&quot;,&quot;user_preference&quot;:{&quot;issue_notes_filter&quot;:0,&quot;merge_request_notes_filter&quot;:0,&quot;notes_filters&quot;:{&quot;Show all activity&quot;:0,&quot;Show comments only&quot;:1,&quot;Show history only&quot;:2},&quot;default_notes_filter&quot;:0,&quot;epic_notes_filter&quot;:0}}" data-new-comment-template-path="/-/profile/comment_templates" data-noteable-data="{&quot;id&quot;:121150884,&quot;iid&quot;:3208,&quot;description&quot;:&quot;Now packages \&quot;manticore\&quot; and \&quot;manticore-tools\&quot; depend on just \&quot;manticore-backup\&quot; and \&quot;manticore-buddy\&quot;:\n\n```\n[root@d4861a449291 pkg]# rpm -qp --requires manticore-tools-5.0.3_230102.cab1cca1b-1.el7.centos.x86_64.rpm |grep manticore\nmanticore-backup\n\n[root@d4861a449291 pkg]# rpm -qp --requires manticore-5.0.3_230102.cab1cca1b-1.el7.centos.x86_64.rpm |grep manticore\nmanticore-buddy\nmanticore-devel = 5.0.3_230102.cab1cca1b-1.el7.centos\nmanticore-icudata\nmanticore-server = 5.0.3_230102.cab1cca1b-1.el7.centos\nmanticore-tools = 5.0.3_230102.cab1cca1b-1.el7.centos\n```\n\nwhich means that yum will find the latest possible versions of \&quot;manticore-backup\&quot; and \&quot;manticore-buddy\&quot;.\n\nIt may cause problems in future when one wants to install say Manticore 6 when there&#39;s already Manticore 7 available with newer versions of Buddy/Backup that are already not compatible with Manticore 6. To avoid this we need to make the packages depend on specific versions of buddy/backup like it&#39;s done for the other packages.\n\nWe can do it manually in the upcoming release branch by updating these lines:\n\n```\n➜  cmake git:(master) ✗ egrep -i \&quot;manticore-buddy|manticore-backup\&quot; -r *|egrep \&quot;DEPENDS|REQUIRES\&quot;\nbuilds/CommonDeb.cmake:seta ( CPACK_DEBIAN_META_PACKAGE_DEPENDS \&quot;manticore-server (= ${CPACK_PACKAGE_VERSION}), manticore-tools (= ${CPACK_PACKAGE_VERSION}), manticore-dev (= ${CPACK_PACKAGE_VERSION}), manticore-icudata-65l, manticore-buddy\&quot; )\nbuilds/CommonRpm.cmake:set ( CPACK_RPM_TOOLS_PACKAGE_REQUIRES \&quot;manticore-backup\&quot; )\nbuilds/CommonRpm.cmake:set ( CPACK_RPM_META_PACKAGE_REQUIRES \&quot;manticore-server = ${MYVER}, manticore-tools = ${MYVER}, manticore-devel = ${MYVER}, manticore-icudata, manticore-buddy\&quot; )\n```\n\nbut it may be more convenient in future to maintain and integrate with `buddy_src.txt` and `backup_src.txt` as it was planned here https://docs.google.com/document/d/1UqZdKxsS8t7oKGgwwRY42aiuN08VTC5irg-6fgTiDrc/edit#&quot;,&quot;title&quot;:&quot;Make manticore and manticore-tools depend on specific versions of buddy and backup&quot;,&quot;time_estimate&quot;:0,&quot;total_time_spent&quot;:0,&quot;human_time_estimate&quot;:null,&quot;human_total_time_spent&quot;:null,&quot;state&quot;:&quot;closed&quot;,&quot;milestone_id&quot;:2976157,&quot;updated_by_id&quot;:2801001,&quot;created_at&quot;:&quot;2023-01-03T09:24:27Z&quot;,&quot;updated_at&quot;:&quot;2023-05-13T17:39:37Z&quot;,&quot;milestone&quot;:{&quot;id&quot;:2976157,&quot;iid&quot;:196,&quot;group_id&quot;:1843808,&quot;title&quot;:&quot;Feb 20 - 26 2023&quot;,&quot;description&quot;:&quot;&quot;,&quot;state&quot;:&quot;active&quot;,&quot;created_at&quot;:&quot;2023-02-06T12:07:00.311Z&quot;,&quot;updated_at&quot;:&quot;2023-02-06T12:07:00.311Z&quot;,&quot;due_date&quot;:&quot;2023-02-26&quot;,&quot;start_date&quot;:&quot;2023-02-20&quot;,&quot;expired&quot;:true,&quot;web_url&quot;:&quot;https://gitlab.com/groups/manticoresearch/-/milestones/196&quot;},&quot;labels&quot;:[{&quot;id&quot;:19623866,&quot;title&quot;:&quot;rel::upcoming&quot;,&quot;color&quot;:&quot;#009966&quot;,&quot;description&quot;:&quot;&quot;,&quot;group_id&quot;:1843808,&quot;project_id&quot;:null,&quot;template&quot;:false,&quot;text_color&quot;:&quot;#FFFFFF&quot;,&quot;created_at&quot;:&quot;2021-04-19T09:08:14.994Z&quot;,&quot;updated_at&quot;:&quot;2022-05-19T04:51:53.683Z&quot;}],&quot;lock_version&quot;:0,&quot;author_id&quot;:1458921,&quot;confidential&quot;:false,&quot;discussion_locked&quot;:null,&quot;assignees&quot;:[{&quot;id&quot;:1515333,&quot;username&quot;:&quot;klirichek&quot;,&quot;name&quot;:&quot;Aleksey N. Vinogradov&quot;,&quot;state&quot;:&quot;active&quot;,&quot;avatar_url&quot;:&quot;https://secure.gravatar.com/avatar/14592f8c1d949e382f6235a6129e3c5e?s=80\u0026d=identicon&quot;,&quot;web_url&quot;:&quot;https://gitlab.com/klirichek&quot;}],&quot;due_date&quot;:null,&quot;project_id&quot;:3858465,&quot;moved_to_id&quot;:null,&quot;duplicated_to_id&quot;:null,&quot;web_url&quot;:&quot;/manticoresearch/dev/-/issues/3208&quot;,&quot;current_user&quot;:{&quot;can_create_note&quot;:true,&quot;can_create_confidential_note&quot;:true,&quot;can_update&quot;:true,&quot;can_set_issue_metadata&quot;:true,&quot;can_award_emoji&quot;:true},&quot;create_note_path&quot;:&quot;/manticoresearch/dev/notes?target_id=121150884\u0026target_type=issue&quot;,&quot;preview_note_path&quot;:&quot;/manticoresearch/dev/preview_markdown?target_id=3208\u0026target_type=Issue&quot;,&quot;is_project_archived&quot;:false,&quot;issue_email_participants&quot;:[],&quot;type&quot;:&quot;ISSUE&quot;,&quot;blocked&quot;:false,&quot;blocked_by_issues&quot;:[]}" data-noteable-type="Issue" data-notes-data="{&quot;discussionsPath&quot;:&quot;/manticoresearch/dev/-/issues/3208/discussions.json&quot;,&quot;registerPath&quot;:&quot;/users/sign_in?redirect_to_referer=yes#register-pane&quot;,&quot;newSessionPath&quot;:&quot;/users/sign_in?redirect_to_referer=yes&quot;,&quot;markdownDocsPath&quot;:&quot;/help/user/markdown&quot;,&quot;quickActionsDocsPath&quot;:&quot;/help/user/project/quick_actions&quot;,&quot;closePath&quot;:&quot;/manticoresearch/dev/-/issues/3208.json?issue%5Bstate_event%5D=close&quot;,&quot;reopenPath&quot;:&quot;/manticoresearch/dev/-/issues/3208.json?issue%5Bstate_event%5D=reopen&quot;,&quot;notesPath&quot;:&quot;/manticoresearch/dev/noteable/issue/121150884/notes&quot;,&quot;prerenderedNotesCount&quot;:10,&quot;lastFetchedAt&quot;:1690405493000000,&quot;notesFilter&quot;:0}" data-notes-filter-value="0" data-notes-filters="{&quot;Show all activity&quot;:0,&quot;Show comments only&quot;:1,&quot;Show history only&quot;:2}" data-report-abuse-path="/-/abuse_reports/add_category" data-show-timeline-view-toggle="false" data-target-type="issue" id="js-vue-notes"></div>
+</section>
+
+</div>
+</div>
+<aside aria-label="issue" aria-live="polite" class="right-sidebar js-right-sidebar js-issuable-sidebar right-sidebar-expanded" data-always-show-toggle data-issuable-type="issue" data-signed-in>
+<div class="issuable-sidebar">
+<div class="issuable-sidebar-header">
+<button class="gl-button btn btn-md btn-default gutter-toggle float-right js-sidebar-toggle has-tooltip gl-shadow-none! gl-display-block" type="button" aria-label="Toggle sidebar" title="Collapse sidebar" data-container="body" data-placement="left" data-boundary="viewport" type="button"><span class="gl-button-text">
+<span class="js-sidebar-toggle-container gl-button-text" data-is-expanded="true"><svg class="s16 js-sidebar-expand hidden" data-testid="chevron-double-lg-left-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#chevron-double-lg-left"></use></svg><svg class="s16 js-sidebar-collapse " data-testid="chevron-double-lg-right-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#chevron-double-lg-right"></use></svg></span>
+
+</span>
+
+</button><div class="js-sidebar-todo-widget-root" data-id="121150884" data-iid="3208" data-project-path="manticoresearch/dev"></div>
+</div>
+<form class="issuable-context-form inline-update js-issuable-update" action="/manticoresearch/dev/-/issues/3208.json" accept-charset="UTF-8" data-remote="true" method="post"><div class="block assignee" data-qa-selector="assignee_block_container" data-testid="assignee-block-container">
+<div class="js-sidebar-assignees-root" data-directly-invite-members data-field="issue" data-max-assignees="1">
+<div class="title hide-collapsed">
+Assignee
+<span class="gl-spinner-container" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+</div>
+</div>
+<div class="js-sidebar-assignee-data selectbox hide-collapsed">
+<input type="hidden" name="issue[assignee_ids][]" value="1515333" data-avatar-url="https://secure.gravatar.com/avatar/14592f8c1d949e382f6235a6129e3c5e?s=80&amp;d=identicon" data-name="Aleksey N. Vinogradov" data-username="klirichek" autocomplete="off" />
+<div class="dropdown js-sidebar-assignee-dropdown"><button class="dropdown-menu-toggle js-user-search js-author-search js-multiselect js-save-user-data js-invite-members-track" type="button" data-first-user="manticore_bot" data-current-user="true" data-iid="3208" data-issuable-type="issue" data-project-id="3858465" data-author-id="1458921" data-field-name="issue[assignee_ids][]" data-issue-update="/manticoresearch/dev/-/issues/3208.json" data-ability-name="issue" data-null-user="true" data-display="static" data-multi-select="true" data-dropdown-title="Select assignee" data-dropdown-header="Assignee" data-max-select="1" data-track-action="show_invite_members" data-track-label="edit_assignee" data-toggle="dropdown"><span class="dropdown-toggle-text ">Select assignee</span><svg class="s16 dropdown-menu-toggle-icon" data-testid="chevron-down-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#chevron-down"></use></svg></button><div class="dropdown-menu dropdown-select dropdown-menu-user dropdown-menu-selectable dropdown-menu-author dropdown-extended-height"><div class="dropdown-title gl-display-flex"><span class="gl-ml-auto">Assign to</span><button class="dropdown-title-button dropdown-menu-close gl-ml-auto" aria-label="Close" type="button"><svg class="s16 dropdown-menu-close-icon" data-testid="close-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#close"></use></svg></button></div><div class="dropdown-input"><input type="search" data-qa-selector="dropdown_input_field" class="dropdown-input-field" placeholder="Search users" autocomplete="off" /><svg class="s16 dropdown-input-search" data-testid="search-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#search"></use></svg><svg class="s16 dropdown-input-clear js-dropdown-input-clear" data-testid="close-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#close"></use></svg></div><div data-qa-selector="dropdown_list_content" class="dropdown-content "></div><div class="dropdown-footer"><ul class="dropdown-footer-list">
+<li>
+<div class="js-invite-members-trigger" data-display-text="Invite Members" data-trigger-element="anchor" data-trigger-source="issue-assignee-dropdown"></div>
+</li>
+</ul>
+</div><div class="dropdown-loading"><div class="gl-spinner-container gl-mt-7" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-md gl-spinner-dark gl-vertical-align-text-bottom!"></span></div></div></div></div>
+</div>
+
+</div>
+<div class="block js-epics-sidebar-callout promotion-issue-sidebar" data-uid="promote_epics_sidebar_dismissed">
+<div class="sidebar-collapsed-icon" data-target=".js-epics-sidebar-callout" data-toggle="dropdown">
+<span data-container="body" data-placement="left" data-toggle="tooltip" title="Epic">
+<svg class="s16" data-testid="epic-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#epic"></use></svg>
+<span>
+None
+</span>
+</span>
+</div>
+<div class="title hide-collapsed">
+Epic
+</div>
+<div class="dropdown">
+<div class="dropdown-menu promotion-issue-sidebar-message">
+<div class="dropdown-title gl-display-flex">
+<span class="gl-ml-auto">
+Epic
+</span>
+<button aria-label="Close" class="dropdown-title-button dropdown-menu-close gl-ml-auto" type="button">
+<svg class="s16 dropdown-menu-close-icon" data-testid="close-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#close"></use></svg>
+</button>
+</div>
+<div>
+<p>
+Epics let you manage your portfolio of projects more efficiently and with less effort by tracking groups of issues that share a theme, across projects and milestones.
+<a class="btn-link" target="_blank" rel="noopener noreferrer" href="https://gitlab.com/help/user/group/epics/index">Read more</a>
+</p>
+<div class="gl-flex-wrap">
+<p>Contact an owner of group manticoresearch to upgrade the plan.</p>
+
+<a class="gl-button btn btn-md btn-default js-close js-close-callout gl-mt-2" href="#"><span class="gl-button-text">
+Don&#39;t show me this again
+</span>
+
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="hide-collapsed">
+This feature is locked.
+<a class="btn-link" data-toggle="dropdown" data-target=".js-epics-sidebar-callout" data-display="static" href="#">Upgrade plan</a>
+</div>
+</div>
+
+
+<div class="js-sidebar-labels-widget-root" data-allow-label-create="true" data-allow-scoped-labels="false" data-can-edit="true" data-iid="3208" data-issuable-type="issue" data-labels-fetch-path="/manticoresearch/dev/-/labels.json?include_ancestor_groups=true" data-labels-manage-path="/manticoresearch/dev/-/labels" data-project-issues-path="/manticoresearch/dev/-/issues" data-project-path="manticoresearch/dev" data-selected-labels="[{&quot;id&quot;:19623866,&quot;title&quot;:&quot;rel::upcoming&quot;,&quot;color&quot;:&quot;#009966&quot;,&quot;description&quot;:&quot;&quot;,&quot;group_id&quot;:1843808,&quot;project_id&quot;:null,&quot;template&quot;:false,&quot;text_color&quot;:&quot;#FFFFFF&quot;,&quot;created_at&quot;:&quot;2021-04-19T09:08:14.994Z&quot;,&quot;updated_at&quot;:&quot;2022-05-19T04:51:53.683Z&quot;}]"></div>
+<div class="block milestone gl-border-b-0!" data-qa-selector="milestone_block" data-testid="sidebar-milestones">
+<div class="js-sidebar-milestone-widget-root" data-can-edit="true" data-issue-iid="3208" data-project-path="manticoresearch/dev"></div>
+</div>
+<div class="block gl-collapse-empty" data-testid="iteration_container"></div>
+<div class="block js-weight-sidebar-callout promotion-issue-sidebar" data-uid="promote_weight_sidebar_dismissed">
+<div class="sidebar-collapsed-icon" data-target=".js-weight-sidebar-callout" data-toggle="dropdown">
+<span data-container="body" data-placement="left" data-toggle="tooltip" title="Weight">
+<svg class="s16" data-testid="scale-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#scale"></use></svg>
+<span>No</span>
+</span>
+</div>
+<div class="title hide-collapsed">
+Weight
+</div>
+<div class="hide-collapsed js-toggle-container promotion-issue-weight-sidebar-message">
+This feature is locked.
+<a class="btn-link js-toggle-button js-weight-sidebar-callout-btn" href="#">
+Learn more
+<svg class="s16 js-sidebar-collapse hidden" data-testid="chevron-up-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#chevron-up"></use></svg>
+<svg class="s16 js-sidebar-expand" data-testid="chevron-down-icon"><use href="/assets/icons-5af6a635d810e1104f2def09ede3ada64866640a56f75b704457f18be086e881.svg#chevron-down"></use></svg>
+</a>
+<div class="js-toggle-content" style="display: none">
+<div>
+<h4>
+Weighting your issue
+</h4>
+<p>
+<img class="w-100 box-shadow-default lazy" data-src="/assets/promotions/img-paid-feature-weight-sidebar-fc9e2c924b3d18f097776fd74202e4b2d55bd1dd678737e5c64e61d8ec6fc8a6.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+</p>
+<p>
+When you have a lot of issues, it can be hard to get an overview. By adding a weight to your issues, you can get a better idea of the effort, cost, required time, or value of each, and so better manage them.
+</p>
+<p>
+See the other features in the <a href="https://about.gitlab.com/pricing/" target="_blank" class="btn-link tr-issue-weights-bronze-features-cta">Premium plan</a>
+</p>
+<div>
+<p>Contact an owner of group manticoresearch to upgrade the plan.</p>
+
+<a class="gl-button btn btn-md btn-default js-close js-close-callout gl-mt-3 js-close-session tr-issue-weights-not-now-cta" href="#"><span class="gl-button-text">
+Not now, thanks!
+</span>
+
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="js-sidebar-due-date-widget-root"></div>
+<div class="js-sidebar-time-tracking-root block">
+<!-- / Fallback while content is loading -->
+<div class="title hide-collapsed">
+Time tracking
+<span class="gl-spinner-container" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+</div>
+</div>
+<script id="js-confidential-issue-data" type="application/json">{"is_confidential":false,"is_editable":true}</script>
+<div class="js-sidebar-confidential-widget-root"></div>
+
+<div class="js-sidebar-participants-widget-root"></div>
+<div class="block">
+<div class="js-sidebar-move-issue-block" data-issue-iid="3208" data-project-full-path="manticoresearch/dev"></div>
+</div>
+</form><script class="js-sidebar-options" type="application/json">{"endpoint":"/manticoresearch/dev/-/issues/3208.json?serializer=sidebar_extras","toggleSubscriptionEndpoint":"/manticoresearch/dev/-/issues/3208/toggle_subscription","moveIssueEndpoint":"/manticoresearch/dev/-/issues/3208/move","projectsAutocompleteEndpoint":"/-/autocomplete/projects?project_id=3858465","editable":"true","currentUser":{"id":2801001,"username":"manticore_bot","name":"manticore_bot","state":"active","avatar_url":"https://secure.gravatar.com/avatar/e5d8eaba32898b9b901210d0d5a8c383?s=80\u0026d=identicon","web_url":"https://gitlab.com/manticore_bot","todo":null,"can_edit":true,"can_move":true,"can_admin_label":true,"can_create_timelogs":true},"rootPath":"/","fullPath":"manticoresearch/dev","iid":3208,"id":121150884,"severity":"unknown","timeTrackingLimitToHours":true,"canCreateTimelogs":true,"createNoteEmail":"incoming+manticoresearch-dev-3858465-mmsnmd94hewpkuvm2gv62lwo-issue-3208@incoming.gitlab.com","issuableType":"issue","weightOptions":["None","Any",0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],"weightNoneValue":"None"}</script>
+</div>
+</aside>
+
+
+
+
+</main>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script nonce="ehJxdgwStP/UlwxfSN7+nw==">
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    if (imgUrl.indexOf('/avatar/') > -1 && imgUrl.indexOf('?') === -1) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js_lazy_loaded_content';
+  });
+}
+
+//]]>
+</script>
+<script nonce="ehJxdgwStP/UlwxfSN7+nw==">
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+</body>
+</html>
+
