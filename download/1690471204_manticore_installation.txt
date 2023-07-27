@@ -1,0 +1,133 @@
+Build from source on Centos 7
+
+https://manual.manticoresearch.com/Installation/Compiling_from_sources
+
+Download Manticore
+
+In /opt folder:
+wget -c https://repo.manticoresearch.com/repository/manticoresearch_source/release/manticore-3.5.2-200722-6903305-release.tar.gz
+tar -zxf manticore-3.5.2-*.tar.gz
+rename manticore-3.5.2-* to manticore
+
+or get from github in /opt folder
+
+git clone --depth 1 https://github.com/manticoresoftware/manticoresearch.git
+
+cd /opt/manticoresearch
+
+wget http://snowball.tartarus.org/dist/libstemmer_c.tgz
+tar -xvf libstemmer_c.tgz
+
+yum install libmariadb-dev mariadb-devel libmysqlclient-dev mysql-devel
+yum install re2
+yum install gcc gcc-c++ make expat-devel libicu-devel openssl-devel boost-devel rpm-build systemd-units
+yum install cmake (if installs lower than 3.13 version use:
+
+cd /opt
+
+We take Cmake 3.17 as currently Manticore builds with that version well although 3.19 version is available - it does not build with it yet. This will change on later releases.
+ wget https://cmake.org/files/v3.17/cmake-3.17.3.tar.gz
+
+ tar -zxf cmake-3.17.3.tar.gz
+
+cd /opt/cmake-3.17.3
+
+(Note: the make install step is optional, cmake will run from the build directory just fine.) 
+
+  ./bootstrap
+  make
+#Optional, skipped this step, cmake is built in bin folder and that is enough:
+  make install
+
+
+The installation directory is usually left at its default, which is /usr/local and usually better not to install here. It is possible to specify a different installation directory by adding 
+
+-DCMAKE_INSTALL_PREFIX=/usr/local/manticore to the CMake command line.
+
+As for precompiling the configuration, this was actually done in the /build directory in 
+
+cd /opt/manticoresearch 
+
+mkdir build && cd build
+
+/opt/cmake-3.17.3/bin/cmake -S /opt/manticoresearch -DWITH_MYSQL=1 -DWITH_RE2=1 -DWITH_STEMMER=1 -DCMAKE_INSTALL_PREFIX=/usr/local/manticore
+
+to set the source as was recommended in the documentation combined with the flags.
+
+Create a folder /usr/local/manticore
+
+cd /usr/local
+
+mkdir manticore
+
+After cmake completed the precompile, within the same build/ directory to actually install was done with:
+
+make -j8
+
+ and 
+
+run installation on current server (j4 uses 4 processors j8 uses 8 processors)
+
+make -j8 install
+
+This installs Manticore in /usr/local/manticore
+
+Check the version:
+
+cd /usr/local/manticore/usr/bin
+
+./searchd -v
+Manticore 3.5.3 0709fc5b@201119 dev
+Copyright (c) 2001-2016, Andrew Aksyonoff
+Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Copyright (c) 2017-2020, Manticore Software LTD (http://manticoresearch.com)
+
+
+
+/usr/local/manticore/usr/bin/searchd --config /usr/local/manticore/etc/manticoresearch/manticore.conf --stop
+
+/usr/local/manticore/usr/bin/indexer --config /usr/local/manticore/etc/manticoresearch/manticore.conf --rotate pages
+
+
+To install searchd as a service:
+The example was taken from https://github.com/manticoresoftware/manticoresearch/blob/master/dist/rpm/manticore.service.in and modified to suit Centos 7:
+
+/etc/systemd/system create a file searchd-server.service
+and enter in the file:
+
+[Unit]
+Description=Manticore Search Engine
+After=network.target remote-fs.target nss-lookup.target
+After=syslog.target
+
+[Service]
+Type=forking
+User=root
+Group=root
+ExecStart=/usr/local/manticore/usr/bin/searchd --config /usr/local/manticore/etc/manticoresearch/manticore.conf
+ExecStop=/usr/local/manticore/usr/bin/searchd --config /usr/local/manticore/etc/manticoresearch/manticore.conf --stopwait
+KillMode=process
+KillSignal=SIGTERM
+SendSIGKILL=no
+LimitNOFILE=65536
+LimitCORE=infinity
+Restart=on-failure
+TimeoutStartSec=0
+PIDFile=/usr/local/manticore/var/run/manticore/searchd.pid
+
+[Install]
+WantedBy=multi-user.target
+Alias=manticore.service
+Alias=manticoresearch.service
+
+
+Then run:
+
+systemctl enable searchd-server
+systemctl start searchd-server
+systemctl status searchd-server
+
+
+Check indexes is searchd failed or Main+Delta merge failed:
+
+/usr/local/manticore/usr/bin/indextool  --config /usr/local/manticore/etc/manticoresearch/manticore.conf   --check pages
