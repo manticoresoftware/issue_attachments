@@ -1,0 +1,1081 @@
+$ k logs -f helm-manticoresearch-worker-0
+Install extra packages
+--2023-06-28 14:31:50--  http://repo.manticoresearch.com/repository/manticoresearch_focal_dev/dists/focal/main/binary-amd64/manticore-executor_0.7.1-23042814-46b67b8_amd64.deb
+Resolving repo.manticoresearch.com (repo.manticoresearch.com)... 49.12.119.254
+Connecting to repo.manticoresearch.com (repo.manticoresearch.com)|49.12.119.254|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8119060 (7.7M) [application/octet-stream]
+Saving to: ‘/var/lib/manticore/.extra/manticore-executor_0.7.1-23042814-46b67b8_amd64.deb’
+
+     0K .......... .......... .......... .......... ..........  0%  708K 11s
+    50K .......... .......... .......... .......... ..........  1% 1.39M 8s
+   100K .......... .......... .......... .......... ..........  1% 7.35M 6s
+   150K .......... .......... .......... .......... ..........  2% 1.70M 5s
+   200K .......... .......... .......... .......... ..........  3%  222M 4s
+   250K .......... .......... .......... .......... ..........  3% 7.87M 4s
+   300K .......... .......... .......... .......... ..........  4% 34.6M 3s
+   350K .......... .......... .......... .......... ..........  5%  358M 3s
+   400K .......... .......... .......... .......... ..........  5% 1.84M 3s
+   450K .......... .......... .......... .......... ..........  6% 28.6M 3s
+   500K .......... .......... .......... .......... ..........  6%  390M 2s
+   550K .......... .......... .......... .......... ..........  7% 8.81M 2s
+   600K .......... .......... .......... .......... ..........  8% 97.3M 2s
+   650K .......... .......... .......... .......... ..........  8% 53.2M 2s
+   700K .......... .......... .......... .......... ..........  9% 24.3M 2s
+   750K .......... .......... .......... .......... .......... 10% 37.9M 2s
+   800K .......... .......... .......... .......... .......... 10% 2.13M 2s
+   850K .......... .......... .......... .......... .......... 11%  304M 2s
+   900K .......... .......... .......... .......... .......... 11% 30.0M 2s
+   950K .......... .......... .......... .......... .......... 12%  338M 1s
+  1000K .......... .......... .......... .......... .......... 13% 99.7M 1s
+  1050K .......... .......... .......... .......... .......... 13% 49.2M 1s
+  1100K .......... .......... .......... .......... .......... 14% 8.39M 1s
+  1150K .......... .......... .......... .......... .......... 15% 57.1M 1s
+  1200K .......... .......... .......... .......... .......... 15%  108M 1s
+  1250K .......... .......... .......... .......... .......... 16%  148M 1s
+  1300K .......... .......... .......... .......... .......... 17%  292M 1s
+  1350K .......... .......... .......... .......... .......... 17% 55.4M 1s
+  1400K .......... .......... .......... .......... .......... 18% 2.00M 1s
+  1450K .......... .......... .......... .......... .......... 18%  127M 1s
+  1500K .......... .......... .......... .......... .......... 19% 77.5M 1s
+  1550K .......... .......... .......... .......... .......... 20% 99.0M 1s
+  1600K .......... .......... .......... .......... .......... 20% 55.0M 1s
+  1650K .......... .......... .......... .......... .......... 21% 63.1M 1s
+  1700K .......... .......... .......... .......... .......... 22% 9.08M 1s
+  1750K .......... .......... .......... .......... .......... 22%  136M 1s
+  1800K .......... .......... .......... .......... .......... 23% 76.6M 1s
+  1850K .......... .......... .......... .......... .......... 23% 72.7M 1s
+  1900K .......... .......... .......... .......... .......... 24% 52.8M 1s
+  1950K .......... .......... .......... .......... .......... 25%  138M 1s
+  2000K .......... .......... .......... .......... .......... 25% 1.99M 1s
+  2050K .......... .......... .......... .......... .......... 26%  134M 1s
+  2100K .......... .......... .......... .......... .......... 27%  111M 1s
+  2150K .......... .......... .......... .......... .......... 27% 44.8M 1s
+  2200K .......... .......... .......... .......... .......... 28%  126M 1s
+  2250K .......... .......... .......... .......... .......... 29%  101M 1s
+  2300K .......... .......... .......... .......... .......... 29% 9.76M 1s
+  2350K .......... .......... .......... .......... .......... 30%  131M 1s
+  2400K .......... .......... .......... .......... .......... 30% 74.8M 1s
+  2450K .......... .......... .......... .......... .......... 31% 58.3M 1s
+  2500K .......... .......... .......... .......... .......... 32%  163M 1s
+  2550K .......... .......... .......... .......... .......... 32% 72.0M 1s
+  2600K .......... .......... .......... .......... .......... 33% 15.8M 1s
+  2650K .......... .......... .......... .......... .......... 34% 2.17M 1s
+  2700K .......... .......... .......... .......... .......... 34%  133M 1s
+  2750K .......... .......... .......... .......... .......... 35%  141M 1s
+  2800K .......... .......... .......... .......... .......... 35%  107M 1s
+  2850K .......... .......... .......... .......... .......... 36% 58.9M 1s
+  2900K .......... .......... .......... .......... .......... 37%  154M 1s
+  2950K .......... .......... .......... .......... .......... 37% 9.33M 1s
+  3000K .......... .......... .......... .......... .......... 38%  150M 1s
+  3050K .......... .......... .......... .......... .......... 39% 52.7M 1s
+  3100K .......... .......... .......... .......... .......... 39%  101M 0s
+  3150K .......... .......... .......... .......... .......... 40% 51.3M 0s
+  3200K .......... .......... .......... .......... .......... 40% 59.8M 0s
+  3250K .......... .......... .......... .......... .......... 41%  117M 0s
+  3300K .......... .......... .......... .......... .......... 42% 2.02M 0s
+  3350K .......... .......... .......... .......... .......... 42%  140M 0s
+  3400K .......... .......... .......... .......... .......... 43%  104M 0s
+  3450K .......... .......... .......... .......... .......... 44% 63.1M 0s
+  3500K .......... .......... .......... .......... .......... 44% 88.4M 0s
+  3550K .......... .......... .......... .......... .......... 45%  118M 0s
+  3600K .......... .......... .......... .......... .......... 46% 9.04M 0s
+  3650K .......... .......... .......... .......... .......... 46%  131M 0s
+  3700K .......... .......... .......... .......... .......... 47% 49.5M 0s
+  3750K .......... .......... .......... .......... .......... 47% 88.3M 0s
+  3800K .......... .......... .......... .......... .......... 48% 76.9M 0s
+  3850K .......... .......... .......... .......... .......... 49%  141M 0s
+  3900K .......... .......... .......... .......... .......... 49% 63.0M 0s
+  3950K .......... .......... .......... .......... .......... 50% 16.6M 0s
+  4000K .......... .......... .......... .......... .......... 51% 2.23M 0s
+  4050K .......... .......... .......... .......... .......... 51% 71.9M 0s
+  4100K .......... .......... .......... .......... .......... 52%  120M 0s
+  4150K .......... .......... .......... .......... .......... 52% 68.3M 0s
+  4200K .......... .......... .......... .......... .......... 53% 59.2M 0s
+  4250K .......... .......... .......... .......... .......... 54% 16.4M 0s
+  4300K .......... .......... .......... .......... .......... 54% 13.8M 0s
+  4350K .......... .......... .......... .......... .......... 55% 91.0M 0s
+  4400K .......... .......... .......... .......... .......... 56%  115M 0s
+  4450K .......... .......... .......... .......... .......... 56% 82.7M 0s
+  4500K .......... .......... .......... .......... .......... 57% 46.8M 0s
+  4550K .......... .......... .......... .......... .......... 58% 89.5M 0s
+  4600K .......... .......... .......... .......... .......... 58%  130M 0s
+  4650K .......... .......... .......... .......... .......... 59% 60.5M 0s
+  4700K .......... .......... .......... .......... .......... 59% 2.18M 0s
+  4750K .......... .......... .......... .......... .......... 60%  152M 0s
+  4800K .......... .......... .......... .......... .......... 61% 99.8M 0s
+  4850K .......... .......... .......... .......... .......... 61%  102M 0s
+  4900K .......... .......... .......... .......... .......... 62%  149M 0s
+  4950K .......... .......... .......... .......... .......... 63% 52.2M 0s
+  5000K .......... .......... .......... .......... .......... 63% 16.0M 0s
+  5050K .......... .......... .......... .......... .......... 64% 9.55M 0s
+  5100K .......... .......... .......... .......... .......... 64%  174M 0s
+  5150K .......... .......... .......... .......... .......... 65% 85.4M 0s
+  5200K .......... .......... .......... .......... .......... 66% 34.3M 0s
+  5250K .......... .......... .......... .......... .......... 66%  145M 0s
+  5300K .......... .......... .......... .......... .......... 67%  169M 0s
+  5350K .......... .......... .......... .......... .......... 68% 66.3M 0s
+  5400K .......... .......... .......... .......... .......... 68% 74.6M 0s
+  5450K .......... .......... .......... .......... .......... 69% 2.29M 0s
+  5500K .......... .......... .......... .......... .......... 69%  116M 0s
+  5550K .......... .......... .......... .......... .......... 70% 75.0M 0s
+  5600K .......... .......... .......... .......... .......... 71%  128M 0s
+  5650K .......... .......... .......... .......... .......... 71% 81.6M 0s
+  5700K .......... .......... .......... .......... .......... 72% 75.7M 0s
+  5750K .......... .......... .......... .......... .......... 73% 58.3M 0s
+  5800K .......... .......... .......... .......... .......... 73% 6.12M 0s
+  5850K .......... .......... .......... .......... .......... 74%  119M 0s
+  5900K .......... .......... .......... .......... .......... 75% 73.4M 0s
+  5950K .......... .......... .......... .......... .......... 75%  109M 0s
+  6000K .......... .......... .......... .......... .......... 76% 90.5M 0s
+  6050K .......... .......... .......... .......... .......... 76% 75.9M 0s
+  6100K .......... .......... .......... .......... .......... 77% 47.0M 0s
+  6150K .......... .......... .......... .......... .......... 78%  117M 0s
+  6200K .......... .......... .......... .......... .......... 78%  114M 0s
+  6250K .......... .......... .......... .......... .......... 79% 2.39M 0s
+  6300K .......... .......... .......... .......... .......... 80%  135M 0s
+  6350K .......... .......... .......... .......... .......... 80% 82.7M 0s
+  6400K .......... .......... .......... .......... .......... 81%  181M 0s
+  6450K .......... .......... .......... .......... .......... 81% 68.6M 0s
+  6500K .......... .......... .......... .......... .......... 82% 59.4M 0s
+  6550K .......... .......... .......... .......... .......... 83% 69.9M 0s
+  6600K .......... .......... .......... .......... .......... 83%  145M 0s
+  6650K .......... .......... .......... .......... .......... 84% 5.17M 0s
+  6700K .......... .......... .......... .......... .......... 85%  164M 0s
+  6750K .......... .......... .......... .......... .......... 85% 59.4M 0s
+  6800K .......... .......... .......... .......... .......... 86% 76.3M 0s
+  6850K .......... .......... .......... .......... .......... 87% 86.6M 0s
+  6900K .......... .......... .......... .......... .......... 87%  125M 0s
+  6950K .......... .......... .......... .......... .......... 88% 77.4M 0s
+  7000K .......... .......... .......... .......... .......... 88% 50.7M 0s
+  7050K .......... .......... .......... .......... .......... 89% 16.1M 0s
+  7100K .......... .......... .......... .......... .......... 90% 2.93M 0s
+  7150K .......... .......... .......... .......... .......... 90%  119M 0s
+  7200K .......... .......... .......... .......... .......... 91% 69.3M 0s
+  7250K .......... .......... .......... .......... .......... 92% 65.5M 0s
+  7300K .......... .......... .......... .......... .......... 92%  124M 0s
+  7350K .......... .......... .......... .......... .......... 93%  109M 0s
+  7400K .......... .......... .......... .......... .......... 93% 45.6M 0s
+  7450K .......... .......... .......... .......... .......... 94%  290M 0s
+  7500K .......... .......... .......... .......... .......... 95% 5.35M 0s
+  7550K .......... .......... .......... .......... .......... 95% 77.6M 0s
+  7600K .......... .......... .......... .......... .......... 96%  108M 0s
+  7650K .......... .......... .......... .......... .......... 97% 81.9M 0s
+  7700K .......... .......... .......... .......... .......... 97%  130M 0s
+  7750K .......... .......... .......... .......... .......... 98% 43.9M 0s
+  7800K .......... .......... .......... .......... .......... 99% 65.6M 0s
+  7850K .......... .......... .......... .......... .......... 99%  139M 0s
+  7900K .......... .......... ........                        100% 4.48M=0.6s
+
+2023-06-28 14:31:51 (13.8 MB/s) - ‘/var/lib/manticore/.extra/manticore-executor_0.7.1-23042814-46b67b8_amd64.deb’ saved [8119060/8119060]
+
+Columnar version mismatch
+Lib columnar not installed
+Secondary columnar not installed
+--2023-06-28 14:31:52--  http://repo.manticoresearch.com/repository/manticoresearch_focal_dev/dists/focal/main/binary-amd64/manticore-columnar-lib_2.0.5-230529-d593e0d_amd64.deb
+Resolving repo.manticoresearch.com (repo.manticoresearch.com)... 49.12.119.254
+Connecting to repo.manticoresearch.com (repo.manticoresearch.com)|49.12.119.254|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1461056 (1.4M) [application/octet-stream]
+Saving to: ‘/tmp/manticore-columnar-lib_2.0.5-230529-d593e0d_amd64.deb’
+
+     0K .......... .......... .......... .......... ..........  3%  710K 2s
+    50K .......... .......... .......... .......... ..........  7% 1.40M 1s
+   100K .......... .......... .......... .......... .......... 10% 3.72M 1s
+   150K .......... .......... .......... .......... .......... 14% 2.20M 1s
+   200K .......... .......... .......... .......... .......... 17% 85.6M 1s
+   250K .......... .......... .......... .......... .......... 21% 5.22M 1s
+   300K .......... .......... .......... .......... .......... 24% 42.3M 0s
+   350K .......... .......... .......... .......... .......... 28% 3.83M 0s
+   400K .......... .......... .......... .......... .......... 31% 4.76M 0s
+   450K .......... .......... .......... .......... .......... 35% 16.3M 0s
+   500K .......... .......... .......... .......... .......... 38% 7.62M 0s
+   550K .......... .......... .......... .......... .......... 42% 24.0M 0s
+   600K .......... .......... .......... .......... .......... 45% 28.4M 0s
+   650K .......... .......... .......... .......... .......... 49% 32.2M 0s
+   700K .......... .......... .......... .......... .......... 52%  170M 0s
+   750K .......... .......... .......... .......... .......... 56% 19.5M 0s
+   800K .......... .......... .......... .......... .......... 59% 3.03M 0s
+   850K .......... .......... .......... .......... .......... 63% 23.2M 0s
+   900K .......... .......... .......... .......... .......... 66% 38.8M 0s
+   950K .......... .......... .......... .......... .......... 70%  126M 0s
+  1000K .......... .......... .......... .......... .......... 73% 68.6M 0s
+  1050K .......... .......... .......... .......... .......... 77% 5.19M 0s
+  1100K .......... .......... .......... .......... .......... 80%  141M 0s
+  1150K .......... .......... .......... .......... .......... 84% 47.9M 0s
+  1200K .......... .......... .......... .......... .......... 87% 95.4M 0s
+  1250K .......... .......... .......... .......... .......... 91%  100M 0s
+  1300K .......... .......... .......... .......... .......... 94%  118M 0s
+  1350K .......... .......... .......... .......... .......... 98% 2.57M 0s
+  1400K .......... .......... ......                          100% 4.00M=0.3s
+
+2023-06-28 14:31:52 (5.56 MB/s) - ‘/tmp/manticore-columnar-lib_2.0.5-230529-d593e0d_amd64.deb’ saved [1461056/1461056]
+
+Mount success
+2023-06-28 14:31:52,656 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-28 14:31:52,659 INFO RPC interface 'supervisor' initialized
+2023-06-28 14:31:52,659 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-06-28 14:31:52,660 INFO supervisord started with pid 65
+2023-06-28 14:31:53,664 INFO spawned: 'quorum_recover' with pid 67
+2023-06-28 14:31:53,666 INFO spawned: 'searchd_replica' with pid 68
+localhost - 2023-06-28 14:31:53 - 3 - Replication mode: master-slave
+localhost - 2023-06-28 14:31:53 - 3 - Pods count 0
+localhost - 2023-06-28 14:31:53 - 3 - One pod
+2023-06-28 14:31:53,861 INFO spawned: 'searchd' with pid 73
+[Wed Jun 28 14:31:53.881 2023] [73] using config file '/etc/manticoresearch/manticore.conf' (711 chars)...
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'network_timeout' - nothing specified, using default value 5000000
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'client_timeout' - nothing specified, using default value 300000000
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: SetMaxChildrenThreads to 8
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'read_buffer_docs' - nothing specified, using default value 262144
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'read_buffer_hits' - nothing specified, using default value 262144
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'max_packet_size' - nothing specified, using default value 8388608
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+[Wed Jun 28 14:31:53.882 2023] [73] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'query_log_min_msec' - nothing specified, using default value 0
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'net_wait_tm' - nothing specified, using default value -1
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+[Wed Jun 28 14:31:53.883 2023] [73] DEBUG: current working directory changed to '/var/lib/manticore'
+DEBUG: StartGlobalWorkpool
+starting daemon version '6.0.5 844b1ae81@230606 dev (columnar 2.0.5 d593e0d@230529) (secondary 2.0.5 d593e0d@230529)' ...
+listening on UNIX socket /var/run/mysqld/mysqld.sock
+listening on all interfaces for mysql, port=9306
+listening on all interfaces for sphinx and http(s), port=9308
+listening on all interfaces for VIP mysql, port=9301
+listening on 172.17.0.4:9312 for sphinx and http(s)
+DEBUG: Frame expression stack for creation is 16 (mocked, as no env MANTICORE_KNOWN_CREATE_SIZE=16 found)
+DEBUG: Starting expression stack for creation is 2976 (mocked, as no env MANTICORE_START_KNOWN_CREATE_SIZE=2976 found)
+DEBUG: Frame expression stack for eval/deletion is 32 (mocked, as no env MANTICORE_KNOWN_EXPR_SIZE=32 found)
+DEBUG: Starting expression stack for eval/deletion is 104 (mocked, as no env MANTICORE_START_KNOWN_EXPR_SIZE=104 found)
+DEBUG: Frame filter stack delta is 224 (mocked, as no env MANTICORE_KNOWN_FILTER_SIZE=224 found)
+DEBUG: Starting filter stack delta is 11392 (mocked, as no env MANTICORE_START_KNOWN_FILTER_SIZE=11392 found)
+DEBUG: Frame fulltext match stack delta is 336 (mocked, as no env MANTICORE_KNOWN_MATCH_SIZE=336 found)
+DEBUG: Starting fulltext match stack delta is 14408 (mocked, as no env MANTICORE_START_KNOWN_MATCH_SIZE=14408 found)
+DEBUG: 'rt_flush_period' - nothing specified, using default value 36000000000
+RPL: 0 clusters loaded from config
+DEBUG: no valid tables to serve
+DEBUG: 'binlog_max_log_size' - nothing specified, using default value 268435456
+DEBUG: MAC address 02:42:ac:11:00:04 for uuid-short server_id
+DEBUG: uid-short server_id 75, started 131293913, seed 5406522299182481408
+DEBUG: SaveMeta: Done (/var/lib/manticore/binlog.meta.new)
+prereading 0 tables
+preread 0 tables in 0.000 sec
+DEBUG: dlopen(libcurl.so.4)=0x55b8e1b14ed0
+accepting connections
+[BUDDY] started v1.0.7 '/usr/share/manticore/modules/manticore-buddy/bin/manticore-buddy --listen=http://0.0.0.0:9308  --threads=8' at http://127.0.0.1:45087
+[BUDDY] Loaded plugins:
+[BUDDY]   core: empty-string, backup, emulate-elastic, insert, lock-tables, unlock-tables, select, show, cli-table, plugin, test, insert-mva
+[BUDDY]   local: 
+[BUDDY]   extra: 
+2023-06-28 14:31:55,222 INFO success: searchd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-28 14:31:55,222 INFO success: quorum_recover entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-28 14:31:55,222 INFO success: searchd_replica entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+DEBUG: dlopen(libzstd.so.1)=0x7fe07c000f50
+localhost - 2023-06-28 14:31:55 - 3 - Wait until helm-manticoresearch-worker-0 came alive
+localhost - 2023-06-28 14:32:55 - 3 - Query: show status
+localhost - 2023-06-28 14:32:55 - 3 - Query: CREATE CLUSTER manticore_cluster
+DEBUG: P01: syntax error, unexpected CREATE near 'CREATE CLUSTER manticore_cluster'
+RPL: wsrep_load(): loading provider library '/usr/share/manticore/modules/libgalera_manticore.so'
+RPL: wsrep_load(): Galera 3.37(ra79a074) by Codership Oy <info@codership.com> loaded successfully.
+RPL: node incoming 'helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9315:replication', listen '172.17.0.4:9315', nodes 'gcomm://', name 'node_helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_78'
+RPL: cluster 'manticore_cluster', new 1, tables '', nodes ''
+RPL: CRC-32C: using hardware acceleration.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_log.c:gu_conf_debug_on():58: Turning debug logging on
+WARNING: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():49: Could not open state file for reading: '/var/lib/manticore/grastate.dat'
+WARNING: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():50: No persistent state found. Bootstraping with default state
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():121: Found saved state: 00000000-0000-0000-0000-000000000000:-1, safe_to_bootstrap: 1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():136: Initialized current_len_ to 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:constructor_common():204: Opened file '/var/lib/manticore/galera.cache', size: 16778536
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:constructor_common():205: File descriptor: 22
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:prealloc():304: Preallocating 16778536/16778536 bytes in '/var/lib/manticore/galera.cache'...
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_mmap.cpp:MMap():74: Memory mapped: 0x7fe06e000000 (16778536 bytes)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_create():318: Requesting recv queue len: 558738
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fifo.c:gu_fifo_create():128: Creating FIFO buffer of 1048576 elements of size 56, memory min used: 8456, max used: 58728712
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_gcs.hpp:Gcs():90: Passing config to GCS: base_dir = /var/lib/manticore; base_host = 172.17.0.4; base_port = 9315; cert.log_conflicts = yes; cert.optimistic_pa = yes; debug = on; evs.auto_evict = 0; evs.delay_margin = PT1S; evs.delayed_keep_period = PT30S; evs.inactive_check_period = PT0.5S; evs.inactive_timeout = PT15S; evs.join_retrans_period = PT1S; evs.max_install_timeouts = 3; evs.send_window = 10; evs.stats_report_period = PT1M; evs.suspect_timeout = PT5S; evs.user_send_window = 4; evs.view_forget_timeout = PT24H; gcache.dir = /var/lib/manticore; gcache.freeze_purge_at_seqno = -1; gcache.keep_pages_count = 0; gcache.keep_pages_size = 0; gcache.mem_size = 0; gcache.name = /var/lib/manticore/galera.cache; gcache.page_size = 128M; gcache.recover = no; gcache.size = 16M; gcomm.thread_prio = ; gcs.fc_debug = 0; gcs.fc_factor = 1; gcs.fc_limit = 100; gcs.fc_m
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:ReplicatorSMM():275: End state: 00000000-0000-0000-0000-000000000000:-1 #################
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcache/src/GCache_seqno.cpp:seqno_reset():37: GCache history reset: 00000000-0000-0000-0000-000000000000:0 -> 00000000-0000-0000-0000-000000000000:-1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:assign_initial_position():989: Assign initial position for certification: -1, protocol version: -1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:connect():333: Setting initial position to 00000000-0000-0000-0000-000000000000:-1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_core.cpp:gcs_core_open():198: Initializing backend IO layer
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_uri.cpp:parse():158: URI: pc://
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/protonet.cpp:create():72: protonet asio version 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/datagram.cpp:checksum_type():26: Using CRC-32C for message checksums.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: socket.ssl not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:GCommConn():215: backend: asio
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:connect():279: gcomm thread scheduling priority set to other:0 
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: pc.linger not set.
+WARNING: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/view.cpp:read_file():403: Fail to access the file (/var/lib/manticore/gvwstate.dat) error (No such file or directory). It is possible if node is booting for first time or re-booting after a graceful shutdown
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc.cpp:PC():259: Restoring primary-component from disk failed. Either node is booting for first time or re-booting after a graceful shutdown
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: socket.ssl not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: gmcast.group not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: gmcast.listen_addr not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: gmcast.mcast_addr not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: gmcast.mcast_ttl not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: gmcast.time_wait not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: gmcast.peer_timeout not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: gmcast.mira not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:GMCast():123: GMCast version 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_uri.cpp:parse():158: URI: tcp://0.0.0.0
+RPL: last message repeated 1 times
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_uri.cpp:parse():158: URI: tcp://0.0.0.0:9315
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:GMCast():216: (abd6290c, 'tcp://0.0.0.0:9315') listening at tcp://0.0.0.0:9315
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:GMCast():217: (abd6290c, 'tcp://0.0.0.0:9315') multicast: , ttl: 1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: evs.version not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: evs.debug_log_mask not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: evs.info_log_mask not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: evs.keepalive_period not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: evs.install_timeout not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: evs.use_aggregate not set.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:Proto():199: EVS version 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_input_map2.cpp:reset():150:  size 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_input_map2.cpp:reset():156: node: {idx=0,range=[0,-1],safe_seq=-1}  size 1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:connect():288: gcomm: bootstrapping new group 'manticore_cluster'
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc.cpp:connect():96: start_prim is enabled, turn off pc_recovery
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/protonet.cpp:insert():16: insert pstack 0x7fe088194168
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:connect():318: gmcast abd6290c connect
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_uri.cpp:parse():158: URI: tcp://0.0.0.0:9315
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:AsioTcpSocket():25: ctor for 0x7fe0881a2de8
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.hpp:connect():175: abd6290c start_prim 1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: CLOSED -> NON_PRIM prim 0 last prim view_id(NON_PRIM,00000000,0) to_seq -1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc.cpp:connect():132: PC/EVS Proto initial state: evs::proto(evs::proto(abd6290c, JOINING, view_id(TRANS,abd6290c,0)), JOINING) {
+current_view=Current view of cluster as seen by this node
+view (view_id(TRANS,abd6290c,0)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+),
+input_map=evs::input_map: {aru_seq=-1,safe_seq=-1,node_index=node: {idx=0,range=[0,-1],safe_seq=-1} },
+fifo_seq=-1,
+last_sent=-1,
+known:
+abd6290c at 
+{o=1,s=0,i=0,fs=-1,}
+ }
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc.cpp:connect():135: PC/EVS Proto sending join request
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:handle_gap():3513: evs::proto(abd6290c, GATHER, view_id(TRANS,abd6290c,0)) commit gap from abd6290c
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:handle_gap():3547: evs::proto(abd6290c, INSTALL, view_id(TRANS,abd6290c,0)): install gap {v=0,t=3,ut=255,o=1,s=-1,sr=-1,as=-1,f=0,src=abd6290c,srcvid=view_id(REG,abd6290c,1),insvid=view_id(UNKNOWN,00000000,0),ru=00000000,r=[-1,-1],fs=3,nl=(
+)
+}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_view():621: abd6290c Current view of cluster as seen by this node
+view (view_id(TRANS,abd6290c,0)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: NON_PRIM -> TRANS prim 1 last prim view_id(PRIM,abd6290c,0) to_seq -1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_input_map2.cpp:reset():150:  size 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_input_map2.cpp:reset():156: node: {idx=0,range=[0,-1],safe_seq=-1}  size 1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1573: GMCast::handle_stable_view: Current view of cluster as seen by this node
+view (view_id(REG,abd6290c,1)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_view():621: abd6290c Current view of cluster as seen by this node
+view (view_id(REG,abd6290c,1)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: TRANS -> STATES_EXCH prim 1 last prim view_id(PRIM,abd6290c,0) to_seq -1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:send_state():127: abd6290c sending state
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:send_state():148: abd6290c local to seq -1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:send_state():149: abd6290c sending state: pcmsg{ type=STATE, seq=0, flags= 0, node_map {	abd6290c,prim=1,un=0,last_seq=4294967295,last_prim=view_id(PRIM,abd6290c,0),to_seq=-1,weight=1,segment=0
+}}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_state():976: abd6290c handle state from abd6290c pcmsg{ type=STATE, seq=0, flags= 0, node_map {	abd6290c,prim=1,un=0,last_seq=4294967295,last_prim=view_id(PRIM,abd6290c,0),to_seq=-1,weight=1,segment=0
+}}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:is_prim():815: Node abd6290c state primary
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: STATES_EXCH -> INSTALL prim 1 last prim view_id(PRIM,abd6290c,0) to_seq -1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:send_install():164: abd6290c send install
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:send_install():198: abd6290c sending install: pcmsg{ type=INSTALL, seq=0, flags= 0, node_map {	abd6290c,prim=1,un=0,last_seq=4294967295,last_prim=view_id(PRIM,abd6290c,0),to_seq=-1,weight=1,segment=0
+}}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_install():1122: abd6290c handle install from abd6290c pcmsg{ type=INSTALL, seq=0, flags= 0, node_map {	abd6290c,prim=1,un=0,last_seq=4294967295,last_prim=view_id(PRIM,abd6290c,0),to_seq=-1,weight=1,segment=0
+}}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_install():1207: abd6290c setting TO seq to -1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: INSTALL -> PRIM prim 1 last prim view_id(PRIM,abd6290c,1) to_seq -1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:deliver_view():233: Current view of cluster as seen by this node
+view (view_id(PRIM,abd6290c,1)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc.cpp:handle_up():30: Save the discovered primary-component to disk
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1573: GMCast::handle_stable_view: Current view of cluster as seen by this node
+view (view_id(PRIM,abd6290c,1)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:connect():319: gcomm: connected
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_core.cpp:gcs_core_set_pkt_size():1266: Changing maximum packet size to 64500, resulting msg size: 32636
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_core.cpp:gcs_core_set_pkt_size():1281: Message payload (action fragment size): 32616
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting CLOSED -> OPEN (TO: 0)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_open():1501: Opened channel 'manticore_cluster'
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():684: member: 0 uuid: abd6290c segment: 0
+RPL: replicator is created for cluster 'manticore_cluster'
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():698: my index 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():414: New COMPONENT: primary = yes, bootstrap = no, my_idx = 0, memb_num = 1
+DEBUG: Detached::AddThread called for 'manticore_cluster_repl_0', tid 110
+RPL: receiver manticore_cluster thread started
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():475: Starting new group from scratch: abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_core.cpp:core_handle_comp_msg():769: STATE_EXCHANGE: sent state UUID: abd6fb68-15c0-11ee-9dfc-274f7fb00ce2
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_core.cpp:core_handle_uuid_msg():864: STATE EXCHANGE: sent state msg: abd6fb68-15c0-11ee-9dfc-274f7fb00ce2
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_state_msg():597: STATE EXCHANGE: got state msg: abd6fb68-15c0-11ee-9dfc-274f7fb00ce2 from 0 (node_helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_78)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:group_print_state_debug():579: 
+	Version      : 4
+	Flags        : 0x1
+	Protocols    : 0 / 9 / 127
+	State        : JOINED
+	Desync count : 0
+	Prim state   : NON-PRIMARY
+	Prim UUID    : abd6f76d-15c0-11ee-8b6f-236e0415bd7e
+	Prim  seqno  : 0
+	First seqno  : -1
+	Last  seqno  : 0
+	Prim JOINED  : 1
+	State UUID   : abd6fb68-15c0-11ee-9dfc-274f7fb00ce2
+	Group UUID   : abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef
+	Name         : 'node_helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_78'
+	Incoming addr: 'helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9315:replication'
+
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:group_post_state_exchange():292: STATE EXCHANGE: abd6fb68-15c0-11ee-9dfc-274f7fb00ce2 complete.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_node.cpp:gcs_node_update_status():144: #281 Setting node_helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_78 state to JOINED
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:group_post_state_exchange():373: Quorum results:
+	version    = 4,
+	component  = PRIMARY,
+	conf_id    = 0,
+	members    = 1/1 (primary/total),
+	act_id     = 0,
+	last_appl. = -1,
+	protocols  = 0/9/127 (gcs/repl/appl),
+	group UUID = abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_set_fc_limits():856: Flow-control interval: [100, 100]
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.hpp:gcs_sm_continue():452: Trying to continue unpaused monitor
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_handle_act_conf():1030: Restored state OPEN -> JOINED (0)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_send_sync_end():582: SENDING SYNC
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_sync_msg():843: Member 0.0 (node_helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_78) synced with group.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_handle_state_change():1079: Got 'SYNC' dated 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting JOINED -> SYNCED (TO: 0)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_become_synced():834: Become synced, FC offset 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:drain_common():420: draining up to -1
+RPL: last message repeated 1 times
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:establish_protocol_versions():1518: REPL Protocols: 9 (4, 2)
+RPL: new cluster membership: 0(1), global seqno: 0, status primary, gap 0
+RPL: 
+'node_helm-manticoresearch-worke', 'helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9315:replication' *
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:assign_initial_position():989: Assign initial position for certification: 0, protocol version: 4
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():46: Service thread queue flushed.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:write_file():282: Saving state: abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef:0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcache/src/GCache_seqno.cpp:seqno_reset():37: GCache history reset: 00000000-0000-0000-0000-000000000000:0 -> abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef:0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:drain_common():420: draining up to 0
+DEBUG: last message repeated 1 times
+DEBUG: config saved, tables 0, clusters 1
+localhost - 2023-06-28 14:32:55 - 3 - Query: show status
+RPL: synced cluster manticore_cluster
+localhost - 2023-06-28 14:32:55 - 3 - Cluster created
+localhost - 2023-06-28 14:32:55 - 3 - Query: show tables
+2023-06-28 14:32:56,604 INFO exited: searchd_replica (exit status 0; expected)
+RPL: remote cluster command 6, client 172.17.0.5:57684
+RPL: remote cluster 'manticore_cluster' command 6, client 172.17.0.5:57684 - ok 
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:set_socket_options():607: socket recv buf size 212992
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:accept_handler():774: accepted socket 0x7fe0881a2de8
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast_proto.cpp:set_state():39: State change: INIT -> HANDSHAKE_SENT
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:gmcast_accept():454: handshake sent
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:AsioTcpSocket():25: ctor for 0x7fe064001838
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_uri.cpp:parse():158: URI: tcp://172.17.0.5:49866
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_uri.cpp:parse():158: URI: tcp://0.0.0.0:9315
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast_proto.cpp:set_state():39: State change: HANDSHAKE_SENT -> OK
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_established():605: (abd6290c, 'tcp://0.0.0.0:9315') connection established to e2ba3370 tcp://172.17.0.5:9315
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_established():665: Inserting tcp://172.17.0.5:9315 to remote list
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:insert_address():833: (abd6290c, 'tcp://0.0.0.0:9315'): new address entry e2ba3370 tcp://172.17.0.5:9315
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():959: (abd6290c, 'tcp://0.0.0.0:9315') --- mcast tree begin ---
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():976: Proto: v=0,lu=abd6290c,ru=e2ba3370,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://172.17.0.5:9315,mc=,gn=manticore_cluster,ch=0,st=OK,pr=1,tp=0x7fe0881a2ce0,ts=12381016429296
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():1000: (abd6290c, 'tcp://0.0.0.0:9315') self index: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():1001: (abd6290c, 'tcp://0.0.0.0:9315') --- mcast tree end ---
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():959: (abd6290c, 'tcp://0.0.0.0:9315') --- mcast tree begin ---
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():976: Proto: v=0,lu=abd6290c,ru=e2ba3370,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://172.17.0.5:9315,mc=,gn=manticore_cluster,ch=0,st=OK,pr=1,tp=0x7fe0881a2ce0,ts=12381017599396
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():1000: (abd6290c, 'tcp://0.0.0.0:9315') self index: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():1001: (abd6290c, 'tcp://0.0.0.0:9315') --- mcast tree end ---
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1198: continuing relaying for PT2.99893S
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1208: (abd6290c, 'tcp://0.0.0.0:9315') turning message relay requesting on, nonlive peers: 
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1198: continuing relaying for PT2.5847S
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:handle_gap():3513: evs::proto(abd6290c, GATHER, view_id(REG,abd6290c,1)) commit gap from abd6290c
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:handle_gap():3513: evs::proto(abd6290c, GATHER, view_id(REG,abd6290c,1)) commit gap from e2ba3370
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:handle_gap():3547: evs::proto(abd6290c, INSTALL, view_id(REG,abd6290c,1)): install gap {v=0,t=3,ut=255,o=1,s=-1,sr=-1,as=-1,f=0,src=abd6290c,srcvid=view_id(REG,abd6290c,2),insvid=view_id(UNKNOWN,00000000,0),ru=00000000,r=[-1,-1],fs=105,nl=(
+)
+}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:handle_gap():3547: evs::proto(abd6290c, INSTALL, view_id(REG,abd6290c,1)): install gap {v=0,t=3,ut=255,o=1,s=-1,sr=-1,as=-1,f=4,src=e2ba3370,srcvid=view_id(REG,abd6290c,2),insvid=view_id(UNKNOWN,00000000,0),ru=00000000,r=[-1,-1],fs=4,nl=(
+)
+}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_view():621: abd6290c Current view of cluster as seen by this node
+view (view_id(TRANS,abd6290c,1)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_trans():523: abd6290c 
+
+ current view Current view of cluster as seen by this node
+view (view_id(REG,abd6290c,1)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+
+ next view Current view of cluster as seen by this node
+view (view_id(TRANS,abd6290c,1)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+
+ pc view Current view of cluster as seen by this node
+view (view_id(PRIM,abd6290c,1)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_trans():555: abd6290c quorum ok
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: PRIM -> TRANS prim 1 last prim view_id(PRIM,abd6290c,1) to_seq 2
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_input_map2.cpp:clear():224: discarding 1 messages from recovery index
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_input_map2.cpp:reset():150:  size 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_input_map2.cpp:reset():156: node: {idx=0,range=[0,-1],safe_seq=-1} node: {idx=1,range=[0,-1],safe_seq=-1}  size 2
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1573: GMCast::handle_stable_view: Current view of cluster as seen by this node
+view (view_id(REG,abd6290c,2)
+memb {
+	abd6290c,0
+	e2ba3370,0
+	}
+joined {
+	e2ba3370,0
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1659: declaring e2ba3370 at tcp://172.17.0.5:9315 stable
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1198: continuing relaying for PT2.50002S
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=abd6290c,ru=e2ba3370,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://172.17.0.5:9315,mc=,gn=manticore_cluster,ch=0,st=OK,pr=1,tp=0x7fe0881a2ce0,ts=12381516232205
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_view():621: abd6290c Current view of cluster as seen by this node
+view (view_id(REG,abd6290c,2)
+memb {
+	abd6290c,0
+	e2ba3370,0
+	}
+joined {
+	e2ba3370,0
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: TRANS -> STATES_EXCH prim 1 last prim view_id(PRIM,abd6290c,1) to_seq 2
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:send_state():127: abd6290c sending state
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:send_state():148: abd6290c local to seq 2
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:send_state():149: abd6290c sending state: pcmsg{ type=STATE, seq=0, flags= 0, node_map {	abd6290c,prim=1,un=0,last_seq=3,last_prim=view_id(PRIM,abd6290c,1),to_seq=2,weight=1,segment=0
+}}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_state():976: abd6290c handle state from abd6290c pcmsg{ type=STATE, seq=0, flags= 0, node_map {	abd6290c,prim=1,un=0,last_seq=3,last_prim=view_id(PRIM,abd6290c,1),to_seq=2,weight=1,segment=0
+}}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_state():976: abd6290c handle state from e2ba3370 pcmsg{ type=STATE, seq=0, flags= 0, node_map {	e2ba3370,prim=0,un=0,last_seq=4294967295,last_prim=view_id(NON_PRIM,00000000,0),to_seq=-1,weight=1,segment=0
+}}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:validate_state_msgs():722: abd6290c node e2ba3370 from view_id(NON_PRIM,00000000,0) joining view_id(PRIM,abd6290c,1)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:is_prim():815: Node abd6290c state primary
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:is_prim():848: Non-prim e2ba3370 from view_id(NON_PRIM,00000000,0) joining prim
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: STATES_EXCH -> INSTALL prim 1 last prim view_id(PRIM,abd6290c,1) to_seq 2
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:send_install():164: abd6290c send install
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:send_install():198: abd6290c sending install: pcmsg{ type=INSTALL, seq=0, flags= 0, node_map {	abd6290c,prim=1,un=0,last_seq=3,last_prim=view_id(PRIM,abd6290c,1),to_seq=2,weight=1,segment=0
+	e2ba3370,prim=0,un=0,last_seq=4294967295,last_prim=view_id(NON_PRIM,00000000,0),to_seq=-1,weight=1,segment=0
+}}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_install():1122: abd6290c handle install from abd6290c pcmsg{ type=INSTALL, seq=0, flags= 0, node_map {	abd6290c,prim=1,un=0,last_seq=3,last_prim=view_id(PRIM,abd6290c,1),to_seq=2,weight=1,segment=0
+	e2ba3370,prim=0,un=0,last_seq=4294967295,last_prim=view_id(NON_PRIM,00000000,0),to_seq=-1,weight=1,segment=0
+}}
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_install():1207: abd6290c setting TO seq to 2
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: INSTALL -> PRIM prim 1 last prim view_id(PRIM,abd6290c,2) to_seq 2
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:deliver_view():233: Current view of cluster as seen by this node
+view (view_id(PRIM,abd6290c,2)
+memb {
+	abd6290c,0
+	e2ba3370,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc.cpp:handle_up():30: Save the discovered primary-component to disk
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1573: GMCast::handle_stable_view: Current view of cluster as seen by this node
+view (view_id(PRIM,abd6290c,2)
+memb {
+	abd6290c,0
+	e2ba3370,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():684: member: 0 uuid: abd6290c segment: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1198: continuing relaying for PT2.49539S
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=abd6290c,ru=e2ba3370,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://172.17.0.5:9315,mc=,gn=manticore_cluster,ch=0,st=OK,pr=1,tp=0x7fe0881a2ce0,ts=12381517456110
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():698: my index 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():684: member: 1 uuid: e2ba3370 segment: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():414: New COMPONENT: primary = yes, bootstrap = no, my_idx = 0, memb_num = 2
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():428: #281: Saving SYNCED over NON-PRIMARY
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_core.cpp:core_handle_comp_msg():769: STATE_EXCHANGE: sent state UUID: e307d92d-15c0-11ee-a06d-92ac69679fdd
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_core.cpp:core_handle_uuid_msg():864: STATE EXCHANGE: sent state msg: e307d92d-15c0-11ee-a06d-92ac69679fdd
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_state_msg():597: STATE EXCHANGE: got state msg: e307d92d-15c0-11ee-a06d-92ac69679fdd from 0 (node_helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_78)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:group_print_state_debug():579: 
+	Version      : 4
+	Flags        : 0x3
+	Protocols    : 0 / 9 / 127
+	State        : SYNCED
+	Desync count : 0
+	Prim state   : SYNCED
+	Prim UUID    : abd6fb68-15c0-11ee-9dfc-274f7fb00ce2
+	Prim  seqno  : 1
+	First seqno  : -1
+	Last  seqno  : 0
+	Prim JOINED  : 1
+	State UUID   : e307d92d-15c0-11ee-a06d-92ac69679fdd
+	Group UUID   : abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef
+	Name         : 'node_helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_78'
+	Incoming addr: 'helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9315:replication'
+
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1198: continuing relaying for PT2.0846S
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_state_msg():597: STATE EXCHANGE: got state msg: e307d92d-15c0-11ee-a06d-92ac69679fdd from 1 (node_helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_82)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:group_print_state_debug():579: 
+	Version      : 4
+	Flags        : 00
+	Protocols    : 0 / 9 / 127
+	State        : NON-PRIMARY
+	Desync count : 0
+	Prim state   : NON-PRIMARY
+	Prim UUID    : 00000000-0000-0000-0000-000000000000
+	Prim  seqno  : -1
+	First seqno  : -1
+	Last  seqno  : -1
+	Prim JOINED  : 0
+	State UUID   : e307d92d-15c0-11ee-a06d-92ac69679fdd
+	Group UUID   : 00000000-0000-0000-0000-000000000000
+	Name         : 'node_helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_82'
+	Incoming addr: 'helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local:9315:replication'
+
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:group_post_state_exchange():292: STATE EXCHANGE: e307d92d-15c0-11ee-a06d-92ac69679fdd complete.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_node.cpp:gcs_node_update_status():150: #281,#298 Carry over last prim state for node_helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_78: SYNCED
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:group_post_state_exchange():373: Quorum results:
+	version    = 4,
+	component  = PRIMARY,
+	conf_id    = 1,
+	members    = 1/2 (primary/total),
+	act_id     = 0,
+	last_appl. = 0,
+	protocols  = 0/9/127 (gcs/repl/appl),
+	group UUID = abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_set_fc_limits():856: Flow-control interval: [141, 141]
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.hpp:gcs_sm_continue():452: Trying to continue unpaused monitor
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:drain_common():420: draining up to 0
+RPL: last message repeated 1 times
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:establish_protocol_versions():1518: REPL Protocols: 9 (4, 2)
+RPL: new cluster membership: 0(2), global seqno: 0, status primary, gap 0
+RPL: 
+'node_helm-manticoresearch-worke', 'helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9315:replication' *
+'node_helm-manticoresearch-worke', 'helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local:9315:replication' 
+RPL: view nodes changed: helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9315:replication,helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local:9315:replication > helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9315:replication
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:assign_initial_position():989: Assign initial position for certification: 0, protocol version: 4
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():46: Service thread queue flushed.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:group_select_donor():1354: Member 1.0 (node_helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_82) requested state transfer from '*any*'. Selected 0.0 (node_helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_78)(SYNCED) as donor.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_handle_act_state_req():1060: Got GCS_ACT_STATE_REQ to 0, my idx: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting SYNCED -> DONOR/DESYNCED (TO: 0)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:drain_common():420: draining up to 0
+RPL: last message repeated 1 times
+RPL: donate manticore_cluster to helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312, gtid abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef:0, bypass 0
+FATAL: no AF_INET address found for: helm-manticoresearch-worker-1.helm-manticoresearch-worker-svc.default.svc.cluster.local
+DEBUG: config saved, tables 0, clusters 1
+RPL: clusters (1) delete invoked
+RPL: cluster 'manticore_cluster' delete
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.cpp:gcs_sm_close():80: Closing send monitor...
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.cpp:gcs_sm_close():110: Closed send monitor.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():331: gcomm: terminating thread
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():334: gcomm: joining thread
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():344: gcomm: closing backend
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc.cpp:close():187: PC/EVS Proto leaving
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.hpp:close():290: evs::proto(abd6290c, OPERATIONAL, view_id(REG,abd6290c,2)) closing in state 5
+caught SIGTERM, shutting down
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1198: continuing relaying for PT1.5846S
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1198: continuing relaying for PT1.0846S
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1198: continuing relaying for PT0.5846S
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1198: continuing relaying for PT0.0846001S
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast_proto.cpp:send_keepalive():270: sending keepalive: v=0,lu=abd6290c,ru=e2ba3370,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://172.17.0.5:9315,mc=,gn=manticore_cluster,ch=0,st=OK,pr=1,tp=0x7fe0881a2ce0,ts=12382209096738
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1249: (abd6290c, 'tcp://0.0.0.0:9315') turning message relay requesting off
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast_proto.cpp:send_keepalive():270: sending keepalive: v=0,lu=abd6290c,ru=e2ba3370,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://172.17.0.5:9315,mc=,gn=manticore_cluster,ch=0,st=OK,pr=1,tp=0x7fe0881a2ce0,ts=12382209096738
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:check_inactive():1007: evs::proto(abd6290c, LEAVING, view_id(REG,abd6290c,2)): set 'e2ba3370' delayed state to S_DELAYED , cnt = 1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1147: (abd6290c, 'tcp://0.0.0.0:9315') connection to peer e2ba3370 with addr tcp://172.17.0.5:9315 timed out, no messages seen in PT3S (gmcast.peer_timeout)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast_proto.cpp:set_state():39: State change: OK -> FAILED
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_failed():758: handle failed: v=0,lu=abd6290c,ru=e2ba3370,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://172.17.0.5:9315,mc=,gn=manticore_cluster,ch=0,st=FAILED,pr=1,tp=0x7fe0881a2ce0,ts=12382209096738
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_failed():787: (abd6290c, 'tcp://0.0.0.0:9315') setting next reconnect time to 12386432101261 for tcp://172.17.0.5:9315
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:close():208: closing 0x7fe0881a2de8 state 2 send_q size 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():959: (abd6290c, 'tcp://0.0.0.0:9315') --- mcast tree begin ---
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():1000: (abd6290c, 'tcp://0.0.0.0:9315') self index: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:update_addresses():1001: (abd6290c, 'tcp://0.0.0.0:9315') --- mcast tree end ---
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:check_liveness():1208: (abd6290c, 'tcp://0.0.0.0:9315') turning message relay requesting on, nonlive peers: tcp://172.17.0.5:9315 
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:failed_handler():40: failed handler from read_completion_condition:519 socket 0x7fe0881a2de8 -1 error asio.system:125 0 state 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:failed_handler():47: local endpoint tcp://172.17.0.4:9315 remote endpoint tcp://172.17.0.5:49866
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:failed_handler():40: failed handler from read_handler:426 socket 0x7fe0881a2de8 -1 error asio.system:125 0 state 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:failed_handler():47: local endpoint tcp://172.17.0.4:9315 remote endpoint tcp://172.17.0.5:49866
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:check_inactive():1007: evs::proto(abd6290c, LEAVING, view_id(REG,abd6290c,2)): set 'e2ba3370' delayed state to S_DELAYED , cnt = 1
+RPL: last message repeated 2 times
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:reconnect():1066: (abd6290c, 'tcp://0.0.0.0:9315') reconnecting to e2ba3370 (tcp://172.17.0.5:9315), attempt 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_uri.cpp:parse():158: URI: tcp://172.17.0.5:9315
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:AsioTcpSocket():25: ctor for 0x7fe060024988
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast_proto.cpp:set_state():39: State change: INIT -> HANDSHAKE_WAIT
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:set_socket_options():607: socket recv buf size 212992
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:connect_handler():134: socket 0x7fe060024988 connected, remote endpoint tcp://172.17.0.5:9315 local endpoint tcp://172.17.0.4:39828
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_connected():569: transport 0x7fe060024880 connected
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast_proto.cpp:set_state():39: State change: HANDSHAKE_WAIT -> HANDSHAKE_RESPONSE_SENT
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_node.cpp:operator()():123: declaring node with index 1 suspected, timeout PT5S (evs.suspect_timeout)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:check_inactive():955: evs::proto(abd6290c, LEAVING, view_id(REG,abd6290c,2)) suspecting node: e2ba3370
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:check_inactive():966: evs::proto(abd6290c, LEAVING, view_id(REG,abd6290c,2)) suspected node without join message, declaring inactive
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:set_inactive():1124: evs::proto(abd6290c, LEAVING, view_id(REG,abd6290c,2)): setting e2ba3370 inactive
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.cpp:check_inactive():1007: evs::proto(abd6290c, LEAVING, view_id(REG,abd6290c,2)): set 'e2ba3370' delayed state to S_DELAYED , cnt = 1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_view():621: abd6290c Current view of cluster as seen by this node
+view (view_id(TRANS,abd6290c,2)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	e2ba3370,0
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_trans():523: abd6290c 
+
+ current view Current view of cluster as seen by this node
+view (view_id(REG,abd6290c,2)
+memb {
+	abd6290c,0
+	e2ba3370,0
+	}
+joined {
+	e2ba3370,0
+	}
+left {
+	}
+partitioned {
+	}
+)
+
+ next view Current view of cluster as seen by this node
+view (view_id(TRANS,abd6290c,2)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	e2ba3370,0
+	}
+)
+
+ pc view Current view of cluster as seen by this node
+view (view_id(PRIM,abd6290c,2)
+memb {
+	abd6290c,0
+	e2ba3370,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:deliver_view():233: Current view of cluster as seen by this node
+view (view_id(NON_PRIM,abd6290c,2)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	e2ba3370,0
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1573: GMCast::handle_stable_view: Current view of cluster as seen by this node
+view (view_id(NON_PRIM,abd6290c,2)
+memb {
+	abd6290c,0
+	}
+joined {
+	}
+left {
+	}
+partitioned {
+	e2ba3370,0
+	}
+)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=abd6290c,ru=e2ba3370,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://172.17.0.5:9315,mc=,gn=manticore_cluster,ch=0,st=HANDSHAKE_RESPONSE_SENT,pr=0,tp=0x7fe060024880,ts=12386932711974
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: PRIM -> TRANS prim 0 last prim view_id(PRIM,abd6290c,2) to_seq 6
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_view():621: abd6290c Current view of cluster as seen by this node
+view ((empty))
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: TRANS -> NON_PRIM prim 0 last prim view_id(PRIM,abd6290c,2) to_seq 6
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:deliver_view():233: Current view of cluster as seen by this node
+view ((empty))
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:handle_up():485: handle_up: self leave
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1573: GMCast::handle_stable_view: Current view of cluster as seen by this node
+view ((empty))
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():684: member: 0 uuid: abd6290c segment: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=abd6290c,ru=e2ba3370,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://172.17.0.5:9315,mc=,gn=manticore_cluster,ch=0,st=HANDSHAKE_RESPONSE_SENT,pr=0,tp=0x7fe060024880,ts=12386932711974
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: abd6290c shift_to: NON_PRIM -> CLOSED prim 0 last prim view_id(PRIM,abd6290c,2) to_seq 6
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():698: my index 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:close():365: gmcast abd6290c close
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:~AsioTcpSocket():30: dtor for 0x7fe0881a2de8
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:close():208: closing 0x7fe060024988 state 2 send_q size 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/protonet.cpp:erase():26: erase pstack 0x7fe088194168
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_input_map2.cpp:clear():224: discarding 1 messages from recovery index
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():357: gcomm: closed
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():358: 
+profile name: gcs_gcomm
+
+point                                   count     calendar  cpu       
+----------------------------------------------------------------------
+
+tot count         : 0
+tot calendar time : 0.000
+tot thread cputime: 0.000
+tot ct since ctor : -1687950388.381
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():414: New COMPONENT: primary = no, bootstrap = no, my_idx = 0, memb_num = 1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():428: #281: Saving DONOR over SYNCED
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_set_fc_limits():856: Flow-control interval: [100, 100]
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.hpp:gcs_sm_continue():452: Trying to continue unpaused monitor
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_handle_act_conf():976: Received NON-PRIMARY.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting DONOR/DESYNCED -> OPEN (TO: 0)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:gcomm_recv():779: gcomm recv: self leave
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():434: Received self-leave message.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_set_fc_limits():856: Flow-control interval: [0, 0]
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.hpp:gcs_sm_continue():452: Trying to continue unpaused monitor
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_handle_act_conf():972: Received SELF-LEAVE. Closing connection.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting OPEN -> CLOSED (TO: 0)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_recv_thread():1461: RECV thread exiting 0: Success
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_close():1248: recv_thread() joined.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_close():1254: Closing replication queue.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_close():1277: Closing slave action queue.
+RPL: disconnected from cluster manticore_cluster
+RPL: clusters delete done
+WARNING: ShutdownAllAlones will kill 1 threads
+Kill thread 'manticore_cluster_repl_0' with id 110, try 1
+WARNING: ShutdownAllAlones catch still has 1 alone threads
+WARNING: ShutdownAllAlones exits by timeout (10.015 seconds) but still has 1 alone threads
+DEBUG: hazard::Shutdown() done
+shutdown daemon version '6.0.5 844b1ae81@230606 dev (columnar 2.0.5 d593e0d@230529) (secondary 2.0.5 d593e0d@230529)' ...
+shutdown complete
+Manticore 6.0.5 844b1ae81@230606 dev (columnar 2.0.5 d593e0d@230529) (secondary 2.0.5 d593e0d@230529)
+Copyright (c) 2001-2016, Andrew Aksyonoff
+Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Copyright (c) 2017-2023, Manticore Software LTD (https://manticoresearch.com)
+
+2023-06-28 14:34:54,070 INFO exited: searchd (exit status 1; not expected)
+2023-06-28 14:34:55,074 INFO spawned: 'searchd' with pid 124
+[Wed Jun 28 14:34:55.099 2023] [124] using config file '/etc/manticoresearch/manticore.conf' (711 chars)...
+[Wed Jun 28 14:34:55.101 2023] [124] DEBUG: config loaded, tables 0, clusters 1
+[Wed Jun 28 14:34:55.101 2023] [124] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+[Wed Jun 28 14:34:55.101 2023] [124] DEBUG: 'network_timeout' - nothing specified, using default value 5000000
+[Wed Jun 28 14:34:55.101 2023] [124] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+[Wed Jun 28 14:34:55.101 2023] [124] DEBUG: 'client_timeout' - nothing specified, using default value 300000000
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: SetMaxChildrenThreads to 8
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'read_buffer_docs' - nothing specified, using default value 262144
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'read_buffer_hits' - nothing specified, using default value 262144
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'max_packet_size' - nothing specified, using default value 8388608
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'query_log_min_msec' - nothing specified, using default value 0
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'net_wait_tm' - nothing specified, using default value -1
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+[Wed Jun 28 14:34:55.102 2023] [124] DEBUG: current working directory changed to '/var/lib/manticore'
+DEBUG: StartGlobalWorkpool
+starting daemon version '6.0.5 844b1ae81@230606 dev (columnar 2.0.5 d593e0d@230529) (secondary 2.0.5 d593e0d@230529)' ...
+listening on UNIX socket /var/run/mysqld/mysqld.sock
+listening on all interfaces for mysql, port=9306
+listening on all interfaces for sphinx and http(s), port=9308
+listening on all interfaces for VIP mysql, port=9301
+listening on 172.17.0.4:9312 for sphinx and http(s)
+DEBUG: Frame expression stack for creation is 16 (mocked, as no env MANTICORE_KNOWN_CREATE_SIZE=16 found)
+DEBUG: Starting expression stack for creation is 2976 (mocked, as no env MANTICORE_START_KNOWN_CREATE_SIZE=2976 found)
+DEBUG: Frame expression stack for eval/deletion is 32 (mocked, as no env MANTICORE_KNOWN_EXPR_SIZE=32 found)
+DEBUG: Starting expression stack for eval/deletion is 104 (mocked, as no env MANTICORE_START_KNOWN_EXPR_SIZE=104 found)
+DEBUG: Frame filter stack delta is 224 (mocked, as no env MANTICORE_KNOWN_FILTER_SIZE=224 found)
+DEBUG: Starting filter stack delta is 11392 (mocked, as no env MANTICORE_START_KNOWN_FILTER_SIZE=11392 found)
+DEBUG: Frame fulltext match stack delta is 336 (mocked, as no env MANTICORE_KNOWN_MATCH_SIZE=336 found)
+DEBUG: Starting fulltext match stack delta is 14408 (mocked, as no env MANTICORE_START_KNOWN_MATCH_SIZE=14408 found)
+DEBUG: 'rt_flush_period' - nothing specified, using default value 36000000000
+RPL: 1 clusters loaded from config
+DEBUG: no valid tables to serve
+DEBUG: 'binlog_max_log_size' - nothing specified, using default value 268435456
+DEBUG: MAC address 02:42:ac:11:00:04 for uuid-short server_id
+DEBUG: uid-short server_id 75, started 131294095, seed 5406522302235934720
+binlog: replaying log /var/lib/manticore/binlog.001
+binlog: replay stats: 0 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 0 pq-add-delete, 0 tables
+binlog: finished replaying /var/lib/manticore/binlog.001; 0.0 MB in 0.000 sec
+binlog: finished replaying total 1 in 0.000 sec
+DEBUG: SaveMeta: Done (/var/lib/manticore/binlog.meta.new)
+prereading 0 tables
+preread 0 tables in 0.000 sec
+WARNING: no nodes found, created new cluster 'manticore_cluster'
+RPL: wsrep_load(): loading provider library '/usr/share/manticore/modules/libgalera_manticore.so'
+RPL: wsrep_load(): Galera 3.37(ra79a074) by Codership Oy <info@codership.com> loaded successfully.
+RPL: node incoming 'helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9312,helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local:9317:replication', listen '172.17.0.4:9317', nodes 'gcomm://', name 'node_helm-manticoresearch-worker-0.helm-manticoresearch-worker-svc.default.svc.cluster.local_manticore_cluster_134'
+RPL: cluster 'manticore_cluster', new 1, tables '', nodes ''
+RPL: CRC-32C: using hardware acceleration.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_log.c:gu_conf_debug_on():58: Turning debug logging on
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():89: read comment: # GALERA saved state
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():94: read version: 2.1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():101: read saved state uuid: abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():112: read saved state seqno: -1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():117: read safe_to_bootstrap: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():121: Found saved state: abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef:-1, safe_to_bootstrap: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():136: Initialized current_len_ to 113
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:constructor_common():204: Opened file '/var/lib/manticore/galera.cache', size: 16778536
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:constructor_common():205: File descriptor: 16
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:FileDescriptor():183: Reusing existing '/var/lib/manticore/galera.cache'.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_mmap.cpp:MMap():74: Memory mapped: 0x7fd742e00000 (16778536 bytes)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_create():318: Requesting recv queue len: 881554
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fifo.c:gu_fifo_create():128: Creating FIFO buffer of 1048576 elements of size 56, memory min used: 8456, max used: 58728712
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_gcs.hpp:Gcs():90: Passing config to GCS: base_dir = /var/lib/manticore; base_host = 172.17.0.4; base_port = 9317; cert.log_conflicts = yes; cert.optimistic_pa = yes; debug = on; evs.auto_evict = 0; evs.delay_margin = PT1S; evs.delayed_keep_period = PT30S; evs.inactive_check_period = PT0.5S; evs.inactive_timeout = PT15S; evs.join_retrans_period = PT1S; evs.max_install_timeouts = 3; evs.send_window = 10; evs.stats_report_period = PT1M; evs.suspect_timeout = PT5S; evs.user_send_window = 4; evs.view_forget_timeout = PT24H; gcache.dir = /var/lib/manticore; gcache.freeze_purge_at_seqno = -1; gcache.keep_pages_count = 0; gcache.keep_pages_size = 0; gcache.mem_size = 0; gcache.name = /var/lib/manticore/galera.cache; gcache.page_size = 128M; gcache.recover = no; gcache.size = 16M; gcomm.thread_prio = ; gcs.fc_debug = 0; gcs.fc_factor = 1; gcs.fc_limit = 100; gcs.fc_
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:ReplicatorSMM():275: End state: abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef:-1 #################
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcache/src/GCache_seqno.cpp:seqno_reset():37: GCache history reset: abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef:0 -> abd6f9ab-15c0-11ee-a6d1-4ad9b8ddbaef:-1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:assign_initial_position():989: Assign initial position for certification: -1, protocol version: -1
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:connect():333: Setting initial position to 00000000-0000-0000-0000-000000000000:-1
+FATAL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:connect():338: It may not be safe to bootstrap the cluster from this node. It was not the last one to leave the cluster and may not contain all the updates. To force cluster bootstrap with this node, edit the grastate.dat file manually and set safe_to_bootstrap to 1 .
+FATAL: 'manticore_cluster' cluster start error: replication connection failed: 7 'error in node state, must reinit', nodes '(null)'
+RPL: deleting cluster manticore_cluster
+RPL: cluster 'manticore_cluster' wait to finish
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:~ReplicatorSMM():299: dtor state: CLOSED
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:~Monitor():81: apply mon: entered 0
+RPL: last message repeated 2 times
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():927: cert index usage at exit 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():928: cert trx map usage at exit 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():929: deps set usage at exit 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():935: avg deps dist 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():936: avg cert interval 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():937: cert index size 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():46: Service thread queue flushed.
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/wsdb.cpp:~Wsdb():55: wsdb trx map usage 0 conn query map usage 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/wsdb.cpp:~Wsdb():57: MemPool(LocalTrxHandle): hit ratio: 0, misses: 0, in use: 0, in pool: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/gcs_action_source.hpp:~GcsActionSource():38: MemPool(SlaveTrxHandle): hit ratio: 0, misses: 0, in use: 0, in pool: 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcache/src/GCache.cpp:~GCache():77: 
+GCache mallocs : 0
+GCache reallocs: 0
+GCache frees   : 0
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_mmap.cpp:sync():109: Flushing memory map to disk...
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_mmap.cpp:unmap():124: Memory unmapped: 0x7fd742e00000 (16778536 bytes)
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:sync():240: Flushing file '/var/lib/manticore/galera.cache'
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:sync():246: Flushed file '/var/lib/manticore/galera.cache'
+RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:~FileDescriptor():233: Closed  file '/var/lib/manticore/galera.cache'
+RPL: cluster 'manticore_cluster' finished, cluster deleted, lib 0x7fd7500018a0 unloaded
+DEBUG: dlopen(libcurl.so.4)=0x5605ec3a6c70
+accepting connections
+[BUDDY] started v1.0.7 '/usr/share/manticore/modules/manticore-buddy/bin/manticore-buddy --listen=http://0.0.0.0:9308  --threads=8' at http://127.0.0.1:36821
+[BUDDY] Loaded plugins:
+[BUDDY]   core: empty-string, backup, emulate-elastic, insert, lock-tables, unlock-tables, select, show, cli-table, plugin, test, insert-mva
+[BUDDY]   local: 
+[BUDDY]   extra: 
+DEBUG: dlopen(libzstd.so.1)=0x7fd764000f90
+2023-06-28 14:34:56,506 INFO success: searchd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+klim@klim-BOHK-WAX9X:/work/manticore_helm$ 
+
+
