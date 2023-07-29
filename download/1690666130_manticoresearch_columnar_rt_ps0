@@ -1,0 +1,1608 @@
+Query: 'select a_int_super_lc g, avg(a_float) c from synth group by a_int_super_lc order by c desc option max_matches=1000000'. Checksum: 3094286076. Results:
+{
+    "took": 470,
+    "timed_out": false,
+    "hits": {
+        "total": 10000,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3787270588,
+                    "c": 1203933437.4722223
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 222078838,
+                    "c": 1202137097.28
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3045327460,
+                    "c": 1201919361.5384614
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 301108176,
+                    "c": 1201744763.901099
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 562409902,
+                    "c": 1201095028.12
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2590409150,
+                    "c": 1201049159.1145833
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 4001710712,
+                    "c": 1200785555.1844661
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2390495190,
+                    "c": 1200489123.1234567
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2674867118,
+                    "c": 1200414998.6336634
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2686122818,
+                    "c": 1200308384.413793
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 1164793990,
+                    "c": 1200189632.5858586
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3365197576,
+                    "c": 1200144439.893617
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2539680448,
+                    "c": 1200117015.90099
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3997011196,
+                    "c": 1200074689.3173077
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 411820740,
+                    "c": 1199874366.0434783
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2934727616,
+                    "c": 1199793234.4810126
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3679511124,
+                    "c": 1199769640.9326923
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 4000170074,
+                    "c": 1199514907.8350515
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3862525626,
+                    "c": 1199469464.321839
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2202945196,
+                    "c": 1199403630.142857
+                }
+            }
+        ]
+    }
+}
+Query: 'select a_int_super_lc g, min(a_float + 50) c from synth where match('she') group by a_int_super_lc order by c desc option max_matches=1000000'. Checksum: 2824842227. Results:
+{
+    "took": 457,
+    "timed_out": false,
+    "hits": {
+        "total": 10000,
+        "hits": [
+            {
+                "_score": 1588,
+                "_source": {
+                    "g": 3402268350,
+                    "c": 85.609673
+                }
+            },
+            {
+                "_score": 1577,
+                "_source": {
+                    "g": 771511624,
+                    "c": 73.389145
+                }
+            },
+            {
+                "_score": 1570,
+                "_source": {
+                    "g": 3602585428,
+                    "c": 58.199001
+                }
+            },
+            {
+                "_score": 1568,
+                "_source": {
+                    "g": 3533242550,
+                    "c": 58.169998
+                }
+            },
+            {
+                "_score": 1570,
+                "_source": {
+                    "g": 487127774,
+                    "c": 58
+                }
+            },
+            {
+                "_score": 1577,
+                "_source": {
+                    "g": 469499376,
+                    "c": 57.478001
+                }
+            },
+            {
+                "_score": 1577,
+                "_source": {
+                    "g": 1819893858,
+                    "c": 56.646
+                }
+            },
+            {
+                "_score": 1567,
+                "_source": {
+                    "g": 968143480,
+                    "c": 56.256451
+                }
+            },
+            {
+                "_score": 1567,
+                "_source": {
+                    "g": 296032860,
+                    "c": 56.160858
+                }
+            },
+            {
+                "_score": 1577,
+                "_source": {
+                    "g": 3258025672,
+                    "c": 56.110336
+                }
+            },
+            {
+                "_score": 1565,
+                "_source": {
+                    "g": 2868491198,
+                    "c": 56
+                }
+            },
+            {
+                "_score": 1577,
+                "_source": {
+                    "g": 2160498972,
+                    "c": 55.938076
+                }
+            },
+            {
+                "_score": 1567,
+                "_source": {
+                    "g": 1674541226,
+                    "c": 55.906094
+                }
+            },
+            {
+                "_score": 1570,
+                "_source": {
+                    "g": 2089490232,
+                    "c": 55.837818
+                }
+            },
+            {
+                "_score": 1577,
+                "_source": {
+                    "g": 1416366834,
+                    "c": 55.725662
+                }
+            },
+            {
+                "_score": 1577,
+                "_source": {
+                    "g": 1045662940,
+                    "c": 55
+                }
+            },
+            {
+                "_score": 1567,
+                "_source": {
+                    "g": 89284248,
+                    "c": 55
+                }
+            },
+            {
+                "_score": 1577,
+                "_source": {
+                    "g": 3930189508,
+                    "c": 54.799999
+                }
+            },
+            {
+                "_score": 1577,
+                "_source": {
+                    "g": 4220382372,
+                    "c": 54.736042
+                }
+            },
+            {
+                "_score": 1567,
+                "_source": {
+                    "g": 2527407252,
+                    "c": 54.702385
+                }
+            }
+        ]
+    }
+}
+Query: 'select a_int_super_lc, count(*) c from synth group by a_int_lc order by c desc, a_int_super_lc asc option max_matches=1000000'. Checksum: 368408576. Results:
+{
+    "took": 1661,
+    "timed_out": false,
+    "hits": {
+        "total": 99995,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 1030058340,
+                    "c": 26
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 1426223728,
+                    "c": 26
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 1782952698,
+                    "c": 26
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 3444409166,
+                    "c": 26
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 876217944,
+                    "c": 25
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 1689217858,
+                    "c": 25
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 2192315498,
+                    "c": 25
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 3706817662,
+                    "c": 25
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 3821063966,
+                    "c": 25
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 111063022,
+                    "c": 24
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 510231704,
+                    "c": 24
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 841519616,
+                    "c": 24
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 1858065420,
+                    "c": 24
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 1871235932,
+                    "c": 24
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 2078964716,
+                    "c": 24
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 2775240352,
+                    "c": 24
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 3382064444,
+                    "c": 24
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 3544105518,
+                    "c": 24
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 3556952104,
+                    "c": 24
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_int_super_lc": 4067619378,
+                    "c": 24
+                }
+            }
+        ]
+    }
+}
+Query: 'select a_string, avg(a_int) avg from synth group by a_string order by avg desc option max_matches=1000000'. Checksum: 1771159315. Results:
+{
+    "took": 2177,
+    "timed_out": false,
+    "hits": {
+        "total": 896191,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Miss Libby Rutherford I",
+                    "avg": 4294962920
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Dorthy Mann I",
+                    "avg": 4294950794
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Dr. Ansley Leuschke",
+                    "avg": 4294949274
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Ross Pouros",
+                    "avg": 4294944304
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Carley Dickinson",
+                    "avg": 4294932824
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Dr. Donna Conn",
+                    "avg": 4294930606
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Lexie Koelpin",
+                    "avg": 4294924994
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Carlo Nikolaus",
+                    "avg": 4294923980
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Rick Wolff Sr.",
+                    "avg": 4294918494
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Breanna Gulgowski IV",
+                    "avg": 4294916568
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Cydney Hoppe",
+                    "avg": 4294912180
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Mr. Tristin Effertz",
+                    "avg": 4294911308
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Anibal Bernier",
+                    "avg": 4294910860
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Prof. Jayne Schultz",
+                    "avg": 4294908730
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Arturo Heaney",
+                    "avg": 4294905974
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Brendan Mitchell Sr.",
+                    "avg": 4294903520
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Mr. Joe Hodkiewicz",
+                    "avg": 4294898102
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Dr. Berry Feeney Jr.",
+                    "avg": 4294894998
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Desiree Huel Sr.",
+                    "avg": 4294893078
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string": "Talon Schumm",
+                    "avg": 4294891732
+                }
+            }
+        ]
+    }
+}
+Query: 'select a_string_longer, avg(a_int) avg from synth group by a_string_longer order by avg desc option max_matches=1000000'. Checksum: 2501185015. Results:
+{
+    "took": 2297,
+    "timed_out": false,
+    "hits": {
+        "total": 1000000,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "9965 Destany Manors\nMableborough, IA 18552-8914",
+                    "avg": 4294965756
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "3019 O'Hara Station Apt. 865\nWunschstad, FL 22328",
+                    "avg": 4294965220
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "1370 VonRueden Keys\nNorth Joanieside, NH 68886",
+                    "avg": 4294962920
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "7393 Breitenberg Centers\nLake Tina, OR 80280-9164",
+                    "avg": 4294950794
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "15662 Richard Forks Apt. 154\nGloverberg, CA 94283-9610",
+                    "avg": 4294949274
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "60891 Parker Terrace Suite 625\nPadbergbury, NM 13803",
+                    "avg": 4294944304
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "4837 Raynor Ridge\nSouth Randy, MD 59631-4662",
+                    "avg": 4294943036
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "53639 Kelley Loaf Suite 459\nNew Cindyland, WA 75971-1846",
+                    "avg": 4294934598
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "3975 Bonita Hills\nLennieside, FL 23078",
+                    "avg": 4294932824
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "437 Konopelski Brooks\nSouth Shanel, AL 77920",
+                    "avg": 4294930606
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "354 Fisher Shores Apt. 444\nNew Palmachester, KS 18398-8617",
+                    "avg": 4294927680
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "694 Dorian Lakes\nEmilianomouth, NM 01967-9105",
+                    "avg": 4294924994
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "9952 Tromp Crest Suite 552\nLake Rubieborough, WI 96935-3231",
+                    "avg": 4294923980
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "32930 Judson Ports\nLake Zachariah, RI 16257-9059",
+                    "avg": 4294918494
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "63527 Botsford Passage\nAntonialand, VT 92285-2520",
+                    "avg": 4294916568
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "55952 Erdman Inlet\nNorth Jaylanside, ID 83586-5274",
+                    "avg": 4294912180
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "45468 Daugherty Underpass\nPurdyhaven, KS 23666",
+                    "avg": 4294911308
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "102 Kailey Stream\nIsabelside, NY 01816",
+                    "avg": 4294910860
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "714 Audie Springs Suite 130\nRennerland, GA 94537",
+                    "avg": 4294908730
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "a_string_longer": "9186 Oberbrunner Forest Suite 858\nFaustinomouth, ME 72024",
+                    "avg": 4294907738
+                }
+            }
+        ]
+    }
+}
+Query: 'select avg(a_big) from synth option max_matches=1000000'. Checksum: 848243098. Results:
+{
+    "took": 11,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "avg(a_big)": 5707992262469750
+                }
+            }
+        ]
+    }
+}
+Query: 'select avg(a_big) from synth where a_big > 1000000000 option max_matches=1000000'. Checksum: 1636656997. Results:
+{
+    "took": 11,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "avg(a_big)": 2.306138560877714e+18
+                }
+            }
+        ]
+    }
+}
+Query: 'select avg(a_big_lc) from synth option max_matches=1000000'. Checksum: 404059829. Results:
+{
+    "took": 9,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "avg(a_big_lc)": 6336716628089833
+                }
+            }
+        ]
+    }
+}
+Query: 'select avg(a_big_lc) from synth where a_big_lc > 1000000000 option max_matches=1000000'. Checksum: 1619727512. Results:
+{
+    "took": 10,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "avg(a_big_lc)": 2.307887046314609e+18
+                }
+            }
+        ]
+    }
+}
+Query: 'select avg(a_big_super_lc) from synth option max_matches=1000000'. Checksum: 2584953405. Results:
+{
+    "took": 9,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "avg(a_big_super_lc)": 27608074599205490
+                }
+            }
+        ]
+    }
+}
+Query: 'select avg(a_big_super_lc) from synth where a_big_super_lc > 1000000000 option max_matches=1000000'. Checksum: 3537139431. Results:
+{
+    "took": 11,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "avg(a_big_super_lc)": 2.31366074523134e+18
+                }
+            }
+        ]
+    }
+}
+Query: 'select avg(a_float) from synth option max_matches=1000000'. Checksum: 4001678015. Results:
+{
+    "took": 8,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "avg(a_float)": 1164798511.567266
+                }
+            }
+        ]
+    }
+}
+Query: 'select avg(a_float) from synth where a_float > 3.14 option max_matches=1000000'. Checksum: 2545485697. Results:
+{
+    "took": 9,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "avg(a_float)": 1192776614.7417767
+                }
+            }
+        ]
+    }
+}
+Query: 'select count(*), avg(a_float) from synth where any(a_mva) in (2652701560,3800433230) option max_matches=1000000'. Checksum: 1749005784. Results:
+{
+    "took": 17,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "count(*)": 2,
+                    "avg(a_float)": 1205168584
+                }
+            }
+        ]
+    }
+}
+Query: 'select groupby() g, a_mva, count(*) c, avg(a_int) from synth group by a_mva order by c desc, g asc option max_matches=1000000'. Checksum: 3577192497. Results:
+{
+    "took": 10082,
+    "timed_out": false,
+    "hits": {
+        "total": 4455822,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 249553604,
+                    "a_mva": [
+                        18944220,
+                        249553604,
+                        576381888,
+                        715927336,
+                        1364232548,
+                        1839501704,
+                        3385448852
+                    ],
+                    "c": 3,
+                    "avg(a_int)": 2282234808.6666665
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 294911618,
+                    "a_mva": [
+                        294911618,
+                        1190104166,
+                        2735591134
+                    ],
+                    "c": 3,
+                    "avg(a_int)": 2360407074.6666665
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 430757850,
+                    "a_mva": [
+                        430757850,
+                        827065976,
+                        2876035354,
+                        3445125090,
+                        3558363344,
+                        3944123210
+                    ],
+                    "c": 3,
+                    "avg(a_int)": 3594779810.6666665
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 664354338,
+                    "a_mva": [
+                        664354338,
+                        737005456,
+                        2175266916,
+                        2452059778
+                    ],
+                    "c": 3,
+                    "avg(a_int)": 2840952860.6666665
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 1680828322,
+                    "a_mva": [
+                        481455182,
+                        538763928,
+                        1430028460,
+                        1680828322,
+                        1778204640
+                    ],
+                    "c": 3,
+                    "avg(a_int)": 2545935136
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3051120148,
+                    "a_mva": [
+                        598254556,
+                        1606871992,
+                        1873103378,
+                        3051120148
+                    ],
+                    "c": 3,
+                    "avg(a_int)": 2815805122.6666665
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3948966800,
+                    "a_mva": [
+                        470182526,
+                        580953476,
+                        719438930,
+                        2671677668,
+                        3948966800
+                    ],
+                    "c": 3,
+                    "avg(a_int)": 644133260.6666666
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 1005550,
+                    "a_mva": [
+                        1005550,
+                        1506263504,
+                        4020791330
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 2360353292
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 1185798,
+                    "a_mva": [
+                        1185798,
+                        745295314,
+                        1166860136,
+                        1660095544,
+                        1729966622,
+                        2016379888,
+                        2690128724,
+                        3703859394
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 2146878350
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 1623314,
+                    "a_mva": [
+                        1623314,
+                        1584163996,
+                        2242739220,
+                        2463239780
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 950041204
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2667296,
+                    "a_mva": [
+                        2667296,
+                        1289102370,
+                        1897193846,
+                        3747263656,
+                        4258778860
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 2212830186
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3788480,
+                    "a_mva": [
+                        3788480,
+                        583733876,
+                        2016370222,
+                        3150901558,
+                        4141291894
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 1709065957
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 4053660,
+                    "a_mva": [
+                        4053660,
+                        956543710,
+                        2007153044,
+                        2176572840,
+                        2332901508
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 1190804289
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 4982728,
+                    "a_mva": [
+                        4982728,
+                        205566864,
+                        2419428170,
+                        2621333006,
+                        2941346694,
+                        3792384178
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 2284226745
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 6442466,
+                    "a_mva": [
+                        6442466,
+                        130802528,
+                        425747862,
+                        2199172854,
+                        4195690956
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 3608573842
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 7641768,
+                    "a_mva": [
+                        7641768,
+                        601542352,
+                        965530104,
+                        1469629322,
+                        1504315758,
+                        1997142674,
+                        4175002778
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 1588440797
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 8865642,
+                    "a_mva": [
+                        8865642,
+                        2859281152,
+                        3476094440,
+                        3928571714
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 1066066058
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 9417488,
+                    "a_mva": [
+                        9417488,
+                        410581202,
+                        1214813368,
+                        2832666508
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 2280250311
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 10437882,
+                    "a_mva": [
+                        10437882,
+                        1977048852,
+                        2317007994,
+                        2688112246,
+                        4245156222
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 1976846172
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 10522092,
+                    "a_mva": [
+                        10522092,
+                        1344803294,
+                        3429617374
+                    ],
+                    "c": 2,
+                    "avg(a_int)": 3676896864
+                }
+            }
+        ]
+    }
+}
+Query: 'select groupby() g, a_mva64, count(*) c, avg(a_int_lc) from synth group by a_mva64 order by c desc, g asc option max_matches=1000000'. Checksum: 3518760753. Results:
+{
+    "took": 11464,
+    "timed_out": false,
+    "hits": {
+        "total": 4371462,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "g": -4537460839727078727,
+                    "a_mva64": [
+                        -4537460839727078727,
+                        862862963883710247,
+                        1165016942462257961,
+                        1985168407351421480,
+                        3806411852633671138
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 1484084404.5
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": -4204559366957870090,
+                    "a_mva64": [
+                        -4204559366957870090,
+                        -3638593612994022545,
+                        1570683165203460189,
+                        3403304193295492424
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 1201856265.5
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": -4173817867959033122,
+                    "a_mva64": [
+                        -4173817867959033122,
+                        -2929857623064733292,
+                        -1242842464437153398,
+                        1446432076782217342,
+                        2922164777383674199,
+                        3348660325663146305
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 2786703818
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": -1164545166982572838,
+                    "a_mva64": [
+                        -3580346173906877265,
+                        -3439284014208940692,
+                        -1164545166982572838,
+                        4418717856852525184
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 2456571875
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": -973267833969506335,
+                    "a_mva64": [
+                        -3473032701426673791,
+                        -2307954146839209641,
+                        -973267833969506335,
+                        159403111694383400,
+                        3646359138846732056
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 2713993241
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": -419202628009931034,
+                    "a_mva64": [
+                        -419202628009931034,
+                        2483339978767656840,
+                        3071129798943949049,
+                        4569048029707974910
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 1498667777
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": -405629605954215914,
+                    "a_mva64": [
+                        -1075195041647627357,
+                        -405629605954215914,
+                        1211939279726510367,
+                        4402199350936840492
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 1264840861.5
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 201739957316793086,
+                    "a_mva64": [
+                        -3881857191220735832,
+                        -3302857152361845856,
+                        -2664226353077723120,
+                        -1649056002075022589,
+                        -1361869711637882806,
+                        201739957316793086,
+                        3495981188924131423,
+                        4159590078722421683,
+                        4262201383904516223
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 1840667098.5
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 1379353166736063246,
+                    "a_mva64": [
+                        -2053344345267639083,
+                        -917146935539178292,
+                        1379353166736063246
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 2720065307.5
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 1972228754253477178,
+                    "a_mva64": [
+                        -3996818314859017812,
+                        -221451133463035058,
+                        1316732834732524748,
+                        1972228754253477178
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 2864871777.5
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2481784549307361651,
+                    "a_mva64": [
+                        -4008099697898455994,
+                        -3065679708407371561,
+                        -790333502132376820,
+                        1657109481602722706,
+                        2481784549307361651,
+                        3754863625358054587,
+                        3954564479584939820,
+                        4186280488255231296
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 2208979349
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2650611272445519944,
+                    "a_mva64": [
+                        -2546743928459446519,
+                        -129060246834979295,
+                        2650611272445519944,
+                        3145930054890756121,
+                        3385459089779746910
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 1989059915.5
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2676667390683355054,
+                    "a_mva64": [
+                        -4397557320024411851,
+                        -1369365638325955051,
+                        2676667390683355054,
+                        3212398101006909326
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 2541833824
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 2905582445733494472,
+                    "a_mva64": [
+                        -3389871182027296759,
+                        -3250620769298559570,
+                        -1009246640312030550,
+                        -404272294525272365,
+                        2905582445733494472,
+                        2980062650670622683
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 962893051
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3129388859479860767,
+                    "a_mva64": [
+                        91763051693507059,
+                        2028256404392512620,
+                        3129388859479860767,
+                        3683095737435804260,
+                        4581199176730488497
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 3460525916
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3160882155533421767,
+                    "a_mva64": [
+                        -912818130341121240,
+                        1819450237290844352,
+                        3160882155533421767
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 1588483597.5
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 3472498483718299164,
+                    "a_mva64": [
+                        -3310017993943819167,
+                        -1956344908567648462,
+                        1099449097456901782,
+                        3472498483718299164
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 1452912758
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": 4561794401003310840,
+                    "a_mva64": [
+                        -2684969071152566931,
+                        836833408957341279,
+                        1116072842047526987,
+                        4561794401003310840
+                    ],
+                    "c": 4,
+                    "avg(a_int_lc)": 2234763516
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": -4605150798170674452,
+                    "a_mva64": [
+                        -4605150798170674452,
+                        -2512539883364253900,
+                        -1390165818008588467,
+                        931675498937911567,
+                        2363854237742975382,
+                        4017956254425640851
+                    ],
+                    "c": 3,
+                    "avg(a_int_lc)": 1283048510.6666667
+                }
+            },
+            {
+                "_score": 1,
+                "_source": {
+                    "g": -4600637341064439568,
+                    "a_mva64": [
+                        -4600637341064439568,
+                        -2207893104025305446,
+                        -619190144639721713,
+                        1308514718013966774,
+                        3810146764906275111,
+                        4147782317840840199
+                    ],
+                    "c": 3,
+                    "avg(a_int_lc)": 1503376842.6666667
+                }
+            }
+        ]
+    }
+}
+Query: 'select max(a_float) from synth option max_matches=1000000'. Checksum: 941930228. Results:
+{
+    "took": 8,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "max(a_float)": 1315795968
+                }
+            }
+        ]
+    }
+}
+Query: 'select max(a_float) from synth where a_float > 3.14 option max_matches=1000000'. Checksum: 941930228. Results:
+{
+    "took": 9,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "max(a_float)": 1315795968
+                }
+            }
+        ]
+    }
+}
+Query: 'select min(a_bool) from synth option max_matches=1000000'. Checksum: 0. Results:
+{
+    "took": 9,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "min(a_bool)": false
+                }
+            }
+        ]
+    }
+}
+Query: 'select min(a_float) from synth where a_float > 3.14 option max_matches=1000000'. Checksum: 3066442717. Results:
+{
+    "took": 9,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "min(a_float)": 1078524032
+                }
+            }
+        ]
+    }
+}
+Query: 'select sum(a_float) from synth option max_matches=1000000'. Checksum: 790142793. Results:
+{
+    "took": 8,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "sum(a_float)": 1164720371400704
+                }
+            }
+        ]
+    }
+}
+Query: 'select sum(a_float) from synth where a_float > 3.14 option max_matches=1000000'. Checksum: 1594001535. Results:
+{
+    "took": 9,
+    "timed_out": false,
+    "hits": {
+        "total": 1,
+        "hits": [
+            {
+                "_score": 1,
+                "_source": {
+                    "sum(a_float)": 1074570819796992
+                }
+            }
+        ]
+    }
+}
