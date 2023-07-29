@@ -1,0 +1,184 @@
+ src/queryprofile.h             |  1 +
+ src/secondary/cidxiterator.cpp | 23 +++++++++++++++++------
+ src/secondary/cidxiterator.h   |  2 +-
+ src/secondaryindex.cpp         | 15 ++++++++++++++-
+ src/sphinx.cpp                 |  4 ++++
+ 5 files changed, 37 insertions(+), 8 deletions(-)
+
+diff --git a/src/queryprofile.h b/src/queryprofile.h
+index c9021f6c0..9feacbf94 100644
+--- a/src/queryprofile.h
++++ b/src/queryprofile.h
+@@ -26,6 +26,7 @@ class CSphSchema;
+ 	SPH_QUERY_STATE ( LOCAL_SEARCH,	"local_search" ) \
+ 	SPH_QUERY_STATE ( SQL_PARSE,	"sql_parse" ) \
+ 	SPH_QUERY_STATE ( FULLSCAN,		"fullscan" ) \
++	SPH_QUERY_STATE ( ITER,		"iter" ) \
+ 	SPH_QUERY_STATE ( DICT_SETUP,	"dict_setup" ) \
+ 	SPH_QUERY_STATE ( PARSE,		"parse" ) \
+ 	SPH_QUERY_STATE ( TRANSFORMS,	"transforms" ) \
+diff --git a/src/secondary/cidxiterator.cpp b/src/secondary/cidxiterator.cpp
+index c604d8d01..78b24c6ac 100644
+--- a/src/secondary/cidxiterator.cpp
++++ b/src/secondary/cidxiterator.cpp
+@@ -31,7 +31,7 @@ namespace SI
+ 	public:
+ 		bool Setup ( const std::string & sFile, std::string & sError );
+ 		ColumnInfo_t GetColumn ( const char * sName ) const override;
+-		bool GetRows ( const ColumnInfo_t & tCol, const Span_T<uint64_t> & dVals, std::string & sError, FilterContext_i * pCtx, std::vector<RowidIterator_i *> & dRes ) const override;
++		bool GetRows ( const ColumnInfo_t & tCol, const Span_T<uint64_t> & dVals, uint32_t uRowMin, uint32_t uRowMax, std::string & sError, FilterContext_i * pCtx, std::vector<RowidIterator_i *> & dRes ) const override;
+ 		bool GetRows ( const ColumnInfo_t & tCol, const FilterRange_t & tVal, std::string & sError, FilterContext_i * pCtx, std::vector<RowidIterator_i *> & dRes ) const override;
+ 
+ 		bool SaveMeta ( std::string & sError ) override;
+@@ -279,6 +279,9 @@ namespace SI
+ 		bool Open ( const std::string & sFileName, std::string & sError );
+ 		void CreateBlocksIterator ( const BlockIter_t & tIt, std::vector<RowidIterator_i *> & dRes );
+ 
++		uint32_t m_uRowMin { std::numeric_limits<uint32_t>::max() };
++		uint32_t m_uRowMax { std::numeric_limits<uint32_t>::max() };
++
+ 	protected:
+ 		std::shared_ptr<FileReader_c> m_pFileReader { nullptr };
+ 		SharedIntCodec_t m_pCodec { nullptr };
+@@ -401,7 +404,7 @@ namespace SI
+ 		}
+ 	}
+ 
+-	bool SITrait_c::GetRows ( const ColumnInfo_t & tCol, const Span_T<uint64_t> & dVals, std::string & sError, FilterContext_i * pCtx, std::vector<RowidIterator_i *> & dRes ) const
++	bool SITrait_c::GetRows ( const ColumnInfo_t & tCol, const Span_T<uint64_t> & dVals, uint32_t uRowMin, uint32_t uRowMax, std::string & sError, FilterContext_i * pCtx, std::vector<RowidIterator_i *> & dRes ) const
+ 	{
+ 		if ( tCol.m_eType==AttrType_e::NONE )
+ 		{
+@@ -430,6 +433,9 @@ namespace SI
+ 		// sort by block start offset
+ 		std::sort ( dBlocksIt.begin(), dBlocksIt.end(), [] ( const BlockIter_t & tA, const BlockIter_t & tB ) { return tA.m_iStart<tB.m_iStart; } );
+ 
++		pBlockReader->m_uRowMin = uRowMin;
++		pBlockReader->m_uRowMax = uRowMax;
++
+ 		for ( int i=0; i<dBlocksIt.size(); i++ )
+ 			pBlockReader->CreateBlocksIterator ( dBlocksIt[i], dRes );
+ 
+@@ -806,7 +812,7 @@ namespace SI
+ 	class RowidIterator_c : public RowidIterator_i
+ 	{
+ 	public:
+-		RowidIterator_c ( Packing_e eType, uint64_t uRowStart, std::shared_ptr<FileReader_c> & pReader, SharedIntCodec_t & pCodec );
++		RowidIterator_c ( Packing_e eType, uint64_t uRowStart, std::shared_ptr<FileReader_c> & pReader, SharedIntCodec_t & pCodec, uint32_t uBoundMin, uint32_t uBoundMax );
+ 		~RowidIterator_c() override {}
+ 
+ 		bool	HintRowID ( uint32_t tRowID ) override;
+@@ -830,6 +836,8 @@ namespace SI
+ 		SpanResizeable_T<uint32_t> m_dRowsDecoded;
+ 		std::vector<uint32_t> m_dRowsRaw;
+ 
++		Interval_T<uint32_t> m_tBound;
++
+ 		bool	StartBlock ( Span_T<uint32_t> & dRowIdBlock );
+ 		bool	NextBlock ( Span_T<uint32_t> & dRowIdBlock );
+ 		void	DecodeRowsBlock();
+@@ -855,7 +863,7 @@ namespace SI
+ 			}
+ 		}
+ 
+-		return new RowidIterator_c ( (Packing_e)m_dTypes[iItem], m_dRowStart[iItem], m_pFileReader, m_pCodec );
++		return new RowidIterator_c ( (Packing_e)m_dTypes[iItem], m_dRowStart[iItem], m_pFileReader, m_pCodec, m_uRowMin, m_uRowMax );
+ 	}
+ 
+ 	RowidIterator_i * RangeReader_c::CreateIterator ( int iItem, bool bLoad )
+@@ -874,7 +882,7 @@ namespace SI
+ 			}
+ 		}
+ 
+-		return new RowidIterator_c ( (Packing_e)m_dTypes[iItem], m_dRowStart[iItem], m_pBlockReader, m_pCodec );
++		return new RowidIterator_c ( (Packing_e)m_dTypes[iItem], m_dRowStart[iItem], m_pBlockReader, m_pCodec, std::numeric_limits<uint32_t>::max(), std::numeric_limits<uint32_t>::max() );
+ 	}
+ 
+ 	template<typename VALUE, bool FLOAT_VALUE>
+@@ -956,11 +964,12 @@ namespace SI
+ 		return FindValueResult_t { -1, m_dValues.back()<fVal ? 1 : -1 };
+ 	}
+ 
+-	RowidIterator_c::RowidIterator_c ( Packing_e eType, uint64_t uRowStart, std::shared_ptr<FileReader_c> & pReader, SharedIntCodec_t & pCodec )
++	RowidIterator_c::RowidIterator_c ( Packing_e eType, uint64_t uRowStart, std::shared_ptr<FileReader_c> & pReader, SharedIntCodec_t & pCodec, uint32_t uBoundMin, uint32_t uBoundMax )
+ 		: m_eType ( eType )
+ 		, m_uRowStart ( uRowStart )
+ 		, m_pReader ( pReader )
+ 		, m_pCodec ( pCodec )
++		, m_tBound ( uBoundMin, uBoundMax )
+ 	{
+ 		m_uLastOff = m_pReader->GetPos();
+ 	}
+@@ -1051,6 +1060,8 @@ namespace SI
+ 		m_uRowMax = m_pReader->Unpack_uint32() + m_uRowMin;
+ 
+ 		ReadVectorLen32 ( m_dRowsRaw, *m_pReader );
++		if ( m_tBound.m_tStart!=std::numeric_limits<uint32_t>::max() && !m_tBound.Overlaps ( Interval_T<uint32_t> ( m_uRowMin, m_uRowMax ) ) )
++			return;
+ 		
+ 		m_pCodec->Decode ( m_dRowsRaw, m_dRowsDecoded );
+ 		ComputeInverseDeltas ( m_dRowsDecoded, true );
+diff --git a/src/secondary/cidxiterator.h b/src/secondary/cidxiterator.h
+index 3680a605e..f56e440c7 100644
+--- a/src/secondary/cidxiterator.h
++++ b/src/secondary/cidxiterator.h
+@@ -59,7 +59,7 @@ namespace SI
+ 		virtual ~Index_i() = default;
+ 
+ 		virtual ColumnInfo_t GetColumn ( const char * sName ) const = 0;
+-		virtual bool GetRows ( const ColumnInfo_t & tCol, const Span_T<uint64_t> & dVals, std::string & sError, FilterContext_i * pCtx, std::vector<RowidIterator_i *> & dRes ) const = 0;
++		virtual bool GetRows ( const ColumnInfo_t & tCol, const Span_T<uint64_t> & dVals, uint32_t uRowMin, uint32_t uRowMax, std::string & sError, FilterContext_i * pCtx, std::vector<RowidIterator_i *> & dRes ) const = 0;
+ 		virtual bool GetRows ( const ColumnInfo_t & tCol, const FilterRange_t & tVal, std::string & sError, FilterContext_i * pCtx, std::vector<RowidIterator_i *> & dRes ) const = 0;
+ 
+ 		virtual bool SaveMeta ( std::string & sError ) = 0;
+diff --git a/src/secondaryindex.cpp b/src/secondaryindex.cpp
+index 71f6e970f..1c0668ddd 100644
+--- a/src/secondaryindex.cpp
++++ b/src/secondaryindex.cpp
+@@ -1479,6 +1479,19 @@ RowidIterator_i * CreateSecondaryIndexIterator ( const SI::Index_i * pCidx, CSph
+ 	std::vector<RowidIterator_i *> dRes;
+ 	std::unique_ptr<SI::FilterContext_i> pFilterCtx { pCidx->CreateFilterContext() };
+ 
++	uint32_t uRowMin = INVALID_ROWID;
++	uint32_t uRowMax = INVALID_ROWID;
++	for ( const auto & tFilter : dFilters )
++	{
++		if ( tFilter.m_sAttrName=="@rowid" )
++		{
++			const auto & tBounds = GetFilterRowIdBoundaries ( tFilter, uRowsCount );
++			uRowMin = tBounds.m_tMinRowID;
++			uRowMax = tBounds.m_tMaxRowID;
++			break;
++		}
++	}
++
+ 	for ( int iFilter=0; iFilter<dEnabledIndexes.GetLength(); iFilter++ )
+ 	{
+ 		int iFilterId = dEnabledIndexes[iFilter].m_iFilterId;
+@@ -1538,7 +1551,7 @@ RowidIterator_i * CreateSecondaryIndexIterator ( const SI::Index_i * pCidx, CSph
+ 		case SPH_FILTER_VALUES:
+ 		case SPH_FILTER_STRING:
+ 		case SPH_FILTER_STRING_LIST:
+-			bCreated = pCidx->GetRows ( tCidxCol, SI::Span_T<uint64_t> ( dFilterVals.Begin(), dFilterVals.GetLength() ), sError, pFilterCtx.get(), dFilterIt );
++			bCreated = pCidx->GetRows ( tCidxCol, SI::Span_T<uint64_t> ( dFilterVals.Begin(), dFilterVals.GetLength() ), uRowMin, uRowMax, sError, pFilterCtx.get(), dFilterIt );
+ 			break;
+ 
+ 		case SPH_FILTER_RANGE:
+diff --git a/src/sphinx.cpp b/src/sphinx.cpp
+index 37675df31..91d2343c2 100644
+--- a/src/sphinx.cpp
++++ b/src/sphinx.cpp
+@@ -8733,9 +8733,13 @@ bool CSphIndex_VLN::MultiScan ( CSphQueryResult & tResult, const CSphQuery & tQu
+ 	// we don't modify the original filters because iterators may use some data from them (to avoid copying)
+ 	CSphVector<CSphFilterSettings> dModifiedFilters;
+ 
++	SwitchProfile ( tMeta.m_pProfile, SPH_QSTATE_ITER );
++
+ 	// try to spawn an iterator from a secondary index
+ 	CSphScopedPtr<RowidIterator_i> pIterator ( SpawnIterators ( tQuery, dModifiedFilters, tCtx, tFlx, tMaxSorterSchema, tMeta ) );
+ 
++	SwitchProfile ( tMeta.m_pProfile, SPH_QSTATE_FULLSCAN );
++
+ 	if ( pIterator )
+ 		RunFullscanOnIterator ( pIterator.Ptr(), tCtx, tMeta, dSorters, tMatch, iCutoff, bRandomize, tArgs.m_iIndexWeight, tmMaxTimer );
+ 	else
