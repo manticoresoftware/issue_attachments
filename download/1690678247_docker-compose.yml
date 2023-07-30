@@ -1,0 +1,75 @@
+version: '2.1'
+
+networks:
+  kbn-net:
+    driver: bridge
+    
+services:
+
+  haproxy:
+    image: haproxy:2.6.5
+    volumes:
+      - ./haproxy_kibana.cfg:/usr/local/etc/haproxy/haproxy.cfg       
+    networks:
+      - kbn-net
+     
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.6.0
+    environment:
+      - SERVER_NAME=kibana
+      - ELASTICSEARCH_HOSTS=http://haproxy:9203
+      - ELASTICSEARCH_USERNAME=elastic
+      - ELASTICSEARCH_PASSWORD=gouretionv
+      - SERVER_PORT=5601
+      - KIBANA_AUTOCOMPLETETIMEOUT=10000
+      - KIBANA_AUTOCOMPLETETERMINATEAFTER=100000000
+      - ELASTICSEARCH_REQUESTTIMEOUT=600000
+      - ELASTICSEARCH_SHARDTIMEOUT=0
+    ports:
+      - "5601:5601"
+    networks:
+      - kbn-net
+    depends_on:
+      - haproxy
+      - elasticsearch
+     
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.6.0
+    ports:
+      - "9200:9200"
+    environment: 
+      - node.name=elasticsearch
+      - ELASTIC_PASSWORD=gouretionv
+      - xpack.security.enabled=true
+      - xpack.license.self_generated.type=basic
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+    volumes:
+      - ./kibana_data:/usr/share/elasticsearch/data 
+    networks:
+      - kbn-net
+    depends_on:
+      - haproxy
+  
+  proxy_mnt:
+    image: mitmproxy/mitmproxy
+    ports:
+      - "8092:8092"
+    command: mitmweb --mode reverse:http://192.168.1.97:9316 -p 9317 --no-web-open-browser --web-port 8092 --web-host 0.0.0.0
+    networks:
+      - kbn-net
+    #extra_hosts: # for linux hosts since version 20.10
+    #  - host.docker.internal:host-gateway      
+    depends_on:
+      - haproxy    
+  proxy_es:
+    image: mitmproxy/mitmproxy
+    ports:
+      - "8093:8093"
+    command: mitmweb --mode reverse:http://elasticsearch:9200 -p 9202 --no-web-open-browser --web-port 8093 --web-host 0.0.0.0
+    networks:
+      - kbn-net
+    depends_on:
+      - haproxy  
+      
+  
