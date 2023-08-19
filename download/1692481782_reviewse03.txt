@@ -1,0 +1,224 @@
+[root@reviewse03 ~]# grep -B 10 -A 100 FATAL /boardreader/log/sphinx/searchd.1.log 
+[Sat May 19 05:08:40.652 2018] [20122] rotating index 'reviewinc_rlp_node5': started
+[Sat May 19 05:08:40.697 2018] [20122] rotating index 'reviewinc_rlp_node5': success
+[Sat May 19 05:08:41.546 2018] [20115] rotating index 'iteminc_node8': started
+[Sat May 19 05:08:41.593 2018] [20115] rotating index 'iteminc_node8': success
+[Sat May 19 05:08:41.605 2018] [20122] rotating index 'reviewinc_node2': started
+[Sat May 19 05:08:41.648 2018] [20122] rotating index 'reviewinc_node2': success
+[Sat May 19 05:08:46.875 2018] [20123] rotating index 'authorinc_node6': started
+[Sat May 19 05:08:47.616 2018] [20123] rotating index 'authorinc_node6': success
+[Sat May 19 05:08:47.876 2018] [20114] rotating index 'iteminc_node4': started
+[Sat May 19 05:08:48.053 2018] [20114] rotating index 'iteminc_node4': success
+------- FATAL: CRASH DUMP -------
+[Sat May 19 05:08:49.719 2018] [19229]
+
+--- crashed SphinxAPI request dump ---
+AAABIQAAA9YAAAAQAAAAAQAAAEQAAAAAAADDUAAAAAYAAAAAAAAAAQAAAAlwdWJsaXNoZWQAAAFiQCh0aXRsZSxi
+b2R5LHByb3MsY29ucyxpdGVtKSgoImEgc2FuZHdpY2giIHwgImEgc2FuZHdoaWNoIiB8IChzYW5kd2lj
+aCByZWNpcGUpIHwgKHNhbmR3aGljaCByZWNpcGUpIHwgKHNhbW1pY2ggcmVjaXBlKSB8IChzYW13aWNo
+IHJlY2lwZSkgfCAoc2Ftd2hpY2ggcmVjaXBlKSkgKGxvdmUgfCBiZXN0IHwgZ3JlYXQgfCAic28gZ29v
+ZCIgfCBnb29kIHwgZmF2b3JpdGUgfCB5dW1teSB8IGRlbGljaW91cyB8IHBlcmZlY3QgfCBoZWFs
+dGh5IHwgYW1hemluZyB8IGpveSB8ICJiZXR0ZXIgdGhhbiIgfCAibm90aGluZyBiZXR0ZXIiIHwgcG9w
+dWxhcikgLShjb29raWUgfCBjYWtlIHwgImljZSBjcmVhbSIgfCBpY2VjcmVhbSkpAAAAAAAAABFyZXZp
+ZXdfcmV2aWV3c2UwMwAAAAEAAAAAAAAAAP//////////AAAABAAAABNjb250ZW50X3Byb3ZpZGVyX2lk
+AAAAAAAAAAUAAAAAAAAAAAAAAAAAAAADAAAAAAAAABIAAAAAAAAAYwAAAAAAAAB4AAAAAAAAAAEA
+AAABAAAAAAAAAAAAAAABAAAAC2xhbmd1YWdlX2lkAAAAAAAAAAEAAAAAAAAAFgAAAAAAAAABAAAAAQAA
+AAAAAAAAAAAAAQAAAAlwdWJsaXNoZWQAAAABAAAAAFj1n0oAAAAA//8rfwAAAAAAAAABAAAAAQAAAAAA
+AAAAAAAAAQAAAAhpbnNlcnRlZAAAAAEAAAAAWtbSygAAAABa/7FKAAAAAAAAAAEAAAABAAAAAAAAAAAA
+AAABAAAAAAAAAAAAAMNQAAAAC0Bncm91cCBkZXNjAAAAAAAAAAUAAAAyAAAAAAAAAAAAAAAAAAAn
+EAAAAAAAAABiNTY5ZDkwYTliZTdiZjA0NjA2NzU2M2RkNjUyMWE4ODAsNHRVTHIzVHFocGNxa1VuOVhi
+Y3RtaUYwbVlIYXVUQ1EsMzIzZDUxMzFmMGZjNTQ1MWJkYWVhMjAyZTM4ZjUzZWUAAAAAAAAAASoAD0JA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAACmJsZW5kZWQuc28AAAAFcXVlcnkA
+AAAAAAAAAAAAAAEAAAABKgAAAAEqAAAAAAAAAAAAAAAA
+--- request dump end ---
+Manticore 3.0.0 6835479@180502 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so -DDATADIR=/var/data -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_RLP=1 -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinx
+Host OS is Linux rpmbuild02.boardreader.com 3.10.0-693.17.1.vz7.43.10 #1 SMP Tue Feb 27 13:53:18 MSK 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f45676f8ef7, thread stack size = 0x100000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x91)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x91, stack=0x7f4567700000, stacksize=0x100000)
+Trying system backtrace:
+begin of manual symbols:
+627948
+4dd624
+7f58f44d0370
+718019
+584341
+5b1893
+5bc5a2
+5b7190
+4e87eb
+4e8903
+4dc9b4
+62f56f
+7f58f44c8dc5
+7f58f2d6a76d
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 14): ---
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxutils.cpp:2288
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:1937
+??:0
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxsearch.cpp:6586 (discriminator 1)
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:13316
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:16633
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:16309
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:16326
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:7339
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:7014
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:2017
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:675
+??:0
+??:0
+--- BT to source lines finished ---
+--- 20 active threads ---
+thd 0, proto sphinxapi, state query, command search
+thd 1, proto sphinxapi, state query, command search
+thd 2, proto sphinxapi, state query, command search
+thd 3, proto sphinxapi, state query, command search
+thd 4, proto sphinxapi, state query, command search
+thd 5, proto sphinxapi, state query, command search
+thd 6, proto sphinxapi, state query, command search
+thd 7, proto sphinxapi, state query, command search
+thd 8, proto sphinxapi, state query, command search
+thd 9, proto sphinxapi, state query, command search
+thd 10, proto sphinxapi, state query, command search
+thd 11, proto sphinxapi, state query, command search
+thd 12, proto sphinxapi, state query, command search
+thd 13, proto sphinxapi, state query, command search
+thd 14, proto sphinxapi, state query, command search
+thd 15, proto sphinxapi, state query, command search
+thd 16, proto sphinxapi, state query, command search
+thd 17, proto sphinxapi, state query, command search
+thd 18, proto sphinxapi, state query, command search
+thd 19, proto sphinxapi, state query, command search
+------- CRASH DUMP END -------
+[Sat May 19 05:09:38.670 2018] [111108] watchdog: main process 111109 forked ok
+[Sat May 19 05:09:38.671 2018] [111109] listening on all interfaces, port=3312
+[Sat May 19 05:09:38.671 2018] [111109] listening on all interfaces, port=6312
+[Sat May 19 05:09:38.671 2018] [111109] listening on all interfaces, port=9312
+[Sat May 19 05:09:38.732 2018] [111109] rotating index 'authorinc_node1': success
+[Sat May 19 05:09:39.053 2018] [111109] rotating index 'reviewinc_node3': success
+[Sat May 19 05:09:39.420 2018] [111109] rotating index 'reviewinc_node6': success
+[Sat May 19 05:09:39.582 2018] [111109] rotating index 'reviewinc_node7': success
+[Sat May 19 05:09:48.433 2018] [111109] prereading 185 indexes
+--
+[Sat May 19 05:15:26.548 2018] [112878] rotating index 'iteminc_node3': started
+[Sat May 19 05:15:26.592 2018] [112878] rotating index 'iteminc_node3': success
+[Sat May 19 05:15:26.653 2018] [112893] rotating index 'reviewinc_node4': started
+[Sat May 19 05:15:26.695 2018] [112893] rotating index 'reviewinc_node4': success
+[Sat May 19 05:15:31.182 2018] [112892] rotating index 'reviewinc_rlp_node3': started
+[Sat May 19 05:15:31.225 2018] [112892] rotating index 'reviewinc_rlp_node3': success
+[Sat May 19 05:15:31.943 2018] [112891] rotating index 'reviewinc_rlp_node6': started
+[Sat May 19 05:15:31.991 2018] [112891] rotating index 'reviewinc_rlp_node6': success
+[Sat May 19 05:15:35.439 2018] [112886] rotating index 'authorinc_node7': started
+[Sat May 19 05:15:35.487 2018] [112886] rotating index 'authorinc_node7': success
+------- FATAL: CRASH DUMP -------
+[Sat May 19 05:15:36.277 2018] [111109]
+
+--- crashed SphinxAPI request dump ---
+AAABIQAAA58AAAAQAAAAAQAAAEQAAAAAAADDUAAAAAYAAAAAAAAAAQAAAAlwdWJsaXNoZWQAAAFiQCh0aXRsZSxi
+b2R5LHByb3MsY29ucyxpdGVtKSgoImEgc2FuZHdpY2giIHwgImEgc2FuZHdoaWNoIiB8IChzYW5kd2lj
+aCByZWNpcGUpIHwgKHNhbmR3aGljaCByZWNpcGUpIHwgKHNhbW1pY2ggcmVjaXBlKSB8IChzYW13aWNo
+IHJlY2lwZSkgfCAoc2Ftd2hpY2ggcmVjaXBlKSkgKGxvdmUgfCBiZXN0IHwgZ3JlYXQgfCAic28gZ29v
+ZCIgfCBnb29kIHwgZmF2b3JpdGUgfCB5dW1teSB8IGRlbGljaW91cyB8IHBlcmZlY3QgfCBoZWFs
+dGh5IHwgYW1hemluZyB8IGpveSB8ICJiZXR0ZXIgdGhhbiIgfCAibm90aGluZyBiZXR0ZXIiIHwgcG9w
+dWxhcikgLShjb29raWUgfCBjYWtlIHwgImljZSBjcmVhbSIgfCBpY2VjcmVhbSkpAAAAAAAAABFyZXZp
+ZXdfcmV2aWV3c2UwMwAAAAEAAAAAAAAAAP//////////AAAAAwAAABNjb250ZW50X3Byb3ZpZGVyX2lk
+AAAAAAAAAAUAAAAAAAAAAAAAAAAAAAADAAAAAAAAABIAAAAAAAAAYwAAAAAAAAB4AAAAAAAAAAEA
+AAABAAAAAAAAAAAAAAABAAAACXB1Ymxpc2hlZAAAAAEAAAAAWPWg5gAAAAD//yt/AAAAAAAAAAEAAAAB
+AAAAAAAAAAAAAAABAAAACGluc2VydGVkAAAAAQAAAABa1tRmAAAAAFr/suYAAAAAAAAAAQAAAAEAAAAA
+AAAAAAAAAAEAAAAAAAAAAAAAw1AAAAALQGdyb3VwIGRlc2MAAAAAAAAABQAAADIAAAAAAAAAAAAAAAAA
+ACcQAAAAAAAAAGJmMDc0YTYwMTExYTg3NTZjNmVlZmYxN2M1OGIxZGNmZixHVVlsT0pRNkpkcEVq
+RXJLOTc1ODVCQnBwRXdReEsxdCwzMjNkNTEzMWYwZmM1NDUxYmRhZWEyMDJlMzhmNTNlZQAAAAAAAAAB
+KgAPQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAKYmxlbmRlZC5zbwAAAAVx
+dWVyeQAAAAAAAAAAAAAAAQAAAAEqAAAAASoAAAAAAAAAAAAAAAA=
+--- request dump end ---
+Manticore 3.0.0 6835479@180502 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so -DDATADIR=/var/data -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_RLP=1 -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinx
+Host OS is Linux rpmbuild02.boardreader.com 3.10.0-693.17.1.vz7.43.10 #1 SMP Tue Feb 27 13:53:18 MSK 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f77a2ee0ef7, thread stack size = 0x100000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x4)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x4, stack=0x7f77a2ee0000, stacksize=0x100000)
+Trying system backtrace:
+begin of manual symbols:
+627948
+4dd624
+7f91d4af4370
+718019
+584341
+5b1893
+5bc5a2
+5b7190
+4e87eb
+4e8903
+4dc9b4
+62f56f
+7f91d4aecdc5
+7f91d338e76d
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 14): ---
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxutils.cpp:2288
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:1937
+??:0
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxsearch.cpp:6586 (discriminator 1)
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:13316
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:16633
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:16309
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:16326
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:7339
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:7014
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:2017
+/root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:675
+??:0
+??:0
+--- BT to source lines finished ---
+--- 2 active threads ---
+thd 0, proto sphinxapi, state query, command search
+thd 1, proto sphinxapi, state query, command search
+------- CRASH DUMP END -------
+[Sat May 19 05:15:55.093 2018] [111108] watchdog: main process 111109 killed dirtily with signal 11, core dumped, will be restarted
+[Sat May 19 05:15:55.093 2018] [111108] watchdog: main process 111845 forked ok
+[Sat May 19 05:15:55.149 2018] [111845] listening on all interfaces, port=3312
+[Sat May 19 05:15:55.149 2018] [111845] listening on all interfaces, port=6312
+[Sat May 19 05:15:55.149 2018] [111845] listening on all interfaces, port=9312
+[Sat May 19 05:15:55.389 2018] [111845] rotating index 'reviewinc_rlp_node2': success
+[Sat May 19 05:15:55.508 2018] [111845] rotating index 'reviewinc_node3': success
+[Sat May 19 05:15:55.567 2018] [111845] rotating index 'authorinc_node4': success
+[Sat May 19 05:15:55.771 2018] [111845] rotating index 'reviewinc_rlp_node4': success
+[Sat May 19 05:15:55.987 2018] [111845] rotating index 'authorinc_node5': success
+[Sat May 19 05:15:56.218 2018] [111845] rotating index 'iteminc_node6': success
+[Sat May 19 05:15:56.584 2018] [111845] rotating index 'reviewinc_node7': success
+[Sat May 19 05:15:56.658 2018] [111845] rotating index 'reviewinc_rlp_node7': success
+[Sat May 19 05:15:57.062 2018] [111845] rotating index 'authorinc_node8': success
+[Sat May 19 05:15:57.752 2018] [111845] rotating index 'reviewinc_node8': success
+[Sat May 19 05:15:57.835 2018] [111845] rotating index 'reviewinc_rlp_node8': success
+[Sat May 19 05:16:22.794 2018] [130986] watchdog: main process 130987 forked ok
+[Sat May 19 05:16:22.794 2018] [130987] listening on all interfaces, port=3312
+[Sat May 19 05:16:22.794 2018] [130987] listening on all interfaces, port=6312
+[Sat May 19 05:16:22.794 2018] [130987] listening on all interfaces, port=9312
+[Sat May 19 05:16:33.343 2018] [130987] prereading 185 indexes
+[Sat May 19 05:16:49.849 2018] [130987] prereaded 185 indexes in 16.505 sec
+[Sat May 19 05:16:49.849 2018] [130987] accepting connections
+[Sat May 19 05:16:50.474 2018] [132521] rotating index 'reviewinc_node3': started
+[Sat May 19 05:16:50.519 2018] [132521] rotating index 'reviewinc_node3': success
+[Sat May 19 05:16:50.702 2018] [132530] rotating index 'reviewinc_rlp_node7': started
+[Sat May 19 05:16:50.748 2018] [132530] rotating index 'reviewinc_rlp_node7': success
+[Sat May 19 05:16:51.474 2018] [132523] rotating index 'reviewinc_node7': started
