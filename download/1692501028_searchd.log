@@ -1,0 +1,293 @@
+[Mon Aug 20 20:07:05.642 2018] [7823] watchdog: main process 7824 forked ok
+[Mon Aug 20 20:07:05.642 2018] [7824] listening on all interfaces, port=9306
+[Mon Aug 20 20:07:05.642 2018] [7824] listening on all interfaces, port=61535
+[Mon Aug 20 20:07:05.644 2018] [7824] accepting connections
+[Mon Aug 20 20:07:05.644 2018] [7831] prereading 9 indexes
+[Mon Aug 20 20:07:05.644 2018] [7831] prereaded 9 indexes in 0.000 sec
+------- FATAL: CRASH DUMP -------
+[Mon Aug 20 20:33:54.828 2018] [ 7824]
+
+--- crashed SphinxQL request dump ---
+replace into indxall_a (id, sourcefile, touropcode, brochurecode, programcode, transporttype,
+ departurepoint, workflow, country, destination, productcode, servicecode, departuredate,
+ duration, boardbasis, quantity, freekids, product_id, offers, key, availability, 
+routes, date_updated, batch_guid, departurepoint_name, departuregroup, departuregroup_name,
+ departuregroup_sort) values (14180437623287705207, 'HPP/PACKAGE_GB_IN_A_FR.gz', 'INGH',
+ '010', 'GBINA', 'FLT', 'LBA', 'Transport&Accommodation', 'FR', 'FRLA', 'FRLA0128',
+ 'FRLA0128ACC', 1549670400, 7, 'SC', 15, '15', 0, '', 'INGHGBINALBAFRLA0128ACC15496704007',
+ '{\"0\":{\"price\":818,\"pricewas\":868,\"pricesaving\":50,\"maxocc\":6,\"minocc\":2,
+\"room\":\"B6\",\"arr\":\"GVA\"},\"2\":{\"price\":818,\"pricewas\":868,\"pricesaving\":50,
+\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},\"3\":{\"price\":818,\"pricewas\":868,
+\"pricesaving\":50,\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},\"4\":{\"price\":818,
+\"pricewas\":868,\"pricesaving\":50,\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},
+\"5\":{\"price\":818,\"pricewas\":868,\"pricesaving\":50,\"maxocc\":6,\"minocc\":2,
+\"room\":\"B6\",\"arr\":\"GVA\"},\"6\":{\"price\":818,\"pricewas\":868,\"pricesaving\":50,
+\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},\"7\":{\"price\":818,\"pricewas\":868,
+\"pricesaving\":50,\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},\"8\":{\"price\":818,
+\"pricewas\":868,\"pricesaving\":50,\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},
+\"9\":{\"price\":818,\"pricewas\":868,\"pricesaving\":50,\"maxocc\":6,\"minocc\":2,
+\"room\":\"B6\",\"arr\":\"GVA\"}}', '{\"departures\":[{\"key\":\"LBAGVAAYGVALBAAY\",
+\"type\":\"FLT\",\"ob_departurepoint\":\"LBA\",\"ob_arrivalpoint\":\"GVA\",\"ob_departuredate\":\"2019-02-09\",
+\"ob_departuretime\":\"08:10:00\",\"ob_arrivaldate\":\"2019-02-09\",\"ob_arrivaltime\":\"11:10:00\",
+\"ob_carrier\":\"LS\",\"ob_carrierno\":\"0285\",\"ib_departurepoint\":\"GVA\",\"ib_arrivalpoint\":\"LBA\",
+\"ib_departuredate\":\"2019-02-16\",\"ib_departuretime\":\"12:30:00\",\"ib_arrivaldate\":\"2019-02-16\",
+\"ib_arrivaltime\":\"13:30:00\",\"ib_carrier\":\"LS\",\"ib_carrierno\":\"0286\",\"pricing\":{\"0\":{\"price\":818,
+\"pricewas\":868,\"pricesaving\":50},\"2\":{\"price\":818,\"pricewas\":868,\"pricesaving\":50},
+\"3\":{\"price\":818,\"pricewas\":868,\"pricesaving\":50},\"4\":{\"price\":818,\"pricewas\":868,
+\"pricesaving\":50},\"5\":{\"price\":818,\"pricewas\":868,\"pricesaving\":50},\"6\":{\"price\":818,
+\"pricewas\":868,\"pricesaving\":50},\"7\":{\"price\":818,\"pricewas\":868,\"pricesaving\":50},
+\"8\":{\"price\":818,\"pricewas\":868,\"pricesaving\":50},\"9\":{\"price\":818,\"pricewas\":868,
+\"pricesaving\":50}}}]}', 1534797235.814, '1fda3342-5498-4d26-885c-c1e70ab5ba4d', 
+'Leeds Bradford', 'NORTH', 'North Of England', '2')
+--- request dump end ---
+Manticore 2.7.1 458e9c6@180704 release
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDISTR_BUILD=rhel7 -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDL_PGSQL=1 -DPGSQL_LIB=libpq.so.5 -DDATADIR=/var/data -DSPLIT_SYMBOLS=ON -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_PGSQL=ON -DWITH_RE2=ON -DWITH_STEMMER=ON -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinx
+Host OS is Linux 21969f0ec3a6 4.13.0-45-generic #50~16.04.1-Ubuntu SMP Wed May 30 11:18:27 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f6eab563edf, thread stack size = 0x100000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x4)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x4, stack=0x7f6eab560000, stacksize=0x100000)
+Trying system backtrace:
+begin of manual symbols:
+6752aa
+4e3487
+7f6eacf581f0
+771f54
+775c20
+776a5b
+798381
+7998a3
+524709
+55fb9b
+53a22b
+53a769
+53abb5
+4e2df4
+67c72f
+7f6eacf4d54b
+7f6eabd7d1af
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 17): ---
+--- BT to source lines finished ---
+--- 3 active threads ---
+thd 0, proto sphinxql, state handshake, command SYSTEM
+thd 1, proto sphinxql, state query, command replace
+thd 2, proto sphinxql, state net_idle, command select
+------- CRASH DUMP END -------
+[Mon Aug 20 20:33:56.754 2018] [7823] watchdog: main process 7824 killed dirtily with signal 11, will be restarted
+[Mon Aug 20 20:33:56.755 2018] [7823] watchdog: main process 9201 forked ok
+[Mon Aug 20 20:33:56.755 2018] [9201] listening on all interfaces, port=9306
+[Mon Aug 20 20:33:56.755 2018] [9201] listening on all interfaces, port=61535
+[Mon Aug 20 20:33:56.757 2018] [9201] binlog: replaying log /var/lib/manticore//binlog.001
+[Mon Aug 20 20:34:00.743 2018] [9201] binlog: index indxall_a: recovered from tid 0 to tid 27882
+[Mon Aug 20 20:34:00.743 2018] [9201] binlog: index indxall_b: recovered from tid 0 to tid 10276
+[Mon Aug 20 20:34:00.743 2018] [9201] binlog: replay stats: 38158 rows in 38158 commits; 0 updates, 0 reconfigure; 2 indexes
+[Mon Aug 20 20:34:00.743 2018] [9201] binlog: finished replaying /var/lib/manticore//binlog.001; 256.0 MB in 3.985 sec
+[Mon Aug 20 20:34:00.743 2018] [9201] binlog: replaying log /var/lib/manticore//binlog.002
+[Mon Aug 20 20:34:05.704 2018] [9201] binlog: index indxall_b: recovered from tid 10276 to tid 14227
+[Mon Aug 20 20:34:05.704 2018] [9201] binlog: index indxall_a: recovered from tid 27882 to tid 57137
+[Mon Aug 20 20:34:05.704 2018] [9201] binlog: replay stats: 33206 rows in 33206 commits; 0 updates, 0 reconfigure; 2 indexes
+[Mon Aug 20 20:34:05.704 2018] [9201] binlog: finished replaying /var/lib/manticore//binlog.002; 256.0 MB in 4.961 sec
+[Mon Aug 20 20:34:05.704 2018] [9201] binlog: replaying log /var/lib/manticore//binlog.003
+
+--- crashed invalid query ---
+
+--- request dump end ---
+Manticore 2.7.1 458e9c6@180704 release
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDISTR_BUILD=rhel7 -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDL_PGSQL=1 -DPGSQL_LIB=libpq.so.5 -DDATADIR=/var/data -DSPLIT_SYMBOLS=ON -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_PGSQL=ON -DWITH_RE2=ON -DWITH_STEMMER=ON -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinx
+Host OS is Linux 21969f0ec3a6 4.13.0-45-generic #50~16.04.1-Ubuntu SMP Wed May 30 11:18:27 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7ffed43a883f, thread stack size = 0x100000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x4)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x4, stack=0x7ffed43b0000, stacksize=0x100000)
+Trying system backtrace:
+begin of manual symbols:
+6752aa
+4e3487
+7f6eacf581f0
+771f54
+775c20
+776a5b
+798381
+799ddc
+79a4d8
+79a6f0
+79a7c8
+53ca8e
+4e1d67
+7f6eabca8f6a
+4e23df
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 15): ---
+--- BT to source lines finished ---
+--- 0 active threads ---
+------- CRASH DUMP END -------
+[Wed Aug 22 11:37:23.195 2018] [3623] watchdog: main process 3624 forked ok
+[Wed Aug 22 11:37:23.195 2018] [3624] listening on all interfaces, port=9306
+[Wed Aug 22 11:37:23.196 2018] [3624] listening on all interfaces, port=61535
+[Wed Aug 22 11:37:23.209 2018] [3661] prereading 9 indexes
+[Wed Aug 22 11:37:23.209 2018] [3624] accepting connections
+[Wed Aug 22 11:37:23.209 2018] [3661] prereaded 9 indexes in 0.000 sec
+------- FATAL: CRASH DUMP -------
+[Wed Aug 22 11:54:40.289 2018] [ 3624]
+
+--- crashed SphinxQL request dump ---
+replace into indxall_a (id, sourcefile, touropcode, brochurecode, programcode, transporttype,
+ departurepoint, workflow, country, destination, productcode, servicecode, departuredate,
+ duration, boardbasis, quantity, freekids, product_id, offers, key, availability, 
+routes, date_updated, batch_guid, departurepoint_name, departuregroup, departuregroup_name,
+ departuregroup_sort) values (10370533086520964262, 'HPP/PACKAGE_GB_IN_A_FR.gz', 'INGH',
+ '010', 'GBINA', 'FLT', 'JER', 'Transport&Accommodation', 'FR', 'FRLA', 'FRLA0128',
+ 'FRLA0128ACC', 1548460800, 14, 'SC', 26, '26', 0, '', 'INGHGBINAJERFRLA0128ACC154846080014',
+ '{\"0\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100,\"maxocc\":6,\"minocc\":2,
+\"room\":\"B6\",\"arr\":\"GVA\"},\"2\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100,
+\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},\"3\":{\"price\":1169,\"pricewas\":1269,
+\"pricesaving\":100,\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},\"4\":{\"price\":1169,
+\"pricewas\":1269,\"pricesaving\":100,\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},
+\"5\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100,\"maxocc\":6,\"minocc\":2,
+\"room\":\"B6\",\"arr\":\"GVA\"},\"6\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100,
+\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},\"7\":{\"price\":1169,\"pricewas\":1269,
+\"pricesaving\":100,\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},\"8\":{\"price\":1169,
+\"pricewas\":1269,\"pricesaving\":100,\"maxocc\":6,\"minocc\":2,\"room\":\"B6\",\"arr\":\"GVA\"},
+\"9\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100,\"maxocc\":6,\"minocc\":2,
+\"room\":\"B6\",\"arr\":\"GVA\"}}', '{\"departures\":[{\"key\":\"JERGVATAYGVAJERTAY\",
+\"type\":\"FLT\",\"ob_departurepoint\":\"JER\",\"ob_arrivalpoint\":\"GVA\",\"ob_departuredate\":\"2019-01-26\",
+\"ob_departuretime\":\"09:15:00\",\"ob_arrivaldate\":\"2019-01-26\",\"ob_arrivaltime\":\"12:00:00\",
+\"ob_carrier\":\"BE\",\"ob_carrierno\":\"0253\",\"ib_departurepoint\":\"GVA\",\"ib_arrivalpoint\":\"JER\",
+\"ib_departuredate\":\"2019-02-09\",\"ib_departuretime\":\"12:35:00\",\"ib_arrivaldate\":\"2019-02-09\",
+\"ib_arrivaltime\":\"13:20:00\",\"ib_carrier\":\"BE\",\"ib_carrierno\":\"0254\",\"pricing\":{\"0\":{\"price\":1169,
+\"pricewas\":1269,\"pricesaving\":100},\"2\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100},
+\"3\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100},\"4\":{\"price\":1169,
+\"pricewas\":1269,\"pricesaving\":100},\"5\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100},
+\"6\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100},\"7\":{\"price\":1169,
+\"pricewas\":1269,\"pricesaving\":100},\"8\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100},
+\"9\":{\"price\":1169,\"pricewas\":1269,\"pricesaving\":100}}}]}', 1534938880.318,
+ '08424fa3-e359-4d5d-9311-7c6a57dc840c', 'Jersey', 'OTHER', 'Islands', '7')
+--- request dump end ---
+Manticore 2.7.1 458e9c6@180704 release
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDISTR_BUILD=rhel7 -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDL_PGSQL=1 -DPGSQL_LIB=libpq.so.5 -DDATADIR=/var/data -DSPLIT_SYMBOLS=ON -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_PGSQL=ON -DWITH_RE2=ON -DWITH_STEMMER=ON -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinx
+Host OS is Linux 21969f0ec3a6 4.13.0-45-generic #50~16.04.1-Ubuntu SMP Wed May 30 11:18:27 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f20b0a9bedf, thread stack size = 0x100000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x4)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x4, stack=0x7f20b0aa0000, stacksize=0x100000)
+Trying system backtrace:
+begin of manual symbols:
+6752aa
+4e3487
+7f20b21811f0
+771f54
+775bed
+776a5b
+798381
+7998a3
+524709
+55fb9b
+53a22b
+53aec9
+67e1cb
+67c72f
+7f20b217654b
+7f20b0fa61af
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 16): ---
+--- BT to source lines finished ---
+--- 2 active threads ---
+thd 0, proto sphinxql, state handshake, command SYSTEM
+thd 1, proto sphinxql, state query, command replace
+------- CRASH DUMP END -------
+[Wed Aug 22 11:54:40.589 2018] [3623] watchdog: main process 3624 killed dirtily with signal 11, will be restarted
+[Wed Aug 22 11:54:40.590 2018] [3623] watchdog: main process 3721 forked ok
+[Wed Aug 22 11:54:40.590 2018] [3721] listening on all interfaces, port=9306
+[Wed Aug 22 11:54:40.590 2018] [3721] listening on all interfaces, port=61535
+[Wed Aug 22 11:54:40.592 2018] [3721] binlog: replaying log /var/lib/manticore//binlog.001
+[Wed Aug 22 11:54:44.438 2018] [3721] binlog: index indxall_a: recovered from tid 0 to tid 9732
+[Wed Aug 22 11:54:44.438 2018] [3721] binlog: index indxall_b: recovered from tid 0 to tid 23691
+[Wed Aug 22 11:54:44.438 2018] [3721] binlog: replay stats: 33423 rows in 33423 commits; 0 updates, 0 reconfigure; 2 indexes
+[Wed Aug 22 11:54:44.438 2018] [3721] binlog: finished replaying /var/lib/manticore//binlog.001; 256.0 MB in 3.846 sec
+[Wed Aug 22 11:54:44.438 2018] [3721] binlog: replaying log /var/lib/manticore//binlog.002
+[Wed Aug 22 11:54:49.125 2018] [3721] binlog: index indxall_b: recovered from tid 23691 to tid 32700
+[Wed Aug 22 11:54:49.125 2018] [3721] binlog: index indxall_a: recovered from tid 9732 to tid 37431
+[Wed Aug 22 11:54:49.125 2018] [3721] binlog: replay stats: 36708 rows in 36708 commits; 0 updates, 0 reconfigure; 2 indexes
+[Wed Aug 22 11:54:49.125 2018] [3721] binlog: finished replaying /var/lib/manticore//binlog.002; 256.0 MB in 4.686 sec
+[Wed Aug 22 11:54:49.125 2018] [3721] binlog: replaying log /var/lib/manticore//binlog.003
+[Wed Aug 22 11:54:54.043 2018] [3721] binlog: index indxall_a: recovered from tid 37431 to tid 53922
+[Wed Aug 22 11:54:54.043 2018] [3721] binlog: index indxall_b: recovered from tid 32700 to tid 53510
+[Wed Aug 22 11:54:54.043 2018] [3721] binlog: replay stats: 37301 rows in 37301 commits; 0 updates, 0 reconfigure; 2 indexes
+[Wed Aug 22 11:54:54.043 2018] [3721] binlog: finished replaying /var/lib/manticore//binlog.003; 256.0 MB in 4.917 sec
+[Wed Aug 22 11:54:54.043 2018] [3721] binlog: replaying log /var/lib/manticore//binlog.004
+[Wed Aug 22 11:54:58.801 2018] [3721] binlog: index indxall_b: recovered from tid 53510 to tid 67400
+[Wed Aug 22 11:54:58.801 2018] [3721] binlog: index indxall_a: recovered from tid 53922 to tid 75149
+[Wed Aug 22 11:54:58.801 2018] [3721] binlog: replay stats: 35117 rows in 35117 commits; 0 updates, 0 reconfigure; 2 indexes
+[Wed Aug 22 11:54:58.801 2018] [3721] binlog: finished replaying /var/lib/manticore//binlog.004; 256.0 MB in 4.758 sec
+[Wed Aug 22 11:54:58.801 2018] [3721] binlog: replaying log /var/lib/manticore//binlog.005
+[Wed Aug 22 11:55:03.778 2018] [3721] binlog: index indxall_b: recovered from tid 67400 to tid 94210
+[Wed Aug 22 11:55:03.779 2018] [3721] binlog: index indxall_a: recovered from tid 75149 to tid 81242
+[Wed Aug 22 11:55:03.779 2018] [3721] binlog: replay stats: 32903 rows in 32903 commits; 0 updates, 0 reconfigure; 2 indexes
+[Wed Aug 22 11:55:03.779 2018] [3721] binlog: finished replaying /var/lib/manticore//binlog.005; 256.0 MB in 4.977 sec
+[Wed Aug 22 11:55:03.779 2018] [3721] binlog: replaying log /var/lib/manticore//binlog.006
+
+--- crashed invalid query ---
+
+--- request dump end ---
+Manticore 2.7.1 458e9c6@180704 release
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDISTR_BUILD=rhel7 -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDL_PGSQL=1 -DPGSQL_LIB=libpq.so.5 -DDATADIR=/var/data -DSPLIT_SYMBOLS=ON -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_PGSQL=ON -DWITH_RE2=ON -DWITH_STEMMER=ON -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinx
+Host OS is Linux 21969f0ec3a6 4.13.0-45-generic #50~16.04.1-Ubuntu SMP Wed May 30 11:18:27 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7ffcf815a5af, thread stack size = 0x100000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x4)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x4, stack=0x7ffcf8160000, stacksize=0x100000)
+Trying system backtrace:
+begin of manual symbols:
+6752aa
+4e3487
+7f20b21811f0
+771f54
+775bed
+776a5b
+798381
+799ddc
+79a4d8
+79a6f0
+79a7c8
+53ca8e
+4e1d67
+7f20b0ed1f6a
+4e23df
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 15): ---
+--- BT to source lines finished ---
+--- 0 active threads ---
+------- CRASH DUMP END -------
