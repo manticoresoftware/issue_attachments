@@ -1,0 +1,775 @@
+------- FATAL: CRASH DUMP -------
+[Tue Oct  9 15:25:55.588 2018] [22283]
+
+--- crashed SphinxQL request dump ---
+SELECT id,(is_group_primary or group_id=0) as for_catalog FROM section_858 WHERE for_catalog=1
+AND details_61237 in (190377) AND details_61297 in (190522) AND details_61322 in (190557)
+AND details_103324 in (673786, 615451) AND status in (1) AND status_inherited in (1)
+AND sell_status in (0, 1, 3, 4, 7) LIMIT 1 FACET uniqfacetint(seller, grouping) LIMIT
+1000 FACET uniqfacetint(producer, grouping) LIMIT 1000 FACET uniqfacetint(details_61267,
+ grouping) LIMIT 1000 FACET uniqfacetint(details_61252, grouping) LIMIT 1000 FACET
+uniqfacetint(bonuses, grouping) LIMIT 1000
+--- request dump end ---
+Manticore 2.7.3 d07c4d4@180926 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDISTR_BUILD=rhel7 -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDL_PGSQL=1 -DPGSQL_LIB=libpq.so.5 -DDATADIR=/var/data -DSPLIT_SYMBOLS=ON -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_PGSQL=ON -DWITH_RE2=ON -DWITH_STEMMER=ON -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinx
+Host OS is Linux 0d7ce06b8e77 4.15.0-24-generic #26~16.04.1-Ubuntu SMP Fri Jun 15 14:35:08 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f8d83df6ebf, thread stack size = 0x100000
+Trying manual backtrace:
+Frame pointer is null, manual backtrace failed (did you build with -fomit-frame-pointer?)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x90)[0x685cf0]
+/usr/bin/searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x187)[0x4f14f7]
+/lib64/libpthread.so.0(+0xf5e0)[0x7f91819455e0]
+/lib64/libc.so.6(+0x14d5f8)[0x7f91808825f8]
+/usr/bin/searchd(_ZNK16CSphSchemaHelper17CloneMatchSpecialEP9CSphMatchRKS0_RK10CSphVectorIi16CSphVectorPolicyIiEE+0x6e)[0x5955de]
+/usr/bin/searchd(_ZN22CSphKBufferGroupSorterI16MatchGeneric2_fnLb0ELb0EE6PushExERK9CSphMatchlbbPl+0x17c)[0x6f346c]
+/usr/bin/searchd(_ZNK9RtIndex_t10MultiQueryEPK9CSphQueryP15CSphQueryResultiPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x2efb)[0x79a4fb]
+/usr/bin/searchd(_ZN15SearchHandler_c16RunLocalSearchesEv+0xf6b)[0x53658b]
+/usr/bin/searchd(_ZN15SearchHandler_c9RunSubsetEii+0x1c3e)[0x53b43e]
+/usr/bin/searchd(_ZN15SearchHandler_c10RunQueriesEv+0xb5)[0x53bf25]
+/usr/bin/searchd(_Z17HandleMysqlSelectR14SqlRowBuffer_cR15SearchHandler_c+0x1ed)[0x53c1fd]
+/usr/bin/searchd(_Z20HandleMysqlMultiStmtRK10CSphVectorI9SqlStmt_t16CSphVectorPolicyIS0_EER19CSphQueryResultMetaR14SqlRowBuffer_cP9ThdDesc_tRK10CSphString+0x96a)[0x53cbea]
+/usr/bin/searchd(_ZN16CSphinxqlSession7ExecuteERK10CSphStringR16ISphOutputBufferRhP9ThdDesc_t+0x240)[0x56f0e0]
+/usr/bin/searchd[0x548deb]
+/usr/bin/searchd(_ZN10ThdJobQL_t4CallEv+0x2e1)[0x549a71]
+/usr/bin/searchd(_ZN11CSphThdPool4TickEPv+0x9b)[0x68e82b]
+/usr/bin/searchd(_Z20sphThreadProcWrapperPv+0x1f)[0x68cd5f]
+/lib64/libpthread.so.0(+0x7e25)[0x7f918193de25]
+/lib64/libc.so.6(clone+0x6d)[0x7f918082d34d]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+Will run gdb on /usr/bin/searchd, pid 22283
+
+Unpack the sources by command:
+  mkdir -p /tmp/manticore && unzip manticore.zip -d /tmp/manticore
+
+Also suggest to append a substitution def to your ~/.gdbinit file:
+  set substitute-path "/manticore/manticore" /tmp/manticore/manticoresearch-d07c4d4
+--- 7 active threads ---
+thd 0, proto sphinxql, state handshake, command SYSTEM
+thd 1, proto sphinxql, state query, command select
+thd 2, proto sphinxql, state query, command select
+thd 3, proto sphinxql, state query, command select
+thd 4, proto sphinxql, state query, command select
+thd 5, proto sphinxql, state query, command select
+thd 6, proto sphinxql, state handshake, command SYSTEM
+------- CRASH DUMP END -------
+
+
+
+
+
+
+
+
+
+
+
+
+------- FATAL: CRASH DUMP -------
+[Mon Oct  8 19:08:06.817 2018] [15819]
+
+--- crashed SphinxQL request dump ---
+SELECT id,(is_group_primary or group_id=0) as for_catalog FROM section_1352 WHERE
+for_catalog=1 AND status in (1) AND status_inherited in (1) AND sell_status in (0,
+ 1, 3, 4, 7) LIMIT 1 FACET uniqfacetint(details_58987, grouping) LIMIT 1000 FACET
+uniqfacetint(producer, grouping) LIMIT 1000 FACET uniqfacetint(details_59057, grouping)
+LIMIT 1000 FACET uniqfacetint(seller, grouping) LIMIT 1000 FACET uniqfacetint(bonuses,
+ grouping) LIMIT 1000 FACET uniqfacetint(details_58972, grouping) LIMIT 1000 FACET
+uniqfacetint(details_59037, grouping) LIMIT 1000
+--- request dump end ---
+Manticore 2.7.3 d07c4d4@180926 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDISTR_BUILD=rhel7 -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDL_PGSQL=1 -DPGSQL_LIB=libpq.so.5 -DDATADIR=/var/data -DSPLIT_SYMBOLS=ON -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_PGSQL=ON -DWITH_RE2=ON -DWITH_STEMMER=ON -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinx
+Host OS is Linux 0d7ce06b8e77 4.15.0-24-generic #26~16.04.1-Ubuntu SMP Fri Jun 15 14:35:08 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f46708b2ebf, thread stack size = 0x100000
+Trying manual backtrace:
+Frame pointer is null, manual backtrace failed (did you build with -fomit-frame-pointer?)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x90)[0x685cf0]
+/usr/bin/searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x187)[0x4f14f7]
+/lib64/libpthread.so.0(+0xf5e0)[0x7f4a6db3e5e0]
+/lib64/libc.so.6(+0x14cef1)[0x7f4a6ca7aef1]
+/usr/bin/searchd(_ZNK16CSphSchemaHelper17CloneMatchSpecialEP9CSphMatchRKS0_RK10CSphVectorIi16CSphVectorPolicyIiEE+0x6e)[0x5955de]
+/usr/bin/searchd(_ZN22CSphKBufferGroupSorterI16MatchGeneric2_fnLb0ELb0EE6PushExERK9CSphMatchlbbPl+0x17c)[0x6f346c]
+/usr/bin/searchd(_ZNK9RtIndex_t10MultiQueryEPK9CSphQueryP15CSphQueryResultiPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x2efb)[0x79a4fb]
+/usr/bin/searchd(_ZN15SearchHandler_c16RunLocalSearchesEv+0xf6b)[0x53658b]
+/usr/bin/searchd(_ZN15SearchHandler_c9RunSubsetEii+0x1c3e)[0x53b43e]
+/usr/bin/searchd(_ZN15SearchHandler_c10RunQueriesEv+0xb5)[0x53bf25]
+/usr/bin/searchd(_Z17HandleMysqlSelectR14SqlRowBuffer_cR15SearchHandler_c+0x1ed)[0x53c1fd]
+/usr/bin/searchd(_Z20HandleMysqlMultiStmtRK10CSphVectorI9SqlStmt_t16CSphVectorPolicyIS0_EER19CSphQueryResultMetaR14SqlRowBuffer_cP9ThdDesc_tRK10CSphString+0x96a)[0x53cbea]
+/usr/bin/searchd(_ZN16CSphinxqlSession7ExecuteERK10CSphStringR16ISphOutputBufferRhP9ThdDesc_t+0x240)[0x56f0e0]
+/usr/bin/searchd[0x548deb]
+/usr/bin/searchd(_ZN10ThdJobQL_t4CallEv+0x2e1)[0x549a71]
+/usr/bin/searchd(_ZN11CSphThdPool4TickEPv+0x9b)[0x68e82b]
+/usr/bin/searchd(_Z20sphThreadProcWrapperPv+0x1f)[0x68cd5f]
+/lib64/libpthread.so.0(+0x7e25)[0x7f4a6db36e25]
+/lib64/libc.so.6(clone+0x6d)[0x7f4a6ca2634d]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+Will run gdb on /usr/bin/searchd, pid 15819
+[New LWP 16624]
+[New LWP 16622]
+[New LWP 16621]
+[New LWP 16620]
+[New LWP 16619]
+[New LWP 16618]
+[New LWP 16617]
+[New LWP 16616]
+[New LWP 16615]
+[New LWP 16614]
+[New LWP 16613]
+[New LWP 16612]
+[New LWP 16611]
+[New LWP 16610]
+[New LWP 16609]
+[New LWP 16608]
+[New LWP 16607]
+[New LWP 16606]
+[New LWP 16605]
+[New LWP 16604]
+[New LWP 16603]
+[New LWP 16602]
+[New LWP 16601]
+[New LWP 16600]
+[New LWP 16599]
+[New LWP 16598]
+[New LWP 16597]
+[New LWP 16596]
+[New LWP 16595]
+[New LWP 16594]
+[New LWP 16593]
+[New LWP 16592]
+[New LWP 16591]
+[New LWP 16590]
+[New LWP 16589]
+[New LWP 16588]
+[New LWP 16587]
+[New LWP 16586]
+[New LWP 16585]
+[New LWP 16584]
+[New LWP 16583]
+[New LWP 16582]
+[New LWP 16581]
+[New LWP 16580]
+[New LWP 16579]
+[New LWP 16578]
+[New LWP 16577]
+[New LWP 16576]
+[New LWP 16575]
+[New LWP 16574]
+[New LWP 16573]
+[New LWP 16572]
+[New LWP 16571]
+[New LWP 16570]
+[New LWP 16569]
+[New LWP 16568]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+pthread_rwlock_wrlock () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_wrlock.S:85
+85              subq    $WRITERS_WAKEUP, %rdi
+  Id   Target Id         Frame
+  57   Thread 0x7f46b1da3700 (LWP 16568) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  56   Thread 0x7f46ab6cb700 (LWP 16569) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  55   Thread 0x7f46ab5c7700 (LWP 16570) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  54   Thread 0x7f46a7a91700 (LWP 16571) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  53   Thread 0x7f46a798d700 (LWP 16572) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  52   Thread 0x7f469deb2700 (LWP 16573) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  51   Thread 0x7f469ddae700 (LWP 16574) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  50   Thread 0x7f468a141700 (LWP 16575) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  49   Thread 0x7f4682612700 (LWP 16576) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  48   Thread 0x7f468250e700 (LWP 16577) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  47   Thread 0x7f467ba23700 (LWP 16578) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  46   Thread 0x7f467b91f700 (LWP 16579) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  45   Thread 0x7f4674e34700 (LWP 16580) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  44   Thread 0x7f4674d30700 (LWP 16581) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  43   Thread 0x7f4673f88700 (LWP 16582) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  42   Thread 0x7f4673e84700 (LWP 16583) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  41   Thread 0x7f4673d80700 (LWP 16584) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  40   Thread 0x7f4671bff700 (LWP 16585) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  39   Thread 0x7f4671afb700 (LWP 16586) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  38   Thread 0x7f46719f7700 (LWP 16587) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  37   Thread 0x7f46718f3700 (LWP 16588) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  36   Thread 0x7f46717ef700 (LWP 16589) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  35   Thread 0x7f46716eb700 (LWP 16590) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  34   Thread 0x7f46715e7700 (LWP 16591) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  33   Thread 0x7f46714e3700 (LWP 16592) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  32   Thread 0x7f46713df700 (LWP 16593) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  31   Thread 0x7f46712db700 (LWP 16594) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  30   Thread 0x7f46711d7700 (LWP 16595) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  29   Thread 0x7f46710d3700 (LWP 16596) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  28   Thread 0x7f4670fcf700 (LWP 16597) "searchd" 0x00007f4a6dd555f8 in arena_avail_tree_insert () from /usr/lib64/libjemalloc.so.1
+  27   Thread 0x7f4670ecb700 (LWP 16598) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  26   Thread 0x7f4670dc7700 (LWP 16599) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  25   Thread 0x7f4670cc3700 (LWP 16600) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  24   Thread 0x7f4670bbf700 (LWP 16601) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  23   Thread 0x7f4670abb700 (LWP 16602) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  22   Thread 0x7f46709b7700 (LWP 16603) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  21   Thread 0x7f46708b3700 (LWP 16604) "searchd" 0x00007f4a6db3e189 in __libc_waitpid (pid=14325, stat_loc=0x7f46708a75f0, options=0) at ../sysdeps/unix/sysv/linux/waitpid.c:40
+  20   Thread 0x7f46707af700 (LWP 16605) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  19   Thread 0x7f46706ab700 (LWP 16606) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  18   Thread 0x7f46705a7700 (LWP 16607) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  17   Thread 0x7f46704a3700 (LWP 16608) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  16   Thread 0x7f467039f700 (LWP 16609) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  15   Thread 0x7f467029b700 (LWP 16610) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  14   Thread 0x7f4670197700 (LWP 16611) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  13   Thread 0x7f4670093700 (LWP 16612) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  12   Thread 0x7f466ff8f700 (LWP 16613) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  11   Thread 0x7f466fe8b700 (LWP 16614) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  10   Thread 0x7f466fd87700 (LWP 16615) "searchd" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  9    Thread 0x7f466fc83700 (LWP 16616) "searchd" pthread_rwlock_rdlock () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_rdlock.S:87
+  8    Thread 0x7f466fb7f700 (LWP 16617) "searchd" 0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+  7    Thread 0x7f466fa7b700 (LWP 16618) "searchd" 0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+  6    Thread 0x7f466f977700 (LWP 16619) "searchd" 0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+  5    Thread 0x7f466edfc700 (LWP 16620) "searchd" 0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+  4    Thread 0x7f466ecf8700 (LWP 16621) "searchd" 0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+  3    Thread 0x7f466ebf4700 (LWP 16622) "searchd" 0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+  2    Thread 0x7f466eaf0700 (LWP 16624) "searchd" 0x00007f4a6ca26923 in epoll_wait () at ../sysdeps/unix/syscall-template.S:81
+* 1    Thread 0x7f4a6e192780 (LWP 15819) "searchd" pthread_rwlock_wrlock () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_wrlock.S:85
+
+Thread 57 (Thread 0x7f46b1da3700 (LWP 16568)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46b1da3700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 56 (Thread 0x7f46ab6cb700 (LWP 16569)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46b1da3700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 56 (Thread 0x7f46ab6cb700 (LWP 16569)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46ab6cb700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 55 (Thread 0x7f46ab5c7700 (LWP 16570)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46ab5c7700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 54 (Thread 0x7f46a7a91700 (LWP 16571)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46a7a91700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 53 (Thread 0x7f46a798d700 (LWP 16572)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46a798d700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 52 (Thread 0x7f469deb2700 (LWP 16573)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f469deb2700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+Thread 51 (Thread 0x7f469ddae700 (LWP 16574)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f469ddae700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 50 (Thread 0x7f468a141700 (LWP 16575)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f468a141700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 49 (Thread 0x7f4682612700 (LWP 16576)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4682612700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 48 (Thread 0x7f468250e700 (LWP 16577)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f468250e700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 47 (Thread 0x7f467ba23700 (LWP 16578)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f467ba23700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 46 (Thread 0x7f467b91f700 (LWP 16579)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f467b91f700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 45 (Thread 0x7f4674e34700 (LWP 16580)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4674e34700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 44 (Thread 0x7f4674d30700 (LWP 16581)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4674d30700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 43 (Thread 0x7f4673f88700 (LWP 16582)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4673f88700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 42 (Thread 0x7f4673e84700 (LWP 16583)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4673e84700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 41 (Thread 0x7f4673d80700 (LWP 16584)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4673d80700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 40 (Thread 0x7f4671bff700 (LWP 16585)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4671bff700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 39 (Thread 0x7f4671afb700 (LWP 16586)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4671afb700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 38 (Thread 0x7f46719f7700 (LWP 16587)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46719f7700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 37 (Thread 0x7f46718f3700 (LWP 16588)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46718f3700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 36 (Thread 0x7f46717ef700 (LWP 16589)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46717ef700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 35 (Thread 0x7f46716eb700 (LWP 16590)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46716eb700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 34 (Thread 0x7f46715e7700 (LWP 16591)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46715e7700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 33 (Thread 0x7f46714e3700 (LWP 16592)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46714e3700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 32 (Thread 0x7f46713df700 (LWP 16593)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46713df700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 31 (Thread 0x7f46712db700 (LWP 16594)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46712db700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 30 (Thread 0x7f46711d7700 (LWP 16595)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46711d7700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+Thread 29 (Thread 0x7f46710d3700 (LWP 16596)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46710d3700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 28 (Thread 0x7f4670fcf700 (LWP 16597)):
+#0  0x00007f4a6dd555f8 in arena_avail_tree_insert () from /usr/lib64/libjemalloc.so.1
+#1  0x00007f4a6dd570c6 in arena_run_split_large_helper () from /usr/lib64/libjemalloc.so.1
+#2  0x00007f4a6dd571c5 in arena_run_alloc_large_helper () from /usr/lib64/libjemalloc.so.1
+#3  0x00007f4a6dd571fc in arena_run_alloc_large () from /usr/lib64/libjemalloc.so.1
+#4  0x00007f4a6dd58a57 in je_arena_malloc_large () from /usr/lib64/libjemalloc.so.1
+#5  0x00007f4a6dd511ec in malloc () from /usr/lib64/libjemalloc.so.1
+#6  0x00007f466edfd9c0 in initHashTable () from /usr/local/sphinx/lib/udfrozetka.so
+#7  0x0000000000711fe8 in ExprParser_t::AddNodeUdf(int, int) ()
+#8  0x00000000007157ea in yyparse(ExprParser_t*) ()
+#9  0x0000000000719ac3 in ExprParser_t::Parse(char const*, ISphSchema const&, ESphAttr*, bool*, CSphString&) ()
+#10 0x000000000071a082 in sphExprParse(char const*, ISphSchema const&, ESphAttr*, bool*, CSphString&, CSphQueryProfile*, ESphCollation, ISphExprHook*, bool*, unsigned int*, ESphEvalStage*) ()
+#11 0x0000000000693bbe in sphCreateQueue(SphQueueSettings_t&) ()
+#12 0x0000000000535900 in SearchHandler_c::RunLocalSearches() ()
+#13 0x000000000053b43e in SearchHandler_c::RunSubset(int, int) ()
+#14 0x000000000053bf25 in SearchHandler_c::RunQueries() ()
+#15 0x000000000053c1fd in HandleMysqlSelect(SqlRowBuffer_c&, SearchHandler_c&) ()
+#16 0x000000000053cbea in HandleMysqlMultiStmt(CSphVector<SqlStmt_t, CSphVectorPolicy<SqlStmt_t> > const&, CSphQueryResultMeta&, SqlRowBuffer_c&, ThdDesc_t*, CSphString const&) ()
+#17 0x000000000056f0e0 in CSphinxqlSession::Execute(CSphString const&, ISphOutputBuffer&, unsigned char&, ThdDesc_t*) ()
+#18 0x0000000000548deb in ?? ()
+#19 0x0000000000549a71 in ThdJobQL_t::Call() ()
+#20 0x000000000068e82b in CSphThdPool::Tick(void*) ()
+#21 0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#22 0x00007f4a6db36e25 in start_thread (arg=0x7f4670fcf700) at pthread_create.c:308
+#23 0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 27 (Thread 0x7f4670ecb700 (LWP 16598)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4670ecb700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 26 (Thread 0x7f4670dc7700 (LWP 16599)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4670dc7700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 25 (Thread 0x7f4670cc3700 (LWP 16600)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4670cc3700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 24 (Thread 0x7f4670bbf700 (LWP 16601)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4670bbf700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 23 (Thread 0x7f4670abb700 (LWP 16602)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4670abb700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 22 (Thread 0x7f46709b7700 (LWP 16603)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46709b7700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+Thread 21 (Thread 0x7f46708b3700 (LWP 16604)):
+#0  0x00007f4a6db3e189 in __libc_waitpid (pid=14325, stat_loc=0x7f46708a75f0, options=0) at ../sysdeps/unix/sysv/linux/waitpid.c:40
+#1  0x0000000000685a6d in ?? ()
+#2  0x0000000000685d41 in sphBacktrace(int, bool) ()
+#3  0x00000000004f14f7 in SphCrashLogger_c::HandleCrash(int) ()
+#4  <signal handler called>
+#5  __memcpy_ssse3_back () at ../sysdeps/x86_64/multiarch/memcpy-ssse3-back.S:2139
+#6  0x00000000005955de in CSphSchemaHelper::CloneMatchSpecial(CSphMatch*, CSphMatch const&, CSphVector<int, CSphVectorPolicy<int> > const&) const ()
+#7  0x00000000006f346c in CSphKBufferGroupSorter<MatchGeneric2_fn, false, false>::PushEx(CSphMatch const&, long, bool, bool, long*) ()
+#8  0x000000000079a4fb in RtIndex_t::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#9  0x000000000053658b in SearchHandler_c::RunLocalSearches() ()
+#10 0x000000000053b43e in SearchHandler_c::RunSubset(int, int) ()
+#11 0x000000000053bf25 in SearchHandler_c::RunQueries() ()
+#12 0x000000000053c1fd in HandleMysqlSelect(SqlRowBuffer_c&, SearchHandler_c&) ()
+#13 0x000000000053cbea in HandleMysqlMultiStmt(CSphVector<SqlStmt_t, CSphVectorPolicy<SqlStmt_t> > const&, CSphQueryResultMeta&, SqlRowBuffer_c&, ThdDesc_t*, CSphString const&) ()
+#14 0x000000000056f0e0 in CSphinxqlSession::Execute(CSphString const&, ISphOutputBuffer&, unsigned char&, ThdDesc_t*) ()
+#15 0x0000000000548deb in ?? ()
+#16 0x0000000000549a71 in ThdJobQL_t::Call() ()
+#17 0x000000000068e82b in CSphThdPool::Tick(void*) ()
+#18 0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#19 0x00007f4a6db36e25 in start_thread (arg=0x7f46708b3700) at pthread_create.c:308
+#20 0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 20 (Thread 0x7f46707af700 (LWP 16605)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46707af700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 19 (Thread 0x7f46706ab700 (LWP 16606)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46706ab700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+Thread 18 (Thread 0x7f46705a7700 (LWP 16607)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46705a7700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 17 (Thread 0x7f46704a3700 (LWP 16608)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f46704a3700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 16 (Thread 0x7f467039f700 (LWP 16609)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f467039f700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 15 (Thread 0x7f467029b700 (LWP 16610)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f467029b700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 14 (Thread 0x7f4670197700 (LWP 16611)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4670197700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 13 (Thread 0x7f4670093700 (LWP 16612)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f4670093700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+Thread 12 (Thread 0x7f466ff8f700 (LWP 16613)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f466ff8f700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 11 (Thread 0x7f466fe8b700 (LWP 16614)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f466fe8b700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 10 (Thread 0x7f466fd87700 (LWP 16615)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x000000000068d68b in CSphAutoEvent::WaitEvent() ()
+#2  0x000000000068e7ba in CSphThdPool::Tick(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f466fd87700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 9 (Thread 0x7f466fc83700 (LWP 16616)):
+#0  pthread_rwlock_rdlock () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_rdlock.S:87
+#1  0x000000000068d7c9 in CSphRwlock::ReadLock() ()
+#2  0x0000000000521b75 in PreallocNewIndex(ServedDesc_t&, char const*) ()
+#3  0x0000000000522c4d in RotationThreadFunc(void*) ()
+#4  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#5  0x00007f4a6db36e25 in start_thread (arg=0x7f466fc83700) at pthread_create.c:308
+#6  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 8 (Thread 0x7f466fb7f700 (LWP 16617)):
+#0  0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x000000000058b0d4 in ?? ()
+#2  0x00000000004f424e in ?? ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f466fb7f700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 7 (Thread 0x7f466fa7b700 (LWP 16618)):
+#0  0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x000000000058b0d4 in ?? ()
+#2  0x000000000052f382 in ?? ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f466fa7b700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 6 (Thread 0x7f466f977700 (LWP 16619)):
+#0  0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x000000000058b0d4 in ?? ()
+#2  0x00000000004f595a in OptimizeThreadFunc(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f466f977700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 5 (Thread 0x7f466edfc700 (LWP 16620)):
+#0  0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x000000000058b0d4 in ?? ()
+#2  0x0000000000540fbc in ?? ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f466edfc700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 4 (Thread 0x7f466ecf8700 (LWP 16621)):
+#0  0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x000000000058b0d4 in ?? ()
+#2  0x0000000000518c32 in RotationServiceThreadFunc(void*) ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f466ecf8700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 3 (Thread 0x7f466ebf4700 (LWP 16622)):
+#0  0x00007f4a6ca1d7a3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x000000000058b0d4 in ?? ()
+#2  0x000000000050dcb9 in ?? ()
+#3  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#4  0x00007f4a6db36e25 in start_thread (arg=0x7f466ebf4700) at pthread_create.c:308
+#5  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 2 (Thread 0x7f466eaf0700 (LWP 16624)):
+#0  0x00007f4a6ca26923 in epoll_wait () at ../sysdeps/unix/syscall-template.S:81
+#1  0x0000000000579fa3 in EpollEvents_c::Wait(int) ()
+#2  0x00000000005580d6 in CSphNetLoop::Tick() ()
+#3  0x0000000000558921 in CSphNetLoop::ThdTick(void*) ()
+#4  0x000000000068cd5f in sphThreadProcWrapper(void*) ()
+#5  0x00007f4a6db36e25 in start_thread (arg=0x7f466eaf0700) at pthread_create.c:308
+#6  0x00007f4a6ca2634d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 1 (Thread 0x7f4a6e192780 (LWP 15819)):
+#0  pthread_rwlock_wrlock () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_wrlock.S:85
+#1  0x000000000068d829 in CSphRwlock::WriteLock() ()
+#2  0x00000000004f53e3 in GuardedHash_c::AddUniq(ISphRefcountedMT*, CSphString const&) ()
+#3  0x000000000050053b in AddLocallyServedIndex(char const*, ServedDesc_t&, bool) ()
+#4  0x000000000051540a in AddRTPercolate(char const*, ServedDesc_t&, CSphConfigSection const&, CSphIndexSettings const&, bool) ()
+#5  0x0000000000515922 in AddRTIndex(char const*, CSphConfigSection const&, bool) ()
+#6  0x00000000005189cf in AddIndex(char const*, CSphConfigSection const&, bool) ()
+#7  0x0000000000523a6f in CheckRotate() ()
+#8  0x0000000000524af5 in TickHead() ()
+#9  0x000000000054bffa in ServiceMain(int, char**) ()
+#10 0x00000000004ef9f7 in main ()
+
+Main thread:
+#0  pthread_rwlock_wrlock () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_wrlock.S:85
+#1  0x000000000068d829 in CSphRwlock::WriteLock() ()
+#2  0x00000000004f53e3 in GuardedHash_c::AddUniq(ISphRefcountedMT*, CSphString const&) ()
+#3  0x000000000050053b in AddLocallyServedIndex(char const*, ServedDesc_t&, bool) ()
+#4  0x000000000051540a in AddRTPercolate(char const*, ServedDesc_t&, CSphConfigSection const&, CSphIndexSettings const&, bool) ()
+#5  0x0000000000515922 in AddRTIndex(char const*, CSphConfigSection const&, bool) ()
+#6  0x00000000005189cf in AddIndex(char const*, CSphConfigSection const&, bool) ()
+#7  0x0000000000523a6f in CheckRotate() ()
+#8  0x0000000000524af5 in TickHead() ()
+#9  0x000000000054bffa in ServiceMain(int, char**) ()
+#10 0x00000000004ef9f7 in main ()
+
+Unpack the sources by command:
+  mkdir -p /tmp/manticore && unzip manticore.zip -d /tmp/manticore
+
+Also suggest to append a substitution def to your ~/.gdbinit file:
+  set substitute-path "/manticore/manticore" /tmp/manticore/manticoresearch-d07c4d4
+--- 11 active threads ---
+thd 0, proto sphinxql, state handshake, command SYSTEM
+thd 1, proto sphinxql, state query, command select
+thd 2, proto sphinxql, state query, command select
+thd 3, proto sphinxql, state query, command select
+thd 4, proto sphinxql, state query, command select
+thd 5, proto sphinxql, state query, command select
+thd 6, proto sphinxql, state query, command select
+thd 7, proto sphinxql, state query, command select
+thd 8, proto sphinxql, state query, command select
+thd 9, proto sphinxql, state query, command select
+thd 10, proto sphinxql, state handshake, command SYSTEM
+------- CRASH DUMP END -------
+
