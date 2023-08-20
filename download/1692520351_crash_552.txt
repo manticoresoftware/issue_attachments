@@ -1,0 +1,539 @@
+Mon Nov 12 05:37:50.671 2018] [21589] listening on all interfaces, port=9306
+[Mon Nov 12 05:37:50.672 2018] [21589] listening on all interfaces, port=61535
+[Mon Nov 12 05:37:50.952 2018] [21589] binlog: replaying log /var/lib/manticore//binlog.001
+[Mon Nov 12 05:37:54.817 2018] [21589] binlog: index indxall_b: recovered from tid 37462211 to tid 37490282
+[Mon Nov 12 05:37:54.817 2018] [21589] binlog: index indxall_a: recovered from tid 9516071 to tid 9522258
+[Mon Nov 12 05:37:54.817 2018] [21589] binlog: replay stats: 34261 rows in 34270 commits; 0 updates, 0 reconfigure; 2 indexes
+[Mon Nov 12 05:37:54.817 2018] [21589] binlog: finished replaying /var/lib/manticore//binlog.001; 256.0 MB in 3.864 sec
+[Mon Nov 12 05:37:54.817 2018] [21589] binlog: replaying log /var/lib/manticore//binlog.002
+[Mon Nov 12 05:37:59.831 2018] [21589] binlog: index indxall_b: recovered from tid 37490282 to tid 37528905
+[Mon Nov 12 05:37:59.831 2018] [21589] binlog: replay stats: 38623 rows in 38623 commits; 0 updates, 0 reconfigure; 1 indexes
+[Mon Nov 12 05:37:59.831 2018] [21589] binlog: finished replaying /var/lib/manticore//binlog.002; 256.0 MB in 5.013 sec
+[Mon Nov 12 05:37:59.831 2018] [21589] binlog: replaying log /var/lib/manticore//binlog.003
+[Mon Nov 12 05:38:00.088 2018] [21589] binlog: index indxall_b: recovered from tid 37528905 to tid 37531316
+[Mon Nov 12 05:38:00.088 2018] [21589] binlog: replay stats: 2411 rows in 2411 commits; 0 updates, 0 reconfigure; 1 indexes
+[Mon Nov 12 05:38:00.088 2018] [21589] binlog: finished replaying /var/lib/manticore//binlog.003; 13.2 MB in 0.257 sec
+[Mon Nov 12 05:38:00.088 2018] [21589] binlog: finished replaying total 3 in 9.135 sec
+[Mon Nov 12 05:38:00.088 2018] [21638] prereading 10 indexes
+[Mon Nov 12 05:38:00.088 2018] [21589] accepting connections
+[Mon Nov 12 05:38:00.088 2018] [21638] prereaded 10 indexes in 0.000 sec
+------- FATAL: CRASH DUMP -------
+[Mon Nov 12 05:52:15.474 2018] [21589]
+
+--- crashed SphinxQL request dump ---
+SELECT id AS c1, touropcode AS c2, brandcode AS c3, brochurecode AS c4, programcode
+AS c5, Product_Id AS c6, productcode AS c7, currencycode AS c8, servicecode AS c9,
+ departuregroup AS c10, DepartureGroup_Name AS c11, departurepoint AS c12, DeparturePoint_Name
+AS c13, departuregroup_sort AS c14, duration AS c15, departuredate AS c16, Country_Id
+AS c17, country AS c18, Country_Name AS c19, destination AS c20, Region_Id AS c21,
+ Region_Name AS c22, Resort_Id AS c23, Resort_Name AS c24, transporttype AS c25, Accommodation_Productcode
+AS c26, Accommodation_Name AS c27, Accommodation_Product AS c28, accommodation_propertytype
+AS c29, accommodation_officialrating AS c30, accommodation_internalrating AS c31,
+accommodation_inghamsselect AS c32, accommodation_inghamsplus AS c33, accommodation_facilities
+AS c34, accommodation_familyfacilities AS c35, accommodation_description AS c36, accommodation_details
+AS c37, accommodation_images AS c38, freekids AS c39, freekidsflag AS c40, quantity
+AS c41, roomqty AS c42, availability, boardbasis AS c44, umbraco_id AS c45, workflow
+AS c46, offers AS c47, routes FROM `indxall_dist` WHERE MATCH('@transporttype FLT
+@brandCode ING @programcode GBINB ') GROUP BY country ORDER BY Country_Name ASC LIMIT
+0,100;SELECT id AS c1, touropcode AS c2, brandcode AS c3, brochurecode AS c4, programcode
+AS c5, Product_Id AS c6, productcode AS c7, currencycode AS c8, servicecode AS c9,
+ departuregroup AS c10, DepartureGroup_Name AS c11, departurepoint AS c12, DeparturePoint_Name
+AS c13, departuregroup_sort AS c14, duration AS c15, departuredate AS c16, Country_Id
+AS c17, country AS c18, Country_Name AS c19, destination AS c20, Region_Id AS c21,
+ Region_Name AS c22, Resort_Id AS c23, Resort_Name AS c24, transporttype AS c25, Accommodation_Productcode
+AS c26, Accommodation_Name AS c27, Accommodation_Product AS c28, accommodation_propertytype
+AS c29, accommodation_officialrating AS c30, accommodation_internalrating AS c31,
+accommodation_inghamsselect AS c32, accommodation_inghamsplus AS c33, accommodation_facilities
+AS c34, accommodation_familyfacilities AS c35, accommodation_description AS c36, accommodation_details
+AS c37, accommodation_images AS c38, freekids AS c39, freekidsflag AS c40, quantity
+AS c41, roomqty AS c42, availability, boardbasis AS c44, umbraco_id AS c45, workflow
+AS c46, offers AS c47, routes FROM `indxall_dist` WHERE MATCH('@transporttype FLT
+@brandCode ING @programcode GBINB ') GROUP BY country, Region_Id WITHIN GROUP ORDER
+BY Region_Id ASC ORDER BY Region_Name ASC LIMIT 0,1000;SELECT id AS c1, touropcode
+AS c2, brandcode AS c3, brochurecode AS c4, programcode AS c5, Product_Id AS c6, productcode
+AS c7, currencycode AS c8, servicecode AS c9, departuregroup AS c10, DepartureGroup_Name
+AS c11, departurepoint AS c12, DeparturePoint_Name AS c13, departuregroup_sort AS
+c14, duration AS c15, departuredate AS c16, Country_Id AS c17, country AS c18, Country_Name
+AS c19, destination AS c20, Region_Id AS c21, Region_Name AS c22, Resort_Id AS c23,
+ Resort_Name AS c24, transporttype AS c25, Accommodation_Productcode AS c26, Accommodation_Name
+AS c27, Accommodation_Product AS c28, accommodation_propertytype AS c29, accommodation_officialrating
+AS c30, accommodation_internalrating AS c31, accommodation_inghamsselect AS c32, accommodation_inghamsplus
+AS c33, accommodation_facilities AS c34, accommodation_familyfacilities AS c35, accommodation_description
+AS c36, accommodation_details AS c37, accommodation_images AS c38, freekids AS c39,
+ freekidsflag AS c40, quantity AS c41, roomqty AS c42, availability, boardbasis AS
+c44, umbraco_id AS c45, workflow AS c46, offers AS c47, routes FROM `indxall_dist`
+WHERE MATCH('@transporttype FLT @brandCode ING @programcode GBINB ') GROUP BY destination
+ORDER BY destination ASC LIMIT 0,1000;SELECT id AS c1, touropcode AS c2, brandcode
+AS c3, brochurecode AS c4, programcode AS c5, Product_Id AS c6, productcode AS c7,
+ currencycode AS c8, servicecode AS c9, departuregroup AS c10, DepartureGroup_Name
+AS c11, departurepoint AS c12, DeparturePoint_Name AS c13, departuregroup_sort AS c14, duration AS c15, departuredate AS
+c16, Country_Id AS c17, country AS c18, Country_Name AS c19, destination AS c20, Region_Id
+AS c21, Region_Name AS c22, Resort_Id AS c23, Resort_Name AS c24, transporttype AS
+c25, Accommodation_Productcode AS c26, Accommodation_Name AS c27, Accommodation_Product
+AS c28, accommodation_propertytype AS c29, accommodation_officialrating AS c30, accommodation_internalrating
+AS c31, accommodation_inghamsselect AS c32, accommodation_inghamsplus AS c33, accommodation_facilities
+AS c34, accommodation_familyfacilities AS c35, accommodation_description AS c36, accommodation_details
+AS c37, accommodation_images AS c38, freekids AS c39, freekidsflag AS c40, quantity
+AS c41, roomqty AS c42, availability, boardbasis AS c44, umbraco_id AS c45, workflow
+AS c46, offers AS c47, routes FROM `indxall_dist` WHERE MATCH('@transporttype FLT
+@brandCode ING @programcode GBINB ') AND id > 0 GROUP BY country ORDER BY Country_Name
+ASC LIMIT 0,100;SELECT id AS c1, touropcode AS c2, brandcode AS c3, brochurecode AS
+c4, programcode AS c5, Product_Id AS c6, productcode AS c7, currencycode AS c8, servicecode
+AS c9, departuregroup AS c10, DepartureGroup_Name AS c11, departurepoint AS c12, DeparturePoint_Name
+AS c13, departuregroup_sort AS c14, duration AS c15, departuredate AS c16, Country_Id
+AS c17, country AS c18, Country_Name AS c19, destination AS c20, Region_Id AS c21,
+ Region_Name AS c22, Resort_Id AS c23, Resort_Name AS c24, transporttype AS c25, Accommodation_Productcode
+AS c26, Accommodation_Name AS c27, Accommodation_Product AS c28, accommodation_propertytype
+AS c29, accommodation_officialrating AS c30, accommodation_internalrating AS c31,
+accommodation_inghamsselect AS c32, accommodation_inghamsplus AS c33, accommodation_facilities
+AS c34, accommodation_familyfacilities AS c35, accommodation_description AS c36, accommodation_details
+AS c37, accommodation_images AS c38, freekids AS c39, freekidsflag AS c40, quantity
+AS c41, roomqty AS c42, availability, boardbasis AS c44, umbraco_id AS c45, workflow
+AS c46, offers AS c47, routes FROM `indxall_dist` WHERE MATCH('@transporttype FLT
+@brandCode ING @programcode GBINB ') AND id > 0 GROUP BY country, Region_Id WITHIN
+GROUP ORDER BY Region_Id ASC ORDER BY Region_Name ASC LIMIT 0,1000;SELECT id AS c1,
+ touropcode AS c2, brandcode AS c3, brochurecode AS c4, programcode AS c5, Product_Id
+AS c6, productcode AS c7, currencycode AS c8, servicecode AS c9, departuregroup AS
+c10, DepartureGroup_Name AS c11, departurepoint AS c12, DeparturePoint_Name AS c13,
+ departuregroup_sort AS c14, duration AS c15, departuredate AS c16, Country_Id AS
+c17, country AS c18, Country_Name AS c19, destination AS c20, Region_Id AS c21, Region_Name
+AS c22, Resort_Id AS c23, Resort_Name AS c24, transporttype AS c25, Accommodation_Productcode
+AS c26, Accommodation_Name AS c27, Accommodation_Product AS c28, accommodation_propertytype
+AS c29, accommodation_officialrating AS c30, accommodation_internalrating AS c31,
+accommodation_inghamsselect AS c32, accommodation_inghamsplus AS c33, accommodation_facilities
+AS c34, accommodation_familyfacilities AS c35, accommodation_description AS c36, accommodation_details
+AS c37, accommodation_images AS c38, freekids AS c39, freekidsflag AS c40, quantity
+AS c41, roomqty AS c42, availability, boardbasis AS c44, umbraco_id AS c45, workflow
+AS c46, offers AS c47, routes FROM `indxall_dist` WHERE MATCH('@transporttype FLT
+@brandCode ING @programcode GBINB ') AND id > 0 GROUP BY destination ORDER BY destination
+ASC LIMIT 0,1000
+--- request dump end ---
+Manticore 2.7.3 bd8b3c9@180828 release
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDISTR_BUILD=rhel7 -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -D$
+Host OS is Linux 69fe90eba2b1 4.15.0-24-generic #26~16.04.1-Ubuntu SMP Fri Jun 15 14:35:08 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7ff8b6527edf, thread stack size = 0x100000
+Trying manual backtrace:
+Frame pointer is null, manual backtrace failed (did you build with -fomit-frame-pointer?)
+Trying system backtrace:
+begin of system symbols:
+searchd(_Z12sphBacktraceib+0x90)[0x67a680]
+searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x187)[0x4e78a7]
+/lib64/libpthread.so.0(+0x121f0)[0x7ffa2e8ba1f0]
+searchd(_Z16sphCollateLibcCIPKhS0_14StringSource_eii+0x93)[0x684853]
+searchd(_ZN16MatchGeneric2_fn6IsLessERK9CSphMatchS2_RK24CSphMatchComparatorState+0x399)[0x69eca9]
+searchd(_Z7sphSortI9CSphMatch14GroupSorter_fnI16MatchGeneric2_fnES3_EvPT_iRKT0_RKT1_+0x11a)[0x6e5a0a]
+searchd(_ZN22CSphKBufferGroupSorterI16MatchGeneric2_fnLb0ELb0EE7FlattenEP9CSphMatchi+0x47)[0x6e7657]
+searchd(_Z15sphFlattenQueueP15ISphMatchSorterP15CSphQueryResulti+0x88)[0x686bc8]
+searchd[0x4e9131]
+searchd(_ZN15SearchHandler_c16RunLocalSearchesEv+0xd2f)[0x53010f]
+searchd(_ZN15SearchHandler_c9RunSubsetEii+0x1c8e)[0x53525e]
+searchd(_ZN15SearchHandler_c10RunQueriesEv+0xb5)[0x535d45]
+searchd(_Z17HandleMysqlSelectR14SqlRowBuffer_cR15SearchHandler_c+0x1ed)[0x53601d]
+searchd(_Z20HandleMysqlMultiStmtRK10CSphVectorI9SqlStmt_t16CSphVectorPolicyIS0_EER19CSphQueryResultMetaR14SqlRowBuffer_cP9ThdDesc_tRK10CSphString+0x96a)[0x536a0a]
+searchd(_ZN16CSphinxqlSession7ExecuteERK10CSphStringR16ISphOutputBufferRhP9ThdDesc_t+0x240)[0x5649f0]
+searchd[0x53ff2b]
+searchd(_ZN10ThdJobQL_t4CallEv+0x2e1)[0x540bb1]
+searchd(_ZN11CSphThdPool4TickEPv+0x9b)[0x68354b]
+searchd(_Z20sphThreadProcWrapperPv+0x1f)[0x681a7f]
+/lib64/libpthread.so.0(+0x754b)[0x7ffa2e8af54b]
+/lib64/libc.so.6(clone+0x3f)[0x7ffa2d6df1af]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 21): ---
+--- BT to source lines finished ---
+--- 2 active threads ---
+thd 0, proto sphinxql, state handshake, command SYSTEM
+thd 1, proto sphinxql, state query, command select
+------- CRASH DUMP END -------
+[Mon Nov 12 05:52:17.256 2018] [24599] watchdog: main process 21589 killed dirtily with signal 11, core dumped, will be restarted
+[Mon Nov 12 05:52:17.256 2018] [24599] watchdog: main process 22607 forked ok
+
+
+(gdb) core-file core-searchd-sig11-user0-group0-pid21589-time1542001936
+[New LWP 21637]
+[New LWP 21591]
+[New LWP 21600]
+[New LWP 21595]
+[New LWP 21602]
+[New LWP 21603]
+[New LWP 21597]
+[New LWP 21599]
+[New LWP 21612]
+[New LWP 21598]
+[New LWP 21639]
+[New LWP 21601]
+[New LWP 21616]
+[New LWP 21608]
+[New LWP 21609]
+[New LWP 21593]
+[New LWP 21594]
+[New LWP 21615]
+[New LWP 21633]
+[New LWP 21605]
+[New LWP 21634]
+[New LWP 21614]
+[New LWP 21621]
+[New LWP 21592]
+[New LWP 21620]
+[New LWP 21611]
+[New LWP 21589]
+[New LWP 21618]
+[New LWP 21613]
+[New LWP 21635]
+[New LWP 21607]
+[New LWP 21636]
+[New LWP 21606]
+[New LWP 21596]
+[New LWP 21617]
+[New LWP 21610]
+[New LWP 21619]
+[New LWP 21604]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+Core was generated by `searchd'.
+Program terminated with signal SIGSEGV, Segmentation fault.
+#0  0x00007ffa2e8b4172 in pthread_rwlock_rdlock () from /lib64/libpthread.so.0
+[Current thread is 1 (Thread 0x7ff8b57e7700 (LWP 21637))]
+(gdb) thread apply all bt
+
+Thread 38 (Thread 0x7ff8b6e55700 (LWP 21604)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 37 (Thread 0x7ff8b5f0a700 (LWP 21619)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 36 (Thread 0x7ff8b6837700 (LWP 21610)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 35 (Thread 0x7ff8b6114700 (LWP 21617)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 34 (Thread 0x7ff8b767d700 (LWP 21596)):
+#0  0x00007ffa2d66ad56 in _int_malloc () from /lib64/libc.so.6
+#1  0x00007ffa2d66c06d in malloc () from /lib64/libc.so.6
+#2  0x0000000000681d69 in operator new[](unsigned long) ()
+#3  0x00000000005f5f0d in CSphVector<unsigned char, CSphTightVectorPolicy<unsigned char> >::Reserve(int) ()
+#4  0x00000000007a0006 in RtDocWriter_t::ZipDoc(RtDoc_T<unsigned long> const&) ()
+#5  0x0000000000775079 in RtIndex_t::CopyDoc(RtSegment_t*, RtDocWriter_t&, RtWord_T<unsigned long>*, RtSegment_t const*, RtDoc_T<unsigned long> const*) ()
+#6  0x0000000000778aad in RtIndex_t::MergeWord(RtSegment_t*, RtSegment_t const*, RtWord_T<unsigned long> const*, RtSegment_t const*, RtWord_T<unsigned long> const*, RtWordWriter_t&, CSphVector<unsigned long, CSphVectorPolicy<unsigned long> > const*) ()
+#7  0x000000000077991b in RtIndex_t::MergeSegments(RtSegment_t const*, RtSegment_t const*, CSphVector<unsigned long, CSphVectorPolicy<unsigned long> > const*, bool) ()
+#8  0x000000000079b0d1 in RtIndex_t::CommitReplayable(RtSegment_t*, CSphVector<unsigned long, CSphVectorPolicy<unsigned long> >&, int*) ()
+#9  0x000000000079c603 in RtIndex_t::Commit(int*, ISphRtAccum*) ()
+#10 0x000000000052a829 in sphHandleMysqlInsert(StmtErrorReporter_i&, SqlStmt_t const&, bool, bool, CSphString&, CSphSessionAccum&, ESphCollation) ()
+#11 0x0000000000564f80 in CSphinxqlSession::Execute(CSphString const&, ISphOutputBuffer&, unsigned char&, ThdDesc_t*) ()
+#12 0x000000000053ff2b in ?? ()
+#13 0x0000000000540bb1 in ThdJobQL_t::Call() ()
+#14 0x000000000068354b in CSphThdPool::Tick(void*) ()
+#15 0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#16 0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#17 0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 33 (Thread 0x7ff8b6c4b700 (LWP 21606)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 32 (Thread 0x7ff8b58ec700 (LWP 21636)):
+#0  0x00007ffa2d6d6b63 in select () from /lib64/libc.so.6
+#1  0x0000000000580d34 in ?? ()
+#2  0x00000000005100f2 in RotationServiceThreadFunc(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+Thread 31 (Thread 0x7ff8b6b46700 (LWP 21607)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 30 (Thread 0x7ff8b59f1700 (LWP 21635)):
+#0  0x00007ffa2d6d6b63 in select () from /lib64/libc.so.6
+#1  0x0000000000580d34 in ?? ()
+#2  0x00000000004ec64a in OptimizeThreadFunc(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7ff8b6528700 (LWP 21613)):
+#0  0x00007ffa2e8b08ed in pthread_join () from /lib64/libpthread.so.0
+#1  0x000000000068202e in sphThreadJoin(unsigned long*) ()
+#2  0x000000000054569f in ServiceThread_t::~ServiceThread_t() ()
+#3  0x00007ffa2d621218 in __run_exit_handlers () from /lib64/libc.so.6
+#4  0x00007ffa2d62126a in exit () from /lib64/libc.so.6
+#5  0x00000000004e7ae1 in SphCrashLogger_c::HandleCrash(int) ()
+#6  <signal handler called>
+#7  0x0000000000684853 in sphCollateLibcCI(unsigned char const*, unsigned char const*, StringSource_e, int, int) ()
+#8  0x000000000069eca9 in MatchGeneric2_fn::IsLess(CSphMatch const&, CSphMatch const&, CSphMatchComparatorState const&) ()
+#9  0x00000000006e5a0a in void sphSort<CSphMatch, GroupSorter_fn<MatchGeneric2_fn>, GroupSorter_fn<MatchGeneric2_fn> >(CSphMatch*, int, GroupSorter_fn<MatchGeneric2_fn> const&, GroupSorter_fn<MatchGeneric2_fn> const&) ()
+#10 0x00000000006e7657 in CSphKBufferGroupSorter<MatchGeneric2_fn, false, false>::Flatten(CSphMatch*, int) ()
+#11 0x0000000000686bc8 in sphFlattenQueue(ISphMatchSorter*, CSphQueryResult*, int) ()
+#12 0x00000000004e9131 in ?? ()
+#13 0x000000000053010f in SearchHandler_c::RunLocalSearches() ()
+#14 0x000000000053525e in SearchHandler_c::RunSubset(int, int) ()
+#15 0x0000000000535d45 in SearchHandler_c::RunQueries() ()
+#16 0x000000000053601d in HandleMysqlSelect(SqlRowBuffer_c&, SearchHandler_c&) ()
+#17 0x0000000000536a0a in HandleMysqlMultiStmt(CSphVector<SqlStmt_t, CSphVectorPolicy<SqlStmt_t> > const&, CSphQueryResultMeta&, SqlRowBuffer_c&, ThdDesc_t*, CSphString const&) ()
+#18 0x00000000005649f0 in CSphinxqlSession::Execute(CSphString const&, ISphOutputBuffer&, unsigned char&, ThdDesc_t*) ()
+#19 0x000000000053ff2b in ?? ()
+#20 0x0000000000540bb1 in ThdJobQL_t::Call() ()
+#21 0x000000000068354b in CSphThdPool::Tick(void*) ()
+#22 0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#23 0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#24 0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7ff8b600f700 (LWP 21618)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7ffa2ecddb80 (LWP 21589)):
+#0  0x00007ffa2d6d6b63 in select () from /lib64/libc.so.6
+#1  0x0000000000580d34 in ?? ()
+#2  0x000000000051c387 in TickHead() ()
+#3  0x00000000005430aa in ServiceMain(int, char**) ()
+#4  0x00000000004e62e7 in main ()
+
+Thread 26 (Thread 0x7ff8b6732700 (LWP 21611)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7ff8b5e05700 (LWP 21620)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7ff8b7a91700 (LWP 21592)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7ff8b5d00700 (LWP 21621)):
+#0  0x00007ffa2d6d6b63 in select () from /lib64/libc.so.6
+#1  0x0000000000580d34 in ?? ()
+#2  0x0000000000519ced in RotationThreadFunc(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7ff8b6423700 (LWP 21614)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7ff8b5af6700 (LWP 21634)):
+#0  0x00007ffa2d6d6b63 in select () from /lib64/libc.so.6
+#1  0x0000000000580d34 in ?? ()
+#2  0x000000000051a3d2 in ?? ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7ff8b6d50700 (LWP 21605)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7ff8b5bfb700 (LWP 21633)):
+#0  0x00007ffa2d6d6b63 in select () from /lib64/libc.so.6
+#1  0x0000000000580d34 in ?? ()
+#2  0x00000000004eaebe in ?? ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7ff8b631e700 (LWP 21615)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7ff8b7887700 (LWP 21594)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7ff8b798c700 (LWP 21593)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 15 (Thread 0x7ff8b693c700 (LWP 21609)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7ff8b6a41700 (LWP 21608)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7ff8b6219700 (LWP 21616)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7ff8b7164700 (LWP 21601)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7ff8b55dd700 (LWP 21639)):
+#0  0x00007ffa2d6df316 in epoll_pwait () from /lib64/libc.so.6
+#1  0x000000000056f995 in EpollEvents_c::Wait(int) ()
+#2  0x000000000054f816 in CSphNetLoop::Tick() ()
+#3  0x0000000000550061 in CSphNetLoop::ThdTick(void*) ()
+#4  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#5  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#6  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7ff8b7473700 (LWP 21598)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7ff8b662d700 (LWP 21612)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7ff8b736e700 (LWP 21599)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7ff8b7578700 (LWP 21597)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7ff8b6f5a700 (LWP 21603)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7ff8b705f700 (LWP 21602)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7ff8b7782700 (LWP 21595)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7ff8b7269700 (LWP 21600)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7ff8b7b96700 (LWP 21591)):
+#0  0x00007ffa2e8b586d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006823ab in CSphAutoEvent::WaitEvent() ()
+#2  0x00000000006834da in CSphThdPool::Tick(void*) ()
+#3  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#4  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#5  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7ff8b57e7700 (LWP 21637)):
+#0  0x00007ffa2e8b4172 in pthread_rwlock_rdlock () from /lib64/libpthread.so.0
+#1  0x00000000006824e9 in CSphRwlock::ReadLock() ()
+#2  0x00000000005698f0 in cDashStorage::GetActiveDashes(CSphVector<HostDashboard_t*, CSphVectorPolicy<HostDashboard_t*> >&) const ()
+#3  0x0000000000504ad3 in ?? ()
+#4  0x0000000000681a7f in sphThreadProcWrapper(void*) ()
+#5  0x00007ffa2e8af54b in start_thread () from /lib64/libpthread.so.0
+#6  0x00007ffa2d6df1af in clone () from /lib64/libc.so.6
