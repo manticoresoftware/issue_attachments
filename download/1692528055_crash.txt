@@ -1,0 +1,63 @@
+------- CRASH DUMP END -------
+[Thu Dec 20 16:03:55.279 2018] [1] listening on all interfaces, port=9306
+[Thu Dec 20 16:03:55.279 2018] [1] listening on all interfaces, port=9312
+[Thu Dec 20 16:03:56.179 2018] [1] binlog: replaying log /var/lib/manticore/data/binlog.001
+[Thu Dec 20 16:03:56.179 2018] [1] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 0 indexes
+[Thu Dec 20 16:03:56.179 2018] [1] binlog: finished replaying /var/lib/manticore/data/binlog.001; 0.0 MB in 0.000 sec
+[Thu Dec 20 16:03:56.179 2018] [1] binlog: finished replaying total 1 in 0.000 sec
+[Thu Dec 20 16:03:56.179 2018] [1] accepting connections
+[Thu Dec 20 16:03:56.179 2018] [15] prereading 1 indexes
+[Thu Dec 20 16:03:56.179 2018] [15] prereaded 1 indexes in 0.000 sec
+------- FATAL: CRASH DUMP -------
+[Thu Dec 20 16:04:02.136 2018] [    1]
+
+--- crashed SphinxAPI request dump ---
+ABEBAAAAABoAAAADAAAAAAAAAAJwcQAAAAAAAAABAAAAAA==
+--- request dump end ---
+Manticore 2.8.0 8868b207@181217 release
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 7
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.20 -DDL_PGSQL=1 -DPGSQL_LIB=libpq.so.5 -DDATADIR=/var/data -DSPLIT_SYMBOLS=1 -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_PGSQL=ON -DWITH_RE2=ON -DWITH_STEMMER=ON -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinxsearch
+Host OS is Linux 41b48210616d 4.15.0-43-generic #46~16.04.1-Ubuntu SMP Fri Dec 7 13:31:08 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f00dcef5ed7, thread stack size = 0x100000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x5599a3b0cd30)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x5599a3b0cd30, stack=0x7f00dcf00000, stacksize=0x100000)
+Trying system backtrace:
+begin of system symbols:
+./searchd(_Z12sphBacktraceib+0xdb)[0x5599a3633cbb]
+./searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x18a)[0x5599a347f2ba]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x12890)[0x7f00de981890]
+/lib/x86_64-linux-gnu/libc.so.6(+0x18e5a1)[0x7f00dd7a85a1]
+./searchd(_ZN23CSphSource_StringVectorC2ERK11VecTraits_TIPKcERK10CSphSchema+0x1b6)[0x5599a3743646]
+./searchd(_ZN16PercolateIndex_c11AddDocumentERK11VecTraits_TIPKcERK9CSphMatchbRK10CSphStringPS2_RKS0_IjERS9_SG_P11ISphRtAccum+0xe0)[0x5599a379fe50]
+./searchd(+0x198fcb)[0x5599a34aefcb]
+./searchd(_Z19HandleCommandCallPqR20CachedOutputBuffer_ctR13InputBuffer_c+0x2ab)[0x5599a34b91cb]
+./searchd(+0x1c387a)[0x5599a34d987a]
+./searchd(+0x1c3f05)[0x5599a34d9f05]
+./searchd(_Z17HandlerThreadFuncPv+0x21)[0x5599a34db051]
+./searchd(_ZN16SphCrashLogger_c13ThreadWrapperEPv+0x47)[0x5599a347e9f7]
+./searchd(_Z20sphThreadProcWrapperPv+0x2f)[0x5599a363e67f]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x76db)[0x7f00de9766db]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f)[0x7f00dd73b88f]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 15): ---
+conversion failed (error 'No such file or directory'):
+  1. Run the command provided below over the crashed binary (for example, './searchd'):
+  2. Attach the source.txt to the bug report.
+addr2line -e ./searchd 0xa3633cbb 0xa347f2ba 0xde981890 0xdd7a85a1 0xa3743646 0xa379fe50 
+0xa34aefcb 0xa34b91cb 0xa34d987a 0xa34d9f05 0xa34db051 0xa347e9f7 0xa363e67f 0xde9766db 
+0xdd73b88f > source.txt
+precached 1 indexes in 0.898 sec
+--- BT to source lines finished ---
+--- 2 active threads ---
+thd 0, proto sphinxql, state handshake, command SYSTEM
+thd 1, proto sphinxapi, state query, command -
+------- CRASH DUMP END -------
+
