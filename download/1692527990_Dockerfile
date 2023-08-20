@@ -1,0 +1,59 @@
+FROM ubuntu:18.04 as builder
+RUN apt-get update
+RUN apt-get autoclean
+RUN apt-get clean
+RUN apt-get autoremove
+#RUN apt-get -y install build-essential cmake unixodbc-dev libpq-dev libexpat-dev libmysqlclient-dev git flex bison
+RUN apt-get update
+RUN apt-get -y install dpkg-dev
+RUN apt-get -y install build-essential
+RUN apt-get -y install cmake
+RUN apt-get -y install unixodbc-dev
+RUN apt-get -y install libpq-dev
+RUN apt-get -y install libexpat-dev
+RUN apt-get -y install libexpat-dev
+RUN apt-get -y install libmysqlclient-dev
+RUN apt-get -y install git
+RUN apt-get -y install flex
+RUN apt-get -y install bison
+RUN apt-get -y install libmysqlclient20 libodbc1 libpq5 libexpat1
+COPY libgalera_smm.so /usr/lib/
+RUN mkdir /build && cd /build \
+&& git clone https://gitlab+deploy-token-27973:EtVhrENpenisWGy48xZp@gitlab.com/manticoresearch/dev.git manticore \
+&& cd manticore \
+&& mkdir -p build && cd build \
+&& cmake \
+    -D SPLIT_SYMBOLS=1 \
+    -D WITH_MYSQL=ON \
+    -D WITH_PGSQL=ON \
+    -D WITH_RE2=ON \
+    -D WITH_STEMMER=ON \
+    -D DISABLE_TESTING=ON \
+    -D CMAKE_INSTALL_PREFIX=/usr \
+    -D CONFFILEDIR=/etc/sphinxsearch \
+    -D WITH_REPLICATION=ON \
+    -D REPLICATION_LIB_PATH=/usr/lib/ \
+    -D SPHINX_TAG=release .. \
+&& make -j4 searchd indexer indextool
+FROM ubuntu:18.04
+RUN apt-get update
+RUN apt-get -y install libssl1.0.0 netcat python rsync
+RUN mkdir -p /build/log && mkdir /build/data && chmod -R 777 /build/ 
+COPY --from=builder /build/manticore/build/src/indexer /build
+COPY --from=builder /build/manticore/build/src/indextool /build
+COPY --from=builder /build/manticore/build/src/searchd /build
+COPY libgalera_smm.so /usr/lib/
+COPY wsrep_sst_pysync.py /build
+COPY wait-for /build
+WORKDIR /build/
+
+
+COPY sphinx.conf /build/manticore/build/src/
+COPY sphinx.conf /etc/sphinxsearch/
+COPY /testing-data/indexes /var/lib/manticore/data
+RUN mkdir -p /var/lib/manticore/log
+RUN mkdir -p /var/lib/manticore/data/
+
+# running
+CMD ["./searchd", "--nodetach"]
+
