@@ -1,0 +1,501 @@
+[Wed Apr 24 23:03:10.725 2019] [65365] rotating index 'boardreaderinc_rlp_node1': success
+[Wed Apr 24 23:03:13.597 2019] [65369] rotating index 'boardreaderinc_node4': started
+[Wed Apr 24 23:03:14.809 2019] [65369] rotating index 'boardreaderinc_node4': success
+------- FATAL: CRASH DUMP -------
+[Wed Apr 24 23:03:21.268 2019] [64720]
+
+--- crashed SphinxAPI request dump ---
+AAABIQAAA08AAAAQAAAAAQAAAEQAAAAAAAAH0AAAAAYAAAAAAAAAAQAAAAlwdWJsaXNoZWQAAAAHInMgcCBhIgAA
+AAAAAAATYm9hcmRyZWFkZXJ3ZWVrc2UwMQAAAAEAAAAAAAAAAP//////////AAAABQAAAA9pc190aHJl
+YWRfc3RhcnQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAEAAAAT
+Y29udGVudF9wcm92aWRlcl9pZAAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAADAAAAAAAAABIA
+AAAAAAAAIAAAAAAAAABjAAAAAAAAAKUAAAAAAAAApgAAAAAAAADjAAAAAAAAAPEAAAAAAAABUQAA
+AAAAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAlwdWJsaXNoZWQAAAABAAAAAFy+9AwAAAAAXMGt1QAAAAAA
+AAABAAAAAQAAAAAAAAAAAAAAAQAAAA1maWx0ZXJfZG9tYWluAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAB
+AAAAAQAAAAAAAAAAAAAAAQAAAAZtb2RfaXMAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAABQAA
+AAAAAAAHAAAAAAAAAAEAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAfQAAAAC0Bncm91cCBkZXNj
+AAAAAAAAAAMAAAAyAAAAAAAAAAAAAAAAAABOIAAAAAAAAABiOWZmMmFmMjhhN2NkY2NhNDcwMTMzZWFm
+Y2Q0OGQ1ODMsbEJhcUdVVGUwbmd0UG5kR0d4M1lCWnFoVVR5VllIcW4sZmVhMjVkZWE3MDJiZTE3ZDIy
+MDAwNmY4NWQ0YjgyZTYAAAAAAAAAIyosZG9tYWluX2lkPTE2MjUwMSBBUyBmaWx0ZXJfZG9tYWluAA9C
+QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAApibGVuZGVkLnNvAAAABXF1
+ZXJ5AAAAAAAAAAAAAAACAAAAASoAAAABKgAAAAAAAAANZmlsdGVyX2RvbWFpbgAAABBkb21haW5faWQ9
+MTYyNTAxAAAAAAAAAAAAAAAA
+--- request dump end ---
+Manticore 3.0.0 32235e2@190424 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDATADIR=/var/data -DFULL_SHARE_DIR=/usr/share/manticore -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_RE2=1 -DWITH_RLP=1 -DWITH_ZLIB=ON -DGALERA_SOVERSION=31 -DSYSCONFDIR=etc/sphinx
+Host OS is Linux rpmbuild02.sgdctroy.net 3.10.0-693.21.1.vz7.48.2 #1 SMP Wed May 23 10:04:13 MSK 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f9acff76ef7, thread stack size = 0x40000
+Trying manual backtrace:
+Frame pointer is null, manual backtrace failed (did you build with -fomit-frame-pointer?)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x9e)[0x6af7de]
+/usr/bin/searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x194)[0x52cf54]
+/lib64/libpthread.so.0(+0xf370)[0x7fcd42e1e370]
+/usr/bin/searchd(_ZNK22Filter_MVAValues_Any_cIjE4EvalERK9CSphMatch+0xac)[0x78fcec]
+/usr/bin/searchd(_ZNK10Filter_And4EvalERK9CSphMatch+0x35)[0x78cf35]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN11EarlyRejectEP16CSphQueryContextR9CSphMatch+0x4d)[0x5f239d]
+/usr/bin/searchd(_ZN11ExtRanker_TILb1EE15GetFilteredDocsEv+0xec)[0x7a3e6c]
+/usr/bin/searchd(_ZN21ExtRanker_WeightSum_cILb1EE10GetMatchesEv+0x1a7)[0x7a3ae7]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN13MatchExtendedILb0ELb0ELb0EEEvP16CSphQueryContextPK9CSphQueryiPP15ISphMatchSorterP10ISphRankerii+0xb5)[0x649d15]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN16ParsedMultiQueryEPK9CSphQueryP15CSphQueryResultiPP15ISphMatchSorterRK9XQQuery_tP8CSphDictRK18CSphMultiQueryArgsP18CSphQueryNodeCacheRK20SphWordStatChecker_t+0xc55)[0x610435]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN10MultiQueryEPK9CSphQueryP15CSphQueryResultiPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x6a8)[0x6331c8]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN12MultiQueryExEiPK9CSphQueryPP15CSphQueryResultPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x904)[0x633d54]
+/usr/bin/searchd(_ZN15SearchHandler_c16RunLocalSearchMTER13LocalSearch_tR13ThreadLocal_t+0x3a8)[0x537578]
+/usr/bin/searchd(_Z21LocalSearchThreadFuncPv+0x1a8)[0x5377c8]
+/usr/bin/searchd(_ZN16SphCrashLogger_c13ThreadWrapperEPv+0x54)[0x52c4b4]
+/usr/bin/searchd(_Z20sphThreadProcWrapperPv+0x35)[0x6b8b55]
+/lib64/libpthread.so.0(+0x7dc5)[0x7fcd42e16dc5]
+/lib64/libc.so.6(clone+0x6d)[0x7fcd412b176d]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+[Wed Apr 24 23:03:21.714 2019] [64719] watchdog: got USR1, performing dump of child's stack
+Will run gdb on /usr/bin/searchd, pid 64720
+[New LWP 23692]
+[New LWP 73412]
+[New LWP 73411]
+[New LWP 73410]
+[New LWP 65385]
+[New LWP 65384]
+[New LWP 65383]
+[New LWP 65382]
+[New LWP 65381]
+[New LWP 65380]
+[New LWP 65379]
+[New LWP 65378]
+[New LWP 65377]
+[New LWP 65376]
+[New LWP 65375]
+[New LWP 65374]
+[New LWP 65373]
+[New LWP 65372]
+[New LWP 65371]
+[New LWP 65370]
+[New LWP 65369]
+[New LWP 65368]
+[New LWP 65367]
+[New LWP 65366]
+[New LWP 65365]
+[New LWP 65364]
+[New LWP 65363]
+[New LWP 65362]
+[New LWP 65361]
+[New LWP 65360]
+[New LWP 65359]
+[New LWP 65358]
+[New LWP 65357]
+[New LWP 65356]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+81	T_PSEUDO (SYSCALL_SYMBOL, SYSCALL_NAME, SYSCALL_NARGS)
+  Id   Target Id         Frame 
+  35   Thread 0x7f9c421da700 (LWP 65356) "netloop_0" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  34   Thread 0x7f9c42196700 (LWP 65357) "netloop_1" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  33   Thread 0x7f9c42152700 (LWP 65358) "netloop_2" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  32   Thread 0x7f9c4210e700 (LWP 65359) "netloop_3" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  31   Thread 0x7f9c420ca700 (LWP 65360) "netloop_4" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  30   Thread 0x7f9c42086700 (LWP 65361) "netloop_5" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  29   Thread 0x7f9c42042700 (LWP 65362) "netloop_6" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  28   Thread 0x7f9c41ffe700 (LWP 65363) "netloop_7" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  27   Thread 0x7f9c41fba700 (LWP 65364) "netloop_8" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  26   Thread 0x7f9c41f76700 (LWP 65365) "netloop_9" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  25   Thread 0x7f9c41f32700 (LWP 65366) "netloop_10" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  24   Thread 0x7f9c41eee700 (LWP 65367) "netloop_11" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  23   Thread 0x7f9c41eaa700 (LWP 65368) "netloop_12" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  22   Thread 0x7f9c41e66700 (LWP 65369) "netloop_13" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  21   Thread 0x7f9c41e22700 (LWP 65370) "netloop_14" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  20   Thread 0x7f9c41dde700 (LWP 65371) "netloop_15" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  19   Thread 0x7f9c41d9a700 (LWP 65372) "netloop_16" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  18   Thread 0x7f9c41d56700 (LWP 65373) "netloop_17" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  17   Thread 0x7f9c41d12700 (LWP 65374) "netloop_18" 0x00007fcd42e17ef7 in pthread_join (threadid=140302890792704, thread_return=0x0) at pthread_join.c:92
+  16   Thread 0x7f9c41cce700 (LWP 65375) "netloop_19" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  15   Thread 0x7f9c41c8a700 (LWP 65376) "netloop_20" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  14   Thread 0x7f9c41c46700 (LWP 65377) "netloop_21" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  13   Thread 0x7f9c41c02700 (LWP 65378) "netloop_22" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  12   Thread 0x7f9c41bbe700 (LWP 65379) "netloop_23" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  11   Thread 0x7f9c41b7a700 (LWP 65380) "netloop_24" pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+  10   Thread 0x7f9c41b36700 (LWP 65381) "rotation" 0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+  9    Thread 0x7f9c41af2700 (LWP 65382) "rt_flush" 0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+  8    Thread 0x7f9c41aae700 (LWP 65383) "optimize" 0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+  7    Thread 0x7f9c41a6a700 (LWP 65384) "rotationservice" 0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+  6    Thread 0x7f9c41a26700 (LWP 65385) "ping_service" 0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+  5    Thread 0x7f9c419e2700 (LWP 73410) "TickPool_0" 0x00007fcd412b1d43 in epoll_wait () at ../sysdeps/unix/syscall-template.S:81
+  4    Thread 0x7f9c4199e700 (LWP 73411) "TickPool_1" 0x00007fcd412b1d43 in epoll_wait () at ../sysdeps/unix/syscall-template.S:81
+  3    Thread 0x7f9c4195a700 (LWP 73412) "TickPool_2" 0x00007fcd412b1d43 in epoll_wait () at ../sysdeps/unix/syscall-template.S:81
+  2    Thread 0x7f9acff77700 (LWP 23692) "LocalSearch" 0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+* 1    Thread 0x7fcd43232740 (LWP 64720) "searchd" 0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+
+Thread 35 (Thread 0x7f9c421da700 (LWP 65356)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xbc60220) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c421da700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 34 (Thread 0x7f9c42196700 (LWP 65357)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x8172d50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c42196700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 33 (Thread 0x7f9c42152700 (LWP 65358)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x5fb3470) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c42152700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 32 (Thread 0x7f9c4210e700 (LWP 65359)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xc0671d0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c4210e700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 31 (Thread 0x7f9c420ca700 (LWP 65360)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xc7a9800) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c420ca700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 30 (Thread 0x7f9c42086700 (LWP 65361)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xe3b45a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c42086700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 29 (Thread 0x7f9c42042700 (LWP 65362)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x6d36cc0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c42042700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 28 (Thread 0x7f9c41ffe700 (LWP 65363)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xcd556c0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41ffe700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 27 (Thread 0x7f9c41fba700 (LWP 65364)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xcb41bc0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41fba700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 26 (Thread 0x7f9c41f76700 (LWP 65365)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xec28b50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41f76700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 25 (Thread 0x7f9c41f32700 (LWP 65366)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xc5a36a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41f32700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 24 (Thread 0x7f9c41eee700 (LWP 65367)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xc3e4990) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41eee700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 23 (Thread 0x7f9c41eaa700 (LWP 65368)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xc96fb40) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41eaa700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 22 (Thread 0x7f9c41e66700 (LWP 65369)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x58b7590) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41e66700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 21 (Thread 0x7f9c41e22700 (LWP 65370)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x6934110) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41e22700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 20 (Thread 0x7f9c41dde700 (LWP 65371)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xb1a9ed0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41dde700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 19 (Thread 0x7f9c41d9a700 (LWP 65372)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x84e2850) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41d9a700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 18 (Thread 0x7f9c41d56700 (LWP 65373)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xc7abfc0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41d56700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 17 (Thread 0x7f9c41d12700 (LWP 65374)):
+#0  0x00007fcd42e17ef7 in pthread_join (threadid=140302890792704, thread_return=0x0) at pthread_join.c:92
+#1  0x00000000006b91ce in sphThreadJoin (pThread=pThread@entry=0x7f9c10023840) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1047
+#2  0x0000000000579318 in SearchHandler_c::RunLocalSearchesParallel (this=this@entry=0x7f9c41d102e0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:6820
+#3  0x0000000000579ce7 in SearchHandler_c::RunLocalSearches (this=this@entry=0x7f9c41d102e0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:7034
+#4  0x000000000058002b in SearchHandler_c::RunSubset (this=this@entry=0x7f9c41d102e0, iStart=iStart@entry=0, iEnd=iEnd@entry=0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:7753
+#5  0x00000000005808a5 in SearchHandler_c::RunQueries (this=this@entry=0x7f9c41d102e0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:6611
+#6  0x0000000000580bcf in HandleCommandSearch (tOut=..., uVer=uVer@entry=289, tReq=..., tThd=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:8218
+#7  0x000000000058bff4 in LoopClientSphinx (eCommand=<optimized out>, uCommandVer=<optimized out>, iLength=<optimized out>, tThd=..., tBuf=..., tOut=..., bManagePersist=bManagePersist@entry=false) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:11689
+#8  0x000000000058cb6d in ThdJobAPI_t::Call (this=0x7f9c30007ce0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:23475
+#9  0x00000000006bb68b in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1962
+#10 CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#11 0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xc1ab400) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#12 0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41d12700) at pthread_create.c:308
+#13 0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 16 (Thread 0x7f9c41cce700 (LWP 65375)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xafcd9b0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41cce700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 15 (Thread 0x7f9c41c8a700 (LWP 65376)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x8aa9260) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41c8a700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 14 (Thread 0x7f9c41c46700 (LWP 65377)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x84fa7d0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41c46700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 13 (Thread 0x7f9c41c02700 (LWP 65378)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x8182250) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41c02700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 12 (Thread 0x7f9c41bbe700 (LWP 65379)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x56f94e0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41bbe700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 11 (Thread 0x7f9c41b7a700 (LWP 65380)):
+#0  pthread_cond_wait@@GLIBC_2.3.2 () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_wait.S:185
+#1  0x00000000006b95bb in CSphAutoEvent::WaitEvent (this=0xec28d18) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1325
+#2  0x00000000006bb61a in TickImpl (this=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0xec28d10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:1928
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x571bdf0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41b7a700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 10 (Thread 0x7f9c41b36700 (LWP 65381)):
+#0  0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005e60d4 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2804
+#2  0x00000000005ecd65 in sphSleepMsec (iMsec=iMsec@entry=50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2793
+#3  0x0000000000572705 in RotationThreadFunc () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:19162
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x55b5e40) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41b36700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 9 (Thread 0x7f9c41af2700 (LWP 65382)):
+#0  0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005e60d4 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2804
+#2  0x00000000005ecd65 in sphSleepMsec (iMsec=iMsec@entry=50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2793
+#3  0x0000000000574f62 in RtFlushThreadFunc () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:18861
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xeefbac0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41af2700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 8 (Thread 0x7f9c41aae700 (LWP 65383)):
+#0  0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005e60d4 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2804
+#2  0x00000000005ecd65 in sphSleepMsec (iMsec=iMsec@entry=50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2793
+#3  0x00000000005310ca in OptimizeThreadFunc () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:19522
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xeefbaf0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41aae700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 7 (Thread 0x7f9c41a6a700 (LWP 65384)):
+#0  0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005e60d4 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2804
+#2  0x00000000005ecd65 in sphSleepMsec (iMsec=iMsec@entry=50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2793
+#3  0x00000000005566a2 in RotationServiceThreadFunc () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:20368
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xeefba60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41a6a700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 6 (Thread 0x7f9c41a26700 (LWP 65385)):
+#0  0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005e60d4 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2804
+#2  0x00000000005ecd65 in sphSleepMsec (iMsec=iMsec@entry=50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2793
+#3  0x0000000000547719 in PingThreadFunc () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:15038
+#4  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xeefba90) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#5  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c41a26700) at pthread_create.c:308
+#6  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 5 (Thread 0x7f9c419e2700 (LWP 73410)):
+#0  0x00007fcd412b1d43 in epoll_wait () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005c3fe1 in EpollEvents_c::Wait (this=0x7f9c380008c0, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchdha.cpp:4137
+#2  0x00000000005a1916 in Wait (this=0x7f9c419e1e98, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:21890
+#3  CSphNetLoop::Tick (this=this@entry=0x7f9c419e1e20) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:22231
+#4  0x00000000005a2201 in CSphNetLoop::ThdTick () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:22402
+#5  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xbf30b90) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#6  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c419e2700) at pthread_create.c:308
+#7  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 4 (Thread 0x7f9c4199e700 (LWP 73411)):
+#0  0x00007fcd412b1d43 in epoll_wait () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005c3fe1 in EpollEvents_c::Wait (this=0x7f9c2c0008c0, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchdha.cpp:4137
+#2  0x00000000005a1916 in Wait (this=0x7f9c4199de98, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:21890
+#3  CSphNetLoop::Tick (this=this@entry=0x7f9c4199de20) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:22231
+#4  0x00000000005a2201 in CSphNetLoop::ThdTick () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:22402
+#5  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xbc59130) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#6  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c4199e700) at pthread_create.c:308
+#7  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 3 (Thread 0x7f9c4195a700 (LWP 73412)):
+#0  0x00007fcd412b1d43 in epoll_wait () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005c3fe1 in EpollEvents_c::Wait (this=0x7f9c300008c0, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchdha.cpp:4137
+#2  0x00000000005a1916 in Wait (this=0x7f9c41959e98, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:21890
+#3  CSphNetLoop::Tick (this=this@entry=0x7f9c41959e20) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:22231
+#4  0x00000000005a2201 in CSphNetLoop::ThdTick () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:22402
+#5  0x00000000006b8b55 in sphThreadProcWrapper (pArg=0xeefb950) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#6  0x00007fcd42e16dc5 in start_thread (arg=0x7f9c4195a700) at pthread_create.c:308
+#7  0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 2 (Thread 0x7f9acff77700 (LWP 23692)):
+#0  0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005e60d4 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2804
+#2  0x00000000005ecd65 in sphSleepMsec (iMsec=iMsec@entry=3000) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2793
+#3  0x00000000006af84f in DumpGdb (iFD=4) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxutils.cpp:2578
+#4  sphBacktrace (iFD=4, bSafe=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxutils.cpp:2882
+#5  0x000000000052cf54 in SphCrashLogger_c::HandleCrash (sig=11) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:1853
+#6  <signal handler called>
+#7  MvaEval_Any<unsigned int> (nFilterValues=11, pFilter=0x7f9c105e1460, nValues=50528320, pMva=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxint.h:752
+#8  Filter_MVAValues_Any_c<unsigned int>::Eval (this=0x7f99d400ffa0, tMatch=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxfilter.cpp:374
+#9  0x000000000078cf35 in Filter_And::Eval (this=<optimized out>, tMatch=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxfilter.cpp:709
+#10 0x00000000005f239d in CSphIndex_VLN::EarlyReject (this=<optimized out>, pCtx=0x7f9acff76580, tMatch=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:13075
+#11 0x00000000007a3e6c in ExtRanker_T<true>::GetFilteredDocs (this=0x7f99d400e0f0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxsearch.cpp:850
+#12 0x00000000007a3ae7 in ExtRanker_WeightSum_c<true>::GetMatches (this=0x7f99d400e0f0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxsearch.cpp:902
+#13 0x0000000000649d15 in CSphIndex_VLN::MatchExtended<false, false, false> (this=<optimized out>, pCtx=0x7f9acff76580, pQuery=<optimized out>, iSorters=1, ppSorters=0x7f99d401f1b0, pRanker=0x7f99d400e0f0, iTag=0, iIndexWeight=1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:13345
+#14 0x0000000000610435 in CSphIndex_VLN::ParsedMultiQuery (this=this@entry=0x7f9bdc06e3c0, pQuery=pQuery@entry=0x7f9c10136d18, pResult=pResult@entry=0x7f9c100739e8, iSorters=iSorters@entry=1, ppSorters=ppSorters@entry=0x7f99d401f1b0, tXQ=..., pDict=0x7f99d4019540, tArgs=..., pNodeCache=pNodeCache@entry=0x7f9acff76b00, tStatDiff=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:16812
+#15 0x00000000006331c8 in CSphIndex_VLN::MultiQuery (this=0x7f9bdc06e3c0, pQuery=pQuery@entry=0x7f9c10136d18, pResult=0x7f9c100739e8, iSorters=<optimized out>, iSorters@entry=1, ppSorters=0x7f9c10024d18, tArgs=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:16432
+#16 0x0000000000633d54 in CSphIndex_VLN::MultiQueryEx (this=0x7f9bdc06e3c0, iQueries=1, pQueries=0x7f9c10136d18, ppResults=0x7f9c10184238, ppSorters=0x7f9c10024d18, tArgs=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:16453
+#17 0x0000000000537578 in SearchHandler_c::RunLocalSearchMT (this=0x7f9c41d102e0, dWork=..., tThd=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:7016
+#18 0x00000000005377c8 in LocalSearch (this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:6674
+#19 LocalSearchThreadFunc (pArg=0x7f9c10023840) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:6680
+#20 0x000000000052c4b4 in SphCrashLogger_c::ThreadWrapper (pArg=0x7f9c1000d160) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:1938
+#21 0x00000000006b8b55 in sphThreadProcWrapper (pArg=0x7f9c10014f50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinxstd.cpp:889
+#22 0x00007fcd42e16dc5 in start_thread (arg=0x7f9acff77700) at pthread_create.c:308
+#23 0x00007fcd412b176d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+
+Thread 1 (Thread 0x7fcd43232740 (LWP 64720)):
+#0  0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005e60d4 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2804
+#2  0x00000000005ecd65 in sphSleepMsec (iMsec=iMsec@entry=500) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2793
+#3  0x0000000000571119 in TickHead () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:21609
+#4  0x0000000000590642 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffce2dbc4f8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:25013
+#5  0x000000000052ae67 in mainimpl (argv=0x7ffce2dbc4f8, argc=7) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:25087
+#6  main (argc=7, argv=0x7ffce2dbc4f8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:25093
+
+Main thread:
+#0  0x00007fcd412a8bd3 in select () at ../sysdeps/unix/syscall-template.S:81
+#1  0x00000000005e60d4 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2804
+#2  0x00000000005ecd65 in sphSleepMsec (iMsec=iMsec@entry=500) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/sphinx.cpp:2793
+#3  0x0000000000571119 in TickHead () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:21609
+#4  0x0000000000590642 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffce2dbc4f8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:25013
+#5  0x000000000052ae67 in mainimpl (argv=0x7ffce2dbc4f8, argc=7) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:25087
+#6  main (argc=7, argv=0x7ffce2dbc4f8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.0/src/searchd.cpp:25093
+
+Local variables:
+No locals.
+[Wed Apr 24 23:03:23.250 2019] [65379] rotating index 'boardreaderinc_node2': started
+[Wed Apr 24 23:03:24.216 2019] [65379] rotating index 'boardreaderinc_node2': success
+--- 2 active threads ---
+thd 0, proto sphinxapi, state query, command search
+thd 1, proto sphinxapi, state query, command search
+------- CRASH DUMP END -------
+[Wed Apr 24 23:03:53.293 2019] [64719] watchdog: main process 64720 killed dirtily with signal 11, core dumped, will be restarted
+[Wed Apr 24 23:03:53.293 2019] [64719] watchdog: got error 10, No child processes
+[Wed Apr 24 23:03:53.293 2019] [64719] watchdog: main process 27909 forked ok
+[Wed Apr 24 23:03:53.364 2019] [27909] listening on all interfaces, port=3312
+[Wed Apr 24 23:03:53.365 2019] [27909] listening on all interfaces, port=6312
+[Wed Apr 24 23:03:53.365 2019] [27909] listening on all interfaces, port=9312
+[Wed Apr 24 23:03:53.821 2019] [27909] rotating index 'boardreaderinc_node1': success
