@@ -1,0 +1,2195 @@
+[Wed Jul 17 01:24:48.985 2019] [7934] caught SIGTERM, shutting down
+[Wed Jul 17 01:25:16.484 2019] [63660] watchdog: main process 63661 forked ok
+[Wed Jul 17 01:25:16.484 2019] [63661] listening on all interfaces, port=3312
+[Wed Jul 17 01:25:16.484 2019] [63661] listening on all interfaces, port=6312
+[Wed Jul 17 01:25:16.484 2019] [63661] listening on all interfaces, port=9312
+[Wed Jul 17 01:25:16.597 2019] [63661] rotating index 'newsinc_node1': success
+[Wed Jul 17 01:25:16.632 2019] [63661] rotating index 'linksinc_node1': success
+[Wed Jul 17 01:25:16.681 2019] [63661] rotating index 'blogsitesinc_node1': success
+[Wed Jul 17 01:25:16.745 2019] [63661] rotating index 'blogsinc_node2': success
+[Wed Jul 17 01:25:16.825 2019] [63661] rotating index 'linksinc_node2': success
+[Wed Jul 17 01:25:16.938 2019] [63661] rotating index 'blogsinc_node3': success
+[Wed Jul 17 01:25:17.156 2019] [63661] rotating index 'linksinc_node4': success
+[Wed Jul 17 01:25:17.177 2019] [63661] applying killlist of index 'blogs3month_node1'
+[Wed Jul 17 01:25:17.211 2019] [63661] applying killlist of index 'blogs3month_rlp_node1'
+[Wed Jul 17 01:25:17.225 2019] [63661] applying killlist of index 'blogsweek_node1'
+[Wed Jul 17 01:25:17.349 2019] [63661] applying killlist of index 'blogsweek_rlp_node1'
+[Wed Jul 17 01:25:17.354 2019] [63661] applying killlist of index 'blogsday_node1'
+[Wed Jul 17 01:25:17.429 2019] [63661] applying killlist of index 'blogsday_rlp_node1'
+[Wed Jul 17 01:25:17.430 2019] [63661] applying killlist of index 'blogshour_node1'
+[Wed Jul 17 01:25:17.439 2019] [63661] applying killlist of index 'blogshour_rlp_node1'
+[Wed Jul 17 01:25:17.439 2019] [63661] applying killlist of index 'blogsinc_node1'
+[Wed Jul 17 01:25:17.439 2019] [63661] applying killlist of index 'blogsinc_rlp_node1'
+[Wed Jul 17 01:25:17.439 2019] [63661] applying killlist of index 'news3month_node1'
+[Wed Jul 17 01:25:17.442 2019] [63661] applying killlist of index 'news3month_rlp_node1'
+[Wed Jul 17 01:25:17.442 2019] [63661] applying killlist of index 'newsweek_node1'
+[Wed Jul 17 01:25:17.443 2019] [63661] applying killlist of index 'newsweek_rlp_node1'
+[Wed Jul 17 01:25:17.443 2019] [63661] applying killlist of index 'newsday_node1'
+[Wed Jul 17 01:25:17.443 2019] [63661] applying killlist of index 'newsday_rlp_node1'
+[Wed Jul 17 01:25:17.443 2019] [63661] applying killlist of index 'newshour_node1'
+[Wed Jul 17 01:25:17.443 2019] [63661] applying killlist of index 'newshour_rlp_node1'
+[Wed Jul 17 01:25:17.443 2019] [63661] applying killlist of index 'newsinc_node1'
+[Wed Jul 17 01:25:17.443 2019] [63661] applying killlist of index 'newsinc_rlp_node1'
+[Wed Jul 17 01:25:17.446 2019] [63661] applying killlist of index 'links3month_node1'
+[Wed Jul 17 01:25:17.521 2019] [63661] applying killlist of index 'linksweek_node1'
+[Wed Jul 17 01:25:17.694 2019] [63661] applying killlist of index 'linksday_node1'
+[Wed Jul 17 01:25:17.754 2019] [63661] applying killlist of index 'linkshour_node1'
+[Wed Jul 17 01:25:17.761 2019] [63661] applying killlist of index 'linksinc_node1'
+[Wed Jul 17 01:25:17.762 2019] [63661] applying killlist of index 'blogsitesinc_node1'
+[Wed Jul 17 01:25:17.766 2019] [63661] applying killlist of index 'blogs3month_node2'
+[Wed Jul 17 01:25:17.804 2019] [63661] applying killlist of index 'blogs3month_rlp_node2'
+[Wed Jul 17 01:25:17.818 2019] [63661] applying killlist of index 'blogsweek_node2'
+[Wed Jul 17 01:25:17.928 2019] [63661] applying killlist of index 'blogsweek_rlp_node2'
+[Wed Jul 17 01:25:17.932 2019] [63661] applying killlist of index 'blogsday_node2'
+[Wed Jul 17 01:25:17.993 2019] [63661] applying killlist of index 'blogsday_rlp_node2'
+[Wed Jul 17 01:25:17.993 2019] [63661] applying killlist of index 'blogshour_node2'
+[Wed Jul 17 01:25:18.004 2019] [63661] applying killlist of index 'blogshour_rlp_node2'
+[Wed Jul 17 01:25:18.004 2019] [63661] applying killlist of index 'blogsinc_node2'
+[Wed Jul 17 01:25:18.005 2019] [63661] applying killlist of index 'blogsinc_rlp_node2'
+[Wed Jul 17 01:25:18.005 2019] [63661] applying killlist of index 'news3month_node2'
+[Wed Jul 17 01:25:18.007 2019] [63661] applying killlist of index 'news3month_rlp_node2'
+[Wed Jul 17 01:25:18.007 2019] [63661] applying killlist of index 'newsweek_node2'
+[Wed Jul 17 01:25:18.007 2019] [63661] applying killlist of index 'newsweek_rlp_node2'
+[Wed Jul 17 01:25:18.007 2019] [63661] applying killlist of index 'newsday_node2'
+[Wed Jul 17 01:25:18.008 2019] [63661] applying killlist of index 'newsday_rlp_node2'
+[Wed Jul 17 01:25:18.008 2019] [63661] applying killlist of index 'newshour_node2'
+[Wed Jul 17 01:25:18.008 2019] [63661] applying killlist of index 'newshour_rlp_node2'
+[Wed Jul 17 01:25:18.008 2019] [63661] applying killlist of index 'newsinc_node2'
+[Wed Jul 17 01:25:18.008 2019] [63661] applying killlist of index 'newsinc_rlp_node2'
+[Wed Jul 17 01:25:18.009 2019] [63661] applying killlist of index 'links3month_node2'
+[Wed Jul 17 01:25:18.050 2019] [63661] applying killlist of index 'linksweek_node2'
+[Wed Jul 17 01:25:18.181 2019] [63661] applying killlist of index 'linksday_node2'
+[Wed Jul 17 01:25:18.231 2019] [63661] applying killlist of index 'linkshour_node2'
+[Wed Jul 17 01:25:18.237 2019] [63661] applying killlist of index 'linksinc_node2'
+[Wed Jul 17 01:25:18.238 2019] [63661] applying killlist of index 'blogsitesinc_node2'
+[Wed Jul 17 01:25:18.242 2019] [63661] applying killlist of index 'blogs3month_node3'
+[Wed Jul 17 01:25:18.284 2019] [63661] applying killlist of index 'blogs3month_rlp_node3'
+[Wed Jul 17 01:25:18.301 2019] [63661] applying killlist of index 'blogsweek_node3'
+[Wed Jul 17 01:25:18.434 2019] [63661] applying killlist of index 'blogsweek_rlp_node3'
+[Wed Jul 17 01:25:18.439 2019] [63661] applying killlist of index 'blogsday_node3'
+[Wed Jul 17 01:25:18.510 2019] [63661] applying killlist of index 'blogsday_rlp_node3'
+[Wed Jul 17 01:25:18.511 2019] [63661] applying killlist of index 'blogshour_node3'
+[Wed Jul 17 01:25:18.523 2019] [63661] applying killlist of index 'blogshour_rlp_node3'
+[Wed Jul 17 01:25:18.523 2019] [63661] applying killlist of index 'blogsinc_node3'
+[Wed Jul 17 01:25:18.524 2019] [63661] applying killlist of index 'blogsinc_rlp_node3'
+[Wed Jul 17 01:25:18.524 2019] [63661] applying killlist of index 'news3month_node3'
+[Wed Jul 17 01:25:18.529 2019] [63661] applying killlist of index 'news3month_rlp_node3'
+[Wed Jul 17 01:25:18.529 2019] [63661] applying killlist of index 'newsweek_node3'
+[Wed Jul 17 01:25:18.530 2019] [63661] applying killlist of index 'newsweek_rlp_node3'
+[Wed Jul 17 01:25:18.530 2019] [63661] applying killlist of index 'newsday_node3'
+[Wed Jul 17 01:25:18.530 2019] [63661] applying killlist of index 'newsday_rlp_node3'
+[Wed Jul 17 01:25:18.530 2019] [63661] applying killlist of index 'newshour_node3'
+[Wed Jul 17 01:25:18.530 2019] [63661] applying killlist of index 'newshour_rlp_node3'
+[Wed Jul 17 01:25:18.530 2019] [63661] applying killlist of index 'newsinc_node3'
+[Wed Jul 17 01:25:18.531 2019] [63661] applying killlist of index 'newsinc_rlp_node3'
+[Wed Jul 17 01:25:18.532 2019] [63661] applying killlist of index 'links3month_node3'
+[Wed Jul 17 01:25:18.582 2019] [63661] applying killlist of index 'linksweek_node3'
+[Wed Jul 17 01:25:18.749 2019] [63661] applying killlist of index 'linksday_node3'
+[Wed Jul 17 01:25:18.850 2019] [63661] applying killlist of index 'linkshour_node3'
+[Wed Jul 17 01:25:18.858 2019] [63661] applying killlist of index 'linksinc_node3'
+[Wed Jul 17 01:25:18.859 2019] [63661] applying killlist of index 'blogsitesinc_node3'
+[Wed Jul 17 01:25:18.864 2019] [63661] applying killlist of index 'blogs3month_node4'
+[Wed Jul 17 01:25:18.906 2019] [63661] applying killlist of index 'blogs3month_rlp_node4'
+[Wed Jul 17 01:25:18.921 2019] [63661] applying killlist of index 'blogsweek_node4'
+[Wed Jul 17 01:25:19.052 2019] [63661] applying killlist of index 'blogsweek_rlp_node4'
+[Wed Jul 17 01:25:19.056 2019] [63661] applying killlist of index 'blogsday_node4'
+[Wed Jul 17 01:25:19.117 2019] [63661] applying killlist of index 'blogsday_rlp_node4'
+[Wed Jul 17 01:25:19.118 2019] [63661] applying killlist of index 'blogshour_node4'
+[Wed Jul 17 01:25:19.127 2019] [63661] applying killlist of index 'blogshour_rlp_node4'
+[Wed Jul 17 01:25:19.127 2019] [63661] applying killlist of index 'blogsinc_node4'
+[Wed Jul 17 01:25:19.128 2019] [63661] applying killlist of index 'blogsinc_rlp_node4'
+[Wed Jul 17 01:25:19.128 2019] [63661] applying killlist of index 'news3month_node4'
+[Wed Jul 17 01:25:19.132 2019] [63661] applying killlist of index 'news3month_rlp_node4'
+[Wed Jul 17 01:25:19.132 2019] [63661] applying killlist of index 'newsweek_node4'
+[Wed Jul 17 01:25:19.133 2019] [63661] applying killlist of index 'newsweek_rlp_node4'
+[Wed Jul 17 01:25:19.133 2019] [63661] applying killlist of index 'newsday_node4'
+[Wed Jul 17 01:25:19.134 2019] [63661] applying killlist of index 'newsday_rlp_node4'
+[Wed Jul 17 01:25:19.134 2019] [63661] applying killlist of index 'newshour_node4'
+[Wed Jul 17 01:25:19.134 2019] [63661] applying killlist of index 'newshour_rlp_node4'
+[Wed Jul 17 01:25:19.134 2019] [63661] applying killlist of index 'newsinc_node4'
+[Wed Jul 17 01:25:19.134 2019] [63661] applying killlist of index 'newsinc_rlp_node4'
+[Wed Jul 17 01:25:19.135 2019] [63661] applying killlist of index 'links3month_node4'
+[Wed Jul 17 01:25:19.200 2019] [63661] applying killlist of index 'linksweek_node4'
+[Wed Jul 17 01:25:19.372 2019] [63661] applying killlist of index 'linksday_node4'
+[Wed Jul 17 01:25:19.429 2019] [63661] applying killlist of index 'linkshour_node4'
+[Wed Jul 17 01:25:19.435 2019] [63661] applying killlist of index 'linksinc_node4'
+[Wed Jul 17 01:25:19.436 2019] [63661] applying killlist of index 'blogsitesinc_node4'
+[Wed Jul 17 01:25:19.442 2019] [63661] prereading 130 indexes
+[Wed Jul 17 01:25:42.378 2019] [63661] prereaded 128 indexes in 22.937 sec
+[Wed Jul 17 01:25:42.379 2019] [63661] accepting connections
+[Wed Jul 17 01:25:45.631 2019] [64554] rotating index 'linksinc_node2': started
+[Wed Jul 17 01:25:45.631 2019] [64554] WARNING: nothing to rotate for index 'linksinc_node2'
+[Wed Jul 17 01:25:45.631 2019] [64554] WARNING: (null)
+[Wed Jul 17 01:25:45.640 2019] [64559] rotating index 'linksinc_node1': started
+[Wed Jul 17 01:25:45.640 2019] [64559] WARNING: nothing to rotate for index 'linksinc_node1'
+[Wed Jul 17 01:25:45.640 2019] [64559] WARNING: (null)
+[Wed Jul 17 01:25:45.643 2019] [63661] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Wed Jul 17 01:25:46.631 2019] [64578] rotating index 'blogsitesinc_node1': started
+[Wed Jul 17 01:25:46.631 2019] [64578] WARNING: nothing to rotate for index 'blogsitesinc_node1'
+[Wed Jul 17 01:25:46.631 2019] [64578] WARNING: (null)
+[Wed Jul 17 01:25:46.640 2019] [64554] rotating index 'newsinc_node1': started
+[Wed Jul 17 01:25:46.640 2019] [64554] WARNING: nothing to rotate for index 'newsinc_node1'
+[Wed Jul 17 01:25:46.640 2019] [64554] WARNING: (null)
+[Wed Jul 17 01:25:47.366 2019] [64562] rotating index 'newsinc_node2': started
+[Wed Jul 17 01:25:47.435 2019] [64562] rotating index 'newsinc_node2': success
+[Wed Jul 17 01:25:47.638 2019] [64575] rotating index 'linksinc_node4': started
+[Wed Jul 17 01:25:47.638 2019] [64575] WARNING: nothing to rotate for index 'linksinc_node4'
+[Wed Jul 17 01:25:47.638 2019] [64575] WARNING: (null)
+[Wed Jul 17 01:25:48.638 2019] [64566] rotating index 'blogsinc_node2': started
+[Wed Jul 17 01:25:48.638 2019] [64566] WARNING: nothing to rotate for index 'blogsinc_node2'
+[Wed Jul 17 01:25:48.638 2019] [64566] WARNING: (null)
+[Wed Jul 17 01:25:49.639 2019] [64557] rotating index 'blogsinc_node3': started
+[Wed Jul 17 01:25:49.639 2019] [64557] WARNING: nothing to rotate for index 'blogsinc_node3'
+[Wed Jul 17 01:25:49.639 2019] [64557] WARNING: (null)
+[Wed Jul 17 01:25:56.940 2019] [64565] rotating index 'newsinc_rlp_node2': started
+[Wed Jul 17 01:25:57.014 2019] [64565] rotating index 'newsinc_rlp_node2': success
+[Wed Jul 17 01:25:57.457 2019] [64565] rotating index 'linksinc_node4': started
+[Wed Jul 17 01:25:57.528 2019] [64565] rotating index 'linksinc_node4': success
+[Wed Jul 17 01:25:57.951 2019] [64558] rotating index 'blogsinc_rlp_node1': started
+[Wed Jul 17 01:25:58.023 2019] [64558] rotating index 'blogsinc_rlp_node1': success
+[Wed Jul 17 01:25:58.167 2019] [64574] rotating index 'blogsinc_node2': started
+[Wed Jul 17 01:25:58.239 2019] [64574] rotating index 'blogsinc_node2': success
+[Wed Jul 17 01:25:59.222 2019] [64557] rotating index 'blogsinc_node3': started
+[Wed Jul 17 01:25:59.293 2019] [64557] rotating index 'blogsinc_node3': success
+------- FATAL: CRASH DUMP -------
+[Wed Jul 17 01:25:45.643 2019] [63661]
+
+--- crashed invalid query ---
+
+--- request dump end ---
+Manticore 3.0.3 fd43ace@190708 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDATADIR=/var/data -DFULL_SHARE_DIR=/usr/share/manticore -DICU_IS_SHARED=1 -DDL_ICU=1 -DICU_LIB=libicuuc.so.50 -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_RE2=1 -DWITH_ZLIB=ON -DGALERA_SOVERSION=31 -DSYSCONFDIR=etc/sphinx
+Host OS is Linux rpmbuild02.sgdctroy.net 3.10.0-693.21.1.vz7.48.2 #1 SMP Wed May 23 10:04:13 MSK 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7ffea18e5717, thread stack size = 0x100000
+Trying manual backtrace:
+Frame pointer is null, manual backtrace failed (did you build with -fomit-frame-pointer?)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x9e)[0x6b9e2e]
+/usr/bin/searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x19d)[0x52f1ad]
+/lib64/libpthread.so.0(+0xf370)[0x7f30a0c37370]
+/usr/bin/searchd[0x55d147]
+/usr/bin/searchd(_Z8TickHeadv+0x115)[0x5800c5]
+/usr/bin/searchd(_Z11ServiceMainiPPc+0x2182)[0x582d82]
+/usr/bin/searchd(main+0x67)[0x52d0a7]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f309f844b35]
+/usr/bin/searchd[0x52e1f4]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+[Wed Jul 17 01:25:59.717 2019] [63660] watchdog: got USR1, performing dump of child's stack
+Will run gdb on /usr/bin/searchd, pid 63661
+[New LWP 67166]
+[New LWP 64579]
+[New LWP 64578]
+[New LWP 64577]
+[New LWP 64576]
+[New LWP 64575]
+[New LWP 64574]
+[New LWP 64573]
+[New LWP 64572]
+[New LWP 64571]
+[New LWP 64570]
+[New LWP 64569]
+[New LWP 64568]
+[New LWP 64567]
+[New LWP 64566]
+[New LWP 64565]
+[New LWP 64562]
+[New LWP 64561]
+[New LWP 64560]
+[New LWP 64559]
+[New LWP 64558]
+[New LWP 64557]
+[New LWP 64556]
+[New LWP 64555]
+[New LWP 64554]
+[New LWP 64553]
+[New LWP 63676]
+[New LWP 63662]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007f309f911bd3 in select () from /lib64/libc.so.6
+  Id   Target Id         Frame 
+  29   Thread 0x7f30a104a700 (LWP 63662) "TaskSched" 0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  28   Thread 0x7f309d92a700 (LWP 63676) "TaskW_1" 0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  27   Thread 0x7e73a2ffc700 (LWP 64553) "netloop_0" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  26   Thread 0x7e73a2ef8700 (LWP 64554) "netloop_1" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  25   Thread 0x7e73a2df4700 (LWP 64555) "netloop_2" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  24   Thread 0x7e73a2cf0700 (LWP 64556) "netloop_3" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  23   Thread 0x7e73a2bec700 (LWP 64557) "netloop_4" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  22   Thread 0x7e73a2ae8700 (LWP 64558) "netloop_5" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  21   Thread 0x7e73a29e4700 (LWP 64559) "netloop_6" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  20   Thread 0x7e73a28e0700 (LWP 64560) "netloop_7" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  19   Thread 0x7e73a27dc700 (LWP 64561) "netloop_8" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  18   Thread 0x7e73a26d8700 (LWP 64562) "netloop_9" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  17   Thread 0x7e73a25d4700 (LWP 64565) "netloop_10" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  16   Thread 0x7e73a24d0700 (LWP 64566) "netloop_11" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  15   Thread 0x7e73a23cc700 (LWP 64567) "netloop_12" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  14   Thread 0x7e73a22c8700 (LWP 64568) "netloop_13" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  13   Thread 0x7e73a21c4700 (LWP 64569) "netloop_14" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  12   Thread 0x7e73a20c0700 (LWP 64570) "netloop_15" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  11   Thread 0x7e73a1fbc700 (LWP 64571) "netloop_16" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  10   Thread 0x7e73a1eb8700 (LWP 64572) "netloop_17" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  9    Thread 0x7e73a1db4700 (LWP 64573) "netloop_18" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  8    Thread 0x7e73a1cb0700 (LWP 64574) "netloop_19" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  7    Thread 0x7e73a1bac700 (LWP 64575) "netloop_20" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  6    Thread 0x7e73a1aa8700 (LWP 64576) "netloop_21" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  5    Thread 0x7e73a19a4700 (LWP 64577) "netloop_22" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  4    Thread 0x7e73a18a0700 (LWP 64578) "netloop_23" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  3    Thread 0x7e73a179c700 (LWP 64579) "netloop_24" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  2    Thread 0x7e73a1698700 (LWP 67166) "TickPool_0" 0x00007f309f91ad43 in epoll_wait () from /lib64/libc.so.6
+* 1    Thread 0x7f30a104c740 (LWP 63661) "searchd" 0x00007f309f911bd3 in select () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7f30a104a700 (LWP 63662)):
+#0  0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0bee in AutoEvent_T<true>::WaitEvent (this=this@entry=0xbd4b40 <LazyTasker()::dEvents+128>, iMsec=iMsec@entry=1757190) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1424
+#2  0x00000000005eba0a in EventTick (this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:512
+#3  EventLoop (this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:452
+#4  LazyJobs_c::WorkerFunc (pArg=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:581
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xf36490) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7f309d92a700 (LWP 63676)):
+#0  0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0a8e in AutoEvent_T<false>::WaitEvent (this=this@entry=0xbd4c08 <LazyTasker()::dEvents+328>, iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1388
+#2  0x00000000005eaf44 in JobTick (tWorker=..., this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:604
+#3  JobLoop (pWorker=0x1568710, this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:632
+#4  LazyJobs_c::TheadPoolWorker (pArg=0x1568710) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:678
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1568880) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7e73a2ffc700 (LWP 64553)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x5e1a800) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7e73a2ef8700 (LWP 64554)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x5e2f1b0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7e73a2df4700 (LWP 64555)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x5952690) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7e73a2cf0700 (LWP 64556)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x56b0180) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7e73a2bec700 (LWP 64557)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x53f28b0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7e73a2ae8700 (LWP 64558)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x4fe5e90) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7e73a29e4700 (LWP 64559)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x4efa1a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7e73a28e0700 (LWP 64560)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x4ea0cf0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7e73a27dc700 (LWP 64561)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x49fae40) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7e73a26d8700 (LWP 64562)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x419cdf0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7e73a25d4700 (LWP 64565)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3f13f30) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7e73a24d0700 (LWP 64566)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3ab9e50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 15 (Thread 0x7e73a23cc700 (LWP 64567)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x365ea60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7e73a22c8700 (LWP 64568)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2ed0cb0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7e73a21c4700 (LWP 64569)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2e33a40) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7e73a20c0700 (LWP 64570)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2b90470) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7e73a1fbc700 (LWP 64571)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2996d20) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7e73a1eb8700 (LWP 64572)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2648680) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7e73a1db4700 (LWP 64573)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2316c80) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7e73a1cb0700 (LWP 64574)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1c052f0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7e73a1bac700 (LWP 64575)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1801e80) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7e73a1aa8700 (LWP 64576)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x16b3e50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7e73a19a4700 (LWP 64577)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xd2d0250) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7e73a18a0700 (LWP 64578)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xcd6a8d0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7e73a179c700 (LWP 64579)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd2d04a8, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd2d04a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xc70ef00) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7e73a1698700 (LWP 67166)):
+#0  0x00007f309f91ad43 in epoll_wait () from /lib64/libc.so.6
+#1  0x00000000005c28a1 in EpollEvents_c::Wait (this=0x7e739c0008c0, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdha.cpp:4088
+#2  0x000000000059dd56 in Wait (this=0x7e73a1697e98, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21291
+#3  CSphNetLoop::Tick (this=this@entry=0x7e73a1697e20) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21632
+#4  0x000000000059e611 in CSphNetLoop::ThdTick () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21803
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x63ea4b0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f30a104c740 (LWP 63661)):
+#0  0x00007f309f911bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f4354 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:3002
+#2  0x00000000005fbed5 in sphSleepMsec (iMsec=iMsec@entry=3000) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:2991
+#3  0x00000000006b9e9f in DumpGdb (iFD=4) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:2956
+#4  sphBacktrace (iFD=4, bSafe=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:3260
+#5  0x000000000052f1ad in SphCrashLogger_c::HandleCrash (sig=11) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:1588
+#6  <signal handler called>
+#7  IterateStart (this=0x8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.h:2033
+#8  ReloadIndexSettings (tCP=..., this=<optimized out>, this=<optimized out>, this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:19746
+#9  0x00000000005800c5 in CheckRotate () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20094
+#10 TickHead () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20999
+#11 0x0000000000582d82 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24456
+#12 0x000000000052d0a7 in mainimpl (argv=0x7ffea18e5818, argc=7) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24516
+#13 main (argc=7, argv=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24522
+
+Main thread:
+#0  0x00007f309f911bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f4354 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:3002
+#2  0x00000000005fbed5 in sphSleepMsec (iMsec=iMsec@entry=3000) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:2991
+#3  0x00000000006b9e9f in DumpGdb (iFD=4) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:2956
+#4  sphBacktrace (iFD=4, bSafe=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:3260
+#5  0x000000000052f1ad in SphCrashLogger_c::HandleCrash (sig=11) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:1588
+#6  <signal handler called>
+#7  IterateStart (this=0x8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.h:2033
+#8  ReloadIndexSettings (tCP=..., this=<optimized out>, this=<optimized out>, this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:19746
+#9  0x00000000005800c5 in CheckRotate () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20094
+#10 TickHead () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20999
+#11 0x0000000000582d82 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24456
+#12 0x000000000052d0a7 in mainimpl (argv=0x7ffea18e5818, argc=7) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24516
+#13 main (argc=7, argv=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24522
+
+Local variables:
+No symbol table info available.
+[Wed Jul 17 01:26:03.016 2019] [64568] rotating index 'blogsitesinc_node2': started
+[Wed Jul 17 01:26:03.086 2019] [64568] rotating index 'blogsitesinc_node2': success
+--- 0 active threads ---
+------- CRASH DUMP END -------
+[Wed Jul 17 01:26:21.374 2019] [63660] watchdog: main process 63661 killed dirtily with signal 11, core dumped, will be restarted
+[Wed Jul 17 01:26:21.374 2019] [63660] watchdog: got error 10, No child processes
+[Wed Jul 17 01:26:21.375 2019] [63660] watchdog: main process 7919 forked ok
+[Wed Jul 17 01:26:21.441 2019] [7919] listening on all interfaces, port=3312
+[Wed Jul 17 01:26:21.442 2019] [7919] listening on all interfaces, port=6312
+[Wed Jul 17 01:26:21.442 2019] [7919] listening on all interfaces, port=9312
+[Wed Jul 17 01:26:21.581 2019] [7919] rotating index 'blogsitesinc_node1': success
+[Wed Jul 17 01:26:21.674 2019] [7919] rotating index 'linksinc_node2': success
+[Wed Jul 17 01:26:21.748 2019] [7919] rotating index 'blogsinc_rlp_node3': success
+[Wed Jul 17 01:26:21.804 2019] [7919] rotating index 'newsinc_rlp_node3': success
+[Wed Jul 17 01:26:21.862 2019] [7919] rotating index 'blogsitesinc_node3': success
+[Wed Jul 17 01:26:21.935 2019] [7919] rotating index 'blogshour_rlp_node4': success
+[Wed Jul 17 01:26:22.015 2019] [7919] rotating index 'newsinc_rlp_node4': success
+[Wed Jul 17 01:26:22.104 2019] [7919] rotating index 'blogsitesinc_node4': success
+[Wed Jul 17 01:26:22.106 2019] [7919] applying killlist of index 'blogs3month_node1'
+[Wed Jul 17 01:26:22.138 2019] [7919] applying killlist of index 'blogs3month_rlp_node1'
+[Wed Jul 17 01:26:22.153 2019] [7919] applying killlist of index 'blogsweek_node1'
+[Wed Jul 17 01:26:22.274 2019] [7919] applying killlist of index 'blogsweek_rlp_node1'
+[Wed Jul 17 01:26:22.278 2019] [7919] applying killlist of index 'blogsday_node1'
+[Wed Jul 17 01:26:22.357 2019] [7919] applying killlist of index 'blogsday_rlp_node1'
+[Wed Jul 17 01:26:22.357 2019] [7919] applying killlist of index 'blogshour_node1'
+[Wed Jul 17 01:26:22.367 2019] [7919] applying killlist of index 'blogshour_rlp_node1'
+[Wed Jul 17 01:26:22.367 2019] [7919] applying killlist of index 'blogsinc_node1'
+[Wed Jul 17 01:26:22.367 2019] [7919] applying killlist of index 'blogsinc_rlp_node1'
+[Wed Jul 17 01:26:22.368 2019] [7919] applying killlist of index 'news3month_node1'
+[Wed Jul 17 01:26:22.370 2019] [7919] applying killlist of index 'news3month_rlp_node1'
+[Wed Jul 17 01:26:22.370 2019] [7919] applying killlist of index 'newsweek_node1'
+[Wed Jul 17 01:26:22.371 2019] [7919] applying killlist of index 'newsweek_rlp_node1'
+[Wed Jul 17 01:26:22.371 2019] [7919] applying killlist of index 'newsday_node1'
+[Wed Jul 17 01:26:22.372 2019] [7919] applying killlist of index 'newsday_rlp_node1'
+[Wed Jul 17 01:26:22.372 2019] [7919] applying killlist of index 'newshour_node1'
+[Wed Jul 17 01:26:22.372 2019] [7919] applying killlist of index 'newshour_rlp_node1'
+[Wed Jul 17 01:26:22.372 2019] [7919] applying killlist of index 'newsinc_node1'
+[Wed Jul 17 01:26:22.372 2019] [7919] applying killlist of index 'newsinc_rlp_node1'
+[Wed Jul 17 01:26:22.375 2019] [7919] applying killlist of index 'links3month_node1'
+[Wed Jul 17 01:26:22.450 2019] [7919] applying killlist of index 'linksweek_node1'
+[Wed Jul 17 01:26:22.612 2019] [7919] applying killlist of index 'linksday_node1'
+[Wed Jul 17 01:26:22.671 2019] [7919] applying killlist of index 'linkshour_node1'
+[Wed Jul 17 01:26:22.678 2019] [7919] applying killlist of index 'linksinc_node1'
+[Wed Jul 17 01:26:22.679 2019] [7919] applying killlist of index 'blogsitesinc_node1'
+[Wed Jul 17 01:26:22.682 2019] [7919] applying killlist of index 'blogs3month_node2'
+[Wed Jul 17 01:26:22.719 2019] [7919] applying killlist of index 'blogs3month_rlp_node2'
+[Wed Jul 17 01:26:22.733 2019] [7919] applying killlist of index 'blogsweek_node2'
+[Wed Jul 17 01:26:22.835 2019] [7919] applying killlist of index 'blogsweek_rlp_node2'
+[Wed Jul 17 01:26:22.838 2019] [7919] applying killlist of index 'blogsday_node2'
+[Wed Jul 17 01:26:22.895 2019] [7919] applying killlist of index 'blogsday_rlp_node2'
+[Wed Jul 17 01:26:22.895 2019] [7919] applying killlist of index 'blogshour_node2'
+[Wed Jul 17 01:26:22.905 2019] [7919] applying killlist of index 'blogshour_rlp_node2'
+[Wed Jul 17 01:26:22.905 2019] [7919] applying killlist of index 'blogsinc_node2'
+[Wed Jul 17 01:26:22.906 2019] [7919] applying killlist of index 'blogsinc_rlp_node2'
+[Wed Jul 17 01:26:22.906 2019] [7919] applying killlist of index 'news3month_node2'
+[Wed Jul 17 01:26:22.908 2019] [7919] applying killlist of index 'news3month_rlp_node2'
+[Wed Jul 17 01:26:22.908 2019] [7919] applying killlist of index 'newsweek_node2'
+[Wed Jul 17 01:26:22.908 2019] [7919] applying killlist of index 'newsweek_rlp_node2'
+[Wed Jul 17 01:26:22.908 2019] [7919] applying killlist of index 'newsday_node2'
+[Wed Jul 17 01:26:22.908 2019] [7919] applying killlist of index 'newsday_rlp_node2'
+[Wed Jul 17 01:26:22.908 2019] [7919] applying killlist of index 'newshour_node2'
+[Wed Jul 17 01:26:22.908 2019] [7919] applying killlist of index 'newshour_rlp_node2'
+[Wed Jul 17 01:26:22.908 2019] [7919] applying killlist of index 'newsinc_node2'
+[Wed Jul 17 01:26:22.908 2019] [7919] applying killlist of index 'newsinc_rlp_node2'
+[Wed Jul 17 01:26:22.909 2019] [7919] applying killlist of index 'links3month_node2'
+[Wed Jul 17 01:26:22.950 2019] [7919] applying killlist of index 'linksweek_node2'
+[Wed Jul 17 01:26:23.080 2019] [7919] applying killlist of index 'linksday_node2'
+[Wed Jul 17 01:26:23.128 2019] [7919] applying killlist of index 'linkshour_node2'
+[Wed Jul 17 01:26:23.134 2019] [7919] applying killlist of index 'linksinc_node2'
+[Wed Jul 17 01:26:23.135 2019] [7919] applying killlist of index 'blogsitesinc_node2'
+[Wed Jul 17 01:26:23.140 2019] [7919] applying killlist of index 'blogs3month_node3'
+[Wed Jul 17 01:26:23.184 2019] [7919] applying killlist of index 'blogs3month_rlp_node3'
+[Wed Jul 17 01:26:23.200 2019] [7919] applying killlist of index 'blogsweek_node3'
+[Wed Jul 17 01:26:23.322 2019] [7919] applying killlist of index 'blogsweek_rlp_node3'
+[Wed Jul 17 01:26:23.326 2019] [7919] applying killlist of index 'blogsday_node3'
+[Wed Jul 17 01:26:23.394 2019] [7919] applying killlist of index 'blogsday_rlp_node3'
+[Wed Jul 17 01:26:23.395 2019] [7919] applying killlist of index 'blogshour_node3'
+[Wed Jul 17 01:26:23.406 2019] [7919] applying killlist of index 'blogshour_rlp_node3'
+[Wed Jul 17 01:26:23.406 2019] [7919] applying killlist of index 'blogsinc_node3'
+[Wed Jul 17 01:26:23.408 2019] [7919] applying killlist of index 'blogsinc_rlp_node3'
+[Wed Jul 17 01:26:23.408 2019] [7919] applying killlist of index 'news3month_node3'
+[Wed Jul 17 01:26:23.412 2019] [7919] applying killlist of index 'news3month_rlp_node3'
+[Wed Jul 17 01:26:23.412 2019] [7919] applying killlist of index 'newsweek_node3'
+[Wed Jul 17 01:26:23.413 2019] [7919] applying killlist of index 'newsweek_rlp_node3'
+[Wed Jul 17 01:26:23.413 2019] [7919] applying killlist of index 'newsday_node3'
+[Wed Jul 17 01:26:23.414 2019] [7919] applying killlist of index 'newsday_rlp_node3'
+[Wed Jul 17 01:26:23.414 2019] [7919] applying killlist of index 'newshour_node3'
+[Wed Jul 17 01:26:23.414 2019] [7919] applying killlist of index 'newshour_rlp_node3'
+[Wed Jul 17 01:26:23.414 2019] [7919] applying killlist of index 'newsinc_node3'
+[Wed Jul 17 01:26:23.414 2019] [7919] applying killlist of index 'newsinc_rlp_node3'
+[Wed Jul 17 01:26:23.415 2019] [7919] applying killlist of index 'links3month_node3'
+[Wed Jul 17 01:26:23.463 2019] [7919] applying killlist of index 'linksweek_node3'
+[Wed Jul 17 01:26:23.610 2019] [7919] applying killlist of index 'linksday_node3'
+[Wed Jul 17 01:26:23.677 2019] [7919] applying killlist of index 'linkshour_node3'
+[Wed Jul 17 01:26:23.684 2019] [7919] applying killlist of index 'linksinc_node3'
+[Wed Jul 17 01:26:23.685 2019] [7919] applying killlist of index 'blogsitesinc_node3'
+[Wed Jul 17 01:26:23.688 2019] [7919] applying killlist of index 'blogs3month_node4'
+[Wed Jul 17 01:26:23.729 2019] [7919] applying killlist of index 'blogs3month_rlp_node4'
+[Wed Jul 17 01:26:23.744 2019] [7919] applying killlist of index 'blogsweek_node4'
+[Wed Jul 17 01:26:23.870 2019] [7919] applying killlist of index 'blogsweek_rlp_node4'
+[Wed Jul 17 01:26:23.874 2019] [7919] applying killlist of index 'blogsday_node4'
+[Wed Jul 17 01:26:23.934 2019] [7919] applying killlist of index 'blogsday_rlp_node4'
+[Wed Jul 17 01:26:23.934 2019] [7919] applying killlist of index 'blogshour_node4'
+[Wed Jul 17 01:26:23.944 2019] [7919] applying killlist of index 'blogshour_rlp_node4'
+[Wed Jul 17 01:26:23.944 2019] [7919] applying killlist of index 'blogsinc_node4'
+[Wed Jul 17 01:26:23.945 2019] [7919] applying killlist of index 'blogsinc_rlp_node4'
+[Wed Jul 17 01:26:23.945 2019] [7919] applying killlist of index 'news3month_node4'
+[Wed Jul 17 01:26:23.947 2019] [7919] applying killlist of index 'news3month_rlp_node4'
+[Wed Jul 17 01:26:23.947 2019] [7919] applying killlist of index 'newsweek_node4'
+[Wed Jul 17 01:26:23.948 2019] [7919] applying killlist of index 'newsweek_rlp_node4'
+[Wed Jul 17 01:26:23.948 2019] [7919] applying killlist of index 'newsday_node4'
+[Wed Jul 17 01:26:23.949 2019] [7919] applying killlist of index 'newsday_rlp_node4'
+[Wed Jul 17 01:26:23.949 2019] [7919] applying killlist of index 'newshour_node4'
+[Wed Jul 17 01:26:23.949 2019] [7919] applying killlist of index 'newshour_rlp_node4'
+[Wed Jul 17 01:26:23.949 2019] [7919] applying killlist of index 'newsinc_node4'
+[Wed Jul 17 01:26:23.949 2019] [7919] applying killlist of index 'newsinc_rlp_node4'
+[Wed Jul 17 01:26:23.950 2019] [7919] applying killlist of index 'links3month_node4'
+[Wed Jul 17 01:26:23.998 2019] [7919] applying killlist of index 'linksweek_node4'
+[Wed Jul 17 01:26:24.158 2019] [7919] applying killlist of index 'linksday_node4'
+[Wed Jul 17 01:26:24.217 2019] [7919] applying killlist of index 'linkshour_node4'
+[Wed Jul 17 01:26:24.224 2019] [7919] applying killlist of index 'linksinc_node4'
+[Wed Jul 17 01:26:24.225 2019] [7919] applying killlist of index 'blogsitesinc_node4'
+[Wed Jul 17 01:26:24.229 2019] [7919] prereading 130 indexes
+[Wed Jul 17 01:26:47.126 2019] [7919] prereaded 128 indexes in 22.898 sec
+[Wed Jul 17 01:26:47.127 2019] [7919] accepting connections
+[Wed Jul 17 01:26:51.538 2019] [8428] rotating index 'newsinc_rlp_node3': started
+[Wed Jul 17 01:26:51.538 2019] [8428] WARNING: nothing to rotate for index 'newsinc_rlp_node3'
+[Wed Jul 17 01:26:51.538 2019] [8428] WARNING: (null)
+[Wed Jul 17 01:26:51.550 2019] [7919] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Wed Jul 17 01:26:51.560 2019] [8432] rotating index 'blogsitesinc_node4': started
+[Wed Jul 17 01:26:51.560 2019] [8432] WARNING: nothing to rotate for index 'blogsitesinc_node4'
+[Wed Jul 17 01:26:51.560 2019] [8432] WARNING: (null)
+[Wed Jul 17 01:26:52.538 2019] [8418] rotating index 'linksinc_node2': started
+[Wed Jul 17 01:26:52.538 2019] [8418] WARNING: nothing to rotate for index 'linksinc_node2'
+[Wed Jul 17 01:26:52.538 2019] [8418] WARNING: (null)
+[Wed Jul 17 01:26:52.560 2019] [8423] rotating index 'blogshour_rlp_node4': started
+[Wed Jul 17 01:26:52.560 2019] [8423] WARNING: nothing to rotate for index 'blogshour_rlp_node4'
+[Wed Jul 17 01:26:52.560 2019] [8423] WARNING: (null)
+[Wed Jul 17 01:26:53.538 2019] [8412] rotating index 'blogsinc_rlp_node3': started
+[Wed Jul 17 01:26:53.538 2019] [8412] WARNING: nothing to rotate for index 'blogsinc_rlp_node3'
+[Wed Jul 17 01:26:53.538 2019] [8412] WARNING: (null)
+[Wed Jul 17 01:26:54.538 2019] [8423] rotating index 'newsinc_rlp_node4': started
+[Wed Jul 17 01:26:54.538 2019] [8423] WARNING: nothing to rotate for index 'newsinc_rlp_node4'
+[Wed Jul 17 01:26:54.538 2019] [8423] WARNING: (null)
+[Wed Jul 17 01:26:55.541 2019] [8412] rotating index 'blogsitesinc_node1': started
+[Wed Jul 17 01:26:55.541 2019] [8412] WARNING: nothing to rotate for index 'blogsitesinc_node1'
+[Wed Jul 17 01:26:55.541 2019] [8412] WARNING: (null)
+[Wed Jul 17 01:26:56.541 2019] [8423] rotating index 'blogsitesinc_node3': started
+[Wed Jul 17 01:26:56.541 2019] [8423] WARNING: nothing to rotate for index 'blogsitesinc_node3'
+[Wed Jul 17 01:26:56.541 2019] [8423] WARNING: (null)
+[Wed Jul 17 01:27:02.001 2019] [8414] rotating index 'newsinc_rlp_node1': started
+[Wed Jul 17 01:27:02.084 2019] [8414] rotating index 'newsinc_rlp_node1': success
+[Wed Jul 17 01:27:02.309 2019] [8424] rotating index 'newsinc_node3': started
+[Wed Jul 17 01:27:02.378 2019] [8424] rotating index 'newsinc_node3': success
+[Wed Jul 17 01:27:02.676 2019] [8410] rotating index 'linksinc_node4': started
+[Wed Jul 17 01:27:02.749 2019] [8410] rotating index 'linksinc_node4': success
+[Wed Jul 17 01:27:02.780 2019] [8427] rotating index 'linksinc_node1': started
+[Wed Jul 17 01:27:02.853 2019] [8427] rotating index 'linksinc_node1': success
+[Wed Jul 17 01:27:03.433 2019] [8414] rotating index 'blogsinc_node2': started
+[Wed Jul 17 01:27:03.503 2019] [8414] rotating index 'blogsinc_node2': success
+[Wed Jul 17 01:27:03.806 2019] [8420] rotating index 'linksinc_node3': started
+[Wed Jul 17 01:27:03.884 2019] [8420] rotating index 'linksinc_node3': success
+------- FATAL: CRASH DUMP -------
+[Wed Jul 17 01:26:51.550 2019] [ 7919]
+
+--- crashed invalid query ---
+
+--- request dump end ---
+Manticore 3.0.3 fd43ace@190708 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDATADIR=/var/data -DFULL_SHARE_DIR=/usr/share/manticore -DICU_IS_SHARED=1 -DDL_ICU=1 -DICU_LIB=libicuuc.so.50 -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_RE2=1 -DWITH_ZLIB=ON -DGALERA_SOVERSION=31 -DSYSCONFDIR=etc/sphinx
+Host OS is Linux rpmbuild02.sgdctroy.net 3.10.0-693.21.1.vz7.48.2 #1 SMP Wed May 23 10:04:13 MSK 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7ffea18e5717, thread stack size = 0x100000
+Trying manual backtrace:
+Frame pointer is null, manual backtrace failed (did you build with -fomit-frame-pointer?)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x9e)[0x6b9e2e]
+/usr/bin/searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x19d)[0x52f1ad]
+/lib64/libpthread.so.0(+0xf370)[0x7f30a0c37370]
+/usr/bin/searchd[0x55d147]
+/usr/bin/searchd(_Z8TickHeadv+0x115)[0x5800c5]
+/usr/bin/searchd(_Z11ServiceMainiPPc+0x2182)[0x582d82]
+/usr/bin/searchd(main+0x67)[0x52d0a7]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f309f844b35]
+/usr/bin/searchd[0x52e1f4]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+[Wed Jul 17 01:27:05.635 2019] [63660] watchdog: got USR1, performing dump of child's stack
+Will run gdb on /usr/bin/searchd, pid 7919
+[New LWP 11001]
+[New LWP 8432]
+[New LWP 8431]
+[New LWP 8430]
+[New LWP 8429]
+[New LWP 8428]
+[New LWP 8427]
+[New LWP 8426]
+[New LWP 8425]
+[New LWP 8424]
+[New LWP 8423]
+[New LWP 8422]
+[New LWP 8421]
+[New LWP 8420]
+[New LWP 8419]
+[New LWP 8418]
+[New LWP 8417]
+[New LWP 8416]
+[New LWP 8415]
+[New LWP 8414]
+[New LWP 8413]
+[New LWP 8412]
+[New LWP 8411]
+[New LWP 8410]
+[New LWP 8409]
+[New LWP 8408]
+[New LWP 8027]
+[New LWP 8026]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007f309f911bd3 in select () from /lib64/libc.so.6
+  Id   Target Id         Frame 
+  29   Thread 0x7f30a104a700 (LWP 8026) "TaskSched" 0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  28   Thread 0x7f309d92a700 (LWP 8027) "TaskW_1" 0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  27   Thread 0x7e73a2833700 (LWP 8408) "netloop_0" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  26   Thread 0x7e73a272f700 (LWP 8409) "netloop_1" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  25   Thread 0x7e73a262b700 (LWP 8410) "netloop_2" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  24   Thread 0x7e73a2527700 (LWP 8411) "netloop_3" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  23   Thread 0x7e73a2423700 (LWP 8412) "netloop_4" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  22   Thread 0x7e73a231f700 (LWP 8413) "netloop_5" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  21   Thread 0x7e73a221b700 (LWP 8414) "netloop_6" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  20   Thread 0x7e73a2117700 (LWP 8415) "netloop_7" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  19   Thread 0x7e73a2013700 (LWP 8416) "netloop_8" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  18   Thread 0x7e73a1f0f700 (LWP 8417) "netloop_9" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  17   Thread 0x7e73a1e0b700 (LWP 8418) "netloop_10" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  16   Thread 0x7e73a1d07700 (LWP 8419) "netloop_11" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  15   Thread 0x7e73a1c03700 (LWP 8420) "netloop_12" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  14   Thread 0x7e73a1aff700 (LWP 8421) "netloop_13" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  13   Thread 0x7e73a19fb700 (LWP 8422) "netloop_14" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  12   Thread 0x7e73a18f7700 (LWP 8423) "netloop_15" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  11   Thread 0x7e73a17f3700 (LWP 8424) "netloop_16" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  10   Thread 0x7e73a16ef700 (LWP 8425) "netloop_17" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  9    Thread 0x7e73a15eb700 (LWP 8426) "netloop_18" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  8    Thread 0x7e73a14e7700 (LWP 8427) "netloop_19" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  7    Thread 0x7e73a13e3700 (LWP 8428) "netloop_20" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  6    Thread 0x7e73a12df700 (LWP 8429) "netloop_21" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  5    Thread 0x7e73a11db700 (LWP 8430) "netloop_22" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  4    Thread 0x7e73a10d7700 (LWP 8431) "netloop_23" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  3    Thread 0x7e73a0fd3700 (LWP 8432) "netloop_24" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  2    Thread 0x7e73a0ecf700 (LWP 11001) "TickPool_0" 0x00007f309f91ad43 in epoll_wait () from /lib64/libc.so.6
+* 1    Thread 0x7f30a104c740 (LWP 7919) "searchd" 0x00007f309f911bd3 in select () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7f30a104a700 (LWP 8026)):
+#0  0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0bee in AutoEvent_T<true>::WaitEvent (this=this@entry=0xbd4b40 <LazyTasker()::dEvents+128>, iMsec=iMsec@entry=1757557) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1424
+#2  0x00000000005eba0a in EventTick (this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:512
+#3  EventLoop (this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:452
+#4  LazyJobs_c::WorkerFunc (pArg=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:581
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xf364f0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7f309d92a700 (LWP 8027)):
+#0  0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0a8e in AutoEvent_T<false>::WaitEvent (this=this@entry=0xbd4c08 <LazyTasker()::dEvents+328>, iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1388
+#2  0x00000000005eaf44 in JobTick (tWorker=..., this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:604
+#3  JobLoop (pWorker=0x1577d60, this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:632
+#4  LazyJobs_c::TheadPoolWorker (pArg=0x1577d60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:678
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1577ed0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7e73a2833700 (LWP 8408)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x5a06cc0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7e73a272f700 (LWP 8409)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x5829990) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7e73a262b700 (LWP 8410)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x530f640) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7e73a2527700 (LWP 8411)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x4b76500) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7e73a2423700 (LWP 8412)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x49f8980) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7e73a231f700 (LWP 8413)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x47e1e50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7e73a221b700 (LWP 8414)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3ba02e0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7e73a2117700 (LWP 8415)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3e05240) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7e73a2013700 (LWP 8416)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3e15080) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7e73a1f0f700 (LWP 8417)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3bcbf10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7e73a1e0b700 (LWP 8418)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3894ed0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7e73a1d07700 (LWP 8419)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3827410) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 15 (Thread 0x7e73a1c03700 (LWP 8420)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3821930) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7e73a1aff700 (LWP 8421)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x36eadb0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7e73a19fb700 (LWP 8422)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3709310) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7e73a18f7700 (LWP 8423)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x36cc110) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7e73a17f3700 (LWP 8424)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x32e16f0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7e73a16ef700 (LWP 8425)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2edb1a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7e73a15eb700 (LWP 8426)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2b86ec0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7e73a14e7700 (LWP 8427)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x26ecaa0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7e73a13e3700 (LWP 8428)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1ea6430) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7e73a12df700 (LWP 8429)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1e0c490) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7e73a11db700 (LWP 8430)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1e0c2c0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7e73a10d7700 (LWP 8431)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1ec4110) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7e73a0fd3700 (LWP 8432)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xcccd338, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xcccd330) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1e04540) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7e73a0ecf700 (LWP 11001)):
+#0  0x00007f309f91ad43 in epoll_wait () from /lib64/libc.so.6
+#1  0x00000000005c28a1 in EpollEvents_c::Wait (this=0x7e739c0008c0, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdha.cpp:4088
+#2  0x000000000059dd56 in Wait (this=0x7e73a0ecee98, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21291
+#3  CSphNetLoop::Tick (this=this@entry=0x7e73a0ecee20) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21632
+#4  0x000000000059e611 in CSphNetLoop::ThdTick () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21803
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x60b0fd0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f30a104c740 (LWP 7919)):
+#0  0x00007f309f911bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f4354 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:3002
+#2  0x00000000005fbed5 in sphSleepMsec (iMsec=iMsec@entry=3000) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:2991
+#3  0x00000000006b9e9f in DumpGdb (iFD=4) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:2956
+#4  sphBacktrace (iFD=4, bSafe=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:3260
+#5  0x000000000052f1ad in SphCrashLogger_c::HandleCrash (sig=11) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:1588
+#6  <signal handler called>
+#7  IterateStart (this=0x8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.h:2033
+#8  ReloadIndexSettings (tCP=..., this=<optimized out>, this=<optimized out>, this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:19746
+#9  0x00000000005800c5 in CheckRotate () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20094
+#10 TickHead () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20999
+#11 0x0000000000582d82 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24456
+#12 0x000000000052d0a7 in mainimpl (argv=0x7ffea18e5818, argc=7) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24516
+#13 main (argc=7, argv=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24522
+
+Main thread:
+#0  0x00007f309f911bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f4354 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:3002
+#2  0x00000000005fbed5 in sphSleepMsec (iMsec=iMsec@entry=3000) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:2991
+#3  0x00000000006b9e9f in DumpGdb (iFD=4) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:2956
+#4  sphBacktrace (iFD=4, bSafe=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:3260
+#5  0x000000000052f1ad in SphCrashLogger_c::HandleCrash (sig=11) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:1588
+#6  <signal handler called>
+#7  IterateStart (this=0x8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.h:2033
+#8  ReloadIndexSettings (tCP=..., this=<optimized out>, this=<optimized out>, this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:19746
+#9  0x00000000005800c5 in CheckRotate () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20094
+#10 TickHead () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20999
+#11 0x0000000000582d82 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24456
+#12 0x000000000052d0a7 in mainimpl (argv=0x7ffea18e5818, argc=7) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24516
+#13 main (argc=7, argv=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24522
+
+Local variables:
+No symbol table info available.
+--- 0 active threads ---
+------- CRASH DUMP END -------
+[Wed Jul 17 01:27:26.957 2019] [63660] watchdog: main process 7919 killed dirtily with signal 11, core dumped, will be restarted
+[Wed Jul 17 01:27:26.957 2019] [63660] watchdog: got error 10, No child processes
+[Wed Jul 17 01:27:26.958 2019] [63660] watchdog: main process 26462 forked ok
+[Wed Jul 17 01:27:27.017 2019] [26462] listening on all interfaces, port=3312
+[Wed Jul 17 01:27:27.017 2019] [26462] listening on all interfaces, port=6312
+[Wed Jul 17 01:27:27.018 2019] [26462] listening on all interfaces, port=9312
+[Wed Jul 17 01:27:27.069 2019] [26462] rotating index 'blogsinc_node1': success
+[Wed Jul 17 01:27:27.112 2019] [26462] rotating index 'newsinc_node1': success
+[Wed Jul 17 01:27:27.186 2019] [26462] rotating index 'blogsinc_rlp_node2': success
+[Wed Jul 17 01:27:27.302 2019] [26462] rotating index 'blogsinc_node3': success
+[Wed Jul 17 01:27:27.385 2019] [26462] rotating index 'blogsitesinc_node3': success
+[Wed Jul 17 01:27:27.465 2019] [26462] rotating index 'blogsinc_node4': success
+[Wed Jul 17 01:27:27.518 2019] [26462] rotating index 'blogsinc_rlp_node4': success
+[Wed Jul 17 01:27:27.593 2019] [26462] rotating index 'newsinc_node4': success
+[Wed Jul 17 01:27:27.618 2019] [26462] applying killlist of index 'blogs3month_node1'
+[Wed Jul 17 01:27:27.652 2019] [26462] applying killlist of index 'blogs3month_rlp_node1'
+[Wed Jul 17 01:27:27.667 2019] [26462] applying killlist of index 'blogsweek_node1'
+[Wed Jul 17 01:27:27.788 2019] [26462] applying killlist of index 'blogsweek_rlp_node1'
+[Wed Jul 17 01:27:27.792 2019] [26462] applying killlist of index 'blogsday_node1'
+[Wed Jul 17 01:27:27.872 2019] [26462] applying killlist of index 'blogsday_rlp_node1'
+[Wed Jul 17 01:27:27.873 2019] [26462] applying killlist of index 'blogshour_node1'
+[Wed Jul 17 01:27:27.882 2019] [26462] applying killlist of index 'blogshour_rlp_node1'
+[Wed Jul 17 01:27:27.882 2019] [26462] applying killlist of index 'blogsinc_node1'
+[Wed Jul 17 01:27:27.883 2019] [26462] applying killlist of index 'blogsinc_rlp_node1'
+[Wed Jul 17 01:27:27.883 2019] [26462] applying killlist of index 'news3month_node1'
+[Wed Jul 17 01:27:27.886 2019] [26462] applying killlist of index 'news3month_rlp_node1'
+[Wed Jul 17 01:27:27.886 2019] [26462] applying killlist of index 'newsweek_node1'
+[Wed Jul 17 01:27:27.887 2019] [26462] applying killlist of index 'newsweek_rlp_node1'
+[Wed Jul 17 01:27:27.887 2019] [26462] applying killlist of index 'newsday_node1'
+[Wed Jul 17 01:27:27.887 2019] [26462] applying killlist of index 'newsday_rlp_node1'
+[Wed Jul 17 01:27:27.887 2019] [26462] applying killlist of index 'newshour_node1'
+[Wed Jul 17 01:27:27.887 2019] [26462] applying killlist of index 'newshour_rlp_node1'
+[Wed Jul 17 01:27:27.887 2019] [26462] applying killlist of index 'newsinc_node1'
+[Wed Jul 17 01:27:27.887 2019] [26462] applying killlist of index 'newsinc_rlp_node1'
+[Wed Jul 17 01:27:27.891 2019] [26462] applying killlist of index 'links3month_node1'
+[Wed Jul 17 01:27:27.967 2019] [26462] applying killlist of index 'linksweek_node1'
+[Wed Jul 17 01:27:28.135 2019] [26462] applying killlist of index 'linksday_node1'
+[Wed Jul 17 01:27:28.195 2019] [26462] applying killlist of index 'linkshour_node1'
+[Wed Jul 17 01:27:28.202 2019] [26462] applying killlist of index 'linksinc_node1'
+[Wed Jul 17 01:27:28.203 2019] [26462] applying killlist of index 'blogsitesinc_node1'
+[Wed Jul 17 01:27:28.207 2019] [26462] applying killlist of index 'blogs3month_node2'
+[Wed Jul 17 01:27:28.244 2019] [26462] applying killlist of index 'blogs3month_rlp_node2'
+[Wed Jul 17 01:27:28.257 2019] [26462] applying killlist of index 'blogsweek_node2'
+[Wed Jul 17 01:27:28.352 2019] [26462] applying killlist of index 'blogsweek_rlp_node2'
+[Wed Jul 17 01:27:28.355 2019] [26462] applying killlist of index 'blogsday_node2'
+[Wed Jul 17 01:27:28.408 2019] [26462] applying killlist of index 'blogsday_rlp_node2'
+[Wed Jul 17 01:27:28.408 2019] [26462] applying killlist of index 'blogshour_node2'
+[Wed Jul 17 01:27:28.417 2019] [26462] applying killlist of index 'blogshour_rlp_node2'
+[Wed Jul 17 01:27:28.417 2019] [26462] applying killlist of index 'blogsinc_node2'
+[Wed Jul 17 01:27:28.419 2019] [26462] applying killlist of index 'blogsinc_rlp_node2'
+[Wed Jul 17 01:27:28.419 2019] [26462] applying killlist of index 'news3month_node2'
+[Wed Jul 17 01:27:28.420 2019] [26462] applying killlist of index 'news3month_rlp_node2'
+[Wed Jul 17 01:27:28.420 2019] [26462] applying killlist of index 'newsweek_node2'
+[Wed Jul 17 01:27:28.420 2019] [26462] applying killlist of index 'newsweek_rlp_node2'
+[Wed Jul 17 01:27:28.420 2019] [26462] applying killlist of index 'newsday_node2'
+[Wed Jul 17 01:27:28.421 2019] [26462] applying killlist of index 'newsday_rlp_node2'
+[Wed Jul 17 01:27:28.421 2019] [26462] applying killlist of index 'newshour_node2'
+[Wed Jul 17 01:27:28.421 2019] [26462] applying killlist of index 'newshour_rlp_node2'
+[Wed Jul 17 01:27:28.421 2019] [26462] applying killlist of index 'newsinc_node2'
+[Wed Jul 17 01:27:28.421 2019] [26462] applying killlist of index 'newsinc_rlp_node2'
+[Wed Jul 17 01:27:28.422 2019] [26462] applying killlist of index 'links3month_node2'
+[Wed Jul 17 01:27:28.462 2019] [26462] applying killlist of index 'linksweek_node2'
+[Wed Jul 17 01:27:28.593 2019] [26462] applying killlist of index 'linksday_node2'
+[Wed Jul 17 01:27:28.645 2019] [26462] applying killlist of index 'linkshour_node2'
+[Wed Jul 17 01:27:28.652 2019] [26462] applying killlist of index 'linksinc_node2'
+[Wed Jul 17 01:27:28.653 2019] [26462] applying killlist of index 'blogsitesinc_node2'
+[Wed Jul 17 01:27:28.658 2019] [26462] applying killlist of index 'blogs3month_node3'
+[Wed Jul 17 01:27:28.698 2019] [26462] applying killlist of index 'blogs3month_rlp_node3'
+[Wed Jul 17 01:27:28.715 2019] [26462] applying killlist of index 'blogsweek_node3'
+[Wed Jul 17 01:27:28.835 2019] [26462] applying killlist of index 'blogsweek_rlp_node3'
+[Wed Jul 17 01:27:28.839 2019] [26462] applying killlist of index 'blogsday_node3'
+[Wed Jul 17 01:27:28.908 2019] [26462] applying killlist of index 'blogsday_rlp_node3'
+[Wed Jul 17 01:27:28.909 2019] [26462] applying killlist of index 'blogshour_node3'
+[Wed Jul 17 01:27:28.919 2019] [26462] applying killlist of index 'blogshour_rlp_node3'
+[Wed Jul 17 01:27:28.919 2019] [26462] applying killlist of index 'blogsinc_node3'
+[Wed Jul 17 01:27:28.920 2019] [26462] applying killlist of index 'blogsinc_rlp_node3'
+[Wed Jul 17 01:27:28.920 2019] [26462] applying killlist of index 'news3month_node3'
+[Wed Jul 17 01:27:28.925 2019] [26462] applying killlist of index 'news3month_rlp_node3'
+[Wed Jul 17 01:27:28.925 2019] [26462] applying killlist of index 'newsweek_node3'
+[Wed Jul 17 01:27:28.926 2019] [26462] applying killlist of index 'newsweek_rlp_node3'
+[Wed Jul 17 01:27:28.926 2019] [26462] applying killlist of index 'newsday_node3'
+[Wed Jul 17 01:27:28.926 2019] [26462] applying killlist of index 'newsday_rlp_node3'
+[Wed Jul 17 01:27:28.926 2019] [26462] applying killlist of index 'newshour_node3'
+[Wed Jul 17 01:27:28.926 2019] [26462] applying killlist of index 'newshour_rlp_node3'
+[Wed Jul 17 01:27:28.926 2019] [26462] applying killlist of index 'newsinc_node3'
+[Wed Jul 17 01:27:28.926 2019] [26462] applying killlist of index 'newsinc_rlp_node3'
+[Wed Jul 17 01:27:28.927 2019] [26462] applying killlist of index 'links3month_node3'
+[Wed Jul 17 01:27:28.975 2019] [26462] applying killlist of index 'linksweek_node3'
+[Wed Jul 17 01:27:29.116 2019] [26462] applying killlist of index 'linksday_node3'
+[Wed Jul 17 01:27:29.182 2019] [26462] applying killlist of index 'linkshour_node3'
+[Wed Jul 17 01:27:29.190 2019] [26462] applying killlist of index 'linksinc_node3'
+[Wed Jul 17 01:27:29.191 2019] [26462] applying killlist of index 'blogsitesinc_node3'
+[Wed Jul 17 01:27:29.195 2019] [26462] applying killlist of index 'blogs3month_node4'
+[Wed Jul 17 01:27:29.235 2019] [26462] applying killlist of index 'blogs3month_rlp_node4'
+[Wed Jul 17 01:27:29.251 2019] [26462] applying killlist of index 'blogsweek_node4'
+[Wed Jul 17 01:27:29.369 2019] [26462] applying killlist of index 'blogsweek_rlp_node4'
+[Wed Jul 17 01:27:29.373 2019] [26462] applying killlist of index 'blogsday_node4'
+[Wed Jul 17 01:27:29.427 2019] [26462] applying killlist of index 'blogsday_rlp_node4'
+[Wed Jul 17 01:27:29.428 2019] [26462] applying killlist of index 'blogshour_node4'
+[Wed Jul 17 01:27:29.437 2019] [26462] applying killlist of index 'blogshour_rlp_node4'
+[Wed Jul 17 01:27:29.437 2019] [26462] applying killlist of index 'blogsinc_node4'
+[Wed Jul 17 01:27:29.438 2019] [26462] applying killlist of index 'blogsinc_rlp_node4'
+[Wed Jul 17 01:27:29.438 2019] [26462] applying killlist of index 'news3month_node4'
+[Wed Jul 17 01:27:29.440 2019] [26462] applying killlist of index 'news3month_rlp_node4'
+[Wed Jul 17 01:27:29.441 2019] [26462] applying killlist of index 'newsweek_node4'
+[Wed Jul 17 01:27:29.442 2019] [26462] applying killlist of index 'newsweek_rlp_node4'
+[Wed Jul 17 01:27:29.442 2019] [26462] applying killlist of index 'newsday_node4'
+[Wed Jul 17 01:27:29.442 2019] [26462] applying killlist of index 'newsday_rlp_node4'
+[Wed Jul 17 01:27:29.442 2019] [26462] applying killlist of index 'newshour_node4'
+[Wed Jul 17 01:27:29.442 2019] [26462] applying killlist of index 'newshour_rlp_node4'
+[Wed Jul 17 01:27:29.443 2019] [26462] applying killlist of index 'newsinc_node4'
+[Wed Jul 17 01:27:29.443 2019] [26462] applying killlist of index 'newsinc_rlp_node4'
+[Wed Jul 17 01:27:29.443 2019] [26462] applying killlist of index 'links3month_node4'
+[Wed Jul 17 01:27:29.489 2019] [26462] applying killlist of index 'linksweek_node4'
+[Wed Jul 17 01:27:29.654 2019] [26462] applying killlist of index 'linksday_node4'
+[Wed Jul 17 01:27:29.714 2019] [26462] applying killlist of index 'linkshour_node4'
+[Wed Jul 17 01:27:29.721 2019] [26462] applying killlist of index 'linksinc_node4'
+[Wed Jul 17 01:27:29.723 2019] [26462] applying killlist of index 'blogsitesinc_node4'
+[Wed Jul 17 01:27:29.728 2019] [26462] prereading 130 indexes
+[Wed Jul 17 01:27:53.325 2019] [26462] prereaded 128 indexes in 23.597 sec
+[Wed Jul 17 01:27:53.325 2019] [26462] accepting connections
+[Wed Jul 17 01:27:57.125 2019] [26705] rotating index 'newsinc_node1': started
+[Wed Jul 17 01:27:57.125 2019] [26705] WARNING: nothing to rotate for index 'newsinc_node1'
+[Wed Jul 17 01:27:57.125 2019] [26705] WARNING: (null)
+[Wed Jul 17 01:27:57.138 2019] [26462] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Wed Jul 17 01:27:58.125 2019] [26696] rotating index 'newsinc_node4': started
+[Wed Jul 17 01:27:58.125 2019] [26696] WARNING: nothing to rotate for index 'newsinc_node4'
+[Wed Jul 17 01:27:58.125 2019] [26696] WARNING: (null)
+[Wed Jul 17 01:27:59.125 2019] [26707] rotating index 'blogsitesinc_node3': started
+[Wed Jul 17 01:27:59.125 2019] [26707] WARNING: nothing to rotate for index 'blogsitesinc_node3'
+[Wed Jul 17 01:27:59.125 2019] [26707] WARNING: (null)
+[Wed Jul 17 01:28:00.126 2019] [26696] rotating index 'blogsinc_node4': started
+[Wed Jul 17 01:28:00.126 2019] [26696] WARNING: nothing to rotate for index 'blogsinc_node4'
+[Wed Jul 17 01:28:00.126 2019] [26696] WARNING: (null)
+[Wed Jul 17 01:28:01.127 2019] [26707] rotating index 'blogsinc_rlp_node2': started
+[Wed Jul 17 01:28:01.127 2019] [26707] WARNING: nothing to rotate for index 'blogsinc_rlp_node2'
+[Wed Jul 17 01:28:01.127 2019] [26707] WARNING: (null)
+[Wed Jul 17 01:28:02.127 2019] [26704] rotating index 'blogsinc_node1': started
+[Wed Jul 17 01:28:02.127 2019] [26704] WARNING: nothing to rotate for index 'blogsinc_node1'
+[Wed Jul 17 01:28:02.127 2019] [26704] WARNING: (null)
+[Wed Jul 17 01:28:03.129 2019] [26703] rotating index 'blogsinc_rlp_node4': started
+[Wed Jul 17 01:28:03.129 2019] [26703] WARNING: nothing to rotate for index 'blogsinc_rlp_node4'
+[Wed Jul 17 01:28:03.129 2019] [26703] WARNING: (null)
+[Wed Jul 17 01:28:04.128 2019] [26691] rotating index 'blogsinc_node3': started
+[Wed Jul 17 01:28:04.128 2019] [26691] WARNING: nothing to rotate for index 'blogsinc_node3'
+[Wed Jul 17 01:28:04.128 2019] [26691] WARNING: (null)
+[Wed Jul 17 01:28:07.057 2019] [26708] rotating index 'blogsinc_rlp_node3': started
+[Wed Jul 17 01:28:07.126 2019] [26708] rotating index 'blogsinc_rlp_node3': success
+[Wed Jul 17 01:28:08.088 2019] [26690] rotating index 'blogsinc_rlp_node1': started
+[Wed Jul 17 01:28:08.200 2019] [26690] rotating index 'blogsinc_rlp_node1': success
+------- FATAL: CRASH DUMP -------
+[Wed Jul 17 01:27:57.138 2019] [26462]
+
+--- crashed invalid query ---
+
+--- request dump end ---
+Manticore 3.0.3 fd43ace@190708 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDATADIR=/var/data -DFULL_SHARE_DIR=/usr/share/manticore -DICU_IS_SHARED=1 -DDL_ICU=1 -DICU_LIB=libicuuc.so.50 -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_RE2=1 -DWITH_ZLIB=ON -DGALERA_SOVERSION=31 -DSYSCONFDIR=etc/sphinx
+Host OS is Linux rpmbuild02.sgdctroy.net 3.10.0-693.21.1.vz7.48.2 #1 SMP Wed May 23 10:04:13 MSK 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7ffea18e5717, thread stack size = 0x100000
+Trying manual backtrace:
+Frame pointer is null, manual backtrace failed (did you build with -fomit-frame-pointer?)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x9e)[0x6b9e2e]
+/usr/bin/searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x19d)[0x52f1ad]
+/lib64/libpthread.so.0(+0xf370)[0x7f30a0c37370]
+/usr/bin/searchd[0x55d147]
+/usr/bin/searchd(_Z8TickHeadv+0x115)[0x5800c5]
+/usr/bin/searchd(_Z11ServiceMainiPPc+0x2182)[0x582d82]
+/usr/bin/searchd(main+0x67)[0x52d0a7]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f309f844b35]
+/usr/bin/searchd[0x52e1f4]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+[Wed Jul 17 01:28:11.228 2019] [63660] watchdog: got USR1, performing dump of child's stack
+Will run gdb on /usr/bin/searchd, pid 26462
+[New LWP 29882]
+[New LWP 26713]
+[New LWP 26712]
+[New LWP 26711]
+[New LWP 26710]
+[New LWP 26709]
+[New LWP 26708]
+[New LWP 26707]
+[New LWP 26706]
+[New LWP 26705]
+[New LWP 26704]
+[New LWP 26703]
+[New LWP 26702]
+[New LWP 26701]
+[New LWP 26700]
+[New LWP 26699]
+[New LWP 26698]
+[New LWP 26697]
+[New LWP 26696]
+[New LWP 26695]
+[New LWP 26694]
+[New LWP 26693]
+[New LWP 26692]
+[New LWP 26691]
+[New LWP 26690]
+[New LWP 26689]
+[New LWP 26481]
+[New LWP 26480]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007f309f911bd3 in select () from /lib64/libc.so.6
+  Id   Target Id         Frame 
+  29   Thread 0x7f30a104a700 (LWP 26480) "TaskSched" 0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  28   Thread 0x7f309d92a700 (LWP 26481) "TaskW_1" 0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  27   Thread 0x7e73a3100700 (LWP 26689) "netloop_0" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  26   Thread 0x7e73a2ffc700 (LWP 26690) "netloop_1" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  25   Thread 0x7e73a2ef8700 (LWP 26691) "netloop_2" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  24   Thread 0x7e73a2df4700 (LWP 26692) "netloop_3" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  23   Thread 0x7e73a2cf0700 (LWP 26693) "netloop_4" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  22   Thread 0x7e73a2bec700 (LWP 26694) "netloop_5" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  21   Thread 0x7e73a2ae8700 (LWP 26695) "netloop_6" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  20   Thread 0x7e73a29e4700 (LWP 26696) "netloop_7" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  19   Thread 0x7e73a28e0700 (LWP 26697) "netloop_8" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  18   Thread 0x7e73a27dc700 (LWP 26698) "netloop_9" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  17   Thread 0x7e73a26d8700 (LWP 26699) "netloop_10" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  16   Thread 0x7e73a25d4700 (LWP 26700) "netloop_11" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  15   Thread 0x7e73a24d0700 (LWP 26701) "netloop_12" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  14   Thread 0x7e73a23cc700 (LWP 26702) "netloop_13" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  13   Thread 0x7e73a22c8700 (LWP 26703) "netloop_14" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  12   Thread 0x7e73a21c4700 (LWP 26704) "netloop_15" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  11   Thread 0x7e73a20c0700 (LWP 26705) "netloop_16" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  10   Thread 0x7e73a1fbc700 (LWP 26706) "netloop_17" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  9    Thread 0x7e73a1eb8700 (LWP 26707) "netloop_18" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  8    Thread 0x7e73a1db4700 (LWP 26708) "netloop_19" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  7    Thread 0x7e73a1cb0700 (LWP 26709) "netloop_20" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  6    Thread 0x7e73a1bac700 (LWP 26710) "netloop_21" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  5    Thread 0x7e73a1aa8700 (LWP 26711) "netloop_22" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  4    Thread 0x7e73a19a4700 (LWP 26712) "netloop_23" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  3    Thread 0x7e73a18a0700 (LWP 26713) "netloop_24" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  2    Thread 0x7e73a179c700 (LWP 29882) "TickPool_0" 0x00007f309f91ad43 in epoll_wait () from /lib64/libc.so.6
+* 1    Thread 0x7f30a104c740 (LWP 26462) "searchd" 0x00007f309f911bd3 in select () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7f30a104a700 (LWP 26480)):
+#0  0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0bee in AutoEvent_T<true>::WaitEvent (this=this@entry=0xbd4b40 <LazyTasker()::dEvents+128>, iMsec=iMsec@entry=1758817) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1424
+#2  0x00000000005eba0a in EventTick (this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:512
+#3  EventLoop (this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:452
+#4  LazyJobs_c::WorkerFunc (pArg=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:581
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xf364f0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7f309d92a700 (LWP 26481)):
+#0  0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0a8e in AutoEvent_T<false>::WaitEvent (this=this@entry=0xbd4c08 <LazyTasker()::dEvents+328>, iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1388
+#2  0x00000000005eaf44 in JobTick (tWorker=..., this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:604
+#3  JobLoop (pWorker=0x1577d60, this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:632
+#4  LazyJobs_c::TheadPoolWorker (pArg=0x1577d60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:678
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1577ed0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7e73a3100700 (LWP 26689)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x51f6000) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7e73a2ffc700 (LWP 26690)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x4dac4f0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7e73a2ef8700 (LWP 26691)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x471ab30) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7e73a2df4700 (LWP 26692)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x46fff10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7e73a2cf0700 (LWP 26693)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x47533b0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7e73a2bec700 (LWP 26694)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3e606b0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7e73a2ae8700 (LWP 26695)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3dd83b0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7e73a29e4700 (LWP 26696)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3751150) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7e73a28e0700 (LWP 26697)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x35d7930) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7e73a27dc700 (LWP 26698)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x333cb70) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7e73a26d8700 (LWP 26699)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3138c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7e73a25d4700 (LWP 26700)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3138b50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 15 (Thread 0x7e73a24d0700 (LWP 26701)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x308b7e0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7e73a23cc700 (LWP 26702)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2c3a230) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7e73a22c8700 (LWP 26703)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2963b00) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7e73a21c4700 (LWP 26704)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x243fbf0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7e73a20c0700 (LWP 26705)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x22d2d90) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7e73a1fbc700 (LWP 26706)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1e0b010) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7e73a1eb8700 (LWP 26707)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1987380) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7e73a1db4700 (LWP 26708)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1804130) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7e73a1cb0700 (LWP 26709)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x17ee2a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7e73a1bac700 (LWP 26710)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xd5c1e10) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7e73a1aa8700 (LWP 26711)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xd175130) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7e73a19a4700 (LWP 26712)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xd13a290) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7e73a18a0700 (LWP 26713)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5c2068, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5c2060) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xd05c6a0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7e73a179c700 (LWP 29882)):
+#0  0x00007f309f91ad43 in epoll_wait () from /lib64/libc.so.6
+#1  0x00000000005c28a1 in EpollEvents_c::Wait (this=0x7e739c0008c0, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdha.cpp:4088
+#2  0x000000000059dd56 in Wait (this=0x7e73a179be98, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21291
+#3  CSphNetLoop::Tick (this=this@entry=0x7e73a179be20) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21632
+#4  0x000000000059e611 in CSphNetLoop::ThdTick () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21803
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x52d0020) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f30a104c740 (LWP 26462)):
+#0  0x00007f309f911bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f4354 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:3002
+#2  0x00000000005fbed5 in sphSleepMsec (iMsec=iMsec@entry=3000) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:2991
+#3  0x00000000006b9e9f in DumpGdb (iFD=4) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:2956
+#4  sphBacktrace (iFD=4, bSafe=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:3260
+#5  0x000000000052f1ad in SphCrashLogger_c::HandleCrash (sig=11) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:1588
+#6  <signal handler called>
+#7  IterateStart (this=0x8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.h:2033
+#8  ReloadIndexSettings (tCP=..., this=<optimized out>, this=<optimized out>, this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:19746
+#9  0x00000000005800c5 in CheckRotate () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20094
+#10 TickHead () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20999
+#11 0x0000000000582d82 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24456
+#12 0x000000000052d0a7 in mainimpl (argv=0x7ffea18e5818, argc=7) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24516
+#13 main (argc=7, argv=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24522
+
+Main thread:
+#0  0x00007f309f911bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f4354 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:3002
+#2  0x00000000005fbed5 in sphSleepMsec (iMsec=iMsec@entry=3000) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:2991
+#3  0x00000000006b9e9f in DumpGdb (iFD=4) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:2956
+#4  sphBacktrace (iFD=4, bSafe=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:3260
+#5  0x000000000052f1ad in SphCrashLogger_c::HandleCrash (sig=11) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:1588
+#6  <signal handler called>
+#7  IterateStart (this=0x8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.h:2033
+#8  ReloadIndexSettings (tCP=..., this=<optimized out>, this=<optimized out>, this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:19746
+#9  0x00000000005800c5 in CheckRotate () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20094
+#10 TickHead () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20999
+#11 0x0000000000582d82 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24456
+#12 0x000000000052d0a7 in mainimpl (argv=0x7ffea18e5818, argc=7) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24516
+#13 main (argc=7, argv=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24522
+
+Local variables:
+No symbol table info available.
+[Wed Jul 17 01:28:12.332 2019] [26694] rotating index 'newsinc_rlp_node1': started
+[Wed Jul 17 01:28:12.403 2019] [26694] rotating index 'newsinc_rlp_node1': success
+[Wed Jul 17 01:28:13.162 2019] [26707] rotating index 'blogsitesinc_node4': started
+[Wed Jul 17 01:28:13.228 2019] [26707] rotating index 'blogsitesinc_node4': success
+[Wed Jul 17 01:28:13.334 2019] [26701] rotating index 'blogsinc_rlp_node4': started
+[Wed Jul 17 01:28:13.401 2019] [26701] rotating index 'blogsinc_rlp_node4': success
+[Wed Jul 17 01:28:14.336 2019] [26709] rotating index 'newsinc_node4': started
+[Wed Jul 17 01:28:14.416 2019] [26709] rotating index 'newsinc_node4': success
+--- 0 active threads ---
+------- CRASH DUMP END -------
+[Wed Jul 17 01:28:33.056 2019] [63660] watchdog: main process 26462 killed dirtily with signal 11, core dumped, will be restarted
+[Wed Jul 17 01:28:33.056 2019] [63660] watchdog: got error 10, No child processes
+[Wed Jul 17 01:28:33.056 2019] [63660] watchdog: main process 42753 forked ok
+[Wed Jul 17 01:28:33.123 2019] [42753] listening on all interfaces, port=3312
+[Wed Jul 17 01:28:33.123 2019] [42753] listening on all interfaces, port=6312
+[Wed Jul 17 01:28:33.123 2019] [42753] listening on all interfaces, port=9312
+[Wed Jul 17 01:28:33.179 2019] [42753] rotating index 'blogsinc_node1': success
+[Wed Jul 17 01:28:33.258 2019] [42753] rotating index 'linksinc_node1': success
+[Wed Jul 17 01:28:33.348 2019] [42753] rotating index 'newshour_node2': success
+[Wed Jul 17 01:28:33.374 2019] [42753] rotating index 'newsinc_node2': success
+[Wed Jul 17 01:28:33.397 2019] [42753] rotating index 'newsinc_rlp_node2': success
+[Wed Jul 17 01:28:33.458 2019] [42753] rotating index 'blogsitesinc_node2': success
+[Wed Jul 17 01:28:33.524 2019] [42753] rotating index 'blogsinc_node3': success
+[Wed Jul 17 01:28:33.621 2019] [42753] rotating index 'linkshour_node3': success
+[Wed Jul 17 01:28:33.697 2019] [42753] applying killlist of index 'blogs3month_node1'
+[Wed Jul 17 01:28:33.729 2019] [42753] applying killlist of index 'blogs3month_rlp_node1'
+[Wed Jul 17 01:28:33.743 2019] [42753] applying killlist of index 'blogsweek_node1'
+[Wed Jul 17 01:28:33.864 2019] [42753] applying killlist of index 'blogsweek_rlp_node1'
+[Wed Jul 17 01:28:33.868 2019] [42753] applying killlist of index 'blogsday_node1'
+[Wed Jul 17 01:28:33.946 2019] [42753] applying killlist of index 'blogsday_rlp_node1'
+[Wed Jul 17 01:28:33.947 2019] [42753] applying killlist of index 'blogshour_node1'
+[Wed Jul 17 01:28:33.955 2019] [42753] applying killlist of index 'blogshour_rlp_node1'
+[Wed Jul 17 01:28:33.955 2019] [42753] applying killlist of index 'blogsinc_node1'
+[Wed Jul 17 01:28:33.956 2019] [42753] applying killlist of index 'blogsinc_rlp_node1'
+[Wed Jul 17 01:28:33.956 2019] [42753] applying killlist of index 'news3month_node1'
+[Wed Jul 17 01:28:33.958 2019] [42753] applying killlist of index 'news3month_rlp_node1'
+[Wed Jul 17 01:28:33.959 2019] [42753] applying killlist of index 'newsweek_node1'
+[Wed Jul 17 01:28:33.959 2019] [42753] applying killlist of index 'newsweek_rlp_node1'
+[Wed Jul 17 01:28:33.959 2019] [42753] applying killlist of index 'newsday_node1'
+[Wed Jul 17 01:28:33.960 2019] [42753] applying killlist of index 'newsday_rlp_node1'
+[Wed Jul 17 01:28:33.960 2019] [42753] applying killlist of index 'newshour_node1'
+[Wed Jul 17 01:28:33.960 2019] [42753] applying killlist of index 'newshour_rlp_node1'
+[Wed Jul 17 01:28:33.960 2019] [42753] applying killlist of index 'newsinc_node1'
+[Wed Jul 17 01:28:33.960 2019] [42753] applying killlist of index 'newsinc_rlp_node1'
+[Wed Jul 17 01:28:33.963 2019] [42753] applying killlist of index 'links3month_node1'
+[Wed Jul 17 01:28:34.033 2019] [42753] applying killlist of index 'linksweek_node1'
+[Wed Jul 17 01:28:34.201 2019] [42753] applying killlist of index 'linksday_node1'
+[Wed Jul 17 01:28:34.263 2019] [42753] applying killlist of index 'linkshour_node1'
+[Wed Jul 17 01:28:34.269 2019] [42753] applying killlist of index 'linksinc_node1'
+[Wed Jul 17 01:28:34.270 2019] [42753] applying killlist of index 'blogsitesinc_node1'
+[Wed Jul 17 01:28:34.275 2019] [42753] applying killlist of index 'blogs3month_node2'
+[Wed Jul 17 01:28:34.312 2019] [42753] applying killlist of index 'blogs3month_rlp_node2'
+[Wed Jul 17 01:28:34.325 2019] [42753] applying killlist of index 'blogsweek_node2'
+[Wed Jul 17 01:28:34.426 2019] [42753] applying killlist of index 'blogsweek_rlp_node2'
+[Wed Jul 17 01:28:34.429 2019] [42753] applying killlist of index 'blogsday_node2'
+[Wed Jul 17 01:28:34.484 2019] [42753] applying killlist of index 'blogsday_rlp_node2'
+[Wed Jul 17 01:28:34.484 2019] [42753] applying killlist of index 'blogshour_node2'
+[Wed Jul 17 01:28:34.495 2019] [42753] applying killlist of index 'blogshour_rlp_node2'
+[Wed Jul 17 01:28:34.495 2019] [42753] applying killlist of index 'blogsinc_node2'
+[Wed Jul 17 01:28:34.496 2019] [42753] applying killlist of index 'blogsinc_rlp_node2'
+[Wed Jul 17 01:28:34.496 2019] [42753] applying killlist of index 'news3month_node2'
+[Wed Jul 17 01:28:34.498 2019] [42753] applying killlist of index 'news3month_rlp_node2'
+[Wed Jul 17 01:28:34.498 2019] [42753] applying killlist of index 'newsweek_node2'
+[Wed Jul 17 01:28:34.498 2019] [42753] applying killlist of index 'newsweek_rlp_node2'
+[Wed Jul 17 01:28:34.498 2019] [42753] applying killlist of index 'newsday_node2'
+[Wed Jul 17 01:28:34.498 2019] [42753] applying killlist of index 'newsday_rlp_node2'
+[Wed Jul 17 01:28:34.498 2019] [42753] applying killlist of index 'newshour_node2'
+[Wed Jul 17 01:28:34.498 2019] [42753] applying killlist of index 'newshour_rlp_node2'
+[Wed Jul 17 01:28:34.498 2019] [42753] applying killlist of index 'newsinc_node2'
+[Wed Jul 17 01:28:34.498 2019] [42753] applying killlist of index 'newsinc_rlp_node2'
+[Wed Jul 17 01:28:34.499 2019] [42753] applying killlist of index 'links3month_node2'
+[Wed Jul 17 01:28:34.540 2019] [42753] applying killlist of index 'linksweek_node2'
+[Wed Jul 17 01:28:34.665 2019] [42753] applying killlist of index 'linksday_node2'
+[Wed Jul 17 01:28:34.712 2019] [42753] applying killlist of index 'linkshour_node2'
+[Wed Jul 17 01:28:34.719 2019] [42753] applying killlist of index 'linksinc_node2'
+[Wed Jul 17 01:28:34.720 2019] [42753] applying killlist of index 'blogsitesinc_node2'
+[Wed Jul 17 01:28:34.723 2019] [42753] applying killlist of index 'blogs3month_node3'
+[Wed Jul 17 01:28:34.763 2019] [42753] applying killlist of index 'blogs3month_rlp_node3'
+[Wed Jul 17 01:28:34.780 2019] [42753] applying killlist of index 'blogsweek_node3'
+[Wed Jul 17 01:28:34.903 2019] [42753] applying killlist of index 'blogsweek_rlp_node3'
+[Wed Jul 17 01:28:34.907 2019] [42753] applying killlist of index 'blogsday_node3'
+[Wed Jul 17 01:28:34.973 2019] [42753] applying killlist of index 'blogsday_rlp_node3'
+[Wed Jul 17 01:28:34.974 2019] [42753] applying killlist of index 'blogshour_node3'
+[Wed Jul 17 01:28:34.983 2019] [42753] applying killlist of index 'blogshour_rlp_node3'
+[Wed Jul 17 01:28:34.983 2019] [42753] applying killlist of index 'blogsinc_node3'
+[Wed Jul 17 01:28:34.984 2019] [42753] applying killlist of index 'blogsinc_rlp_node3'
+[Wed Jul 17 01:28:34.984 2019] [42753] applying killlist of index 'news3month_node3'
+[Wed Jul 17 01:28:34.989 2019] [42753] applying killlist of index 'news3month_rlp_node3'
+[Wed Jul 17 01:28:34.989 2019] [42753] applying killlist of index 'newsweek_node3'
+[Wed Jul 17 01:28:34.990 2019] [42753] applying killlist of index 'newsweek_rlp_node3'
+[Wed Jul 17 01:28:34.990 2019] [42753] applying killlist of index 'newsday_node3'
+[Wed Jul 17 01:28:34.990 2019] [42753] applying killlist of index 'newsday_rlp_node3'
+[Wed Jul 17 01:28:34.990 2019] [42753] applying killlist of index 'newshour_node3'
+[Wed Jul 17 01:28:34.990 2019] [42753] applying killlist of index 'newshour_rlp_node3'
+[Wed Jul 17 01:28:34.990 2019] [42753] applying killlist of index 'newsinc_node3'
+[Wed Jul 17 01:28:34.990 2019] [42753] applying killlist of index 'newsinc_rlp_node3'
+[Wed Jul 17 01:28:34.991 2019] [42753] applying killlist of index 'links3month_node3'
+[Wed Jul 17 01:28:35.032 2019] [42753] applying killlist of index 'linksweek_node3'
+[Wed Jul 17 01:28:35.167 2019] [42753] applying killlist of index 'linksday_node3'
+[Wed Jul 17 01:28:35.231 2019] [42753] applying killlist of index 'linkshour_node3'
+[Wed Jul 17 01:28:35.238 2019] [42753] applying killlist of index 'linksinc_node3'
+[Wed Jul 17 01:28:35.240 2019] [42753] applying killlist of index 'blogsitesinc_node3'
+[Wed Jul 17 01:28:35.244 2019] [42753] applying killlist of index 'blogs3month_node4'
+[Wed Jul 17 01:28:35.286 2019] [42753] applying killlist of index 'blogs3month_rlp_node4'
+[Wed Jul 17 01:28:35.302 2019] [42753] applying killlist of index 'blogsweek_node4'
+[Wed Jul 17 01:28:35.441 2019] [42753] applying killlist of index 'blogsweek_rlp_node4'
+[Wed Jul 17 01:28:35.445 2019] [42753] applying killlist of index 'blogsday_node4'
+[Wed Jul 17 01:28:35.504 2019] [42753] applying killlist of index 'blogsday_rlp_node4'
+[Wed Jul 17 01:28:35.505 2019] [42753] applying killlist of index 'blogshour_node4'
+[Wed Jul 17 01:28:35.514 2019] [42753] applying killlist of index 'blogshour_rlp_node4'
+[Wed Jul 17 01:28:35.514 2019] [42753] applying killlist of index 'blogsinc_node4'
+[Wed Jul 17 01:28:35.515 2019] [42753] applying killlist of index 'blogsinc_rlp_node4'
+[Wed Jul 17 01:28:35.515 2019] [42753] applying killlist of index 'news3month_node4'
+[Wed Jul 17 01:28:35.517 2019] [42753] applying killlist of index 'news3month_rlp_node4'
+[Wed Jul 17 01:28:35.518 2019] [42753] applying killlist of index 'newsweek_node4'
+[Wed Jul 17 01:28:35.519 2019] [42753] applying killlist of index 'newsweek_rlp_node4'
+[Wed Jul 17 01:28:35.519 2019] [42753] applying killlist of index 'newsday_node4'
+[Wed Jul 17 01:28:35.519 2019] [42753] applying killlist of index 'newsday_rlp_node4'
+[Wed Jul 17 01:28:35.519 2019] [42753] applying killlist of index 'newshour_node4'
+[Wed Jul 17 01:28:35.520 2019] [42753] applying killlist of index 'newshour_rlp_node4'
+[Wed Jul 17 01:28:35.520 2019] [42753] applying killlist of index 'newsinc_node4'
+[Wed Jul 17 01:28:35.520 2019] [42753] applying killlist of index 'newsinc_rlp_node4'
+[Wed Jul 17 01:28:35.520 2019] [42753] applying killlist of index 'links3month_node4'
+[Wed Jul 17 01:28:35.566 2019] [42753] applying killlist of index 'linksweek_node4'
+[Wed Jul 17 01:28:35.732 2019] [42753] applying killlist of index 'linksday_node4'
+[Wed Jul 17 01:28:35.793 2019] [42753] applying killlist of index 'linkshour_node4'
+[Wed Jul 17 01:28:35.800 2019] [42753] applying killlist of index 'linksinc_node4'
+[Wed Jul 17 01:28:35.801 2019] [42753] applying killlist of index 'blogsitesinc_node4'
+[Wed Jul 17 01:28:35.806 2019] [42753] prereading 130 indexes
+[Wed Jul 17 01:28:59.094 2019] [42753] prereaded 128 indexes in 23.288 sec
+[Wed Jul 17 01:28:59.094 2019] [42753] accepting connections
+[Wed Jul 17 01:29:03.219 2019] [43120] rotating index 'newsinc_node2': started
+[Wed Jul 17 01:29:03.219 2019] [43120] WARNING: nothing to rotate for index 'newsinc_node2'
+[Wed Jul 17 01:29:03.219 2019] [43120] WARNING: (null)
+[Wed Jul 17 01:29:03.233 2019] [42753] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Wed Jul 17 01:29:04.220 2019] [43096] rotating index 'blogsinc_node3': started
+[Wed Jul 17 01:29:04.220 2019] [43096] WARNING: nothing to rotate for index 'blogsinc_node3'
+[Wed Jul 17 01:29:04.220 2019] [43096] WARNING: (null)
+[Wed Jul 17 01:29:05.219 2019] [43109] rotating index 'linksinc_node1': started
+[Wed Jul 17 01:29:05.219 2019] [43109] WARNING: nothing to rotate for index 'linksinc_node1'
+[Wed Jul 17 01:29:05.219 2019] [43109] WARNING: (null)
+[Wed Jul 17 01:29:06.221 2019] [43096] rotating index 'blogsitesinc_node2': started
+[Wed Jul 17 01:29:06.221 2019] [43096] WARNING: nothing to rotate for index 'blogsitesinc_node2'
+[Wed Jul 17 01:29:06.221 2019] [43096] WARNING: (null)
+[Wed Jul 17 01:29:07.223 2019] [43112] rotating index 'linkshour_node3': started
+[Wed Jul 17 01:29:07.223 2019] [43112] WARNING: nothing to rotate for index 'linkshour_node3'
+[Wed Jul 17 01:29:07.223 2019] [43112] WARNING: (null)
+[Wed Jul 17 01:29:08.223 2019] [43105] rotating index 'newsinc_rlp_node2': started
+[Wed Jul 17 01:29:08.223 2019] [43105] WARNING: nothing to rotate for index 'newsinc_rlp_node2'
+[Wed Jul 17 01:29:08.223 2019] [43105] WARNING: (null)
+[Wed Jul 17 01:29:09.223 2019] [43114] rotating index 'blogsinc_node1': started
+[Wed Jul 17 01:29:09.223 2019] [43114] WARNING: nothing to rotate for index 'blogsinc_node1'
+[Wed Jul 17 01:29:09.223 2019] [43114] WARNING: (null)
+[Wed Jul 17 01:29:10.226 2019] [43108] rotating index 'newshour_node2': started
+[Wed Jul 17 01:29:10.226 2019] [43108] WARNING: nothing to rotate for index 'newshour_node2'
+[Wed Jul 17 01:29:10.226 2019] [43108] WARNING: (null)
+[Wed Jul 17 01:29:12.006 2019] [43103] rotating index 'blogsinc_rlp_node4': started
+[Wed Jul 17 01:29:12.073 2019] [43103] rotating index 'blogsinc_rlp_node4': success
+[Wed Jul 17 01:29:12.115 2019] [43111] rotating index 'blogsinc_rlp_node2': started
+[Wed Jul 17 01:29:12.192 2019] [43111] rotating index 'blogsinc_rlp_node2': success
+[Wed Jul 17 01:29:13.315 2019] [43105] rotating index 'blogshour_rlp_node2': started
+[Wed Jul 17 01:29:13.381 2019] [43105] rotating index 'blogshour_rlp_node2': success
+[Wed Jul 17 01:29:17.131 2019] [43096] rotating index 'blogsinc_rlp_node3': started
+[Wed Jul 17 01:29:17.199 2019] [43096] rotating index 'blogsinc_rlp_node3': success
+------- FATAL: CRASH DUMP -------
+[Wed Jul 17 01:29:03.233 2019] [42753]
+
+--- crashed invalid query ---
+
+--- request dump end ---
+Manticore 3.0.3 fd43ace@190708 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDATADIR=/var/data -DFULL_SHARE_DIR=/usr/share/manticore -DICU_IS_SHARED=1 -DDL_ICU=1 -DICU_LIB=libicuuc.so.50 -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_RE2=1 -DWITH_ZLIB=ON -DGALERA_SOVERSION=31 -DSYSCONFDIR=etc/sphinx
+Host OS is Linux rpmbuild02.sgdctroy.net 3.10.0-693.21.1.vz7.48.2 #1 SMP Wed May 23 10:04:13 MSK 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7ffea18e5717, thread stack size = 0x100000
+Trying manual backtrace:
+Frame pointer is null, manual backtrace failed (did you build with -fomit-frame-pointer?)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x9e)[0x6b9e2e]
+/usr/bin/searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x19d)[0x52f1ad]
+/lib64/libpthread.so.0(+0xf370)[0x7f30a0c37370]
+/usr/bin/searchd[0x55d147]
+/usr/bin/searchd(_Z8TickHeadv+0x115)[0x5800c5]
+/usr/bin/searchd(_Z11ServiceMainiPPc+0x2182)[0x582d82]
+/usr/bin/searchd(main+0x67)[0x52d0a7]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f309f844b35]
+/usr/bin/searchd[0x52e1f4]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+[Wed Jul 17 01:29:17.323 2019] [63660] watchdog: got USR1, performing dump of child's stack
+Will run gdb on /usr/bin/searchd, pid 42753
+[Wed Jul 17 01:29:17.558 2019] [43118] rotating index 'newshour_rlp_node3': started
+[New LWP 46761]
+[New LWP 43121]
+[New LWP 43120]
+[New LWP 43119]
+[New LWP 43118]
+[New LWP 43117]
+[New LWP 43116]
+[New LWP 43114]
+[New LWP 43113]
+[New LWP 43112]
+[New LWP 43111]
+[New LWP 43110]
+[New LWP 43109]
+[New LWP 43108]
+[New LWP 43107]
+[New LWP 43106]
+[New LWP 43105]
+[New LWP 43104]
+[New LWP 43103]
+[New LWP 43102]
+[New LWP 43101]
+[New LWP 43100]
+[New LWP 43099]
+[New LWP 43098]
+[New LWP 43097]
+[New LWP 43096]
+[New LWP 42807]
+[New LWP 42804]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007f309f911bd3 in select () from /lib64/libc.so.6
+  Id   Target Id         Frame 
+  29   Thread 0x7f30a104a700 (LWP 42804) "TaskSched" 0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  28   Thread 0x7f309d92a700 (LWP 42807) "TaskW_1" 0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  27   Thread 0x7e73a2ea1700 (LWP 43096) "netloop_0" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  26   Thread 0x7e73a2d9d700 (LWP 43097) "netloop_1" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  25   Thread 0x7e73a2c99700 (LWP 43098) "netloop_2" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  24   Thread 0x7e73a2b95700 (LWP 43099) "netloop_3" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  23   Thread 0x7e73a2a91700 (LWP 43100) "netloop_4" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  22   Thread 0x7e73a298d700 (LWP 43101) "netloop_5" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  21   Thread 0x7e73a2889700 (LWP 43102) "netloop_6" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  20   Thread 0x7e73a2785700 (LWP 43103) "netloop_7" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  19   Thread 0x7e73a2681700 (LWP 43104) "netloop_8" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  18   Thread 0x7e73a257d700 (LWP 43105) "netloop_9" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  17   Thread 0x7e73a2479700 (LWP 43106) "netloop_10" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  16   Thread 0x7e73a2375700 (LWP 43107) "netloop_11" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  15   Thread 0x7e73a2271700 (LWP 43108) "netloop_12" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  14   Thread 0x7e73a216d700 (LWP 43109) "netloop_13" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  13   Thread 0x7e73a2069700 (LWP 43110) "netloop_14" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  12   Thread 0x7e73a1f65700 (LWP 43111) "netloop_15" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  11   Thread 0x7e73a1e61700 (LWP 43112) "netloop_16" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  10   Thread 0x7e73a1d5d700 (LWP 43113) "netloop_17" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  9    Thread 0x7e73a1c59700 (LWP 43114) "netloop_18" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  8    Thread 0x7e73a1b55700 (LWP 43116) "netloop_19" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  7    Thread 0x7e73a1a51700 (LWP 43117) "netloop_20" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  6    Thread 0x7e73a194d700 (LWP 43118) "netloop_21" CSphReader::GetByte (this=this@entry=0x7e73a19494c0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:8185
+  5    Thread 0x7e73a1849700 (LWP 43119) "netloop_22" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  4    Thread 0x7e73a1745700 (LWP 43120) "netloop_23" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  3    Thread 0x7e73a1641700 (LWP 43121) "netloop_24" 0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  2    Thread 0x7e73a153d700 (LWP 46761) "TickPool_0" 0x00007f309f91ad43 in epoll_wait () from /lib64/libc.so.6
+* 1    Thread 0x7f30a104c740 (LWP 42753) "searchd" 0x00007f309f911bd3 in select () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7f30a104a700 (LWP 42804)):
+#0  0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0bee in AutoEvent_T<true>::WaitEvent (this=this@entry=0xbd4b40 <LazyTasker()::dEvents+128>, iMsec=iMsec@entry=1755923) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1424
+#2  0x00000000005eba0a in EventTick (this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:512
+#3  EventLoop (this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:452
+#4  LazyJobs_c::WorkerFunc (pArg=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:581
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0xf364f0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7f309d92a700 (LWP 42807)):
+#0  0x00007f30a0c33a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0a8e in AutoEvent_T<false>::WaitEvent (this=this@entry=0xbd4c08 <LazyTasker()::dEvents+328>, iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1388
+#2  0x00000000005eaf44 in JobTick (tWorker=..., this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:604
+#3  JobLoop (pWorker=0x1723810, this=0xbd4ac0 <LazyTasker()::dEvents>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:632
+#4  LazyJobs_c::TheadPoolWorker (pArg=0x1723810) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdtask.cpp:678
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1723980) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7e73a2ea1700 (LWP 43096)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x673f8f0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7e73a2d9d700 (LWP 43097)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x65e72d0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7e73a2c99700 (LWP 43098)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x6065c70) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7e73a2b95700 (LWP 43099)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x62ea1f0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7e73a2a91700 (LWP 43100)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x5c0efe0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7e73a298d700 (LWP 43101)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x5c4bd40) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7e73a2889700 (LWP 43102)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x59963d0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7e73a2785700 (LWP 43103)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x543dde0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7e73a2681700 (LWP 43104)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x564cf90) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7e73a257d700 (LWP 43105)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x52ce380) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7e73a2479700 (LWP 43106)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3e42310) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7e73a2375700 (LWP 43107)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x41d8c00) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 15 (Thread 0x7e73a2271700 (LWP 43108)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3cf44d0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7e73a216d700 (LWP 43109)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3cf7390) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7e73a2069700 (LWP 43110)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x35f2d50) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7e73a1f65700 (LWP 43111)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x3493380) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7e73a1e61700 (LWP 43112)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x32fc900) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7e73a1d5d700 (LWP 43113)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2b884d0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7e73a1c59700 (LWP 43114)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x306d430) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7e73a1b55700 (LWP 43116)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2c4f440) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7e73a1a51700 (LWP 43117)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x270bd30) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7e73a194d700 (LWP 43118)):
+#0  CSphReader::GetByte (this=this@entry=0x7e73a19494c0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:8185
+#1  0x00000000006038d0 in CSphReader::UnzipOffset (this=this@entry=0x7e73a19494c0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:8352
+#2  0x000000000062e44a in CSphIndex_VLN::LoadKillList (this=<optimized out>, pKillList=0x7e73a1949580, dTargets=..., sError=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:9804
+#3  0x000000000055b75a in ApplyKillListsTo (tLockedServed=..., sError=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:18431
+#4  0x0000000000560bcc in RotateIndexMT (pIndex=pIndex@entry=0x9395510, sIndex=..., sError=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:18884
+#5  0x00000000005b9bc0 in HandleMysqlReloadIndex (tStmt=..., tOut=..., this=<optimized out>, this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:17483
+#6  CSphinxqlSession::Execute (this=this@entry=0x7e739c007be8, sQuery=..., tOutput=..., uPacketID=@0x7e739c008989: 1 '\001', tThd=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:17944
+#7  0x000000000058f4d5 in LoopClientMySQL (uPacketID=@0x7e739c008989: 1 '\001', tSession=..., sQuery=..., iPacketLen=<optimized out>, bProfile=bProfile@entry=false, tThd=..., tIn=..., tOut=...) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:18329
+#8  0x000000000058fe4f in ThdJobQL_t::Call (this=0x7e739c008aa0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:22946
+#9  0x00000000006c3010 in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2063
+#10 CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#11 0x00000000006bff75 in sphThreadProcWrapper (pArg=0x2441400) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#12 0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#13 0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7e73a1849700 (LWP 43119)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x22fb4c0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7e73a1745700 (LWP 43120)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1ec53e0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7e73a1641700 (LWP 43121)):
+#0  0x00007f30a0c336d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c0b0b in AutoEvent_T<false>::WaitEvent (this=this@entry=0xd5d0c68, iMsec=iMsec@entry=-1) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:1370
+#2  0x00000000006c2f9f in TickImpl (this=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2036
+#3  CSphThdPool::Tick (pArg=0xd5d0c60) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:2029
+#4  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x1c03d80) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#5  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7e73a153d700 (LWP 46761)):
+#0  0x00007f309f91ad43 in epoll_wait () from /lib64/libc.so.6
+#1  0x00000000005c28a1 in EpollEvents_c::Wait (this=0x7e739c0008c0, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchdha.cpp:4088
+#2  0x000000000059dd56 in Wait (this=0x7e73a153ce98, timeoutMs=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21291
+#3  CSphNetLoop::Tick (this=this@entry=0x7e73a153ce20) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21632
+#4  0x000000000059e611 in CSphNetLoop::ThdTick () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:21803
+#5  0x00000000006bff75 in sphThreadProcWrapper (pArg=0x71389b0) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.cpp:889
+#6  0x00007f30a0c2fdc5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f309f91a76d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f30a104c740 (LWP 42753)):
+#0  0x00007f309f911bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f4354 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:3002
+#2  0x00000000005fbed5 in sphSleepMsec (iMsec=iMsec@entry=3000) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:2991
+#3  0x00000000006b9e9f in DumpGdb (iFD=4) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:2956
+#4  sphBacktrace (iFD=4, bSafe=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:3260
+#5  0x000000000052f1ad in SphCrashLogger_c::HandleCrash (sig=11) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:1588
+#6  <signal handler called>
+#7  IterateStart (this=0x8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.h:2033
+#8  ReloadIndexSettings (tCP=..., this=<optimized out>, this=<optimized out>, this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:19746
+#9  0x00000000005800c5 in CheckRotate () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20094
+#10 TickHead () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20999
+#11 0x0000000000582d82 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24456
+#12 0x000000000052d0a7 in mainimpl (argv=0x7ffea18e5818, argc=7) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24516
+#13 main (argc=7, argv=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24522
+
+Main thread:
+#0  0x00007f309f911bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f4354 in sphSleepMsec (iMsec=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:3002
+#2  0x00000000005fbed5 in sphSleepMsec (iMsec=iMsec@entry=3000) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinx.cpp:2991
+#3  0x00000000006b9e9f in DumpGdb (iFD=4) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:2956
+#4  sphBacktrace (iFD=4, bSafe=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxutils.cpp:3260
+#5  0x000000000052f1ad in SphCrashLogger_c::HandleCrash (sig=11) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:1588
+#6  <signal handler called>
+#7  IterateStart (this=0x8) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/sphinxstd.h:2033
+#8  ReloadIndexSettings (tCP=..., this=<optimized out>, this=<optimized out>, this=<optimized out>) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:19746
+#9  0x00000000005800c5 in CheckRotate () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20094
+#10 TickHead () at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:20999
+#11 0x0000000000582d82 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24456
+#12 0x000000000052d0a7 in mainimpl (argv=0x7ffea18e5818, argc=7) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24516
+#13 main (argc=7, argv=0x7ffea18e5818) at /root/rpmbuild/BUILD/sphinx-release/sphinx-3.0.3/src/searchd.cpp:24522
+
+Local variables:
+No symbol table info available.
+[Wed Jul 17 01:29:18.324 2019] [43118] rotating index 'newshour_rlp_node3': success
+[Wed Jul 17 01:29:18.989 2019] [43107] rotating index 'blogsinc_node4': started
+[Wed Jul 17 01:29:19.057 2019] [43107] rotating index 'blogsinc_node4': success
+[Wed Jul 17 01:29:19.133 2019] [43106] rotating index 'blogsinc_rlp_node1': started
+[Wed Jul 17 01:29:19.203 2019] [43106] rotating index 'blogsinc_rlp_node1': success
+--- 0 active threads ---
+------- CRASH DUMP END -------
+[Wed Jul 17 01:29:38.964 2019] [63660] watchdog: main process 42753 killed dirtily with signal 11, core dumped, will be restarted
+[Wed Jul 17 01:29:38.964 2019] [63660] watchdog: got error 10, No child processes
+[Wed Jul 17 01:29:38.964 2019] [63660] watchdog: main process 59913 forked ok
+[Wed Jul 17 01:29:39.031 2019] [59913] listening on all interfaces, port=3312
+[Wed Jul 17 01:29:39.031 2019] [59913] listening on all interfaces, port=6312
+[Wed Jul 17 01:29:39.031 2019] [59913] listening on all interfaces, port=9312
+
+
+
