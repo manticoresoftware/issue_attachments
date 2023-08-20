@@ -1,0 +1,54 @@
+------- FATAL: CRASH DUMP -------
+[Thu Dec 20 11:36:00.200 2018] [    1]
+
+--- crashed SphinxAPI request dump ---
+ABEBAAAAABoAAAADAAAAAAAAAAJwcQAAAAAAAAABAAAAAA==
+--- request dump end ---
+Manticore 2.8.0 8868b207@181217 release
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 7
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.20 -DDL_PGSQL=1 -DPGSQL_LIB=libpq.so.5 -DDATADIR=/var/data -DSPLIT_SYMBOLS=1 -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_PGSQL=ON -DWITH_RE2=ON -DWITH_STEMMER=ON -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinxsearch
+Host OS is Linux 7387a9d19c08 4.15.0-42-generic #45~16.04.1-Ubuntu SMP Mon Nov 19 13:02:27 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f7dfef2ced7, thread stack size = 0x100000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x564ce53bcd30)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x564ce53bcd30, stack=0x7f7dfef30000, stacksize=0x100000)
+Trying system backtrace:
+begin of system symbols:
+./searchd(_Z12sphBacktraceib+0xdb)[0x564ce4ee3cbb]
+./searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x18a)[0x564ce4d2f2ba]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x12890)[0x7f7e00e3e890]
+/lib/x86_64-linux-gnu/libc.so.6(+0x18e5a1)[0x7f7dffc655a1]
+./searchd(_ZN23CSphSource_StringVectorC2ERK11VecTraits_TIPKcERK10CSphSchema+0x1b6)[0x564ce4ff3646]
+./searchd(_ZN16PercolateIndex_c11AddDocumentERK11VecTraits_TIPKcERK9CSphMatchbRK10CSphStringPS2_RKS0_IjERS9_SG_P11ISphRtAccum+0xe0)[0x564ce504fe50]
+./searchd(+0x198fcb)[0x564ce4d5efcb]
+./searchd(_Z19HandleCommandCallPqR20CachedOutputBuffer_ctR13InputBuffer_c+0x2ab)[0x564ce4d691cb]
+./searchd(+0x1c387a)[0x564ce4d8987a]
+./searchd(+0x1c3f05)[0x564ce4d89f05]
+./searchd(_Z17HandlerThreadFuncPv+0x21)[0x564ce4d8b051]
+./searchd(_ZN16SphCrashLogger_c13ThreadWrapperEPv+0x47)[0x564ce4d2e9f7]
+./searchd(_Z20sphThreadProcWrapperPv+0x2f)[0x564ce4eee67f]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x76db)[0x7f7e00e336db]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x3f)[0x7f7dffbf888f]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 15): ---
+conversion failed (error 'No such file or directory'):
+  1. Run the command provided below over the crashed binary (for example, './searchd'):
+  2. Attach the source.txt to the bug report.
+addr2line -e ./searchd 0xe4ee3cbb 0xe4d2f2ba 0xe3e890 0xffc655a1 0xe4ff3646 0xe504fe50 0xe4d5efcb 
+0xe4d691cb 0xe4d8987a 0xe4d89f05 0xe4d8b051 0xe4d2e9f7 0xe4eee67f 0xe336db 0xffbf888f 
+> source.txt
+precached 1 indexes in 1.038 sec
+--- BT to source lines finished ---
+--- 4 active threads ---
+thd 0, proto sphinxql, state handshake, command SYSTEM
+thd 1, proto sphinxapi, state query, command -
+thd 2, proto sphinxapi, state query, command -
+thd 3, proto sphinxapi, state query, command -
+------- CRASH DUMP END -------
