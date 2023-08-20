@@ -1,0 +1,76 @@
+ src/searchd.cpp   | 4 ++--
+ src/sphinx.cpp    | 9 ++++-----
+ src/sphinxstd.cpp | 2 ++
+ 3 files changed, 8 insertions(+), 7 deletions(-)
+
+diff --git a/src/searchd.cpp b/src/searchd.cpp
+index a1be8943..f8f30a19 100644
+--- a/src/searchd.cpp
++++ b/src/searchd.cpp
+@@ -21476,7 +21476,6 @@ private:
+ 		CSphVector<ISphNetAction *> dCleanup;
+ 		CSphVector<ISphNetAction *> dWorkNext;
+ 		dWorkNext.Reserve ( 1000 );
+-		dCleanup.Reserve ( 1000 );
+ 		int64_t tmNextCheck = INT64_MAX;
+ 		int64_t tmLastWait = sphMicroTimer();
+ 
+@@ -21591,6 +21590,8 @@ private:
+ 			tmLastWait = sphMicroTimer();
+ 			m_tPrf.End();
+ 		}
++
++		Cleanup ( dCleanup );
+ 	}
+ 
+ 	int64_t RemoveOutdated ( int64_t tmNextCheck, CSphVector<ISphNetAction *> & dCleanup )
+@@ -22823,7 +22824,6 @@ static void LogCleanup ( const CSphVector<ISphNetAction *> & dCleanup )
+ ThdJobCleanup_t::ThdJobCleanup_t ( CSphVector<ISphNetAction *> & dCleanup )
+ {
+ 	m_dCleanup.SwapData ( dCleanup );
+-	dCleanup.Reserve ( 1000 );
+ }
+ 
+ ThdJobCleanup_t::~ThdJobCleanup_t ()
+diff --git a/src/sphinx.cpp b/src/sphinx.cpp
+index 263ceb8f..e20c9f23 100644
+--- a/src/sphinx.cpp
++++ b/src/sphinx.cpp
+@@ -20263,6 +20263,8 @@ uint64_t sphFNV64cont ( const void * s, uint64_t uPrev )
+ /////////////////////////////////////////////////////////////////////////////
+ 
+ extern DWORD g_dSphinxCRC32 [ 256 ];
++static const int CRC_BUFFER_SIZE = 131072;
++static CSphFixedVector<BYTE> g_dCrcBuffer( CRC_BUFFER_SIZE );
+ 
+ bool sphCalcFileCRC32 ( const char * szFilename, DWORD & uCRC32 )
+ {
+@@ -20277,13 +20279,10 @@ bool sphCalcFileCRC32 ( const char * szFilename, DWORD & uCRC32 )
+ 
+ 	DWORD crc = ~((DWORD)0);
+ 
+-	const int BUFFER_SIZE = 131072;
+-	static BYTE * pBuffer = NULL;
+-	if ( !pBuffer )
+-		pBuffer = new BYTE [ BUFFER_SIZE ];
++	BYTE * pBuffer = g_dCrcBuffer.Begin();
+ 
+ 	int iBytesRead;
+-	while ( ( iBytesRead = fread ( pBuffer, 1, BUFFER_SIZE, pFile ) )!=0 )
++	while ( ( iBytesRead = fread ( pBuffer, 1, g_dCrcBuffer.GetLength(), pFile ) )!=0 )
+ 	{
+ 		for ( int i=0; i<iBytesRead; i++ )
+ 			crc = (crc >> 8) ^ g_dSphinxCRC32 [ (crc ^ pBuffer[i]) & 0xff ];
+diff --git a/src/sphinxstd.cpp b/src/sphinxstd.cpp
+index 9a0f97bb..d8dc5476 100644
+--- a/src/sphinxstd.cpp
++++ b/src/sphinxstd.cpp
+@@ -1915,6 +1915,8 @@ public:
+ private:
+ 	static void Tick ( void * pArg )
+ 	{
++		// prevent lazy allocation
++		errno = 0;
+ 		SetThdName ( "job" );
+ 
+ 		auto * pPool = (CSphThdPool *)pArg;
