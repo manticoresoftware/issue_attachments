@@ -1,0 +1,20 @@
+CALL SNIPPETS('In 1853, pro-Southern Copperheads (politics) proposed dividing the state of California to create a new Territory of Colorado (California) (at this time the territory that would become the state of Colorado was named \"Jefferson Territory\")', 'main_blog_1', 'state of',  1 AS around, 200 AS limit, 1 as limit_passages, '...........' as chunk_separator, '<' as before_match, '>' as after_match);
++----------------------------------------------------+
+| snippet                                            |
++----------------------------------------------------+
+| ........... the <state> <of> California........... |
++----------------------------------------------------+
+1 row in set (0.00 sec)
+
+
+
+
+
+
+CALL SNIPPETS('In 1853, pro-Southern Copperheads (politics) proposed dividing the state of California to create a new Territory of Colorado (California) (at this time the territory that would become the state of Colorado was named \"Jefferson Territory\")', 'main_blog_1', 'state of',  1 AS around, 300 AS limit, 1 as limit_passages, '...........' as chunk_separator, '<' as before_match, '>' as after_match);
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| snippet                                                                                                                                                                                                                                                  |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| In 1853, pro-Southern Copperheads (politics) proposed dividing the <state> <of> California to create a new Territory <of> Colorado (California) (at this time the territory that would become the <state> <of> Colorado was named "Jefferson Territory") |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
