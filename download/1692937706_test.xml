@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test>
+<name>replication nodes restart</name>
+
+<requires>
+	<replication/>
+	<non-windows/>
+	<force-rt/>
+	<heavy/>
+</requires>
+<skip_indexer/>
+<num_agents>3</num_agents>
+
+<config>
+
+<agent0>
+searchd
+{
+	<searchd_settings/>
+	data_dir = <data_path path="data0"/>
+	server_id = <agent_id/>
+}
+</agent0>
+<agent1>
+searchd
+{
+	<searchd_settings/>
+	data_dir = <data_path path="data1"/>
+	server_id = <agent_id/>
+}
+</agent1>
+<agent2>
+searchd
+{
+	<searchd_settings/>
+	data_dir = <data_path path="data2"/>
+	server_id = <agent_id/>
+}
+</agent2>
+
+</config>
+
+
+<queries>
+
+<!-- request to node 0 -->
+<sphinxql d="0">
+create cluster test;
+</sphinxql>
+
+<!-- request to node 1 -->
+<sphinxql d="1" cluster_connect="0">
+join cluster test at '%addr_connect%';
+debug wait test like 'state' option 'timeout'=30;
+show status like '%_node_%s%';
+</sphinxql>
+
+<!-- stop node 0 -->
+<sphinxql d="0" system="stop-agent"/>
+
+<!-- request to node 2, chain nodes 2>1 and update nodes -->
+<sphinxql d="2" cluster_connect="1">
+join cluster test at '%addr_connect%';
+debug wait test like 'state' option 'timeout'=30;
+show status like '%_node_%s%';
+</sphinxql>
+
+<!-- start node 0 -->
+<sphinxql d="0" system="start-agent"/>
+<sphinxql d="0">
+debug wait test like 'state' option 'timeout'=30;
+show status like '%_node_%s%';
+</sphinxql>
+
+<sphinxql d="1">
+show status like '%_node_%s%';
+</sphinxql>
+
+<sphinxql d="2">
+show status like '%_node_%s%';
+</sphinxql>
+
+<!-- stop node 1 -->
+<sphinxql d="1" system="stop-agent"/>
+<!-- stop node 2 -->
+<sphinxql d="2" system="stop-agent"/>
+
+<sphinxql d="0">
+debug wait test like 'state' option 'timeout'=30;
+show status like '%_node_%s%';
+</sphinxql>
+
+<!-- start node 1 -->
+<sphinxql d="1" system="start-agent"/>
+<sphinxql d="1">
+debug wait test like 'state' option 'timeout'=30;
+show status like '%_node_%s%';
+</sphinxql>
+
+<!-- start node 2 -->
+<sphinxql d="2" system="start-agent"/>
+<sphinxql d="2">
+debug wait test like 'state' option 'timeout'=30;
+show status like '%_node_%s%';
+</sphinxql>
+
+<sphinxql d="1">
+ALTER CLUSTER test UPDATE nodes;
+show status like '%_node_%s%';
+</sphinxql>
+
+<sphinxql d="0">
+show status like '%_node_%s%';
+</sphinxql>
+
+<sphinxql d="2">
+show status like '%_node_%s%';
+</sphinxql>
+
+<sphinxql d="0">
+delete cluster test;
+</sphinxql>
+
+</queries>
+
+</test>
