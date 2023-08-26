@@ -1,0 +1,656 @@
+[Fri Jan 31 03:22:19.986 2020] [22046]
+
+--- crashed SphinxQL request dump ---
+select * from rt where match('abc') limit 10
+--- request dump end ---
+--- local index:rt
+Manticore 3.2.3 0df6ce2@200130 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DUSE_SSL=ON -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.20 -DLOCALDATADIR=/usr/local/var/data -DFULL_SHARE_DIR=/usr/local/share/manticore -DUSE_ICU=1 -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_STEMMER=ON -DWITH_ZLIB=ON -DGALERA_SOVERSION=31
+Host OS is Linux sehs01.sgdctroy.net 3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7fa4e06d0dbf, thread stack size = 0x40000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x7fa2bc00c850)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x7fa2bc00c850, stack=0x7fa4e06d0000, stacksize=0x40000)
+Trying system backtrace:
+begin of system symbols:
+./searchd(_Z12sphBacktraceib+0x90)[0x6f5b20]
+./searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x1d0)[0x574ed0]
+/lib64/libpthread.so.0(+0xf5f0)[0x7fa4e653c5f0]
+./searchd(_ZNK9RtIndex_c10MultiQueryEPK9CSphQueryP15CSphQueryResultiPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x1493)[0x845663]
+./searchd(_ZNK9RtIndex_c12MultiQueryExEiPK9CSphQueryPP15CSphQueryResultPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x77)[0x846527]
+./searchd(_ZN15SearchHandler_c16RunLocalSearchesEv+0x71c)[0x5bc71c]
+./searchd(_ZN15SearchHandler_c9RunSubsetEii+0xca7)[0x5ceef7]
+./searchd(_ZN15SearchHandler_c10RunQueriesEv+0xb5)[0x5cfc25]
+./searchd(_Z17HandleMysqlSelectR14SqlRowBuffer_cR15SearchHandler_c+0x1c8)[0x5d02c8]
+./searchd(_ZN16CSphinxqlSession7ExecuteERK10CSphStringR16ISphOutputBufferRhRN7Threads9ThdDesc_tE+0x100c)[0x5fa6ac]
+./searchd[0x5d4885]
+./searchd(_ZN10ThdJobQL_t4CallEv+0x31e)[0x5d522e]
+./searchd(_ZN11CSphThdPool4TickEPv+0xa0)[0x6fe010]
+./searchd(_Z20sphThreadProcWrapperPv+0x25)[0x6f9735]
+/lib64/libpthread.so.0(+0x7e65)[0x7fa4e6534e65]
+/lib64/libc.so.6(clone+0x6d)[0x7fa4e4d4d88d]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+Dump with GDB via watchdog
+[Fri Jan 31 03:22:20.190 2020] [22045] watchdog: got USR1, performing dump of child's stack
+Will run gdb on '/mnt/data/ms_vs_es/searchd', pid '22046'
+Error reading attached process's symbol file.
+: No such file or directory.
+Error reading attached process's symbol file.
+: No such file or directory.
+[New LWP 22186]
+[New LWP 22092]
+[New LWP 22091]
+[New LWP 22090]
+[New LWP 22089]
+[New LWP 22088]
+[New LWP 22087]
+[New LWP 22086]
+[New LWP 22085]
+[New LWP 22084]
+[New LWP 22083]
+[New LWP 22082]
+[New LWP 22081]
+[New LWP 22080]
+[New LWP 22079]
+[New LWP 22078]
+[New LWP 22077]
+[New LWP 22076]
+[New LWP 22075]
+[New LWP 22074]
+[New LWP 22073]
+[New LWP 22072]
+[New LWP 22071]
+[New LWP 22070]
+[New LWP 22069]
+[New LWP 22068]
+[New LWP 22067]
+[New LWP 22066]
+[New LWP 22065]
+[New LWP 22064]
+[New LWP 22063]
+[New LWP 22062]
+[New LWP 22061]
+[New LWP 22060]
+[New LWP 22059]
+[New LWP 22058]
+[New LWP 22057]
+[New LWP 22056]
+[New LWP 22055]
+[New LWP 22054]
+[New LWP 22053]
+[New LWP 22052]
+[New LWP 22051]
+[New LWP 22050]
+[New LWP 22049]
+[New LWP 22048]
+[New LWP 22047]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007fa4e4d44953 in select () from /lib64/libc.so.6
+  Id   Target Id         Frame 
+  48   Thread 0x7fa4e6948700 (LWP 22047) "TaskSched" 0x00007fa4e6538da2 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  47   Thread 0x7fa4e6882700 (LWP 22048) "TaskW_1" 0x00007fa4e6538da2 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  46   Thread 0x7fa4e683d700 (LWP 22049) "netloop_0" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  45   Thread 0x7fa4e67f8700 (LWP 22050) "netloop_1" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  44   Thread 0x7fa4e67b3700 (LWP 22051) "netloop_2" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  43   Thread 0x7fa4e0d8e700 (LWP 22052) "netloop_3" 0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  42   Thread 0x7fa4e0d49700 (LWP 22053) "netloop_4" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  41   Thread 0x7fa4e0d04700 (LWP 22054) "netloop_5" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  40   Thread 0x7fa4e0cbf700 (LWP 22055) "netloop_6" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  39   Thread 0x7fa4e0c7a700 (LWP 22056) "netloop_7" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  38   Thread 0x7fa4e0c35700 (LWP 22057) "netloop_8" 0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  37   Thread 0x7fa4e0bf0700 (LWP 22058) "netloop_9" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  36   Thread 0x7fa4e0bab700 (LWP 22059) "netloop_10" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  35   Thread 0x7fa4e0b66700 (LWP 22060) "netloop_11" 0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  34   Thread 0x7fa4e0b21700 (LWP 22061) "netloop_12" 0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  33   Thread 0x7fa4e0adc700 (LWP 22062) "netloop_13" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  32   Thread 0x7fa4e0a97700 (LWP 22063) "netloop_14" 0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  31   Thread 0x7fa4e0a52700 (LWP 22064) "netloop_15" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  30   Thread 0x7fa4e0a0d700 (LWP 22065) "netloop_16" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  29   Thread 0x7fa4e09c8700 (LWP 22066) "netloop_17" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  28   Thread 0x7fa4e0983700 (LWP 22067) "netloop_18" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  27   Thread 0x7fa4e093e700 (LWP 22068) "netloop_19" 0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  26   Thread 0x7fa4e08f9700 (LWP 22069) "netloop_20" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  25   Thread 0x7fa4e08b4700 (LWP 22070) "netloop_21" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  24   Thread 0x7fa4e086f700 (LWP 22071) "netloop_22" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  23   Thread 0x7fa4e082a700 (LWP 22072) "netloop_23" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  22   Thread 0x7fa4e07e5700 (LWP 22073) "netloop_24" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  21   Thread 0x7fa4e07a0700 (LWP 22074) "netloop_25" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  20   Thread 0x7fa4e075b700 (LWP 22075) "netloop_26" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  19   Thread 0x7fa4e0716700 (LWP 22076) "netloop_27" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  18   Thread 0x7fa4e06d1700 (LWP 22077) "netloop_28" 0x00007fa4e4d44953 in select () from /lib64/libc.so.6
+  17   Thread 0x7fa4e068c700 (LWP 22078) "netloop_29" 0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  16   Thread 0x7fa4e0647700 (LWP 22079) "netloop_30" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  15   Thread 0x7fa4e0602700 (LWP 22080) "netloop_31" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  14   Thread 0x7fa4e05bd700 (LWP 22081) "netloop_32" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  13   Thread 0x7fa4e0578700 (LWP 22082) "netloop_33" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  12   Thread 0x7fa4e0533700 (LWP 22083) "netloop_34" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  11   Thread 0x7fa4e04ee700 (LWP 22084) "netloop_35" 0x000000000065b99b in ?? ()
+  10   Thread 0x7fa4e04a9700 (LWP 22085) "netloop_36" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  9    Thread 0x7fa4e0464700 (LWP 22086) "netloop_37" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  8    Thread 0x7fa4e041f700 (LWP 22087) "netloop_38" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  7    Thread 0x7fa4e03da700 (LWP 22088) "netloop_39" 0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+  6    Thread 0x7fa4e0395700 (LWP 22089) "netloop_40" 0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  5    Thread 0x7fa4e0350700 (LWP 22090) "TickPool_0" 0x00007fa4e4d4de63 in epoll_wait () from /lib64/libc.so.6
+  4    Thread 0x7fa4e030b700 (LWP 22091) "TickPool_1" 0x00007fa4e4d4de63 in epoll_wait () from /lib64/libc.so.6
+  3    Thread 0x7fa4e02c6700 (LWP 22092) "TickPool_2" 0x00007fa4e4d4de63 in epoll_wait () from /lib64/libc.so.6
+  2    Thread 0x7fa4e0281700 (LWP 22186) "TaskW_2" 0x00007fa4e6538da2 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+* 1    Thread 0x7fa4e694a880 (LWP 22046) "searchd" 0x00007fa4e4d44953 in select () from /lib64/libc.so.6
+
+Thread 48 (Thread 0x7fa4e6948700 (LWP 22047)):
+#0  0x00007fa4e6538da2 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa286 in ?? ()
+#2  0x000000005e33e3bd in ?? ()
+#3  0x000000000a5e775a in ?? ()
+#4  0x00000000000003e7 in ?? ()
+#5  0x0000000000da1080 in ?? ()
+#6  0x00000000000003e7 in ?? ()
+#7  0x00000000000f4234 in ?? ()
+#8  0x0000000000000000 in ?? ()
+
+Thread 47 (Thread 0x7fa4e6882700 (LWP 22048)):
+#0  0x00007fa4e6538da2 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa136 in ?? ()
+#2  0x000000005e33e613 in ?? ()
+#3  0x000000000a6c0a53 in ?? ()
+#4  0x0000000001c3f228 in ?? ()
+#5  0x0000000023c345fe in ?? ()
+#6  0x0000000001c3f228 in ?? ()
+#7  0x0000000000000002 in ?? ()
+#8  0x0000000001c3f250 in ?? ()
+#9  0x0000000000628d84 in ?? ()
+#10 0x00007fa4dc0009b0 in ?? ()
+#11 0x0000000000da11c8 in ?? ()
+#12 0x0000000000da11c8 in ?? ()
+#13 0x0000000000da11b8 in ?? ()
+#14 0x0000000000000000 in ?? ()
+
+Thread 46 (Thread 0x7fa4e683d700 (LWP 22049)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 45 (Thread 0x7fa4e67f8700 (LWP 22050)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 44 (Thread 0x7fa4e67b3700 (LWP 22051)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 43 (Thread 0x7fa4e0d8e700 (LWP 22052)):
+#0  0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa1ab in ?? ()
+#2  0x0000000000000000 in ?? ()
+
+Thread 42 (Thread 0x7fa4e0d49700 (LWP 22053)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 41 (Thread 0x7fa4e0d04700 (LWP 22054)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 40 (Thread 0x7fa4e0cbf700 (LWP 22055)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 39 (Thread 0x7fa4e0c7a700 (LWP 22056)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 38 (Thread 0x7fa4e0c35700 (LWP 22057)):
+#0  0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa1ab in ?? ()
+#2  0x0000000000000000 in ?? ()
+
+Thread 37 (Thread 0x7fa4e0bf0700 (LWP 22058)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 36 (Thread 0x7fa4e0bab700 (LWP 22059)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 35 (Thread 0x7fa4e0b66700 (LWP 22060)):
+#0  0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa1ab in ?? ()
+#2  0x00007fa30400f9c0 in ?? ()
+#3  0x0000000001d4e460 in ?? ()
+#4  0x00007fa30400f9a0 in ?? ()
+#5  0x0000000001d4e460 in ?? ()
+#6  0x00007fa30400f9a0 in ?? ()
+#7  0x0000000001d4e520 in ?? ()
+#8  0x0000000001d4e4d0 in ?? ()
+#9  0x00000000006fdf9f in ?? ()
+#10 0x0000000001c6af90 in ?? ()
+#11 0x0000000000000000 in ?? ()
+
+Thread 34 (Thread 0x7fa4e0b21700 (LWP 22061)):
+#0  0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa1ab in ?? ()
+#2  0x00007fa30400f980 in ?? ()
+#3  0x0000000001d4e460 in ?? ()
+#4  0x00007fa30400f960 in ?? ()
+#5  0x0000000001d4e460 in ?? ()
+#6  0x00007fa30400f960 in ?? ()
+#7  0x0000000001d4e520 in ?? ()
+#8  0x0000000001d4e4d0 in ?? ()
+#9  0x00000000006fdf9f in ?? ()
+#10 0x0000000001cd8df0 in ?? ()
+#11 0x0000000000000000 in ?? ()
+
+Thread 33 (Thread 0x7fa4e0adc700 (LWP 22062)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 32 (Thread 0x7fa4e0a97700 (LWP 22063)):
+#0  0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa1ab in ?? ()
+#2  0x00007fa30400fa00 in ?? ()
+#3  0x0000000001d4e460 in ?? ()
+#4  0x00007fa30400f9e0 in ?? ()
+#5  0x0000000001d4e460 in ?? ()
+#6  0x00007fa30400f9e0 in ?? ()
+#7  0x0000000001d4e520 in ?? ()
+#8  0x0000000001d4e4d0 in ?? ()
+#9  0x00000000006fdf9f in ?? ()
+#10 0x0000000001cd8e50 in ?? ()
+#11 0x0000000000000000 in ?? ()
+
+Thread 31 (Thread 0x7fa4e0a52700 (LWP 22064)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 30 (Thread 0x7fa4e0a0d700 (LWP 22065)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 29 (Thread 0x7fa4e09c8700 (LWP 22066)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 28 (Thread 0x7fa4e0983700 (LWP 22067)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 27 (Thread 0x7fa4e093e700 (LWP 22068)):
+#0  0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa1ab in ?? ()
+#2  0x00007fa30400f9c0 in ?? ()
+#3  0x0000000001d4e460 in ?? ()
+#4  0x00007fa30400f9a0 in ?? ()
+#5  0x0000000001d4e460 in ?? ()
+#6  0x00007fa30400f9a0 in ?? ()
+#7  0x0000000001d4e520 in ?? ()
+#8  0x0000000001d4e4d0 in ?? ()
+#9  0x00000000006fdf9f in ?? ()
+#10 0x0000000001c6a700 in ?? ()
+#11 0x0000000000000000 in ?? ()
+
+Thread 26 (Thread 0x7fa4e08f9700 (LWP 22069)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 25 (Thread 0x7fa4e08b4700 (LWP 22070)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 24 (Thread 0x7fa4e086f700 (LWP 22071)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 23 (Thread 0x7fa4e082a700 (LWP 22072)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 22 (Thread 0x7fa4e07e5700 (LWP 22073)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 21 (Thread 0x7fa4e07a0700 (LWP 22074)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 20 (Thread 0x7fa4e075b700 (LWP 22075)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 19 (Thread 0x7fa4e0716700 (LWP 22076)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 18 (Thread 0x7fa4e06d1700 (LWP 22077)):
+#0  0x00007fa4e4d44953 in select () from /lib64/libc.so.6
+#1  0x0000000000646a74 in ?? ()
+#2  0x0000000000000002 in ?? ()
+#3  0x00000000000df13a in ?? ()
+#4  0x00000000000000d4 in ?? ()
+#5  0x00000000006f5ba0 in ?? ()
+#6  0x0000000000000000 in ?? ()
+
+Thread 17 (Thread 0x7fa4e068c700 (LWP 22078)):
+#0  0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa1ab in ?? ()
+#2  0x0000000000000000 in ?? ()
+
+Thread 16 (Thread 0x7fa4e0647700 (LWP 22079)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 15 (Thread 0x7fa4e0602700 (LWP 22080)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 14 (Thread 0x7fa4e05bd700 (LWP 22081)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 13 (Thread 0x7fa4e0578700 (LWP 22082)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 12 (Thread 0x7fa4e0533700 (LWP 22083)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 11 (Thread 0x7fa4e04ee700 (LWP 22084)):
+#0  0x000000000065b99b in ?? ()
+#1  0x0000000000850f49 in ?? ()
+#2  0x81d100002e8fd1b0 in ?? ()
+#3  0x0000000000000200 in ?? ()
+#4  0x0706050403020100 in ?? ()
+#5  0x0f0e0d0c0b0a0908 in ?? ()
+#6  0x1716151413121110 in ?? ()
+#7  0x1f1e1d1c1b1a1918 in ?? ()
+#8  0x2726252423222120 in ?? ()
+#9  0x00000000002a2928 in ?? ()
+#10 0x0000000000000001 in ?? ()
+#11 0x0000000000000001 in ?? ()
+#12 0x0000000000000000 in ?? ()
+
+Thread 10 (Thread 0x7fa4e04a9700 (LWP 22085)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 9 (Thread 0x7fa4e0464700 (LWP 22086)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 8 (Thread 0x7fa4e041f700 (LWP 22087)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 7 (Thread 0x7fa4e03da700 (LWP 22088)):
+#0  0x00007fa4e653b50d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007fa4e6536e5b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007fa4e6536d28 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000006f9ef9 in ?? ()
+#4  0x0000000000000000 in ?? ()
+
+Thread 6 (Thread 0x7fa4e0395700 (LWP 22089)):
+#0  0x00007fa4e65389f5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa1ab in ?? ()
+#2  0x00007fa30400f9c0 in ?? ()
+#3  0x0000000001d4e460 in ?? ()
+#4  0x00007fa30400f9a0 in ?? ()
+#5  0x0000000001d4e460 in ?? ()
+#6  0x00007fa30400f9a0 in ?? ()
+#7  0x0000000001d4e520 in ?? ()
+#8  0x0000000001d4e4d0 in ?? ()
+#9  0x00000000006fdf9f in ?? ()
+#10 0x0000000001d0d750 in ?? ()
+#11 0x0000000000000000 in ?? ()
+
+Thread 5 (Thread 0x7fa4e0350700 (LWP 22090)):
+#0  0x00007fa4e4d4de63 in epoll_wait () from /lib64/libc.so.6
+#1  0x000000000060535e in ?? ()
+#2  0x00007fa4e034fcf0 in ?? ()
+#3  0x00000000006fa4de in ?? ()
+#4  0x00059d6b45b63dba in ?? ()
+#5  0x00007fa4e034fcf0 in ?? ()
+#6  0x0000000000000001 in ?? ()
+#7  0x00000000005e18fb in ?? ()
+#8  0x0000000000000070 in ?? ()
+#9  0x00059d6b45b63db8 in ?? ()
+#10 0x00007fa400000000 in ?? ()
+#11 0x00007fa3040008c0 in ?? ()
+#12 0x00007fa304003b90 in ?? ()
+#13 0x0000000000000000 in ?? ()
+
+Thread 4 (Thread 0x7fa4e030b700 (LWP 22091)):
+#0  0x00007fa4e4d4de63 in epoll_wait () from /lib64/libc.so.6
+#1  0x000000000060535e in ?? ()
+#2  0x00007fa4e030acf0 in ?? ()
+#3  0x0000000000000001 in ?? ()
+#4  0x00059d6b45b63c05 in ?? ()
+#5  0x00007fa4e030acf0 in ?? ()
+#6  0x0000000000000001 in ?? ()
+#7  0x00000000005e18fb in ?? ()
+#8  0x0000000000000070 in ?? ()
+#9  0x00059d6b45b63c04 in ?? ()
+#10 0x00007fa400000000 in ?? ()
+#11 0x00007fa3080008c0 in ?? ()
+#12 0x00007fa308005ba0 in ?? ()
+#13 0x0000000000000000 in ?? ()
+
+Thread 3 (Thread 0x7fa4e02c6700 (LWP 22092)):
+#0  0x00007fa4e4d4de63 in epoll_wait () from /lib64/libc.so.6
+#1  0x000000000060535e in ?? ()
+#2  0x00007fa4e02c5cf0 in ?? ()
+#3  0x0000000000000001 in ?? ()
+#4  0x00059d6b45b63c11 in ?? ()
+#5  0x00007fa4e02c5cf0 in ?? ()
+#6  0x0000000000000001 in ?? ()
+#7  0x00000000005e18fb in ?? ()
+#8  0x0000000000000070 in ?? ()
+#9  0x00059d6b45b63c0d in ?? ()
+#10 0x00007fa400000000 in ?? ()
+#11 0x00007fa2fc0008c0 in ?? ()
+#12 0x00007fa2fc005ba0 in ?? ()
+#13 0x0000000000000000 in ?? ()
+
+Thread 2 (Thread 0x7fa4e0281700 (LWP 22186)):
+#0  0x00007fa4e6538da2 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006fa136 in ?? ()
+#2  0x000000005e33e614 in ?? ()
+#3  0x000000000a5e63fd in ?? ()
+#4  0x0000000001c3f228 in ?? ()
+#5  0x0000000023c345ff in ?? ()
+#6  0x0000000001c3f228 in ?? ()
+#7  0x0000000000000002 in ?? ()
+#8  0x0000000001c3f250 in ?? ()
+#9  0x0000000000628d84 in ?? ()
+#10 0x00007fa4dc0009b0 in ?? ()
+#11 0x0000000000da11c8 in ?? ()
+#12 0x0000000000da11c8 in ?? ()
+#13 0x0000000000da11b8 in ?? ()
+#14 0x0000000000000000 in ?? ()
+
+Thread 1 (Thread 0x7fa4e694a880 (LWP 22046)):
+#0  0x00007fa4e4d44953 in select () from /lib64/libc.so.6
+#1  0x0000000000646a74 in ?? ()
+#2  0x0000000000000000 in ?? ()
+
+Main thread:
+#0  0x00007fa4e4d44953 in select () from /lib64/libc.so.6
+#1  0x0000000000646a74 in ?? ()
+#2  0x0000000000000000 in ?? ()
+
+Local variables:
+No symbol table info available.
+You can obtain the sources of this version from https://github.com/manticoresoftware/manticoresearch/archive/0df6ce2.zip
+and set up debug env with this shippet (select wget or curl version below):
+
+  wget https://codeload.github.com/manticoresoftware/manticoresearch/zip/0df6ce2 -O manticore.zip
+  curl https://codeload.github.com/manticoresoftware/manticoresearch/zip/0df6ce2 -o manticore.zip
+
+Unpack the sources by command:
+  mkdir -p /tmp/manticore && unzip manticore.zip -d /tmp/manticore
+
+For comfortable debug also suggest to append a substitution def to your ~/.gdbinit file:
+  set substitute-path "/root/manticore_gitlab" /tmp/manticore/manticoresearch-0df6ce2
+--- 33 active threads ---
+thd 0, proto sphinxql, state query, command select
+thd 1, proto sphinxql, state query, command insert
+thd 2, proto sphinxql, state query, command insert
+thd 3, proto sphinxql, state query, command insert
+thd 4, proto sphinxql, state query, command insert
+thd 5, proto sphinxql, state query, command insert
+thd 6, proto sphinxql, state query, command insert
+thd 7, proto sphinxql, state query, command insert
+thd 8, proto sphinxql, state query, command insert
+thd 9, proto sphinxql, state query, command insert
+thd 10, proto sphinxql, state query, command insert
+thd 11, proto sphinxql, state query, command insert
+thd 12, proto sphinxql, state query, command insert
+thd 13, proto sphinxql, state query, command insert
+thd 14, proto sphinxql, state query, command insert
+thd 15, proto sphinxql, state query, command insert
+thd 16, proto sphinxql, state query, command insert
+thd 17, proto sphinxql, state query, command insert
+thd 18, proto sphinxql, state query, command insert
+thd 19, proto sphinxql, state query, command insert
+thd 20, proto sphinxql, state query, command insert
+thd 21, proto sphinxql, state query, command insert
+thd 22, proto sphinxql, state query, command insert
+thd 23, proto sphinxql, state query, command insert
+thd 24, proto sphinxql, state query, command insert
+thd 25, proto sphinxql, state query, command insert
+thd 26, proto sphinxql, state query, command insert
+thd 27, proto sphinxql, state query, command insert
+thd 28, proto sphinxql, state query, command insert
+thd 29, proto sphinxql, state query, command insert
+thd 30, proto sphinxql, state query, command insert
+thd 31, proto sphinxql, state query, command insert
+thd 32, proto sphinxql, state query, command insert
+------- CRASH DUMP END -------
+[Fri Jan 31 03:22:38.980 2020] [22045] watchdog: main process 22046 killed dirtily with signal 11, core dumped, will be restarted
+[Fri Jan 31 03:22:38.981 2020] [22045] watchdog: got error 10, No child processes
+[Fri Jan 31 03:22:38.981 2020] [22045] watchdog: main process 20493 forked ok
+[Fri Jan 31 03:22:38.981 2020] [20493] listening on all interfaces, port=8312
+[Fri Jan 31 03:22:38.981 2020] [20493] listening on all interfaces, port=8313
+[Fri Jan 31 03:22:39.062 2020] [20493] binlog: replaying log binlog/binlog.001
+[Fri Jan 31 03:22:52.069 2020] [20493] binlog: index rt: recovered from tid 0 to tid 86
+[Fri Jan 31 03:22:52.069 2020] [20493] binlog: replay stats: 860000 rows in 86 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 0 create-table; 0 drop-table; 1 indexes
+[Fri Jan 31 03:22:52.069 2020] [20493] binlog: finished replaying binlog/binlog.001; 257.1 MB in 13.007 sec
+[Fri Jan 31 03:22:52.069 2020] [20493] binlog: replaying log binlog/binlog.002
+[Fri Jan 31 03:23:12.436 2020] [20493] binlog: index rt: recovered from tid 86 to tid 173
+[Fri Jan 31 03:23:12.436 2020] [20493] binlog: replay stats: 870000 rows in 87 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 0 create-table; 0 drop-table; 1 indexes
+[Fri Jan 31 03:23:12.436 2020] [20493] binlog: finished replaying binlog/binlog.002; 256.4 MB in 20.366 sec
+[Fri Jan 31 03:23:12.436 2020] [20493] binlog: replaying log binlog/binlog.003
+[Fri Jan 31 03:23:35.063 2020] [20493] binlog: index rt: recovered from tid 173 to tid 260
+[Fri Jan 31 03:23:35.063 2020] [20493] binlog: replay stats: 870000 rows in 87 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 0 create-table; 0 drop-table; 1 indexes
+[Fri Jan 31 03:23:35.063 2020] [20493] binlog: finished replaying binlog/binlog.003; 259.3 MB in 22.626 sec
+[Fri Jan 31 03:23:35.063 2020] [20493] binlog: replaying log binlog/binlog.004
+[Fri Jan 31 03:24:51.065 2020] [20493] index 'rt': ramchunk saved. TID=323
+[Fri Jan 31 03:24:51.065 2020] [20493] rt: index rt: diskchunk 3(1), segments 28 saved in 59.656 sec
+[Fri Jan 31 03:24:51.065 2020] [20493] index 'rt': ramchunk saved. TID=323
+[Fri Jan 31 03:24:52.042 2020] [20493] binlog: index rt: recovered from tid 260 to tid 343
+[Fri Jan 31 03:24:52.042 2020] [20493] binlog: replay stats: 830000 rows in 83 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 0 create-table; 0 drop-table; 1 indexes
+[Fri Jan 31 03:24:52.042 2020] [20493] binlog: finished replaying binlog/binlog.004; 259.0 MB in 76.979 sec
+[Fri Jan 31 03:24:52.042 2020] [20493] binlog: replaying log binlog/binlog.005
+[Fri Jan 31 03:24:53.347 2020] [20493] binlog: index rt: recovered from tid 343 to tid 354
+[Fri Jan 31 03:24:53.347 2020] [20493] binlog: replay stats: 110000 rows in 11 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 0 create-table; 0 drop-table; 1 indexes
+[Fri Jan 31 03:24:53.347 2020] [20493] binlog: finished replaying binlog/binlog.005; 32.9 MB in 1.304 sec
+[Fri Jan 31 03:24:53.347 2020] [20493] binlog: finished replaying total 5 in 134.285 sec
+[Fri Jan 31 03:24:53.348 2020] [20495] prereading 3 indexes
+[Fri Jan 31 03:24:53.348 2020] [20493] accepting connections
+[Fri Jan 31 03:24:55.086 2020] [20495] prereaded 2 indexes in 1.738 sec
