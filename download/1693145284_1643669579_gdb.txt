@@ -1,0 +1,129 @@
+ps aux | grep searchd
+root      19959  0.0  0.0 112808   952 pts/3    S+   17:49   0:00 grep searchd
+mantico+  70868  0.0  0.0  68864  1672 ?        S    Jan30   0:00 /usr/bin/searchd --config /etc/manticoresearch/manticore.conf
+mantico+  70869  7.3  0.0 4600136 56776 ?       Sl   Jan30 137:32 /usr/bin/searchd --config /etc/manticoresearch/manticore.conf
+[root@web3 /home/learn4gd]# gdb attach 70868
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+attach: No such file or directory.
+Attaching to process 70868
+Reading symbols from /usr/bin/searchd...Reading symbols from /usr/lib/debug/usr/bin/searchd.debug...done.
+done.
+Reading symbols from /lib64/libssl.so.10...Reading symbols from /lib64/libssl.so.10...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libssl.so.10
+Reading symbols from /lib64/libcrypto.so.10...Reading symbols from /lib64/libcrypto.so.10...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libcrypto.so.10
+Reading symbols from /lib64/libz.so.1...Reading symbols from /lib64/libz.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libz.so.1
+Reading symbols from /lib64/libanl.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libanl.so.1
+Reading symbols from /lib64/libm.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libm.so.6
+Reading symbols from /lib64/libdl.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libdl.so.2
+Reading symbols from /lib64/libstdc++.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libstdc++.so.6
+Reading symbols from /lib64/libgcc_s.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libgcc_s.so.1
+Reading symbols from /lib64/libpthread.so.0...(no debugging symbols found)...done.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+Loaded symbols for /lib64/libpthread.so.0
+Reading symbols from /lib64/libc.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libc.so.6
+Reading symbols from /lib64/libgssapi_krb5.so.2...Reading symbols from /lib64/libgssapi_krb5.so.2...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libgssapi_krb5.so.2
+Reading symbols from /lib64/libkrb5.so.3...Reading symbols from /lib64/libkrb5.so.3...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libkrb5.so.3
+Reading symbols from /lib64/libcom_err.so.2...Reading symbols from /lib64/libcom_err.so.2...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libcom_err.so.2
+Reading symbols from /lib64/libk5crypto.so.3...Reading symbols from /lib64/libk5crypto.so.3...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libk5crypto.so.3
+Reading symbols from /lib64/ld-linux-x86-64.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/ld-linux-x86-64.so.2
+Reading symbols from /lib64/libkrb5support.so.0...Reading symbols from /lib64/libkrb5support.so.0...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libkrb5support.so.0
+Reading symbols from /lib64/libkeyutils.so.1...Reading symbols from /lib64/libkeyutils.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libkeyutils.so.1
+Reading symbols from /lib64/libresolv.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libresolv.so.2
+Reading symbols from /lib64/libselinux.so.1...Reading symbols from /lib64/libselinux.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libselinux.so.1
+Reading symbols from /lib64/libpcre.so.1...Reading symbols from /lib64/libpcre.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libpcre.so.1
+Reading symbols from /usr/share/manticore/modules/lib_manticore_columnar.so...Reading symbols from /usr/share/manticore/modules/lib_manticore_columnar.so...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /usr/share/manticore/modules/lib_manticore_columnar.so
+0x00007f6c3ff43102 in wait () from /lib64/libpthread.so.0
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-325.el7_9.x86_64 keyutils-libs-1.5.8-3.el7.x86_64 krb5-libs-1.15.1-51.el7_9.x86_64 libcom_err-1.42.9-19.el7.x86_64 libgcc-4.8.5-44.el7.x86_64 libselinux-2.5-15.el7.x86_64 libstdc++-4.8.5-44.el7.x86_64 manticore-columnar-lib-1.13.1_220119.7c3d0ee-1.el7.centos.x86_64 openssl-libs-1.0.2k-24.el7_9.x86_64 pcre-8.32-17.el7.x86_64 zlib-1.2.7-19.el7_9.x86_64
+(gdb) set pagination off
+(gdb) info threads
+  Id   Target Id         Frame
+* 1    Thread 0x7f6c41865900 (LWP 70868) "searchd" 0x00007f6c3ff43102 in wait () from /lib64/libpthread.so.0
+(gdb) thread apply all bt
+
+Thread 1 (Thread 0x7f6c41865900 (LWP 70868)):
+#0  0x00007f6c3ff43102 in wait () from /lib64/libpthread.so.0
+#1  0x00000000004ced3f in SetWatchDog (iDevNull=3) at ../src/searchd.cpp:18655
+#2  0x00000000004d94cf in ServiceMain (argc=<optimized out>, argv=<optimized out>) at ../src/searchd.cpp:19820
+#3  0x00000000004dcb4b in mainimpl (argc=-1, argv=0x7ffd18357ba8) at ../src/searchd.cpp:20268
+#4  main (argc=-1, argv=0x7ffd18357ba8) at ../src/searchd.cpp:20274
+(gdb) bt full
+#0  0x00007f6c3ff43102 in wait () from /lib64/libpthread.so.0
+No symbol table info available.
+#1  0x00000000004ced3f in SetWatchDog (iDevNull=3) at ../src/searchd.cpp:18655
+        iPid = <optimized out>
+        iStatus = <optimized out>
+        iChild = 70869
+        bStreamsActive = false
+        bShutdown = false
+        eReincarnate = Disabled
+#2  0x00000000004d94cf in ServiceMain (argc=<optimized out>, argv=<optimized out>) at ../src/searchd.cpp:19820
+        sError = {m_sValue = 0x0, static EMPTY = 0x12f39e0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}
+        bOptStop = false
+        bOptStopWait = false
+        bOptStatus = true
+        bOptPIDFile = <optimized out>
+        i = <optimized out>
+        uReplayFlags = 0
+        bForcePseudoSharding = false
+        bNewClusterForce = false
+        bNewCluster = false
+        bForcedPreread = false
+        bOptDebugQlog = true
+        bTestMode = false
+        bOptListen = false
+        bOptPort = <optimized out>
+        iOptPort = 0
+        szCmdConfigFile = 0x7ffd18358f26 "/etc/manticoresearch/manticore.conf"
+        hSearchdpre = <optimized out>
+        bVisualLoad = <optimized out>
+        bWatched = true
+        iDevNull = 3
+        hSearchd = <optimized out>
+        szEndian = <optimized out>
+#3  0x00000000004dcb4b in mainimpl (argc=-1, argv=0x7ffd18357ba8) at ../src/searchd.cpp:20268
+        cTopOfMainStack = 0 '\000'
+#4  main (argc=-1, argv=0x7ffd18357ba8) at ../src/searchd.cpp:20274
+No locals.
+(gdb) info locals
+cTopOfMainStack = 0 '\000'
+(gdb)
