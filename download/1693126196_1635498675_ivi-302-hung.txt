@@ -1,0 +1,87 @@
+(gdb) thread 23
+[Switching to thread 23 (Thread 0x7f9f7a79c700 (LWP 41797))]
+#0  0x000000000086611b in RtSegment_t::GetUsedRam (this=0x7f9e119527d0) at ../src/sphinxrt.cpp:330
+330             if ( !m_iUsedRam )
+(gdb) bt
+#0  0x000000000086611b in RtSegment_t::GetUsedRam (this=0x7f9e119527d0) at ../src/sphinxrt.cpp:330
+#1  0x0000000000870838 in SegmentsGetUsedRam (dSegments=...) at ../src/sphinxrt.cpp:1497
+#2  CheckWeCanMerge (tSmallest=..., dSegments=..., iRamLimit=1073741824) at ../src/sphinxrt.cpp:3108
+#3  0x0000000000892271 in operator() (this=0x7f9f30c4a8d0) at ../src/sphinxrt.cpp:3193
+#4  std::_Function_handler<void (), RtIndex_c::StartMergeSegments(bool)::$_8>::_M_invoke(std::_Any_data const&) (__functor=...)
+    at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#5  0x0000000000d6a9fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  WorkerLowest (this=0x7f9f30c4a8c8, tCtx=<optimized out>) at ../src/coroutine.cpp:85
+#7  operator() (this=<optimized out>, pT=...) at ../src/coroutine.cpp:118
+#8  Threads::CoRoutine_c::CreateContext(std::function<void ()>, VecTraits_T<unsigned char>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) (pT=...) at ../src/coroutine.cpp:117
+#9  0x0000000000d6b6cf in make_fcontext ()
+
+(gdb) thread 15
+[Switching to thread 15 (Thread 0x7f9f7a694700 (LWP 41805))]
+#0  operator() (this=<optimized out>) at ../src/sphinxrt.cpp:3261
+3261                            if ( !pSeg->m_tAliveRows.load ( std::memory_order_relaxed ) )
+(gdb) bt
+#0  operator() (this=<optimized out>) at ../src/sphinxrt.cpp:3261
+#1  std::_Function_handler<void (), RtIndex_c::StartMergeSegments(bool)::$_8>::_M_invoke(std::_Any_data const&) (__functor=...)
+    at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#2  0x0000000000d6a9fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#3  WorkerLowest (this=0x7f9f1d3c1798, tCtx=<optimized out>) at ../src/coroutine.cpp:85
+#4  operator() (this=<optimized out>, pT=...) at ../src/coroutine.cpp:118
+#5  Threads::CoRoutine_c::CreateContext(std::function<void ()>, VecTraits_T<unsigned char>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) (pT=...) at ../src/coroutine.cpp:117
+#6  0x0000000000d6b6cf in make_fcontext ()
+
+(gdb) thread 11
+[Switching to thread 11 (Thread 0x7f9f7a610700 (LWP 41809))]
+#0  Release (this=<optimized out>) at ../src/sphinxstd.h:4860
+4860                    if ( m_iRefCount.fetch_sub ( 1, std::memory_order_release )==1 )
+(gdb) bt
+#0  Release (this=<optimized out>) at ../src/sphinxstd.h:4860
+#1  ~CSphRefcountedPtr (this=<optimized out>) at ../src/sphinxstd.h:4023
+#2  Deallocate (this=0x7f9f456bf9e0, pData=<optimized out>) at ../src/sphinxstd.h:1426
+#3  ~Vector_T (this=0x7f9f456bf9d0) at ../src/sphinxstd.h:1649
+#4  ~RefCountedVec_T (this=0x7f9f456bf9c0) at ../src/sphinxrt.cpp:846
+#5  RefCountedVec_T<CSphRefcountedPtr<RtSegment_t const> >::~RefCountedVec_T (this=0x7f9f456bf9c0) at ../src/sphinxrt.cpp:846
+#6  0x00000000008959d4 in Release (this=0x7f9eba9916f0) at ../src/sphinxstd.h:4863
+#7  operator= (this=0x7f9f7400b578, pPtr=0x7f9f0154d800) at ../src/sphinxstd.h:4044
+#8  RtWriter_c::~RtWriter_c (this=0x7f9f45707ea8) at ../src/sphinxrt.cpp:1079
+#9  0x00000000008925d6 in operator() (this=<optimized out>) at ../src/sphinxrt.cpp:3286
+#10 std::_Function_handler<void (), RtIndex_c::StartMergeSegments(bool)::$_8>::_M_invoke(std::_Any_data const&) (__functor=...)
+    at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#11 0x0000000000d6a9fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#12 WorkerLowest (this=0x7f9f456be178, tCtx=<optimized out>) at ../src/coroutine.cpp:85
+#13 operator() (this=<optimized out>, pT=...) at ../src/coroutine.cpp:118
+#14 Threads::CoRoutine_c::CreateContext(std::function<void ()>, VecTraits_T<unsigned char>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) (pT=...) at ../src/coroutine.cpp:117
+#15 0x0000000000d6b6cf in make_fcontext ()
+#16 0x0000000000000000 in ?? ()
+
+(gdb) thread 4
+[Switching to thread 4 (Thread 0x7f9f7a529700 (LWP 41816))]
+#0  0x0000000000892487 in operator() (this=<optimized out>) at ../src/sphinxrt.cpp:3276
+3276                            if ( pSeg->m_iLocked!=iMergeOp )
+(gdb) bt
+#0  0x0000000000892487 in operator() (this=<optimized out>) at ../src/sphinxrt.cpp:3276
+#1  std::_Function_handler<void (), RtIndex_c::StartMergeSegments(bool)::$_8>::_M_invoke(std::_Any_data const&) (__functor=...)
+    at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#2  0x0000000000d6a9fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#3  WorkerLowest (this=0x7f9edd6fb7f8, tCtx=<optimized out>) at ../src/coroutine.cpp:85
+#4  operator() (this=<optimized out>, pT=...) at ../src/coroutine.cpp:118
+#5  Threads::CoRoutine_c::CreateContext(std::function<void ()>, VecTraits_T<unsigned char>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) (pT=...) at ../src/coroutine.cpp:117
+#6  0x0000000000d6b6cf in make_fcontext ()
+
+
+(gdb) thread 1
+[Switching to thread 1 (Thread 0x7f9f7d94f900 (LWP 41778))]
+(gdb) bt
+#0  0x00007f9f7c029017 in pthread_join () from /lib64/libpthread.so.0
+#1  0x000000000096a75b in Join (pThread=<optimized out>) at ../src/threadutils.cpp:1515
+#2  Threads::ThreadPool_c::StopAll (this=0x1c5a600) at ../src/threadutils.cpp:1026
+#3  0x000000000096cf01 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#4  Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x1c6a440, pBase=<optimized out>)
+    at ../src/threadutils.cpp:329
+#5  0x00000000009675e1 in Complete (this=<optimized out>, pOwner=0x1c6a440) at ../src/threadutils.cpp:286
+#6  searchd::FireShutdownCbs () at ../src/threadutils.cpp:1172
+#7  0x0000000000479041 in Shutdown () at ../src/searchd.cpp:735
+#8  0x00000000004c30b7 in CheckSignals () at ../src/searchd.cpp:18502
+#9  0x00000000004c30ca in TickHead () at ../src/searchd.cpp:18537
+#10 0x00000000004cfaf7 in ServiceMain (argc=<optimized out>, argv=<optimized out>) at ../src/searchd.cpp:19950
+#11 0x00000000004d0e4b in mainimpl (argc=2106907088, argv=0x7ffc248b7f28) at ../src/searchd.cpp:20000
+#12 main (argc=2106907088, argv=0x7ffc248b7f28) at ../src/searchd
