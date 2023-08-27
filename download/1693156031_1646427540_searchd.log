@@ -1,0 +1,387 @@
+[Thu Mar  3 00:00:13.358 2022] [6826] log reopened
+[Thu Mar  3 00:00:13.358 2022] [6826] query log reopened
+[Thu Mar  3 00:00:22.358 2022] [6838] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=108183, current TID=108214, ram=144.284 Mb, time delta=3600 sec, took=0.177 sec)
+[Thu Mar  3 00:12:18.893 2022] [6856] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=109544, current TID=109545, ram=39.572 Mb, time delta=3600 sec, took=0.071 sec)
+[Thu Mar  3 00:19:08.543 2022] [6832] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15396, current TID=15397, ram=0.027 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 00:25:14.758 2022] [6834] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=243435, current TID=243451, ram=60.962 Mb, time delta=3600 sec, took=0.100 sec)
+[Thu Mar  3 00:30:22.519 2022] [6846] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=108214, current TID=108219, ram=144.283 Mb, time delta=1800 sec, took=0.160 sec)
+[Thu Mar  3 00:42:18.962 2022] [6868] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=109545, current TID=109550, ram=39.565 Mb, time delta=1800 sec, took=0.068 sec)
+[Thu Mar  3 00:49:08.544 2022] [6854] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15397, current TID=15403, ram=0.031 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 00:55:14.850 2022] [6876] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=243451, current TID=243455, ram=60.962 Mb, time delta=1800 sec, took=0.092 sec)
+[Thu Mar  3 01:00:22.689 2022] [6836] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=108219, current TID=108220, ram=144.283 Mb, time delta=1800 sec, took=0.170 sec)
+[Thu Mar  3 01:12:19.083 2022] [6868] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=109550, current TID=109829, ram=147.426 Mb, time delta=1800 sec, took=0.121 sec)
+[Thu Mar  3 01:19:49.706 2022] [6879] rt: index jobs: diskchunk 2376(9), segments 32  saved in 2.062381 (2.072928) sec, RAM saved/new 254545239/1119994 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 01:25:14.948 2022] [6855] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=243455, current TID=244671, ram=100.356 Mb, time delta=1800 sec, took=0.098 sec)
+[Thu Mar  3 01:28:04.385 2022] [6899] rt: index jobs: diskchunk 2385(9), segments 31  saved in 2.043781 (2.043992) sec, RAM saved/new 255051404/999390 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 01:28:55.032 2022] [6867] rt: index jobs: optimized progressive chunk(s) 17 ( left 9 ) in 9m 5.3s
+[Thu Mar  3 01:30:22.917 2022] [6860] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=108220, current TID=109463, ram=212.680 Mb, time delta=1800 sec, took=0.228 sec)
+[Thu Mar  3 01:37:50.665 2022] [6903] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 8m 55.6s
+[Thu Mar  3 01:42:06.800 2022] [6846] rt: index jobs: diskchunk 2396(9), segments 32  saved in 2.117095 (2.117310) sec, RAM saved/new 255792235/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 01:46:18.258 2022] [6831] rt: index admin_search_employers_rt: diskchunk 479(9), segments 32  saved in 4.203256 (4.218328) sec, RAM saved/new 254969174/166585 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 01:49:08.545 2022] [6831] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15403, current TID=15407, ram=0.041 Mb, time delta=3600 sec, took=0.001 sec)
+[Thu Mar  3 01:51:00.828 2022] [6852] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 8m 54s
+[Thu Mar  3 01:53:46.897 2022] [6857] rt: index admin_search_employers_rt: optimized progressive chunk(s) 17 ( left 8 ) in 2m 46.1s
+[Thu Mar  3 01:55:15.139 2022] [6844] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=244671, current TID=246135, ram=148.753 Mb, time delta=1800 sec, took=0.192 sec)
+[Thu Mar  3 02:03:08.632 2022] [6900] rt: index jobs: diskchunk 2406(9), segments 32  saved in 2.022937 (2.023135) sec, RAM saved/new 255814711/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 02:12:03.379 2022] [6834] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 8m 54.7s
+[Thu Mar  3 02:16:18.345 2022] [6904] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=110110, current TID=110878, ram=52.243 Mb, time delta=1800 sec, took=0.086 sec)
+[Thu Mar  3 02:19:08.546 2022] [6833] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15407, current TID=15408, ram=0.041 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 02:25:15.332 2022] [6828] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=246135, current TID=246933, ram=181.229 Mb, time delta=1800 sec, took=0.193 sec)
+[Thu Mar  3 02:27:38.680 2022] [6839] rt: index jobs: diskchunk 2416(9), segments 31  saved in 2.044822 (2.072028) sec, RAM saved/new 255346218/20667 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 02:35:39.674 2022] [6870] rt: index jobs: optimized progressive chunk(s) 15 ( left 8 ) in 8m 1s
+[Thu Mar  3 02:46:18.482 2022] [6906] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=110878, current TID=111299, ram=80.935 Mb, time delta=1800 sec, took=0.137 sec)
+[Thu Mar  3 02:49:08.547 2022] [6889] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15408, current TID=15416, ram=0.054 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 02:55:15.554 2022] [6865] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=246933, current TID=247270, ram=200.918 Mb, time delta=1800 sec, took=0.221 sec)
+[Thu Mar  3 02:57:38.859 2022] [6867] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=112432, current TID=112742, ram=172.262 Mb, time delta=1800 sec, took=0.178 sec)
+[Thu Mar  3 03:14:10.789 2022] [6888] rt: index jobs: diskchunk 2425(9), segments 30  saved in 2.022229 (2.039031) sec, RAM saved/new 255209390/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 03:16:18.618 2022] [6873] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=111299, current TID=111521, ram=102.588 Mb, time delta=1800 sec, took=0.136 sec)
+[Thu Mar  3 03:18:21.983 2022] [6872] rt: index jobs: optimized progressive chunk(s) 7 ( left 8 ) in 4m 11.2s
+[Thu Mar  3 03:19:08.548 2022] [6899] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15416, current TID=15422, ram=0.063 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 03:25:15.851 2022] [6893] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=247270, current TID=247438, ram=213.881 Mb, time delta=1800 sec, took=0.297 sec)
+[Thu Mar  3 03:44:10.899 2022] [6846] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=112840, current TID=112997, ram=130.740 Mb, time delta=1800 sec, took=0.110 sec)
+[Thu Mar  3 03:46:18.757 2022] [6853] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=111521, current TID=111680, ram=119.707 Mb, time delta=1800 sec, took=0.139 sec)
+[Thu Mar  3 03:49:08.549 2022] [6865] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15422, current TID=15430, ram=0.063 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 03:55:16.104 2022] [6880] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=247438, current TID=247653, ram=225.413 Mb, time delta=1800 sec, took=0.252 sec)
+[Thu Mar  3 04:05:09.728 2022] [6838] rt: index jobs: diskchunk 2430(9), segments 32  saved in 1.897676 (1.909855) sec, RAM saved/new 255070576/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 04:13:39.093 2022] [6899] rt: index jobs: optimized progressive chunk(s) 15 ( left 8 ) in 8m 29.4s
+[Thu Mar  3 04:15:46.363 2022] [6854] rt: index jobs_completions_custom: diskchunk 368(9), segments 29  saved in 7.598583 (7.618601) sec, RAM saved/new 255014832/74362 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 04:16:18.951 2022] [6892] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=111680, current TID=112002, ram=148.234 Mb, time delta=1800 sec, took=0.193 sec)
+[Thu Mar  3 04:21:15.662 2022] [6852] rt: index jobs_completions_custom: optimized progressive chunk(s) 15 ( left 8 ) in 5m 29.3s
+[Thu Mar  3 04:35:09.901 2022] [6860] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=113176, current TID=113534, ram=242.830 Mb, time delta=1800 sec, took=0.172 sec)
+[Thu Mar  3 04:35:16.791 2022] [6850] rt: index jobs: diskchunk 2439(9), segments 32  saved in 1.889737 (1.911670) sec, RAM saved/new 255660776/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 04:43:17.054 2022] [6849] rt: index jobs: optimized progressive chunk(s) 15 ( left 8 ) in 8m 0.3s
+[Thu Mar  3 04:45:46.395 2022] [6889] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=247971, current TID=248309, ram=20.193 Mb, time delta=1800 sec, took=0.032 sec)
+[Thu Mar  3 04:46:19.165 2022] [6890] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=112002, current TID=112286, ram=174.193 Mb, time delta=1800 sec, took=0.213 sec)
+[Thu Mar  3 04:49:08.550 2022] [6851] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15430, current TID=15431, ram=0.068 Mb, time delta=3600 sec, took=0.001 sec)
+[Thu Mar  3 05:05:16.890 2022] [6840] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=113536, current TID=113732, ram=133.270 Mb, time delta=1800 sec, took=0.098 sec)
+[Thu Mar  3 05:15:46.455 2022] [6827] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=248309, current TID=248542, ram=34.676 Mb, time delta=1800 sec, took=0.060 sec)
+[Thu Mar  3 05:16:19.395 2022] [6842] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=112286, current TID=112478, ram=191.036 Mb, time delta=1800 sec, took=0.230 sec)
+[Thu Mar  3 05:25:54.910 2022] [6877] rt: index jobs: diskchunk 2448(9), segments 29  saved in 1.979776 (1.991907) sec, RAM saved/new 255102467/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 05:35:08.363 2022] [6897] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 13.5s
+[Thu Mar  3 05:45:46.542 2022] [6852] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=248542, current TID=248742, ram=52.616 Mb, time delta=1800 sec, took=0.087 sec)
+[Thu Mar  3 05:46:19.620 2022] [6887] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=112478, current TID=112669, ram=214.222 Mb, time delta=1800 sec, took=0.224 sec)
+[Thu Mar  3 05:55:55.152 2022] [6859] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=113870, current TID=114058, ram=156.286 Mb, time delta=1800 sec, took=0.242 sec)
+[Thu Mar  3 06:13:09.811 2022] [6884] rt: index jobs: diskchunk 2458(9), segments 30  saved in 2.047321 (2.065355) sec, RAM saved/new 255277836/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 06:15:46.630 2022] [6863] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=248742, current TID=248928, ram=68.648 Mb, time delta=1800 sec, took=0.087 sec)
+[Thu Mar  3 06:16:17.300 2022] [6847] rt: index jobs: optimized progressive chunk(s) 5 ( left 8 ) in 3m 7.5s
+[Thu Mar  3 06:16:19.867 2022] [6899] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=112669, current TID=112851, ram=237.808 Mb, time delta=1800 sec, took=0.247 sec)
+[Thu Mar  3 06:19:08.550 2022] [6900] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15431, current TID=15432, ram=0.069 Mb, time delta=5400 sec, took=0.001 sec)
+[Thu Mar  3 06:23:20.399 2022] [6842] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7615, current TID=7616, ram=3.562 Mb, time delta=45000 sec, took=0.010 sec)
+[Thu Mar  3 06:24:32.223 2022] [6838] rt: index admin_search_employers_rt: diskchunk 489(9), segments 32  saved in 4.175764 (4.198246) sec, RAM saved/new 254994587/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 06:27:25.614 2022] [6873] rt: index admin_search_employers_rt: optimized progressive chunk(s) 17 ( left 8 ) in 2m 53.4s
+[Thu Mar  3 06:43:09.921 2022] [6886] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=114163, current TID=114354, ram=150.956 Mb, time delta=1800 sec, took=0.109 sec)
+[Thu Mar  3 06:45:46.760 2022] [6855] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=248928, current TID=249129, ram=84.557 Mb, time delta=1800 sec, took=0.130 sec)
+[Thu Mar  3 06:54:32.252 2022] [6828] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=112903, current TID=113096, ram=22.040 Mb, time delta=1800 sec, took=0.028 sec)
+[Thu Mar  3 07:02:51.344 2022] [6847] rt: index jobs: diskchunk 2462(9), segments 29  saved in 2.033514 (2.044389) sec, RAM saved/new 255100052/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 07:12:17.895 2022] [6829] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 26.5s
+[Thu Mar  3 07:15:46.883 2022] [6895] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=249129, current TID=249589, ram=117.165 Mb, time delta=1800 sec, took=0.122 sec)
+[Thu Mar  3 07:18:49.125 2022] [6889] rt: index jobs: diskchunk 2472(9), segments 30  saved in 2.189467 (2.189710) sec, RAM saved/new 255319536/1513969 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 07:19:08.551 2022] [6859] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15432, current TID=15433, ram=0.070 Mb, time delta=3600 sec, took=0.001 sec)
+[Thu Mar  3 07:24:32.383 2022] [6850] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=113096, current TID=113731, ram=83.714 Mb, time delta=1800 sec, took=0.130 sec)
+[Thu Mar  3 07:28:12.563 2022] [6828] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 23.4s
+[Thu Mar  3 07:35:08.556 2022] [6858] rt: index jobs: diskchunk 2482(9), segments 32  saved in 2.116683 (2.116901) sec, RAM saved/new 254352217/6452 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 07:44:33.672 2022] [6880] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 25.1s
+[Thu Mar  3 07:45:47.075 2022] [6835] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=249589, current TID=250326, ram=159.998 Mb, time delta=1800 sec, took=0.192 sec)
+[Thu Mar  3 07:54:32.544 2022] [6898] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=113731, current TID=114173, ram=114.789 Mb, time delta=1800 sec, took=0.160 sec)
+[Thu Mar  3 08:05:08.615 2022] [6855] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=115361, current TID=115518, ram=56.721 Mb, time delta=1800 sec, took=0.059 sec)
+[Thu Mar  3 08:15:47.258 2022] [6854] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=250326, current TID=250539, ram=161.882 Mb, time delta=1800 sec, took=0.182 sec)
+[Thu Mar  3 08:19:08.552 2022] [6837] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15433, current TID=15434, ram=0.071 Mb, time delta=3600 sec, took=0.001 sec)
+[Thu Mar  3 08:24:32.697 2022] [6867] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=114173, current TID=114370, ram=119.191 Mb, time delta=1800 sec, took=0.153 sec)
+[Thu Mar  3 08:35:08.737 2022] [6849] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=115518, current TID=115828, ram=118.991 Mb, time delta=1800 sec, took=0.121 sec)
+[Thu Mar  3 08:45:47.450 2022] [6859] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=250539, current TID=250901, ram=174.403 Mb, time delta=1800 sec, took=0.192 sec)
+[Thu Mar  3 08:54:32.864 2022] [6885] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=114370, current TID=114700, ram=134.472 Mb, time delta=1800 sec, took=0.166 sec)
+[Thu Mar  3 09:05:08.976 2022] [6839] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=115828, current TID=116094, ram=185.850 Mb, time delta=1800 sec, took=0.240 sec)
+[Thu Mar  3 09:15:47.673 2022] [6848] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=250901, current TID=251102, ram=181.348 Mb, time delta=1800 sec, took=0.224 sec)
+[Thu Mar  3 09:19:08.553 2022] [6903] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15434, current TID=15436, ram=0.071 Mb, time delta=3600 sec, took=0.001 sec)
+[Thu Mar  3 09:24:33.038 2022] [6902] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=114700, current TID=114851, ram=142.253 Mb, time delta=1800 sec, took=0.174 sec)
+[Thu Mar  3 09:35:09.191 2022] [6827] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=116094, current TID=116187, ram=212.917 Mb, time delta=1800 sec, took=0.215 sec)
+[Thu Mar  3 09:45:29.973 2022] [6831] rt: index jobs: diskchunk 2492(9), segments 30  saved in 2.112181 (2.133182) sec, RAM saved/new 255376594/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 09:45:47.850 2022] [6856] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=251102, current TID=251389, ram=185.250 Mb, time delta=1800 sec, took=0.177 sec)
+[Thu Mar  3 09:49:08.554 2022] [6905] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15436, current TID=15437, ram=0.074 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 09:53:33.946 2022] [6843] rt: index jobs: optimized progressive chunk(s) 15 ( left 8 ) in 8m 4s
+[Thu Mar  3 09:54:33.215 2022] [6859] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=114851, current TID=115041, ram=155.547 Mb, time delta=1800 sec, took=0.177 sec)
+[Thu Mar  3 10:15:30.090 2022] [6885] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=116318, current TID=116520, ram=160.432 Mb, time delta=1800 sec, took=0.117 sec)
+[Thu Mar  3 10:15:48.045 2022] [6902] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=251389, current TID=251604, ram=201.803 Mb, time delta=1800 sec, took=0.196 sec)
+[Thu Mar  3 10:19:08.555 2022] [6886] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15437, current TID=15438, ram=0.076 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 10:23:20.406 2022] [6852] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7616, current TID=7618, ram=3.579 Mb, time delta=14400 sec, took=0.010 sec)
+[Thu Mar  3 10:24:33.439 2022] [6863] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=115041, current TID=115237, ram=179.796 Mb, time delta=1800 sec, took=0.224 sec)
+[Thu Mar  3 10:33:21.907 2022] [6843] rt: index jobs: diskchunk 2501(9), segments 32  saved in 1.938730 (1.951672) sec, RAM saved/new 254670685/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 10:40:40.668 2022] [6850] rt: index jobs: optimized progressive chunk(s) 13 ( left 8 ) in 7m 18.8s
+[Thu Mar  3 10:45:48.274 2022] [6847] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=251604, current TID=251802, ram=218.620 Mb, time delta=1800 sec, took=0.229 sec)
+[Thu Mar  3 10:49:08.555 2022] [6887] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15438, current TID=15443, ram=0.086 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 10:54:33.660 2022] [6840] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=115237, current TID=115432, ram=203.197 Mb, time delta=1800 sec, took=0.221 sec)
+[Thu Mar  3 11:03:22.070 2022] [6833] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=116624, current TID=116816, ram=157.149 Mb, time delta=1800 sec, took=0.163 sec)
+[Thu Mar  3 11:15:48.508 2022] [6849] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=251802, current TID=251990, ram=232.556 Mb, time delta=1800 sec, took=0.233 sec)
+[Thu Mar  3 11:19:08.556 2022] [6867] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15443, current TID=15529, ram=0.094 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 11:24:33.887 2022] [6870] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=115432, current TID=115576, ram=219.073 Mb, time delta=1800 sec, took=0.227 sec)
+[Thu Mar  3 11:33:22.293 2022] [6902] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=116816, current TID=116907, ram=221.445 Mb, time delta=1800 sec, took=0.222 sec)
+[Thu Mar  3 11:45:48.793 2022] [6849] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=251990, current TID=252005, ram=233.485 Mb, time delta=1800 sec, took=0.285 sec)
+[Thu Mar  3 11:54:34.129 2022] [6840] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=115576, current TID=115577, ram=219.073 Mb, time delta=1800 sec, took=0.241 sec)
+[Thu Mar  3 12:03:22.546 2022] [6837] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=116907, current TID=116915, ram=221.187 Mb, time delta=1800 sec, took=0.252 sec)
+[Thu Mar  3 12:15:49.046 2022] [6857] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=252005, current TID=252086, ram=235.047 Mb, time delta=1800 sec, took=0.252 sec)
+[Thu Mar  3 12:19:50.369 2022] [6841] rt: index jobs: diskchunk 2509(9), segments 32  saved in 1.920194 (1.940213) sec, RAM saved/new 255255125/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 12:24:34.361 2022] [6870] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=115577, current TID=115695, ram=225.632 Mb, time delta=1800 sec, took=0.232 sec)
+[Thu Mar  3 12:28:10.545 2022] [6858] rt: index jobs: optimized progressive chunk(s) 15 ( left 8 ) in 8m 20.2s
+[Thu Mar  3 12:45:49.317 2022] [6894] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=252086, current TID=252275, ram=242.921 Mb, time delta=1800 sec, took=0.271 sec)
+[Thu Mar  3 12:49:08.557 2022] [6833] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15529, current TID=15534, ram=0.096 Mb, time delta=5400 sec, took=0.001 sec)
+[Thu Mar  3 12:49:50.464 2022] [6877] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=116996, current TID=117185, ram=64.216 Mb, time delta=1800 sec, took=0.095 sec)
+[Thu Mar  3 12:50:32.086 2022] [6901] rt: index jobs_completions_custom: diskchunk 377(9), segments 30  saved in 7.383051 (7.402737) sec, RAM saved/new 255040405/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 12:54:34.619 2022] [6867] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=115695, current TID=115882, ram=236.220 Mb, time delta=1800 sec, took=0.257 sec)
+[Thu Mar  3 12:56:10.557 2022] [6847] rt: index jobs_completions_custom: optimized progressive chunk(s) 15 ( left 8 ) in 5m 38.5s
+[Thu Mar  3 13:09:49.429 2022] [6885] rt: index admin_search_employers_rt: diskchunk 499(9), segments 32  saved in 4.027769 (4.048191) sec, RAM saved/new 254987501/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 13:12:43.994 2022] [6832] rt: index admin_search_employers_rt: optimized progressive chunk(s) 17 ( left 8 ) in 2m 54.6s
+[Thu Mar  3 13:19:08.559 2022] [6902] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15534, current TID=15537, ram=0.099 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 13:19:50.645 2022] [6830] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=117185, current TID=117613, ram=201.476 Mb, time delta=1800 sec, took=0.181 sec)
+[Thu Mar  3 13:20:32.109 2022] [6837] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=252305, current TID=252838, ram=16.027 Mb, time delta=1800 sec, took=0.023 sec)
+[Thu Mar  3 13:22:55.813 2022] [6876] rt: index jobs: diskchunk 2518(9), segments 32  saved in 2.042890 (2.060704) sec, RAM saved/new 254974430/650288 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 13:32:23.107 2022] [6843] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 27.3s
+[Thu Mar  3 13:39:49.512 2022] [6859] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=115992, current TID=116909, ram=51.628 Mb, time delta=1800 sec, took=0.083 sec)
+[Thu Mar  3 13:49:08.559 2022] [6866] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15537, current TID=15539, ram=0.104 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 13:49:38.939 2022] [6835] rt: index jobs: diskchunk 2528(9), segments 32  saved in 2.055043 (2.055238) sec, RAM saved/new 254559121/660443 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 13:50:32.197 2022] [6844] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=252838, current TID=253609, ram=50.924 Mb, time delta=1800 sec, took=0.088 sec)
+[Thu Mar  3 13:59:07.952 2022] [6831] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 29s
+[Thu Mar  3 14:09:49.625 2022] [6845] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=116909, current TID=117425, ram=80.128 Mb, time delta=1800 sec, took=0.113 sec)
+[Thu Mar  3 14:19:08.560 2022] [6895] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15539, current TID=15541, ram=0.106 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 14:19:39.106 2022] [6903] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=118343, current TID=118948, ram=202.434 Mb, time delta=1800 sec, took=0.168 sec)
+[Thu Mar  3 14:20:32.327 2022] [6870] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=253609, current TID=254252, ram=73.589 Mb, time delta=1800 sec, took=0.129 sec)
+[Thu Mar  3 14:39:49.751 2022] [6836] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=117425, current TID=117836, ram=94.266 Mb, time delta=1800 sec, took=0.126 sec)
+[Thu Mar  3 14:39:54.485 2022] [6833] rt: index jobs: diskchunk 2538(9), segments 32  saved in 2.039638 (2.057911) sec, RAM saved/new 255140423/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 14:49:52.738 2022] [6837] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 58.3s
+[Thu Mar  3 14:50:32.428 2022] [6845] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=254252, current TID=254821, ram=84.861 Mb, time delta=1800 sec, took=0.101 sec)
+[Thu Mar  3 15:09:49.886 2022] [6842] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=117836, current TID=118397, ram=116.205 Mb, time delta=1800 sec, took=0.135 sec)
+[Thu Mar  3 15:09:54.617 2022] [6841] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=119168, current TID=119728, ram=152.735 Mb, time delta=1800 sec, took=0.131 sec)
+[Thu Mar  3 15:19:08.561 2022] [6891] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15541, current TID=15544, ram=0.109 Mb, time delta=3600 sec, took=0.001 sec)
+[Thu Mar  3 15:20:32.583 2022] [6893] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=254821, current TID=255467, ram=102.842 Mb, time delta=1800 sec, took=0.155 sec)
+[Thu Mar  3 15:26:28.989 2022] [6892] rt: index jobs: diskchunk 2548(9), segments 31  saved in 1.955287 (1.969477) sec, RAM saved/new 256014673/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 15:34:36.936 2022] [6833] rt: index jobs: optimized progressive chunk(s) 15 ( left 8 ) in 8m 7.9s
+[Thu Mar  3 15:39:50.045 2022] [6899] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=118397, current TID=118576, ram=136.444 Mb, time delta=1800 sec, took=0.158 sec)
+[Thu Mar  3 15:50:32.734 2022] [6863] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=255467, current TID=255646, ram=116.633 Mb, time delta=1800 sec, took=0.151 sec)
+[Thu Mar  3 15:56:29.132 2022] [6874] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=119840, current TID=120008, ram=145.634 Mb, time delta=1800 sec, took=0.143 sec)
+[Thu Mar  3 16:09:43.750 2022] [6872] rt: index jobs: diskchunk 2557(9), segments 31  saved in 1.985669 (2.010543) sec, RAM saved/new 255404912/1242940 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 16:09:50.215 2022] [6828] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=118576, current TID=118852, ram=160.465 Mb, time delta=1800 sec, took=0.170 sec)
+[Thu Mar  3 16:17:45.858 2022] [6905] rt: index jobs: optimized progressive chunk(s) 15 ( left 8 ) in 8m 2.1s
+[Thu Mar  3 16:20:32.925 2022] [6839] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=255646, current TID=256036, ram=139.773 Mb, time delta=1800 sec, took=0.191 sec)
+[Thu Mar  3 16:37:03.450 2022] [6873] rt: index jobs: diskchunk 2566(9), segments 32  saved in 1.946449 (1.946658) sec, RAM saved/new 254291015/1119994 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 16:39:50.423 2022] [6858] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=118852, current TID=119187, ram=200.809 Mb, time delta=1800 sec, took=0.208 sec)
+[Thu Mar  3 16:40:04.221 2022] [6839] rt: index jobs: optimized progressive chunk(s) 5 ( left 8 ) in 3m 0.8s
+[Thu Mar  3 16:50:33.137 2022] [6838] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=256036, current TID=256371, ram=166.408 Mb, time delta=1800 sec, took=0.212 sec)
+[Thu Mar  3 17:07:03.628 2022] [6884] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=120485, current TID=120824, ram=243.412 Mb, time delta=1800 sec, took=0.178 sec)
+[Thu Mar  3 17:07:04.682 2022] [6838] rt: index jobs: diskchunk 2570(9), segments 29  saved in 1.967903 (1.991460) sec, RAM saved/new 255398319/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 17:09:05.535 2022] [6834] rt: index jobs: optimized progressive chunk(s) 3 ( left 8 ) in 2m 0.9s
+[Thu Mar  3 17:09:50.692 2022] [6866] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=119187, current TID=119509, ram=234.314 Mb, time delta=1800 sec, took=0.269 sec)
+[Thu Mar  3 17:20:33.408 2022] [6872] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=256371, current TID=256629, ram=186.477 Mb, time delta=1800 sec, took=0.271 sec)
+[Thu Mar  3 17:23:18.586 2022] [6834] rt: index admin_search_employers_rt: diskchunk 509(9), segments 31  saved in 4.013556 (4.035974) sec, RAM saved/new 255104854/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 17:25:41.830 2022] [6834] rt: index admin_search_employers_rt: optimized progressive chunk(s) 15 ( left 8 ) in 2m 23.2s
+[Thu Mar  3 17:37:04.786 2022] [6832] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=120824, current TID=120989, ram=132.136 Mb, time delta=1800 sec, took=0.104 sec)
+[Thu Mar  3 17:49:08.561 2022] [6838] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15544, current TID=15547, ram=0.113 Mb, time delta=9000 sec, took=0.001 sec)
+[Thu Mar  3 17:50:33.657 2022] [6905] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=256629, current TID=256787, ram=203.242 Mb, time delta=1800 sec, took=0.249 sec)
+[Thu Mar  3 17:53:18.648 2022] [6857] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=119586, current TID=119742, ram=18.233 Mb, time delta=1800 sec, took=0.062 sec)
+[Thu Mar  3 18:01:32.631 2022] [6874] rt: index jobs: diskchunk 2573(9), segments 30  saved in 1.937861 (1.950210) sec, RAM saved/new 255879717/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 18:02:34.448 2022] [6833] rt: index jobs: optimized progressive chunk(s) 1 ( left 8 ) in 1m 1.8s
+[Thu Mar  3 18:20:33.915 2022] [6883] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=256787, current TID=256949, ram=218.165 Mb, time delta=1800 sec, took=0.258 sec)
+[Thu Mar  3 18:23:18.716 2022] [6885] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=119742, current TID=119905, ram=38.189 Mb, time delta=1800 sec, took=0.067 sec)
+[Thu Mar  3 18:31:32.770 2022] [6894] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=121123, current TID=121287, ram=141.298 Mb, time delta=1800 sec, took=0.140 sec)
+[Thu Mar  3 18:49:08.562 2022] [6867] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15547, current TID=15550, ram=0.115 Mb, time delta=3600 sec, took=0.001 sec)
+[Thu Mar  3 18:50:34.205 2022] [6869] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=256949, current TID=257141, ram=231.328 Mb, time delta=1800 sec, took=0.289 sec)
+[Thu Mar  3 18:53:18.798 2022] [6850] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=119905, current TID=120096, ram=57.692 Mb, time delta=1800 sec, took=0.081 sec)
+[Thu Mar  3 18:55:01.433 2022] [6903] rt: index jobs: diskchunk 2575(9), segments 29  saved in 1.918931 (1.932878) sec, RAM saved/new 255018368/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 19:04:07.463 2022] [6829] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 6s
+[Thu Mar  3 19:07:37.569 2022] [6871] rt: index jobs_completions_custom: diskchunk 386(9), segments 30  saved in 7.498744 (7.518762) sec, RAM saved/new 255102029/90525 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 19:13:58.610 2022] [6883] rt: index jobs_completions_custom: optimized progressive chunk(s) 17 ( left 8 ) in 6m 21s
+[Thu Mar  3 19:20:46.825 2022] [6885] rt: index jobs: diskchunk 2585(9), segments 32  saved in 2.021914 (2.022104) sec, RAM saved/new 255358367/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 19:23:18.929 2022] [6865] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=120096, current TID=120650, ram=97.724 Mb, time delta=1800 sec, took=0.131 sec)
+[Thu Mar  3 19:29:56.869 2022] [6874] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 10s
+[Thu Mar  3 19:37:37.644 2022] [6850] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=257317, current TID=258030, ram=35.048 Mb, time delta=1800 sec, took=0.074 sec)
+[Thu Mar  3 19:50:37.682 2022] [6857] rt: index jobs: diskchunk 2595(9), segments 32  saved in 2.036922 (2.037121) sec, RAM saved/new 254940605/330329 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 19:53:19.093 2022] [6873] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=120650, current TID=121061, ram=128.095 Mb, time delta=1800 sec, took=0.164 sec)
+[Thu Mar  3 19:59:54.024 2022] [6884] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 16.3s
+[Thu Mar  3 20:07:37.758 2022] [6887] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=258030, current TID=258424, ram=60.203 Mb, time delta=1800 sec, took=0.114 sec)
+[Thu Mar  3 20:19:08.563 2022] [6843] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15550, current TID=15553, ram=0.123 Mb, time delta=5400 sec, took=0.001 sec)
+[Thu Mar  3 20:20:37.871 2022] [6893] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=122335, current TID=122761, ram=228.108 Mb, time delta=1800 sec, took=0.188 sec)
+[Thu Mar  3 20:23:04.103 2022] [6894] rt: index jobs: diskchunk 2605(9), segments 32  saved in 2.035683 (2.058299) sec, RAM saved/new 254847419/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 20:23:19.268 2022] [6871] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=121061, current TID=121462, ram=158.483 Mb, time delta=1800 sec, took=0.175 sec)
+[Thu Mar  3 20:31:19.637 2022] [6883] rt: index jobs: optimized progressive chunk(s) 15 ( left 8 ) in 8m 15.5s
+[Thu Mar  3 20:37:37.891 2022] [6840] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=258424, current TID=258715, ram=75.292 Mb, time delta=1800 sec, took=0.133 sec)
+[Thu Mar  3 20:49:08.564 2022] [6875] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15553, current TID=15556, ram=0.126 Mb, time delta=1800 sec, took=0.001 sec)
+[Thu Mar  3 20:53:04.230 2022] [6837] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=122791, current TID=122990, ram=141.799 Mb, time delta=1800 sec, took=0.127 sec)
+[Thu Mar  3 20:53:19.457 2022] [6835] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=121462, current TID=121660, ram=176.945 Mb, time delta=1800 sec, took=0.188 sec)
+[Thu Mar  3 21:07:38.089 2022] [6842] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=258715, current TID=258897, ram=90.051 Mb, time delta=1800 sec, took=0.198 sec)
+[Thu Mar  3 21:15:50.558 2022] [6904] rt: index jobs: diskchunk 2614(9), segments 29  saved in 2.006129 (2.019868) sec, RAM saved/new 255109002/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Thu Mar  3 21:17:56.421 2022] [6866] rt: index jobs: optimized progressive chunk(s) 3 ( left 8 ) in 2m 5.9s
+[Thu Mar  3 21:23:19.666 2022] [6831] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=121660, current TID=121839, ram=196.615 Mb, time delta=1800 sec, took=0.209 sec)
+[Thu Mar  3 21:37:38.231 2022] [6845] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=258897, current TID=258995, ram=100.048 Mb, time delta=1800 sec, took=0.142 sec)
+[Thu Mar  3 21:45:50.603 2022] [6863] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=123125, current TID=123173, ram=41.560 Mb, time delta=1800 sec, took=0.045 sec)
+[Thu Mar  3 21:53:19.950 2022] [6852] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=121839, current TID=121842, ram=197.888 Mb, time delta=1800 sec, took=0.284 sec)
+[Thu Mar  3 22:07:38.369 2022] [6890] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=258995, current TID=259121, ram=104.549 Mb, time delta=1800 sec, took=0.138 sec)
+[Thu Mar  3 22:15:50.714 2022] [6864] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=123173, current TID=123308, ram=99.114 Mb, time delta=1800 sec, took=0.110 sec)
+[Thu Mar  3 22:23:20.197 2022] [6853] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=121842, current TID=122018, ram=207.821 Mb, time delta=1800 sec, took=0.247 sec)
+[Thu Mar  3 22:37:38.503 2022] [6871] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=259121, current TID=259283, ram=111.285 Mb, time delta=1800 sec, took=0.133 sec)
+[Thu Mar  3 22:45:50.869 2022] [6883] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=123308, current TID=123461, ram=167.388 Mb, time delta=1800 sec, took=0.155 sec)
+[Thu Mar  3 22:53:20.460 2022] [6878] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=122018, current TID=122130, ram=213.317 Mb, time delta=1800 sec, took=0.263 sec)
+[Thu Mar  3 23:07:38.674 2022] [6834] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=259283, current TID=259322, ram=112.467 Mb, time delta=1800 sec, took=0.171 sec)
+[Thu Mar  3 23:19:08.598 2022] [6855] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15556, current TID=15558, ram=0.135 Mb, time delta=9000 sec, took=0.035 sec)
+[Fri Mar  4 00:07:38.810 2022] [6864] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=259322, current TID=259324, ram=112.467 Mb, time delta=3600 sec, took=0.136 sec)
+[Fri Mar  4 00:15:51.055 2022] [6851] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=123461, current TID=123462, ram=167.388 Mb, time delta=5400 sec, took=0.187 sec)
+[Fri Mar  4 00:23:20.746 2022] [6862] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=122130, current TID=122180, ram=213.316 Mb, time delta=5400 sec, took=0.286 sec)
+[Fri Mar  4 00:37:38.959 2022] [6855] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=259324, current TID=259342, ram=112.468 Mb, time delta=1800 sec, took=0.149 sec)
+[Fri Mar  4 00:45:51.239 2022] [6840] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=123462, current TID=123480, ram=167.418 Mb, time delta=1800 sec, took=0.183 sec)
+[Fri Mar  4 00:53:20.987 2022] [6869] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=122180, current TID=122198, ram=213.322 Mb, time delta=1800 sec, took=0.241 sec)
+[Fri Mar  4 01:07:39.083 2022] [6873] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=259342, current TID=259399, ram=113.739 Mb, time delta=1800 sec, took=0.123 sec)
+[Fri Mar  4 01:15:51.432 2022] [6862] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=123480, current TID=123692, ram=234.745 Mb, time delta=1800 sec, took=0.192 sec)
+[Fri Mar  4 01:16:36.177 2022] [6829] rt: index jobs: diskchunk 2617(9), segments 32  saved in 1.963963 (1.980813) sec, RAM saved/new 255008754/626499 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 01:23:21.249 2022] [6842] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=122198, current TID=122676, ram=240.812 Mb, time delta=1800 sec, took=0.261 sec)
+[Fri Mar  4 01:25:09.608 2022] [6899] rt: index admin_search_employers_rt: diskchunk 518(9), segments 32  saved in 4.305243 (4.327140) sec, RAM saved/new 254977800/93559 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 01:26:39.488 2022] [6842] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 10m 3.3s
+[Fri Mar  4 01:29:35.633 2022] [6881] rt: index admin_search_employers_rt: optimized progressive chunk(s) 17 ( left 8 ) in 2m 56.1s
+[Fri Mar  4 01:37:39.248 2022] [6865] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=259399, current TID=260339, ram=144.756 Mb, time delta=1800 sec, took=0.165 sec)
+[Fri Mar  4 01:46:36.358 2022] [6857] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=123716, current TID=124411, ram=241.466 Mb, time delta=1800 sec, took=0.180 sec)
+[Fri Mar  4 01:47:57.433 2022] [6853] rt: index jobs: diskchunk 2627(9), segments 32  saved in 1.990172 (2.008042) sec, RAM saved/new 255458059/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 01:55:09.665 2022] [6896] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=122741, current TID=123245, ram=24.918 Mb, time delta=1800 sec, took=0.057 sec)
+[Fri Mar  4 01:57:25.440 2022] [6836] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 28s
+[Fri Mar  4 02:07:39.424 2022] [6833] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=260339, current TID=260749, ram=158.305 Mb, time delta=1800 sec, took=0.177 sec)
+[Fri Mar  4 02:17:57.560 2022] [6849] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=124422, current TID=124842, ram=135.365 Mb, time delta=1800 sec, took=0.128 sec)
+[Fri Mar  4 02:19:08.597 2022] [6887] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15558, current TID=15568, ram=0.141 Mb, time delta=10799 sec, took=0.001 sec)
+[Fri Mar  4 02:25:09.772 2022] [6856] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=123245, current TID=123650, ram=40.848 Mb, time delta=1800 sec, took=0.107 sec)
+[Fri Mar  4 02:37:39.623 2022] [6893] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=260749, current TID=261182, ram=170.300 Mb, time delta=1800 sec, took=0.198 sec)
+[Fri Mar  4 02:47:57.785 2022] [6864] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=124842, current TID=125151, ram=232.014 Mb, time delta=1800 sec, took=0.224 sec)
+[Fri Mar  4 02:49:08.599 2022] [6892] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15568, current TID=15571, ram=0.149 Mb, time delta=1800 sec, took=0.001 sec)
+[Fri Mar  4 02:52:34.541 2022] [6869] rt: index jobs: diskchunk 2637(9), segments 32  saved in 1.934040 (1.956141) sec, RAM saved/new 254582924/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 02:53:20.406 2022] [6893] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7618, current TID=7619, ram=3.640 Mb, time delta=59399 sec, took=0.009 sec)
+[Fri Mar  4 02:55:09.840 2022] [6891] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=123650, current TID=123901, ram=53.378 Mb, time delta=1800 sec, took=0.068 sec)
+[Fri Mar  4 03:00:52.991 2022] [6891] rt: index jobs: optimized progressive chunk(s) 15 ( left 8 ) in 8m 18.4s
+[Fri Mar  4 03:07:39.829 2022] [6858] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=261182, current TID=261346, ram=178.478 Mb, time delta=1800 sec, took=0.206 sec)
+[Fri Mar  4 03:19:08.600 2022] [6832] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15571, current TID=15572, ram=0.149 Mb, time delta=1800 sec, took=0.001 sec)
+[Fri Mar  4 03:22:34.628 2022] [6855] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=125170, current TID=125327, ram=94.865 Mb, time delta=1800 sec, took=0.087 sec)
+[Fri Mar  4 03:23:20.416 2022] [6846] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7619, current TID=7620, ram=3.740 Mb, time delta=1800 sec, took=0.010 sec)
+[Fri Mar  4 03:25:09.971 2022] [6874] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=123901, current TID=124056, ram=64.355 Mb, time delta=1800 sec, took=0.131 sec)
+[Fri Mar  4 03:37:40.038 2022] [6837] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=261346, current TID=261469, ram=181.254 Mb, time delta=1800 sec, took=0.209 sec)
+[Fri Mar  4 03:49:08.601 2022] [6890] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15572, current TID=15581, ram=0.152 Mb, time delta=1800 sec, took=0.001 sec)
+[Fri Mar  4 03:52:34.747 2022] [6894] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=125327, current TID=125412, ram=112.416 Mb, time delta=1800 sec, took=0.118 sec)
+[Fri Mar  4 03:53:20.427 2022] [6839] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7620, current TID=7621, ram=3.848 Mb, time delta=1800 sec, took=0.010 sec)
+[Fri Mar  4 03:55:10.063 2022] [6891] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=124056, current TID=124147, ram=67.232 Mb, time delta=1800 sec, took=0.092 sec)
+[Fri Mar  4 04:07:40.253 2022] [6880] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=261469, current TID=261709, ram=186.126 Mb, time delta=1800 sec, took=0.215 sec)
+[Fri Mar  4 04:19:08.602 2022] [6871] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15581, current TID=15585, ram=0.156 Mb, time delta=1800 sec, took=0.001 sec)
+[Fri Mar  4 04:22:34.942 2022] [6906] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=125412, current TID=125648, ram=215.034 Mb, time delta=1800 sec, took=0.195 sec)
+[Fri Mar  4 04:23:20.437 2022] [6871] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7621, current TID=7622, ram=3.852 Mb, time delta=1800 sec, took=0.010 sec)
+[Fri Mar  4 04:25:10.191 2022] [6872] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=124147, current TID=124380, ram=83.174 Mb, time delta=1800 sec, took=0.127 sec)
+[Fri Mar  4 04:29:37.615 2022] [6844] rt: index jobs: diskchunk 2646(9), segments 30  saved in 1.874954 (1.898698) sec, RAM saved/new 255922187/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 04:37:40.476 2022] [6861] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=261709, current TID=261931, ram=198.516 Mb, time delta=1800 sec, took=0.222 sec)
+[Fri Mar  4 04:37:49.683 2022] [6903] rt: index jobs: optimized progressive chunk(s) 15 ( left 8 ) in 8m 12.1s
+[Fri Mar  4 04:49:08.604 2022] [6833] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15585, current TID=15586, ram=0.171 Mb, time delta=1800 sec, took=0.001 sec)
+[Fri Mar  4 04:53:20.447 2022] [6829] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7622, current TID=7623, ram=3.748 Mb, time delta=1800 sec, took=0.010 sec)
+[Fri Mar  4 04:55:10.301 2022] [6865] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=124380, current TID=124564, ram=90.773 Mb, time delta=1800 sec, took=0.110 sec)
+[Fri Mar  4 04:59:37.688 2022] [6895] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=125692, current TID=125900, ram=35.690 Mb, time delta=1800 sec, took=0.073 sec)
+[Fri Mar  4 05:07:40.685 2022] [6833] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=261931, current TID=262449, ram=199.530 Mb, time delta=1800 sec, took=0.210 sec)
+[Fri Mar  4 05:19:08.606 2022] [6856] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15586, current TID=15596, ram=0.188 Mb, time delta=1800 sec, took=0.001 sec)
+[Fri Mar  4 05:25:10.412 2022] [6901] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=124564, current TID=124869, ram=90.856 Mb, time delta=1800 sec, took=0.110 sec)
+[Fri Mar  4 05:29:37.740 2022] [6891] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=125900, current TID=126218, ram=36.328 Mb, time delta=1800 sec, took=0.051 sec)
+[Fri Mar  4 05:37:40.894 2022] [6853] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=262449, current TID=263088, ram=199.583 Mb, time delta=1800 sec, took=0.208 sec)
+[Fri Mar  4 05:49:08.608 2022] [6851] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15596, current TID=15598, ram=0.193 Mb, time delta=1800 sec, took=0.001 sec)
+[Fri Mar  4 05:53:20.457 2022] [6859] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7623, current TID=7625, ram=3.747 Mb, time delta=3600 sec, took=0.010 sec)
+[Fri Mar  4 05:55:10.518 2022] [6872] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=124869, current TID=125051, ram=90.897 Mb, time delta=1800 sec, took=0.106 sec)
+[Fri Mar  4 05:59:37.799 2022] [6866] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=126218, current TID=126409, ram=36.484 Mb, time delta=1800 sec, took=0.059 sec)
+[Fri Mar  4 06:07:41.090 2022] [6898] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=263088, current TID=263451, ram=199.599 Mb, time delta=1800 sec, took=0.196 sec)
+[Fri Mar  4 06:19:08.608 2022] [6854] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15598, current TID=15600, ram=0.191 Mb, time delta=1800 sec, took=0.001 sec)
+[Fri Mar  4 06:23:20.466 2022] [6849] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7625, current TID=7627, ram=3.815 Mb, time delta=1800 sec, took=0.009 sec)
+[Fri Mar  4 06:25:10.629 2022] [6892] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=125051, current TID=125227, ram=90.944 Mb, time delta=1800 sec, took=0.110 sec)
+[Fri Mar  4 06:29:37.863 2022] [6877] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=126409, current TID=126513, ram=36.691 Mb, time delta=1800 sec, took=0.063 sec)
+[Fri Mar  4 06:37:41.346 2022] [6906] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=263451, current TID=263466, ram=199.622 Mb, time delta=1800 sec, took=0.256 sec)
+[Fri Mar  4 06:53:20.478 2022] [6873] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7627, current TID=7628, ram=3.815 Mb, time delta=1800 sec, took=0.010 sec)
+[Fri Mar  4 06:55:10.756 2022] [6881] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=125227, current TID=125230, ram=90.951 Mb, time delta=1800 sec, took=0.127 sec)
+[Fri Mar  4 06:59:37.925 2022] [6844] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=126513, current TID=126514, ram=36.695 Mb, time delta=1800 sec, took=0.062 sec)
+[Fri Mar  4 07:07:41.575 2022] [6847] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=263466, current TID=263514, ram=201.469 Mb, time delta=1800 sec, took=0.229 sec)
+[Fri Mar  4 07:19:03.752 2022] [6862] rt: index jobs: diskchunk 2655(9), segments 32  saved in 2.098312 (2.102098) sec, RAM saved/new 255117495/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 07:19:08.609 2022] [6833] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15600, current TID=15601, ram=0.192 Mb, time delta=3600 sec, took=0.001 sec)
+[Fri Mar  4 07:25:10.886 2022] [6874] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=125230, current TID=125691, ram=128.102 Mb, time delta=1800 sec, took=0.129 sec)
+[Fri Mar  4 07:28:17.472 2022] [6877] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 13.7s
+[Fri Mar  4 07:36:02.476 2022] [6841] rt: index jobs_completions_custom: diskchunk 396(9), segments 30  saved in 7.414689 (7.458404) sec, RAM saved/new 255120391/111306 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 07:41:23.755 2022] [6869] rt: index jobs: diskchunk 2665(9), segments 32  saved in 1.999662 (1.999851) sec, RAM saved/new 255972111/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 07:41:31.658 2022] [6853] rt: index jobs_completions_custom: optimized progressive chunk(s) 15 ( left 8 ) in 5m 29.2s
+[Fri Mar  4 07:45:32.623 2022] [976989] FATAL: async IST sender failed to serve tcp://10.10.10.3:9318: ist send failed: asio.system:104', asio error 'write: Connection reset by peer': 104 (Connection reset by peer)
+	 at /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/ist.cpp:send():830
+[Fri Mar  4 07:49:08.610 2022] [6837] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15601, current TID=15603, ram=0.194 Mb, time delta=1800 sec, took=0.001 sec)
+[Fri Mar  4 07:50:33.210 2022] [6903] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 9m 1.6s
+[Fri Mar  4 07:55:11.098 2022] [6828] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=125691, current TID=126186, ram=176.033 Mb, time delta=1800 sec, took=0.212 sec)
+[Fri Mar  4 08:05:20.482 2022] [7116] WARNING: Could not find peer: 7443d11e-9bbb-11ec-9c3c-ea79f509d9a4
+[Fri Mar  4 08:05:20.482 2022] [7116] WARNING: 0.0 (daemon_670461_jobsite): State transfer to -1.-1 (left the group) failed: -125 (Operation canceled)
+[Fri Mar  4 08:06:02.509 2022] [6855] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=264313, current TID=264624, ram=20.072 Mb, time delta=1800 sec, took=0.034 sec)
+[Fri Mar  4 08:11:23.879 2022] [6843] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=127328, current TID=127628, ram=134.506 Mb, time delta=1800 sec, took=0.124 sec)
+[Fri Mar  4 08:19:08.611 2022] [6829] rt: index cvs: ramchunk saved ok (mode=periodic, last TID=15603, current TID=15605, ram=0.197 Mb, time delta=1800 sec, took=0.001 sec)
+[Fri Mar  4 08:25:11.303 2022] [6843] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=126186, current TID=126667, ram=196.821 Mb, time delta=1800 sec, took=0.204 sec)
+[Fri Mar  4 08:25:25.261 2022] [6860] rt: index jobs: diskchunk 2675(9), segments 32  saved in 1.972591 (1.985075) sec, RAM saved/new 254808994/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 08:34:22.675 2022] [6861] rt: index jobs: optimized progressive chunk(s) 17 ( left 8 ) in 8m 57.4s
+[Fri Mar  4 08:36:02.620 2022] [6872] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=264624, current TID=265665, ram=40.938 Mb, time delta=1800 sec, took=0.111 sec)
+[Fri Mar  4 08:53:20.488 2022] [6865] rt: index requirements: ramchunk saved ok (mode=periodic, last TID=7628, current TID=7630, ram=3.035 Mb, time delta=7200 sec, took=0.011 sec)
+[Fri Mar  4 08:55:11.597 2022] [6861] rt: index admin_search_employers_rt: ramchunk saved ok (mode=periodic, last TID=126667, current TID=127225, ram=221.188 Mb, time delta=1800 sec, took=0.294 sec)
+[Fri Mar  4 08:55:25.427 2022] [6846] rt: index jobs: ramchunk saved ok (mode=periodic, last TID=127969, current TID=128524, ram=184.512 Mb, time delta=1800 sec, took=0.165 sec)
+[Fri Mar  4 09:06:01.755 2022] [6839] rt: index jobs: diskchunk 2685(9), segments 29  saved in 1.958757 (1.975379) sec, RAM saved/new 255893170/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 09:06:02.716 2022] [6879] rt: index jobs_completions_custom: ramchunk saved ok (mode=periodic, last TID=265665, current TID=266073, ram=61.634 Mb, time delta=1800 sec, took=0.095 sec)
+[Fri Mar  4 09:09:28.236 2022] [6826] caught SIGTERM, shutting down
+[Fri Mar  4 09:09:28.244 2022] [6890] WARNING: rt compress: index jobs: failed to merge /var/lib/manticore/data/jobs/jobs.2679 (interrupted because of shutdown)
+[Fri Mar  4 09:09:28.244 2022] [6890] WARNING: rt: index jobs: optimization terminated chunk(s) 6 ( left 8 ) in 3m 26.5s
+[Fri Mar  4 09:09:28.591 2022] [6829] rt: index admin_search_employers_rt: ramchunk saved in 0.266 sec
+[Fri Mar  4 09:09:28.961 2022] [6829] rt: index jobs: ramchunk saved in 0.013 sec
+[Fri Mar  4 09:09:31.264 2022] [6829] rt: index jobs_completions_custom: ramchunk saved in 0.073 sec
+[Fri Mar  4 09:09:31.544 2022] [6829] rt: index requirements: ramchunk saved in 0.030 sec
+[Fri Mar  4 09:09:31.620 2022] [6826] shutdown daemon version '4.2.1 7b41f5cf8@220302 release (columnar 1.14.1 fce43f7@220203)' ...
+[Fri Mar  4 09:09:31.620 2022] [6826] shutdown complete
+[Fri Mar  4 09:18:47.755 2022] [1378647] watchdog: main process 1378648 forked ok
+[Fri Mar  4 09:18:47.761 2022] [1378648] starting daemon version '4.2.1 e16a5378c@220303 release (columnar 1.14.1 fce43f7@220203)' ...
+[Fri Mar  4 09:18:47.761 2022] [1378648] listening on 127.0.0.1:9312 for sphinx and http(s)
+[Fri Mar  4 09:18:47.761 2022] [1378648] listening on 10.10.10.9:9312 for sphinx and http(s)
+[Fri Mar  4 09:18:47.761 2022] [1378648] listening on 127.0.0.1:9306 for mysql
+[Fri Mar  4 09:18:47.761 2022] [1378648] listening on 10.10.10.9:9306 for mysql
+[Fri Mar  4 09:18:47.761 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:18:50.762 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:18:53.765 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:18:56.768 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:18:59.770 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:19:02.773 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:19:05.776 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:19:08.778 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:19:11.781 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:19:14.784 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:19:17.787 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:19:20.790 2022] [1378648] bind() failed on 10.10.10.9, retrying...
+[Fri Mar  4 09:19:23.793 2022] [1378648] FATAL: bind() failed on 10.10.10.9: Address already in use
+[Fri Mar  4 09:21:23.795 2022] [1378648] shutdown daemon version '4.2.1 e16a5378c@220303 release (columnar 1.14.1 fce43f7@220203)' ...
+[Fri Mar  4 09:21:23.795 2022] [1378648] shutdown complete
+[Fri Mar  4 09:21:23.797 2022] [1378647] watchdog: main process 1378648 exited cleanly (exit code 1), shutting down
+[Fri Mar  4 09:21:24.059 2022] [1389325] watchdog: main process 1389327 forked ok
+[Fri Mar  4 09:21:24.065 2022] [1389327] starting daemon version '4.2.1 e16a5378c@220303 release (columnar 1.14.1 fce43f7@220203)' ...
+[Fri Mar  4 09:21:24.065 2022] [1389327] listening on 127.0.0.1:9312 for sphinx and http(s)
+[Fri Mar  4 09:21:24.065 2022] [1389327] listening on 10.10.10.9:9312 for sphinx and http(s)
+[Fri Mar  4 09:21:24.065 2022] [1389327] listening on 127.0.0.1:9306 for mysql
+[Fri Mar  4 09:21:24.065 2022] [1389327] listening on 10.10.10.9:9306 for mysql
+[Fri Mar  4 09:21:24.065 2022] [1389327] listening on 127.0.0.1:9318 for VIP mysql
+[Fri Mar  4 09:21:27.531 2022] [1389372] prereading 7 indexes
+[Fri Mar  4 09:21:27.532 2022] [1389379] WARNING: cluster 'jobsite': no available nodes (10.10.10.3:9312,10.10.10.1:9312,10.10.10.9:9312,10.10.10.5:9312,10.10.10.7:9312), replication is disabled, error: 
+[Fri Mar  4 09:21:28.464 2022] [1389372] prereaded 7 indexes in 0.933 sec
+[Fri Mar  4 09:21:28.464 2022] [1389327] accepting connections
+[Fri Mar  4 09:21:30.205 2022] [1389332] rt: index admin_search_employers_rt: diskchunk 528(9), segments 24  saved in 5.704341 (5.730010) sec, RAM saved/new 245842476/0 ratio 0.950000 (soft limit 255013683, conf limit 268435456)
+[Fri Mar  4 09:23:51.194 2022] [1389327] caught SIGTERM, shutting down
+[Fri Mar  4 09:23:51.203 2022] [1389332] WARNING: rt compress: index admin_search_employers_rt: failed to merge /var/lib/manticore/data/admin_search_employers_rt/admin_search_employers_rt.527 (interrupted because of shutdown)
+[Fri Mar  4 09:23:51.203 2022] [1389332] WARNING: rt: index admin_search_employers_rt: optimization terminated chunk(s) 14 ( left 8 ) in 2m 21s
+[Fri Mar  4 09:23:51.246 2022] [1389406] rt: index admin_search_employers_rt: ramchunk saved in 0.001 sec
+[Fri Mar  4 09:23:51.665 2022] [1389406] rt: index jobs: ramchunk saved in 0.017 sec
+[Fri Mar  4 09:23:54.491 2022] [1389406] rt: index jobs_completions_custom: ramchunk saved in 0.070 sec
+[Fri Mar  4 09:23:54.789 2022] [1389406] rt: index requirements: ramchunk saved in 0.004 sec
+[Fri Mar  4 09:23:54.805 2022] [1389327] shutdown daemon version '4.2.1 e16a5378c@220303 release (columnar 1.14.1 fce43f7@220203)' ...
+[Fri Mar  4 09:23:54.805 2022] [1389327] shutdown complete
+[Fri Mar  4 09:23:54.833 2022] [1389325] watchdog: main process 1389327 exited cleanly (exit code 0), shutting down
+[Fri Mar  4 09:24:26.037 2022] [1402109] watchdog: main process 1402110 forked ok
+[Fri Mar  4 09:24:26.042 2022] [1402110] starting daemon version '4.2.1 e16a5378c@220303 release (columnar 1.14.1 fce43f7@220203)' ...
+[Fri Mar  4 09:24:26.042 2022] [1402110] listening on 127.0.0.1:9312 for sphinx and http(s)
+[Fri Mar  4 09:24:26.042 2022] [1402110] listening on 10.10.10.9:9312 for sphinx and http(s)
+[Fri Mar  4 09:24:26.042 2022] [1402110] listening on 127.0.0.1:9306 for mysql
+[Fri Mar  4 09:24:26.042 2022] [1402110] listening on 10.10.10.9:9306 for mysql
+[Fri Mar  4 09:24:26.042 2022] [1402110] listening on 127.0.0.1:9318 for VIP mysql
+[Fri Mar  4 09:24:29.145 2022] [1402141] prereading 7 indexes
+[Fri Mar  4 09:24:29.145 2022] [1402110] accepting connections
+[Fri Mar  4 09:24:30.174 2022] [1402141] prereaded 7 indexes in 1.030 sec
+[Fri Mar  4 09:40:49.078 2022] [1402190] FATAL: '10.10.10.9:9312': query timed out
+[Fri Mar  4 09:42:55.666 2022] [1402162] FATAL: unknown cluster 'jobsite'
+[Fri Mar  4 10:17:20.553 2022] [1402146] FATAL: '10.10.10.9:9312': query timed out
+[Fri Mar  4 11:06:50.733 2022] [1402173] FATAL: '10.10.10.9:9312': query timed out
+[Fri Mar  4 15:30:24.395 2022] [1402110] caught SIGTERM, shutting down
+[Fri Mar  4 15:41:46.412 2022] [1402109] watchdog: main process 1402110 killed cleanly with SIGKILL, shutting down
