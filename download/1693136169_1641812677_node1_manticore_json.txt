@@ -1,0 +1,39 @@
+{
+        "clusters":     {
+                "jobsite":      {
+                        "nodes":        "10.39.138.89:9312,10.39.137.120:9312",
+                        "options":      "",
+                        "indexes":      ["admin_search_employers_rt", "cvs", "geocities", "jobs", "jobs_completions_custom", "postal_coords", "requirements"]
+                }
+        },
+        "indexes":      {
+                "geocities":    {
+                        "type": "rt",
+                        "path": "geocities"
+                },
+                "postal_coords":        {
+                        "type": "rt",
+                        "path": "postal_coords"
+                },
+                "admin_search_employers_rt":    {
+                        "type": "rt",
+                        "path": "admin_search_employers_rt"
+                },
+                "cvs":  {
+                        "type": "rt",
+                        "path": "cvs"
+                },
+                "jobs": {
+                        "type": "rt",
+                        "path": "jobs"
+                },
+                "jobs_completions_custom":      {
+                        "type": "rt",
+                        "path": "jobs_completions_custom"
+                },
+                "requirements": {
+                        "type": "rt",
+                        "path": "requirements"
+                }
+        }
+}
