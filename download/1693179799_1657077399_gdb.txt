@@ -1,0 +1,1237 @@
+  Id   Target Id                           Frame 
+* 1    Thread 0x7fd0d0436700 (LWP 2584336) 0x00007fd0d07ecc50 in ?? () from /lib/x86_64-linux-gnu/libgcc_s.so.1
+  2    Thread 0x7fd0d053e700 (LWP 2584328) 0x0000000000ae5f91 in ?? ()
+  3    Thread 0x7fd0d051d700 (LWP 2584329) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  4    Thread 0x7fd0d0499700 (LWP 2584333) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  5    Thread 0x7fd0d03b2700 (LWP 2584340) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb904) at ../sysdeps/nptl/futex-internal.h:183
+  6    Thread 0x7fd0d03d3700 (LWP 2584339) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  7    Thread 0x7fd0d02aa700 (LWP 2584348) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  8    Thread 0x7fd0d05c3800 (LWP 2584323) 0x00007fd0d06dcfcb in __GI___select (nfds=0, readfds=0x0, writefds=0x0, exceptfds=0x0, timeout=0x7ffd7d32c3b8) at ../sysdeps/unix/sysv/linux/select.c:41
+  9    Thread 0x7fd0d030d700 (LWP 2584345) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  10   Thread 0x7fd0d04fc700 (LWP 2584330) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  11   Thread 0x7fd0d04ba700 (LWP 2584332) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  12   Thread 0x7fd0d05c2700 (LWP 2584324) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  13   Thread 0x7fd0d055f700 (LWP 2584327) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  14   Thread 0x7fd0d05a1700 (LWP 2584325) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb904) at ../sysdeps/nptl/futex-internal.h:183
+  15   Thread 0x7fd0d04db700 (LWP 2584331) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  16   Thread 0x7fd0d0289700 (LWP 2584349) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  17   Thread 0x7fd0d0580700 (LWP 2584326) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  18   Thread 0x7fd0d00fd700 (LWP 2584361) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  19   Thread 0x7fd0d00bb700 (LWP 2584363) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  20   Thread 0x7fd077fff700 (LWP 2584368) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  21   Thread 0x7fd077fde700 (LWP 2584369) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  22   Thread 0x7fd077f9c700 (LWP 2584371) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  23   Thread 0x7fd0d02ec700 (LWP 2584346) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  24   Thread 0x7fd0d032e700 (LWP 2584344) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  25   Thread 0x7fd0d0391700 (LWP 2584341) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  26   Thread 0x7fd077f5a700 (LWP 2584373) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  27   Thread 0x7fd0d034f700 (LWP 2584343) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  28   Thread 0x7fd0d0037700 (LWP 2584367) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  29   Thread 0x7fd0d013f700 (LWP 2584359) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  30   Thread 0x7fd077f7b700 (LWP 2584372) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  31   Thread 0x7fd077f39700 (LWP 2584374) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  32   Thread 0x7fd0d0415700 (LWP 2584337) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  33   Thread 0x7fd0d0205700 (LWP 2584353) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  34   Thread 0x7fd0d0247700 (LWP 2584351) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  35   Thread 0x7fd0d00dc700 (LWP 2584362) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  36   Thread 0x7fd077f18700 (LWP 2584375) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  37   Thread 0x7fd0d02cb700 (LWP 2584347) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  38   Thread 0x7fd0d0268700 (LWP 2584350) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  39   Thread 0x7fd0d03f4700 (LWP 2584338) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  40   Thread 0x7fd0d0457700 (LWP 2584335) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  41   Thread 0x7fd077e73700 (LWP 2584380) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  42   Thread 0x7fd0d011e700 (LWP 2584360) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  43   Thread 0x7fd0d0226700 (LWP 2584352) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  44   Thread 0x7fd077e52700 (LWP 2584381) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  45   Thread 0x7fd077d4a700 (LWP 2584389) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  46   Thread 0x7fd077dce700 (LWP 2584385) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  47   Thread 0x7fd0d009a700 (LWP 2584364) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  48   Thread 0x7fd077dad700 (LWP 2584386) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  49   Thread 0x7fd077eb5700 (LWP 2584378) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  50   Thread 0x7fd077d8c700 (LWP 2584387) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  51   Thread 0x7fd0d0058700 (LWP 2584366) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  52   Thread 0x7fd077d29700 (LWP 2584390) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  53   Thread 0x7fd0d01e4700 (LWP 2584354) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  54   Thread 0x7fd0d0181700 (LWP 2584357) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  55   Thread 0x7fd077fbd700 (LWP 2584370) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  56   Thread 0x7fd077ed6700 (LWP 2584377) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  57   Thread 0x7fd077d6b700 (LWP 2584388) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  58   Thread 0x7fd0d0160700 (LWP 2584358) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  59   Thread 0x7fd0d01c3700 (LWP 2584355) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  60   Thread 0x7fd0d01a2700 (LWP 2584356) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  61   Thread 0x7fd077ef7700 (LWP 2584376) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  62   Thread 0x7fd077def700 (LWP 2584384) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  63   Thread 0x7fd077b9d700 (LWP 2584402) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  64   Thread 0x7fd077b7c700 (LWP 2584403) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb904) at ../sysdeps/nptl/futex-internal.h:183
+  65   Thread 0x7fd077b5b700 (LWP 2584404) futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fd077b5ada8, clockid=<optimized out>, expected=0, futex_word=0xefca1c) at ../sysdeps/nptl/futex-internal.h:320
+  66   Thread 0x7fd077e94700 (LWP 2584379) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  67   Thread 0x7fd076861700 (LWP 2590403) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fd044033f10) at ../sysdeps/nptl/futex-internal.h:183
+  68   Thread 0x7fd07485d700 (LWP 2590404) 0x00007fd0d06e746e in epoll_wait (epfd=30, events=0x7fd07485c370, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+  69   Thread 0x7fd07405c700 (LWP 2590472) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fd044083234) at ../sysdeps/nptl/futex-internal.h:183
+  70   Thread 0x7fcfb7fff700 (LWP 2590471) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fd04428cfb8) at ../sysdeps/nptl/futex-internal.h:183
+  71   Thread 0x7fd077b3a700 (LWP 2584405) 0x00007fd0d06e746e in epoll_wait (epfd=15, events=0x27340f0, maxevents=10, timeout=299266) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+  72   Thread 0x7fd077bdf700 (LWP 2584400) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  73   Thread 0x7fd077c00700 (LWP 2584399) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  74   Thread 0x7fd077c84700 (LWP 2584395) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  75   Thread 0x7fd077c21700 (LWP 2584398) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  76   Thread 0x7fd077ca5700 (LWP 2584394) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb904) at ../sysdeps/nptl/futex-internal.h:183
+  77   Thread 0x7fd077c42700 (LWP 2584397) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  78   Thread 0x7fd077cc6700 (LWP 2584393) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  79   Thread 0x7fd077ce7700 (LWP 2584392) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  80   Thread 0x7fd077c63700 (LWP 2584396) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  81   Thread 0x7fd077e31700 (LWP 2584382) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  82   Thread 0x7fd077d08700 (LWP 2584391) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  83   Thread 0x7fd0d0478700 (LWP 2584334) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb904) at ../sysdeps/nptl/futex-internal.h:183
+  84   Thread 0x7fd0d0079700 (LWP 2584365) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  85   Thread 0x7fd077e10700 (LWP 2584383) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  86   Thread 0x7fd0d0370700 (LWP 2584342) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+  87   Thread 0x7fd077a70700 (LWP 2590402) 0x00007fd0d06e746e in epoll_wait (epfd=24, events=0x7fd04000cf70, maxevents=257, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+  88   Thread 0x7fd077bbe700 (LWP 2584401) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+
+Thread 88 (Thread 0x7fd077bbe700 (LWP 2584401)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 87 (Thread 0x7fd077a70700 (LWP 2590402)):
+#0  0x00007fd0d06e746e in epoll_wait (epfd=24, events=0x7fd04000cf70, maxevents=257, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x000000000055ad93 in ?? ()
+#2  0x000000000055ac48 in ?? ()
+#3  0x0000000000aa5317 in ?? ()
+#4  0x0000000000aa480c in ?? ()
+#5  0x0000000000aa48f4 in ?? ()
+#6  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#7  0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 86 (Thread 0x7fd0d0370700 (LWP 2584342)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 85 (Thread 0x7fd077e10700 (LWP 2584383)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 84 (Thread 0x7fd0d0079700 (LWP 2584365)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 83 (Thread 0x7fd0d0478700 (LWP 2584334)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb904) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 82 (Thread 0x7fd077d08700 (LWP 2584391)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 81 (Thread 0x7fd077e31700 (LWP 2584382)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 80 (Thread 0x7fd077c63700 (LWP 2584396)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 79 (Thread 0x7fd077ce7700 (LWP 2584392)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 78 (Thread 0x7fd077cc6700 (LWP 2584393)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 77 (Thread 0x7fd077c42700 (LWP 2584397)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 76 (Thread 0x7fd077ca5700 (LWP 2584394)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb904) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 75 (Thread 0x7fd077c21700 (LWP 2584398)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 74 (Thread 0x7fd077c84700 (LWP 2584395)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 73 (Thread 0x7fd077c00700 (LWP 2584399)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 72 (Thread 0x7fd077bdf700 (LWP 2584400)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 71 (Thread 0x7fd077b3a700 (LWP 2584405)):
+#0  0x00007fd0d06e746e in epoll_wait (epfd=15, events=0x27340f0, maxevents=10, timeout=299266) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x000000000055a094 in ?? ()
+#2  0x00000000005a953f in ?? ()
+#3  0x00000000005a8efa in ?? ()
+#4  0x000000000061ff75 in ?? ()
+#5  0x0000000000aa6a39 in ?? ()
+#6  0x0000000000aa683e in ?? ()
+#7  0x0000000000aa6625 in ?? ()
+#8  0x0000000000aa5317 in ?? ()
+#9  0x0000000000aa480c in ?? ()
+#10 0x0000000000aa48f4 in ?? ()
+#11 0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#12 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 70 (Thread 0x7fcfb7fff700 (LWP 2590471)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fd04428cfb8) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fd04428cf68, cond=0x7fd04428cf90) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fd04428cf90, mutex=0x7fd04428cf68) at pthread_cond_wait.c:647
+#3  0x00007fd077985afe in RecvBuf::front(gu::datetime::Date const&) () from /usr/share/manticore/modules/libgalera_manticore.so
+#4  0x00007fd07798016c in ?? () from /usr/share/manticore/modules/libgalera_manticore.so
+#5  0x00007fd077975691 in gcs_core_recv(gcs_core*, gcs_act_rcvd*, long long) () from /usr/share/manticore/modules/libgalera_manticore.so
+#6  0x00007fd07796f9e6 in ?? () from /usr/share/manticore/modules/libgalera_manticore.so
+#7  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 69 (Thread 0x7fd07405c700 (LWP 2590472)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fd044083234) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fd0440831e0, cond=0x7fd044083208) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fd044083208, mutex=0x7fd0440831e0) at pthread_cond_wait.c:647
+#3  0x00007fd077a298dd in gu_fifo_get_head () from /usr/share/manticore/modules/libgalera_manticore.so
+#4  0x00007fd077971357 in gcs_recv(gcs_conn*, gcs_action*) () from /usr/share/manticore/modules/libgalera_manticore.so
+#5  0x00007fd07794e7fb in galera::GcsActionSource::process(void*, bool&) () from /usr/share/manticore/modules/libgalera_manticore.so
+#6  0x00007fd07791fe7c in galera::ReplicatorSMM::async_recv(void*) () from /usr/share/manticore/modules/libgalera_manticore.so
+#7  0x00007fd077915fcd in galera_recv () from /usr/share/manticore/modules/libgalera_manticore.so
+#8  0x0000000000ec75e3 in ?? ()
+#9  0x0000000000edaf37 in ?? ()
+#10 0x0000000000ec534c in ?? ()
+#11 0x0000000000ee2dbf in ?? ()
+#12 0x0000000000000000 in ?? ()
+
+Thread 68 (Thread 0x7fd07485d700 (LWP 2590404)):
+#0  0x00007fd0d06e746e in epoll_wait (epfd=30, events=0x7fd07485c370, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x00007fd077961e48 in asio::detail::epoll_reactor::run(bool, asio::detail::op_queue<asio::detail::task_io_service_operation>&) () from /usr/share/manticore/modules/libgalera_manticore.so
+#2  0x00007fd077961abe in asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::error_code const&) () from /usr/share/manticore/modules/libgalera_manticore.so
+#3  0x00007fd0779617a2 in asio::detail::task_io_service::run(std::error_code&) () from /usr/share/manticore/modules/libgalera_manticore.so
+#4  0x00007fd07796165d in asio::io_service::run() () from /usr/share/manticore/modules/libgalera_manticore.so
+#5  0x00007fd077a09584 in gcomm::AsioProtonet::event_loop(gu::datetime::Period const&) () from /usr/share/manticore/modules/libgalera_manticore.so
+#6  0x00007fd07797f15c in GCommConn::run() () from /usr/share/manticore/modules/libgalera_manticore.so
+#7  0x00007fd0779856c9 in GCommConn::run_fn(void*) () from /usr/share/manticore/modules/libgalera_manticore.so
+#8  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#9  0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 67 (Thread 0x7fd076861700 (LWP 2590403)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fd044033f10) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fd044033ec0, cond=0x7fd044033ee8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fd044033ee8, mutex=0x7fd044033ec0) at pthread_cond_wait.c:647
+#3  0x00007fd0779498aa in galera::ServiceThd::thd_func(void*) () from /usr/share/manticore/modules/libgalera_manticore.so
+#4  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#5  0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 66 (Thread 0x7fd077e94700 (LWP 2584379)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 65 (Thread 0x7fd077b5b700 (LWP 2584404)):
+#0  futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fd077b5ada8, clockid=<optimized out>, expected=0, futex_word=0xefca1c) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7fd077b5ada8, clockid=<optimized out>, mutex=0xefca20, cond=0xefc9f0) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0xefc9f0, mutex=0xefca20, abstime=0x7fd077b5ada8) at pthread_cond_wait.c:665
+#3  0x00000000006e6d4e in ?? ()
+#4  0x0000000000aca510 in ?? ()
+#5  0x0000000000aa480c in ?? ()
+#6  0x0000000000aa48f4 in ?? ()
+#7  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 64 (Thread 0x7fd077b7c700 (LWP 2584403)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb904) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 63 (Thread 0x7fd077b9d700 (LWP 2584402)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 62 (Thread 0x7fd077def700 (LWP 2584384)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 61 (Thread 0x7fd077ef7700 (LWP 2584376)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 60 (Thread 0x7fd0d01a2700 (LWP 2584356)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 59 (Thread 0x7fd0d01c3700 (LWP 2584355)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 58 (Thread 0x7fd0d0160700 (LWP 2584358)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 57 (Thread 0x7fd077d6b700 (LWP 2584388)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 56 (Thread 0x7fd077ed6700 (LWP 2584377)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 55 (Thread 0x7fd077fbd700 (LWP 2584370)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 54 (Thread 0x7fd0d0181700 (LWP 2584357)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 53 (Thread 0x7fd0d01e4700 (LWP 2584354)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 52 (Thread 0x7fd077d29700 (LWP 2584390)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 51 (Thread 0x7fd0d0058700 (LWP 2584366)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 50 (Thread 0x7fd077d8c700 (LWP 2584387)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 49 (Thread 0x7fd077eb5700 (LWP 2584378)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 48 (Thread 0x7fd077dad700 (LWP 2584386)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 47 (Thread 0x7fd0d009a700 (LWP 2584364)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 46 (Thread 0x7fd077dce700 (LWP 2584385)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 45 (Thread 0x7fd077d4a700 (LWP 2584389)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 44 (Thread 0x7fd077e52700 (LWP 2584381)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 43 (Thread 0x7fd0d0226700 (LWP 2584352)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 42 (Thread 0x7fd0d011e700 (LWP 2584360)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 41 (Thread 0x7fd077e73700 (LWP 2584380)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 40 (Thread 0x7fd0d0457700 (LWP 2584335)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 39 (Thread 0x7fd0d03f4700 (LWP 2584338)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 38 (Thread 0x7fd0d0268700 (LWP 2584350)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 37 (Thread 0x7fd0d02cb700 (LWP 2584347)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 36 (Thread 0x7fd077f18700 (LWP 2584375)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 35 (Thread 0x7fd0d00dc700 (LWP 2584362)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 34 (Thread 0x7fd0d0247700 (LWP 2584351)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 33 (Thread 0x7fd0d0205700 (LWP 2584353)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 32 (Thread 0x7fd0d0415700 (LWP 2584337)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 31 (Thread 0x7fd077f39700 (LWP 2584374)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 30 (Thread 0x7fd077f7b700 (LWP 2584372)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 29 (Thread 0x7fd0d013f700 (LWP 2584359)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 28 (Thread 0x7fd0d0037700 (LWP 2584367)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 27 (Thread 0x7fd0d034f700 (LWP 2584343)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 26 (Thread 0x7fd077f5a700 (LWP 2584373)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 25 (Thread 0x7fd0d0391700 (LWP 2584341)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 24 (Thread 0x7fd0d032e700 (LWP 2584344)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 23 (Thread 0x7fd0d02ec700 (LWP 2584346)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 22 (Thread 0x7fd077f9c700 (LWP 2584371)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 21 (Thread 0x7fd077fde700 (LWP 2584369)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 20 (Thread 0x7fd077fff700 (LWP 2584368)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 19 (Thread 0x7fd0d00bb700 (LWP 2584363)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 18 (Thread 0x7fd0d00fd700 (LWP 2584361)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 17 (Thread 0x7fd0d0580700 (LWP 2584326)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 16 (Thread 0x7fd0d0289700 (LWP 2584349)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 15 (Thread 0x7fd0d04db700 (LWP 2584331)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 14 (Thread 0x7fd0d05a1700 (LWP 2584325)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb904) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 13 (Thread 0x7fd0d055f700 (LWP 2584327)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 12 (Thread 0x7fd0d05c2700 (LWP 2584324)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 11 (Thread 0x7fd0d04ba700 (LWP 2584332)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 10 (Thread 0x7fd0d04fc700 (LWP 2584330)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 9 (Thread 0x7fd0d030d700 (LWP 2584345)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 8 (Thread 0x7fd0d05c3800 (LWP 2584323)):
+#0  0x00007fd0d06dcfcb in __GI___select (nfds=0, readfds=0x0, writefds=0x0, exceptfds=0x0, timeout=0x7ffd7d32c3b8) at ../sysdeps/unix/sysv/linux/select.c:41
+#1  0x00000000006396ff in ?? ()
+#2  0x000000000060f7f7 in ?? ()
+#3  0x00000000006158ed in ?? ()
+#4  0x00000000006167a6 in ?? ()
+#5  0x00007fd0d05ec083 in __libc_start_main (main=0x616760, argc=6, argv=0x7ffd7d32cfa8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffd7d32cf98) at ../csu/libc-start.c:308
+#6  0x000000000054fcde in ?? ()
+
+Thread 7 (Thread 0x7fd0d02aa700 (LWP 2584348)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 6 (Thread 0x7fd0d03d3700 (LWP 2584339)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 5 (Thread 0x7fd0d03b2700 (LWP 2584340)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb904) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 4 (Thread 0x7fd0d0499700 (LWP 2584333)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 3 (Thread 0x7fd0d051d700 (LWP 2584329)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x26eb900) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x26eb8a8, cond=0x26eb8d8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x26eb8d8, mutex=0x26eb8a8) at pthread_cond_wait.c:647
+#3  0x0000000000aa6981 in ?? ()
+#4  0x0000000000aa683e in ?? ()
+#5  0x0000000000aa6625 in ?? ()
+#6  0x0000000000aa5317 in ?? ()
+#7  0x0000000000aa480c in ?? ()
+#8  0x0000000000aa48f4 in ?? ()
+#9  0x00007fd0d07c2609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fd0d06e7133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 2 (Thread 0x7fd0d053e700 (LWP 2584328)):
+#0  0x0000000000ae5f91 in ?? ()
+#1  0x0000000000ae5d99 in ?? ()
+#2  0x000000000064652b in ?? ()
+#3  0x0000000000992cb1 in ?? ()
+#4  0x0000000000994e84 in ?? ()
+#5  0x0000000000990b04 in ?? ()
+#6  0x000000000098fcbb in ?? ()
+#7  0x00000000009b2f16 in ?? ()
+#8  0x0000000000ec534c in ?? ()
+#9  0x0000000000ee2dbf in ?? ()
+#10 0x0000000000000000 in ?? ()
+
+Thread 1 (Thread 0x7fd0d0436700 (LWP 2584336)):
+#0  0x00007fd0d07ecc50 in ?? () from /lib/x86_64-linux-gnu/libgcc_s.so.1
+#1  0x00007fd0d07ee77b in _Unwind_Backtrace () from /lib/x86_64-linux-gnu/libgcc_s.so.1
+#2  0x00007fd0d06f50a6 in __GI___backtrace (array=<optimized out>, size=<optimized out>) at backtrace.c:116
+#3  0x00000000006dc9c1 in ?? ()
+#4  0x00000000005be5af in ?? ()
+#5  <signal handler called>
+#6  0xffffffff00000000 in ?? ()
+#7  0x0000000000000000 in ?? ()
+#0  0x00007fd0d07ecc50 in ?? () from /lib/x86_64-linux-gnu/libgcc_s.so.1
+No symbol table info available.
+#1  0x00007fd0d07ee77b in _Unwind_Backtrace () from /lib/x86_64-linux-gnu/libgcc_s.so.1
+No symbol table info available.
+#2  0x00007fd0d06f50a6 in __GI___backtrace (array=<optimized out>, size=<optimized out>) at backtrace.c:116
+        arg = {array = 0xef5be0, cfa = 140529250619840, cnt = 3, size = 128}
+        once = 2
+#3  0x00000000006dc9c1 in ?? ()
+No symbol table info available.
+#4  0x00000000005be5af in ?? ()
+No symbol table info available.
+#5  <signal handler called>
+No locals.
+#6  0xffffffff00000000 in ?? ()
+No symbol table info available.
+#7  0x0000000000000000 in ?? ()
+No symbol table info available.
+No symbol table info available.
+No core file now.
+Undefined command: "exit".  Try "help".
