@@ -1,0 +1,484 @@
+-- Logs begin at Sun 2022-03-13 06:39:21 EDT, end at Wed 2022-04-13 07:11:52 EDT. --
+Mar 14 09:44:20 email.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 14 09:44:20 email.learn4good.com searchd[2033977]: [Mon Mar 14 09:44:20.558 2022] [2033977] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Mar 14 09:44:20 email.learn4good.com searchd[2033977]: [Mon Mar 14 09:44:20.560 2022] [2033977] stop: successfully sent SIGTERM to pid 133074
+Mar 14 09:44:26 email.learn4good.com searchd[2033977]: Manticore 4.2.1 ffd0499d3@220309 release (columnar 1.14.1 fce43f7@220203)
+Mar 14 09:44:26 email.learn4good.com searchd[2033977]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 14 09:44:26 email.learn4good.com searchd[2033977]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 14 09:44:26 email.learn4good.com searchd[2033977]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 14 09:44:26 email.learn4good.com systemd[1]: manticore.service: Succeeded.
+Mar 14 09:44:26 email.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 14 09:45:13 email.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.151 2022] [2038046] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: config loaded, indexes 7, clusters 1
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: SetMaxChildrenThreads to 80
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 14 09:45:13 email.learn4good.com searchd[2038046]: [Mon Mar 14 09:45:13.153 2022] [2038046] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 14 09:45:13 email.learn4good.com searchd[2038064]: Manticore 4.2.1 4bff02358@220313 release (columnar 1.14.1 fce43f7@220203)
+Mar 14 09:45:13 email.learn4good.com searchd[2038064]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 14 09:45:13 email.learn4good.com searchd[2038064]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 14 09:45:13 email.learn4good.com searchd[2038064]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: StartGlobalWorkpool
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: starting daemon version '4.2.1 4bff02358@220313 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: listening on 10.10.10.5:9312 for sphinx and http(s)
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: listening on 127.0.0.1:9306 for mysql
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: listening on 10.10.10.5:9306 for mysql
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: Manticore 4.2.1 4bff02358@220313 release (columnar 1.14.1 fce43f7@220203)
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: precaching index 'admin_search_employers_rt'
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: precaching index 'cvs'
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: precaching index 'geocities'
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:45:13 email.learn4good.com searchd[2038066]: precaching index 'jobs'
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: precaching index 'jobs_completions_custom'
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: precaching index 'postal_coords'
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: precaching index 'requirements'
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: RPL: 1 clusters loaded from config
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 14 09:45:16 email.learn4good.com searchd[2038066]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 14 09:45:16 email.learn4good.com searchd[2038046]: Manticore 4.2.1 4bff02358@220313 release (columnar 1.14.1 fce43f7@220203)
+Mar 14 09:45:16 email.learn4good.com searchd[2038046]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 14 09:45:16 email.learn4good.com searchd[2038046]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 14 09:45:16 email.learn4good.com searchd[2038046]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 14 09:45:16 email.learn4good.com systemd[1]: manticore.service: Supervising process 2038066 which is not our child. We'll most likely not notice when it exits.
+Mar 14 09:45:16 email.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 14 09:45:17 email.learn4good.com systemd[1]: manticore.service: Supervising process 2038066 which is not our child. We'll most likely not notice when it exits.
+Mar 14 09:45:17 email.learn4good.com systemd[1]: manticore.service: Supervising process 2038066 which is not our child. We'll most likely not notice when it exits.
+Mar 14 09:45:18 email.learn4good.com systemd[1]: manticore.service: Supervising process 2038066 which is not our child. We'll most likely not notice when it exits.
+Mar 14 09:45:18 email.learn4good.com systemd[1]: manticore.service: Supervising process 2038066 which is not our child. We'll most likely not notice when it exits.
+Mar 19 17:02:16 email.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 19 17:02:16 email.learn4good.com searchd[2531691]: [Sat Mar 19 17:02:16.409 2022] [2531691] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Mar 19 17:02:16 email.learn4good.com searchd[2531691]: [Sat Mar 19 17:02:16.411 2022] [2531691] stop: successfully sent SIGTERM to pid 2039531
+Mar 19 17:02:19 email.learn4good.com searchd[2531691]: Manticore 4.2.1 4bff02358@220313 release (columnar 1.14.1 fce43f7@220203)
+Mar 19 17:02:19 email.learn4good.com searchd[2531691]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 19 17:02:19 email.learn4good.com searchd[2531691]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 19 17:02:19 email.learn4good.com searchd[2531691]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 19 17:03:49 email.learn4good.com systemd[1]: manticore.service: State 'stop-sigterm' timed out. Skipping SIGKILL.
+Mar 19 17:05:20 email.learn4good.com systemd[1]: manticore.service: State 'stop-final-sigterm' timed out. Skipping SIGKILL. Entering failed mode.
+Mar 19 17:05:20 email.learn4good.com systemd[1]: manticore.service: Failed with result 'timeout'.
+Mar 19 17:05:20 email.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 19 17:06:18 email.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.423 2022] [2568110] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.424 2022] [2568110] DEBUG: config loaded, indexes 7, clusters 1
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.424 2022] [2568110] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.424 2022] [2568110] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.424 2022] [2568110] DEBUG: SetMaxChildrenThreads to 80
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.424 2022] [2568110] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.424 2022] [2568110] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.424 2022] [2568110] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 19 17:06:18 email.learn4good.com searchd[2568110]: [Sat Mar 19 17:06:18.425 2022] [2568110] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 19 17:06:18 email.learn4good.com searchd[2568111]: Manticore 4.2.1 611d55d8b@220319 release (columnar 1.14.1 fce43f7@220203)
+Mar 19 17:06:18 email.learn4good.com searchd[2568111]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 19 17:06:18 email.learn4good.com searchd[2568111]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 19 17:06:18 email.learn4good.com searchd[2568111]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: StartGlobalWorkpool
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: starting daemon version '4.2.1 611d55d8b@220319 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: listening on 10.10.10.5:9312 for sphinx and http(s)
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: listening on 127.0.0.1:9306 for mysql
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: listening on 10.10.10.5:9306 for mysql
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: Manticore 4.2.1 611d55d8b@220319 release (columnar 1.14.1 fce43f7@220203)
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: precaching index 'admin_search_employers_rt'
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: precaching index 'cvs'
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: precaching index 'geocities'
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:06:18 email.learn4good.com searchd[2568113]: precaching index 'jobs'
+Mar 19 17:06:20 email.learn4good.com searchd[2568113]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:06:20 email.learn4good.com searchd[2568113]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:06:20 email.learn4good.com searchd[2568113]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:06:20 email.learn4good.com searchd[2568113]: precaching index 'jobs_completions_custom'
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: precaching index 'postal_coords'
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: precaching index 'requirements'
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: RPL: 1 clusters loaded from config
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 19 17:06:21 email.learn4good.com searchd[2568113]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 19 17:06:21 email.learn4good.com searchd[2568110]: Manticore 4.2.1 611d55d8b@220319 release (columnar 1.14.1 fce43f7@220203)
+Mar 19 17:06:21 email.learn4good.com searchd[2568110]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 19 17:06:21 email.learn4good.com searchd[2568110]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 19 17:06:21 email.learn4good.com searchd[2568110]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 19 17:06:21 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 19 17:06:21 email.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 19 17:06:22 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:06 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:07 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:08 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:08 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:08 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:09 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:09 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:10 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:10 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:11 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:23:11 email.learn4good.com systemd[1]: manticore.service: Supervising process 2568113 which is not our child. We'll most likely not notice when it exits.
+Mar 27 10:48:55 email.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 27 10:48:55 email.learn4good.com searchd[3560839]: [Sun Mar 27 10:48:55.206 2022] [3560839] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Mar 27 10:48:55 email.learn4good.com searchd[3560839]: [Sun Mar 27 10:48:55.208 2022] [3560839] stop: successfully sent SIGTERM to pid 2568113
+Mar 27 10:49:01 email.learn4good.com searchd[3560839]: Manticore 4.2.1 611d55d8b@220319 release (columnar 1.14.1 fce43f7@220203)
+Mar 27 10:49:01 email.learn4good.com searchd[3560839]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 27 10:49:01 email.learn4good.com searchd[3560839]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 27 10:49:01 email.learn4good.com searchd[3560839]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 27 10:49:01 email.learn4good.com systemd[1]: manticore.service: Succeeded.
+Mar 27 10:49:01 email.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 27 10:53:46 email.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.637 2022] [3580565] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.639 2022] [3580565] DEBUG: config loaded, indexes 7, clusters 1
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.639 2022] [3580565] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: SetMaxChildrenThreads to 80
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 27 10:53:46 email.learn4good.com searchd[3580565]: [Sun Mar 27 10:53:46.640 2022] [3580565] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 27 10:53:46 email.learn4good.com searchd[3580566]: Manticore 4.2.1 e972420c1@220323 release (columnar 1.14.1 fce43f7@220203)
+Mar 27 10:53:46 email.learn4good.com searchd[3580566]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 27 10:53:46 email.learn4good.com searchd[3580566]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 27 10:53:46 email.learn4good.com searchd[3580566]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: DEBUG: StartGlobalWorkpool
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: starting daemon version '4.2.1 e972420c1@220323 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: listening on 10.10.10.5:9312 for sphinx and http(s)
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: listening on 127.0.0.1:9306 for mysql
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: listening on 10.10.10.5:9306 for mysql
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: Manticore 4.2.1 e972420c1@220323 release (columnar 1.14.1 fce43f7@220203)
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: precaching index 'admin_search_employers_rt'
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: precaching index 'cvs'
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 10:53:46 email.learn4good.com searchd[3580568]: precaching index 'geocities'
+Mar 27 10:53:47 email.learn4good.com searchd[3580568]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 10:53:47 email.learn4good.com searchd[3580568]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 10:53:47 email.learn4good.com searchd[3580568]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 10:53:47 email.learn4good.com searchd[3580568]: precaching index 'jobs'
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: precaching index 'jobs_completions_custom'
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: precaching index 'postal_coords'
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: precaching index 'requirements'
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: RPL: 1 clusters loaded from config
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 27 10:53:48 email.learn4good.com searchd[3580568]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 27 10:53:48 email.learn4good.com searchd[3580565]: Manticore 4.2.1 e972420c1@220323 release (columnar 1.14.1 fce43f7@220203)
+Mar 27 10:53:48 email.learn4good.com searchd[3580565]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 27 10:53:48 email.learn4good.com searchd[3580565]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 27 10:53:48 email.learn4good.com searchd[3580565]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 27 10:53:48 email.learn4good.com systemd[1]: manticore.service: Supervising process 3580568 which is not our child. We'll most likely not notice when it exits.
+Mar 27 10:53:48 email.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 27 10:53:49 email.learn4good.com systemd[1]: manticore.service: Supervising process 3580568 which is not our child. We'll most likely not notice when it exits.
+Mar 27 10:53:50 email.learn4good.com systemd[1]: manticore.service: Supervising process 3580568 which is not our child. We'll most likely not notice when it exits.
+Mar 30 06:07:50 email.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 30 06:07:50 email.learn4good.com searchd[2339511]: [Wed Mar 30 06:07:50.019 2022] [2339511] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Mar 30 06:07:50 email.learn4good.com searchd[2339511]: [Wed Mar 30 06:07:50.021 2022] [2339511] stop: successfully sent SIGTERM to pid 3581413
+Mar 30 06:07:53 email.learn4good.com searchd[2339511]: Manticore 4.2.1 e972420c1@220323 release (columnar 1.14.1 fce43f7@220203)
+Mar 30 06:07:53 email.learn4good.com searchd[2339511]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 30 06:07:53 email.learn4good.com searchd[2339511]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 30 06:07:53 email.learn4good.com searchd[2339511]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 30 06:07:53 email.learn4good.com systemd[1]: manticore.service: Succeeded.
+Mar 30 06:07:53 email.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 30 06:08:31 email.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.461 2022] [2343204] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: config loaded, indexes 7, clusters 1
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: SetMaxChildrenThreads to 80
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 30 06:08:31 email.learn4good.com searchd[2343204]: [Wed Mar 30 06:08:31.463 2022] [2343204] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 30 06:08:31 email.learn4good.com searchd[2343205]: Manticore 4.2.1 c78a3c23f@220329 release (columnar 1.14.1 fce43f7@220203)
+Mar 30 06:08:31 email.learn4good.com searchd[2343205]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 30 06:08:31 email.learn4good.com searchd[2343205]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 30 06:08:31 email.learn4good.com searchd[2343205]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: StartGlobalWorkpool
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: starting daemon version '4.2.1 c78a3c23f@220329 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: listening on 10.10.10.5:9312 for sphinx and http(s)
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: listening on 127.0.0.1:9306 for mysql
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: listening on 10.10.10.5:9306 for mysql
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: Manticore 4.2.1 c78a3c23f@220329 release (columnar 1.14.1 fce43f7@220203)
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: precaching index 'admin_search_employers_rt'
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: precaching index 'cvs'
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: precaching index 'geocities'
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:08:31 email.learn4good.com searchd[2343207]: precaching index 'jobs'
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: precaching index 'jobs_completions_custom'
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: precaching index 'postal_coords'
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: precaching index 'requirements'
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: RPL: 1 clusters loaded from config
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 30 06:08:33 email.learn4good.com searchd[2343207]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 30 06:08:33 email.learn4good.com searchd[2343204]: Manticore 4.2.1 c78a3c23f@220329 release (columnar 1.14.1 fce43f7@220203)
+Mar 30 06:08:33 email.learn4good.com searchd[2343204]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 30 06:08:33 email.learn4good.com searchd[2343204]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 30 06:08:33 email.learn4good.com searchd[2343204]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 30 06:08:33 email.learn4good.com systemd[1]: manticore.service: Supervising process 2343207 which is not our child. We'll most likely not notice when it exits.
+Mar 30 06:08:33 email.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 30 06:08:35 email.learn4good.com systemd[1]: manticore.service: Supervising process 2343207 which is not our child. We'll most likely not notice when it exits.
+Apr 09 07:36:26 email.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Apr 09 07:36:26 email.learn4good.com searchd[3633684]: [Sat Apr  9 07:36:26.708 2022] [3633684] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Apr 09 07:36:26 email.learn4good.com searchd[3633684]: [Sat Apr  9 07:36:26.710 2022] [3633684] stop: successfully sent SIGTERM to pid 2343946
+Apr 09 07:36:29 email.learn4good.com searchd[3633684]: Manticore 4.2.1 c78a3c23f@220329 release (columnar 1.14.1 fce43f7@220203)
+Apr 09 07:36:29 email.learn4good.com searchd[3633684]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 07:36:29 email.learn4good.com searchd[3633684]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 07:36:29 email.learn4good.com searchd[3633684]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 07:37:59 email.learn4good.com systemd[1]: manticore.service: State 'stop-sigterm' timed out. Skipping SIGKILL.
+Apr 09 07:39:29 email.learn4good.com systemd[1]: manticore.service: State 'stop-final-sigterm' timed out. Skipping SIGKILL. Entering failed mode.
+Apr 09 07:39:29 email.learn4good.com systemd[1]: manticore.service: Failed with result 'timeout'.
+Apr 09 07:39:29 email.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Apr 09 07:40:19 email.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.553 2022] [3649872] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.555 2022] [3649872] DEBUG: config loaded, indexes 7, clusters 1
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.555 2022] [3649872] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.555 2022] [3649872] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.555 2022] [3649872] DEBUG: SetMaxChildrenThreads to 80
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.555 2022] [3649872] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.555 2022] [3649872] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.555 2022] [3649872] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.555 2022] [3649872] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.555 2022] [3649872] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.556 2022] [3649872] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.556 2022] [3649872] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.556 2022] [3649872] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.556 2022] [3649872] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.556 2022] [3649872] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.556 2022] [3649872] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.556 2022] [3649872] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.556 2022] [3649872] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.556 2022] [3649872] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Apr 09 07:40:19 email.learn4good.com searchd[3649872]: [Sat Apr  9 07:40:19.556 2022] [3649872] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Apr 09 07:40:19 email.learn4good.com searchd[3649873]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 07:40:19 email.learn4good.com searchd[3649873]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 07:40:19 email.learn4good.com searchd[3649873]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 07:40:19 email.learn4good.com searchd[3649873]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: StartGlobalWorkpool
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: starting daemon version '4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)' ...
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: listening on 10.10.10.5:9312 for sphinx and http(s)
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: listening on 127.0.0.1:9306 for mysql
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: listening on 10.10.10.5:9306 for mysql
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: listening on 127.0.0.1:9326 for VIP mysql
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: precaching index 'admin_search_employers_rt'
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: precaching index 'cvs'
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: precaching index 'geocities'
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 07:40:19 email.learn4good.com searchd[3649875]: precaching index 'jobs'
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: precaching index 'jobs_completions_custom'
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: precaching index 'postal_coords'
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: precaching index 'requirements'
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: RPL: 1 clusters loaded from config
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Apr 09 07:40:21 email.learn4good.com searchd[3649875]: DEBUG: filter stack delta is 224. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=224 to store this value persistent for this binary
+Apr 09 07:40:21 email.learn4good.com searchd[3649872]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 07:40:21 email.learn4good.com searchd[3649872]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 07:40:21 email.learn4good.com searchd[3649872]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 07:40:21 email.learn4good.com searchd[3649872]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 07:40:21 email.learn4good.com systemd[1]: manticore.service: Supervising process 3649875 which is not our child. We'll most likely not notice when it exits.
+Apr 09 07:40:21 email.learn4good.com systemd[1]: Started Manticore Search Engine.
+Apr 09 07:40:24 email.learn4good.com systemd[1]: manticore.service: Supervising process 3649875 which is not our child. We'll most likely not notice when it exits.
+Apr 09 07:40:24 email.learn4good.com systemd[1]: manticore.service: Supervising process 3649875 which is not our child. We'll most likely not notice when it exits.
+Apr 09 07:40:24 email.learn4good.com systemd[1]: manticore.service: Supervising process 3649875 which is not our child. We'll most likely not notice when it exits.
+Apr 09 08:24:03 email.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Apr 09 08:24:11 email.learn4good.com searchd[3818870]: [Sat Apr  9 08:24:11.979 2022] [3818870] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Apr 09 08:24:11 email.learn4good.com searchd[3818870]: [Sat Apr  9 08:24:11.981 2022] [3818870] stop: successfully sent SIGTERM to pid 3650930
+Apr 09 08:24:14 email.learn4good.com searchd[3818870]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:24:14 email.learn4good.com searchd[3818870]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:24:14 email.learn4good.com searchd[3818870]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:24:14 email.learn4good.com searchd[3818870]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:25:44 email.learn4good.com systemd[1]: manticore.service: State 'stop-sigterm' timed out. Skipping SIGKILL.
+Apr 09 08:27:14 email.learn4good.com systemd[1]: manticore.service: State 'stop-final-sigterm' timed out. Skipping SIGKILL. Entering failed mode.
+Apr 09 08:27:14 email.learn4good.com systemd[1]: manticore.service: Failed with result 'timeout'.
+Apr 09 08:27:14 email.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+-- Reboot --
+Apr 09 08:33:36 email.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Apr 09 08:33:39 email.learn4good.com searchd[5349]: [Sat Apr  9 08:33:39.719 2022] [5349] using config file '/etc/manticoresearch/manticore.conf' (3073 chars)...
+Apr 09 08:33:39 email.learn4good.com searchd[5349]: [Sat Apr  9 08:33:39.722 2022] [5349] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Apr 09 08:33:39 email.learn4good.com searchd[6027]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:33:39 email.learn4good.com searchd[6027]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:33:39 email.learn4good.com searchd[6027]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:33:39 email.learn4good.com searchd[6027]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: starting daemon version '4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)' ...
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: listening on 10.10.10.5:9312 for sphinx and http(s)
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: listening on 127.0.0.1:9306 for mysql
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: listening on 10.10.10.5:9306 for mysql
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: listening on 127.0.0.1:9326 for VIP mysql
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:33:39 email.learn4good.com searchd[6029]: precaching index 'admin_search_employers_rt'
+Apr 09 08:33:40 email.learn4good.com searchd[6029]: precaching index 'cvs'
+Apr 09 08:33:40 email.learn4good.com searchd[6029]: precaching index 'geocities'
+Apr 09 08:33:40 email.learn4good.com searchd[6029]: precaching index 'jobs'
+Apr 09 08:33:48 email.learn4good.com searchd[6029]: precaching index 'jobs_completions_custom'
+Apr 09 08:33:48 email.learn4good.com searchd[6029]: precaching index 'postal_coords'
+Apr 09 08:33:48 email.learn4good.com searchd[6029]: precaching index 'requirements'
+Apr 09 08:33:48 email.learn4good.com searchd[5349]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:33:48 email.learn4good.com searchd[5349]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:33:48 email.learn4good.com searchd[5349]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:33:48 email.learn4good.com searchd[5349]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:33:48 email.learn4good.com systemd[1]: manticore.service: Supervising process 6029 which is not our child. We'll most likely not notice when it exits.
+Apr 09 08:33:48 email.learn4good.com systemd[1]: Started Manticore Search Engine.
