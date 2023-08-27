@@ -1,0 +1,404 @@
+root@bdb:/etc/manticoresearch# mysql -P9306 -h0
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1
+Server version: 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624) git branch HEAD (no branch)
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> show status;
++--------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| Counter                                    | Value                                                                                                    |
++--------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| uptime                                     | 15                                                                                                       |
+| connections                                | 3                                                                                                        |
+| maxed_out                                  | 0                                                                                                        |
+| version                                    | 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624)                        |
+| mysql_version                              | 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624)                        |
+| command_search                             | 0                                                                                                        |
+| command_excerpt                            | 0                                                                                                        |
+| command_update                             | 0                                                                                                        |
+| command_keywords                           | 0                                                                                                        |
+| command_persist                            | 0                                                                                                        |
+| command_status                             | 9                                                                                                        |
+| command_flushattrs                         | 0                                                                                                        |
+| command_sphinxql                           | 0                                                                                                        |
+| command_ping                               | 0                                                                                                        |
+| command_delete                             | 0                                                                                                        |
+| command_set                                | 0                                                                                                        |
+| command_insert                             | 0                                                                                                        |
+| command_replace                            | 0                                                                                                        |
+| command_commit                             | 0                                                                                                        |
+| command_suggest                            | 0                                                                                                        |
+| command_json                               | 0                                                                                                        |
+| command_callpq                             | 0                                                                                                        |
+| command_cluster                            | 0                                                                                                        |
+| command_getfield                           | 0                                                                                                        |
+| agent_connect                              | 4                                                                                                        |
+| agent_tfo                                  | 0                                                                                                        |
+| agent_retry                                | 0                                                                                                        |
+| queries                                    | 0                                                                                                        |
+| dist_queries                               | 0                                                                                                        |
+| workers_total                              | 80                                                                                                       |
+| workers_active                             | 3                                                                                                        |
+| workers_clients                            | 3                                                                                                        |
+| workers_clients_vip                        | 0                                                                                                        |
+| work_queue_length                          | 15                                                                                                       |
+| query_wall                                 | 0.000                                                                                                    |
+| query_cpu                                  | OFF                                                                                                      |
+| dist_wall                                  | 0.000                                                                                                    |
+| dist_local                                 | 0.000                                                                                                    |
+| dist_wait                                  | 0.000                                                                                                    |
+| query_reads                                | OFF                                                                                                      |
+| query_readkb                               | OFF                                                                                                      |
+| query_readtime                             | OFF                                                                                                      |
+| avg_query_wall                             | 0.000                                                                                                    |
+| avg_query_cpu                              | OFF                                                                                                      |
+| avg_dist_wall                              | 0.000                                                                                                    |
+| avg_dist_local                             | 0.000                                                                                                    |
+| avg_dist_wait                              | 0.000                                                                                                    |
+| avg_query_reads                            | OFF                                                                                                      |
+| avg_query_readkb                           | OFF                                                                                                      |
+| avg_query_readtime                         | OFF                                                                                                      |
+| qcache_max_bytes                           | 16777216                                                                                                 |
+| qcache_thresh_msec                         | 3000                                                                                                     |
+| qcache_ttl_sec                             | 60                                                                                                       |
+| qcache_cached_queries                      | 0                                                                                                        |
+| qcache_used_bytes                          | 0                                                                                                        |
+| qcache_hits                                | 0                                                                                                        |
+| cluster_name                               | jobsite                                                                                                  |
+| cluster_jobsite_state_uuid                 | 00000000-0000-0000-0000-000000000000                                                                     |
+| cluster_jobsite_conf_id                    | 0                                                                                                        |
+| cluster_jobsite_status                     | disconnected                                                                                             |
+| cluster_jobsite_size                       | 0                                                                                                        |
+| cluster_jobsite_local_index                | 0                                                                                                        |
+| cluster_jobsite_node_state                 | closed                                                                                                   |
+| cluster_jobsite_nodes_set                  | 10.10.10.7:9312,10.10.10.5:9312,10.10.10.1:9312,10.10.10.3:9312,10.10.10.9:9312                          |
+| cluster_jobsite_nodes_view                 |                                                                                                          |
+| cluster_jobsite_indexes_count              | 8                                                                                                        |
+| cluster_jobsite_indexes                    | admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements |
+| cluster_jobsite_local_state_uuid           |                                                                                                          |
+| cluster_jobsite_protocol_version           | -1                                                                                                       |
+| cluster_jobsite_last_applied               | -1                                                                                                       |
+| cluster_jobsite_last_committed             | -1                                                                                                       |
+| cluster_jobsite_replicated                 | 0                                                                                                        |
+| cluster_jobsite_replicated_bytes           | 0                                                                                                        |
+| cluster_jobsite_repl_keys                  | 0                                                                                                        |
+| cluster_jobsite_repl_keys_bytes            | 0                                                                                                        |
+| cluster_jobsite_repl_data_bytes            | 0                                                                                                        |
+| cluster_jobsite_repl_other_bytes           | 0                                                                                                        |
+| cluster_jobsite_received                   | 0                                                                                                        |
+| cluster_jobsite_received_bytes             | 0                                                                                                        |
+| cluster_jobsite_local_commits              | 0                                                                                                        |
+| cluster_jobsite_local_cert_failures        | 0                                                                                                        |
+| cluster_jobsite_local_replays              | 0                                                                                                        |
+| cluster_jobsite_local_send_queue           | 1                                                                                                        |
+| cluster_jobsite_local_send_queue_max       | 1                                                                                                        |
+| cluster_jobsite_local_send_queue_min       | 0                                                                                                        |
+| cluster_jobsite_local_send_queue_avg       | 0.000000                                                                                                 |
+| cluster_jobsite_local_recv_queue           | 0                                                                                                        |
+| cluster_jobsite_local_recv_queue_max       | 0                                                                                                        |
+| cluster_jobsite_local_recv_queue_min       | 0                                                                                                        |
+| cluster_jobsite_local_recv_queue_avg       | 0.000000                                                                                                 |
+| cluster_jobsite_local_cached_downto        | 0                                                                                                        |
+| cluster_jobsite_flow_control_paused_ns     | 0                                                                                                        |
+| cluster_jobsite_flow_control_paused        | 0.000000                                                                                                 |
+| cluster_jobsite_flow_control_sent          | 0                                                                                                        |
+| cluster_jobsite_flow_control_recv          | 0                                                                                                        |
+| cluster_jobsite_flow_control_interval      | [ 0, 0 ]                                                                                                 |
+| cluster_jobsite_flow_control_interval_low  | 0                                                                                                        |
+| cluster_jobsite_flow_control_interval_high | 0                                                                                                        |
+| cluster_jobsite_flow_control_status        | OFF                                                                                                      |
+| cluster_jobsite_cert_deps_distance         | 0.000000                                                                                                 |
+| cluster_jobsite_apply_oooe                 | 0.000000                                                                                                 |
+| cluster_jobsite_apply_oool                 | 0.000000                                                                                                 |
+| cluster_jobsite_apply_window               | 0.000000                                                                                                 |
+| cluster_jobsite_commit_oooe                | 0.000000                                                                                                 |
+| cluster_jobsite_commit_oool                | 0.000000                                                                                                 |
+| cluster_jobsite_commit_window              | 0.000000                                                                                                 |
+| cluster_jobsite_local_state                | 0                                                                                                        |
+| cluster_jobsite_local_state_comment        | Initialized                                                                                              |
+| cluster_jobsite_cert_index_size            | 0                                                                                                        |
+| cluster_jobsite_cert_bucket_count          | 2                                                                                                        |
+| cluster_jobsite_gcache_pool_size           | 1320                                                                                                     |
+| cluster_jobsite_causal_reads               | 0                                                                                                        |
+| cluster_jobsite_cert_interval              | 0.000000                                                                                                 |
+| cluster_jobsite_open_transactions          | 0                                                                                                        |
+| cluster_jobsite_open_connections           | 0                                                                                                        |
+| cluster_jobsite_ist_receive_status         |                                                                                                          |
+| cluster_jobsite_ist_receive_seqno_start    | 0                                                                                                        |
+| cluster_jobsite_ist_receive_seqno_current  | 0                                                                                                        |
+| cluster_jobsite_ist_receive_seqno_end      | 0                                                                                                        |
+| cluster_jobsite_incoming_addresses         |                                                                                                          |
++--------------------------------------------+----------------------------------------------------------------------------------------------------------+
+120 rows in set (0.000 sec)
+
+MySQL [(none)]> show status;
++-----------------------+-----------------------------------------------------------------------------------+
+| Counter               | Value                                                                             |
++-----------------------+-----------------------------------------------------------------------------------+
+| uptime                | 33                                                                                |
+| connections           | 6                                                                                 |
+| maxed_out             | 0                                                                                 |
+| version               | 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624) |
+| mysql_version         | 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624) |
+| command_search        | 0                                                                                 |
+| command_excerpt       | 0                                                                                 |
+| command_update        | 0                                                                                 |
+| command_keywords      | 0                                                                                 |
+| command_persist       | 0                                                                                 |
+| command_status        | 80                                                                                |
+| command_flushattrs    | 0                                                                                 |
+| command_sphinxql      | 0                                                                                 |
+| command_ping          | 0                                                                                 |
+| command_delete        | 0                                                                                 |
+| command_set           | 0                                                                                 |
+| command_insert        | 0                                                                                 |
+| command_replace       | 0                                                                                 |
+| command_commit        | 0                                                                                 |
+| command_suggest       | 0                                                                                 |
+| command_json          | 0                                                                                 |
+| command_callpq        | 0                                                                                 |
+| command_cluster       | 0                                                                                 |
+| command_getfield      | 0                                                                                 |
+| agent_connect         | 4                                                                                 |
+| agent_tfo             | 0                                                                                 |
+| agent_retry           | 0                                                                                 |
+| queries               | 0                                                                                 |
+| dist_queries          | 0                                                                                 |
+| workers_total         | 80                                                                                |
+| workers_active        | 6                                                                                 |
+| workers_clients       | 6                                                                                 |
+| workers_clients_vip   | 0                                                                                 |
+| work_queue_length     | 16                                                                                |
+| query_wall            | 0.000                                                                             |
+| query_cpu             | OFF                                                                               |
+| dist_wall             | 0.000                                                                             |
+| dist_local            | 0.000                                                                             |
+| dist_wait             | 0.000                                                                             |
+| query_reads           | OFF                                                                               |
+| query_readkb          | OFF                                                                               |
+| query_readtime        | OFF                                                                               |
+| avg_query_wall        | 0.000                                                                             |
+| avg_query_cpu         | OFF                                                                               |
+| avg_dist_wall         | 0.000                                                                             |
+| avg_dist_local        | 0.000                                                                             |
+| avg_dist_wait         | 0.000                                                                             |
+| avg_query_reads       | OFF                                                                               |
+| avg_query_readkb      | OFF                                                                               |
+| avg_query_readtime    | OFF                                                                               |
+| qcache_max_bytes      | 16777216                                                                          |
+| qcache_thresh_msec    | 3000                                                                              |
+| qcache_ttl_sec        | 60                                                                                |
+| qcache_cached_queries | 0                                                                                 |
+| qcache_used_bytes     | 0                                                                                 |
+| qcache_hits           | 0                                                                                 |
++-----------------------+-----------------------------------------------------------------------------------+
+56 rows in set (0.000 sec)
+
+MySQL [(none)]> show status;
++-----------------------+-----------------------------------------------------------------------------------+
+| Counter               | Value                                                                             |
++-----------------------+-----------------------------------------------------------------------------------+
+| uptime                | 46                                                                                |
+| connections           | 8                                                                                 |
+| maxed_out             | 0                                                                                 |
+| version               | 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624) |
+| mysql_version         | 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624) |
+| command_search        | 0                                                                                 |
+| command_excerpt       | 0                                                                                 |
+| command_update        | 0                                                                                 |
+| command_keywords      | 0                                                                                 |
+| command_persist       | 0                                                                                 |
+| command_status        | 143                                                                               |
+| command_flushattrs    | 0                                                                                 |
+| command_sphinxql      | 0                                                                                 |
+| command_ping          | 0                                                                                 |
+| command_delete        | 0                                                                                 |
+| command_set           | 0                                                                                 |
+| command_insert        | 0                                                                                 |
+| command_replace       | 0                                                                                 |
+| command_commit        | 0                                                                                 |
+| command_suggest       | 0                                                                                 |
+| command_json          | 0                                                                                 |
+| command_callpq        | 0                                                                                 |
+| command_cluster       | 0                                                                                 |
+| command_getfield      | 0                                                                                 |
+| agent_connect         | 4                                                                                 |
+| agent_tfo             | 0                                                                                 |
+| agent_retry           | 0                                                                                 |
+| queries               | 0                                                                                 |
+| dist_queries          | 0                                                                                 |
+| workers_total         | 80                                                                                |
+| workers_active        | 5                                                                                 |
+| workers_clients       | 5                                                                                 |
+| workers_clients_vip   | 0                                                                                 |
+| work_queue_length     | 15                                                                                |
+| query_wall            | 0.000                                                                             |
+| query_cpu             | OFF                                                                               |
+| dist_wall             | 0.000                                                                             |
+| dist_local            | 0.000                                                                             |
+| dist_wait             | 0.000                                                                             |
+| query_reads           | OFF                                                                               |
+| query_readkb          | OFF                                                                               |
+| query_readtime        | OFF                                                                               |
+| avg_query_wall        | 0.000                                                                             |
+| avg_query_cpu         | OFF                                                                               |
+| avg_dist_wall         | 0.000                                                                             |
+| avg_dist_local        | 0.000                                                                             |
+| avg_dist_wait         | 0.000                                                                             |
+| avg_query_reads       | OFF                                                                               |
+| avg_query_readkb      | OFF                                                                               |
+| avg_query_readtime    | OFF                                                                               |
+| qcache_max_bytes      | 16777216                                                                          |
+| qcache_thresh_msec    | 3000                                                                              |
+| qcache_ttl_sec        | 60                                                                                |
+| qcache_cached_queries | 0                                                                                 |
+| qcache_used_bytes     | 0                                                                                 |
+| qcache_hits           | 0                                                                                 |
++-----------------------+-----------------------------------------------------------------------------------+
+56 rows in set (0.000 sec)
+
+MySQL [(none)]> show status;
++-----------------------+-----------------------------------------------------------------------------------+
+| Counter               | Value                                                                             |
++-----------------------+-----------------------------------------------------------------------------------+
+| uptime                | 58                                                                                |
+| connections           | 10                                                                                |
+| maxed_out             | 0                                                                                 |
+| version               | 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624) |
+| mysql_version         | 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624) |
+| command_search        | 0                                                                                 |
+| command_excerpt       | 0                                                                                 |
+| command_update        | 0                                                                                 |
+| command_keywords      | 0                                                                                 |
+| command_persist       | 0                                                                                 |
+| command_status        | 201                                                                               |
+| command_flushattrs    | 0                                                                                 |
+| command_sphinxql      | 0                                                                                 |
+| command_ping          | 0                                                                                 |
+| command_delete        | 0                                                                                 |
+| command_set           | 0                                                                                 |
+| command_insert        | 0                                                                                 |
+| command_replace       | 0                                                                                 |
+| command_commit        | 0                                                                                 |
+| command_suggest       | 0                                                                                 |
+| command_json          | 0                                                                                 |
+| command_callpq        | 0                                                                                 |
+| command_cluster       | 0                                                                                 |
+| command_getfield      | 0                                                                                 |
+| agent_connect         | 4                                                                                 |
+| agent_tfo             | 0                                                                                 |
+| agent_retry           | 0                                                                                 |
+| queries               | 0                                                                                 |
+| dist_queries          | 0                                                                                 |
+| workers_total         | 80                                                                                |
+| workers_active        | 6                                                                                 |
+| workers_clients       | 6                                                                                 |
+| workers_clients_vip   | 0                                                                                 |
+| work_queue_length     | 16                                                                                |
+| query_wall            | 0.000                                                                             |
+| query_cpu             | OFF                                                                               |
+| dist_wall             | 0.000                                                                             |
+| dist_local            | 0.000                                                                             |
+| dist_wait             | 0.000                                                                             |
+| query_reads           | OFF                                                                               |
+| query_readkb          | OFF                                                                               |
+| query_readtime        | OFF                                                                               |
+| avg_query_wall        | 0.000                                                                             |
+| avg_query_cpu         | OFF                                                                               |
+| avg_dist_wall         | 0.000                                                                             |
+| avg_dist_local        | 0.000                                                                             |
+| avg_dist_wait         | 0.000                                                                             |
+| avg_query_reads       | OFF                                                                               |
+| avg_query_readkb      | OFF                                                                               |
+| avg_query_readtime    | OFF                                                                               |
+| qcache_max_bytes      | 16777216                                                                          |
+| qcache_thresh_msec    | 3000                                                                              |
+| qcache_ttl_sec        | 60                                                                                |
+| qcache_cached_queries | 0                                                                                 |
+| qcache_used_bytes     | 0                                                                                 |
+| qcache_hits           | 0                                                                                 |
++-----------------------+-----------------------------------------------------------------------------------+
+56 rows in set (0.000 sec)
+
+MySQL [(none)]> exit
+Bye
+root@bdb:/etc/manticoresearch#
+root@bdb:/var/log/manticore# gzip searchd.log
+
+root@bdb:/var/log/manticore# systemctl stop manticore
+root@bdb:/var/log/manticore# systemctl start manticore
+root@bdb:/var/log/manticore# mysql -P9306 -h0
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1
+Server version: 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624) git branch HEAD (no branch)
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> show status;
++-----------------------+-----------------------------------------------------------------------------------+
+| Counter               | Value                                                                             |
++-----------------------+-----------------------------------------------------------------------------------+
+| uptime                | 9                                                                                 |
+| connections           | 1                                                                                 |
+| maxed_out             | 0                                                                                 |
+| version               | 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624) |
+| mysql_version         | 5.0.3 03652ac3d@220630 dev (columnar  c369369@220624) (secondary  c369369@220624) |
+| command_search        | 0                                                                                 |
+| command_excerpt       | 0                                                                                 |
+| command_update        | 0                                                                                 |
+| command_keywords      | 0                                                                                 |
+| command_persist       | 0                                                                                 |
+| command_status        | 1                                                                                 |
+| command_flushattrs    | 0                                                                                 |
+| command_sphinxql      | 0                                                                                 |
+| command_ping          | 0                                                                                 |
+| command_delete        | 0                                                                                 |
+| command_set           | 0                                                                                 |
+| command_insert        | 0                                                                                 |
+| command_replace       | 0                                                                                 |
+| command_commit        | 0                                                                                 |
+| command_suggest       | 0                                                                                 |
+| command_json          | 0                                                                                 |
+| command_callpq        | 0                                                                                 |
+| command_cluster       | 0                                                                                 |
+| command_getfield      | 0                                                                                 |
+| agent_connect         | 0                                                                                 |
+| agent_tfo             | 0                                                                                 |
+| agent_retry           | 0                                                                                 |
+| queries               | 0                                                                                 |
+| dist_queries          | 0                                                                                 |
+| workers_total         | 80                                                                                |
+| workers_active        | 1                                                                                 |
+| workers_clients       | 1                                                                                 |
+| workers_clients_vip   | 0                                                                                 |
+| work_queue_length     | 11                                                                                |
+| query_wall            | 0.000                                                                             |
+| query_cpu             | OFF                                                                               |
+| dist_wall             | 0.000                                                                             |
+| dist_local            | 0.000                                                                             |
+| dist_wait             | 0.000                                                                             |
+| query_reads           | OFF                                                                               |
+| query_readkb          | OFF                                                                               |
+| query_readtime        | OFF                                                                               |
+| avg_query_wall        | 0.000                                                                             |
+| avg_query_cpu         | OFF                                                                               |
+| avg_dist_wall         | 0.000                                                                             |
+| avg_dist_local        | 0.000                                                                             |
+| avg_dist_wait         | 0.000                                                                             |
+| avg_query_reads       | OFF                                                                               |
+| avg_query_readkb      | OFF                                                                               |
+| avg_query_readtime    | OFF                                                                               |
+| qcache_max_bytes      | 16777216                                                                          |
+| qcache_thresh_msec    | 3000                                                                              |
+| qcache_ttl_sec        | 60                                                                                |
+| qcache_cached_queries | 0                                                                                 |
+| qcache_used_bytes     | 0                                                                                 |
+| qcache_hits           | 0                                                                                 |
++-----------------------+-----------------------------------------------------------------------------------+
+56 rows in set (0.000 sec)
+
