@@ -1,0 +1,747 @@
+
+
+
+
+<!DOCTYPE html>
+<html class="with-top-bar " lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<title>manual: breaking changes (513ee45b) · Commits · manticoresearch / Manticore Search · GitLab</title>
+<script nonce="u8WXLalflmgHG42Cz/nERQ==">
+//<![CDATA[
+window.gon={};gon.features={"ciGraphqlPipelineMiniGraph":false};
+//]]>
+</script>
+<script nonce="u8WXLalflmgHG42Cz/nERQ==">
+//<![CDATA[
+window.uploads_path = "/manticoresearch/dev/uploads";
+
+
+
+//]]>
+</script>
+
+
+
+<link rel="stylesheet" href="/assets/themes/theme_indigo-248c7f43888b008d4115f95ed61396e20549f30798c4fb5a2f8f31b9b00b187d.css" />
+
+<link rel="stylesheet" href="/assets/application-aeaf3a8557f5918568f8085b6ec1fe827c4700fc38a2fb4d32e70f2da2d274fe.css" media="all" />
+<link rel="stylesheet" href="/assets/page_bundles/pipelines-7f9cb5a410ab52072e5018c8f0fdce0ee880ffbc08f887d83763a3c1c6c2ccfe.css" media="all" />
+<link rel="stylesheet" href="/assets/application_utilities-5835307033691764f768a78c75aee2fe93099cc497f1eaa02846a6a62cf77de7.css" media="all" />
+
+
+<link rel="stylesheet" href="/assets/fonts-171e1863d044918ea3bbaacf2a559ccaac603904aa851c3add5b714fa7066468.css" media="all" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-798c2d2c1560fb1734a7653f984135b2ce22a62aa9b46f914905648669930db1.css" media="all" />
+
+<script src="/assets/webpack/runtime.35fc58f1.bundle.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/main.f4829faa.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/tracker.b102e742.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script nonce="u8WXLalflmgHG42Cz/nERQ==">
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"snowplow.trx.gitlab.net","cookieDomain":".gitlab.com","appId":"gitlab","formTracking":true,"linkClickTracking":true}
+
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-0-9","data":{"environment":"production","source":"gitlab-rails","plan":"free","extra":{"new_nav":true},"user_id":2801001,"namespace_id":1843808,"project_id":3858465,"context_generated_at":"2023-08-27T07:26:38.791Z"}}
+gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace1843808/project3858465/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44";
+
+
+//]]>
+</script>
+<link rel="preload" href="/assets/application_utilities-5835307033691764f768a78c75aee2fe93099cc497f1eaa02846a6a62cf77de7.css" as="style" type="text/css" nonce="5MKNr3GoMP5lk4UtQ7p1sg==">
+<link rel="preload" href="/assets/application-aeaf3a8557f5918568f8085b6ec1fe827c4700fc38a2fb4d32e70f2da2d274fe.css" as="style" type="text/css" nonce="5MKNr3GoMP5lk4UtQ7p1sg==">
+<link rel="preload" href="/assets/highlight/themes/white-798c2d2c1560fb1734a7653f984135b2ce22a62aa9b46f914905648669930db1.css" as="style" type="text/css" nonce="5MKNr3GoMP5lk4UtQ7p1sg==">
+<link crossorigin="" href="https://snowplow.trx.gitlab.net" rel="preconnect">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-1e0a5107ea3bbd4be93e8ad2c503467e43166cd37e4293570b490e0812ede98b.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-08d2c5e8ff8fd3d2d6ec55bc7713380f8981c35f9d2df14e12b835464d6e8f23.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-38e58d8df29485a20c550da1d0111e2c2169f6dcbcf894f2cd3afbdd97bcc588.woff2" rel="preload">
+<link rel="preload" href="/assets/fonts-171e1863d044918ea3bbaacf2a559ccaac603904aa851c3add5b714fa7066468.css" as="style" type="text/css" nonce="5MKNr3GoMP5lk4UtQ7p1sg==">
+
+
+
+<script src="/assets/webpack/sentry.745e3f5c.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+
+
+<script src="/assets/webpack/commons-pages.groups.new-pages.import.gitlab_projects.new-pages.import.manifest.new-pages.projects.n-4e5d09f9.a22db292.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.search.show-super_sidebar.0fd1d2bf.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/super_sidebar.3e4666be.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/shortcutsBundle.e8a8aa2a.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.groups.boards-pages.groups.details-pages.groups.epic_boards-pages.groups.show-pages.gr-78052651.26012a06.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-initGFMInput-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.new-pages.gro-bbf4c1ee.5b29d699.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.new-pages.groups.epics.sho-33fb4601.65d91a6c.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.new-pages.groups.epics.sho-4c355841.249ff6aa.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.new-pages.groups.epics.sho-0ea214e2.add0dcdc.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.new-pages.groups.epics.sho-4294181f.b5a4f8bf.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.show-pages.groups.mileston-72cf072c.a2b93a41.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.groups.epics.show-pages.groups.milestones.edit-pages.groups.milestones.new-pages.group-b6561599.22b84fa5.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/29.0a432826.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.groups.wikis.diff-pages.projects.commit.show-pages.projects.compare.show-pages.project-51583eca.9c77ccb0.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.projects.commit.show-pages.projects.snippets.show-pages.snippets.show.31aa9ad7.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/commons-pages.projects.commit.pipelines-pages.projects.commit.show.23221c70.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<script src="/assets/webpack/pages.projects.commit.show.541ab22a.chunk.js" defer="defer" nonce="u8WXLalflmgHG42Cz/nERQ=="></script>
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="manual: breaking changes (513ee45b) · Commits · manticoresearch / Manticore Search · GitLab" property="og:title">
+<meta content="Manticore Search Engine" property="og:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/3858465/download.jpg" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.com/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="manual: breaking changes (513ee45b) · Commits · manticoresearch / Manticore Search · GitLab" property="twitter:title">
+<meta content="Manticore Search Engine" property="twitter:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/3858465/download.jpg" property="twitter:image">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="iMC-0IeqAfVbOyOxrw2lcLHHVRYgL05uJyy20g5MjzbqMIKQvI_mjLVPcY6V6jHOShxzCZd814-EMtsSZ4WhpA" />
+<meta name="csp-nonce" content="u8WXLalflmgHG42Cz/nERQ==" />
+<meta name="action-cable-url" content="/-/cable" />
+<link href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+
+
+
+
+<meta content="Manticore Search Engine" name="description">
+<meta content="#222261" name="theme-color">
+</head>
+
+<body class="ui-indigo tab-width-8 gl-browser-generic gl-platform-other" data-find-file="/manticoresearch/dev/-/find_file/513ee45ba2a5b05974d59ff03c64222fe3808d44" data-group="manticoresearch" data-group-full-path="manticoresearch" data-namespace-id="1843808" data-page="projects:commit:show" data-page-type-id="513ee45ba2a5b05974d59ff03c64222fe3808d44" data-project="dev" data-project-id="3858465">
+<script nonce="u8WXLalflmgHG42Cz/nERQ==">
+//<![CDATA[
+gl = window.gl || {};
+gl.GfmAutoComplete = gl.GfmAutoComplete || {};
+gl.GfmAutoComplete.dataSources = {"members":"/manticoresearch/dev/-/autocomplete_sources/members?type=Commit\u0026type_id=513ee45ba2a5b05974d59ff03c64222fe3808d44","issues":"/manticoresearch/dev/-/autocomplete_sources/issues","mergeRequests":"/manticoresearch/dev/-/autocomplete_sources/merge_requests","labels":"/manticoresearch/dev/-/autocomplete_sources/labels?type=Commit\u0026type_id=513ee45ba2a5b05974d59ff03c64222fe3808d44","milestones":"/manticoresearch/dev/-/autocomplete_sources/milestones","commands":"/manticoresearch/dev/-/autocomplete_sources/commands?type=Commit\u0026type_id=513ee45ba2a5b05974d59ff03c64222fe3808d44","snippets":"/manticoresearch/dev/-/autocomplete_sources/snippets","contacts":"/manticoresearch/dev/-/autocomplete_sources/contacts?type=Commit\u0026type_id=513ee45ba2a5b05974d59ff03c64222fe3808d44"};
+
+
+//]]>
+</script>
+<script nonce="u8WXLalflmgHG42Cz/nERQ==">
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isGeneric":true,"isOther":true};
+
+
+//]]>
+</script>
+
+
+
+<style>
+  body {
+    --header-height: 0px;
+  }
+</style>
+<div class="layout-page hide-when-top-nav-responsive-open page-with-super-sidebar">
+<aside class="js-super-sidebar super-sidebar super-sidebar-loading" data-command-palette="{&quot;project_files_url&quot;:&quot;/manticoresearch/dev/-/files/master?format=json&quot;,&quot;project_blob_url&quot;:&quot;/manticoresearch/dev/-/blob/master&quot;}" data-force-desktop-expanded-sidebar="" data-root-path="/" data-sidebar="{&quot;is_logged_in&quot;:true,&quot;context_switcher_links&quot;:[{&quot;title&quot;:&quot;Your work&quot;,&quot;link&quot;:&quot;/&quot;,&quot;icon&quot;:&quot;work&quot;},{&quot;title&quot;:&quot;Explore&quot;,&quot;link&quot;:&quot;/explore&quot;,&quot;icon&quot;:&quot;compass&quot;}],&quot;current_menu_items&quot;:[{&quot;id&quot;:&quot;project_overview&quot;,&quot;title&quot;:&quot;Project overview&quot;,&quot;icon&quot;:&quot;project&quot;,&quot;link&quot;:&quot;/manticoresearch/dev&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project rspec-project-link&quot;,&quot;is_active&quot;:false},{&quot;title&quot;:&quot;Manage&quot;,&quot;icon&quot;:&quot;users&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/activity&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;activity&quot;,&quot;title&quot;:&quot;Activity&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/activity&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project-activity&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;members&quot;,&quot;title&quot;:&quot;Members&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/project_members&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;labels&quot;,&quot;title&quot;:&quot;Labels&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/labels&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Plan&quot;,&quot;icon&quot;:&quot;planning&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/issues&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;project_issue_list&quot;,&quot;title&quot;:&quot;Issues&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/issues&quot;,&quot;pill_count&quot;:&quot;753&quot;,&quot;link_classes&quot;:&quot;shortcuts-issues has-sub-items&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;boards&quot;,&quot;title&quot;:&quot;Issue boards&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/boards&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-issue-boards&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;milestones&quot;,&quot;title&quot;:&quot;Milestones&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/milestones&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_wiki&quot;,&quot;title&quot;:&quot;Wiki&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/wikis/home&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-wiki&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Code&quot;,&quot;icon&quot;:&quot;code&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/merge_requests&quot;,&quot;is_active&quot;:true,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;project_merge_request_list&quot;,&quot;title&quot;:&quot;Merge requests&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/merge_requests&quot;,&quot;pill_count&quot;:&quot;1&quot;,&quot;link_classes&quot;:&quot;shortcuts-merge_requests&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;files&quot;,&quot;title&quot;:&quot;Repository&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/tree/513ee45ba2a5b05974d59ff03c64222fe3808d44&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-tree&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;branches&quot;,&quot;title&quot;:&quot;Branches&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/branches&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;commits&quot;,&quot;title&quot;:&quot;Commits&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/commits/513ee45ba2a5b05974d59ff03c64222fe3808d44&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-commits&quot;,&quot;is_active&quot;:true},{&quot;id&quot;:&quot;tags&quot;,&quot;title&quot;:&quot;Tags&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/tags&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;graphs&quot;,&quot;title&quot;:&quot;Repository graph&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/network/513ee45ba2a5b05974d59ff03c64222fe3808d44&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-network&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;compare&quot;,&quot;title&quot;:&quot;Compare revisions&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/compare?from=master\u0026to=513ee45ba2a5b05974d59ff03c64222fe3808d44&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_snippets&quot;,&quot;title&quot;:&quot;Snippets&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/snippets&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-snippets&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Build&quot;,&quot;icon&quot;:&quot;rocket&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipelines&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;pipelines&quot;,&quot;title&quot;:&quot;Pipelines&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipelines&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-pipelines&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;jobs&quot;,&quot;title&quot;:&quot;Jobs&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/jobs&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pipelines_editor&quot;,&quot;title&quot;:&quot;Pipeline editor&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/ci/editor?branch_name=513ee45ba2a5b05974d59ff03c64222fe3808d44&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pipeline_schedules&quot;,&quot;title&quot;:&quot;Pipeline schedules&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipeline_schedules&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;artifacts&quot;,&quot;title&quot;:&quot;Artifacts&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/artifacts&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Secure&quot;,&quot;icon&quot;:&quot;shield&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/audit_events&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;audit_events&quot;,&quot;title&quot;:&quot;Audit events&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/audit_events&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;configuration&quot;,&quot;title&quot;:&quot;Security configuration&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/security/configuration&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Deploy&quot;,&quot;icon&quot;:&quot;deployments&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/releases&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;releases&quot;,&quot;title&quot;:&quot;Releases&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/releases&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-deployments-releases&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;feature_flags&quot;,&quot;title&quot;:&quot;Feature flags&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/feature_flags&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-feature-flags&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;container_registry&quot;,&quot;title&quot;:&quot;Container Registry&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/container_registry&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pages&quot;,&quot;title&quot;:&quot;Pages&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/pages&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Operate&quot;,&quot;icon&quot;:&quot;cloud-pod&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/environments&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;environments&quot;,&quot;title&quot;:&quot;Environments&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/environments&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-environments&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;kubernetes&quot;,&quot;title&quot;:&quot;Kubernetes clusters&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/clusters&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-kubernetes&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;terraform_states&quot;,&quot;title&quot;:&quot;Terraform states&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/terraform&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;google_cloud&quot;,&quot;title&quot;:&quot;Google Cloud&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/google_cloud/configuration&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:&quot;monitor&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/error_tracking&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;error_tracking&quot;,&quot;title&quot;:&quot;Error Tracking&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/error_tracking&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;alert_management&quot;,&quot;title&quot;:&quot;Alerts&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/alert_management&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;incidents&quot;,&quot;title&quot;:&quot;Incidents&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/incidents&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;service_desk&quot;,&quot;title&quot;:&quot;Service Desk&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/issues/service_desk&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Analyze&quot;,&quot;icon&quot;:&quot;chart&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/value_stream_analytics&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;cycle_analytics&quot;,&quot;title&quot;:&quot;Value stream analytics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/value_stream_analytics&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project-cycle-analytics&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;contributors&quot;,&quot;title&quot;:&quot;Contributor statistics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/graphs/513ee45ba2a5b05974d59ff03c64222fe3808d44&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;ci_cd_analytics&quot;,&quot;title&quot;:&quot;CI/CD analytics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipelines/charts&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;repository_analytics&quot;,&quot;title&quot;:&quot;Repository analytics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/graphs/513ee45ba2a5b05974d59ff03c64222fe3808d44/charts&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-repository-charts&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;model_experiments&quot;,&quot;title&quot;:&quot;Model experiments&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/ml/experiments&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Settings&quot;,&quot;icon&quot;:&quot;settings&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/edit&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;general&quot;,&quot;title&quot;:&quot;General&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/edit&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;integrations&quot;,&quot;title&quot;:&quot;Integrations&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/integrations&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;webhooks&quot;,&quot;title&quot;:&quot;Webhooks&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/hooks&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;access_tokens&quot;,&quot;title&quot;:&quot;Access Tokens&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/access_tokens&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;repository&quot;,&quot;title&quot;:&quot;Repository&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/repository&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;merge_request_settings&quot;,&quot;title&quot;:&quot;Merge requests&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/merge_requests&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;ci_cd&quot;,&quot;title&quot;:&quot;CI/CD&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/ci_cd&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;packages_and_registries&quot;,&quot;title&quot;:&quot;Packages and registries&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/packages_and_registries&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;monitor&quot;,&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/operations&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;usage_quotas&quot;,&quot;title&quot;:&quot;Usage Quotas&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/usage_quotas&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:true}],&quot;current_context_header&quot;:{&quot;title&quot;:&quot;Manticore Search&quot;,&quot;avatar&quot;:&quot;/uploads/-/system/project/avatar/3858465/download.jpg&quot;,&quot;id&quot;:3858465},&quot;support_path&quot;:&quot;https://about.gitlab.com/get-help/&quot;,&quot;display_whats_new&quot;:true,&quot;whats_new_most_recent_release_items_count&quot;:5,&quot;whats_new_version_digest&quot;:&quot;4ecbf57547986d3149a533d5ec774acc5c461a1f1c1675d73c8b48d00bc27827&quot;,&quot;show_version_check&quot;:false,&quot;gitlab_version&quot;:{&quot;major&quot;:16,&quot;minor&quot;:4,&quot;patch&quot;:0,&quot;suffix_s&quot;:&quot;&quot;},&quot;gitlab_version_check&quot;:{&quot;latest_stable_versions&quot;:[],&quot;latest_version&quot;:&quot;16.3.0&quot;,&quot;severity&quot;:&quot;success&quot;,&quot;critical_vulnerability&quot;:false,&quot;details&quot;:&quot;&quot;},&quot;search&quot;:{&quot;search_path&quot;:&quot;/search&quot;,&quot;issues_path&quot;:&quot;/dashboard/issues&quot;,&quot;mr_path&quot;:&quot;/dashboard/merge_requests&quot;,&quot;autocomplete_path&quot;:&quot;/search/autocomplete&quot;,&quot;search_context&quot;:{&quot;group&quot;:{&quot;id&quot;:1843808,&quot;name&quot;:&quot;manticoresearch&quot;,&quot;full_name&quot;:&quot;manticoresearch&quot;},&quot;group_metadata&quot;:{&quot;issues_path&quot;:&quot;/groups/manticoresearch/-/issues&quot;,&quot;mr_path&quot;:&quot;/groups/manticoresearch/-/merge_requests&quot;},&quot;project&quot;:{&quot;id&quot;:3858465,&quot;name&quot;:&quot;Manticore Search&quot;},&quot;project_metadata&quot;:{&quot;mr_path&quot;:&quot;/manticoresearch/dev/-/merge_requests&quot;,&quot;issues_path&quot;:&quot;/manticoresearch/dev/-/issues&quot;},&quot;code_search&quot;:true,&quot;ref&quot;:&quot;513ee45ba2a5b05974d59ff03c64222fe3808d44&quot;,&quot;scope&quot;:null,&quot;for_snippets&quot;:null}},&quot;panel_type&quot;:&quot;project&quot;,&quot;name&quot;:&quot;manticore_bot&quot;,&quot;username&quot;:&quot;manticore_bot&quot;,&quot;avatar_url&quot;:&quot;https://secure.gravatar.com/avatar/e5d8eaba32898b9b901210d0d5a8c383?s=80\u0026d=identicon&quot;,&quot;has_link_to_profile&quot;:true,&quot;link_to_profile&quot;:&quot;/manticore_bot&quot;,&quot;logo_url&quot;:null,&quot;status&quot;:{&quot;can_update&quot;:true,&quot;busy&quot;:null,&quot;customized&quot;:null,&quot;availability&quot;:&quot;&quot;,&quot;emoji&quot;:null,&quot;message_html&quot;:null,&quot;message&quot;:null,&quot;clear_after&quot;:null},&quot;settings&quot;:{&quot;has_settings&quot;:true,&quot;profile_path&quot;:&quot;/-/profile&quot;,&quot;profile_preferences_path&quot;:&quot;/-/profile/preferences&quot;},&quot;user_counts&quot;:{&quot;assigned_issues&quot;:0,&quot;assigned_merge_requests&quot;:0,&quot;review_requested_merge_requests&quot;:0,&quot;todos&quot;:0,&quot;last_update&quot;:1693121198869},&quot;can_sign_out&quot;:true,&quot;sign_out_link&quot;:&quot;/users/sign_out&quot;,&quot;issues_dashboard_path&quot;:&quot;/dashboard/issues?assignee_username=manticore_bot&quot;,&quot;todos_dashboard_path&quot;:&quot;/dashboard/todos&quot;,&quot;create_new_menu_groups&quot;:[{&quot;name&quot;:&quot;In this project&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New issue&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/issues/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_issue&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_issue&quot;}},{&quot;text&quot;:&quot;New merge request&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/merge_requests/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_mr&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_mr&quot;}},{&quot;text&quot;:&quot;New snippet&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/snippets/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_snippet&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_snippet&quot;}},{&quot;text&quot;:&quot;Invite members&quot;,&quot;href&quot;:null,&quot;component&quot;:&quot;invite_members&quot;,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;invite&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;invite&quot;}}]},{&quot;name&quot;:&quot;In GitLab&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New project/repository&quot;,&quot;href&quot;:&quot;/projects/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_project&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_project&quot;}},{&quot;text&quot;:&quot;New group&quot;,&quot;href&quot;:&quot;/groups/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_group&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_group&quot;}},{&quot;text&quot;:&quot;New snippet&quot;,&quot;href&quot;:&quot;/-/snippets/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_snippet&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_snippet&quot;}}]}],&quot;merge_request_menu&quot;:[{&quot;name&quot;:&quot;Merge requests&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;Assigned&quot;,&quot;href&quot;:&quot;/dashboard/merge_requests?assignee_username=manticore_bot&quot;,&quot;count&quot;:0,&quot;userCount&quot;:&quot;assigned_merge_requests&quot;,&quot;extraAttrs&quot;:{&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-label&quot;:&quot;merge_requests_assigned&quot;,&quot;data-track-property&quot;:&quot;nav_core_menu&quot;,&quot;class&quot;:&quot;dashboard-shortcuts-merge_requests&quot;}},{&quot;text&quot;:&quot;Review requests&quot;,&quot;href&quot;:&quot;/dashboard/merge_requests?reviewer_username=manticore_bot&quot;,&quot;count&quot;:0,&quot;userCount&quot;:&quot;review_requested_merge_requests&quot;,&quot;extraAttrs&quot;:{&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-label&quot;:&quot;merge_requests_to_review&quot;,&quot;data-track-property&quot;:&quot;nav_core_menu&quot;,&quot;class&quot;:&quot;dashboard-shortcuts-review_requests&quot;}}]}],&quot;projects_path&quot;:&quot;/dashboard/projects&quot;,&quot;groups_path&quot;:&quot;/dashboard/groups&quot;,&quot;gitlab_com_but_not_canary&quot;:true,&quot;gitlab_com_and_canary&quot;:null,&quot;canary_toggle_com_url&quot;:&quot;https://next.gitlab.com&quot;,&quot;current_context&quot;:{&quot;namespace&quot;:&quot;projects&quot;,&quot;item&quot;:{&quot;id&quot;:3858465,&quot;name&quot;:&quot;Manticore Search&quot;,&quot;namespace&quot;:&quot;manticoresearch / Manticore Search&quot;,&quot;webUrl&quot;:&quot;/manticoresearch/dev&quot;,&quot;avatarUrl&quot;:&quot;/uploads/-/system/project/avatar/3858465/download.jpg&quot;}},&quot;pinned_items&quot;:[&quot;project_issue_list&quot;,&quot;project_merge_request_list&quot;],&quot;update_pins_url&quot;:&quot;/-/users/pins&quot;,&quot;is_impersonating&quot;:false,&quot;stop_impersonation_path&quot;:&quot;/admin/impersonation&quot;,&quot;shortcut_links&quot;:[{&quot;title&quot;:&quot;Milestones&quot;,&quot;href&quot;:&quot;/dashboard/milestones&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-milestones&quot;},{&quot;title&quot;:&quot;Snippets&quot;,&quot;href&quot;:&quot;/dashboard/snippets&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-snippets&quot;},{&quot;title&quot;:&quot;Activity&quot;,&quot;href&quot;:&quot;/dashboard/activity&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-activity&quot;},{&quot;title&quot;:&quot;Create a new issue&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/issues/new&quot;,&quot;css_class&quot;:&quot;shortcuts-new-issue&quot;}],&quot;show_tanuki_bot&quot;:false,&quot;trial&quot;:{&quot;has_start_trial&quot;:false,&quot;url&quot;:&quot;/-/trials/new?glm_content=top-right-dropdown\u0026glm_source=gitlab.com&quot;}}" data-toggle-new-nav-endpoint="/-/profile/preferences"></aside>
+<div data-version-digest="4ecbf57547986d3149a533d5ec774acc5c461a1f1c1675d73c8b48d00bc27827" id="whats-new-app"></div>
+
+<div class="content-wrapper">
+<div class="mobile-overlay"></div>
+
+<div class="alert-wrapper gl-force-block-formatting-context">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top-bar-fixed container-fluid" data-testid="top-bar">
+<div class="top-bar-container gl-display-flex gl-align-items-center gl-gap-2">
+<button class="gl-button btn btn-icon btn-md btn-default btn-default-tertiary js-super-sidebar-toggle-expand super-sidebar-toggle gl-ml-n3" title="Expand sidebar" aria-controls="super-sidebar" aria-expanded="false" aria-label="Navigation sidebar" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="sidebar-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#sidebar"></use></svg>
+
+</button>
+<nav aria-label="Breadcrumbs" class="breadcrumbs" data-qa-selector="breadcrumb_links_content" data-testid="breadcrumb-links">
+<ul class="list-unstyled breadcrumbs-list js-breadcrumbs-list">
+<li><a class="group-path breadcrumb-item-text js-breadcrumb-item-text " href="/manticoresearch"><img alt="manticoresearch" class="avatar-tile lazy" width="15" height="15" data-src="/uploads/-/system/group/avatar/1843808/manticore-logo-central.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />manticoresearch</a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#chevron-lg-right"></use></svg></li> <li><a href="/manticoresearch/dev"><img alt="Manticore Search" class="avatar-tile lazy" width="15" height="15" data-src="/uploads/-/system/project/avatar/3858465/download.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="breadcrumb-item-text js-breadcrumb-item-text">Manticore Search</span></a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#chevron-lg-right"></use></svg></li>
+<li><a href="/manticoresearch/dev/-/commits/513ee45ba2a5b05974d59ff03c64222fe3808d44">Commits</a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#chevron-lg-right"></use></svg></li>
+
+<li data-qa-selector="breadcrumb_current_link" data-testid="breadcrumb-current-link">
+<a href="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44">513ee45b</a>
+</li>
+</ul>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"manticoresearch","item":"https://gitlab.com/manticoresearch"},{"@type":"ListItem","position":2,"name":"Manticore Search","item":"https://gitlab.com/manticoresearch/dev"},{"@type":"ListItem","position":3,"name":"Commits","item":"https://gitlab.com/manticoresearch/dev/-/commits/513ee45ba2a5b05974d59ff03c64222fe3808d44"},{"@type":"ListItem","position":4,"name":"513ee45b","item":"https://gitlab.com/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44"}]}
+
+</script>
+</nav>
+
+
+
+</div>
+</div>
+
+</div>
+<div class=" project-highlight-puc">
+<main class="content" id="content-body" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+<div class="flash-container flash-container-page sticky" data-qa-selector="flash_container">
+</div>
+
+
+<div class="js-invite-members-modal" data-access-levels="{&quot;Guest&quot;:10,&quot;Reporter&quot;:20,&quot;Developer&quot;:30,&quot;Maintainer&quot;:40}" data-default-access-level="10" data-full-path="manticoresearch/dev" data-help-link="https://gitlab.com/help/user/permissions" data-id="3858465" data-is-project="true" data-name="Manticore Search" data-reload-page-on-submit="false" data-root-id="1843808"></div>
+
+
+<div class="container-fluid container-limited">
+<div class="page-content-header">
+<div class="header-main-content">
+
+<strong>
+Commit
+<span class="commit-sha" data-qa-selector="commit_sha_content">513ee45b</span>
+</strong>
+<button class="btn btn-clipboard gl-button btn-default-tertiary btn-icon btn-sm" data-toggle="tooltip" data-placement="bottom" data-container="body" data-clipboard-text="513ee45ba2a5b05974d59ff03c64222fe3808d44" type="button" title="Copy commit SHA" aria-label="Copy commit SHA" aria-live="polite"><svg class="s16 gl-icon" data-testid="copy-to-clipboard-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#copy-to-clipboard"></use></svg></button>
+<span class="d-none d-sm-inline">authored</span>
+<time class="js-timeago" title="Jan 10, 2022 4:44am" datetime="2022-01-10T04:44:01Z" data-toggle="tooltip" data-placement="top" data-container="body">Jan 10, 2022</time>
+<span>by</span>
+<a href="/prostuda"><img alt="prostuda&#39;s avatar" src="https://secure.gravatar.com/avatar/9e7ef343aa21b73e606b06c3089a80a6?s=48&amp;d=identicon" class="avatar s24 d-none d-sm-inline-block" title="prostuda"></a>
+<strong>
+<a class="commit-author-link js-user-link" data-user-id="1515042" href="/prostuda"><span class="commit-author-name">prostuda</span></a>
+</strong>
+
+</div>
+<div data-comments-count="1" id="js-commit-comments-button"></div>
+<a class="gl-button btn btn-md btn-default gl-mr-3 gl-xs-w-full gl-xs-mb-3" href="/manticoresearch/dev/-/tree/513ee45ba2a5b05974d59ff03c64222fe3808d44"><span class="gl-button-text">
+Browse files
+</span>
+
+</a>
+<div data-can-cherry-pick="true" data-can-email-patches="true" data-can-revert="true" data-can-tag="true" data-email-patches-path="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44.patch" data-new-project-tag-path="/manticoresearch/dev/-/tags/new?ref=513ee45ba2a5b05974d59ff03c64222fe3808d44" data-plain-diff-path="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44.diff" id="js-commit-options-dropdown"></div>
+</div>
+<div class="commit-box" data-project-path="/manticoresearch/dev">
+<h3 class="commit-title">
+manual: breaking changes
+</h3>
+</div>
+<div class="info-well">
+<div class="well-segment">
+<div class="icon-container commit-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.876-1.008a4.002 4.002 0 0 1-7.752 0A1.01 1.01 0 0 1 4 9H1a1 1 0 1 1 0-2h3c.042 0 .083.003.124.008a4.002 4.002 0 0 1 7.752 0A1.01 1.01 0 0 1 12 7h3a1 1 0 0 1 0 2h-3a1.01 1.01 0 0 1-.124-.008z"/></svg>
+
+
+</div>
+<span class="cgray">parent</span>
+<a class="commit-sha" href="/manticoresearch/dev/-/commit/e472984810af6da8870df117cbaf915b0cc92381">e4729848</a>
+<div data-commit-sha="513ee45b" data-full-path="manticoresearch/dev" id="js-commit-branches-and-tags"></div>
+</div>
+<div class="well-segment merge-request-info">
+<div class="icon-container">
+<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="m5 5.563v4.875c1.024.4 1.75 1.397 1.75 2.563 0 1.519-1.231 2.75-2.75 2.75-1.519 0-2.75-1.231-2.75-2.75 0-1.166.726-2.162 1.75-2.563v-4.875c-1.024-.4-1.75-1.397-1.75-2.563 0-1.519 1.231-2.75 2.75-2.75 1.519 0 2.75 1.231 2.75 2.75 0 1.166-.726 2.162-1.75 2.563m-1 8.687c.69 0 1.25-.56 1.25-1.25 0-.69-.56-1.25-1.25-1.25-.69 0-1.25.56-1.25 1.25 0 .69.56 1.25 1.25 1.25m0-10c.69 0 1.25-.56 1.25-1.25 0-.69-.56-1.25-1.25-1.25-.69 0-1.25.56-1.25 1.25 0 .69.56 1.25 1.25 1.25"/><path d="m10.501 2c1.381.001 2.499 1.125 2.499 2.506v5.931c1.024.4 1.75 1.397 1.75 2.563 0 1.519-1.231 2.75-2.75 2.75-1.519 0-2.75-1.231-2.75-2.75 0-1.166.726-2.162 1.75-2.563v-5.931c0-.279-.225-.506-.499-.506v.926c0 .346-.244.474-.569.271l-2.952-1.844c-.314-.196-.325-.507 0-.71l2.952-1.844c.314-.196.569-.081.569.271v.93m1.499 12.25c.69 0 1.25-.56 1.25-1.25 0-.69-.56-1.25-1.25-1.25-.69 0-1.25.56-1.25 1.25 0 .69.56 1.25 1.25 1.25"/></svg>
+
+</div>
+<span class="commit-info merge-requests" data-project-commit-path="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44/merge_requests.json">
+<span class="gl-spinner-container gl-vertical-align-middle" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+</span>
+</div>
+<div class="well-segment pipeline-info">
+<div class="js-commit-pipeline-status" data-full-path="manticoresearch/dev" data-graphql-resource-etag="/api/graphql:pipelines/id/444417345" data-iid="5935"></div>
+Pipeline
+<a href="/manticoresearch/dev/-/pipelines/444417345">#444417345</a>
+canceled
+with stages
+<div class="js-commit-pipeline-mini-graph" data-full-path="manticoresearch/dev" data-graphql-resource-etag="/api/graphql:pipelines/id/444417345" data-iid="5935" data-stages="[{&quot;name&quot;:&quot;mirroring&quot;,&quot;title&quot;:&quot;mirroring: passed&quot;,&quot;status&quot;:{&quot;icon&quot;:&quot;status_success&quot;,&quot;text&quot;:&quot;passed&quot;,&quot;label&quot;:&quot;passed&quot;,&quot;group&quot;:&quot;success&quot;,&quot;tooltip&quot;:&quot;passed&quot;,&quot;has_details&quot;:true,&quot;details_path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345#mirroring&quot;,&quot;illustration&quot;:null,&quot;favicon&quot;:&quot;/assets/ci_favicons/favicon_status_success-8451333011eee8ce9f2ab25dc487fe24a8758c694827a582f17f42b0a90446a2.png&quot;},&quot;path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345#mirroring&quot;,&quot;dropdown_path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345/stage.json?stage=mirroring&quot;},{&quot;name&quot;:&quot;routines&quot;,&quot;title&quot;:&quot;routines: canceled&quot;,&quot;status&quot;:{&quot;icon&quot;:&quot;status_canceled&quot;,&quot;text&quot;:&quot;canceled&quot;,&quot;label&quot;:&quot;canceled&quot;,&quot;group&quot;:&quot;canceled&quot;,&quot;tooltip&quot;:&quot;canceled&quot;,&quot;has_details&quot;:true,&quot;details_path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345#routines&quot;,&quot;illustration&quot;:null,&quot;favicon&quot;:&quot;/assets/ci_favicons/favicon_status_canceled-ca35321a6cda9943ebdf6631c8057ffd54064f3ba20cfe0ebc4b0b992041c430.png&quot;},&quot;path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345#routines&quot;,&quot;dropdown_path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345/stage.json?stage=routines&quot;},{&quot;name&quot;:&quot;publish&quot;,&quot;title&quot;:&quot;publish: skipped&quot;,&quot;status&quot;:{&quot;icon&quot;:&quot;status_skipped&quot;,&quot;text&quot;:&quot;skipped&quot;,&quot;label&quot;:&quot;skipped&quot;,&quot;group&quot;:&quot;skipped&quot;,&quot;tooltip&quot;:&quot;skipped&quot;,&quot;has_details&quot;:true,&quot;details_path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345#publish&quot;,&quot;illustration&quot;:null,&quot;favicon&quot;:&quot;/assets/ci_favicons/favicon_status_skipped-0b9c5e543588945e8c4ca57786bbf2d0c56631959c9f853300392d0315be829b.png&quot;,&quot;action&quot;:{&quot;icon&quot;:&quot;play&quot;,&quot;title&quot;:&quot;Play all manual&quot;,&quot;path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345/stages/publish/play_manual&quot;,&quot;method&quot;:&quot;post&quot;,&quot;button_title&quot;:&quot;Play all manual&quot;}},&quot;path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345#publish&quot;,&quot;dropdown_path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345/stage.json?stage=publish&quot;},{&quot;name&quot;:&quot;hooks&quot;,&quot;title&quot;:&quot;hooks: skipped&quot;,&quot;status&quot;:{&quot;icon&quot;:&quot;status_skipped&quot;,&quot;text&quot;:&quot;skipped&quot;,&quot;label&quot;:&quot;skipped&quot;,&quot;group&quot;:&quot;skipped&quot;,&quot;tooltip&quot;:&quot;skipped&quot;,&quot;has_details&quot;:true,&quot;details_path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345#hooks&quot;,&quot;illustration&quot;:null,&quot;favicon&quot;:&quot;/assets/ci_favicons/favicon_status_skipped-0b9c5e543588945e8c4ca57786bbf2d0c56631959c9f853300392d0315be829b.png&quot;,&quot;action&quot;:{&quot;icon&quot;:&quot;play&quot;,&quot;title&quot;:&quot;Play all manual&quot;,&quot;path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345/stages/hooks/play_manual&quot;,&quot;method&quot;:&quot;post&quot;,&quot;button_title&quot;:&quot;Play all manual&quot;}},&quot;path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345#hooks&quot;,&quot;dropdown_path&quot;:&quot;/manticoresearch/dev/-/pipelines/444417345/stage.json?stage=hooks&quot;}]"></div>
+in
+1 minute and 55 seconds
+</div>
+</div>
+
+<ul class="commit-ci-menu gl-display-flex gl-flex-grow-1 nav gl-tabs-nav"><li class="nav-item"><a class="nav-link gl-tab-nav-item active gl-tab-nav-item-active" href="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44">Changes
+<span class="gl-badge badge badge-pill badge-muted sm gl-tab-counter-badge">1</span>
+</a></li><li class="nav-item"><a class="nav-link gl-tab-nav-item" href="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44/pipelines">Pipelines
+<span class="gl-badge badge badge-pill badge-muted sm gl-tab-counter-badge js-pipelines-mr-count">1</span>
+</a></li></ul>
+<div class="js-diff-files-changed gl-py-3">
+<div class="files-changed-inner">
+<div class="inline-parallel-buttons gl-display-none gl-md-display-flex gl-relative">
+<a class="d-none d-sm-inline-block btn gl-button btn-default" href="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44?action=show&amp;controller=projects%2Fcommit&amp;id=513ee45ba2a5b05974d59ff03c64222fe3808d44&amp;namespace_id=manticoresearch&amp;project_id=dev&amp;w=1">Hide whitespace changes</a>
+<div class="btn-group gl-ml-3">
+<a id="inline-diff-btn" class="btn gl-button btn-default selected" data-view-type="inline" href="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44?view=inline">Inline</a>
+<a id="parallel-diff-btn" class="btn gl-button btn-default" data-view-type="parallel" href="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44?view=parallel">Side-by-side</a>
+</div>
+</div>
+<div class="js-diff-stats-dropdown" data-added="8" data-changed="1" data-deleted="1" data-files="[{&quot;href&quot;:&quot;#6345c6318103c9c6602b6989d9d80531f521a164&quot;,&quot;title&quot;:&quot;manual/Changelog.md&quot;,&quot;name&quot;:&quot;manual/Changelog.md&quot;,&quot;path&quot;:&quot;manual/Changelog.md&quot;,&quot;icon&quot;:&quot;file-modified&quot;,&quot;iconColor&quot;:&quot;&quot;,&quot;added&quot;:8,&quot;removed&quot;:1}]"></div>
+
+</div>
+</div>
+<div class="files" data-can-create-note>
+<div class="js-diffs-batch" data-diff-files-path="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44/diff_files">
+<div class="gl-spinner-container gl-mt-4" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-md gl-spinner-dark gl-vertical-align-text-bottom!"></span></div>
+</div>
+</div>
+
+<div class="limited-width-notes">
+<ul class="notes main-notes-list timeline" data-qa-selector="notes_list" id="notes-list">
+<li class="timeline-entry note-wrapper note note-comment note-row-805261145 system-note" data-author-id="1458921" data-note-id="805261145" id="note_805261145">
+<div class="timeline-entry-inner">
+<div class="gl-float-left gl--flex-center gl-rounded-full gl-mt-n1 gl-ml-2 gl-w-6 gl-h-6 gl-bg-gray-50 gl-text-gray-600">
+<svg class="s16" data-testid="comment-dots-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#comment-dots"></use></svg>
+</div>
+<div class="timeline-content">
+<div class="note-header">
+<div class="note-header-info">
+<a href="/snikolaev">
+<span class="note-header-author-name bold">
+Sergey Nikolaev
+</span>
+
+<spannote-headline-light data-qa-selector="note_author_content">
+@snikolaev
+</spannote-headline-light>
+</a>
+<span class="note-headline-ligh note-headline-meta">
+<span class="system-note-message">
+<p data-sourcepos="1:1-1:24" dir="auto">mentioned in issue <a href="/manticoresearch/dev/-/issues/2301" data-reference-type="issue" data-original="#2301" data-link="false" data-link-reference="false" data-project="3858465" data-issue="93433361" data-project-path="manticoresearch/dev" data-iid="2301" data-issue-type="issue" data-container="body" data-placement="top" title="make .meta and .sph just json" class="gfm gfm-issue">#2301 (closed)</a></p>
+</span>
+<span class="system-note-separator">
+&middot;
+</span>
+<a class="system-note-separator" href="#note_805261145"><time class="js-timeago note-created-ago" title="Jan 10, 2022 4:44am" datetime="2022-01-10T04:44:48Z" data-toggle="tooltip" data-placement="bottom" data-container="body">Jan 10, 2022</time></a>
+</span>
+</div>
+</div>
+<div class="note-body">
+<div class="note-text md" data-qa-selector="note_content">
+<p data-sourcepos="1:1-1:24" dir="auto">mentioned in issue <a href="/manticoresearch/dev/-/issues/2301" data-reference-type="issue" data-original="#2301" data-link="false" data-link-reference="false" data-project="3858465" data-issue="93433361" data-project-path="manticoresearch/dev" data-iid="2301" data-issue-type="issue" data-container="body" data-placement="top" title="make .meta and .sph just json" class="gfm gfm-issue">#2301 (closed)</a></p>
+</div>
+
+<div class="original-note-content hidden" data-post-url="/manticoresearch/dev/notes/805261145" data-target-id="513ee45ba2a5b05974d59ff03c64222fe3808d44" data-target-type="commit">
+mentioned in issue #2301
+</div>
+<div class="note-awards">
+<div class="awards js-awards-block hidden" data-award-url="/manticoresearch/dev/notes/805261145/toggle_award_emoji">
+<div class="award-menu-holder js-award-holder">
+<button aria-label="Add reaction" class="gl-button btn btn-default award-control has-tooltip js-add-award" data-title="Add reaction" type="button">
+<span class="award-control-icon award-control-icon-neutral gl-icon"><svg class="s16" data-testid="slight-smile-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#slight-smile"></use></svg></span>
+<span class="award-control-icon award-control-icon-positive gl-icon"><svg class="s16" data-testid="smiley-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#smiley"></use></svg></span>
+<span class="award-control-icon award-control-icon-super-positive gl-icon"><svg class="s16" data-testid="smile-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#smile"></use></svg></span>
+</button>
+</div>
+
+</div>
+
+</div>
+<div class="system-note-commit-list-toggler hide">
+Toggle commit list
+<svg class="s16 js-chevron-down gl-ml-1 gl-vertical-align-text-bottom" data-testid="chevron-down-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#chevron-down"></use></svg>
+<svg class="s16 js-chevron-up gl-ml-1 gl-vertical-align-text-bottom gl-display-none" data-testid="chevron-up-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#chevron-up"></use></svg>
+</div>
+</div>
+</div>
+</div>
+</li>
+
+
+</ul>
+<div class="snippets note-edit-form">
+<form class="edit-note common-note-form js-quick-submit" action="#" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" autocomplete="off" /><input type="hidden" name="authenticity_token" value="ic1WfEHzatm_qygUCi7_USbzSLijHk-pgfL0QfOZ_ZnrPWo8etaNoFHfeiswyWvv3ShupxRN1kgi7JmBmlDTCw" autocomplete="off" /><input type="hidden" name="target_id" id="target_id" value="" class="js-form-target-id" autocomplete="off" />
+<input type="hidden" name="target_type" id="target_type" value="" class="js-form-target-type" autocomplete="off" />
+<div class="flash-container"></div>
+<div class="md-area position-relative">
+<div class="md-header gl-px-3 gl-rounded-top-base gl-border-b gl-border-gray-100">
+<div class="gl-display-flex gl-align-items-center gl-flex-wrap gl-justify-content-space-between">
+<div class="md-header-toolbar gl-display-flex gl-py-3 gl-flex-wrap gl-row-gap-3">
+<button class="gl-button btn btn-sm btn-default btn-default-tertiary js-md-preview-button" value="preview" type="button"><span class="gl-button-text">
+Preview
+
+</span>
+
+</button><button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="**" data-md-shortcuts="[&quot;mod+b&quot;]" data-container="body" title="Add bold text (Ctrl+B)" aria-label="Add bold text (Ctrl+B)" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="bold-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#bold"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="_" data-md-shortcuts="[&quot;mod+i&quot;]" data-container="body" title="Add italic text (Ctrl+I)" aria-label="Add italic text (Ctrl+I)" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="italic-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#italic"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="~~" data-md-shortcuts="[&quot;mod+shift+x&quot;]" data-container="body" title="Add strikethrough text (Ctrl+⇧X)" aria-label="Add strikethrough text (Ctrl+⇧X)" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="strikethrough-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#strikethrough"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="&gt; " data-md-prepend="true" data-container="body" title="Insert a quote" aria-label="Insert a quote" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="quote-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#quote"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="`" data-md-block="```" data-container="body" title="Insert code" aria-label="Insert code" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="code-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#code"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="[{text}](url)" data-md-select="url" data-md-shortcuts="[&quot;mod+k&quot;]" data-container="body" title="Add a link (Ctrl+K)" aria-label="Add a link (Ctrl+K)" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="link-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#link"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="- " data-md-prepend="true" data-container="body" title="Add a bullet list" aria-label="Add a bullet list" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="list-bulleted-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#list-bulleted"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="1. " data-md-prepend="true" data-container="body" title="Add a numbered list" aria-label="Add a numbered list" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="list-numbered-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#list-numbered"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="- [ ] " data-md-prepend="true" data-container="body" title="Add a checklist" aria-label="Add a checklist" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="list-task-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#list-task"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip gl-display-none gl-mr-3" data-md-command="indentLines" data-md-shortcuts="[&quot;mod+]&quot;]" data-container="body" title="Indent line (Ctrl+])" aria-label="Indent line (Ctrl+])" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="list-indent-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#list-indent"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip gl-display-none gl-mr-3" data-md-command="outdentLines" data-md-shortcuts="[&quot;mod+[&quot;]" data-container="body" title="Outdent line (Ctrl+[)" aria-label="Outdent line (Ctrl+[)" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="list-outdent-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#list-outdent"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="&lt;details&gt;&lt;summary&gt;Click to expand&lt;/summary&gt;
+{text}
+&lt;/details&gt;" data-md-prepend="true" data-md-select="Click to expand" data-container="body" title="Add a collapsible section" aria-label="Add a collapsible section" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="details-block-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#details-block"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="| header | header |
+| ------ | ------ |
+|        |        |
+|        |        |" data-md-prepend="true" data-container="body" title="Add a table" aria-label="Add a table" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="table-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#table"></use></svg>
+
+</button>
+<button aria-label="Attach a file or image" class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary has-tooltip js-attach-file-button haml-markdown-button gl-mr-3" data-testid="button-attach-file" data-container="body" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="paperclip-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#paperclip"></use></svg>
+
+</button>
+
+<div class="full-screen">
+<button tabindex="-1" aria-label="Go full screen" class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary has-tooltip js-zen-enter" data-container="body" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="maximize-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#maximize"></use></svg>
+
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="md-write-holder">
+<div class="zen-backdrop">
+<textarea name="note[note]" id="note_note" data-qa-selector="edit_note_field" class="note-textarea js-note-text js-task-list-field js-gfm-input js-autosize markdown-area" placeholder="Write a comment or drag your files here…">
+</textarea>
+<a class="zen-control zen-control-leave js-zen-leave gl-text-gray-500" href="#">
+<svg class="s16" data-testid="minimize-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#minimize"></use></svg>
+</a>
+</div>
+
+<div class="comment-toolbar gl-px-2 gl-display-flex gl-justify-content-end gl-rounded-bottom-left-base gl-rounded-bottom-right-base clearfix">
+<div class="content-editor-switcher gl-display-inline-flex gl-align-items-center">
+<a class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary gl-px-3!" target="_blank" href="/help/user/markdown"><svg class="s16 gl-icon gl-button-icon " data-testid="markdown-mark-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#markdown-mark"></use></svg>
+
+</a>
+</div>
+<span class="uploading-container gl-line-height-32 gl-font-sm">
+<span class="uploading-progress-container hide">
+<svg class="s16 gl-icon gl-vertical-align-text-bottom" data-testid="paperclip-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#paperclip"></use></svg>
+<span class="attaching-file-message">
+</span>
+<span class="uploading-progress">0%</span>
+<span class="gl-spinner-container gl-mr-2" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+</span>
+<span class="uploading-error-container hide">
+<span class="uploading-error-icon">
+<svg class="s16 gl-icon gl-vertical-align-text-bottom" data-testid="paperclip-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#paperclip"></use></svg>
+</span>
+<span class="uploading-error-message">
+</span>
+<button class="gl-button btn btn-md btn-link retry-uploading-link" type="button"><span class="gl-button-text">
+<span class="gl-button-text">
+Try again
+</span>
+
+</span>
+
+</button>or
+<button class="gl-button btn btn-md btn-link attach-new-file markdown-selector" type="button"><span class="gl-button-text">
+<span class="gl-button-text">
+attach a new file
+</span>
+
+</span>
+
+</button>.
+</span>
+<button class="gl-button btn btn-md btn-link button-cancel-uploading-files hide" type="button"><span class="gl-button-text">
+<span class="gl-button-text">
+Cancel
+</span>
+
+</span>
+
+</button></span>
+</div>
+
+
+</div>
+<div class="md md-preview-holder gl-px-5 js-md-preview hide" data-url="/manticoresearch/dev/preview_markdown"></div>
+<div class="referenced-commands hide"></div>
+<div class="referenced-users hide">
+<span>
+<svg class="s16" data-testid="warning-solid-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#warning-solid"></use></svg>
+You are about to add
+<strong>
+<span class="js-referenced-users-count">0</span>
+people
+</strong>
+to the discussion. Proceed with caution.
+</span>
+</div>
+</div>
+<div class="note-form-actions clearfix">
+<div class="settings-message note-edit-warning js-finish-edit-warning">
+Finish editing this message first!
+</div>
+<button class="gl-button btn btn-md btn-confirm js-comment-save-button" data-qa-selector="save_comment_button" type="submit"><span class="gl-button-text">
+Save comment
+
+</span>
+
+</button><button class="gl-button btn btn-md btn-default note-edit-cancel" type="button"><span class="gl-button-text">
+Cancel
+
+</span>
+
+</button></div>
+</form></div>
+
+<div class="notes notes-form timeline">
+<div class="timeline-entry note-form">
+<div class="timeline-entry-inner">
+<div class="flash-container timeline-content"></div>
+<div class="timeline-content timeline-content-form">
+<form class="new-note js-new-note-form js-quick-submit common-note-form discussion-reply-holder gl-border-top-0!" data-type="json" enctype="multipart/form-data" action="/manticoresearch/dev/notes" accept-charset="UTF-8" data-remote="true" method="post"><input type="hidden" name="authenticity_token" value="sudtfMuj3sVS45qhjb4J6WiiydIAet_WX2SfViWgk0rQF1E88IY5vLyXyJ63WZ1Xk3nvzbcpRjf8evKWTGm92A" autocomplete="off" /><input type="hidden" name="view" id="view" value="inline" autocomplete="off" />
+<input type="hidden" name="line_type" id="line_type" autocomplete="off" />
+<input type="hidden" name="merge_request_diff_head_sha" id="merge_request_diff_head_sha" autocomplete="off" />
+<input type="hidden" name="in_reply_to_discussion_id" id="in_reply_to_discussion_id" autocomplete="off" />
+<input type="hidden" name="note_project_id" id="note_project_id" autocomplete="off" />
+<input type="hidden" name="target_type" id="target_type" value="commit" autocomplete="off" /><input type="hidden" name="target_id" id="target_id" value="513ee45ba2a5b05974d59ff03c64222fe3808d44" autocomplete="off" />
+<input autocomplete="off" type="hidden" value="Commit" name="note[noteable_type]" id="note_noteable_type" />
+<input autocomplete="off" type="hidden" name="note[noteable_id]" id="note_noteable_id" />
+<input autocomplete="off" type="hidden" value="513ee45ba2a5b05974d59ff03c64222fe3808d44" name="note[commit_id]" id="note_commit_id" />
+<input autocomplete="off" type="hidden" name="note[type]" id="note_type" />
+<input autocomplete="off" type="hidden" name="note[line_code]" id="note_line_code" />
+<input autocomplete="off" type="hidden" name="note[position]" id="note_position" />
+<div class="discussion-form-container discussion-with-resolve-btn flex-column p-0">
+<div class="md-area position-relative">
+<div class="md-header gl-px-3 gl-rounded-top-base gl-border-b gl-border-gray-100">
+<div class="gl-display-flex gl-align-items-center gl-flex-wrap gl-justify-content-space-between">
+<div class="md-header-toolbar gl-display-flex gl-py-3 gl-flex-wrap gl-row-gap-3">
+<button class="gl-button btn btn-sm btn-default btn-default-tertiary js-md-preview-button" value="preview" type="button"><span class="gl-button-text">
+Preview
+
+</span>
+
+</button><button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="**" data-md-shortcuts="[&quot;mod+b&quot;]" data-container="body" title="Add bold text (Ctrl+B)" aria-label="Add bold text (Ctrl+B)" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="bold-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#bold"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="_" data-md-shortcuts="[&quot;mod+i&quot;]" data-container="body" title="Add italic text (Ctrl+I)" aria-label="Add italic text (Ctrl+I)" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="italic-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#italic"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="~~" data-md-shortcuts="[&quot;mod+shift+x&quot;]" data-container="body" title="Add strikethrough text (Ctrl+⇧X)" aria-label="Add strikethrough text (Ctrl+⇧X)" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="strikethrough-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#strikethrough"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="&gt; " data-md-prepend="true" data-container="body" title="Insert a quote" aria-label="Insert a quote" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="quote-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#quote"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="`" data-md-block="```" data-container="body" title="Insert code" aria-label="Insert code" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="code-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#code"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="[{text}](url)" data-md-select="url" data-md-shortcuts="[&quot;mod+k&quot;]" data-container="body" title="Add a link (Ctrl+K)" aria-label="Add a link (Ctrl+K)" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="link-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#link"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="- " data-md-prepend="true" data-container="body" title="Add a bullet list" aria-label="Add a bullet list" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="list-bulleted-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#list-bulleted"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="1. " data-md-prepend="true" data-container="body" title="Add a numbered list" aria-label="Add a numbered list" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="list-numbered-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#list-numbered"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="- [ ] " data-md-prepend="true" data-container="body" title="Add a checklist" aria-label="Add a checklist" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="list-task-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#list-task"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip gl-display-none gl-mr-3" data-md-command="indentLines" data-md-shortcuts="[&quot;mod+]&quot;]" data-container="body" title="Indent line (Ctrl+])" aria-label="Indent line (Ctrl+])" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="list-indent-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#list-indent"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip gl-display-none gl-mr-3" data-md-command="outdentLines" data-md-shortcuts="[&quot;mod+[&quot;]" data-container="body" title="Outdent line (Ctrl+[)" aria-label="Outdent line (Ctrl+[)" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="list-outdent-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#list-outdent"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="&lt;details&gt;&lt;summary&gt;Click to expand&lt;/summary&gt;
+{text}
+&lt;/details&gt;" data-md-prepend="true" data-md-select="Click to expand" data-container="body" title="Add a collapsible section" aria-label="Add a collapsible section" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="details-block-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#details-block"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="| header | header |
+| ------ | ------ |
+|        |        |
+|        |        |" data-md-prepend="true" data-container="body" title="Add a table" aria-label="Add a table" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="table-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#table"></use></svg>
+
+</button>
+<button aria-label="Attach a file or image" class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary has-tooltip js-attach-file-button haml-markdown-button gl-mr-3" data-testid="button-attach-file" data-container="body" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="paperclip-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#paperclip"></use></svg>
+
+</button>
+<button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary js-md has-tooltip haml-markdown-button gl-mr-3" data-md-tag="/" data-md-prepend="true" data-container="body" title="Add a quick action" aria-label="Add a quick action" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="quick-actions-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#quick-actions"></use></svg>
+
+</button>
+
+<div class="full-screen">
+<button tabindex="-1" aria-label="Go full screen" class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary has-tooltip js-zen-enter" data-container="body" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="maximize-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#maximize"></use></svg>
+
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="md-write-holder">
+<div class="zen-backdrop">
+<textarea class="note-textarea js-note-text js-gfm-input js-autosize markdown-area" placeholder="Write a comment or drag your files here…" dir="auto" data-supports-quick-actions="true" data-supports-autocomplete="true" data-qa-selector="note_field" data-autofocus="false" name="note[note]" id="note_note">
+</textarea>
+<a class="zen-control zen-control-leave js-zen-leave gl-text-gray-500" href="#">
+<svg class="s16" data-testid="minimize-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#minimize"></use></svg>
+</a>
+</div>
+
+<div class="comment-toolbar gl-px-2 gl-display-flex gl-justify-content-end gl-rounded-bottom-left-base gl-rounded-bottom-right-base clearfix">
+<div class="content-editor-switcher gl-display-inline-flex gl-align-items-center">
+<a class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary gl-px-3!" target="_blank" href="/help/user/markdown"><svg class="s16 gl-icon gl-button-icon " data-testid="markdown-mark-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#markdown-mark"></use></svg>
+
+</a>
+</div>
+<span class="uploading-container gl-line-height-32 gl-font-sm">
+<span class="uploading-progress-container hide">
+<svg class="s16 gl-icon gl-vertical-align-text-bottom" data-testid="paperclip-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#paperclip"></use></svg>
+<span class="attaching-file-message">
+</span>
+<span class="uploading-progress">0%</span>
+<span class="gl-spinner-container gl-mr-2" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+</span>
+<span class="uploading-error-container hide">
+<span class="uploading-error-icon">
+<svg class="s16 gl-icon gl-vertical-align-text-bottom" data-testid="paperclip-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#paperclip"></use></svg>
+</span>
+<span class="uploading-error-message">
+</span>
+<button class="gl-button btn btn-md btn-link retry-uploading-link" type="button"><span class="gl-button-text">
+<span class="gl-button-text">
+Try again
+</span>
+
+</span>
+
+</button>or
+<button class="gl-button btn btn-md btn-link attach-new-file markdown-selector" type="button"><span class="gl-button-text">
+<span class="gl-button-text">
+attach a new file
+</span>
+
+</span>
+
+</button>.
+</span>
+<button class="gl-button btn btn-md btn-link button-cancel-uploading-files hide" type="button"><span class="gl-button-text">
+<span class="gl-button-text">
+Cancel
+</span>
+
+</span>
+
+</button></span>
+</div>
+
+<div class="error-alert"></div>
+
+</div>
+<div class="md md-preview-holder gl-px-5 js-md-preview hide" data-url="/manticoresearch/dev/preview_markdown?target_type=Commit"></div>
+<div class="referenced-commands hide"></div>
+<div class="referenced-users hide">
+<span>
+<svg class="s16" data-testid="warning-solid-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#warning-solid"></use></svg>
+You are about to add
+<strong>
+<span class="js-referenced-users-count">0</span>
+people
+</strong>
+to the discussion. Proceed with caution.
+</span>
+</div>
+</div>
+<div class="note-form-actions clearfix gl-display-flex gl-flex-wrap">
+<div class="js-comment-type-dropdown float-left gl-sm-mr-3" data-noteable-name="commit">
+<button class="gl-button btn btn-md btn-confirm js-comment-button js-comment-submit-button" value="Comment" data-qa-selector="comment_button" type="submit"><span class="gl-button-text">
+Comment
+
+</span>
+
+</button></div>
+
+<a class="btn gl-button btn-cancel js-close-discussion-note-form hide" data-cancel-text="Cancel" role="button">
+Cancel
+</a>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script class="js-notes-data" type="application/json">{"notesUrl":"/manticoresearch/dev/noteable/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44/notes","now":1693121198,"diffView":"inline","enableGFM":{"emojis":true,"members":true,"issues":true,"mergeRequests":true,"vulnerabilities":true,"epics":true,"milestones":true,"labels":true}}</script>
+<div id="js-report-abuse-drawer"></div>
+
+<div class="js-revert-commit-modal" data-branch="master" data-branch-collaboration="false" data-branches-endpoint="/manticoresearch/dev/-/branches" data-endpoint="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44/revert" data-existing-branch="" data-push-code="true" data-title="Revert this commit"></div>
+
+<div class="js-cherry-pick-commit-modal" data-branch="master" data-branch-collaboration="false" data-branches-endpoint="/manticoresearch/dev/refs" data-endpoint="/manticoresearch/dev/-/commit/513ee45ba2a5b05974d59ff03c64222fe3808d44/cherry_pick" data-existing-branch="" data-projects="[{&quot;id&quot;:&quot;3858465&quot;,&quot;name&quot;:&quot;manticoresearch/dev&quot;,&quot;refsUrl&quot;:&quot;/manticoresearch/dev/refs&quot;}]" data-push-code="true" data-target-project-id="3858465" data-target-project-name="manticoresearch/dev" data-title="Cherry-pick this commit"></div>
+
+</div>
+</div>
+
+</main>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script nonce="u8WXLalflmgHG42Cz/nERQ==">
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    if (imgUrl.indexOf('/avatar/') > -1 && imgUrl.indexOf('?') === -1) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js_lazy_loaded_content';
+  });
+}
+
+//]]>
+</script>
+<script nonce="u8WXLalflmgHG42Cz/nERQ==">
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+</body>
+</html>
+
