@@ -1,0 +1,159 @@
+root@bdb:/home/ubuntu# apt install ubuntu-release-upgrader-core
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libfwupdplugin1
+Use 'apt autoremove' to remove it.
+The following additional packages will be installed:
+  python3-distupgrade
+The following packages will be upgraded:
+  python3-distupgrade ubuntu-release-upgrader-core
+2 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+Need to get 128 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://nova.clouds.archive.ubuntu.com/ubuntu focal-updates/main amd64 ubuntu-release-upgrader-core all 1:20.04.38 [24.3 kB]
+Get:2 http://nova.clouds.archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-distupgrade all 1:20.04.38 [104 kB]
+Fetched 128 kB in 1s (251 kB/s)
+(Reading database ... 131303 files and directories currently installed.)
+Preparing to unpack .../ubuntu-release-upgrader-core_1%3a20.04.38_all.deb ...
+Unpacking ubuntu-release-upgrader-core (1:20.04.38) over (1:20.04.37) ...
+Preparing to unpack .../python3-distupgrade_1%3a20.04.38_all.deb ...
+Unpacking python3-distupgrade (1:20.04.38) over (1:20.04.37) ...
+Setting up python3-distupgrade (1:20.04.38) ...
+Setting up ubuntu-release-upgrader-core (1:20.04.38) ...
+Processing triggers for man-db (2.9.1-1) ...
+root@bdb:/home/ubuntu# apt autoremove
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages will be REMOVED:
+  libfwupdplugin1
+0 upgraded, 0 newly installed, 1 to remove and 3 not upgraded.
+After this operation, 459 kB disk space will be freed.
+Do you want to continue? [Y/n] Y
+(Reading database ... 131301 files and directories currently installed.)
+Removing libfwupdplugin1:amd64 (1.5.11-0ubuntu1~20.04.2) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+root@bdb:/home/ubuntu# sudo apt autoclean
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+root@bdb:/home/ubuntu# sudo apt-get remove --purge $(dpkg -l | grep "^rc" | awk '{print $2}')
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages will be REMOVED:
+  linux-image-5.4.0-100-generic* linux-image-5.4.0-104-generic* linux-image-5.4.0-105-generic* linux-image-5.4.0-99-generic* linux-modules-5.4.0-100-generic*
+  linux-modules-5.4.0-104-generic* linux-modules-5.4.0-105-generic* linux-modules-5.4.0-99-generic* linux-modules-extra-5.4.0-100-generic*
+  linux-modules-extra-5.4.0-104-generic* linux-modules-extra-5.4.0-105-generic* linux-modules-extra-5.4.0-99-generic*
+0 upgraded, 0 newly installed, 12 to remove and 3 not upgraded.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+(Reading database ... 131295 files and directories currently installed.)
+Purging configuration files for linux-modules-5.4.0-99-generic (5.4.0-99.112) ...
+dpkg: warning: while removing linux-modules-5.4.0-99-generic, directory '/lib/modules/5.4.0-99-generic' not empty so not removed
+Purging configuration files for linux-image-5.4.0-105-generic (5.4.0-105.119) ...
+Purging configuration files for linux-modules-5.4.0-104-generic (5.4.0-104.118) ...
+Purging configuration files for linux-modules-5.4.0-100-generic (5.4.0-100.113) ...
+dpkg: warning: while removing linux-modules-5.4.0-100-generic, directory '/lib/modules/5.4.0-100-generic' not empty so not removed
+Purging configuration files for linux-modules-extra-5.4.0-100-generic (5.4.0-100.113) ...
+Purging configuration files for linux-image-5.4.0-100-generic (5.4.0-100.113) ...
+Purging configuration files for linux-image-5.4.0-99-generic (5.4.0-99.112) ...
+Purging configuration files for linux-image-5.4.0-104-generic (5.4.0-104.118) ...
+Purging configuration files for linux-modules-extra-5.4.0-105-generic (5.4.0-105.119) ...
+Purging configuration files for linux-modules-extra-5.4.0-99-generic (5.4.0-99.112) ...
+Purging configuration files for linux-modules-extra-5.4.0-104-generic (5.4.0-104.118) ...
+Purging configuration files for linux-modules-5.4.0-105-generic (5.4.0-105.119) ...
+root@bdb:/home/ubuntu# sudo apt autoclean
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+root@bdb:/home/ubuntu# sudo apt autoremove
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+root@bdb:/home/ubuntu# apt update
+Hit:1 http://nova.clouds.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://nova.clouds.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://nova.clouds.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:5 http://repo.manticoresearch.com/repository/manticoresearch_focal_dev focal InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:7 https://mariadb.mirror.liquidtelecom.com/repo/10.6/ubuntu focal InRelease
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@bdb:/home/ubuntu# apt list --upgradable
+Listing... Done
+manticore-columnar-lib/focal 1.14.1-220421-da313e7 amd64 [upgradable from: 1.14.1-220408-e20aa7c]
+manticore-dbgsym/focal 4.2.1-220422-066f4de24 amd64 [upgradable from: 4.2.1-220413-ac4c91c68]
+manticore/focal 4.2.1-220422-066f4de24 amd64 [upgradable from: 4.2.1-220413-ac4c91c68]
+root@bdb:/home/ubuntu# systemctl stop manticore
+root@bdb:/home/ubuntu# ps aux | grep searchd
+root      165469  0.0  0.0   8160  2408 pts/0    S+   01:13   0:00 grep --color=auto searchd
+root@bdb:/home/ubuntu# apt install manticore manticore-columnar-lib manticore-dbgsym
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Suggested packages:
+  libpq5 libodbc1
+The following packages will be upgraded:
+  manticore manticore-columnar-lib manticore-dbgsym
+3 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 139 MB of archives.
+After this operation, 10.2 MB of additional disk space will be used.
+Get:1 http://repo.manticoresearch.com/repository/manticoresearch_focal_dev focal/main amd64 manticore-dbgsym amd64 4.2.1-220422-066f4de24 [109 MB]
+Get:2 http://repo.manticoresearch.com/repository/manticoresearch_focal_dev focal/main amd64 manticore amd64 4.2.1-220422-066f4de24 [29.0 MB]
+Get:3 http://repo.manticoresearch.com/repository/manticoresearch_focal_dev focal/main amd64 manticore-columnar-lib amd64 1.14.1-220421-da313e7 [1268 kB]
+Fetched 139 MB in 6s (24.5 MB/s)
+(Reading database ... 131294 files and directories currently installed.)
+Preparing to unpack .../manticore-dbgsym_4.2.1-220422-066f4de24_amd64.ddeb ...
+Unpacking manticore-dbgsym (4.2.1-220422-066f4de24) over (4.2.1-220413-ac4c91c68) ...
+Preparing to unpack .../manticore_4.2.1-220422-066f4de24_amd64.deb ...
+Unpacking manticore (4.2.1-220422-066f4de24) over (4.2.1-220413-ac4c91c68) ...
+Preparing to unpack .../manticore-columnar-lib_1.14.1-220421-da313e7_amd64.deb ...
+Unpacking manticore-columnar-lib (1.14.1-220421-da313e7) over (1.14.1-220408-e20aa7c) ...
+Setting up manticore (4.2.1-220422-066f4de24) ...
+Manticore Search (https://manticoresearch.com)
+
+Getting Started with Manticore Search:
+  https://manual.manticoresearch.com/Quick_start_guide
+
+Learn Manticore with interactive courses:
+  https://play.manticoresearch.com/
+
+To start Manticore Search service:
+  > systemctl start manticore
+
+Configuration file:
+   /etc/manticoresearch/manticore.conf
+
+Job for manticore.service failed because the service did not take the steps required by its unit configuration.
+See "systemctl status manticore.service" and "journalctl -xe" for details.
+invoke-rc.d: initscript manticore, action "start" failed.
+● manticore.service - Manticore Search Engine
+     Loaded: loaded (/run/systemd/generator.early/manticore.service; generated)
+     Active: activating (auto-restart) (Result: protocol) since Tue 2022-04-26 01:17:25 EDT; 13ms ago
+    Process: 170826 ExecStartPre=/usr/bin/install -omanticore -gmanticore -m755 -d /var/run/manticore (code=exited, status=0/SUCCESS)
+    Process: 170827 ExecStart=/usr/bin/searchd --config /etc/manticoresearch/manticore.conf $_ADDITIONAL_SEARCHD_PARAMS (code=exited, status=0/SUCCESS)
+dpkg: error processing package manticore (--configure):
+ installed manticore package post-installation script subprocess returned error exit status 1
+No apport report written because the error message indicates its a followup error from a previous failure.
+                                                                                                          dpkg: dependency problems prevent configuration of manticore-dbgsym:
+ manticore-dbgsym depends on manticore (= 4.2.1-220422-066f4de24); however:
+  Package manticore is not configured yet.
+
+dpkg: error processing package manticore-dbgsym (--configure):
+ dependency problems - leaving unconfigured
+Setting up manticore-columnar-lib (1.14.1-220421-da313e7) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for systemd (245.4-4ubuntu3.16) ...
+Errors were encountered while processing:
+ manticore
+ manticore-dbgsym
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+root@bdb:/home/ubuntu#
