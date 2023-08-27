@@ -1,0 +1,3 @@
+@echo off
+SET FULL_SHARE_DIR=%1
+SET FULL_SHARE_DIR
