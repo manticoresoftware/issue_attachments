@@ -1,0 +1,141 @@
+23:47:38.672 2022] [4896] preread 0 indexes in 0.001 sec
+23:47:39.929 2022] [7384] [BUDDY] started 'php C:\dev\sphinx\manticore\misc\buddy\src\buddy.php' at http://127.0.0.1:61865
+23:47:39.929 2022] [7384] accepting connections
+23:48:25.323 2022] [14128] CurlMulti_c::CurlMulti_c @ 396 
+23:48:25.324 2022] [14128] CurlConn_t::RunQuery @ 516 0x000001502c1164a0(0x000001502c1275b0) (http://127.0.0.1:61865) Add to multi 0x00007ff615f21d00 for http://127.0.0.1:61865
+23:48:25.324 2022] [14128] CurlConn_t::RunQuery @ 518 0x000001502c1164a0(0x000001502c1275b0) (http://127.0.0.1:61865) Add complete -> 0
+23:48:25.324 2022] [14128] DebugCb @ 450 0x000001502c1275b0 chunk CURLINFO_TEXT with 28 bytes.
+23:48:25.325 2022] [14128] DebugCb @ 450 0x000001502c1275b0 chunk CURLINFO_TEXT with 51 bytes.
+23:48:25.326 2022] [14128] DebugCb @ 450 0x000001502c1275b0 chunk CURLINFO_HEADER_OUT with 123 bytes.
+23:48:25.326 2022] [14128] DebugCb @ 450 0x000001502c1275b0 chunk CURLINFO_DATA_OUT with 153 bytes.
+23:48:25.326 2022] [14128] CurlMulti_c::CmSocketCb @ 311 called with sock 744 for IN(1), data 0x0000000000000000
+23:48:25.326 2022] [14128] CurlMulti_c::MakeAsyncSocket @ 301 called with sock 744
+23:48:25.326 2022] [14128] CurlSocket_t::CurlSocket_t @ 214 0x000001502c063f20 (refs 1, sock 744) 
+23:48:25.326 2022] [14128] CurlMulti_c::WriteSocketCookie @ 296 curl_multi_assign returned 0
+23:48:25.326 2022] [14128] CurlMulti_c::CheckCompleted @ 545 N of running changed 0 -> 1
+23:48:25.337 2022] [9956] [BUDDY] test
+23:48:25.343 2022] [9860] WARNING: [BUDDY] terminated, exit code 0
+23:48:25.527 2022] [14128] DebugCb @ 450 0x000001502c1275b0 chunk CURLINFO_TEXT with 35 bytes.
+23:48:25.527 2022] [14128] DebugCb @ 450 0x000001502c1275b0 chunk CURLINFO_TEXT with 21 bytes.
+23:48:25.528 2022] [14128] CurlMulti_c::CmSocketCb @ 311 called with sock 744 for REMOVE(4), data 0x000001502c063f20
+23:48:25.529 2022] [14128] CurlSocket_t::Remove @ 258 0x000001502c063f20 (refs 1, sock 744) 
+23:48:25.529 2022] [14128] CurlMulti_c::WriteSocketCookie @ 296 curl_multi_assign returned 0
+23:48:25.530 2022] [14128] CurlSocket_t::~CurlSocket_t @ 204 0x000001502c063f20 (refs 0, sock 744) 
+23:48:25.530 2022] [14128] CurlMulti_c::CheckCompleted @ 545 N of running changed 1 -> 0
+23:48:25.531 2022] [14128] CurlConn_t::Done @ 524 0x000001502c1164a0(0x000001502c1275b0) (http://127.0.0.1:61865) DONE: (56) Recv failure: Connection was reset
+23:48:25.531 2022] [9956] CurlConn_t::~CurlConn_t @ 531 0x000001502c1164a0(0x000001502c1275b0) (http://127.0.0.1:61865) 
+23:48:25.532 2022] [9956] WARNING: [BUDDY] error: Recv failure: Connection was reset
+23:48:26.533 2022] [9860] [BUDDY] started 'php C:\dev\sphinx\manticore\misc\buddy\src\buddy.php' at http://127.0.0.1:61879
+23:48:26.534 2022] [9860] [BUDDY] restarted
+23:48:30.313 2022] [16392] CurlConn_t::RunQuery @ 516 0x000001502c1164a0(0x000001502c10b520) (http://127.0.0.1:61879) Add to multi 0x00007ff615f21d00 for http://127.0.0.1:61879
+23:48:30.313 2022] [16392] CurlConn_t::RunQuery @ 518 0x000001502c1164a0(0x000001502c10b520) (http://127.0.0.1:61879) Add complete -> 0
+23:48:30.315 2022] [16392] DebugCb @ 450 0x000001502c10b520 chunk CURLINFO_TEXT with 28 bytes.
+23:48:30.315 2022] [16392] DebugCb @ 450 0x000001502c10b520 chunk CURLINFO_TEXT with 51 bytes.
+23:48:30.315 2022] [16392] DebugCb @ 450 0x000001502c10b520 chunk CURLINFO_HEADER_OUT with 123 bytes.
+23:48:30.316 2022] [16392] DebugCb @ 450 0x000001502c10b520 chunk CURLINFO_DATA_OUT with 153 bytes.
+23:48:30.316 2022] [16392] CurlMulti_c::CmSocketCb @ 311 called with sock 788 for IN(1), data 0x0000000000000000
+23:48:30.317 2022] [16392] CurlMulti_c::MakeAsyncSocket @ 301 called with sock 788
+23:48:30.318 2022] [16392] CurlSocket_t::CurlSocket_t @ 214 0x000001502c0645e0 (refs 1, sock 788) 
+23:48:30.320 2022] [16392] CurlMulti_c::WriteSocketCookie @ 296 curl_multi_assign returned 0
+23:48:30.320 2022] [16392] CurlMulti_c::CheckCompleted @ 545 N of running changed 0 -> 1
+23:48:30.322 2022] [4896] [BUDDY] test
+23:48:30.330 2022] [14128] WARNING: [BUDDY] terminated, exit code 0
+23:48:30.528 2022] [9956] DebugCb @ 450 0x000001502c10b520 chunk CURLINFO_TEXT with 35 bytes.
+23:48:30.528 2022] [9956] DebugCb @ 450 0x000001502c10b520 chunk CURLINFO_TEXT with 21 bytes.
+23:48:30.529 2022] [9956] CurlMulti_c::CmSocketCb @ 311 called with sock 788 for REMOVE(4), data 0x000001502c0645e0
+23:48:30.530 2022] [9956] CurlSocket_t::Remove @ 258 0x000001502c0645e0 (refs 1, sock 788) 
+23:48:30.531 2022] [9956] CurlMulti_c::WriteSocketCookie @ 296 curl_multi_assign returned 0
+23:48:30.531 2022] [9956] CurlSocket_t::~CurlSocket_t @ 204 0x000001502c0645e0 (refs 0, sock 788) 
+23:48:30.532 2022] [9956] CurlMulti_c::CheckCompleted @ 545 N of running changed 1 -> 0
+23:48:30.533 2022] [9956] CurlConn_t::Done @ 524 0x000001502c1164a0(0x000001502c10b520) (http://127.0.0.1:61879) DONE: (56) Recv failure: Connection was reset
+23:48:30.534 2022] [16428] CurlConn_t::~CurlConn_t @ 531 0x000001502c1164a0(0x000001502c10b520) (http://127.0.0.1:61879) 
+23:48:30.534 2022] [16428] WARNING: [BUDDY] error: Recv failure: Connection was reset
+23:48:31.536 2022] [14128] [BUDDY] started 'php C:\dev\sphinx\manticore\misc\buddy\src\buddy.php' at http://127.0.0.1:61882
+23:48:31.537 2022] [14128] [BUDDY] restarted
+23:48:33.380 2022] [16392] CurlConn_t::RunQuery @ 516 0x000001502c1166e0(0x0000015035cf0080) (http://127.0.0.1:61882) Add to multi 0x00007ff615f21d00 for http://127.0.0.1:61882
+23:48:33.380 2022] [16392] CurlConn_t::RunQuery @ 518 0x000001502c1166e0(0x0000015035cf0080) (http://127.0.0.1:61882) Add complete -> 0
+23:48:33.382 2022] [16392] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 28 bytes.
+23:48:33.382 2022] [16392] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 51 bytes.
+23:48:33.382 2022] [16392] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_HEADER_OUT with 123 bytes.
+23:48:33.383 2022] [16392] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_DATA_OUT with 153 bytes.
+23:48:33.383 2022] [16392] CurlMulti_c::CmSocketCb @ 311 called with sock 760 for IN(1), data 0x0000000000000000
+23:48:33.384 2022] [7404] [BUDDY] test
+23:48:33.384 2022] [16392] CurlMulti_c::MakeAsyncSocket @ 301 called with sock 760
+23:48:33.385 2022] [16392] CurlSocket_t::CurlSocket_t @ 214 0x000001502c063f20 (refs 1, sock 760) 
+23:48:33.385 2022] [16392] CurlMulti_c::WriteSocketCookie @ 296 curl_multi_assign returned 0
+23:48:33.386 2022] [16392] CurlMulti_c::CheckCompleted @ 545 N of running changed 0 -> 1
+23:48:33.389 2022] [9860] WARNING: [BUDDY] terminated, exit code 0
+23:48:33.591 2022] [14128] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 35 bytes.
+23:48:33.591 2022] [14128] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 21 bytes.
+23:48:33.593 2022] [14128] CurlMulti_c::CmSocketCb @ 311 called with sock 760 for REMOVE(4), data 0x000001502c063f20
+23:48:33.593 2022] [14128] CurlSocket_t::Remove @ 258 0x000001502c063f20 (refs 1, sock 760) 
+23:48:33.594 2022] [14128] CurlMulti_c::WriteSocketCookie @ 296 curl_multi_assign returned 0
+23:48:33.594 2022] [14128] CurlSocket_t::~CurlSocket_t @ 204 0x000001502c063f20 (refs 0, sock 760) 
+23:48:33.595 2022] [14128] CurlMulti_c::CheckCompleted @ 545 N of running changed 1 -> 0
+23:48:33.595 2022] [14128] CurlConn_t::Done @ 524 0x000001502c1166e0(0x0000015035cf0080) (http://127.0.0.1:61882) DONE: (56) Recv failure: Connection was reset
+23:48:33.595 2022] [16392] CurlConn_t::~CurlConn_t @ 531 0x000001502c1166e0(0x0000015035cf0080) (http://127.0.0.1:61882) 
+23:48:33.596 2022] [16392] WARNING: [BUDDY] error: Recv failure: Connection was reset
+23:48:34.592 2022] [9860] [BUDDY] started 'php C:\dev\sphinx\manticore\misc\buddy\src\buddy.php' at http://127.0.0.1:61885
+23:48:34.592 2022] [9860] [BUDDY] restarted
+23:48:35.989 2022] [17288] CurlConn_t::RunQuery @ 516 0x000001502c118f40(0x0000015035cf0080) (http://127.0.0.1:61885) Add to multi 0x00007ff615f21d00 for http://127.0.0.1:61885
+23:48:35.990 2022] [17288] CurlConn_t::RunQuery @ 518 0x000001502c118f40(0x0000015035cf0080) (http://127.0.0.1:61885) Add complete -> 0
+23:48:35.991 2022] [17288] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 28 bytes.
+23:48:35.992 2022] [17288] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 51 bytes.
+23:48:35.992 2022] [17288] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_HEADER_OUT with 123 bytes.
+23:48:35.992 2022] [17288] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_DATA_OUT with 153 bytes.
+23:48:35.993 2022] [17288] CurlMulti_c::CmSocketCb @ 311 called with sock 824 for IN(1), data 0x0000000000000000
+23:48:35.993 2022] [17288] CurlMulti_c::MakeAsyncSocket @ 301 called with sock 824
+23:48:35.994 2022] [17288] CurlSocket_t::CurlSocket_t @ 214 0x000001502c063f20 (refs 1, sock 824) 
+23:48:35.994 2022] [17288] CurlMulti_c::WriteSocketCookie @ 296 curl_multi_assign returned 0
+23:48:35.995 2022] [17288] CurlMulti_c::CheckCompleted @ 545 N of running changed 0 -> 1
+23:48:36.007 2022] [7404] [BUDDY] test
+23:48:36.013 2022] [4896] WARNING: [BUDDY] terminated, exit code 0
+23:48:36.195 2022] [9860] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 35 bytes.
+23:48:36.195 2022] [9860] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 21 bytes.
+23:48:36.196 2022] [9860] CurlMulti_c::CmSocketCb @ 311 called with sock 824 for REMOVE(4), data 0x000001502c063f20
+23:48:36.196 2022] [9860] CurlSocket_t::Remove @ 258 0x000001502c063f20 (refs 1, sock 824) 
+23:48:36.197 2022] [9860] CurlMulti_c::WriteSocketCookie @ 296 curl_multi_assign returned 0
+23:48:36.197 2022] [9860] CurlSocket_t::~CurlSocket_t @ 204 0x000001502c063f20 (refs 0, sock 824) 
+23:48:36.197 2022] [9860] CurlMulti_c::CheckCompleted @ 545 N of running changed 1 -> 0
+23:48:36.197 2022] [9860] CurlConn_t::Done @ 524 0x000001502c118f40(0x0000015035cf0080) (http://127.0.0.1:61885) DONE: (56) Recv failure: Connection was reset
+23:48:36.198 2022] [9956] CurlConn_t::~CurlConn_t @ 531 0x000001502c118f40(0x0000015035cf0080) (http://127.0.0.1:61885) 
+23:48:36.198 2022] [9956] WARNING: [BUDDY] error: Recv failure: Connection was reset
+23:48:37.211 2022] [4896] [BUDDY] started 'php C:\dev\sphinx\manticore\misc\buddy\src\buddy.php' at http://127.0.0.1:61888
+23:48:37.211 2022] [4896] [BUDDY] restarted
+23:48:38.225 2022] [16428] CurlConn_t::RunQuery @ 516 0x000001502c1166e0(0x0000015035cf0080) (http://127.0.0.1:61888) Add to multi 0x00007ff615f21d00 for http://127.0.0.1:61888
+23:48:38.225 2022] [16428] CurlConn_t::RunQuery @ 518 0x000001502c1166e0(0x0000015035cf0080) (http://127.0.0.1:61888) Add complete -> 0
+23:48:38.226 2022] [16428] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 28 bytes.
+23:48:38.227 2022] [16428] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 51 bytes.
+23:48:38.227 2022] [16428] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_HEADER_OUT with 123 bytes.
+23:48:38.227 2022] [16428] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_DATA_OUT with 153 bytes.
+23:48:38.228 2022] [16428] CurlMulti_c::CmSocketCb @ 311 called with sock 832 for IN(1), data 0x0000000000000000
+23:48:38.228 2022] [16428] CurlMulti_c::MakeAsyncSocket @ 301 called with sock 832
+23:48:38.229 2022] [16428] CurlSocket_t::CurlSocket_t @ 214 0x000001502c064670 (refs 1, sock 832) 
+23:48:38.229 2022] [16428] CurlMulti_c::WriteSocketCookie @ 296 curl_multi_assign returned 0
+23:48:38.229 2022] [16428] CurlMulti_c::CheckCompleted @ 545 N of running changed 0 -> 1
+23:48:38.238 2022] [7404] [BUDDY] test
+23:48:38.244 2022] [9860] WARNING: [BUDDY] terminated, exit code 0
+23:48:38.442 2022] [9956] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 35 bytes.
+23:48:38.442 2022] [9956] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 21 bytes.
+23:48:38.443 2022] [9956] CurlMulti_c::CmSocketCb @ 311 called with sock 832 for REMOVE(4), data 0x000001502c064670
+23:48:38.443 2022] [9956] CurlSocket_t::Remove @ 258 0x000001502c064670 (refs 1, sock 832) 
+23:48:38.444 2022] [9956] CurlMulti_c::WriteSocketCookie @ 296 curl_multi_assign returned 0
+23:48:38.444 2022] [9956] CurlSocket_t::~CurlSocket_t @ 204 0x000001502c064670 (refs 0, sock 832) 
+23:48:38.444 2022] [9956] CurlMulti_c::CheckCompleted @ 545 N of running changed 1 -> 0
+23:48:38.445 2022] [9956] CurlConn_t::Done @ 524 0x000001502c1166e0(0x0000015035cf0080) (http://127.0.0.1:61888) DONE: (56) Recv failure: Connection was reset
+23:48:38.445 2022] [17288] CurlConn_t::~CurlConn_t @ 531 0x000001502c1166e0(0x0000015035cf0080) (http://127.0.0.1:61888) 
+23:48:38.445 2022] [17288] WARNING: [BUDDY] error: Recv failure: Connection was reset
+23:48:39.441 2022] [9860] [BUDDY] started 'php C:\dev\sphinx\manticore\misc\buddy\src\buddy.php' at http://127.0.0.1:61891
+23:48:39.441 2022] [9860] [BUDDY] restarted
+23:48:41.146 2022] [16428] CurlConn_t::RunQuery @ 516 0x000001502c1367a0(0x0000015035cf0080) (http://127.0.0.1:61891) Add to multi 0x00007ff615f21d00 for http://127.0.0.1:61891
+23:48:41.147 2022] [16428] CurlConn_t::RunQuery @ 518 0x000001502c1367a0(0x0000015035cf0080) (http://127.0.0.1:61891) Add complete -> 0
+23:48:41.148 2022] [16428] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 28 bytes.
+23:48:41.152 2022] [14128] [BUDDY] test
+23:48:41.158 2022] [4896] WARNING: [BUDDY] terminated, exit code 0
+23:48:41.167 2022] [16428] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 51 bytes.
+23:48:41.168 2022] [16428] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_HEADER_OUT with 123 bytes.
+23:48:41.169 2022] [16428] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_DATA_OUT with 153 bytes.
+23:48:41.169 2022] [16428] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 37 bytes.
+23:48:41.169 2022] [16428] DebugCb @ 450 0x0000015035cf0080 chunk CURLINFO_TEXT with 21 bytes.
+23:48:42.366 2022] [4896] [BUDDY] started 'php C:\dev\sphinx\manticore\misc\buddy\src\buddy.php' at http://127.0.0.1:61894
+23:48:42.367 2022] [4896] [BUDDY] restarted
