@@ -1,0 +1,416 @@
+searchd.cpp:1455:sphInfo ( "shutdown complete" );
+searchd.cpp:2095:sphInfo ( "listening on UNIX socket %s", sPath );
+searchd.cpp:2127:sphInfo ( "listening on all interfaces, port=%d", iPort );
+searchd.cpp:2129:sphInfo ( "listening on %s:%d", sAddress, iPort );
+searchd.cpp:2172:sphInfo ( "bind() failed on %s, retrying...", sAddress );
+searchd.cpp:2968:sphInfo ( "query error: %s", sError.cstr() );
+searchd.cpp:5032:sphInfo ( "query error: %s", pRes->m_sError.cstr() );
+searchd.cpp:5040:sphInfo ( "query warning: %s", pRes->m_sWarning.cstr() );
+searchd.cpp:17857:sphInfo ( "rotating index '%s': success", sIndex );
+searchd.cpp:17902:sphInfo ( "--- allocs-count=%d, mem-total=%.4f Mb, active-threads=%d", iAllocCount, fMemTotal/fMB, iThdsCount );
+searchd.cpp:18000:sphInfo ( "rotating index '%s': started", sIndex.cstr() );
+searchd.cpp:18156:sphInfo ( "rotating index '%s': success", sIndex.cstr() );
+searchd.cpp:18190:sphInfo ( "rotating index: all indexes done" );
+searchd.cpp:18210:sphInfo ( "prereading %d indexes", dIndexes.GetLength() );
+searchd.cpp:18239:sphInfo ( "prereaded %d indexes in %0.3f sec", iReaded, float(tmFinished)/1000000.0f );
+searchd.cpp:19290:sphInfo ( "rotating finished" );
+searchd.cpp:19356:sphInfo ( "log reopened" );
+searchd.cpp:19372:sphInfo ( "query log reopened" );
+searchd.cpp:19583:sphInfo ( "Installing service..." );
+searchd.cpp:19621:sphInfo ( "Service '%s' installed successfully.", g_sServiceName );
+searchd.cpp:19642:sphInfo ( "Deleting service..." );
+searchd.cpp:19663:sphInfo ( "Service '%s' deleted successfully.", g_sServiceName );
+searchd.cpp:19830:sphInfo ( "watchdog: main process %d forked ok", iRes );
+searchd.cpp:19848:sphInfo ( "watchdog: main process %d crashed via CRASH_EXIT (exit code %d), %s", iPid, iExit, sWillRestart );
+searchd.cpp:19852:sphInfo ( "watchdog: main process %d exited cleanly (exit code %d), shutting down", iPid, iExit );
+searchd.cpp:19867:sphInfo ( "watchdog: main process %d killed cleanly with %s, shutting down", iPid, sSig );
+searchd.cpp:19872:sphInfo ( "watchdog: main process %d killed dirtily with signal %d, core dumped, %s",
+searchd.cpp:19875:sphInfo ( "watchdog: main process %d killed dirtily with signal %d, %s",
+searchd.cpp:19880:sphInfo ( "watchdog: main process %d stopped with signal %d", iPid, WSTOPSIG ( iStatus ) );
+searchd.cpp:19883:sphInfo ( "watchdog: main process %d resumed", iPid );
+searchd.cpp:19909:sphInfo ( "caught SIGHUP (seamless=%d, in_rotate=%d, need_rotate=%d)", (int)g_bSeamlessRotate, (int)g_bInRotate, (int)g_bNeedRotate );
+searchd.cpp:19916:sphInfo ( "caught SIGTERM, shutting down" );
+searchd.cpp:22708:sphInfo ( "will use default file 'searchd.log' for logging." );
+searchd.cpp:22938:sphInfo ( "using config file '%s'...", g_sConfigFile.cstr () );
+searchd.cpp:23027:sphInfo ( "stop: successfully terminated pid %d", iPid );
+searchd.cpp:23052:sphInfo ( "stop: successfully sent SIGTERM to pid %d", iPid );
+searchd.cpp:23189:sphInfo ( "Reloading the config" );
+searchd.cpp:23194:sphInfo ( "Reconfigure the daemon" );
+searchd.cpp:23546:sphInfo ( "accepting connections" );
+sphinxrt.cpp:1391:sphInfo ( "rt: index %s: ramchunk saved in %d.%03d sec",
+sphinxrt.cpp:1443:sphInfo ( "rt: index %s: ramchunk saved ok (mode=%s, last TID=" INT64_FMT ", current TID=" INT64_FMT ", "
+sphinxrt.cpp:8615:sphInfo ( "rt: index %s: optimized chunk(s) %d ( of %d ) in %d.%03d sec",
+sphinxrt.cpp:8864:sphInfo ( "rt: index %s: optimized (progressive) chunk(s) %d ( of %d ) in %d.%03d sec",
+sphinxrt.cpp:9466:sphInfo ( "index '%s': ramchunk saved. TID=" INT64_FMT "", sIndexName, iTID );
+sphinxrt.cpp:9592:sphInfo ( "binlog: finished replaying total %d in %d.%03d sec",
+sphinxrt.cpp:9889:sphInfo ( "binlog: replaying log %s", sLog.cstr() );
+sphinxrt.cpp:10004:sphInfo ( "binlog: index %s: recovered from tid " INT64_FMT " to tid " INT64_FMT,
+sphinxrt.cpp:10009:sphInfo ( "binlog: index %s: skipped at tid " INT64_FMT " and max binlog tid " INT64_FMT,
+sphinxrt.cpp:10014:sphInfo ( "binlog: replay stats: %d rows in %d commits; %d updates, %d reconfigure; %d indexes",
+sphinxrt.cpp:10016:sphInfo ( "binlog: finished replaying %s; %d.%d MB in %d.%03d sec",
+sphinxutils.cpp:2398:sphInfo ( "can't generate minidump" );
+sphinxutils.cpp:2405:sphInfo ( "can't create minidump file '%s'", sFile );
+sphinxutils.cpp:2418:sphInfo ( "can't dump minidump" );
+sphinxstd.h:2547:sphWarn ( "munlock() failed: errno %d", GetLastError() );
+sphinxstd.h:2552:sphWarn ( "munlock() failed: %s", strerror(errno) );
+sphinxstd.h:2649:sphWarn ( "munmap() failed: %s", strerror(errno) );
+indexer.cpp:1058:sphWarning ( "index '%s': index_sp=1 requires html_strip=1 to index paragraphs", sIndexName );
+searchd.cpp:1172:sphWarning ( "%s", sWarning );
+searchd.cpp:1337:sphWarning ( "index %s: attrs save failed: %s", it.GetName ().cstr(), sError.cstr() );
+searchd.cpp:2077:sphWarning ( "multiple addresses found for '%s', using the first one (%s)", sHost, sBuf.cstr() );
+searchd.cpp:2143:sphWarning ( "setsockopt() failed: %s", sphSockError() );
+searchd.cpp:2146:sphWarning ( "setsockopt() failed: %s", sphSockError() );
+searchd.cpp:2150:sphWarning ( "setsockopt() failed: %s", sphSockError() );
+searchd.cpp:2158:sphWarning ( "can't set TCP_FASTOPEN option for listener: %s", sphSockError () );
+searchd.cpp:2160:sphWarning ( "daemon wasn't build with TCP Fast Open support, option 'listen_tfo' ignored");
+searchd.cpp:2342:sphWarning ( "thread_pool disabled, can not listen for http interface, port=%d, use workers=thread_pool", tDesc.m_iPort );
+searchd.cpp:2721:sphWarning ( "%s", m_sError.cstr () );
+searchd.cpp:2743:sphWarning ( "%s", m_sError.cstr () );
+searchd.cpp:2754:sphWarning ( "%s", m_sError.cstr () );
+searchd.cpp:10328:sphWarning ( "Remote snippets: some of the agents didn't answered: %d queried, %d available, %d answered",
+searchd.cpp:11564:sphWarning ( "invalid socket passed to HandleClientSphinx" );
+searchd.cpp:11577:sphWarning ( "failed to send server version (client=%s(" INT64_FMT "))", sClientIP, iCID );
+searchd.cpp:11669:sphWarning ( "ill-formed client request (length=%d out of bounds)", iLength );
+searchd.cpp:11673:sphWarning ( "ill-formed client request (command=%d, SEARCHD_COMMAND_TOTAL=%d)", eCommand, SEARCHD_COMMAND_TOTAL );
+searchd.cpp:11682:sphWarning ( "failed to receive client request body (client=%s(" INT64_FMT "), exp=%d, error='%s')", sClientIP, iCID, iLength, sphSockError() );
+searchd.cpp:13628:sphWarning ( "%s", sErrorBuf.cstr() );
+searchd.cpp:16840:sphWarning ( "%s", sError.cstr() );
+searchd.cpp:16848:sphWarning ( "%s", sError.cstr() );
+searchd.cpp:17394:sphWarning ( "failed to send server version (client=%s(%d), error: %d '%s')", sClientIP, iCID, iErrno, sphSockError ( iErrno ) );
+searchd.cpp:17432:sphWarning ( "failed to receive MySQL request body (client=%s(%d), exp=%d, error='%s')", sClientIP, iCID, iPacketLen, sphSockError() );
+searchd.cpp:17460:sphWarning ( "failed to receive MySQL request body2 (client=%s(%d), exp=%d, error='%s')", sClientIP, iCID, iAddonLen, sphSockError() );
+searchd.cpp:17470:sphWarning ( "ill-formed client request (length=%d out of bounds)", iPacketLen );
+searchd.cpp:17596:sphWarning ( "%s index '%s': rename '%s' to '%s' failed: %s",
+searchd.cpp:17696:sphWarning ( "rotating index '%s': '%s' unreadable: %s; NOT SERVING", sIndex, sFile, strerror ( errno ) );
+searchd.cpp:17698:sphWarning ( "rotating index '%s': '%s' unreadable: %s; using old index", sIndex, sFile, strerror ( errno ) );
+searchd.cpp:17789:sphWarning ( "rotating index '%s': .new preload failed: %s", sIndex, tIndex.m_pIndex->GetLastError().cstr() );
+searchd.cpp:17812:sphWarning ( "rotating index '%s': %s", sIndex, tIndex.m_pIndex->GetLastWarning().cstr() );
+searchd.cpp:17832:sphWarning ( "rotating index '%s': %s", sIndex, tIndex.m_pIndex->GetLastWarning().cstr() );
+searchd.cpp:18026:sphWarning ( "nothing to rotate for index '%s'", sIndex.cstr() );
+searchd.cpp:18181:sphWarning ( "%s", sError.cstr() );
+searchd.cpp:18229:sphWarning ( "'%s' preread: %s", dReadLock->m_pIndex->GetName(), dReadLock->m_pIndex->GetLastWarning().cstr() );
+searchd.cpp:18283:sphWarning ( "sphinxql_state flush failed: %s", sError.cstr() );
+searchd.cpp:18357:sphWarning ( "sphinxql_state flush: rename %s to %s failed: %s",
+searchd.cpp:18459:sphWarning ( "sphinxql_state: parse error at line %d: %s", 1+iLines, sError.cstr() );
+searchd.cpp:18477:sphWarning ( "sphinxql_state: parse error at line %d: %s", 1+iLines, sError.cstr() );
+searchd.cpp:18585:sphWarning ( "index '%s': prealloc: %s; NOT SERVING", szIndexName, tIdx.m_pIndex->GetLastError().cstr() );
+searchd.cpp:18596:sphWarning ( "index '%s': %s - NOT SERVING", szIndexName, sError.cstr() );
+searchd.cpp:18603:sphWarning ( "index '%s': lock: %s; NOT SERVING", szIndexName, tIdx.m_pIndex->GetLastError().cstr() );
+searchd.cpp:18624:sphWarning ( "index '%s': ha_strategy (%s) is unknown for me, will use random", szIndexName, hIndex["ha_strategy"].cstr() );
+searchd.cpp:18630:sphWarning ( "index '%s': agent_persistent used, but no persistent_connections_limit defined. Fall back to non-persistent agent", szIndexName );
+searchd.cpp:18652:sphWarning ( "index '%s': no such local index '%s', SKIPPED", szIndexName, sLocal.cstr() );
+searchd.cpp:18669:sphWarning ( "index '%s': agent_retry_count must be positive, ignored", szIndexName );
+searchd.cpp:18677:sphWarning ( "index '%s': mirror_retry_count must be positive, ignored", szIndexName );
+searchd.cpp:18681:sphWarning ("index '%s': `agent_retry_count` and `mirror_retry_count` both specified (they are aliases)."
+searchd.cpp:18713:sphWarning ( "index '%s': agent_connect_timeout must be positive, ignored", szIndexName );
+searchd.cpp:18723:sphWarning ( "index '%s': agent_query_timeout must be positive, ignored", szIndexName );
+searchd.cpp:18732:sphWarning ( "index '%s': ha_strategy defined, but no ha agents in the index", szIndexName );
+searchd.cpp:18774:sphWarning ( "index '%s': no valid local/remote indexes in distributed index - NOT SERVING", szIndexName );
+searchd.cpp:18780:sphWarning ( "index '%s': unable to add name (duplicate?) - NOT SERVING", szIndexName );
+searchd.cpp:18796:sphWarning ( "index '%s': %s - NOT SERVING", szIndexName, sError.cstr() );
+searchd.cpp:18803:sphWarning ( "index '%s': %s", szIndexName, sError.cstr() );
+searchd.cpp:18808:sphWarning ( "index '%s': path must be specified - NOT SERVING", szIndexName );
+searchd.cpp:18817:sphWarning ( "ERROR: index '%s': %s - NOT SERVING", szIndexName, sError.cstr() );
+searchd.cpp:18829:sphWarning ( "ERROR: index '%s': has index_sp=%d, index_zones='%s' but disabled html_strip - NOT SERVING",
+searchd.cpp:18834:sphWarning ( "index '%s': has index_sp=%d but disabled html_strip - PARAGRAPH unavailable",
+searchd.cpp:18843:sphWarning ( "index '%s': rt_mem_limit extremely low, using 128K instead", szIndexName );
+searchd.cpp:18846:sphWarning ( "index '%s': rt_mem_limit very low (under 8 MB)", szIndexName );
+searchd.cpp:18852:sphWarning ( "index '%s': failed to create field lengths attributes: %s", szIndexName, sError.cstr() );
+searchd.cpp:18862:sphWarning ( "dict=crc deprecated, use dict=keywords instead" );
+searchd.cpp:18864:sphWarning ( "WARNING: index '%s': prefix_fields and infix_fields has no effect with dict=keywords, ignoring\n", szIndexName );
+searchd.cpp:18893:sphWarning ( "INTERNAL ERROR: index '%s': hash add failed - NOT SERVING", szIndexName );
+searchd.cpp:18913:sphWarning ( "index '%s': key 'path' not found - NOT SERVING", szIndexName );
+searchd.cpp:18920:sphWarning ( "index '%s': duplicate name - NOT SERVING", szIndexName );
+searchd.cpp:18939:sphWarning ( "INTERNAL ERROR: index '%s': hash add failed - NOT SERVING", szIndexName );
+searchd.cpp:18959:sphWarning ( "index '%s': duplicate name - NOT SERVING", szIndexName );
+searchd.cpp:18974:sphWarning ( "failed to configure index %s: %s", szIndexName, sError.cstr() );
+searchd.cpp:18981:sphWarning ( "index '%s': %s - NOT SERVING", szIndexName, sError.cstr() );
+searchd.cpp:18992:sphWarning ( "INTERNAL ERROR: index '%s': hash add failed - NOT SERVING", szIndexName );
+searchd.cpp:19003:sphWarning ( "index '%s': unknown type '%s' - NOT SERVING", szIndexName, hIndex["type"].cstr() );
+searchd.cpp:19087:sphWarning ( "failed to parse config file '%s'; using previous settings", g_sConfigFile.cstr () );
+searchd.cpp:19136:sphWarning ( "index '%s': no valid local/remote indexes in distributed index; using last valid definition", sIndexName.cstr() );
+searchd.cpp:19269:sphWarning ( "%s", sError.cstr() );
+searchd.cpp:19278:sphWarning ( "index '%s': %s - NOT SERVING", sIndex, sError.cstr() );
+searchd.cpp:19319:sphWarning ( "nothing to rotate after SIGHUP" );
+searchd.cpp:19331:sphWarning ( "INTERNAL ERROR: non-empty queue on a rotation cycle start, got %d elements", dQueue.GetLength() );
+searchd.cpp:19333:sphWarning ( "queue[%d] = %s", i, dQueue[i].cstr() );
+searchd.cpp:19349:sphWarning ( "failed to reopen log file '%s': %s", g_sLogFile.cstr(), strerror(errno) );
+searchd.cpp:19366:sphWarning ( "failed to reopen query log file '%s': %s", g_sQueryLogFile.cstr(), strerror(errno) );
+searchd.cpp:19445:sphWarning ( "failed to create attribute save thread, error[%d] %s", errno, strerror(errno) );
+searchd.cpp:19630:sphWarning ( "failed to set service description" );
+searchd.cpp:19991:sphWarning ( "failed to connect to unix://%s: %s\n", tDesc.m_sUnix.cstr(), sphSockError() );
+searchd.cpp:20015:sphWarning ( "setsockopt() failed: %s", sphSockError() );
+searchd.cpp:20020:sphWarning ( "failed to connect to %s:%d: %s\n", sphFormatIP ( sBuf, sizeof(sBuf), tDesc.m_uIP ), tDesc.m_iPort, sphSockError() );
+searchd.cpp:20116:sphWarning ( "send() failed: %d: %s", iErrno, sphSockError ( iErrno ) );
+searchd.cpp:20155:sphWarning ( "select() failed: %s", sphSockError(iErrno) );
+searchd.cpp:20183:sphWarning ( "setsockopt() failed: %s", sphSockError() );
+searchd.cpp:20216:sphWarning ( "maxed out, dismissing client (socket=%d)", iClientSock );
+searchd.cpp:20304:sphWarning ( "maxed out, dismissing client" );
+searchd.cpp:20326:sphWarning ( "failed to create worker thread, threads(%d), error[%d] %s", g_dThd.GetLength(), iErr, strerror(iErr) );
+searchd.cpp:20867:sphWarning ( "net-loop use timeout due to %s", pWakeup->m_sError.cstr () );
+searchd.cpp:21127:sphWarning ( "%s (client=%s(%d)), failed to get error: %d '%s'", sMsg, pConn->m_sClientName, pConn->m_iConnID, errno, strerror ( errno ) );
+searchd.cpp:21133:sphWarning ( "%s (client=%s(%d)), error: %d '%s', sock=%d", sMsg, pConn->m_sClientName, pConn->m_iConnID, iErrno, sphSockError ( iErrno ), pConn->m_iClientSock );
+searchd.cpp:21240:sphWarning ( "accept() failed, raise ulimit -n and restart searchd: %s", sphSockError(iErrno) );
+searchd.cpp:21249:sphWarning ( "sphSetSockNB() failed: %s", sphSockError() );
+searchd.cpp:21258:sphWarning ( "set of TCP_NODELAY failed: %s", sphSockError() );
+searchd.cpp:21266:sphWarning ( "server is in maintenance mode: refusing connection" );
+searchd.cpp:21471:sphWarning ( "ill-formed client request (length=%d out of bounds)", m_tState->m_iLeft );
+searchd.cpp:21474:sphWarning ( "ill-formed client request (command=%d, SEARCHD_COMMAND_TOTAL=%d)", m_eCommand, SEARCHD_COMMAND_TOTAL );
+searchd.cpp:21477:sphWarning ( "%s", g_sMaxedOutMessage );
+searchd.cpp:21693:sphWarning ( "ill-formed client request (length=%d out of bounds)", m_tState->m_dBuf.GetLength() );
+searchd.cpp:22492:sphWarning ( "preopen_indexes=1 has no effect with seamless_rotate=0" );
+searchd.cpp:22509:sphWarning ( "agent_retry_delay %d exceeded max recommended %d", g_iAgentRetryDelay, MAX_RETRY_DELAY );
+searchd.cpp:22512:sphWarning ( "agent_retry_count %d exceeded max recommended %d", g_iAgentRetryCount, MAX_RETRY_COUNT );
+searchd.cpp:22524:sphWarning ( "setlocale failed (locale='%s')", sLocale );
+searchd.cpp:22533:sphWarning ( "%s", sError.cstr() );
+searchd.cpp:22542:sphWarning ( "thread_stack %d out of bounds (64K..8M); clamped", iStackSize );
+searchd.cpp:22576:sphWarning ( "query_log_mode invalid value (value=%o, error=%s); skipped", iMode, strerror(iErr) );
+searchd.cpp:22609:sphWarning ( "mysql_version_string too long; using default (version=%s)", SPHINX_VERSION );
+searchd.cpp:22657:sphWarning ( "index '%s': %s - NOT SERVING", sIndexName, sError.cstr() );
+searchd.cpp:22662:sphWarning ( "%s", sError.cstr() );
+searchd.cpp:22679:sphWarning ( "index '%s': global IDF unavailable - IGNORING", sIndexName );
+searchd.cpp:22707:sphWarning ( "failed to use syslog for logging. You have to reconfigure --with-syslog and rebuild the daemon!" );
+searchd.cpp:22898:sphWarning ( "--listen and --port are only allowed in --console debug mode; switch ignored" );
+searchd.cpp:23044:sphWarning ( "mkfifo failed (path=%s, err=%d, msg=%s); will NOT wait", sPipeName.cstr(), errno, strerror(errno) );
+searchd.cpp:23046:sphWarning ( "open failed (path=%s, err=%d, msg=%s); will NOT wait", sPipeName.cstr(), errno, strerror(errno) );
+searchd.cpp:23065:sphWarning ( "stopwait%s error '%s'", ( bHandshake ? " handshake" : " " ), strerror(errno) );
+searchd.cpp:23084:sphWarning ( "stopwait read fifo error '%s'", strerror(errno) );
+searchd.cpp:23143:sphWarning ( "no poll or epoll found, thread pool unavailable, going back to thread workers" );
+searchd.cpp:23293:sphWarning ( "process shared mutex unsupported, MVA update disabled ( %s )", sArenaError );
+searchd.cpp:23332:sphWarning ( "compact_in option only supported with query_log_format=sphinxql" );
+searchd.cpp:23398:sphWarning ( "index '%s': lock: %s; INDEX UNUSABLE", it.GetName ().cstr(), pServed->m_pIndex->GetLastError().cstr() );
+searchd.cpp:23459:sphWarning ( "unable to init IO statistics" );
+searchd.cpp:23487:sphWarning ( "sphinxql_state flush disabled: %s", sError.cstr() );
+searchd.cpp:23512:sphWarning ( "failed to create preread thread" );
+searchd.cpp:23528:sphWarning ( "sphSetSockNB() failed: %s", sphSockError() );
+searchdha.cpp:1238:sphWarning ( "failed to set nodelay option: %s", sphSockError() );
+searchdha.cpp:1241:sphWarning ( "failed to set nodelay option: %s", sphSockError() );
+searchdha.cpp:1342:sphWarning ( "PollableEvent_t create error:%s", m_sError.cstr () );
+searchdha.cpp:1561:sphWarn ("sendmsg(...) TCP_FASTOPEN isn't available now");
+searchdha.cpp:1903:sphWarning ( "epoll tick failed: %s", sphSockError ( iErrno ) );
+searchdha.cpp:1970:sphWarning ( "failed to setup epoll event for sock %d, errno=%d, %s", iSocket, errno, strerror ( errno ) );
+searchdha.cpp:1990:sphWarning ( "epoll tick failed: %s", sphSockError ( iErrno ) );
+searchdha.cpp:2010:sphWarning ( "failed to modify epoll event for sock %d, errno=%d, %s", iSocket, errno, strerror ( errno ) );
+searchdha.cpp:2445:sphWarning ( "failed to get error: %d '%s'", errno, strerror ( errno ) );
+searchdha.cpp:3245:sphWarning ( "failed to setup epoll event for sock %d, errno=%d, %s", iSocket, errno, strerror ( errno ) );
+searchdha.cpp:3265:sphWarning ( "epoll tick failed: %s", sphSockError ( iErrno ) );
+searchdha.cpp:3317:sphWarning ( "failed to modify epoll event for sock %d, errno=%d, %s", iSocket, errno, strerror ( errno ) );
+searchdha.cpp:3391:sphWarning ( "failed to setup epoll event for sock %d, errno=%d, %s", iSocket, errno, strerror ( errno ) );
+searchdha.cpp:3411:sphWarning ( "epoll tick failed: %s", sphSockError ( iErrno ) );
+searchdha.cpp:3463:sphWarning ( "failed to modify epoll event for sock %d, errno=%d, %s", iSocket, errno, strerror ( errno ) );
+searchdha.cpp:3538:sphWarning ( "failed to setup kqueue event for sock %d, errno=%d, %s", iSocket, errno, strerror ( errno ) );
+searchdha.cpp:3568:sphWarning ( "kqueue tick failed: %s", sphSockError ( iErrno ) );
+searchdha.cpp:3625:sphWarning ( "failed to setup kqueue event for sock %d, errno=%d, %s", iSocket, errno, strerror ( errno ) );
+searchdha.cpp:3706:sphWarning ( "poll tick failed: %s", sphSockError ( iErrno ) );
+searchdha.cpp:3871:sphWarning ( "poll (select version) tick failed: %s", sphSockError ( iErrno ) );
+sphinx.cpp:1795:sphWarning ( "sphLockUn: failed fcntl. Error: %d '%s'", errno, strerror ( errno ) );
+sphinx.cpp:3436:sphWarning ( "dict=crc deprecated, use dict=keywords instead" );
+sphinx.cpp:3557:sphWarning ( "wrong character mapping start specified: U+%x, should be between U+%x and U+%x (inclusive); CLAMPED",
+sphinx.cpp:3564:sphWarning ( "wrong character mapping end specified: U+%x, should be between U+%x and U+%x (inclusive); CLAMPED",
+sphinx.cpp:3571:sphWarning ( "wrong character remapping start specified: U+%x, should be between U+%x and U+%x (inclusive); CLAMPED",
+sphinx.cpp:3579:sphWarning ( "wrong character remapping end specified: U+%x, should be between U+%x and U+%x (inclusive); IGNORED",
+sphinx.cpp:3977:sphWarning ( "%s line %d: %s", pFiles->m_tSynonymFile.m_sFilename.cstr(), i, sError.cstr() );
+sphinx.cpp:3996:sphWarning ( "%s line %d: %s", sFilename, iLine, sError.cstr() );
+sphinx.cpp:6881:sphWarning ( "CSphWriter::SeekTo seek error. Error: %d '%s'", errno, strerror ( errno ) );
+sphinx.cpp:6883:sphWarning ( "CSphWriter::SeekTo seek error. Expected: %zd, got %zd", iPos, uSeek );
+sphinx.cpp:7444:sphWarn ( "%s: mem_limit=%d kb extremely low, increasing to %d kb",
+sphinx.cpp:7450:sphWarn ( "%s: merge_block_size=%d kb too low, increasing mem_limit may improve performance",
+sphinx.cpp:7498:sphWarning ( "CSphBin::ReadBytes : failed seek. Error: %d '%s'", errno, strerror ( errno ) );
+sphinx.cpp:7500:sphWarning ( "CSphBin::ReadBytes : failed seek. Expected: %zd, got %zd", m_iFilePos, uSeek );
+sphinx.cpp:7560:sphWarning ( "CSphBin::ReadBytes : failed seek. Error: %d '%s'", errno, strerror ( errno ) );
+sphinx.cpp:7562:sphWarning ( "CSphBin::ReadBytes : failed seek. Expected: %zd, got %zd", m_iFilePos, uSeek );
+sphinx.cpp:7774:sphWarning ( "CSphBin::Precache : failed seek. Error: %d '%s'", errno, strerror ( errno ) );
+sphinx.cpp:7776:sphWarning ( "CSphBin::Precache : failed seek. Expected: %zd, got %zd", m_iFilePos, uSeek );
+sphinx.cpp:9400:sphWarning ( "index '%s' forced to reset persistent MVAs ( %s )", m_sIndexName.cstr(), g_tMvaArena.GetError() );
+sphinx.cpp:9697:sphWarning ( "index '%s': %s for %s", sIndexName, sWarning.cstr(), sFor );
+sphinx.cpp:10560:sphWarn ( "min_infix_len must be greater 1, clamped" );
+sphinx.cpp:11373:sphWarning ( "block relocation: failed seek. Error: %d '%s'", errno, strerror ( errno ) );
+sphinx.cpp:11375:sphWarning ( "block relocation: failed seek. Expected: %zd, got %zd", iBlockStart + uTotalRead, uSeek );
+sphinx.cpp:11392:sphWarning ( "block relocation: failed seek. Error: %d '%s'", errno, strerror ( errno ) );
+sphinx.cpp:11394:sphWarning ( "block relocation: failed seek. Expected: %zd, got %zd", *pFileSize, uSeek );
+sphinx.cpp:11470:sphWarning ( "sphTruncate: failed seek. Error: %d '%s'", errno, strerror ( errno ) );
+sphinx.cpp:11569:sphWarning ( "Attribute count is 0: switching to none docinfo" );
+sphinx.cpp:11688:sphWarn ( "collect_hits: mem_limit=%d kb too low, increasing to %d kb",
+sphinx.cpp:11745:sphWarn ( "unable to load 'keep-attrs' index (%s); ignoring --keep-attrs", sError.cstr() );
+sphinx.cpp:11754:sphWarn ( "schemas are different (%s); ignoring --keep-attrs", sError.cstr() );
+sphinx.cpp:11769:sphWarn ( "no attribute found '%s'; ignoring --keep-attrs", m_dKeepAttrs[i].cstr() );
+sphinx.cpp:12112:sphWarning ( "%s", m_sLastError.cstr() );
+sphinx.cpp:12604:sphWarn ( "duplicated document id=" DOCID_FMT, uLastId );
+sphinx.cpp:12732:sphWarn ( "failed to truncate %s", fdDocinfos.GetFilename() );
+sphinx.cpp:12748:sphWarning ( "MVA update disabled (collected MVA " INT64_FMT ", should be less %d)", uLastMvaOff, INT_MAX );
+sphinx.cpp:13102:sphWarn ( "failed to truncate %s", fdHits.GetFilename() );
+sphinx.cpp:13107:sphWarn ( "%d duplicate document id pairs found", iDupes );
+sphinx.cpp:13822:sphWarning ( "discarded hitlists for %u words", iHitlistsDiscarded );
+sphinx.cpp:16239:sphWarning ( "wordlist size mismatch (size=%zu, checkpoints=%d)", m_tWordlist.m_tBuf.GetLengthBytes(), m_tWordlist.m_dCheckpoints.GetLength() );
+sphinx.cpp:16300:sphWarning ( "MVA update disabled (loaded MVA " INT64_FMT ", should be less %d)", m_tMva.GetLength64(), INT_MAX );
+sphinx.cpp:21133:sphWarn ( "failed to load stopwords from '%s'", sName );
+sphinx.cpp:21143:sphWarn ( "stopwords: failed to get file size for '%s'", sName );
+sphinx.cpp:21272:sphWarning ( "index '%s': wordforms file '%s' is shared with index '%s', "
+sphinx.cpp:21353:sphWarning ( "index '%s': all source tokens are stopwords (wordform='%s', file='%s'). IGNORED.", pContainer->m_sIndexName.cstr(), sBuffer, szFile );
+sphinx.cpp:21359:sphWarning ( "index '%s': no wordform separator found (wordform='%s', file='%s'). IGNORED.", pContainer->m_sIndexName.cstr(), sBuffer, szFile );
+sphinx.cpp:21366:sphWarning ( "index '%s': no destination token found (wordform='%s', file='%s'). IGNORED.", pContainer->m_sIndexName.cstr(), sBuffer, szFile );
+sphinx.cpp:21372:sphWarning ( "index '%s': misplaced comment (wordform='%s', file='%s'). IGNORED.", pContainer->m_sIndexName.cstr(), sBuffer, szFile );
+sphinx.cpp:21403:sphWarning ( "index '%s': destination token is a stopword (wordform='%s', file='%s'). IGNORED.", pContainer->m_sIndexName.cstr(), sBuffer, szFile );
+sphinx.cpp:21408:sphWarning ( "index '%s': wordform contains stopwords (wordform='%s'). Fix your wordforms file '%s'.", pContainer->m_sIndexName.cstr(), sBuffer, szFile );
+sphinx.cpp:21422:sphWarning ( "invalid mapping (destination contains blended characters) (wordform='%s'). Fix your wordforms file '%s'.", sBuffer, szFile );
+sphinx.cpp:21426:sphWarning ( "blended characters are not allowed with multiple destination tokens (wordform='%s', file='%s'). IGNORED.", sBuffer, szFile );
+sphinx.cpp:21462:sphWarning ( "index '%s': duplicate wordform found - overridden ( current='%s', old='%s %s > %s' ). Fix your wordforms file '%s'.",
+sphinx.cpp:21534:sphWarning ( "index '%s': duplicate wordform found - overridden ( current='%s', old='%s%s > %s' ). Fix your wordforms file '%s'.",
+sphinx.cpp:21541:sphWarning ( "index '%s': duplicate wordform found ( '%s' ). Fix your wordforms file '%s'.", pContainer->m_sIndexName.cstr(), sBuffer, szFile );
+sphinx.cpp:21629:sphWarning ( "index '%s': %s", sIndex, sError.cstr() );
+sphinx.cpp:21662:sphWarning ( "index '%s': wordforms file '%s' not found", sIndex, dFiles[i].cstr() );
+sphinx.cpp:21676:sphWarning ( "index '%s': wordforms contain post-morphology normal forms, but no morphology was specified", sIndex );
+sphinx.cpp:22743:sphWarn ( "word overrun buffer, clipped!!!\n"
+sphinx.cpp:23499:sphWarning ( "hash missing value in operator [] (wordid=" INT64_FMT ", hash=%d)", (int64_t)uWordID, uHash );
+sphinx.cpp:25557:sphWarning ( "docid=" DOCID_FMT ": %s", m_tDocInfo.m_uDocID, sError.cstr() );
+sphinx.cpp:25564:sphWarning ( "docid=" DOCID_FMT ": file '%s' too big for a field (size=" INT64_FMT ", max_file_field_buffer=%d)",
+sphinx.cpp:25582:sphWarning ( "docid=" DOCID_FMT ": %s", m_tDocInfo.m_uDocID, sError.cstr() );
+sphinx.cpp:25589:sphWarning ( "docid=" DOCID_FMT ": file '%s' too big for a field (size=" INT64_FMT ", max_file_field_buffer=%d)",
+sphinx.cpp:25610:sphWarning ( "docid=" DOCID_FMT ": read failed: %s", m_tDocInfo.m_uDocID, sError.cstr() );
+sphinx.cpp:26426:sphWarn ( "sql_range_step=" INT64_FMT ": too small; might hurt indexing performance!", m_tParams.m_iRangeStep );
+sphinx.cpp:26644:sphWarn ( "attribute '%s' not found - IGNORING", m_tParams.m_dAttrs[i].m_sName.cstr() );
+sphinx.cpp:26715:sphWarn ( "source %s: skipped %d document(s) with zero/NULL ids", m_tSchema.GetName(), m_iNullIds );
+sphinx.cpp:26718:sphWarn ( "source %s: skipped %d document(s) with DOCID_MAX ids", m_tSchema.GetName(), m_iMaxIds );
+sphinx.cpp:26775:sphWarn ( "sql_query_post[%d]: error=%s, query=%s",
+sphinx.cpp:26915:sphWarn ( "%s: %s (DSN=%s)", sSqlError, SqlError(), m_sSqlDSN.cstr() );
+sphinx.cpp:26923:sphWarn ( "hook_post_index: runtime error %s when running external hook", strerror(errno) );
+sphinx.cpp:27085:sphWarn ( "failed to unpack column '%s', error=%d, docid=" DOCID_FMT, SqlFieldName(iIndex), iError, m_tDocInfo.m_uDocID );
+sphinx.cpp:27124:sphWarn ( "failed to unpack '%s', invalid column size (size=%d), "
+sphinx.cpp:27140:sphWarn ( "failed to unpack '%s', column size limit exceeded (size=%d),"
+sphinx.cpp:27493:sphWarn ( "indexing of multiple result sets is not supported yet; some results sets were dismissed!" );
+sphinx.cpp:27901:sphWarn ( "%s", ((T*)this)->DecorateMessage ( "attribute '%s': invalid bitcount=%d (bitcount ignored)", tCol.m_sName.cstr(), iBits ) );
+sphinx.cpp:27908:sphWarn ( "%s", ((T*)this)->DecorateMessage ( "attribute '%s': bitcount is only supported for integer types", tCol.m_sName.cstr() ) );
+sphinx.cpp:27949:sphWarn ( "%s", ((T*)this)->DecorateMessage ( "duplicate field '%s'", sFieldName ) );
+sphinx.cpp:28732:sphWarn ( "%s", DecorateMessage ( "both embedded and configured schemas found; using embedded" ) );
+sphinx.cpp:28953:sphWarn ( "%s", DecorateMessage ( "unknown field/attribute '%s'; ignored", szName ) );
+sphinx.cpp:29032:sphWarn ( "duplicate attribute node <%s> - using first value", m_tSchema.GetAttr ( m_iCurAttr ).m_sName.cstr() );
+sphinx.cpp:29058:sphWarn ( "source '%s': unexpected string '%s' (line=%d, pos=%d) %s",
+sphinx.cpp:29105:sphWarn ( "source '%s': field/attribute '%s' length exceeds max length (line=%d, pos=%d, docid=" DOCID_FMT ")",
+sphinx.cpp:29278:sphWarn ( "row buffer is over %d bytes; consider revising sql_column_buffers", iTotalBuffer );
+sphinx.cpp:29420:sphWarn ( "'%s' column truncated (buffer=%d, got=%d); consider revising sql_column_buffers",
+sphinxrlp.cpp:59:sphWarning ( "%s", szMessage );
+sphinxrlp.cpp:348:sphWarning ( "BT_RLP_Context_ProcessBuffer error" );
+sphinxrlp.cpp:352:sphWarning ( "BT_RLP_TokenIteratorFactory_CreateIterator error" );
+sphinxrlp.cpp:527:sphWarning ( "RLP filter clone error '%s'", sError.cstr() );
+sphinxrt.cpp:1427:sphWarning ( "rt: index %s: ramchunk save FAILED! (error=%s)", m_sIndexName.cstr(), m_sLastError.cstr() );
+sphinxrt.cpp:3834:sphWarning ( "INTERNAL ERROR: dictionary size " INT64_FMT " overflow at infix save", iInfixBlockOffset );
+sphinxrt.cpp:4092:sphWarning ( "failed to unlink ram chunk (file=%s, errno=%d, error=%s)", sChunk.cstr(), errno, strerror(errno) );
+sphinxrt.cpp:4222:sphWarning ( "index '%s': morphology option changed from config has no effect, ignoring", m_sIndexName.cstr() );
+sphinxrt.cpp:4270:sphWarning ( "infix definition changed (from len=%d, hashes=%d to len=%d, hashes=%d) - rebuilding...",
+sphinxrt.cpp:4683:sphWarning ( "index '%s': %s", m_sIndexName.cstr(), m_sLastError.cstr() );
+sphinxrt.cpp:8050:sphWarn ( "INTERNAL ERROR: index %s chunk %d update failure: %s", m_sIndexName.cstr(), iChunk, sError.cstr() );
+sphinxrt.cpp:8157:sphWarning ( "%s attribute to %s.%d: %s", bAdd ? "adding" : "removing", m_sPath.cstr(), dChunkNames[iDiskChunk], sError.cstr() );
+sphinxrt.cpp:8425:sphWarning ( "rt: truncate failed to unlink %s: %s", sFile.cstr(), strerror(errno) );
+sphinxrt.cpp:8525:sphWarning ( "rt optimize: index %s: failed to merge %s to %s (error %s)",
+sphinxrt.cpp:8536:sphWarning ( "rt optimize: index %s: failed to load merged chunk (error %s)",
+sphinxrt.cpp:8549:sphWarning ( "rt optimize: index %s: cur to old rename failed (error %s)",
+sphinxrt.cpp:8556:sphWarning ( "rt optimize: index %s: merged to cur rename failed (error %s)",
+sphinxrt.cpp:8560:sphWarning ( "rt optimize: index %s: old to cur rename failed (error %s)",
+sphinxrt.cpp:8584:sphWarning ( "rt optimize: index %s: forced to shutdown, remove old index files manually '%s', '%s'",
+sphinxrt.cpp:8611:sphWarning ( "rt: index %s: optimization terminated chunk(s) %d ( of %d ) in %d.%03d sec",
+sphinxrt.cpp:8760:sphWarning ( "rt optimize: index %s: failed to merge %s to %s (error %s)",
+sphinxrt.cpp:8771:sphWarning ( "rt optimize: index %s: failed to load merged chunk (error %s)",
+sphinxrt.cpp:8784:sphWarning ( "rt optimize: index %s: cur to old rename failed (error %s)",
+sphinxrt.cpp:8791:sphWarning ( "rt optimize: index %s: merged to cur rename failed (error %s)",
+sphinxrt.cpp:8795:sphWarning ( "rt optimize: index %s: old to cur rename failed (error %s)",
+sphinxrt.cpp:8832:sphWarning ( "rt optimize: index %s: forced to shutdown, remove old index files manually '%s', '%s'",
+sphinxrt.cpp:8860:sphWarning ( "rt: index %s: optimization terminated chunk(s) %d ( of %d ) in %d.%03d sec",
+sphinxrt.cpp:9250:sphWarning ( "binlog: %s: CRC mismatch (index=%s, tid=" INT64_FMT ", pos=" INT64_FMT ")", sOp, sIndexName ? sIndexName : "", iTid, iTxnPos );
+sphinxrt.cpp:9517:sphWarning ( "binlog: failed to unlink %s: %s (remove it manually)", sLog.cstr(), strerror(errno) );
+sphinxrt.cpp:9896:sphWarning ( "binlog: log open error: %s", sError.cstr() );
+sphinxrt.cpp:9906:sphWarning ( "binlog: empty binlog %s detected, skipping", sLog.cstr() );
+sphinxrt.cpp:9988:sphWarning ( "binlog: log io error at pos=" INT64_FMT ": %s", iPos, sError.cstr() );
+sphinxrt.cpp:9991:sphWarning ( "binlog: replay error at pos=" INT64_FMT ")", iPos );
+sphinxrt.cpp:9999:sphWarning ( "binlog: index %s: missing; tids " INT64_FMT " to " INT64_FMT " skipped!",
+sphinxrt.cpp:10094:sphWarning ( "binlog: commit: replaying txn despite descending time "
+sphinxrt.cpp:10106:sphWarning ( "binlog: commit: unexpected tid (index=%s, indextid=" INT64_FMT ", logtid=" INT64_FMT ", pos=" INT64_FMT ")",
+sphinxrt.cpp:10226:sphWarning ( "binlog: update: unexpected tid (index=%s, indextid=" INT64_FMT ", logtid=" INT64_FMT ", pos=" INT64_FMT ")",
+sphinxrt.cpp:10274:sphWarning ( "binlog: cache mismatch: %d indexes cached, %d replayed",
+sphinxrt.cpp:10286:sphWarning ( "binlog: cache mismatch: index %d name mismatch (%s cached, %s replayed)",
+sphinxrt.cpp:10293:sphWarning ( "binlog: cache mismatch: index %s tid ranges mismatch "
+sphinxrt.cpp:10343:sphWarning ( "binlog: reconfigure: replaying txn despite descending time "
+sphinxrt.cpp:10355:sphWarning ( "binlog: reconfigure: unexpected tid (index=%s, indextid=" INT64_FMT ", logtid=" INT64_FMT ", pos=" INT64_FMT ")",
+sphinxrt.cpp:10363:sphWarning ( "binlog: reconfigure: wrong settings (index=%s, indextid=" INT64_FMT ", logtid=" INT64_FMT ", pos=" INT64_FMT ", error=%s)",
+sphinxrt.cpp:11860:sphWarning( "failed to create thread_pool, single thread matching used: %s", sError.cstr() );
+sphinxrt.cpp:12251:sphWarning ( "index '%s': %d (id=" UINT64_FMT ") query failed to load, ignoring", m_sIndexName.cstr(), i, tQuery.m_uUID );
+sphinxrt.cpp:12319:sphWarning ( "index '%s': morphology option changed from config has no effect, ignoring", m_sIndexName.cstr() );
+sphinxrt.cpp:12411:sphWarning ( "failed to serialize meta: %s", sError.cstr() );
+sphinxrt.cpp:12470:sphWarning ( "failed to rename meta (src=%s, dst=%s, errno=%d, error=%s)", sMetaNew.cstr(), sMeta.cstr(), errno, strerror( errno ) );
+sphinxutils.cpp:399:sphWarning ( "'%s = %s' parse error '%s'", sKey, pEntry->cstr(), sErr );
+sphinxutils.cpp:411:sphWarning ( "'%s = " INT64_FMT "' clamped to %d(INT_MAX)", sKey, iSize, INT_MAX );
+sphinxutils.cpp:1314:sphWarning ( "ngram_chars specified, but ngram_len=0; IGNORED" );
+sphinxutils.cpp:1410:sphWarning ( "dict=crc deprecated, use dict=keywords instead" );
+sphinxutils.cpp:1526:sphWarning ( "dict=crc deprecated, use dict=keywords instead" );
+sphinxutils.cpp:1699:sphWarning ( "index '%s': %s", pIndex->GetName(), sError.cstr() );
+sphinxutils.cpp:1737:sphWarning ( "index '%s': %s", pIndex->GetName(), sError.cstr() );
+sphinxutils.cpp:2448:sphWarning ( "unlink failed (file '%s', error '%s'", sFileName, strerror(errno) );
+searchd.cpp:1919:sphFatal ( "sigaction(): %s", strerror(errno) );
+searchd.cpp:1958:sphFatal ( "sphFDSet() failed fd=%d, FD_SETSIZE=%d", fd, FD_SETSIZE );
+searchd.cpp:1966:sphFatal ( "sphFDClr() failed fd=%d, FD_SETSIZE=%d", fd, FD_SETSIZE );
+searchd.cpp:2053:sphFatal ( "no AF_INET address found for: %s", sHost );
+searchd.cpp:2093:sphFatal ( "UNIX socket path is too long (len=%d)", (int)len );
+searchd.cpp:2103:sphFatal ( "failed to create UNIX socket: %s", sphSockError() );
+searchd.cpp:2108:sphFatal ( "unlink() on UNIX socket file failed: %s", sphSockError() );
+searchd.cpp:2113:sphFatal ( "bind() on UNIX socket failed: %s", sphSockError() );
+searchd.cpp:2139:sphFatal ( "failed to create TCP socket: %s", sphSockError() );
+searchd.cpp:2176:sphFatal ( "bind() failed on %s: %s", sAddress, sphSockError() );
+searchd.cpp:2191:sphFatal ( "port %d is out of range", iPort );
+searchd.cpp:2218:sphFatal ( "unknown listen protocol type '%s'", sProto.cstr() ? sProto.cstr() : "(NULL)" );
+searchd.cpp:2240:sphFatal ( "invalid listen format (too many fields)" );
+searchd.cpp:2256:sphFatal ( "invalid listen format (too many fields)" );
+searchd.cpp:2262:sphFatal ( "UNIX sockets are not supported on Windows" );
+searchd.cpp:2308:sphFatal ( "invalid listen format (expected port:proto, got extra trailing part in listen=%s)", sSpec );
+searchd.cpp:17592:sphFatal ( "%s index '%s': rollback rename '%s' to '%s' failed: %s",
+searchd.cpp:19520:sphFatal ( "OpenSCManager() failed: %s", WinErrorInfo() );
+searchd.cpp:19587:sphFatal ( "GetModuleFileName() failed: %s", WinErrorInfo() );
+searchd.cpp:19617:sphFatal ( "CreateService() failed: %s", WinErrorInfo() );
+searchd.cpp:19652:sphFatal ( "OpenService() failed: %s", WinErrorInfo() );
+searchd.cpp:19661:sphFatal ( "DeleteService() failed: %s", WinErrorInfo() );
+searchd.cpp:19757:sphFatalLog ( "fork() failed (reason: %s)", strerror ( errno ) );
+searchd.cpp:19774:sphFatalLog ( "setsid() failed (reason: %s)", strerror ( errno ) );
+searchd.cpp:19783:sphFatalLog ( "fork() failed (reason: %s)", strerror ( errno ) );
+searchd.cpp:19806:sphFatalLog ( "fork() failed during watchdog setup (error=%s)", strerror(errno) );
+searchd.cpp:19979:sphFatal ( "UNIX socket path is too long (len=%d)", (int)len );
+searchd.cpp:19987:sphFatal ( "failed to create UNIX socket: %s", sphSockError() );
+searchd.cpp:20010:sphFatal ( "failed to create TCP socket: %s", sphSockError() );
+searchd.cpp:20038:sphFatal ( "handshake failure (no response)" );
+searchd.cpp:20042:sphFatal ( "handshake failure (unexpected protocol version=%d)", uVer );
+searchd.cpp:20045:sphFatal ( "status command failed" );
+searchd.cpp:20048:sphFatal ( "status command version mismatch" );
+searchd.cpp:20051:sphFatal ( "failed to read status reply" );
+searchd.cpp:20071:sphFatal ( "failed to connect to daemon: please specify listen with sphinx protocol in your config file" );
+searchd.cpp:20177:sphFatal ( "accept() failed: %s", sphSockError(iErrno) );
+searchd.cpp:21244:sphFatal ( "accept() failed: %s", sphSockError(iErrno) );
+searchd.cpp:22440:sphFatal ( "'searchd' config section not found in '%s'", g_sConfigFile.cstr () );
+searchd.cpp:22445:sphFatal ( "no indexes found in '%s'", g_sConfigFile.cstr () );
+searchd.cpp:22451:sphFatal ( "mandatory option 'pid_file' not found in 'searchd' section" );
+searchd.cpp:22628:sphFatal ( "no valid indexes to serve" );
+searchd.cpp:22690:sphFatal ( "no valid indexes to serve" );
+searchd.cpp:22731:sphFatal ( "failed to open log file '%s': %s", sLog, strerror(errno) );
+searchd.cpp:22756:sphFatal ( "failed to start service: RegisterServiceCtrlHandler() failed: %s", WinErrorInfo() );
+searchd.cpp:22870:sphFatal ( "malformed or unknown option near '%s'; use '-h' or '--help' to see available options.", argv[i] );
+searchd.cpp:22878:sphFatal ( "failed to initialize WinSock2: %s", sphSockError ( iStartupErr ) );
+searchd.cpp:22905:sphFatal ( "please specify either --port or --listen, not both" );
+searchd.cpp:22932:sphFatal ( "no readable config file (looked in "
+searchd.cpp:22946:sphFatal ( "failed to parse config file '%s'", g_sConfigFile.cstr () );
+searchd.cpp:22952:sphFatal ( "'searchd' config section not found in '%s'", g_sConfigFile.cstr () );
+searchd.cpp:22958:sphFatal ( "failed to init charset alias table: %s", sError.cstr() );
+searchd.cpp:22967:sphFatal ( "stop: option 'pid_file' not found in '%s' section 'searchd'", g_sConfigFile.cstr () );
+searchd.cpp:22972:sphFatal ( "stop: pid file '%s' does not exist or is not readable", sPid );
+searchd.cpp:22981:sphFatal ( "stop: failed to read valid pid from '%s'", sPid );
+searchd.cpp:23030:sphFatal ( "stop: error terminating pid %d", iPid );
+searchd.cpp:23050:sphFatal ( "stop: kill() on pid %d failed: %s", iPid, strerror(errno) );
+searchd.cpp:23147:sphFatal ( "max_packet_size out of bounds (128K..128M)" );
+searchd.cpp:23150:sphFatal ( "max_filters out of bounds (1..10240)" );
+searchd.cpp:23153:sphFatal ( "max_filter_values out of bounds (1..10485760)" );
+searchd.cpp:23178:sphFatal ( "failed to create pid file '%s': %s", g_sPidFile.scstr(), strerror(errno) );
+searchd.cpp:23181:sphFatal ( "failed to lock pid file '%s': %s (searchd already running?)", g_sPidFile.scstr(), strerror(errno) );
+searchd.cpp:23192:sphFatal ( "failed to parse config file '%s'", g_sConfigFile.cstr () );
+searchd.cpp:23220:sphFatal ( "failed to open query log file '%s': %s", hSearchd["query_log"].cstr(), strerror(errno) );
+searchd.cpp:23235:sphFatalLog ( "fork() failed (reason: %s)", strerror ( errno ) );
+searchd.cpp:23367:sphFatal ( "failed to re-lock pid file '%s': %s", g_sPidFile.scstr(), strerror(errno) );
+searchd.cpp:23376:sphFatal ( "failed to write to pid file '%s' (errno=%d, msg=%s)", g_sPidFile.scstr(),
+searchd.cpp:23380:sphFatal ( "failed to truncate pid file '%s' (errno=%d, msg=%s)", g_sPidFile.scstr(),
+searchd.cpp:23421:sphFatal ( "Wrong query_log file! You have to reconfigure --with-syslog and rebuild daemon if you want to use syslog there." );
+searchd.cpp:23519:sphFatal ( "listen() failed: %s", sphSockError() );
+searchd.cpp:23622:sphFatal ( "StartServiceCtrlDispatcher() failed: %s", WinErrorInfo() );
