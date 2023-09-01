@@ -1,0 +1,820 @@
+[root@l065t4239 ~]# gdb /usr/bin/searchd `cat /home/sphinx/sphinx/var/log/searchd.pid`
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /usr/bin/searchd...Reading symbols from /usr/lib/debug/usr/bin/searchd.debug...done.
+done.
+Attaching to program: /usr/bin/searchd, process 39459
+Reading symbols from /lib64/libssl.so.10...Reading symbols from /lib64/libssl.so.10...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libssl.so.10
+Reading symbols from /lib64/libcrypto.so.10...Reading symbols from /lib64/libcrypto.so.10...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libcrypto.so.10
+Reading symbols from /lib64/libz.so.1...Reading symbols from /lib64/libz.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libz.so.1
+Reading symbols from /lib64/libanl.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libanl.so.1
+Reading symbols from /lib64/libm.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libm.so.6
+Reading symbols from /lib64/libdl.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libdl.so.2
+Reading symbols from /lib64/libstdc++.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libstdc++.so.6
+Reading symbols from /lib64/libgcc_s.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libgcc_s.so.1
+Reading symbols from /lib64/libpthread.so.0...(no debugging symbols found)...done.
+[New LWP 39529]
+[New LWP 39528]
+[New LWP 39491]
+[New LWP 39488]
+[New LWP 39487]
+[New LWP 39486]
+[New LWP 39485]
+[New LWP 39484]
+[New LWP 39483]
+[New LWP 39482]
+[New LWP 39481]
+[New LWP 39480]
+[New LWP 39479]
+[New LWP 39478]
+[New LWP 39477]
+[New LWP 39476]
+[New LWP 39475]
+[New LWP 39474]
+[New LWP 39473]
+[New LWP 39472]
+[New LWP 39471]
+[New LWP 39470]
+[New LWP 39469]
+[New LWP 39468]
+[New LWP 39467]
+[New LWP 39466]
+[New LWP 39465]
+[New LWP 39464]
+[New LWP 39463]
+[New LWP 39462]
+[New LWP 39461]
+[New LWP 39460]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+Loaded symbols for /lib64/libpthread.so.0
+Reading symbols from /lib64/libc.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libc.so.6
+Reading symbols from /lib64/libgssapi_krb5.so.2...Reading symbols from /lib64/libgssapi_krb5.so.2...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libgssapi_krb5.so.2
+Reading symbols from /lib64/libkrb5.so.3...Reading symbols from /lib64/libkrb5.so.3...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libkrb5.so.3
+Reading symbols from /lib64/libcom_err.so.2...Reading symbols from /lib64/libcom_err.so.2...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libcom_err.so.2
+Reading symbols from /lib64/libk5crypto.so.3...Reading symbols from /lib64/libk5crypto.so.3...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libk5crypto.so.3
+Reading symbols from /lib64/ld-linux-x86-64.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/ld-linux-x86-64.so.2
+Reading symbols from /lib64/libkrb5support.so.0...Reading symbols from /lib64/libkrb5support.so.0...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libkrb5support.so.0
+Reading symbols from /lib64/libkeyutils.so.1...Reading symbols from /lib64/libkeyutils.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libkeyutils.so.1
+Reading symbols from /lib64/libresolv.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libresolv.so.2
+Reading symbols from /lib64/libselinux.so.1...Reading symbols from /lib64/libselinux.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libselinux.so.1
+Reading symbols from /lib64/libpcre.so.1...Reading symbols from /lib64/libpcre.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libpcre.so.1
+0x00007f7e810cca35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-307.el7.1.x86_64 keyutils-libs-1.5.8-3.el7.x86_64 krb5-libs-1.15.1-46.el7.x86_64 libcom_err-1.42.9-17.el7.x86_64 libgcc-4.8.5-39.el7.x86_64 libselinux-2.5-15.el7.x86_64 libstdc++-4.8.5-39.el7.x86_64 openssl-libs-1.0.2k-19.el7.x86_64 pcre-8.32-17.el7.x86_64 zlib-1.2.7-18.el7.x86_64
+(gdb) set pagination off
+(gdb) info threads
+  Id   Target Id         Frame
+  33   Thread 0x7f7e829f9700 (LWP 39460) "work_0" CoroGuard_t (this=<optimized out>, pWorker=0x7f78f1500b30) at ../src/coroutine.cpp:241
+  32   Thread 0x7f7e829d8700 (LWP 39461) "work_1" 0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+  31   Thread 0x7f7e829b7700 (LWP 39462) "work_2" 0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+  30   Thread 0x7f7e82996700 (LWP 39463) "work_3" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  29   Thread 0x7f7e82975700 (LWP 39464) "work_4" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  28   Thread 0x7f7e82954700 (LWP 39465) "work_5" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  27   Thread 0x7f7e82933700 (LWP 39466) "work_6" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  26   Thread 0x7f7e82912700 (LWP 39467) "work_7" 0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+  25   Thread 0x7f7e828f1700 (LWP 39468) "work_8" 0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+  24   Thread 0x7f7e828d0700 (LWP 39469) "work_9" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  23   Thread 0x7f7e828af700 (LWP 39470) "work_10" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  22   Thread 0x7f7e8288e700 (LWP 39471) "work_11" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  21   Thread 0x7f7e8286d700 (LWP 39472) "work_12" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  20   Thread 0x7f7e8284c700 (LWP 39473) "work_13" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  19   Thread 0x7f7e7f8ce700 (LWP 39474) "work_14" 0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+  18   Thread 0x7f7e7f8ad700 (LWP 39475) "work_15" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  17   Thread 0x7f7e7f88c700 (LWP 39476) "work_16" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  16   Thread 0x7f7e7f86b700 (LWP 39477) "work_17" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  15   Thread 0x7f7e7f84a700 (LWP 39478) "work_18" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  14   Thread 0x7f7e7f829700 (LWP 39479) "work_19" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  13   Thread 0x7f7e7f808700 (LWP 39480) "work_20" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  12   Thread 0x7f7e7f7e7700 (LWP 39481) "work_21" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  11   Thread 0x7f7e7f7c6700 (LWP 39482) "work_22" 0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+  10   Thread 0x7f7e7f7a5700 (LWP 39483) "work_23" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  9    Thread 0x7f7e7f784700 (LWP 39484) "work_24" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  8    Thread 0x7f7e7f763700 (LWP 39485) "work_25" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  7    Thread 0x7f7e7f742700 (LWP 39486) "work_26" 0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+  6    Thread 0x7f7e7f721700 (LWP 39487) "work_27" 0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+  5    Thread 0x7f7e7f700700 (LWP 39488) "TaskSched" 0x00007f7e810cca35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  4    Thread 0x7f78f4fbd700 (LWP 39491) "TickPool_0" 0x00007f7e80df1eb3 in epoll_wait () from /lib64/libc.so.6
+  3    Thread 0x7f78f4f7b700 (LWP 39528) "AgentsPoller" 0x00007f7e80df1eb3 in epoll_wait () from /lib64/libc.so.6
+  2    Thread 0x7f78f4f5a700 (LWP 39529) "sphTimer" 0x00007f7e810cca35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+* 1    Thread 0x7f7e829fb900 (LWP 39459) "searchd" 0x00007f7e810cca35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+(gdb) thread apply all bt
+
+Thread 33 (Thread 0x7f7e829f9700 (LWP 39460)):
+#0  CoroGuard_t (this=<optimized out>, pWorker=0x7f78f1500b30) at ../src/coroutine.cpp:241
+#1  Threads::CoroWorker_c::Resume (this=0x7f78f1500b30) at ../src/coroutine.cpp:431
+#2  0x0000000000d5be7c in Run (this=0x7f78f1500b30) at ../src/coroutine.cpp:288
+#3  operator() (this=<optimized out>) at ../src/coroutine.cpp:318
+#4  std::_Function_handler<void (), Threads::CoroWorker_c::Schedule(bool)::{lambda()#1}>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#5  0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#7  0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#8  Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#9  0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#10 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#11 0x000000000095b3f7 in operator() (this=0x7f78f1500b30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#12 operator() (this=0x7f78f1500b30) at ../src/threadutils.cpp:1842
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#14 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#15 RuntimeThreadContext_t::Run (this=0x12a51a0, pStack=0x7f7e829f8d47) at ../src/threadutils.cpp:1688
+#16 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12a51a0) at ../src/threadutils.cpp:1720
+#17 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#18 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 32 (Thread 0x7f7e829d8700 (LWP 39461)):
+#0  0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+#1  0x00007f7e810cbf9e in _L_unlock_738 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cbf10 in pthread_mutex_unlock () from /lib64/libpthread.so.0
+#3  0x00000000005d2176 in CSphMutex::Unlock (this=0x12a4e30) at ../src/sphinxstd.cpp:1199
+#4  0x000000000095d251 in Unlock (this=<optimized out>) at ../src/sphinxstd.h:4433
+#5  wake_one_thread_and_unlock (this=<optimized out>, dLock=...) at ../src/threadutils.cpp:638
+#6  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e701bf1a0, bVip=true) at ../src/threadutils.cpp:519
+#7  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#8  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=48) at ../src/threadutils.cpp:908
+#9  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#10 Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#11 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#12 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#13 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#14 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#15 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#16 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#17 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#18 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#19 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#20 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#21 RuntimeThreadContext_t::Run (this=0x12a8550, pStack=0x7f7e829d7d47) at ../src/threadutils.cpp:1688
+#22 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12a8550) at ../src/threadutils.cpp:1720
+#23 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#24 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 31 (Thread 0x7f7e829b7700 (LWP 39462)):
+#0  0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+#1  0x00007f7e810cbf9e in _L_unlock_738 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cbf10 in pthread_mutex_unlock () from /lib64/libpthread.so.0
+#3  0x00000000005d2176 in CSphMutex::Unlock (this=0x12a4e30) at ../src/sphinxstd.cpp:1199
+#4  0x000000000095c9a4 in Unlock (this=<optimized out>) at ../src/sphinxstd.h:4433
+#5  Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:567
+#6  0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#7  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#8  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#10 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#11 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#12 RuntimeThreadContext_t::Run (this=0x12a8870, pStack=0x7f7e829b6d47) at ../src/threadutils.cpp:1688
+#13 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12a8870) at ../src/threadutils.cpp:1720
+#14 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#15 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 30 (Thread 0x7f7e82996700 (LWP 39463)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095c764 in Lock (this=<optimized out>) at ../src/sphinxstd.h:4423
+#5  Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:538
+#6  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#7  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#8  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#10 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 RuntimeThreadContext_t::Run (this=0x12a8b90, pStack=0x7f7e82995d47) at ../src/threadutils.cpp:1688
+#12 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12a8b90) at ../src/threadutils.cpp:1720
+#13 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7f7e82975700 (LWP 39464)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095d1c1 in CSphScopedLock (this=<optimized out>, tMutex=...) at ../src/sphinxstd.h:4406
+#5  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e60338ac0, bVip=true) at ../src/threadutils.cpp:513
+#6  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#7  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=false) at ../src/threadutils.cpp:908
+#8  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#9  Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#10 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#12 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#13 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#14 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#15 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#16 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#17 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#18 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#19 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#20 RuntimeThreadContext_t::Run (this=0x12a8eb0, pStack=0x7f7e82974d47) at ../src/threadutils.cpp:1688
+#21 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12a8eb0) at ../src/threadutils.cpp:1720
+#22 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#23 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7f7e82954700 (LWP 39465)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095d1c1 in CSphScopedLock (this=<optimized out>, tMutex=...) at ../src/sphinxstd.h:4406
+#5  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e641c2680, bVip=true) at ../src/threadutils.cpp:513
+#6  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#7  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=false) at ../src/threadutils.cpp:908
+#8  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#9  Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#10 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#12 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#13 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#14 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#15 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#16 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#17 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#18 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#19 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#20 RuntimeThreadContext_t::Run (this=0x12a91d0, pStack=0x7f7e82953d47) at ../src/threadutils.cpp:1688
+#21 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12a91d0) at ../src/threadutils.cpp:1720
+#22 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#23 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7f7e82933700 (LWP 39466)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095d1c1 in CSphScopedLock (this=<optimized out>, tMutex=...) at ../src/sphinxstd.h:4406
+#5  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e582537e0, bVip=true) at ../src/threadutils.cpp:513
+#6  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#7  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=false) at ../src/threadutils.cpp:908
+#8  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#9  Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#10 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#12 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#13 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#14 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#15 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#16 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#17 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#18 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#19 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#20 RuntimeThreadContext_t::Run (this=0x12a94f0, pStack=0x7f7e82932d47) at ../src/threadutils.cpp:1688
+#21 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12a94f0) at ../src/threadutils.cpp:1720
+#22 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#23 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7f7e82912700 (LWP 39467)):
+#0  0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+#1  0x00007f7e810cbf9e in _L_unlock_738 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cbf10 in pthread_mutex_unlock () from /lib64/libpthread.so.0
+#3  0x00000000005d2176 in CSphMutex::Unlock (this=0x12a4e30) at ../src/sphinxstd.cpp:1199
+#4  0x000000000095c9a4 in Unlock (this=<optimized out>) at ../src/sphinxstd.h:4433
+#5  Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:567
+#6  0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#7  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#8  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#10 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#11 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#12 RuntimeThreadContext_t::Run (this=0x12a9810, pStack=0x7f7e82911d47) at ../src/threadutils.cpp:1688
+#13 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12a9810) at ../src/threadutils.cpp:1720
+#14 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#15 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7f7e828f1700 (LWP 39468)):
+#0  0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+#1  0x00007f7e810cbf9e in _L_unlock_738 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cbf10 in pthread_mutex_unlock () from /lib64/libpthread.so.0
+#3  0x00000000005d2176 in CSphMutex::Unlock (this=0x12a4e30) at ../src/sphinxstd.cpp:1199
+#4  0x000000000095d251 in Unlock (this=<optimized out>) at ../src/sphinxstd.h:4433
+#5  wake_one_thread_and_unlock (this=<optimized out>, dLock=...) at ../src/threadutils.cpp:638
+#6  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e50379730, bVip=true) at ../src/threadutils.cpp:519
+#7  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#8  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=48) at ../src/threadutils.cpp:908
+#9  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#10 Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#11 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#12 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#13 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#14 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#15 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#16 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#17 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#18 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#19 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#20 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#21 RuntimeThreadContext_t::Run (this=0x12a9b30, pStack=0x7f7e828f0d47) at ../src/threadutils.cpp:1688
+#22 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12a9b30) at ../src/threadutils.cpp:1720
+#23 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#24 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7f7e828d0700 (LWP 39469)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095c764 in Lock (this=<optimized out>) at ../src/sphinxstd.h:4423
+#5  Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:538
+#6  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#7  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#8  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#10 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 RuntimeThreadContext_t::Run (this=0x12a9e50, pStack=0x7f7e828cfd47) at ../src/threadutils.cpp:1688
+#12 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12a9e50) at ../src/threadutils.cpp:1720
+#13 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7f7e828af700 (LWP 39470)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095d1c1 in CSphScopedLock (this=<optimized out>, tMutex=...) at ../src/sphinxstd.h:4406
+#5  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e4822f4d0, bVip=true) at ../src/threadutils.cpp:513
+#6  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#7  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=false) at ../src/threadutils.cpp:908
+#8  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#9  Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#10 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#12 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#13 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#14 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#15 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#16 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#17 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#18 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#19 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#20 RuntimeThreadContext_t::Run (this=0x12aa170, pStack=0x7f7e828aed47) at ../src/threadutils.cpp:1688
+#21 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12aa170) at ../src/threadutils.cpp:1720
+#22 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#23 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7f7e8288e700 (LWP 39471)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095d1c1 in CSphScopedLock (this=<optimized out>, tMutex=...) at ../src/sphinxstd.h:4406
+#5  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e4c2c50e0, bVip=true) at ../src/threadutils.cpp:513
+#6  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#7  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=false) at ../src/threadutils.cpp:908
+#8  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#9  Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#10 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#12 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#13 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#14 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#15 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#16 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#17 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#18 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#19 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#20 RuntimeThreadContext_t::Run (this=0x12aa490, pStack=0x7f7e8288dd47) at ../src/threadutils.cpp:1688
+#21 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12aa490) at ../src/threadutils.cpp:1720
+#22 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#23 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7f7e8286d700 (LWP 39472)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095c764 in Lock (this=<optimized out>) at ../src/sphinxstd.h:4423
+#5  Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:538
+#6  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#7  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#8  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#10 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 RuntimeThreadContext_t::Run (this=0x12aa7b0, pStack=0x7f7e8286cd47) at ../src/threadutils.cpp:1688
+#12 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12aa7b0) at ../src/threadutils.cpp:1720
+#13 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7f7e8284c700 (LWP 39473)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095c764 in Lock (this=<optimized out>) at ../src/sphinxstd.h:4423
+#5  Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:538
+#6  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#7  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#8  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#10 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 RuntimeThreadContext_t::Run (this=0x12aaad0, pStack=0x7f7e8284bd47) at ../src/threadutils.cpp:1688
+#12 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12aaad0) at ../src/threadutils.cpp:1720
+#13 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7f7e7f8ce700 (LWP 39474)):
+#0  0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+#1  0x00007f7e810cbf9e in _L_unlock_738 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cbf10 in pthread_mutex_unlock () from /lib64/libpthread.so.0
+#3  0x00000000005d2176 in CSphMutex::Unlock (this=0x12a4e30) at ../src/sphinxstd.cpp:1199
+#4  0x000000000095d251 in Unlock (this=<optimized out>) at ../src/sphinxstd.h:4433
+#5  wake_one_thread_and_unlock (this=<optimized out>, dLock=...) at ../src/threadutils.cpp:638
+#6  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e381cec70, bVip=true) at ../src/threadutils.cpp:519
+#7  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#8  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=48) at ../src/threadutils.cpp:908
+#9  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#10 Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#11 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#12 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#13 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#14 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#15 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#16 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#17 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#18 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#19 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#20 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#21 RuntimeThreadContext_t::Run (this=0x12aadf0, pStack=0x7f7e7f8cdd47) at ../src/threadutils.cpp:1688
+#22 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12aadf0) at ../src/threadutils.cpp:1720
+#23 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#24 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7f7e7f8ad700 (LWP 39475)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095d1c1 in CSphScopedLock (this=<optimized out>, tMutex=...) at ../src/sphinxstd.h:4406
+#5  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e3c210c40, bVip=true) at ../src/threadutils.cpp:513
+#6  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#7  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=false) at ../src/threadutils.cpp:908
+#8  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#9  Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#10 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#12 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#13 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#14 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#15 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#16 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#17 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#18 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#19 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#20 RuntimeThreadContext_t::Run (this=0x12ab130, pStack=0x7f7e7f8acd47) at ../src/threadutils.cpp:1688
+#21 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ab130) at ../src/threadutils.cpp:1720
+#22 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#23 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7f7e7f88c700 (LWP 39476)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095c764 in Lock (this=<optimized out>) at ../src/sphinxstd.h:4423
+#5  Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:538
+#6  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#7  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#8  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#10 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 RuntimeThreadContext_t::Run (this=0x12ab470, pStack=0x7f7e7f88bd47) at ../src/threadutils.cpp:1688
+#12 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ab470) at ../src/threadutils.cpp:1720
+#13 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7f7e7f86b700 (LWP 39477)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095c764 in Lock (this=<optimized out>) at ../src/sphinxstd.h:4423
+#5  Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:538
+#6  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#7  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#8  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#10 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 RuntimeThreadContext_t::Run (this=0x12ab7b0, pStack=0x7f7e7f86ad47) at ../src/threadutils.cpp:1688
+#12 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ab7b0) at ../src/threadutils.cpp:1720
+#13 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 15 (Thread 0x7f7e7f84a700 (LWP 39478)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095c764 in Lock (this=<optimized out>) at ../src/sphinxstd.h:4423
+#5  Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:538
+#6  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#7  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#8  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#10 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 RuntimeThreadContext_t::Run (this=0x12abaf0, pStack=0x7f7e7f849d47) at ../src/threadutils.cpp:1688
+#12 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12abaf0) at ../src/threadutils.cpp:1720
+#13 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7f7e7f829700 (LWP 39479)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095c764 in Lock (this=<optimized out>) at ../src/sphinxstd.h:4423
+#5  Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:538
+#6  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#7  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#8  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#10 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 RuntimeThreadContext_t::Run (this=0x12abe30, pStack=0x7f7e7f828d47) at ../src/threadutils.cpp:1688
+#12 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12abe30) at ../src/threadutils.cpp:1720
+#13 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7f7e7f808700 (LWP 39480)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095c764 in Lock (this=<optimized out>) at ../src/sphinxstd.h:4423
+#5  Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:538
+#6  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#7  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#8  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#10 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 RuntimeThreadContext_t::Run (this=0x12ac170, pStack=0x7f7e7f807d47) at ../src/threadutils.cpp:1688
+#12 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ac170) at ../src/threadutils.cpp:1720
+#13 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7f7e7f7e7700 (LWP 39481)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095d1c1 in CSphScopedLock (this=<optimized out>, tMutex=...) at ../src/sphinxstd.h:4406
+#5  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e24215200, bVip=true) at ../src/threadutils.cpp:513
+#6  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#7  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=false) at ../src/threadutils.cpp:908
+#8  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#9  Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#10 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#12 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#13 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#14 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#15 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#16 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#17 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#18 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#19 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#20 RuntimeThreadContext_t::Run (this=0x12ac4b0, pStack=0x7f7e7f7e6d47) at ../src/threadutils.cpp:1688
+#21 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ac4b0) at ../src/threadutils.cpp:1720
+#22 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#23 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7f7e7f7c6700 (LWP 39482)):
+#0  0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+#1  0x00007f7e810cbf9e in _L_unlock_738 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cbf10 in pthread_mutex_unlock () from /lib64/libpthread.so.0
+#3  0x00000000005d2176 in CSphMutex::Unlock (this=0x12a4e30) at ../src/sphinxstd.cpp:1199
+#4  0x000000000095c9a4 in Unlock (this=<optimized out>) at ../src/sphinxstd.h:4433
+#5  Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:567
+#6  0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#7  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#8  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#10 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#11 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#12 RuntimeThreadContext_t::Run (this=0x12ac7f0, pStack=0x7f7e7f7c5d47) at ../src/threadutils.cpp:1688
+#13 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ac7f0) at ../src/threadutils.cpp:1720
+#14 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#15 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7f7e7f7a5700 (LWP 39483)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095d1c1 in CSphScopedLock (this=<optimized out>, tMutex=...) at ../src/sphinxstd.h:4406
+#5  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e1c1fe4c0, bVip=true) at ../src/threadutils.cpp:513
+#6  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#7  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=false) at ../src/threadutils.cpp:908
+#8  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#9  Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#10 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#12 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#13 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#14 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#15 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#16 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#17 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#18 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#19 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#20 RuntimeThreadContext_t::Run (this=0x12acb30, pStack=0x7f7e7f7a4d47) at ../src/threadutils.cpp:1688
+#21 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12acb30) at ../src/threadutils.cpp:1720
+#22 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#23 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7f7e7f784700 (LWP 39484)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095d1c1 in CSphScopedLock (this=<optimized out>, tMutex=...) at ../src/sphinxstd.h:4406
+#5  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e10178450, bVip=true) at ../src/threadutils.cpp:513
+#6  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#7  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=false) at ../src/threadutils.cpp:908
+#8  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#9  Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#10 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#12 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#13 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#14 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#15 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#16 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#17 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#18 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#19 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#20 RuntimeThreadContext_t::Run (this=0x12ace70, pStack=0x7f7e7f783d47) at ../src/threadutils.cpp:1688
+#21 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ace70) at ../src/threadutils.cpp:1720
+#22 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#23 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7f7e7f763700 (LWP 39485)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095c764 in Lock (this=<optimized out>) at ../src/sphinxstd.h:4423
+#5  Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:538
+#6  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#7  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#8  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#10 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 RuntimeThreadContext_t::Run (this=0x12ad1b0, pStack=0x7f7e7f762d47) at ../src/threadutils.cpp:1688
+#12 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ad1b0) at ../src/threadutils.cpp:1720
+#13 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7f7e7f742700 (LWP 39486)):
+#0  0x00007f7e810cf5ea in __lll_unlock_wake () from /lib64/libpthread.so.0
+#1  0x00007f7e810cbf9e in _L_unlock_738 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cbf10 in pthread_mutex_unlock () from /lib64/libpthread.so.0
+#3  0x00000000005d2176 in CSphMutex::Unlock (this=0x12a4e30) at ../src/sphinxstd.cpp:1199
+#4  0x000000000095c9a4 in Unlock (this=<optimized out>) at ../src/sphinxstd.h:4433
+#5  Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:567
+#6  0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#7  0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#8  0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#10 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#11 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#12 RuntimeThreadContext_t::Run (this=0x12ad4f0, pStack=0x7f7e7f741d47) at ../src/threadutils.cpp:1688
+#13 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ad4f0) at ../src/threadutils.cpp:1720
+#14 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#15 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7f7e7f721700 (LWP 39487)):
+#0  0x00007f7e810cf54d in __lll_lock_wait () from /lib64/libpthread.so.0
+#1  0x00007f7e810cae9b in _L_lock_883 () from /lib64/libpthread.so.0
+#2  0x00007f7e810cad68 in pthread_mutex_lock () from /lib64/libpthread.so.0
+#3  0x00000000005d20d6 in CSphMutex::Lock (this=0x12a4e30) at ../src/sphinxstd.cpp:1153
+#4  0x000000000095d1c1 in CSphScopedLock (this=<optimized out>, tMutex=...) at ../src/sphinxstd.h:4406
+#5  Threads::Service_t::post_immediate_completion (this=0x12a4e20, pOp=0x7f7e0c1e7610, bVip=true) at ../src/threadutils.cpp:513
+#6  0x000000000095cf99 in Threads::Service_t::defer<std::function<void ()> >(std::function<void ()>) (this=0x12a4e20, handler=...) at ../src/threadutils.cpp:471
+#7  0x000000000095ce42 in Threads::ThreadPool_c::Post<std::function<void ()> >(std::function<void ()>&&, bool) (this=<optimized out>, f=<optimized out>, bVip=false) at ../src/threadutils.cpp:908
+#8  0x0000000000d5c0e1 in Schedule (this=<optimized out>, bVip=255) at ../src/coroutine.cpp:318
+#9  Threads::CoroWorker_c::ResetEnteredAndReschedule (this=0xffffffffffffffff) at ../src/coroutine.cpp:299
+#10 0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#11 Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a4e20, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#12 0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a4e20) at ../src/threadutils.cpp:286
+#13 Threads::Service_t::do_run_one (this=0x12a4e20, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#14 0x000000000095c74e in Threads::Service_t::run (this=0x12a4e20) at ../src/threadutils.cpp:537
+#15 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a4e10, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#16 0x000000000095b3f7 in operator() (this=0x12a4e30) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#17 operator() (this=0x12a4e30) at ../src/threadutils.cpp:1842
+#18 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#19 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#20 RuntimeThreadContext_t::Run (this=0x12ad830, pStack=0x7f7e7f720d47) at ../src/threadutils.cpp:1688
+#21 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ad830) at ../src/threadutils.cpp:1720
+#22 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#23 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7f7e7f700700 (LWP 39488)):
+#0  0x00007f7e810cca35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000005d235b in AutoEvent_T<false>::WaitEvent (this=0x7f7e7f6ffbe0, iMsec=<optimized out>) at ../src/sphinxstd.cpp:1251
+#2  0x0000000000d594f0 in CallPlainCoroutine (fnHandler=...) at ../src/coroutine.cpp:533
+#3  Threads::CallCoroutine(std::function<void ()>) (fnHandler=...) at ../src/coroutine.cpp:547
+#4  0x000000000042dd78 in Task_t::Action (this=0x7f7e1013ba00) at ../src/searchdtask.cpp:237
+#5  0x000000000042da5c in ProcessOneTask (pTask=0x7f7e1013ba00) at ../src/searchdtask.cpp:394
+#6  LazyJobs_c::ProcessEnqueuedTasks (this=0x128f0b0 <LazyTasker()::dEvents>) at ../src/searchdtask.cpp:423
+#7  0x000000000042d878 in LazyJobs_c::EventTick (this=0x128f0b0 <LazyTasker()::dEvents>) at ../src/searchdtask.cpp:488
+#8  0x000000000042d828 in EventLoop (this=0x128f0b0 <LazyTasker()::dEvents>) at ../src/searchdtask.cpp:434
+#9  WorkerFunc (this=0x128f0b0 <LazyTasker()::dEvents>) at ../src/searchdtask.cpp:563
+#10 operator() (this=<optimized out>) at ../src/searchdtask.cpp:727
+#11 std::_Function_handler<void (), LazyJobs_c::LazyJobs_c()::{lambda()#1}>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#12 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#13 RuntimeThreadContext_t::Run (this=0x12addd0, pStack=0x7f7e7f6ffd47) at ../src/threadutils.cpp:1688
+#14 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12addd0) at ../src/threadutils.cpp:1720
+#15 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#16 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7f78f4fbd700 (LWP 39491)):
+#0  0x00007f7e80df1eb3 in epoll_wait () from /lib64/libc.so.6
+#1  0x000000000041a20b in poll_events (this=<optimized out>, pEvents=0x13bc7d0, timeoutMs=<optimized out>, iEventNum=<optimized out>) at ../src/searchdha.cpp:4176
+#2  NetPooller_c::Impl_c::Wait (this=0x12b2a40, timeoutMs=732496) at ../src/searchdha.cpp:4114
+#3  0x00000000004693df in CSphNetLoop::Impl_c::Poll (this=0x12b2940, tmLastWait=<optimized out>) at ../src/networking_daemon.cpp:226
+#4  0x0000000000468cda in CSphNetLoop::Impl_c::LoopNetPoll (this=0x12b2940) at ../src/networking_daemon.cpp:239
+#5  0x000000000095eb11 in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  Threads::CompletionHandler_c<std::function<void ()> >::DoComplete(void*, Threads::SchedulerOperation_t*) (pOwner=0x12a3dc0, pBase=<optimized out>) at ../src/threadutils.cpp:329
+#7  0x000000000095c9ec in Complete (this=<optimized out>, pOwner=0x12a3dc0) at ../src/threadutils.cpp:286
+#8  Threads::Service_t::do_run_one (this=0x12a3dc0, dLock=..., this_thread=...) at ../src/threadutils.cpp:569
+#9  0x000000000095c74e in Threads::Service_t::run (this=0x12a3dc0) at ../src/threadutils.cpp:537
+#10 0x000000000095cc98 in Threads::ThreadPool_c::loop (this=0x12a3db0, iChild=<optimized out>) at ../src/threadutils.cpp:940
+#11 0x000000000095b3f7 in operator() (this=0x107) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#12 operator() (this=0x107) at ../src/threadutils.cpp:1842
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#14 0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#15 RuntimeThreadContext_t::Run (this=0x12ae680, pStack=0x7f78f4fbcd47) at ../src/threadutils.cpp:1688
+#16 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x12ae680) at ../src/threadutils.cpp:1720
+#17 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#18 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7f78f4f7b700 (LWP 39528)):
+#0  0x00007f7e80df1eb3 in epoll_wait () from /lib64/libc.so.6
+#1  0x000000000041ab53 in events_wait (this=<optimized out>, iTimeoutUS=<optimized out>) at ../src/searchdha.cpp:3218
+#2  LazyNetEvents_c::EventTick (this=0x128d030 <LazyPoller()::dEvents>) at ../src/searchdha.cpp:3558
+#3  0x000000000041a9e8 in EventLoop (this=0x128d030 <LazyPoller()::dEvents>) at ../src/searchdha.cpp:3481
+#4  operator() (this=<optimized out>) at ../src/searchdha.cpp:3699
+#5  std::_Function_handler<void (), LazyNetEvents_c::LazyNetEvents_c(int)::{lambda()#1}>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#6  0x000000000095b3f7 in operator() (this=0x10d) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#7  operator() (this=0x10d) at ../src/threadutils.cpp:1842
+#8  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_5>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#9  0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#10 RuntimeThreadContext_t::Run (this=0x7f7e30012280, pStack=0x7f78f4f7ad47) at ../src/threadutils.cpp:1688
+#11 0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x7f7e30012280) at ../src/threadutils.cpp:1720
+#12 0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#13 0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7f78f4f5a700 (LWP 39529)):
+#0  0x00007f7e810cca35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000005d248b in AutoEvent_T<true>::WaitEvent (this=0x129dda8 <g_TinyTimer()::tTimer+32>, iMsec=<optimized out>) at ../src/sphinxstd.cpp:1289
+#2  0x000000000097eafd in Loop (this=<optimized out>) at ../src/mini_timer.cpp:29
+#3  operator() (this=<optimized out>) at ../src/mini_timer.cpp:46
+#4  std::_Function_handler<void (), TinyTimer_c::TinyTimer_c()::{lambda()#1}>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#5  0x000000000095a7bc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  RuntimeThreadContext_t::Run (this=0x7f7e3400e970, pStack=0x7f78f4f59d47) at ../src/threadutils.cpp:1688
+#7  0x000000000095a8a1 in ThreadProcWrapper_fn (pArg=0x7f7e3400e970) at ../src/threadutils.cpp:1720
+#8  0x00007f7e810c8ea5 in start_thread () from /lib64/libpthread.so.0
+#9  0x00007f7e80df18dd in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f7e829fb900 (LWP 39459)):
+#0  0x00007f7e810cca35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000005d235b in AutoEvent_T<false>::WaitEvent (this=0x7fffbc2ea6a0, iMsec=<optimized out>) at ../src/sphinxstd.cpp:1251
+#2  0x0000000000d594f0 in CallPlainCoroutine (fnHandler=...) at ../src/coroutine.cpp:533
+#3  Threads::CallCoroutine(std::function<void ()>) (fnHandler=...) at ../src/coroutine.cpp:547
+#4  0x00000000004c1471 in TickHead () at ../src/searchd.cpp:18356
+#5  0x00000000004cde37 in ServiceMain (argc=<optimized out>, argv=<optimized out>) at ../src/searchd.cpp:19762
+#6  0x00000000004cf18b in mainimpl (argc=-1137793364, argv=0x7fffbc2eb408) at ../src/searchd.cpp:19812
+#7  main (argc=-1137793364, argv=0x7fffbc2eb408) at ../src/searchd.cpp:19818
+(gdb)
