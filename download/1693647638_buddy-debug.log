@@ -1,0 +1,69 @@
+New connection from tcp://127.0.0.1:54733
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected $end near '(null)'","version":1,"message":{"path_query":"","body":"/*!40100 SET @@SQL_MODE='' */"}}
+[33528µs] manticore request: SHOW SETTINGS
+using config file = 'C:\dev\sphinx\build\m_dbg\src\Debug\c1.conf'
+settings: {"configurationFile":"C:\\dev\\sphinx\\build\\m_dbg\\src\\Debug\\c1.conf","workerPid":7600,"searchdAutoSchema":true,"searchdListen":"9308:http","searchdLog":"C:\\dev\\sphinx\\build\\m_dbg\\src\\Debug\/searchd.log","searchdQueryLog":"C:\\dev\\sphinx\\build\\m_dbg\\src\\Debug\/query.log","searchdPidFile":"C:\\dev\\sphinx\\build\\m_dbg\\src\\Debug\/searchd.pid","searchdDataDir":"C:\\dev\\sphinx\\build\\m_dbg\\src\\Debug\/data","searchdQueryLogFormat":"sphinxql","searchdBuddyPath":"C:\\dev\\sphinx\\build\\m_dbg\\src\\Debug\\manticore-executor\\manticore-executor.exe C:\\dev\\sphinx\\manticoresearch-buddy\\src\\main.php --debug","searchdBinlogPath":null,"commonPluginDir":"C:\\dev\\sphinx\\test\\ivinco\\blended\\x64\\Debug\\","commonLemmatizerBase":"C:\\dev\\sphinx\\aot"}
+[1] Executor: EmptyQuery
+[1] Command request: EmptyQuery\Request {"endpoint":"sql?mode=raw"}
+[1] response data: {"version":1,"type":"sql response","message":[{"total":0,"error":"","warning":""}],"error":""}
+[1] process time: 90051µs
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected $end near '(null)'","version":1,"message":{"path_query":"","body":"/*!40103 SET TIME_ZONE='+00:00' */"}}
+[1] Executor: EmptyQuery
+[1] Command request: EmptyQuery\Request {"endpoint":"sql?mode=raw"}
+[1] response data: {"version":1,"type":"sql response","message":[{"total":0,"error":"","warning":""}],"error":""}
+[1] process time: 9758µs
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected SELECT, expecting integer or string or '-' near 'SELECT DISTINCT LOGFILE_GROUP_NAME FROM INFORMATION_SCHEMA.FILES WHERE FILE_TYPE = 'DATAFILE' AND TABLESPACE_NAME IN (SELECT DISTINCT TABLESPACE_NAME FROM INFORMATION_SCHEMA.PARTITIONS WHERE TABLE_SCHEMA='Manticore' AND TABLE_NAME IN ('t'))) GROUP BY LOGFILE_GROUP_NAME, FILE_NAME, ENGINE, TOTAL_EXTENTS, INITIAL_SIZE ORDER BY LOGFILE_GROUP_NAME'","version":1,"message":{"path_query":"","body":"SELECT LOGFILE_GROUP_NAME, FILE_NAME, TOTAL_EXTENTS, INITIAL_SIZE, ENGINE, EXTRA FROM INFORMATION_SCHEMA.FILES WHERE FILE_TYPE = 'UNDO LOG' AND FILE_NAME IS NOT NULL AND LOGFILE_GROUP_NAME IS NOT NULL AND LOGFILE_GROUP_NAME IN (SELECT DISTINCT LOGFILE_GROUP_NAME FROM INFORMATION_SCHEMA.FILES WHERE FILE_TYPE = 'DATAFILE' AND TABLESPACE_NAME IN (SELECT DISTINCT TABLESPACE_NAME FROM INFORMATION_SCHEMA.PARTITIONS WHERE TABLE_SCHEMA='Manticore' AND TABLE_NAME IN ('t'))) GROUP BY LOGFILE_GROUP_NAME, FILE_NAME, ENGINE, TOTAL_EXTENTS, INITIAL_SIZE ORDER BY LOGFILE_GROUP_NAME"}}
+[1] Executor: Select
+[1] Command request: Select\Request {"endpoint":"sql?mode=raw","table":"information_schema.files","fields":["LOGFILE_GROUP_NAME","FILE_NAME","TOTAL_EXTENTS","INITIAL_SIZE","ENGINE","EXTRA"],"where":{"FILE_TYPE":{"operator":"=","value":"DATAFILE"},"TABLE_SCHEMA":{"operator":"=","value":"Manticore"}}}
+[1] response data: {"version":1,"type":"sql response","message":[{"total":0,"warning":"","error":"","columns":[{"LOGFILE_GROUP_NAME":{"type":"string"}},{"FILE_NAME":{"type":"string"}},{"TOTAL_EXTENTS":{"type":"string"}},{"INITIAL_SIZE":{"type":"string"}},{"ENGINE":{"type":"string"}},{"EXTRA":{"type":"string"}}]}],"error":""}
+[1] process time: 38900µs
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected DISTINCT near 'DISTINCT TABLESPACE_NAME, FILE_NAME, LOGFILE_GROUP_NAME, EXTENT_SIZE, INITIAL_SIZE, ENGINE FROM INFORMATION_SCHEMA.FILES WHERE FILE_TYPE = 'DATAFILE' AND TABLESPACE_NAME IN (SELECT DISTINCT TABLESPACE_NAME FROM INFORMATION_SCHEMA.PARTITIONS WHERE TABLE_SCHEMA='Manticore' AND TABLE_NAME IN ('t')) ORDER BY TABLESPACE_NAME, LOGFILE_GROUP_NAME'","version":1,"message":{"path_query":"","body":"SELECT DISTINCT TABLESPACE_NAME, FILE_NAME, LOGFILE_GROUP_NAME, EXTENT_SIZE, INITIAL_SIZE, ENGINE FROM INFORMATION_SCHEMA.FILES WHERE FILE_TYPE = 'DATAFILE' AND TABLESPACE_NAME IN (SELECT DISTINCT TABLESPACE_NAME FROM INFORMATION_SCHEMA.PARTITIONS WHERE TABLE_SCHEMA='Manticore' AND TABLE_NAME IN ('t')) ORDER BY TABLESPACE_NAME, LOGFILE_GROUP_NAME"}}
+[1] Executor: Select
+[1] Command request: Select\Request {"endpoint":"sql?mode=raw","table":"information_schema.files","fields":["DISTINCT","TABLESPACE_NAME","FILE_NAME","LOGFILE_GROUP_NAME","EXTENT_SIZE","INITIAL_SIZE","ENGINE"],"where":{"FILE_TYPE":{"operator":"=","value":"DATAFILE"},"TABLE_SCHEMA":{"operator":"=","value":"Manticore"}}}
+[1] response data: {"version":1,"type":"sql response","message":[{"total":0,"warning":"","error":"","columns":[{"DISTINCT":{"type":"string"}},{"TABLESPACE_NAME":{"type":"string"}},{"FILE_NAME":{"type":"string"}},{"LOGFILE_GROUP_NAME":{"type":"string"}},{"EXTENT_SIZE":{"type":"string"}},{"INITIAL_SIZE":{"type":"string"}},{"ENGINE":{"type":"string"}}]}],"error":""}
+[1] process time: 12199µs
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected identifier near 'LOCK TABLES `t` READ /*!32311 LOCAL */'","version":1,"message":{"path_query":"","body":"LOCK TABLES `t` READ /*!32311 LOCAL */"}}
+[1] Executor: LockTables
+[1] Command request: LockTables\Request {"endpoint":"sql?mode=raw","tables":[]}
+[29379µs] manticore request: SHOW TABLES
+[53778µs] manticore request: FREEZE pip;FREEZE products;FREEZE t;FREEZE t1;FREEZE t21;FREEZE t3;FREEZE t4;FREEZE t5;FREEZE t51;FREEZE t53
+[1] response data: {"version":1,"type":"sql response","message":[{"total":10,"error":"","warning":""}],"error":""}
+[1] process time: 121124µs
+[1] request data: {"type":"unknown sql request","error":"Unknown session variable 'sql_quote_show_create' in SET statement","version":1,"message":{"path_query":"","body":"SET SQL_QUOTE_SHOW_CREATE=1"}}
+[1] Executor: EmptyQuery
+[1] Command request: EmptyQuery\Request {"endpoint":"sql?mode=raw"}
+[1] response data: {"version":1,"type":"sql response","message":[{"total":0,"error":"","warning":""}],"error":""}
+[1] process time: 10215µs
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected identifier, expecting '=' near 'character_set_results = 'binary''","version":1,"message":{"path_query":"","body":"SET SESSION character_set_results = 'binary'"}}
+[1] Executor: EmptyQuery
+[1] Command request: EmptyQuery\Request {"endpoint":"sql?mode=raw"}
+[1] response data: {"version":1,"type":"sql response","message":[{"total":0,"error":"","warning":""}],"error":""}
+[1] process time: 13019µs
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected identifier, expecting '=' near 'character_set_results = 'utf8''","version":1,"message":{"path_query":"","body":"SET SESSION character_set_results = 'utf8'"}}
+[1] Executor: EmptyQuery
+[1] Command request: EmptyQuery\Request {"endpoint":"sql?mode=raw"}
+[1] response data: {"version":1,"type":"sql response","message":[{"total":0,"error":"","warning":""}],"error":""}
+[1] process time: 12370µs
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected identifier, expecting VARIABLES near 'fields from `t`'","version":1,"message":{"path_query":"","body":"show fields from `t`"}}
+[1] Executor: ShowFields
+[1] Command request: ShowFields\Request {"endpoint":"sql?mode=raw","table":"t"}
+[31839µs] manticore request: desc t
+[1] response data: {"version":1,"type":"sql response","message":[{"total":2,"error":"","warning":"","columns":[{"Field":{"type":"string"},"Type":{"type":"string"},"Null":{"type":"string"},"Key":{"type":"string"},"Default":{"type":"string"},"Extra":{"type":"string"}}],"data":[{"Field":"id","Type":"bigint","Null":"NO","Key":"","Default":"","Extra":""},{"Field":"f","Type":"text","Null":"NO","Key":"","Default":"","Extra":""}]}],"error":""}
+[1] process time: 74017µs
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected identifier, expecting VARIABLES near 'fields from `t`'","version":1,"message":{"path_query":"","body":"show fields from `t`"}}
+[1] Executor: ShowFields
+[1] Command request: ShowFields\Request {"endpoint":"sql?mode=raw","table":"t"}
+[42026µs] manticore request: desc t
+[1] response data: {"version":1,"type":"sql response","message":[{"total":2,"error":"","warning":"","columns":[{"Field":{"type":"string"},"Type":{"type":"string"},"Null":{"type":"string"},"Key":{"type":"string"},"Default":{"type":"string"},"Extra":{"type":"string"}}],"data":[{"Field":"id","Type":"bigint","Null":"NO","Key":"","Default":"","Extra":""},{"Field":"f","Type":"text","Null":"NO","Key":"","Default":"","Extra":""}]}],"error":""}
+[1] process time: 275878µs
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected identifier, expecting '=' near 'character_set_results = 'binary''","version":1,"message":{"path_query":"","body":"SET SESSION character_set_results = 'binary'"}}
+[1] Executor: EmptyQuery
+[1] Command request: EmptyQuery\Request {"endpoint":"sql?mode=raw"}
+[1] response data: {"version":1,"type":"sql response","message":[{"total":0,"error":"","warning":""}],"error":""}
+[1] process time: 8843µs
+[1] request data: {"type":"unknown sql request","error":"sphinxql: syntax error, unexpected USE near 'use `Manticore`'","version":1,"message":{"path_query":"","body":"use `Manticore`"}}
+[1] data parse error: Failed to handle query: use `Manticore`
+[1] response data: {"version":1,"type":"sql response","message":[{"total":0,"warning":"","error":"sphinxql: syntax error, unexpected USE near 'use `Manticore`'"}],"error":"sphinxql: syntax error, unexpected USE near 'use `Manticore`'"}
+[1] process time: 13263µs
+memory usage: 2,841.063K
+running 0 tasks
