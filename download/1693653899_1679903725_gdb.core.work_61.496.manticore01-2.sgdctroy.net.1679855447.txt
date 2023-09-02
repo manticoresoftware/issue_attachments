@@ -1,0 +1,135 @@
+Currently logging to "gdb.txt".
+Logs will be appended to the log file.
+Output is being logged and displayed.
+  Id   Target Id         Frame 
+  75   Thread 0x7fcad0f1e700 (LWP 568) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  74   Thread 0x7fcad4c52700 (LWP 499) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  73   Thread 0x7fcad110d700 (LWP 551) 0x00007fcad315afd5 in malloc () from /lib64/libc.so.6
+  72   Thread 0x7fcad1005700 (LWP 560) 0x00007fcad34aa1bd in __lll_lock_wait () from /lib64/libpthread.so.0
+  71   Thread 0x7fcad0fe4700 (LWP 561) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  70   Thread 0x7fcad1590700 (LWP 513) 0x00007fcad34aa1bd in __lll_lock_wait () from /lib64/libpthread.so.0
+  69   Thread 0x7fcad16b9700 (LWP 504) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  68   Thread 0x7fcad114f700 (LWP 549) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  67   Thread 0x7fcad0edc700 (LWP 570) 0x00007fcad3226214 in __memcpy_ssse3_back () from /lib64/libc.so.6
+  66   Thread 0x7fcad0fa2700 (LWP 564) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  65   Thread 0x7fcad14a9700 (LWP 520) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  64   Thread 0x7fcad1257700 (LWP 541) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  63   Thread 0x7fcad4c31700 (LWP 500) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  62   Thread 0x7fcad156f700 (LWP 514) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  61   Thread 0x7fcad4c10700 (LWP 501) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  60   Thread 0x7fcad1170700 (LWP 548) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  59   Thread 0x7fcad135f700 (LWP 533) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  58   Thread 0x7fcad112e700 (LWP 550) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  57   Thread 0x7fcad1236700 (LWP 542) 0x00007fcad3226c93 in __memcpy_ssse3_back () from /lib64/libc.so.6
+  56   Thread 0x7fcad1698700 (LWP 505) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  55   Thread 0x7fcad1614700 (LWP 509) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  54   Thread 0x7fcad1446700 (LWP 525) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  53   Thread 0x7fcad10aa700 (LWP 554) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  52   Thread 0x7fcad1404700 (LWP 527) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  51   Thread 0x7fcad1089700 (LWP 555) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  50   Thread 0x7fcad13e3700 (LWP 528) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  49   Thread 0x7fcad12db700 (LWP 537) 0x00007fcad34aa1bd in __lll_lock_wait () from /lib64/libpthread.so.0
+  48   Thread 0x7fcad14ca700 (LWP 519) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  47   Thread 0x7fcad0e9a700 (LWP 572) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  46   Thread 0x7fcad12fc700 (LWP 536) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  45   Thread 0x7fcad0efd700 (LWP 569) 0x0000556ac11af17c in ThinMMapReader_c::UnzipInt() ()
+  44   Thread 0x7fcad0e37700 (LWP 9334) 0x00007fcad31d2d43 in epoll_wait () from /lib64/libc.so.6
+  43   Thread 0x7fcad15b1700 (LWP 512) 0x0000556ac11b0ffb in KeywordsBlockReader_c::UnpackWord() ()
+  42   Thread 0x7fcad4c94700 (LWP 497) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  41   Thread 0x7fcad0e58700 (LWP 574) 0x00007fcad34a7a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  40   Thread 0x7fcad0e79700 (LWP 573) 0x00007fcad3158327 in _int_malloc () from /lib64/libc.so.6
+  39   Thread 0x7fcad1068700 (LWP 556) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  38   Thread 0x7fcad13a1700 (LWP 530) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  37   Thread 0x7fcad0ebb700 (LWP 571) 0x0000556ac106c977 in SkipData_t::Read(unsigned char const*, DictEntry_t const&, int, int) ()
+  36   Thread 0x7fcad0f3f700 (LWP 567) 0x00007fcad31586fb in _int_malloc () from /lib64/libc.so.6
+  35   Thread 0x7fcad11f4700 (LWP 544) 0x00007fcad315afd5 in malloc () from /lib64/libc.so.6
+  34   Thread 0x7fcad0f81700 (LWP 565) 0x00007fcad315afd5 in malloc () from /lib64/libc.so.6
+  33   Thread 0x7fcad0f60700 (LWP 566) 0x00007fcad3158454 in _int_malloc () from /lib64/libc.so.6
+  32   Thread 0x7fcad1026700 (LWP 559) 0x00007fcad315afd5 in malloc () from /lib64/libc.so.6
+  31   Thread 0x7fcad1215700 (LWP 543) 0x00007fcad3158412 in _int_malloc () from /lib64/libc.so.6
+  30   Thread 0x7fcad10cb700 (LWP 553) 0x00007fcad315afd5 in malloc () from /lib64/libc.so.6
+  29   Thread 0x7fcad10ec700 (LWP 552) 0x00007fcad315afd5 in malloc () from /lib64/libc.so.6
+  28   Thread 0x7fcad1047700 (LWP 557) 0x00007fcad31589e5 in _int_malloc () from /lib64/libc.so.6
+  27   Thread 0x7fcad131d700 (LWP 535) 0x00007fcad315675d in malloc_consolidate () from /lib64/libc.so.6
+  26   Thread 0x7fcad1191700 (LWP 547) 0x0000556ac1119c91 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+  25   Thread 0x7fcad1278700 (LWP 540) 0x00007fcad315686a in malloc_consolidate () from /lib64/libc.so.6
+  24   Thread 0x7fcad11d3700 (LWP 545) 0x00007fcad315852b in _int_malloc () from /lib64/libc.so.6
+  23   Thread 0x7fcad150c700 (LWP 517) 0x0000556ac1117c1a in ExtNode_c::ExtNode_c() ()
+  22   Thread 0x7fcad1299700 (LWP 539) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  21   Thread 0x7fcad11b2700 (LWP 546) 0x0000556ac15ec860 in free@plt ()
+  20   Thread 0x7fcad1380700 (LWP 532) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  19   Thread 0x7fcad12ba700 (LWP 538) 0x0000556ac15ec4e0 in operator new[] ()
+  18   Thread 0x7fcad1467700 (LWP 524) 0x00007fcad315af75 in malloc () from /lib64/libc.so.6
+  17   Thread 0x7fcad13c2700 (LWP 529) 0x0000556ac111d8fb in ExtAnd_c::GetDocsChunk() ()
+  16   Thread 0x7fcad133e700 (LWP 534) 0x0000556ac0d600dc in DiskIndexQwordSetup_c::QwordSetup(ISphQword*) const ()
+  15   Thread 0x7fcad15d2700 (LWP 511) 0x00007fcad3158284 in _int_malloc () from /lib64/libc.so.6
+  14   Thread 0x7fcad152d700 (LWP 516) 0x0000556ac11183b2 in ExtNode_i::Create(ISphQword*, XQNode_t const*, ISphQwordSetup const&, bool) ()
+  13   Thread 0x7fcad1488700 (LWP 523) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  12   Thread 0x7fcad1425700 (LWP 526) 0x00007fcad3158232 in _int_malloc () from /lib64/libc.so.6
+  11   Thread 0x7fcad14eb700 (LWP 518) 0x0000556ac11b0e91 in KeywordsBlockReader_c::UnpackWord() ()
+  10   Thread 0x7fcad4c73700 (LWP 498) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  9    Thread 0x7fcad154e700 (LWP 515) 0x0000556ac111d8a0 in ExtAnd_c::GetDocsChunk() ()
+  8    Thread 0x7fcad15f3700 (LWP 510) 0x0000556ac11af17f in ThinMMapReader_c::UnzipInt() ()
+  7    Thread 0x7fcad1677700 (LWP 506) 0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  6    Thread 0x7fcad1656700 (LWP 507) 0x00007fcad315afd5 in malloc () from /lib64/libc.so.6
+  5    Thread 0x7fcad1635700 (LWP 508) 0x00007fcad3156f03 in _int_free () from /lib64/libc.so.6
+  4    Thread 0x7fcad16fb700 (LWP 502) 0x00007fcad315afd5 in malloc () from /lib64/libc.so.6
+  3    Thread 0x7fcad16da700 (LWP 503) 0x0000556ac115af20 in DictStub_c::GetSettings() const ()
+  2    Thread 0x7fcad4dce940 (LWP 496) 0x00007fcad31c9bd3 in select () from /lib64/libc.so.6
+* 1    Thread 0x7fcad0fc3700 (LWP 563) 0x0000556ac111da1a in ExtAnd_c::CollectHits(ExtDoc_t const*) ()
+Undefined command: "threads".  Try "help".
+Undefined command: "threads".  Try "help".
+
+Thread 75 (Thread 0x7fcad0f1e700 (LWP 568)):
+#0  0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000556ac11a4a71 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x0000556ac11a491e in Threads::Service_t::run() ()
+#3  0x0000556ac11a475e in Threads::ThreadPool_c::loop(int) ()
+#4  0x0000556ac11a3177 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x0000556ac11a1f55 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x0000556ac11a2007 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007fcad34a3dc5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007fcad31d276d in clone () from /lib64/libc.so.6
+
+Thread 74 (Thread 0x7fcad4c52700 (LWP 499)):
+#0  0x00007fcad34a76d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000556ac11a4a71 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x0000556ac11a491e in Threads::Service_t::run() ()
+#3  0x0000556ac11a475e in Threads::ThreadPool_c::loop(int) ()
+#4  0x0000556ac11a3177 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x0000556ac11a1f55 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x0000556ac11a2007 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007fcad34a3dc5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007fcad31d276d in clone () from /lib64/libc.so.6
+
+Thread 73 (Thread 0x7fcad110d700 (LWP 551)):
+#0  0x00007fcad315afd5 in malloc () from /lib64/libc.so.6
+#1  0x0000556ac0d3dd94 in operator new(unsigned long) ()
+#2  0x0000556ac111ad1a in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#3  0x0000556ac111ace9 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#4  0x0000556ac106e55c in ExtRanker_c::ExtRanker_c(XQQuery_t const&, ISphQwordSetup const&, bool, bool, bool) ()
+#5  0x0000556ac1073c70 in std::_MakeUniq<ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true> >::__single_object std::make_unique<ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>, XQQuery_t const&, ISphQwordSetup const&, bool&>(XQQuery_t const&, ISphQwordSetup const&, bool&) ()
+#6  0x0000556ac1071941 in sphCreateRanker(XQQuery_t const&, CSphQuery const&, CSphQueryResultMeta&, ISphQwordSetup const&, CSphQueryContext const&, ISphSchema const&) ()
+#7  0x0000556ac0d6ae8d in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const&, CSphQueryResult&, VecTraits_T<ISphMatchSorter*> const&, XQQuery_t const&, CSphRefcountedPtr<CSphDict>, CSphMultiQueryArgs const&, CSphQueryNodeCache*, long) const ()
+#8  0x0000556ac0db138c in CSphIndex_VLN::MultiQuery(CSphQueryResult&, CSphQuery const&, VecTraits_T<ISphMatchSorter*> const&, CSphMultiQueryArgs const&) const::$_25::operator()() const ()
+#9  0x0000556ac0d69b92 in bool Threads::Coro::ContinueBool<CSphIndex_VLN::MultiQuery(CSphQueryResult&, CSphQuery const&, VecTraits_T<ISphMatchSorter*> const&, CSphMultiQueryArgs const&) const::$_25>(int, CSphIndex_VLN::MultiQuery(CSphQueryResult&, CSphQuery const&, VecTraits_T<ISphMatchSorter*> const&, CSphMultiQueryArgs const&) const::$_25) ()
+#10 0x0000556ac0d69939 in CSphIndex_VLN::MultiQuery(CSphQueryResult&, CSphQuery const&, VecTraits_T<ISphMatchSorter*> const&, CSphMultiQueryArgs const&) const ()
+#11 0x0000556ac0d69c29 in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult*, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#12 0x0000556ac0d2024b in std::_Function_handler<void (), SearchHandler_c::RunLocalSearches()::$_9>::_M_invoke(std::_Any_data const&) ()
+#13 0x0000556ac11cb4f2 in std::_Function_handler<void (), myinfo::OwnMini(std::function<void ()>)::$_2>::_M_invoke(std::_Any_data const&) ()
+#14 0x0000556ac15c488c in Threads::CoRoutine_c::CreateContext(std::function<void ()>, std::pair<boost::context::stack_context, Threads::StackFlavour_E>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) ()
+#15 0x0000556ac15e507f in make_fcontext ()
+Cannot access memory at address 0x7fbca708b000
+[Switching to thread 2 (Thread 0x7fcad4dce940 (LWP 496))]
+#0  0x00007fcad31c9bd3 in select () from /lib64/libc.so.6
+#0  0x00007fcad31c9bd3 in select () from /lib64/libc.so.6
+No symbol table info available.
+#1  0x0000556ac0d4334f in sphSleepMsec(int) ()
+No symbol table info available.
+#2  0x0000556ac0d11ac0 in TickHead() ()
+No symbol table info available.
+#3  0x0000556ac0d1865e in ServiceMain(int, char**) ()
+No symbol table info available.
+#4  0x0000556ac0d197eb in main ()
+No symbol table info available.
+No symbol table info available.
