@@ -1,0 +1,285 @@
+
+
+
+
+<!DOCTYPE html>
+<html class="with-top-bar " lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<title>Static searchd · Wiki · manticoresearch / Manticore Search · GitLab</title>
+<script nonce="FG6KFunwheQasjy6TzQUTA==">
+//<![CDATA[
+window.gon={};gon.features={"preserveUnchangedMarkdown":false};
+//]]>
+</script>
+<script nonce="FG6KFunwheQasjy6TzQUTA==">
+//<![CDATA[
+window.uploads_path = "/manticoresearch/dev/uploads";
+
+
+
+//]]>
+</script>
+
+
+
+<link rel="stylesheet" href="/assets/themes/theme_indigo-8ea2931a3eb696b62b9406b5bf180b510ea44d826fb8188f921000f78872a085.css" />
+
+<link rel="stylesheet" href="/assets/application-438d8506e777869252c205fa464d726281d4c411a125a73e797994594cca547e.css" media="all" />
+<link rel="stylesheet" href="/assets/page_bundles/wiki-37522f837fdeea95424eae00a18e2f3ba25a6b2869718a7c23b8f603976f80dd.css" media="all" />
+<link rel="stylesheet" href="/assets/application_utilities-79fd3a4f28faf34ffc5a9ae1a6cc396b7c7a454a655778a9f7f802fd42b77cb4.css" media="all" />
+
+
+<link rel="stylesheet" href="/assets/fonts-171e1863d044918ea3bbaacf2a559ccaac603904aa851c3add5b714fa7066468.css" media="all" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-798c2d2c1560fb1734a7653f984135b2ce22a62aa9b46f914905648669930db1.css" media="all" />
+
+<script src="/assets/webpack/runtime.0c1796f2.bundle.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+<script src="/assets/webpack/main.647307f6.chunk.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+<script src="/assets/webpack/tracker.de3bab83.chunk.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+<script nonce="FG6KFunwheQasjy6TzQUTA==">
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"snowplow.trx.gitlab.net","cookieDomain":".gitlab.com","appId":"gitlab","formTracking":true,"linkClickTracking":true}
+
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-0-9","data":{"environment":"production","source":"gitlab-rails","plan":"free","extra":{"new_nav":true},"user_id":2801001,"namespace_id":1843808,"project_id":3858465,"context_generated_at":"2023-09-02T05:33:12.864Z"}}
+gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace1843808/project3858465/-/wikis/Static-searchd";
+
+
+//]]>
+</script>
+<link rel="preload" href="/assets/application_utilities-79fd3a4f28faf34ffc5a9ae1a6cc396b7c7a454a655778a9f7f802fd42b77cb4.css" as="style" type="text/css" nonce="eJADaLhJR0F1/gBbYjc3tQ==">
+<link rel="preload" href="/assets/application-438d8506e777869252c205fa464d726281d4c411a125a73e797994594cca547e.css" as="style" type="text/css" nonce="eJADaLhJR0F1/gBbYjc3tQ==">
+<link rel="preload" href="/assets/highlight/themes/white-798c2d2c1560fb1734a7653f984135b2ce22a62aa9b46f914905648669930db1.css" as="style" type="text/css" nonce="eJADaLhJR0F1/gBbYjc3tQ==">
+<link crossorigin="" href="https://snowplow.trx.gitlab.net" rel="preconnect">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-1e0a5107ea3bbd4be93e8ad2c503467e43166cd37e4293570b490e0812ede98b.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-08d2c5e8ff8fd3d2d6ec55bc7713380f8981c35f9d2df14e12b835464d6e8f23.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-38e58d8df29485a20c550da1d0111e2c2169f6dcbcf894f2cd3afbdd97bcc588.woff2" rel="preload">
+<link rel="preload" href="/assets/fonts-171e1863d044918ea3bbaacf2a559ccaac603904aa851c3add5b714fa7066468.css" as="style" type="text/css" nonce="eJADaLhJR0F1/gBbYjc3tQ==">
+
+
+
+<script src="/assets/webpack/sentry.93ff3d4b.chunk.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+
+
+<script src="/assets/webpack/commons-pages.groups.new-pages.import.gitlab_projects.new-pages.import.manifest.new-pages.projects.n-4e5d09f9.927cb912.chunk.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+<script src="/assets/webpack/commons-pages.search.show-super_sidebar.f78eb9b9.chunk.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+<script src="/assets/webpack/super_sidebar.2a4db59c.chunk.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+<script src="/assets/webpack/shortcutsBundle.b20a835f.chunk.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+<script src="/assets/webpack/commons-pages.groups.boards-pages.groups.details-pages.groups.epic_boards-pages.groups.show-pages.gr-78052651.6b54b66c.chunk.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+<script src="/assets/webpack/commons-pages.groups.wikis.show-pages.projects.wikis.show.e4b455a1.chunk.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+<script src="/assets/webpack/pages.projects.wikis.show.7af4d3b2.chunk.js" defer="defer" nonce="FG6KFunwheQasjy6TzQUTA=="></script>
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="Static searchd · Wiki · manticoresearch / Manticore Search · GitLab" property="og:title">
+<meta content="Manticore Search Engine" property="og:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/3858465/download.jpg" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.com/manticoresearch/dev/-/wikis/Static-searchd" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="Static searchd · Wiki · manticoresearch / Manticore Search · GitLab" property="twitter:title">
+<meta content="Manticore Search Engine" property="twitter:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/3858465/download.jpg" property="twitter:image">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="I6lVAPeh2qWwhYP4rijTYpk2C5vOsi1iBJYWZ7fqV3hBWWlAzIQ93F7x0ceUz0fcYu0thHnhtIOniHun3iN56g" />
+<meta name="csp-nonce" content="FG6KFunwheQasjy6TzQUTA==" />
+<meta name="action-cable-url" content="/-/cable" />
+<link href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+
+
+
+
+<meta content="Manticore Search Engine" name="description">
+<meta content="#222261" name="theme-color">
+</head>
+
+<body class="ui-indigo tab-width-8 gl-browser-generic gl-platform-other" data-find-file="/manticoresearch/dev/-/find_file/master" data-group="manticoresearch" data-group-full-path="manticoresearch" data-namespace-id="1843808" data-page="projects:wikis:show" data-page-type-id="Static-searchd" data-project="dev" data-project-id="3858465">
+
+<script nonce="FG6KFunwheQasjy6TzQUTA==">
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isGeneric":true,"isOther":true};
+
+
+//]]>
+</script>
+
+
+
+<div class="layout-page hide-when-top-nav-responsive-open page-gutter wiki-sidebar right-sidebar-expanded page-with-super-sidebar">
+<aside class="js-super-sidebar super-sidebar super-sidebar-loading" data-command-palette="{&quot;project_files_url&quot;:&quot;/manticoresearch/dev/-/files/master?format=json&quot;,&quot;project_blob_url&quot;:&quot;/manticoresearch/dev/-/blob/master&quot;}" data-force-desktop-expanded-sidebar="" data-root-path="/" data-sidebar="{&quot;is_logged_in&quot;:true,&quot;context_switcher_links&quot;:[{&quot;title&quot;:&quot;Your work&quot;,&quot;link&quot;:&quot;/&quot;,&quot;icon&quot;:&quot;work&quot;},{&quot;title&quot;:&quot;Explore&quot;,&quot;link&quot;:&quot;/explore&quot;,&quot;icon&quot;:&quot;compass&quot;}],&quot;current_menu_items&quot;:[{&quot;id&quot;:&quot;project_overview&quot;,&quot;title&quot;:&quot;Project overview&quot;,&quot;icon&quot;:&quot;project&quot;,&quot;link&quot;:&quot;/manticoresearch/dev&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project rspec-project-link&quot;,&quot;is_active&quot;:false},{&quot;title&quot;:&quot;Manage&quot;,&quot;icon&quot;:&quot;users&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/activity&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;activity&quot;,&quot;title&quot;:&quot;Activity&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/activity&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project-activity&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;members&quot;,&quot;title&quot;:&quot;Members&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/project_members&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;labels&quot;,&quot;title&quot;:&quot;Labels&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/labels&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Plan&quot;,&quot;icon&quot;:&quot;planning&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/issues&quot;,&quot;is_active&quot;:true,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;project_issue_list&quot;,&quot;title&quot;:&quot;Issues&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/issues&quot;,&quot;pill_count&quot;:&quot;773&quot;,&quot;link_classes&quot;:&quot;shortcuts-issues has-sub-items&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;boards&quot;,&quot;title&quot;:&quot;Issue boards&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/boards&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-issue-boards&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;milestones&quot;,&quot;title&quot;:&quot;Milestones&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/milestones&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_wiki&quot;,&quot;title&quot;:&quot;Wiki&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/wikis/home&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-wiki&quot;,&quot;is_active&quot;:true}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Code&quot;,&quot;icon&quot;:&quot;code&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/merge_requests&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;project_merge_request_list&quot;,&quot;title&quot;:&quot;Merge requests&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/merge_requests&quot;,&quot;pill_count&quot;:&quot;1&quot;,&quot;link_classes&quot;:&quot;shortcuts-merge_requests&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;files&quot;,&quot;title&quot;:&quot;Repository&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/tree/master&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-tree&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;branches&quot;,&quot;title&quot;:&quot;Branches&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/branches&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;commits&quot;,&quot;title&quot;:&quot;Commits&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/commits/master?ref_type=heads&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-commits&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;tags&quot;,&quot;title&quot;:&quot;Tags&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/tags&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;graphs&quot;,&quot;title&quot;:&quot;Repository graph&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/network/master?ref_type=heads&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-network&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;compare&quot;,&quot;title&quot;:&quot;Compare revisions&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/compare?from=master\u0026to=master&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_snippets&quot;,&quot;title&quot;:&quot;Snippets&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/snippets&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-snippets&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Build&quot;,&quot;icon&quot;:&quot;rocket&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipelines&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;pipelines&quot;,&quot;title&quot;:&quot;Pipelines&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipelines&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-pipelines&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;jobs&quot;,&quot;title&quot;:&quot;Jobs&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/jobs&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pipelines_editor&quot;,&quot;title&quot;:&quot;Pipeline editor&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/ci/editor?branch_name=master&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pipeline_schedules&quot;,&quot;title&quot;:&quot;Pipeline schedules&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipeline_schedules&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;artifacts&quot;,&quot;title&quot;:&quot;Artifacts&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/artifacts&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Secure&quot;,&quot;icon&quot;:&quot;shield&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/audit_events&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;audit_events&quot;,&quot;title&quot;:&quot;Audit events&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/audit_events&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;configuration&quot;,&quot;title&quot;:&quot;Security configuration&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/security/configuration&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Deploy&quot;,&quot;icon&quot;:&quot;deployments&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/releases&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;releases&quot;,&quot;title&quot;:&quot;Releases&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/releases&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-deployments-releases&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;feature_flags&quot;,&quot;title&quot;:&quot;Feature flags&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/feature_flags&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-feature-flags&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;container_registry&quot;,&quot;title&quot;:&quot;Container Registry&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/container_registry&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pages&quot;,&quot;title&quot;:&quot;Pages&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/pages&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Operate&quot;,&quot;icon&quot;:&quot;cloud-pod&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/environments&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;environments&quot;,&quot;title&quot;:&quot;Environments&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/environments&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-environments&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;kubernetes&quot;,&quot;title&quot;:&quot;Kubernetes clusters&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/clusters&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-kubernetes&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;terraform_states&quot;,&quot;title&quot;:&quot;Terraform states&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/terraform&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;google_cloud&quot;,&quot;title&quot;:&quot;Google Cloud&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/google_cloud/configuration&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:&quot;monitor&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/error_tracking&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;error_tracking&quot;,&quot;title&quot;:&quot;Error Tracking&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/error_tracking&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;alert_management&quot;,&quot;title&quot;:&quot;Alerts&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/alert_management&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;incidents&quot;,&quot;title&quot;:&quot;Incidents&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/incidents&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;service_desk&quot;,&quot;title&quot;:&quot;Service Desk&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/issues/service_desk&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Analyze&quot;,&quot;icon&quot;:&quot;chart&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/-/value_stream_analytics&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;cycle_analytics&quot;,&quot;title&quot;:&quot;Value stream analytics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/value_stream_analytics&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project-cycle-analytics&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;contributors&quot;,&quot;title&quot;:&quot;Contributor statistics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/graphs/master?ref_type=heads&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;ci_cd_analytics&quot;,&quot;title&quot;:&quot;CI/CD analytics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/pipelines/charts&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;repository_analytics&quot;,&quot;title&quot;:&quot;Repository analytics&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/graphs/master/charts&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-repository-charts&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;model_experiments&quot;,&quot;title&quot;:&quot;Model experiments&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/ml/experiments&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;title&quot;:&quot;Settings&quot;,&quot;icon&quot;:&quot;settings&quot;,&quot;link&quot;:&quot;/manticoresearch/dev/edit&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;general&quot;,&quot;title&quot;:&quot;General&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/edit&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;integrations&quot;,&quot;title&quot;:&quot;Integrations&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/integrations&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;webhooks&quot;,&quot;title&quot;:&quot;Webhooks&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/hooks&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;access_tokens&quot;,&quot;title&quot;:&quot;Access Tokens&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/access_tokens&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;repository&quot;,&quot;title&quot;:&quot;Repository&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/repository&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;merge_request_settings&quot;,&quot;title&quot;:&quot;Merge requests&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/merge_requests&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;ci_cd&quot;,&quot;title&quot;:&quot;CI/CD&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/ci_cd&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;packages_and_registries&quot;,&quot;title&quot;:&quot;Packages and registries&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/packages_and_registries&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;monitor&quot;,&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/settings/operations&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;usage_quotas&quot;,&quot;title&quot;:&quot;Usage Quotas&quot;,&quot;icon&quot;:null,&quot;link&quot;:&quot;/manticoresearch/dev/-/usage_quotas&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:true}],&quot;current_context_header&quot;:{&quot;title&quot;:&quot;Manticore Search&quot;,&quot;avatar&quot;:&quot;/uploads/-/system/project/avatar/3858465/download.jpg&quot;,&quot;id&quot;:3858465},&quot;support_path&quot;:&quot;https://about.gitlab.com/get-help/&quot;,&quot;display_whats_new&quot;:true,&quot;whats_new_most_recent_release_items_count&quot;:5,&quot;whats_new_version_digest&quot;:&quot;4ecbf57547986d3149a533d5ec774acc5c461a1f1c1675d73c8b48d00bc27827&quot;,&quot;show_version_check&quot;:false,&quot;gitlab_version&quot;:{&quot;major&quot;:16,&quot;minor&quot;:4,&quot;patch&quot;:0,&quot;suffix_s&quot;:&quot;&quot;},&quot;gitlab_version_check&quot;:{&quot;latest_stable_versions&quot;:[],&quot;latest_version&quot;:&quot;16.3.1&quot;,&quot;severity&quot;:&quot;success&quot;,&quot;critical_vulnerability&quot;:false,&quot;details&quot;:&quot;&quot;},&quot;search&quot;:{&quot;search_path&quot;:&quot;/search&quot;,&quot;issues_path&quot;:&quot;/dashboard/issues&quot;,&quot;mr_path&quot;:&quot;/dashboard/merge_requests&quot;,&quot;autocomplete_path&quot;:&quot;/search/autocomplete&quot;,&quot;search_context&quot;:{&quot;group&quot;:{&quot;id&quot;:1843808,&quot;name&quot;:&quot;manticoresearch&quot;,&quot;full_name&quot;:&quot;manticoresearch&quot;},&quot;group_metadata&quot;:{&quot;issues_path&quot;:&quot;/groups/manticoresearch/-/issues&quot;,&quot;mr_path&quot;:&quot;/groups/manticoresearch/-/merge_requests&quot;},&quot;project&quot;:{&quot;id&quot;:3858465,&quot;name&quot;:&quot;Manticore Search&quot;},&quot;project_metadata&quot;:{&quot;mr_path&quot;:&quot;/manticoresearch/dev/-/merge_requests&quot;,&quot;issues_path&quot;:&quot;/manticoresearch/dev/-/issues&quot;},&quot;code_search&quot;:false,&quot;scope&quot;:&quot;wiki_blobs&quot;,&quot;for_snippets&quot;:null}},&quot;panel_type&quot;:&quot;project&quot;,&quot;name&quot;:&quot;manticore_bot&quot;,&quot;username&quot;:&quot;manticore_bot&quot;,&quot;avatar_url&quot;:&quot;https://secure.gravatar.com/avatar/e5d8eaba32898b9b901210d0d5a8c383?s=80\u0026d=identicon&quot;,&quot;has_link_to_profile&quot;:true,&quot;link_to_profile&quot;:&quot;/manticore_bot&quot;,&quot;logo_url&quot;:null,&quot;status&quot;:{&quot;can_update&quot;:true,&quot;busy&quot;:null,&quot;customized&quot;:null,&quot;availability&quot;:&quot;&quot;,&quot;emoji&quot;:null,&quot;message_html&quot;:null,&quot;message&quot;:null,&quot;clear_after&quot;:null},&quot;settings&quot;:{&quot;has_settings&quot;:true,&quot;profile_path&quot;:&quot;/-/profile&quot;,&quot;profile_preferences_path&quot;:&quot;/-/profile/preferences&quot;},&quot;user_counts&quot;:{&quot;assigned_issues&quot;:0,&quot;assigned_merge_requests&quot;:0,&quot;review_requested_merge_requests&quot;:0,&quot;todos&quot;:0,&quot;last_update&quot;:1693632792951},&quot;can_sign_out&quot;:true,&quot;sign_out_link&quot;:&quot;/users/sign_out&quot;,&quot;issues_dashboard_path&quot;:&quot;/dashboard/issues?assignee_username=manticore_bot&quot;,&quot;todos_dashboard_path&quot;:&quot;/dashboard/todos&quot;,&quot;create_new_menu_groups&quot;:[{&quot;name&quot;:&quot;In this project&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New issue&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/issues/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_issue&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_issue&quot;}},{&quot;text&quot;:&quot;New merge request&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/merge_requests/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_mr&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_mr&quot;}},{&quot;text&quot;:&quot;New snippet&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/snippets/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_snippet&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_snippet&quot;}},{&quot;text&quot;:&quot;Invite members&quot;,&quot;href&quot;:null,&quot;component&quot;:&quot;invite_members&quot;,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;invite&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;invite&quot;}}]},{&quot;name&quot;:&quot;In GitLab&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New project/repository&quot;,&quot;href&quot;:&quot;/projects/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_project&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_project&quot;}},{&quot;text&quot;:&quot;New group&quot;,&quot;href&quot;:&quot;/groups/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_group&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_group&quot;}},{&quot;text&quot;:&quot;New snippet&quot;,&quot;href&quot;:&quot;/-/snippets/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_snippet&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_snippet&quot;}}]}],&quot;merge_request_menu&quot;:[{&quot;name&quot;:&quot;Merge requests&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;Assigned&quot;,&quot;href&quot;:&quot;/dashboard/merge_requests?assignee_username=manticore_bot&quot;,&quot;count&quot;:0,&quot;userCount&quot;:&quot;assigned_merge_requests&quot;,&quot;extraAttrs&quot;:{&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-label&quot;:&quot;merge_requests_assigned&quot;,&quot;data-track-property&quot;:&quot;nav_core_menu&quot;,&quot;class&quot;:&quot;dashboard-shortcuts-merge_requests&quot;}},{&quot;text&quot;:&quot;Review requests&quot;,&quot;href&quot;:&quot;/dashboard/merge_requests?reviewer_username=manticore_bot&quot;,&quot;count&quot;:0,&quot;userCount&quot;:&quot;review_requested_merge_requests&quot;,&quot;extraAttrs&quot;:{&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-label&quot;:&quot;merge_requests_to_review&quot;,&quot;data-track-property&quot;:&quot;nav_core_menu&quot;,&quot;class&quot;:&quot;dashboard-shortcuts-review_requests&quot;}}]}],&quot;projects_path&quot;:&quot;/dashboard/projects&quot;,&quot;groups_path&quot;:&quot;/dashboard/groups&quot;,&quot;gitlab_com_but_not_canary&quot;:true,&quot;gitlab_com_and_canary&quot;:null,&quot;canary_toggle_com_url&quot;:&quot;https://next.gitlab.com&quot;,&quot;current_context&quot;:{&quot;namespace&quot;:&quot;projects&quot;,&quot;item&quot;:{&quot;id&quot;:3858465,&quot;name&quot;:&quot;Manticore Search&quot;,&quot;namespace&quot;:&quot;manticoresearch / Manticore Search&quot;,&quot;webUrl&quot;:&quot;/manticoresearch/dev&quot;,&quot;avatarUrl&quot;:&quot;/uploads/-/system/project/avatar/3858465/download.jpg&quot;}},&quot;pinned_items&quot;:[&quot;project_issue_list&quot;,&quot;project_merge_request_list&quot;],&quot;update_pins_url&quot;:&quot;/-/users/pins&quot;,&quot;is_impersonating&quot;:false,&quot;stop_impersonation_path&quot;:&quot;/admin/impersonation&quot;,&quot;shortcut_links&quot;:[{&quot;title&quot;:&quot;Milestones&quot;,&quot;href&quot;:&quot;/dashboard/milestones&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-milestones&quot;},{&quot;title&quot;:&quot;Snippets&quot;,&quot;href&quot;:&quot;/dashboard/snippets&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-snippets&quot;},{&quot;title&quot;:&quot;Activity&quot;,&quot;href&quot;:&quot;/dashboard/activity&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-activity&quot;},{&quot;title&quot;:&quot;Create a new issue&quot;,&quot;href&quot;:&quot;/manticoresearch/dev/-/issues/new&quot;,&quot;css_class&quot;:&quot;shortcuts-new-issue&quot;}],&quot;show_tanuki_bot&quot;:false,&quot;trial&quot;:{&quot;has_start_trial&quot;:false,&quot;url&quot;:&quot;/-/trials/new?glm_content=top-right-dropdown\u0026glm_source=gitlab.com&quot;}}" data-toggle-new-nav-endpoint="/-/profile/preferences"></aside>
+<div data-version-digest="4ecbf57547986d3149a533d5ec774acc5c461a1f1c1675d73c8b48d00bc27827" id="whats-new-app"></div>
+
+<div class="content-wrapper">
+<div class="mobile-overlay"></div>
+
+<div class="alert-wrapper gl-force-block-formatting-context">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top-bar-fixed container-fluid" data-testid="top-bar">
+<div class="top-bar-container gl-display-flex gl-align-items-center gl-gap-2">
+<button class="gl-button btn btn-icon btn-md btn-default btn-default-tertiary js-super-sidebar-toggle-expand super-sidebar-toggle gl-ml-n3" title="Expand sidebar" aria-controls="super-sidebar" aria-expanded="false" aria-label="Navigation sidebar" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="sidebar-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#sidebar"></use></svg>
+
+</button>
+<nav aria-label="Breadcrumbs" class="breadcrumbs" data-qa-selector="breadcrumb_links_content" data-testid="breadcrumb-links">
+<ul class="list-unstyled breadcrumbs-list js-breadcrumbs-list">
+<li><a class="group-path breadcrumb-item-text js-breadcrumb-item-text " href="/manticoresearch"><img alt="manticoresearch" class="avatar-tile lazy" width="15" height="15" data-src="/uploads/-/system/group/avatar/1843808/manticore-logo-central.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />manticoresearch</a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#chevron-lg-right"></use></svg></li> <li><a href="/manticoresearch/dev"><img alt="Manticore Search" class="avatar-tile lazy" width="15" height="15" data-src="/uploads/-/system/project/avatar/3858465/download.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="breadcrumb-item-text js-breadcrumb-item-text">Manticore Search</span></a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#chevron-lg-right"></use></svg></li>
+<li><a href="/manticoresearch/dev/-/wikis/home">Wiki</a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#chevron-lg-right"></use></svg></li>
+
+<li data-qa-selector="breadcrumb_current_link" data-testid="breadcrumb-current-link">
+<a href="/manticoresearch/dev/-/wikis/Static-searchd">Static searchd</a>
+</li>
+</ul>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"manticoresearch","item":"https://gitlab.com/manticoresearch"},{"@type":"ListItem","position":2,"name":"Manticore Search","item":"https://gitlab.com/manticoresearch/dev"},{"@type":"ListItem","position":3,"name":"Wiki","item":"https://gitlab.com/manticoresearch/dev/-/wikis/home"},{"@type":"ListItem","position":4,"name":"Static searchd","item":"https://gitlab.com/manticoresearch/dev/-/wikis/Static-searchd"}]}
+
+</script>
+</nav>
+
+
+
+</div>
+</div>
+
+</div>
+<div class="container-fluid container-limited limit-container-width project-highlight-puc">
+<main class="content" id="content-body" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+<div class="flash-container flash-container-page sticky" data-qa-selector="flash_container">
+</div>
+
+
+<div class="js-invite-members-modal" data-access-levels="{&quot;Guest&quot;:10,&quot;Reporter&quot;:20,&quot;Developer&quot;:30,&quot;Maintainer&quot;:40}" data-default-access-level="10" data-full-path="manticoresearch/dev" data-help-link="https://gitlab.com/help/user/permissions" data-id="3858465" data-is-project="true" data-name="Manticore Search" data-reload-page-on-submit="false" data-root-id="1843808"></div>
+
+
+<div class="wiki-page-header top-area has-sidebar-toggle flex-column flex-lg-row">
+<button class="gl-button btn btn-default btn-icon sidebar-toggle js-sidebar-wiki-toggle" role="button" type="button"><svg class="s16" data-testid="chevron-double-lg-left-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#chevron-double-lg-left"></use></svg></button>
+<div class="nav-text flex-fill">
+<span class="wiki-last-edit-by">
+Last edited by <a href='https://gitlab.com/djklim87'><img class="avatar s24 float-none gl-mr-0! lazy" data-src="https://secure.gravatar.com/avatar/eecec318b9a7a1fdadcefad62fbe09e9?s=48&amp;d=identicon" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /> <strong>Klim Todrik</strong></a>
+<time class="js-timeago" title="Nov 14, 2022 1:12pm" datetime="2022-11-14T13:12:04Z" data-toggle="tooltip" data-placement="top" data-container="body">Nov 14, 2022</time>
+</span>
+</div>
+<div class="nav-controls pb-md-3 pb-lg-0">
+<a role="button" data-qa-selector="page_history_button" class="gl-button btn btn-md btn-default " href="/manticoresearch/dev/-/wikis/Static-searchd/history"><span class="gl-button-text">
+Page history
+
+</span>
+
+</a><a role="button" data-qa-selector="new_page_button" class="gl-button btn btn-md btn-confirm btn-confirm-secondary " href="/manticoresearch/dev/-/wikis/new"><span class="gl-button-text">
+New page
+
+</span>
+
+</a>
+</div>
+</div>
+<div class="gl-mt-5 gl-mb-3">
+<div class="gl-display-flex gl-justify-content-space-between">
+<h2 class="gl-mt-0 gl-mb-5" data-qa-selector="wiki_page_title" data-testid="wiki_page_title">Static searchd</h2>
+<div>
+<a class="gl-button btn btn-icon btn-md btn-default js-wiki-edit" title="Edit" data-qa-selector="edit_page_button" data-testid="wiki_edit_button" href="/manticoresearch/dev/-/wikis/Static-searchd/edit"><svg class="s16 gl-icon gl-button-icon " data-testid="pencil-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#pencil"></use></svg>
+
+</a>
+</div>
+</div>
+<div class="js-async-wiki-page-content md gl-pt-2" data-get-wiki-content-url="/api/v4/projects/3858465/wikis/Static-searchd?version=c75a3a143d35e6aa02ede39ba04da171a5fbe252" data-qa-selector="wiki_page_content" data-testid="wiki-page-content" data-tracking-context="{&quot;wiki-format&quot;:&quot;markdown&quot;,&quot;wiki-title-size&quot;:14,&quot;wiki-content-size&quot;:0,&quot;wiki-directory-nest-level&quot;:0,&quot;wiki-container-type&quot;:&quot;Project&quot;}"></div>
+</div>
+<aside aria-label="Wiki" class="right-sidebar right-sidebar-expanded wiki-sidebar js-wiki-sidebar js-right-sidebar" data-offset-top="50" data-spy="affix">
+<div class="sidebar-container">
+<div class="block wiki-sidebar-header gl-mb-3 w-100">
+<a class="gutter-toggle float-right d-block d-md-none js-sidebar-wiki-toggle" href="#">
+<svg class="s16 gl-icon" data-testid="chevron-double-lg-right-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#chevron-double-lg-right"></use></svg>
+</a>
+<div class="gl-display-flex gl-flex-wrap">
+<a class="gl-mr-5" data-qa-selector="clone_repository_link" href="/manticoresearch/dev/-/wikis/git_access"><svg class="s16 gl-mr-2" data-testid="download-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#download"></use></svg>
+<span>Clone repository</span>
+</a><a class="" data-qa-selector="edit_sidebar_link" href="/manticoresearch/dev/-/wikis/_sidebar/edit"><svg class="s16 gl-mr-2" data-testid="pencil-icon"><use href="/assets/icons-b25b55b72e1a86a9ca8055a5c421aae9b89fc86363fa02e2109034d756e56d28.svg#pencil"></use></svg>
+<span>Edit sidebar</span>
+</a></div>
+</div>
+<div class="blocks-container">
+<div class="block block-first w-100">
+<ul data-sourcepos="1:1-44:60" dir="auto">&#x000A;<li data-sourcepos="1:1-44:60">&#x000A;<a href="/manticoresearch/dev/-/wikis/readme" data-canonical-src="readme">Readme</a>&#x000A;<ul data-sourcepos="2:3-44:60">&#x000A;<li data-sourcepos="2:3-2:22"><a href="/manticoresearch/dev/-/wikis/pages" data-canonical-src="pages">All pages</a></li>&#x000A;<li data-sourcepos="3:3-3:531">&#x000A;<a href="/manticoresearch/dev/-/wikis/Official-docs" data-canonical-src="Official-docs">Official docs</a>: <a href="https://docs.google.com/spreadsheets/d/1t26ssOiuyZG25cbfYXFdCDMWgWvR3kaoJLxG13OrBA0/edit?usp=sharing" rel="nofollow noreferrer noopener" target="_blank">TIME</a> | <a href="https://docs.google.com/spreadsheets/d/1Ug5nIGwr7feQkmx7AeTjAa7Ffg8zVgTrqvF8iKZ1Was/edit?usp=sharing" rel="nofollow noreferrer noopener" target="_blank">AWAY</a> | <a href="https://drive.google.com/open?id=1kxpj7p_CF2eSrWahG68RE9gN8CUjtdaX" rel="nofollow noreferrer noopener" target="_blank">Access</a> | <a href="https://drive.google.com/open?id=15QRDFmZBkVt2KpmnhIRxHBt4nTeP2naMx3m0iREWikg" rel="nofollow noreferrer noopener" target="_blank">Secrets</a> | <a href="https://docs.google.com/document/d/116jLWhQanM5Aqa0YJUQR3ZJ2gy2FEBKdQfw0ZslMUA0" rel="nofollow noreferrer noopener" target="_blank">Dev server &amp; backups</a>&#x000A;</li>&#x000A;<li data-sourcepos="4:3-9:81">Continuous-integration&#x000A;<ul data-sourcepos="5:5-9:81">&#x000A;<li data-sourcepos="5:5-5:61"><a href="/manticoresearch/dev/-/wikis/Continuous-integration/cdash-CI-start" data-canonical-src="Continuous-integration/cdash-CI-start">cdash CI start</a></li>&#x000A;<li data-sourcepos="6:5-6:145"><a href="/manticoresearch/dev/-/wikis/Continuous-integration/%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-cmake" data-canonical-src="Continuous-integration/%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-cmake">Конфигурирование с помощью cmake</a></li>&#x000A;<li data-sourcepos="7:5-7:105"><a href="/manticoresearch/dev/-/wikis/Continuous-integration/%D0%A1%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-cmake" data-canonical-src="Continuous-integration/%D0%A1%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-cmake">Сборка с помощью cmake</a></li>&#x000A;<li data-sourcepos="8:5-8:129"><a href="/manticoresearch/dev/-/wikis/Continuous-integration/%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-ctest" data-canonical-src="Continuous-integration/%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-ctest">Тестирование с помощью ctest</a></li>&#x000A;<li data-sourcepos="9:5-9:81"><a href="/manticoresearch/dev/-/wikis/Continuous-integration/Runners-in-Hetzner-Cloud" data-canonical-src="Continuous-integration/Runners-in-Hetzner-Cloud">Runners in Hetzner Cloud</a></li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="10:3-17:66">Development&#x000A;<ul data-sourcepos="11:5-17:66">&#x000A;<li data-sourcepos="11:5-11:131"><a href="/manticoresearch/dev/-/wikis/Development/How-to-accept-pr-(pull-request)-on-github-mirror-(IMPORTANT!)" data-canonical-src="Development/How-to-accept-pr-(pull-request)-on-github-mirror-(IMPORTANT!)">How to accept pr (pull request) on github mirror</a></li>&#x000A;<li data-sourcepos="12:5-12:42"><a href="/manticoresearch/dev/-/wikis/Development/git-tricks" data-canonical-src="Development/git-tricks">git tricks</a></li>&#x000A;<li data-sourcepos="13:5-13:148"><a href="/manticoresearch/dev/-/wikis/Development/%D0%9F%D1%80%D0%B5%D0%B4%D0%BF%D0%BE%D0%BB%D0%B0%D0%B3%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9-flow-(%D0%B4%D0%BB%D1%8F-%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F)" data-canonical-src="Development/%D0%9F%D1%80%D0%B5%D0%B4%D0%BF%D0%BE%D0%BB%D0%B0%D0%B3%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9-flow-(%D0%B4%D0%BB%D1%8F-%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F)">Предполагаемый flow (для обсуждения)</a></li>&#x000A;<li data-sourcepos="14:5-15:93"><a href="/manticoresearch/dev/-/wikis/Development/Script-to-add-release-label-to-issues-closed-by-git-commits-since-last-release" data-canonical-src="Development/Script-to-add-release-label-to-issues-closed-by-git-commits-since-last-release">How to add release label to issues closed by git commits since last release&#x000A;</a></li>&#x000A;<li data-sourcepos="16:5-16:58"><a href="/manticoresearch/dev/-/wikis/Internal-binary-protocol" data-canonical-src="Internal-binary-protocol">Internal binary protocol</a></li>&#x000A;<li data-sourcepos="17:5-17:66"><a href="/manticoresearch/dev/-/wikis/Development/Custom-task-dispatcher" data-canonical-src="Development/Custom-task-dispatcher">Custom task dispatcher</a></li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="18:3-21:64">Documentation&#x000A;<ul data-sourcepos="19:5-21:64">&#x000A;<li data-sourcepos="19:5-19:80"><a href="/manticoresearch/dev/-/wikis/Documentation/%5Bdraft%5Dgetting-started-guide" data-canonical-src="Documentation/%5Bdraft%5Dgetting-started-guide">[draft]getting started guide</a></li>&#x000A;<li data-sourcepos="20:5-20:52"><a href="/manticoresearch/dev/-/wikis/Documentation/manticore-docs" data-canonical-src="Documentation/manticore-docs">manticore docs</a></li>&#x000A;<li data-sourcepos="21:5-21:64"><a href="/manticoresearch/dev/-/wikis/Documentation/rancher-cert-reissue" data-canonical-src="Documentation/rancher-cert-reissue">Rancher cert reissue</a></li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="22:3-31:75">Release&#x000A;<ul data-sourcepos="23:5-31:75">&#x000A;<li data-sourcepos="23:5-23:66"><a href="/manticoresearch/dev/-/wikis/Release/Docker-Hub-update-images" data-canonical-src="Release/Docker-Hub-update-images">Docker Hub update images</a></li>&#x000A;<li data-sourcepos="24:5-24:77"><a href="/manticoresearch/dev/-/wikis/Release/Ivinco-testing" data-canonical-src="Release/Ivinco-testing">How to prepare a package for Ivinco's testing</a></li>&#x000A;<li data-sourcepos="25:5-25:44"><a href="/manticoresearch/dev/-/wikis/Release/Release-Steps" data-canonical-src="Release/Release-Steps">Release Steps</a></li>&#x000A;<li data-sourcepos="26:5-26:38"><a href="/manticoresearch/dev/-/wikis/Release/%D0%91%D0%B8%D0%BB%D0%B4%D1%8B" data-canonical-src="Release/%D0%91%D0%B8%D0%BB%D0%B4%D1%8B">Билды</a></li>&#x000A;<li data-sourcepos="27:5-27:50"><a href="/manticoresearch/dev/-/wikis/Release/Valgrind%20testing" data-canonical-src="Release/Valgrind%20testing">Valgrind testing</a></li>&#x000A;<li data-sourcepos="28:5-28:110"><a href="/manticoresearch/dev/-/wikis/Mac-Os-X-vm-for-CI-from-scratch-(on-ex.-of-mojave)" data-canonical-src="Mac-Os-X-vm-for-CI-from-scratch-(on-ex.-of-mojave)">Mac Os X vm for CI from scratch (on ex. of mojave)</a></li>&#x000A;<li data-sourcepos="29:5-29:73"><a href="/manticoresearch/dev/-/wikis/Some-tricks-of-CI-builds-in-VMs" data-canonical-src="Some-tricks-of-CI-builds-in-VMs">Some tricks of CI builds in VMs</a></li>&#x000A;<li data-sourcepos="30:5-30:43"><a href="/manticoresearch/dev/-/wikis/Static%20searchd" data-canonical-src="Static%20searchd">Make static searchd</a></li>&#x000A;<li data-sourcepos="31:5-31:75"><a href="/manticoresearch/dev/-/wikis/Development/Using-virtualbox-on-dev-server" data-canonical-src="Development/Using-virtualbox-on-dev-server">Using virtualbox on dev</a></li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="32:3-38:43">Nexus repository&#x000A;<ul data-sourcepos="33:5-38:43">&#x000A;<li data-sourcepos="33:5-33:37"><a href="/manticoresearch/dev/-/wikis/How-nexus-works" data-canonical-src="How-nexus-works">How it works</a></li>&#x000A;<li data-sourcepos="34:5-34:41"><a href="/manticoresearch/dev/-/wikis/How-to-deploy-nexus" data-canonical-src="How-to-deploy-nexus">Deploy Nexus</a></li>&#x000A;<li data-sourcepos="35:5-35:96"><a href="/manticoresearch/dev/-/wikis/signing-and-uploading-packages-to-repo.manticoresearch.com" data-canonical-src="signing-and-uploading-packages-to-repo.manticoresearch.com">Signing &amp; uploading packages</a></li>&#x000A;<li data-sourcepos="36:5-36:46"><a href="/manticoresearch/dev/-/wikis/backup-and-restore" data-canonical-src="backup-and-restore">Backup and restore</a></li>&#x000A;<li data-sourcepos="37:5-37:51"><a href="/manticoresearch/dev/-/wikis/How-to-rebuild-installer" data-canonical-src="How-to-rebuild-installer">Rebuild installer</a></li>&#x000A;<li data-sourcepos="38:5-38:43"><a href="/manticoresearch/dev/-/wikis/How-to-resize-volume" data-canonical-src="How-to-resize-volume">Resize volume</a></li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="39:3-42:32">Testing&#x000A;<ul data-sourcepos="40:5-42:32">&#x000A;<li data-sourcepos="40:5-40:110"><a href="/manticoresearch/dev/-/wikis/Testing/Unit-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-google-tests" data-canonical-src="Testing/Unit-%D1%82%D0%B5%D1%81%D1%82%D1%8B-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-google-tests">Unit тесты с помощью google tests</a></li>&#x000A;<li data-sourcepos="41:5-41:84"><a href="/manticoresearch/dev/-/wikis/Testing/dummy-script-for-stress-test-util" data-canonical-src="Testing/dummy-script-for-stress-test-util">dummy script for stress test util</a></li>&#x000A;<li data-sourcepos="42:5-42:32"><a href="/manticoresearch/dev/-/wikis/Testing/testing" data-canonical-src="Testing/testing">testing</a></li>&#x000A;</ul>&#x000A;</li>&#x000A;<li data-sourcepos="43:3-44:60">Rancher&#x000A;<ul data-sourcepos="44:5-44:60">&#x000A;<li data-sourcepos="44:5-44:60"><a href="/manticoresearch/dev/-/wikis/Rancher/rancher-scheduler-restart" data-canonical-src="Rancher/rancher-scheduler-restart">Scheduler restart</a></li>&#x000A;</ul>&#x000A;</li>&#x000A;</ul>&#x000A;</li>&#x000A;</ul>
+</div>
+<div class="block w-100">
+</div>
+</div>
+</div>
+</aside>
+
+
+</main>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script nonce="FG6KFunwheQasjy6TzQUTA==">
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    if (imgUrl.indexOf('/avatar/') > -1 && imgUrl.indexOf('?') === -1) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js_lazy_loaded_content';
+  });
+}
+
+//]]>
+</script>
+<script nonce="FG6KFunwheQasjy6TzQUTA==">
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+</body>
+</html>
+
