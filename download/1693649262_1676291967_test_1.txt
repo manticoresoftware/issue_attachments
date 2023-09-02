@@ -1,0 +1,16 @@
+**Describe the bug**
+Logs from 3 nodes that belong to the single cluster 
+
+# Node 1
+```
+[Wed Jan  4 09:00:05.321 2023] [24280] rt: index bols_v1_5_prod: ramchunk saved ok (mode=periodic, last TID=6040, current TID=6786, ram=669.571 Mb, time delta=300 sec, took=0.356 sec)
+[Wed Jan  4 09:01:38.860 2023] [24280] rt: index mc_7a64c255_workflow_dev1_2243: ramchunk saved ok (mode=periodic, last TID=13241, current TID=13295, ram=206.219 Mb, time delta=300 sec, took=0.124 sec)
+[Wed Jan  4 09:05:05.701 2023] [24275] rt: index bols_v1_5_prod: ramchunk saved ok (mode=periodic, last TID=6786, current TID=6940, ram=680.606 Mb, time delta=300 sec, took=0.381 sec)
+[Wed Jan  4 09:06:38.975 2023] [24280] rt: index mc_7a64c255_workflow_dev1_2243: ramchunk saved ok (mode=periodic, last TID=13295, current TID=13386, ram=207.148 Mb, time delta=300 sec, took=0.115 sec)
+[Wed Jan  4 09:11:39.096 2023] [24277] rt: index mc_7a64c255_workflow_dev1_2243: ramchunk saved ok (mode=periodic, last TID=13386, current TID=13435, ram=208.501 Mb, time delta=300 sec, took=0.121 sec)
+------- FATAL: CRASH DUMP -------
+[Wed Jan  4 09:12:53.408 2023] [24273]
+
+--- crashed SphinxQL request dump ---
+
+
