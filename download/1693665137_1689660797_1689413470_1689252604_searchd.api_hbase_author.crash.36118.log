@@ -1,0 +1,90 @@
+[Thu Jul 13 08:01:56.725 2023] [36118] starting daemon version '6.0.5 3c08ad659@230617 dev (columnar 2.0.5 14ca46d@230618) (secondary 2.0.5 14ca46d@230618)' ...
+[Thu Jul 13 08:01:56.725 2023] [36118] listening on all interfaces for sphinx and http(s), port=3334
+[Thu Jul 13 08:01:56.725 2023] [36118] listening on all interfaces for mysql, port=6334
+[Thu Jul 13 08:01:56.725 2023] [36118] listening on all interfaces for VIP mysql, port=9334
+[Thu Jul 13 08:02:01.462 2023] [36214] prereading 9 tables
+[Thu Jul 13 08:02:01.635 2023] [36214] preread 8 tables in 0.174 sec
+[Thu Jul 13 08:02:01.636 2023] [36118] accepting connections
+[Thu Jul 13 08:02:01.850 2023] [36118] log reopened
+[Thu Jul 13 08:02:01.850 2023] [36118] query log reopened
+------- FATAL: CRASH DUMP -------
+[Thu Jul 13 08:03:43.456 2023] [36118]
+
+--- crashed SphinxAPI request dump ---
+AAABIwAABIEAAAAUAAAAAQAAAUAAAAAAAAAAVwAAAAYAAAAAAAAABAAAAAxAd2VpZ2h0IGRlc2MAAAAAAAAAAAAA
+ABlxdW9yYV9hdXRob3JfcnRfcXVvcmFzZTAxAAAAAQAAAAAAAAAA//////////8AAAABAAAAAmlkAAAA
+AAAAAFcAAAAAAAOWAAAAAAAB/kNZAAAAAAL8JJ4AAAAABZoxxQAAAAAGWHbeAAAAAAcMhyMAAAAADdsi
+/QAAAAAQJTHNAAAAABA+PB0AAAAAEYK0ZwAAAAAS1f53AAAAABUp5NUAAAAAFdGyYAAAAAAWXoPjAAAA
+ABblzS4AAAAAF+xhrgAAAAAa1YgjAAAAAB5W0kcAAAAAIZWxZQAAAAAmc3grAAAAACjeBRUAAAAA
+KdfajgAAAAAqqC10AAAAACur6r0AAAAALdEikgAAAAAxA1ztAAAAAEUc/P0AAAAASzEvSwAAAABLPAid
+AAAAAEtUA4EAAAAAU4QyEgAAAABUknNYAAAAAFW3FlEAAAAAVfaBOgAAAABXdDGvAAAAAFfB0wkAAAAA
+WMYGlwAAAABaRtlnAAAAAF3gQrsAAAAAXyNMtwAAAABpODcUAAAAAGm5b4cAAAAAbHXzIAAAAABs+X0m
+AAAAAG3Al6gAAAAAcVvRjQAAAABxnOHFAAAAAHIJwA8AAAAAdC8/tQAAAAB1CPzlAAAAAHYQCgQA
+AAAAdzCHUQAAAAB3vAuSAAAAAHh6EAUAAAAAeoHFWwAAAAB7SKBtAAAAAHutHTQAAAAAe61rKQAAAAB8
+iMcHAAAAAHzR3TwAAAAAfThxMwAAAAB9wFNoAAAAAH4ldcYAAAAAfzNiYwAAAAB/2iqcAAAAAH/k/RsA
+AAAAgAwogAAAAACAJpNXAAAAAIBJ1foAAAAAgKIvjgAAAACA6Jz6AAAAAIEcXmIAAAAAgT8kSgAAAACB
+Tgd4AAAAAIFT0zQAAAAAgbJy/QAAAACB6GASAAAAAIHpP3YAAAAAgh2ylwAAAACCWkrUAAAAAIKE
+OrMAAAAAgonnzgAAAACCjRA7AAAAAIKXADsAAAAAgplNDgAAAACCnTyuAAAAAIKdTBUAAAAAAAAAAQAA
+AAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAFcAAAANQGdyb3VwYnkgZGVzY/////8AAAABAAAAMgAAAAAA
+AAAAAAAAAAAAnEAAAAAAAAAAYjQzZjMxNTMyMzA5ZTBmYzlmNjg5Njc3NDEzOGJmMzkxLDNNT2lNaldQ
+eEVZSHZycmpDYUpXeHl6NTNIcjV6MzBtLDgyMThhYTBjOGRmZjlmNDExYjE0ZWU3ZjA4ZGU0ODk2
+AAAAAAAAAAxpZCwgZG9jdW1lbnQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAK
+YmxlbmRlZC5zbwAAAAVxdWVyeQAAAAAAAAAAAAAAAgAAAAJpZAAAAAJpZAAAAAAAAAAIZG9jdW1lbnQA
+AAAIZG9jdW1lbnQAAAAAAAAAAAAAAAAAAAAA
+--- request dump end ---
+--- local index:quora_author_rt_4
+Manticore 6.0.5 3c08ad659@230617 dev (columnar 2.0.5 14ca46d@230618) (secondary 2.0.5 14ca46d@230618)
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with Clang 15.0.7
+Configured with flags: Configured with these definitions: -DDISTR_BUILD=rhel7 -DUSE_SYSLOG=1 -DWITH_GALERA=1 -DWITH_RE2=1 -DWITH_RE2_FORCE_STATIC=1 -DWITH_STEMMER=1 -DWITH_STEMMER_FORCE_STATIC=1 -DWITH_ICU=1 -DWITH_ICU_FORCE_STATIC=1 -DWITH_SSL=1 -DWITH_ZLIB=1 -DWITH_ZSTD=1 -DDL_ZSTD=1 -DZSTD_LIB=libzstd.so.1 -DWITH_CURL=1 -DDL_CURL=1 -DCURL_LIB=libcurl.so.4 -DWITH_ODBC=1 -DDL_ODBC=1 -DODBC_LIB=libodbc.so.2 -DWITH_EXPAT=1 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DWITH_ICONV=1 -DWITH_MYSQL=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DWITH_POSTGRESQL=1 -DDL_POSTGRESQL=1 -DPOSTGRESQL_LIB=libpq.so.5 -DLOCALDATADIR=/var/lib/manticore -DFULL_SHARE_DIR=/usr/share/manticore
+Built on Linux x86_64 (rhel7) (cross-compiled)
+Stack bottom = 0x7fd8ec2fc000, thread stack size = 0x20000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x1)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x1, stack=0x7fd8ec300000, stacksize=0x20000)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x22a)[0x556cd6989e6a]
+/usr/bin/searchd(_ZN11CrashLogger11HandleCrashEi+0x355)[0x556cd6809a45]
+/lib64/libpthread.so.0(+0xf630)[0x7fdaedaa5630]
+/usr/bin/searchd(_ZNK9RtIndex_c10MultiQueryER15CSphQueryResultRK9CSphQueryRK11VecTraits_TIP15ISphMatchSorterERK18CSphMultiQueryArgs+0x1ef3)[0x556cd75a2973]
+/usr/bin/searchd(_ZNK13CSphIndexStub12MultiQueryExEiPK9CSphQueryP15CSphQueryResultPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x71)[0x556cd6956391]
+/usr/bin/searchd(+0xecbb18)[0x556cd686eb18]
+/usr/bin/searchd(+0x1d16ee2)[0x556cd76b9ee2]
+/usr/bin/searchd(_ZZN7Threads11CoRoutine_c13CreateContextESt8functionIFvvEESt4pairIN5boost7context13stack_contextENS_14StackFlavour_EEEENUlNS6_6detail10transfer_tEE_8__invokeESB_+0x1c)[0x556cd7aba92c]
+/usr/bin/searchd(make_fcontext+0x2f)[0x556cd7adb64f]
+Trying boost backtrace:
+ 0# sphBacktrace(int, bool) in /usr/bin/searchd
+ 1# CrashLogger::HandleCrash(int) in /usr/bin/searchd
+ 2# 0x00007FDAEDAA5630 in /lib64/libpthread.so.0
+ 3# RtIndex_c::MultiQuery(CSphQueryResult&, CSphQuery const&, VecTraits_T<ISphMatchSorter*> const&, CSphMultiQueryArgs const&) const in /usr/bin/searchd
+ 4# CSphIndexStub::MultiQueryEx(int, CSphQuery const*, CSphQueryResult*, ISphMatchSorter**, CSphMultiQueryArgs const&) const in /usr/bin/searchd
+ 5# 0x0000556CD686EB18 in /usr/bin/searchd
+ 6# 0x0000556CD76B9EE2 in /usr/bin/searchd
+ 7# Threads::CoRoutine_c::CreateContext(std::function<void ()>, std::pair<boost::context::stack_context, Threads::StackFlavour_E>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) in /usr/bin/searchd
+ 8# make_fcontext in /usr/bin/searchd
+
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the manual
+(https://manual.manticoresearch.com/Reporting_bugs)
+Dump with GDB is not available
+--- BT to source lines (depth 9): ---
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+--- BT to source lines finished ---
+--- active threads ---
+thd 0 (work_14), proto sphinx, state query, command search
+thd 1 (work_36), proto http, state query, command select
+--- Totally 3 threads, and 2 client-working threads ---
+------- CRASH DUMP END -------
