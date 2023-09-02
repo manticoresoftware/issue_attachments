@@ -1,0 +1,108 @@
+  Id   Target Id         Frame 
+  75   Thread 0x7f04572a7700 (LWP 73650) 0x00007f0459534e87 in mprotect () from /lib64/libc.so.6
+  74   Thread 0x7f0457412700 (LWP 73639) 0x0000560141746baf in Filter_MVAValues_Any_c<unsigned int>::Eval(CSphMatch const&) const ()
+  73   Thread 0x7f045778d700 (LWP 73610) 0x00007f045954812c in __lll_lock_wait_private () from /lib64/libc.so.6
+  72   Thread 0x7f0457244700 (LWP 73653) 0x00007f0459534dca in mmap64 () from /lib64/libc.so.6
+  71   Thread 0x7f0457919700 (LWP 73598) 0x00007f0459534e57 in munmap () from /lib64/libc.so.6
+  70   Thread 0x7f045719f700 (LWP 8367) 0x00007f045953ad43 in epoll_wait () from /lib64/libc.so.6
+  69   Thread 0x7f045738e700 (LWP 73643) 0x0000560141749d08 in Filter_Range<true, true, false, false>::Eval(CSphMatch const&) const ()
+  68   Thread 0x7f04571e1700 (LWP 73656) 0x00007f0459534e57 in munmap () from /lib64/libc.so.6
+  67   Thread 0x7f04574f9700 (LWP 73632) 0x00007f0459534e57 in munmap () from /lib64/libc.so.6
+  66   Thread 0x7f0457223700 (LWP 73654) 0x000056014174970d in Filter_Values::Eval(CSphMatch const&) const ()
+  65   Thread 0x7f04573d0700 (LWP 73641) 0x00007f045958ed00 in __memcpy_ssse3_back () from /lib64/libc.so.6
+  64   Thread 0x7f0457454700 (LWP 73637) 0x000056014174b662 in operator<(SkiplistEntry_t const&, unsigned int) ()
+  63   Thread 0x7f04571c0700 (LWP 73657) 0x00007f045980fa82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  62   Thread 0x7f0457433700 (LWP 73638) 0x00005601417e7d01 in sphGetBlobAttr(CSphMatch const&, CSphAttrLocator const&, unsigned char const*) ()
+  61   Thread 0x7f0457496700 (LWP 73635) 0x000056014180695d in ExtTerm_T<true>::GetDocsChunk() ()
+  60   Thread 0x7f04574d8700 (LWP 73633) 0x000056014188e2aa in ThinMMapReader_c::UnzipInt() ()
+  59   Thread 0x7f0457685700 (LWP 73618) 0x00005601417e7d01 in sphGetBlobAttr(CSphMatch const&, CSphAttrLocator const&, unsigned char const*) ()
+  58   Thread 0x7f04575bf700 (LWP 73625) 0x0000560141807703 in ExtTerm_T<true>::CollectHits(ExtDoc_t const*) ()
+  57   Thread 0x7f045759e700 (LWP 73626) 0x00007f0459534dca in mmap64 () from /lib64/libc.so.6
+  56   Thread 0x7f0457601700 (LWP 73623) 0x000056014174b662 in operator<(SkiplistEntry_t const&, unsigned int) ()
+  55   Thread 0x7f045753b700 (LWP 73629) 0x00007f0459534e57 in munmap () from /lib64/libc.so.6
+  54   Thread 0x7f0457622700 (LWP 73622) 0x00005601417cf1b0 in QcacheEntry_c::Append(unsigned int, unsigned int) ()
+  53   Thread 0x7f0457664700 (LWP 73619) 0x00005601416c757a in void CSphMatchQueue<MatchGeneric1_fn, false>::PopAndProcess_T<CSphMatchQueue<MatchGeneric1_fn, false>::Flatten(CSphMatch*)::{lambda(CSphMatch&)#1}>(CSphMatchQueue<MatchGeneric1_fn, false>::Flatten(CSphMatch*)::{lambda(CSphMatch&)#1}&&) ()
+  52   Thread 0x7f04576c7700 (LWP 73616) 0x00007f0459534dca in mmap64 () from /lib64/libc.so.6
+  51   Thread 0x7f04576a6700 (LWP 73617) 0x0000560141749d08 in Filter_Range<true, true, false, false>::Eval(CSphMatch const&) const ()
+  50   Thread 0x7f04577ae700 (LWP 73609) 0x00007f0459534e57 in munmap () from /lib64/libc.so.6
+  49   Thread 0x7f0457643700 (LWP 73620) 0x00007f04595a7107 in __strlen_sse2_pminub () from /lib64/libc.so.6
+  48   Thread 0x7f0457832700 (LWP 73605) 0x00007f0459534e87 in mprotect () from /lib64/libc.so.6
+  47   Thread 0x7f045772a700 (LWP 73613) 0x000056014174b987 in SkipData_t::Read(unsigned char const*, DictEntry_t const&, int, int) ()
+  46   Thread 0x7f045b136940 (LWP 73579) 0x00007f0459531bd3 in select () from /lib64/libc.so.6
+  45   Thread 0x7f045774b700 (LWP 73612) 0x0000560141806968 in ExtTerm_T<true>::GetDocsChunk() ()
+  44   Thread 0x7f04577f0700 (LWP 73607) 0x00005601417fc5e1 in ExtTwofer_c::GetQwords(CSphOrderedHash<ExtQword_t, CSphString, QwordsHash_fn, 256>&) ()
+  43   Thread 0x7f045776c700 (LWP 73611) 0x00007f04595931aa in __memmove_ssse3_back () from /lib64/libc.so.6
+  42   Thread 0x7f0457874700 (LWP 73603) 0x000056014188e1a6 in ThinMMapReader_c::UnzipInt() ()
+  41   Thread 0x7f0457811700 (LWP 73606) 0x000056014188e157 in ThinMMapReader_c::UnzipInt() ()
+  40   Thread 0x7f0457a21700 (LWP 73588) 0x00007f04594cc75d in __memset_sse2 () from /lib64/libc.so.6
+  39   Thread 0x7f04577cf700 (LWP 73608) 0x0000560141806943 in ExtTerm_T<true>::GetDocsChunk() ()
+  38   Thread 0x7f045793a700 (LWP 73597) 0x00005601417fcf40 in ExtAnd_c::CollectHits(ExtDoc_t const*) ()
+  37   Thread 0x7f04575e0700 (LWP 73624) 0x00005601417fc5e1 in ExtTwofer_c::GetQwords(CSphOrderedHash<ExtQword_t, CSphString, QwordsHash_fn, 256>&) ()
+  36   Thread 0x7f0457a63700 (LWP 73586) 0x000056014188e17c in ThinMMapReader_c::UnzipInt() ()
+  35   Thread 0x7f0457a00700 (LWP 73589) 0x00007f0459534e57 in munmap () from /lib64/libc.so.6
+  34   Thread 0x7f04574b7700 (LWP 73634) 0x00005601417fc5e1 in ExtTwofer_c::GetQwords(CSphOrderedHash<ExtQword_t, CSphString, QwordsHash_fn, 256>&) ()
+  33   Thread 0x7f04572e9700 (LWP 73648) 0x000056014188e17c in ThinMMapReader_c::UnzipInt() ()
+  32   Thread 0x7f04579df700 (LWP 73590) 0x000056014174b662 in operator<(SkiplistEntry_t const&, unsigned int) ()
+  31   Thread 0x7f0457895700 (LWP 73602) 0x000056014174b662 in operator<(SkiplistEntry_t const&, unsigned int) ()
+  30   Thread 0x7f045799d700 (LWP 73592) 0x00005601417fc5e1 in ExtTwofer_c::GetQwords(CSphOrderedHash<ExtQword_t, CSphString, QwordsHash_fn, 256>&) ()
+  29   Thread 0x7f045755c700 (LWP 73628) 0x00007f04594cc75d in __memset_sse2 () from /lib64/libc.so.6
+  28   Thread 0x7f04579be700 (LWP 73591) 0x00005601417fc5e1 in ExtTwofer_c::GetQwords(CSphOrderedHash<ExtQword_t, CSphString, QwordsHash_fn, 256>&) ()
+  27   Thread 0x7f04572c8700 (LWP 73649) 0x000056014188e17c in ThinMMapReader_c::UnzipInt() ()
+  26   Thread 0x7f045afdb700 (LWP 73581) 0x000056014188e17c in ThinMMapReader_c::UnzipInt() ()
+  25   Thread 0x7f0457202700 (LWP 73655) 0x00007f04594cc75d in __memset_sse2 () from /lib64/libc.so.6
+  24   Thread 0x7f045797c700 (LWP 73595) 0x00005601414a4718 in void CSphIndex_VLN::MatchExtended<true, false, false>(CSphQueryContext&, CSphQuery const&, VecTraits_T<ISphMatchSorter*> const&, ISphRanker*, int, int) const ()
+  23   Thread 0x7f045afba700 (LWP 73582) 0x000056014188e2a8 in ThinMMapReader_c::UnzipInt() ()
+  22   Thread 0x7f045af78700 (LWP 73585) 0x00005601414a474f in void CSphIndex_VLN::MatchExtended<true, false, false>(CSphQueryContext&, CSphQuery const&, VecTraits_T<ISphMatchSorter*> const&, ISphRanker*, int, int) const ()
+  21   Thread 0x7f045affc700 (LWP 73580) 0x000056014174b680 in operator<(unsigned int, SkiplistEntry_t const&) ()
+  20   Thread 0x7f0457709700 (LWP 73614) 0x000056014188e17c in ThinMMapReader_c::UnzipInt() ()
+  19   Thread 0x7f04578b6700 (LWP 73601) 0x000056014188e17c in ThinMMapReader_c::UnzipInt() ()
+  18   Thread 0x7f045736d700 (LWP 73644) 0x00005601417fc5e1 in ExtTwofer_c::GetQwords(CSphOrderedHash<ExtQword_t, CSphString, QwordsHash_fn, 256>&) ()
+  17   Thread 0x7f045af99700 (LWP 73584) 0x000056014188e17c in ThinMMapReader_c::UnzipInt() ()
+  16   Thread 0x7f045734c700 (LWP 73645) 0x00005601417fca1a in ExtAnd_c::CollectHits(ExtDoc_t const*) ()
+  15   Thread 0x7f0457475700 (LWP 73636) 0x00005601417fd2d6 in ExtAnd_c::Estimate(long) const ()
+  14   Thread 0x7f045795b700 (LWP 73596) 0x00005601417fc5e1 in ExtTwofer_c::GetQwords(CSphOrderedHash<ExtQword_t, CSphString, QwordsHash_fn, 256>&) ()
+  13   Thread 0x7f045757d700 (LWP 73627) 0x0000560141749d05 in Filter_Range<true, true, false, false>::Eval(CSphMatch const&) const ()
+  12   Thread 0x7f0457265700 (LWP 73652) 0x00007f04594cc75d in __memset_sse2 () from /lib64/libc.so.6
+  11   Thread 0x7f04578d7700 (LWP 73600) 0x00007f04594cc75d in __memset_sse2 () from /lib64/libc.so.6
+  10   Thread 0x7f04576e8700 (LWP 73615) 0x00005601417fd2d6 in ExtAnd_c::Estimate(long) const ()
+  9    Thread 0x7f04578f8700 (LWP 73599) 0x00005601417fc5e1 in ExtTwofer_c::GetQwords(CSphOrderedHash<ExtQword_t, CSphString, QwordsHash_fn, 256>&) ()
+  8    Thread 0x7f045730a700 (LWP 73647) 0x00005601417fd2d6 in ExtAnd_c::Estimate(long) const ()
+  7    Thread 0x7f0457286700 (LWP 73651) 0x00007f0459534e57 in munmap () from /lib64/libc.so.6
+  6    Thread 0x7f04573f1700 (LWP 73640) 0x00007f0459534e57 in munmap () from /lib64/libc.so.6
+  5    Thread 0x7f04573af700 (LWP 73642) 0x00007f0459534dca in mmap64 () from /lib64/libc.so.6
+  4    Thread 0x7f045732b700 (LWP 73646) 0x00007f0459534dca in mmap64 () from /lib64/libc.so.6
+  3    Thread 0x7f045751a700 (LWP 73630) 0x00007f0459534dca in mmap64 () from /lib64/libc.so.6
+  2    Thread 0x7f0457a42700 (LWP 73587) 0x000056014188e150 in ThinMMapReader_c::UnzipInt() ()
+* 1    Thread 0x7f0457853700 (LWP 73604) 0x00005601417fc9f5 in ExtAnd_c::CollectHits(ExtDoc_t const*) ()
+
+Thread 75 (Thread 0x7f04572a7700 (LWP 73650)):
+#0  0x00007f0459534e87 in mprotect () from /lib64/libc.so.6
+#1  0x0000560141ca408f in boost::context::basic_protected_fixedsize_stack<boost::context::stack_traits>::allocate() ()
+#2  0x0000560141ca3f40 in Threads::AllocateStack(unsigned long) ()
+#3  0x0000560141ca398c in Threads::Coro::Worker_c::Worker_c(std::function<void ()>, Threads::Scheduler_i*, SharedPtr_T<void, CustomDeleter_T<void*, std::function<void (void*)> >, ISphRefcountedMT>, unsigned long) ()
+#4  0x0000560141ca2e57 in Threads::Coro::Worker_c::StartOther(std::function<void ()>, Threads::Scheduler_i*, unsigned long, SharedPtr_T<void, CustomDeleter_T<void*, std::function<void (void*)> >, ISphRefcountedMT>) ()
+#5  0x0000560141c9ff55 in Threads::Coro::Co(std::function<void ()>, SharedPtr_T<void, CustomDeleter_T<void*, std::function<void (void*)> >, ISphRefcountedMT>) ()
+#6  0x0000560141ca1090 in Threads::Coro::ExecuteN(int, std::function<void ()>&&) ()
+#7  0x00005601413b3649 in SearchHandler_c::RunLocalSearches() ()
+#8  0x00005601413b4de9 in SearchHandler_c::RunSubset(int, int) ()
+#9  0x00005601413b16a4 in SearchHandler_c::RunQueries() ()
+#10 0x00005601413bc373 in HandleCommandSearch(ISphOutputBuffer&, unsigned short, InputBuffer_c&) ()
+#11 0x000056014132e3cc in ApiServe(std::unique_ptr<AsyncNetBuffer_c, std::default_delete<AsyncNetBuffer_c> >) ()
+#12 0x000056014132c3fe in MultiServe(std::unique_ptr<AsyncNetBuffer_c, std::default_delete<AsyncNetBuffer_c> >, std::pair<int, unsigned short>, Proto_e) ()
+#13 0x000056014132cea1 in std::_Function_handler<void (), NetActionAccept_c::Impl_c::ProcessAccept()::$_3>::_M_invoke(std::_Any_data const&) ()
+#14 0x0000560141ca388c in Threads::CoRoutine_c::CreateContext(std::function<void ()>, std::pair<boost::context::stack_context, Threads::StackFlavour_E>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) ()
+#15 0x0000560141cc407f in make_fcontext ()
+Cannot access memory at address 0x7ef60d64b000
+[Switching to thread 46 (Thread 0x7f045b136940 (LWP 73579))]
+#0  0x00007f0459531bd3 in select () from /lib64/libc.so.6
+#0  0x00007f0459531bd3 in select () from /lib64/libc.so.6
+No symbol table info available.
+#1  0x000056014142234f in sphSleepMsec(int) ()
+No symbol table info available.
+#2  0x00005601413f0ac0 in TickHead() ()
+No symbol table info available.
+#3  0x00005601413f765e in ServiceMain(int, char**) ()
+No symbol table info available.
+#4  0x00005601413f87eb in main ()
+No symbol table info available.
+No symbol table info available.
