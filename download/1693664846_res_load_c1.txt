@@ -1,0 +1,159 @@
+--- searchd_master
+time mysql -h0 -P 19406 < q-split/5k-repeat > a.txt
+real    0m9.665s
+real    0m9.658s
+real    0m9.689s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeaa > a.txt
+real    0m44.557s
+real    0m44.546s
+real    0m44.490s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeab > a.txt
+real    0m34.286s
+real    0m39.973s
+real    0m40.082s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeac > a.txt
+real    0m12.855s
+real    0m12.717s
+real    0m12.660s
+
+time mysql -h0 -P 19406 < q-split/5k-xaead > a.txt
+real    0m6.724s
+real    0m6.718s
+real    0m6.722s
+
+--- searchd_be_reference
+time mysql -h0 -P 19406 < q-split/5k-repeat > a.txt
+real    0m9.633s
+real    0m9.677s
+real    0m9.666s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeaa > a.txt
+real    0m44.399s
+real    0m44.325s
+real    0m44.510s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeab > a.txt
+real    0m34.628s
+real    0m39.635s
+real    0m39.937s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeac > a.txt
+real    0m12.817s
+real    0m12.996s
+real    0m12.992s
+
+time mysql -h0 -P 19406 < q-split/5k-xaead > a.txt
+real    0m6.828s
+real    0m6.821s
+real    0m6.784s
+
+--- searchd_SPH_VARINT_DECODE
+
+time mysql -h0 -P 19406 < q-split/5k-repeat > a.txt
+real    0m20.609s
+real    0m20.666s
+real    0m20.710s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeaa > a.txt
+real    0m55.099s
+real    0m55.165s
+real    0m55.335s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeab > a.txt
+real    0m40.124s
+real    0m40.262s
+real    0m40.304s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeac > a.txt
+real    0m12.967s
+real    0m12.905s
+real    0m12.920s
+
+time mysql -h0 -P 19406 < q-split/5k-xaead > a.txt
+real    0m6.887s
+real    0m6.873s
+real    0m6.865s
+
+--- searchd_502
+
+time mysql -h0 -P 19406 < q-split/5k-repeat > a.txt
+
+real    0m9.885s
+real    0m9.780s
+real    0m9.830s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeaa > a.txt
+real    0m44.739s
+real    0m44.404s
+real    0m44.404s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeab > a.txt
+real    0m34.533s
+real    0m42.906s
+real    0m43.209s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeac > a.txt
+real    0m12.545s
+real    0m12.590s
+real    0m12.749s
+
+time mysql -h0 -P 19406 < q-split/5k-xaead > a.txt
+real    0m8.340s
+real    0m8.260s
+real    0m8.248s
+
+--- searchd 502 - build at dev box
+time mysql -h0 -P 19406 < q-split/5k-repeat > a.txt
+real    0m28.261s
+real    0m28.466s
+real    0m28.231s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeaa > a.txt
+real    1m44.069s
+real    1m44.366s
+real    1m44.998s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeab > a.txt
+real    1m24.787s
+real    1m44.287s
+real    1m44.099s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeac > a.txt
+real    0m33.847s
+real    0m34.046s
+real    0m33.949s
+
+time mysql -h0 -P 19406 < q-split/5k-xaead > a.txt
+real    0m20.255s
+real    0m19.907s
+real    0m19.900s
+
+--- searchd 502 - from the jammy package
+time mysql -h0 -P 19406 < q-split/5k-repeat > a.txt
+real    0m9.668s
+real    0m9.859s
+real    0m9.968s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeaa > a.txt
+real    0m44.855s
+real    0m44.953s
+real    0m45.062s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeab > a.txt
+real    0m35.058s
+real    0m43.772s
+real    0m43.260s
+
+time mysql -h0 -P 19406 < q-split/5k-xaeac > a.txt
+real    0m12.773s
+real    0m12.802s
+real    0m12.804s
+
+time mysql -h0 -P 19406 < q-split/5k-xaead > a.txt
+real    0m8.473s
+real    0m8.372s
+real    0m8.439s
+
