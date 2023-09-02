@@ -1,0 +1,115 @@
+--- searchd_master
+~/bin/gl3586/mnt_bsect/searchd_master -c /home/stas/bin/gl3586/mnt_bsect/2f-bsect-noqcache.conf
+
+php test.php --plugin=plain.php --data=./q-split/5k-repeat --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 3.176 sec, throughput: 1574 rps
+FINISHED. Total time: 3.428 sec, throughput: 1458 rps
+FINISHED. Total time: 2.605 sec, throughput: 1919 rps
+FINISHED. Total time: 2.494 sec, throughput: 2005 rps
+FINISHED. Total time: 3.579 sec, throughput: 1397 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeaa --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 8.873 sec, throughput: 563 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeab --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 7.121 sec, throughput: 702 rps
+FINISHED. Total time: 8.955 sec, throughput: 558 rps
+FINISHED. Total time: 8.78 sec, throughput: 569 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeaс --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 4.554 sec, throughput: 1098 rps
+FINISHED. Total time: 3.716 sec, throughput: 1345 rps
+FINISHED. Total time: 3.911 sec, throughput: 1278 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaead --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 6.084 sec, throughput: 821 rps
+FINISHED. Total time: 5.769 sec, throughput: 866 rps
+FINISHED. Total time: 5.492 sec, throughput: 910 rps
+
+--- searchd_be_reference
+~/bin/gl3586/mnt_bsect/searchd_be_reference -c /home/stas/bin/gl3586/mnt_bsect/2f-bsect-noqcache.conf
+
+php test.php --plugin=plain.php --data=./q-split/5k-repeat --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 3.058 sec, throughput: 1634 rps
+FINISHED. Total time: 3.337 sec, throughput: 1498 rps
+FINISHED. Total time: 2.98 sec, throughput: 1677 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeaa --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 9.14 sec, throughput: 547 rps
+FINISHED. Total time: 8.995 sec, throughput: 555 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeab --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 7.78 sec, throughput: 642 rps
+FINISHED. Total time: 8.246 sec, throughput: 606 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeaс --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 4.119 sec, throughput: 1213 rps
+FINISHED. Total time: 3.578 sec, throughput: 1397 rps
+FINISHED. Total time: 3.429 sec, throughput: 1458 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaead --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 5.612 sec, throughput: 890 rps
+FINISHED. Total time: 4.952 sec, throughput: 1009 rps
+
+--- searchd_SPH_VARINT_DECODE
+~/bin/gl3586/mnt_bsect/searchd_SPH_VARINT_DECODE -c /home/stas/bin/gl3586/mnt_bsect/2f-bsect-noqcache.conf
+
+php test.php --plugin=plain.php --data=./q-split/5k-repeat --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 3.046 sec, throughput: 1641 rps
+FINISHED. Total time: 3.172 sec, throughput: 1576 rps
+FINISHED. Total time: 2.614 sec, throughput: 1913 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeaa --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 8.869 sec, throughput: 563 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeab --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 7.347 sec, throughput: 680 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeaс --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 3.332 sec, throughput: 1500 rps
+FINISHED. Total time: 4.072 sec, throughput: 1227 rps
+FINISHED. Total time: 3.769 sec, throughput: 1326 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaead --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 5.9 sec, throughput: 847 rps
+FINISHED. Total time: 5.85 sec, throughput: 854 rps
+FINISHED. Total time: 5.246 sec, throughput: 953 rps
+
+--- searchd_502
+php test.php --plugin=plain.php --data=./q-split/5k-repeat --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 3.191 sec, throughput: 1567 rps
+FINISHED. Total time: 2.918 sec, throughput: 1713 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeaa --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 8.986 sec, throughput: 556 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeab --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 7.344 sec, throughput: 680 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeaс --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 4.284 sec, throughput: 1167 rps
+FINISHED. Total time: 4.013 sec, throughput: 1245 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaead --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 5.434 sec, throughput: 920 rps
+FINISHED. Total time: 5.787 sec, throughput: 863 rps
+
+--- searchd 502 - from the jammy package
+php test.php --plugin=plain.php --data=./q-split/5k-repeat --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 6.889 sec, throughput: 725 rps
+FINISHED. Total time: 6.577 sec, throughput: 760 rps
+FINISHED. Total time: 6.519 sec, throughput: 766 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeaa --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 12.621 sec, throughput: 396 rps
+FINISHED. Total time: 12.434 sec, throughput: 402 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeab --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 8.92 sec, throughput: 560 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaeaс --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 3.941 sec, throughput: 1268 rps
+FINISHED. Total time: 3.904 sec, throughput: 1280 rps
+
+php test.php --plugin=plain.php --data=./q-split/5k-xaead --port=19406 --limit=5000 -c=6
+FINISHED. Total time: 5.98 sec, throughput: 836 rps
