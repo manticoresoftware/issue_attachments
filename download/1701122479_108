@@ -1,0 +1,467 @@
+
+
+
+
+<!DOCTYPE html>
+<html class="ui-indigo with-top-bar " lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>High memory usage (#108) · Issues · Manticore Learn4Good / Manticore Support for L4G · GitLab</title>
+<script nonce="hlT1aR85/X0NhMGoBflS6Q==">
+//<![CDATA[
+window.gon={};gon.features={"preserveUnchangedMarkdown":false,"issuesGridView":false,"serviceDeskTicket":false,"issuesListDrawer":false,"linkedWorkItems":true,"workItems":true,"workItemsMvc":false,"workItemsMvc2":false,"epicWidgetEditConfirmation":false,"movedMrSidebar":true,"notificationsTodosButtons":false,"aiGlobalSwitch":true};gon.licensed_features={"escalationPolicies":false};
+//]]>
+</script>
+<script nonce="hlT1aR85/X0NhMGoBflS6Q==">
+//<![CDATA[
+window.uploads_path = "/manticore-l4g/support/uploads";
+
+
+
+//]]>
+</script>
+<script nonce="hlT1aR85/X0NhMGoBflS6Q==">
+//<![CDATA[
+var gl = window.gl || {};
+gl.startup_calls = {"/manticore-l4g/support/-/issues/108/related_branches":{},"/manticore-l4g/support/-/issues/108/discussions.json?per_page=20":{},"/manticore-l4g/support/-/issues/108.json?serializer=sidebar_extras":{}};
+gl.startup_graphql_calls = null;
+
+if (gl.startup_calls && window.fetch) {
+  Object.keys(gl.startup_calls).forEach(apiCall => {
+   gl.startup_calls[apiCall] = {
+      fetchCall: fetch(apiCall, {
+        // Emulate XHR for Rails AJAX request checks
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest'
+        },
+        // fetch won’t send cookies in older browsers, unless you set the credentials init option.
+        // We set to `same-origin` which is default value in modern browsers.
+        // See https://github.com/whatwg/fetch/pull/585 for more information.
+        credentials: 'same-origin'
+      })
+    };
+  });
+}
+if (gl.startup_graphql_calls && window.fetch) {
+  const headers = {"X-CSRF-Token":"Euy7DNq2OMmDwpqrpXOGqCkLu04ShDvSHkWWmcd9NzMZW60d4URovwBLV_AqHBEvF0TFkl1wzGif_F2ocLGi_w","x-gitlab-feature-category":"team_planning"};
+  const url = `https://gitlab.com/api/graphql`
+
+  const opts = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      ...headers,
+    }
+  };
+
+  gl.startup_graphql_calls = gl.startup_graphql_calls.map(call => ({
+    ...call,
+    fetchCall: fetch(url, {
+      ...opts,
+      credentials: 'same-origin',
+      body: JSON.stringify(call)
+    })
+  }))
+}
+
+
+//]]>
+</script>
+
+
+<link rel="stylesheet" href="/assets/themes/theme_indigo-b12f21496c9d23fbc119116031deaac93f574e547424c708304d7ea62d257d76.css" />
+
+<link rel="stylesheet" href="/assets/application-343cb41fd7769c235288c478b11042e9fd1f49d7e6b71f572df4a30878275ed0.css" media="all" />
+<link rel="stylesheet" href="/assets/page_bundles/design_management-3831e489dbd947bd96ef46f3ed8a30c5fb9a234a9d0ca2c04541ca53a154a078.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/incidents-9db781995afc8e17555007fe763053175c22b37b2e5c638024c5a654ecdb735a.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/issuable-102cb27d3c17d0ee26212de30e1018618091bc52d8db6142484f3324cda012d8.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/issues_show-7256fbacadfebbd56f292b0311e83a06d86be9241841cdbc085ab96a278acb90.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/work_items-ba406702297750bc0ef965fd53605b660298a39534bfee21d2f1d4fee5e2e68a.css" media="all" /><link rel="stylesheet" href="/assets/page_bundles/labels-34a67e013cd03f6454d50eb3f7cce5082d29ab33da14353000ac27ad7c41c82c.css" media="all" />
+<link rel="stylesheet" href="/assets/application_utilities-16e034c5239432e388778232b5ea24a5cbea382850858934930553027b48d54f.css" media="all" />
+
+
+<link rel="stylesheet" href="/assets/fonts-115c4704cb8c77e2fdf3fd0243eebf164e2e9b54bbab7bf6a4c14868b865ddf8.css" media="all" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-96f127bcbdab3caa86a6cc73183496a2fa61f5fdac1f3b410eaf990adbc6ea3b.css" media="all" />
+
+<script src="/assets/webpack/runtime.2e1d7ec3.bundle.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/main.8601d73c.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/tracker.bd1baf0d.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/analytics.91542184.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script nonce="hlT1aR85/X0NhMGoBflS6Q==">
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"snowplow.trx.gitlab.net","cookieDomain":".gitlab.com","appId":"gitlab","formTracking":true,"linkClickTracking":true}
+
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-0-9","data":{"environment":"production","source":"gitlab-rails","plan":"free","extra":{"new_nav":true},"user_id":2801001,"is_gitlab_team_member":false,"namespace_id":63749741,"project_id":30669110,"context_generated_at":"2023-11-27T22:01:20.044Z"}}
+gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace63749741/project30669110/-/issues/108";
+
+
+//]]>
+</script>
+<link rel="preload" href="/assets/application_utilities-16e034c5239432e388778232b5ea24a5cbea382850858934930553027b48d54f.css" as="style" type="text/css" nonce="HoFNkS6LGLtXNiEuooA1dA==">
+<link rel="preload" href="/assets/application-343cb41fd7769c235288c478b11042e9fd1f49d7e6b71f572df4a30878275ed0.css" as="style" type="text/css" nonce="HoFNkS6LGLtXNiEuooA1dA==">
+<link rel="preload" href="/assets/highlight/themes/white-96f127bcbdab3caa86a6cc73183496a2fa61f5fdac1f3b410eaf990adbc6ea3b.css" as="style" type="text/css" nonce="HoFNkS6LGLtXNiEuooA1dA==">
+<link crossorigin="" href="https://snowplow.trx.gitlab.net" rel="preconnect">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-1e0a5107ea3bbd4be93e8ad2c503467e43166cd37e4293570b490e0812ede98b.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-Italic-38eaf1a569a54ab28c58b92a4a8de3afb96b6ebc250cf372003a7b38151848cc.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-08d2c5e8ff8fd3d2d6ec55bc7713380f8981c35f9d2df14e12b835464d6e8f23.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-38e58d8df29485a20c550da1d0111e2c2169f6dcbcf894f2cd3afbdd97bcc588.woff2" rel="preload">
+<link rel="preload" href="/assets/fonts-115c4704cb8c77e2fdf3fd0243eebf164e2e9b54bbab7bf6a4c14868b865ddf8.css" as="style" type="text/css" nonce="HoFNkS6LGLtXNiEuooA1dA==">
+
+
+
+<script src="/assets/webpack/sentry.ad24c670.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+
+
+<script src="/assets/webpack/commons-pages.projects.learn_gitlab.show-pages.search.show-super_sidebar.48cb43f0.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.search.show-super_sidebar.762beb7e.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/super_sidebar.e6a6f51e.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/shortcutsBundle.31e63f9d.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.groups.boards-pages.groups.details-pages.groups.epic_boards-pages.groups.show-pages.gr-c65ce8d6.64678dd5.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-initGFMInput-pages.admin.abuse_reports.show-pages.admin.topics.edit-pages.admin.topics.new-p-33ba7926.fe4ff4dc.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.admin.abuse_reports.show-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.e-83f70121.6df75d85.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.admin.runners.show-pages.clusters.agents.dashboard-pages.explore.catalog-pages.groups.-6b038e88.fa452e74.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.admin.abuse_reports.show-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.e-b6acdccb.5e2817c9.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.admin.abuse_reports.show-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.e-9d37460c.f099e5b4.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.admin.abuse_reports.show-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.e-0f513335.116fff7c.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.admin.abuse_reports.show-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.e-3e7fe578.41505bf6.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.admin.topics.edit-pages.admin.topics.new-pages.groups.epics.show-pages.groups.mileston-c3aa91e1.01454723.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/15.924cf1a2.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/16.163dd46a.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.dashboard.issues-pages.groups.epics.index-pages.groups.issues-pages.groups.merge_reque-5c7673f6.b83d7577.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.admin.abuse_reports.show-pages.dashboard.issues-pages.groups.boards-pages.groups.epic_-afafa28a.21ee9207.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.groups.epics.show-pages.groups.milestones.edit-pages.groups.milestones.new-pages.group-a3d00e43.256e07d3.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/22.930d5fa7.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/23.22f03c88.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/commons-pages.groups.epics.new-pages.groups.epics.show-pages.groups.merge_requests-pages.groups.road-9c37bf0c.2807a570.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<script src="/assets/webpack/pages.projects.issues.show.be27cf1a.chunk.js" defer="defer" nonce="hlT1aR85/X0NhMGoBflS6Q=="></script>
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="High memory usage (#108) · Issues · Manticore Learn4Good / Manticore Support for L4G · GitLab" property="og:title">
+<meta content="I have not changed Manticore settings for weeks but suddenly yesterday after a recent update it started to consume majority of server RAM just few hours later. Our..." property="og:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/30669110/favicon.ico" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.com/manticore-l4g/support/-/issues/108" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="High memory usage (#108) · Issues · Manticore Learn4Good / Manticore Support for L4G · GitLab" property="twitter:title">
+<meta content="I have not changed Manticore settings for weeks but suddenly yesterday after a recent update it started to consume majority of server RAM just few hours later. Our..." property="twitter:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/30669110/favicon.ico" property="twitter:image">
+<meta property="twitter:label1" content="Author"><meta property="twitter:data1" content="Erlandas Kareckas">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="fjj8YAqPTUkhKeDWj9e5z2yhYfZl0gjeBkKFHgseWaF1j-pxMX0dP6KgLY0AuC5IUu4fKiom_2SH-04vvNLMbQ" />
+<meta name="csp-nonce" content="hlT1aR85/X0NhMGoBflS6Q==" />
+<meta name="action-cable-url" content="/-/cable" />
+<link href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+
+
+
+
+<meta content="I have not changed Manticore settings for weeks but suddenly yesterday after a recent update it started to consume majority of server RAM just few hours later. Our..." name="description">
+<meta content="#222261" name="theme-color">
+</head>
+
+<body class="tab-width-8 gl-browser-generic gl-platform-other" data-find-file="/manticore-l4g/support/-/find_file/main" data-group="manticore-l4g" data-group-full-path="manticore-l4g" data-namespace-id="63749741" data-page="projects:issues:show" data-page-type-id="108" data-project="support" data-project-id="30669110">
+<script nonce="hlT1aR85/X0NhMGoBflS6Q==">
+//<![CDATA[
+gl = window.gl || {};
+gl.GfmAutoComplete = gl.GfmAutoComplete || {};
+gl.GfmAutoComplete.dataSources = {"members":"/manticore-l4g/support/-/autocomplete_sources/members?type=Issue\u0026type_id=108","issues":"/manticore-l4g/support/-/autocomplete_sources/issues","mergeRequests":"/manticore-l4g/support/-/autocomplete_sources/merge_requests","labels":"/manticore-l4g/support/-/autocomplete_sources/labels?type=Issue\u0026type_id=108","milestones":"/manticore-l4g/support/-/autocomplete_sources/milestones","commands":"/manticore-l4g/support/-/autocomplete_sources/commands?type=Issue\u0026type_id=108","snippets":"/manticore-l4g/support/-/autocomplete_sources/snippets","contacts":"/manticore-l4g/support/-/autocomplete_sources/contacts?type=Issue\u0026type_id=108"};
+
+
+//]]>
+</script>
+<script nonce="hlT1aR85/X0NhMGoBflS6Q==">
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isGeneric":true,"isOther":true};
+
+
+//]]>
+</script>
+
+
+
+<div class="layout-page hide-when-top-nav-responsive-open page-gutter right-sidebar-expanded page-with-super-sidebar">
+<aside class="js-super-sidebar super-sidebar super-sidebar-loading" data-command-palette="{&quot;project_files_url&quot;:&quot;/manticore-l4g/support/-/files/main?format=json&quot;,&quot;project_blob_url&quot;:&quot;/manticore-l4g/support/-/blob/main&quot;}" data-force-desktop-expanded-sidebar="" data-root-path="/" data-sidebar="{&quot;is_logged_in&quot;:true,&quot;context_switcher_links&quot;:[{&quot;title&quot;:&quot;Your work&quot;,&quot;link&quot;:&quot;/&quot;,&quot;icon&quot;:&quot;work&quot;},{&quot;title&quot;:&quot;Explore&quot;,&quot;link&quot;:&quot;/explore&quot;,&quot;icon&quot;:&quot;compass&quot;},{&quot;title&quot;:&quot;Profile&quot;,&quot;link&quot;:&quot;/-/profile&quot;,&quot;icon&quot;:&quot;profile&quot;},{&quot;title&quot;:&quot;Preferences&quot;,&quot;link&quot;:&quot;/-/profile/preferences&quot;,&quot;icon&quot;:&quot;preferences&quot;}],&quot;current_menu_items&quot;:[{&quot;id&quot;:&quot;project_overview&quot;,&quot;title&quot;:&quot;Manticore Support for L4G&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:&quot;/uploads/-/system/project/avatar/30669110/favicon.ico&quot;,&quot;entity_id&quot;:30669110,&quot;link&quot;:&quot;/manticore-l4g/support&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;manage_menu&quot;,&quot;title&quot;:&quot;Manage&quot;,&quot;icon&quot;:&quot;users&quot;,&quot;avatar&quot;:null,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/activity&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;activity&quot;,&quot;title&quot;:&quot;Activity&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/activity&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-project-activity&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;members&quot;,&quot;title&quot;:&quot;Members&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/project_members&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;labels&quot;,&quot;title&quot;:&quot;Labels&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/labels&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;plan_menu&quot;,&quot;title&quot;:&quot;Plan&quot;,&quot;icon&quot;:&quot;planning&quot;,&quot;avatar&quot;:null,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/issues&quot;,&quot;is_active&quot;:true,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;project_issue_list&quot;,&quot;title&quot;:&quot;Issues&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/issues&quot;,&quot;pill_count&quot;:&quot;7&quot;,&quot;link_classes&quot;:&quot;shortcuts-issues has-sub-items&quot;,&quot;is_active&quot;:true},{&quot;id&quot;:&quot;boards&quot;,&quot;title&quot;:&quot;Issue boards&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/boards&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-issue-boards&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;milestones&quot;,&quot;title&quot;:&quot;Milestones&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/milestones&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;code_menu&quot;,&quot;title&quot;:&quot;Code&quot;,&quot;icon&quot;:&quot;code&quot;,&quot;avatar&quot;:null,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/tree/main&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;files&quot;,&quot;title&quot;:&quot;Repository&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/tree/main&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-tree&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;branches&quot;,&quot;title&quot;:&quot;Branches&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/branches&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;commits&quot;,&quot;title&quot;:&quot;Commits&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/commits/main?ref_type=heads&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-commits&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;tags&quot;,&quot;title&quot;:&quot;Tags&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/tags&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;graphs&quot;,&quot;title&quot;:&quot;Repository graph&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/network/main?ref_type=heads&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-network&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;compare&quot;,&quot;title&quot;:&quot;Compare revisions&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/compare?from=main\u0026to=main&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;deploy_menu&quot;,&quot;title&quot;:&quot;Deploy&quot;,&quot;icon&quot;:&quot;deployments&quot;,&quot;avatar&quot;:null,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/releases&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;releases&quot;,&quot;title&quot;:&quot;Releases&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/releases&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:&quot;shortcuts-deployments-releases&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pages&quot;,&quot;title&quot;:&quot;Pages&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/pages&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;monitor_menu&quot;,&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:&quot;monitor&quot;,&quot;avatar&quot;:null,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/issues/service_desk&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;service_desk&quot;,&quot;title&quot;:&quot;Service Desk&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/issues/service_desk&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;analyze_menu&quot;,&quot;title&quot;:&quot;Analyze&quot;,&quot;icon&quot;:&quot;chart&quot;,&quot;avatar&quot;:null,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/ml/experiments&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;model_experiments&quot;,&quot;title&quot;:&quot;Model experiments&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/ml/experiments&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;settings_menu&quot;,&quot;title&quot;:&quot;Settings&quot;,&quot;icon&quot;:&quot;settings&quot;,&quot;avatar&quot;:null,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/edit&quot;,&quot;is_active&quot;:false,&quot;pill_count&quot;:null,&quot;items&quot;:[{&quot;id&quot;:&quot;general&quot;,&quot;title&quot;:&quot;General&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/edit&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;integrations&quot;,&quot;title&quot;:&quot;Integrations&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/settings/integrations&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;webhooks&quot;,&quot;title&quot;:&quot;Webhooks&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/hooks&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;access_tokens&quot;,&quot;title&quot;:&quot;Access Tokens&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/settings/access_tokens&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;repository&quot;,&quot;title&quot;:&quot;Repository&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/settings/repository&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;monitor&quot;,&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/settings/operations&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;usage_quotas&quot;,&quot;title&quot;:&quot;Usage Quotas&quot;,&quot;icon&quot;:null,&quot;avatar&quot;:null,&quot;entity_id&quot;:null,&quot;link&quot;:&quot;/manticore-l4g/support/-/usage_quotas&quot;,&quot;pill_count&quot;:null,&quot;link_classes&quot;:null,&quot;is_active&quot;:false}],&quot;separated&quot;:true}],&quot;current_context_header&quot;:&quot;Project&quot;,&quot;support_path&quot;:&quot;https://about.gitlab.com/get-help/&quot;,&quot;display_whats_new&quot;:true,&quot;whats_new_most_recent_release_items_count&quot;:3,&quot;whats_new_version_digest&quot;:&quot;ae8077b3a8781c118c10b869a06fb420228ee4fa00401fbb652cd88adf3b3bd9&quot;,&quot;show_version_check&quot;:false,&quot;gitlab_version&quot;:{&quot;major&quot;:16,&quot;minor&quot;:7,&quot;patch&quot;:0,&quot;suffix_s&quot;:&quot;&quot;},&quot;gitlab_version_check&quot;:null,&quot;search&quot;:{&quot;search_path&quot;:&quot;/search&quot;,&quot;issues_path&quot;:&quot;/dashboard/issues&quot;,&quot;mr_path&quot;:&quot;/dashboard/merge_requests&quot;,&quot;autocomplete_path&quot;:&quot;/search/autocomplete&quot;,&quot;search_context&quot;:{&quot;group&quot;:{&quot;id&quot;:63749741,&quot;name&quot;:&quot;Manticore Learn4Good&quot;,&quot;full_name&quot;:&quot;Manticore Learn4Good&quot;},&quot;group_metadata&quot;:{&quot;issues_path&quot;:&quot;/groups/manticore-l4g/-/issues&quot;,&quot;mr_path&quot;:&quot;/groups/manticore-l4g/-/merge_requests&quot;},&quot;project&quot;:{&quot;id&quot;:30669110,&quot;name&quot;:&quot;Manticore Support for L4G&quot;},&quot;project_metadata&quot;:{&quot;mr_path&quot;:&quot;/manticore-l4g/support/-/merge_requests&quot;,&quot;issues_path&quot;:&quot;/manticore-l4g/support/-/issues&quot;},&quot;code_search&quot;:false,&quot;scope&quot;:&quot;issues&quot;,&quot;for_snippets&quot;:null}},&quot;panel_type&quot;:&quot;project&quot;,&quot;shortcut_links&quot;:[{&quot;title&quot;:&quot;Milestones&quot;,&quot;href&quot;:&quot;/dashboard/milestones&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-milestones&quot;},{&quot;title&quot;:&quot;Snippets&quot;,&quot;href&quot;:&quot;/dashboard/snippets&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-snippets&quot;},{&quot;title&quot;:&quot;Activity&quot;,&quot;href&quot;:&quot;/dashboard/activity&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-activity&quot;},{&quot;title&quot;:&quot;Groups&quot;,&quot;href&quot;:&quot;/dashboard/groups&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-groups&quot;},{&quot;title&quot;:&quot;Projects&quot;,&quot;href&quot;:&quot;/dashboard/projects&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-projects&quot;},{&quot;title&quot;:&quot;Create a new issue&quot;,&quot;href&quot;:&quot;/manticore-l4g/support/-/issues/new&quot;,&quot;css_class&quot;:&quot;shortcuts-new-issue&quot;}],&quot;is_admin&quot;:false,&quot;name&quot;:&quot;manticore_bot&quot;,&quot;username&quot;:&quot;manticore_bot&quot;,&quot;admin_url&quot;:&quot;https://gitlab.com/admin&quot;,&quot;avatar_url&quot;:&quot;https://secure.gravatar.com/avatar/e5d8eaba32898b9b901210d0d5a8c383?s=80\u0026d=identicon&quot;,&quot;has_link_to_profile&quot;:true,&quot;link_to_profile&quot;:&quot;/manticore_bot&quot;,&quot;logo_url&quot;:null,&quot;status&quot;:{&quot;can_update&quot;:true,&quot;busy&quot;:null,&quot;customized&quot;:null,&quot;availability&quot;:&quot;&quot;,&quot;emoji&quot;:null,&quot;message_html&quot;:null,&quot;message&quot;:null,&quot;clear_after&quot;:null},&quot;settings&quot;:{&quot;has_settings&quot;:true,&quot;profile_path&quot;:&quot;/-/profile&quot;,&quot;profile_preferences_path&quot;:&quot;/-/profile/preferences&quot;},&quot;user_counts&quot;:{&quot;assigned_issues&quot;:0,&quot;assigned_merge_requests&quot;:0,&quot;review_requested_merge_requests&quot;:0,&quot;todos&quot;:0,&quot;last_update&quot;:1701122480127},&quot;can_sign_out&quot;:true,&quot;sign_out_link&quot;:&quot;/users/sign_out&quot;,&quot;issues_dashboard_path&quot;:&quot;/dashboard/issues?assignee_username=manticore_bot&quot;,&quot;todos_dashboard_path&quot;:&quot;/dashboard/todos&quot;,&quot;create_new_menu_groups&quot;:[{&quot;name&quot;:&quot;In this project&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New issue&quot;,&quot;href&quot;:&quot;/manticore-l4g/support/-/issues/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;new_issue&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;new_issue&quot;}},{&quot;text&quot;:&quot;Invite members&quot;,&quot;href&quot;:null,&quot;component&quot;:&quot;invite_members&quot;,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;invite&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;invite&quot;}}]},{&quot;name&quot;:&quot;In GitLab&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;New project/repository&quot;,&quot;href&quot;:&quot;/projects/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_project&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_project&quot;}},{&quot;text&quot;:&quot;New group&quot;,&quot;href&quot;:&quot;/groups/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_group&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_group&quot;}},{&quot;text&quot;:&quot;New snippet&quot;,&quot;href&quot;:&quot;/-/snippets/new&quot;,&quot;component&quot;:null,&quot;extraAttrs&quot;:{&quot;data-track-label&quot;:&quot;general_new_snippet&quot;,&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-property&quot;:&quot;nav_create_menu&quot;,&quot;data-testid&quot;:&quot;create_menu_item&quot;,&quot;data-qa-create-menu-item&quot;:&quot;general_new_snippet&quot;}}]}],&quot;merge_request_menu&quot;:[{&quot;name&quot;:&quot;Merge requests&quot;,&quot;items&quot;:[{&quot;text&quot;:&quot;Assigned&quot;,&quot;href&quot;:&quot;/dashboard/merge_requests?assignee_username=manticore_bot&quot;,&quot;count&quot;:0,&quot;userCount&quot;:&quot;assigned_merge_requests&quot;,&quot;extraAttrs&quot;:{&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-label&quot;:&quot;merge_requests_assigned&quot;,&quot;data-track-property&quot;:&quot;nav_core_menu&quot;,&quot;class&quot;:&quot;dashboard-shortcuts-merge_requests&quot;}},{&quot;text&quot;:&quot;Review requests&quot;,&quot;href&quot;:&quot;/dashboard/merge_requests?reviewer_username=manticore_bot&quot;,&quot;count&quot;:0,&quot;userCount&quot;:&quot;review_requested_merge_requests&quot;,&quot;extraAttrs&quot;:{&quot;data-track-action&quot;:&quot;click_link&quot;,&quot;data-track-label&quot;:&quot;merge_requests_to_review&quot;,&quot;data-track-property&quot;:&quot;nav_core_menu&quot;,&quot;class&quot;:&quot;dashboard-shortcuts-review_requests&quot;}}]}],&quot;projects_path&quot;:&quot;/dashboard/projects&quot;,&quot;groups_path&quot;:&quot;/dashboard/groups&quot;,&quot;gitlab_com_but_not_canary&quot;:true,&quot;gitlab_com_and_canary&quot;:null,&quot;canary_toggle_com_url&quot;:&quot;https://next.gitlab.com&quot;,&quot;current_context&quot;:{&quot;namespace&quot;:&quot;projects&quot;,&quot;item&quot;:{&quot;id&quot;:30669110,&quot;name&quot;:&quot;Manticore Support for L4G&quot;,&quot;namespace&quot;:&quot;Manticore Learn4Good / Manticore Support for L4G&quot;,&quot;webUrl&quot;:&quot;/manticore-l4g/support&quot;,&quot;avatarUrl&quot;:&quot;/uploads/-/system/project/avatar/30669110/favicon.ico&quot;}},&quot;pinned_items&quot;:[&quot;project_issue_list&quot;,&quot;project_merge_request_list&quot;],&quot;update_pins_url&quot;:&quot;/-/users/pins&quot;,&quot;is_impersonating&quot;:false,&quot;stop_impersonation_path&quot;:&quot;/admin/impersonation&quot;,&quot;track_visits_path&quot;:&quot;/-/track_namespace_visits&quot;,&quot;show_tanuki_bot&quot;:false,&quot;trial&quot;:{&quot;has_start_trial&quot;:false,&quot;url&quot;:&quot;/-/trials/new?glm_content=top-right-dropdown\u0026glm_source=gitlab.com&quot;}}"></aside>
+<div data-version-digest="ae8077b3a8781c118c10b869a06fb420228ee4fa00401fbb652cd88adf3b3bd9" id="whats-new-app"></div>
+
+<div class="content-wrapper">
+<div class="mobile-overlay"></div>
+
+<div class="alert-wrapper gl-force-block-formatting-context">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top-bar-fixed container-fluid" data-testid="top-bar">
+<div class="top-bar-container gl-display-flex gl-align-items-center gl-gap-2">
+<button class="gl-button btn btn-icon btn-md btn-default btn-default-tertiary js-super-sidebar-toggle-expand super-sidebar-toggle gl-ml-n3" aria-controls="super-sidebar" aria-expanded="false" aria-label="Primary navigation sidebar" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="sidebar-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#sidebar"></use></svg>
+
+</button>
+<nav aria-label="Breadcrumbs" class="breadcrumbs" data-testid="breadcrumb-links">
+<ul class="list-unstyled breadcrumbs-list js-breadcrumbs-list">
+<li><a class="group-path breadcrumb-item-text js-breadcrumb-item-text " href="/manticore-l4g">Manticore Learn4Good</a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#chevron-lg-right"></use></svg></li> <li><a href="/manticore-l4g/support"><img alt="Manticore Support for L4G" class="avatar-tile lazy" width="15" height="15" data-src="/uploads/-/system/project/avatar/30669110/favicon.ico" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="breadcrumb-item-text js-breadcrumb-item-text">Manticore Support for L4G</span></a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#chevron-lg-right"></use></svg></li>
+<li><a href="/manticore-l4g/support/-/issues">Issues</a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#chevron-lg-right"></use></svg></li>
+
+<li data-testid="breadcrumb-current-link">
+<a href="/manticore-l4g/support/-/issues/108">#108</a>
+</li>
+</ul>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Manticore Learn4Good","item":"https://gitlab.com/manticore-l4g"},{"@type":"ListItem","position":2,"name":"Manticore Support for L4G","item":"https://gitlab.com/manticore-l4g/support"},{"@type":"ListItem","position":3,"name":"Issues","item":"https://gitlab.com/manticore-l4g/support/-/issues"},{"@type":"ListItem","position":4,"name":"#108","item":"https://gitlab.com/manticore-l4g/support/-/issues/108"}]}
+
+</script>
+</nav>
+
+
+
+</div>
+</div>
+
+</div>
+<div class="container-fluid container-limited limit-container-width project-highlight-puc">
+<main class="content" id="content-body" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+<div class="flash-container flash-container-page sticky" data-qa-selector="flash_container">
+<div id="js-global-alerts"></div>
+</div>
+
+
+<div class="js-invite-members-modal" data-access-levels="{&quot;Guest&quot;:10,&quot;Reporter&quot;:20,&quot;Developer&quot;:30,&quot;Maintainer&quot;:40}" data-default-access-level="10" data-full-path="manticore-l4g/support" data-help-link="https://gitlab.com/help/user/permissions" data-id="30669110" data-is-current-user-admin="false" data-is-project="true" data-is-signup-enabled="true" data-name="Manticore Support for L4G" data-new-users-url="https://gitlab.com/admin/users/new" data-reload-page-on-submit="false" data-root-id="63749741" data-users-limit-dataset="{&quot;alert_variant&quot;:&quot;reached&quot;,&quot;new_trial_registration_path&quot;:&quot;/-/trials/new?namespace_id=63749741&quot;,&quot;members_path&quot;:&quot;/groups/manticore-l4g/-/usage_quotas&quot;,&quot;purchase_path&quot;:&quot;/groups/manticore-l4g/-/billings&quot;,&quot;remaining_seats&quot;:0,&quot;free_users_limit&quot;:5}"></div>
+
+
+
+<div class="issue-details issuable-details js-issue-details">
+<div class="detail-page-description content-block js-detail-page-description gl-pt-3 gl-pb-0 gl-border-none">
+<div data-header-actions-data="{&quot;can_create_issue&quot;:&quot;true&quot;,&quot;can_create_incident&quot;:&quot;true&quot;,&quot;can_destroy_issue&quot;:&quot;false&quot;,&quot;can_reopen_issue&quot;:&quot;true&quot;,&quot;can_report_spam&quot;:&quot;false&quot;,&quot;can_update_issue&quot;:&quot;true&quot;,&quot;is_issue_author&quot;:&quot;false&quot;,&quot;issue_path&quot;:&quot;/manticore-l4g/support/-/issues/108&quot;,&quot;new_issue_path&quot;:&quot;/manticore-l4g/support/-/issues/new?add_related_issue=108\u0026issuable_template=incident\u0026issue%5Bissue_type%5D=incident&quot;,&quot;project_path&quot;:&quot;manticore-l4g/support&quot;,&quot;report_abuse_path&quot;:&quot;/-/abuse_reports/add_category&quot;,&quot;reported_user_id&quot;:10042007,&quot;reported_from_url&quot;:&quot;https://gitlab.com/manticore-l4g/support/-/issues/108&quot;,&quot;submit_as_spam_path&quot;:&quot;/manticore-l4g/support/-/issues/108/mark_as_spam&quot;,&quot;issuable_email_address&quot;:&quot;incoming+manticore-l4g-support-30669110-mmsnmd94hewpkuvm2gv62lwo-issue-108@incoming.gitlab.com&quot;,&quot;can_promote_to_epic&quot;:&quot;false&quot;}" data-initial="{&quot;endpoint&quot;:&quot;/manticore-l4g/support/-/issues/108&quot;,&quot;updateEndpoint&quot;:&quot;/manticore-l4g/support/-/issues/108.json&quot;,&quot;canUpdate&quot;:true,&quot;canDestroy&quot;:false,&quot;issuableRef&quot;:&quot;#108&quot;,&quot;markdownPreviewPath&quot;:&quot;/manticore-l4g/support/preview_markdown?target_id=108\u0026target_type=Issue&quot;,&quot;markdownDocsPath&quot;:&quot;/help/user/markdown&quot;,&quot;lockVersion&quot;:0,&quot;issuableTemplateNamesPath&quot;:&quot;/manticore-l4g/support/description_templates/names/issue&quot;,&quot;initialTitleHtml&quot;:&quot;High memory usage&quot;,&quot;initialTitleText&quot;:&quot;High memory usage&quot;,&quot;initialDescriptionHtml&quot;:&quot;\u003cp data-sourcepos=\&quot;1:1-1:250\&quot; dir=\&quot;auto\&quot;\u003eI have not changed Manticore settings for weeks but suddenly yesterday after a recent update it started to consume majority of server RAM just few hours later. Our index size is 30GB but consumed RAM is 300 GB and server was swapping all night long.\u003c/p\u003e\u0026#x000A;\u003cp data-sourcepos=\&quot;3:1-3:136\&quot; dir=\&quot;auto\&quot;\u003eThis has forced to keep clearing file and page cache every few minutes on the server to avoid running into SWAP which makes server slow.\u003c/p\u003e\u0026#x000A;\u003cp data-sourcepos=\&quot;5:1-5:31\&quot; dir=\&quot;auto\&quot;\u003eAny ideas what went wrong here?\u003c/p\u003e\u0026#x000A;\u003cp data-sourcepos=\&quot;7:1-7:65\&quot; dir=\&quot;auto\&quot;\u003e\u003ca class=\&quot;no-attachment-icon gfm\&quot; href=\&quot;/manticore-l4g/support/uploads/83d81feb206bf34c71e38addcfcbcab4/image.png\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener noreferrer\&quot; data-canonical-src=\&quot;/uploads/83d81feb206bf34c71e38addcfcbcab4/image.png\&quot; data-link=\&quot;true\&quot;\u003e\u003cimg src=\&quot;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\&quot; alt=\&quot;image.png\&quot; decoding=\&quot;async\&quot; class=\&quot;lazy gfm\&quot; data-src=\&quot;/manticore-l4g/support/uploads/83d81feb206bf34c71e38addcfcbcab4/image.png\&quot; data-canonical-src=\&quot;/uploads/83d81feb206bf34c71e38addcfcbcab4/image.png\&quot;\u003e\u003c/a\u003e\u003c/p\u003e&quot;,&quot;initialDescriptionText&quot;:&quot;I have not changed Manticore settings for weeks but suddenly yesterday after a recent update it started to consume majority of server RAM just few hours later. Our index size is 30GB but consumed RAM is 300 GB and server was swapping all night long. \n\nThis has forced to keep clearing file and page cache every few minutes on the server to avoid running into SWAP which makes server slow.\n\nAny ideas what went wrong here?\n\n![image.png](/uploads/83d81feb206bf34c71e38addcfcbcab4/image.png)&quot;,&quot;initialTaskCompletionStatus&quot;:{&quot;count&quot;:0,&quot;completed_count&quot;:0},&quot;canCreateIncident&quot;:true,&quot;fullPath&quot;:&quot;manticore-l4g/support&quot;,&quot;iid&quot;:108,&quot;issuableId&quot;:138675680,&quot;issueType&quot;:&quot;incident&quot;,&quot;isHidden&quot;:false,&quot;zoomMeetingUrl&quot;:null,&quot;hasLinkedAlerts&quot;:false,&quot;canUpdateTimelineEvent&quot;:true,&quot;currentPath&quot;:&quot;/manticore-l4g/support/-/issues/108&quot;,&quot;currentTab&quot;:null,&quot;authorId&quot;:10042007,&quot;authorName&quot;:&quot;Erlandas Kareckas&quot;,&quot;authorUsername&quot;:&quot;Erlandasl4g&quot;,&quot;authorWebUrl&quot;:&quot;/Erlandasl4g&quot;,&quot;createdAt&quot;:&quot;2023-11-27T08:10:46+00:00&quot;,&quot;isFirstContribution&quot;:false,&quot;serviceDeskReplyTo&quot;:null,&quot;registerPath&quot;:&quot;/users/sign_up?redirect_to_referer=yes&quot;,&quot;signInPath&quot;:&quot;/users/sign_in?redirect_to_referer=yes&quot;,&quot;publishedIncidentUrl&quot;:null,&quot;slaFeatureAvailable&quot;:&quot;false&quot;,&quot;uploadMetricsFeatureAvailable&quot;:&quot;false&quot;,&quot;projectId&quot;:30669110,&quot;projectPath&quot;:&quot;support&quot;,&quot;projectNamespace&quot;:&quot;manticore-l4g&quot;,&quot;canAdmin&quot;:true,&quot;hasIssueWeightsFeature&quot;:false,&quot;hasIterationsFeature&quot;:false,&quot;canAdminRelation&quot;:true}" id="js-issuable-app">
+<div class="title-container">
+<h1 class="title page-title gl-font-size-h-display">High memory usage</h1>
+</div>
+<div class="description">
+<div class="md"><p data-sourcepos="1:1-1:250" dir="auto">I have not changed Manticore settings for weeks but suddenly yesterday after a recent update it started to consume majority of server RAM just few hours later. Our index size is 30GB but consumed RAM is 300 GB and server was swapping all night long.</p>&#x000A;<p data-sourcepos="3:1-3:136" dir="auto">This has forced to keep clearing file and page cache every few minutes on the server to avoid running into SWAP which makes server slow.</p>&#x000A;<p data-sourcepos="5:1-5:31" dir="auto">Any ideas what went wrong here?</p>&#x000A;<p data-sourcepos="7:1-7:65" dir="auto"><a class="no-attachment-icon gfm" href="/manticore-l4g/support/uploads/83d81feb206bf34c71e38addcfcbcab4/image.png" target="_blank" rel="noopener noreferrer" data-canonical-src="/uploads/83d81feb206bf34c71e38addcfcbcab4/image.png" data-link="true"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png" decoding="async" class="lazy gfm" data-src="/manticore-l4g/support/uploads/83d81feb206bf34c71e38addcfcbcab4/image.png" data-canonical-src="/uploads/83d81feb206bf34c71e38addcfcbcab4/image.png"></a></p></div>
+</div>
+
+</div>
+<div class="js-issue-widgets">
+<div class="emoji-block emoji-block-sticky">
+<div class="row gl-m-0 gl-justify-content-space-between">
+<div class="js-noteable-awards">
+<div class="gl-display-flex gl-flex-wrap gl-justify-content-space-between gl-pt-3">
+<div data-can-award-emoji="true" data-path="/api/v4/projects/30669110/issues/108/award_emoji" data-show-default-award-emojis="true" id="js-vue-awards-block"></div>
+
+</div>
+
+</div>
+<div class="new-branch-col gl-font-size-0 gl-my-2">
+<div class="create-mr-dropdown-wrap d-inline-block full-width-mobile js-create-mr" data-can-create-path="/manticore-l4g/support/-/issues/108/can_create_branch" data-create-branch-path="/manticore-l4g/support/-/branches?branch_name=108-high-memory-usage&amp;format=json&amp;issue_iid=108&amp;ref=main" data-create-mr-path="/manticore-l4g/support/-/merge_requests/new?merge_request%5Bissue_iid%5D=108&amp;merge_request%5Bsource_branch%5D=108-high-memory-usage&amp;merge_request%5Btarget_branch%5D=main" data-is-confidential="false" data-project-id="30669110" data-project-path="manticore-l4g/support" data-refs-path="/manticore-l4g/support/refs?search=">
+<div class="btn-group unavailable">
+<button disabled="disabled" type="button" class="gl-button btn btn-md btn-default "><span class="gl-button-text">
+<span class="gl-spinner-container js-create-mr-spinner gl-button-icon gl-display-none" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+<span class="text">
+Checking branch availability…
+</span>
+
+</span>
+
+</button></div>
+<div class="btn-group available hidden">
+<button class="gl-button btn btn-md btn-confirm js-create-merge-request" data-action="create-branch" type="button"><span class="gl-button-text">
+<span class="gl-spinner-container js-create-mr-spinner js-spinner gl-display-none" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+Create branch
+
+</span>
+
+</button><button class="gl-button btn btn-icon btn-md btn-confirm js-dropdown-toggle dropdown-toggle create-merge-request-dropdown-toggle" data-dropdown-trigger="#create-merge-request-dropdown" data-display="static" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="chevron-down-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#chevron-down"></use></svg>
+
+</button>
+<div class="droplab-dropdown">
+<ul class="create-merge-request-dropdown-menu dropdown-menu dropdown-menu-right gl-show-field-errors" data-dropdown id="create-merge-request-dropdown">
+<li class="droplab-item-selected" data-text="Create branch" data-value="create-branch" role="button">
+<div class="menu-item">
+<svg class="s16 icon" data-testid="check-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#check"></use></svg>
+Create branch
+</div>
+</li>
+<li class="divider droplab-item-ignore"></li>
+<li class="droplab-item-ignore gl-ml-3 gl-mr-3 gl-mt-5">
+<div class="form-group">
+<label for="new-branch-name">
+Branch name
+</label>
+<input class="js-branch-name form-control gl-form-input" id="new-branch-name" placeholder="108-high-memory-usage" type="text" value="108-high-memory-usage">
+<span class="js-branch-message form-text"></span>
+</div>
+<div class="form-group">
+<label for="source-name">
+Source (branch or tag)
+</label>
+<input class="js-ref ref form-control gl-form-input" data-value="main" id="source-name" placeholder="main" type="text" value="main">
+<span class="js-ref-message form-text"></span>
+</div>
+<div class="form-group">
+<button class="gl-button btn btn-md btn-confirm js-create-target" data-action="create-mr" type="button"><span class="gl-button-text">
+Create merge request
+
+</span>
+
+</button></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="js-issue-widgets">
+
+
+<div class="js-work-item-links-root" data-full-path="manticore-l4g/support" data-issuable-id="138675680" data-issuable-iid="108" data-register-path="/users/sign_up?redirect_to_referer=yes" data-sign-in-path="/users/sign_in?redirect_to_referer=yes" data-wi-full-path="manticore-l4g/support" data-wi-has-issuable-health-status-feature="false" data-wi-has-issue-weights-feature="false" data-wi-has-iterations-feature="false" data-wi-has-okrs-feature="false" data-wi-issues-list-path="/manticore-l4g/support/-/issues" data-wi-new-comment-template-path="/-/profile/comment_templates" data-wi-register-path="/users/sign_up?redirect_to_referer=yes" data-wi-report-abuse-path="/-/abuse_reports/add_category" data-wi-sign-in-path="/users/sign_in?redirect_to_referer=yes"></div>
+
+
+<div class="js-related-issues-root" data-can-add-related-issues="true" data-endpoint="/manticore-l4g/support/-/issues/108/links" data-full-path="manticore-l4g/support" data-has-issue-weights-feature="false" data-has-iterations-feature="false" data-help-path="/help/user/project/issues/related_issues" data-issuable-type="incident" data-report-abuse-path="/-/abuse_reports/add_category" data-show-categorized-issues="false"></div>
+
+<div data-endpoint="/api/v4/projects/30669110/issues/108/related_merge_requests" data-has-closing-merge-request="false" data-project-namespace="manticore-l4g" data-project-path="support" id="js-related-merge-requests"></div>
+<div data-url="/manticore-l4g/support/-/issues/108/related_branches" id="related-branches">
+</div>
+</div>
+<div class="js-issue-widgets">
+<section class="issuable-discussion js-vue-notes-event">
+<div data-can-add-timeline-events="true" data-current-user-data="{&quot;id&quot;:2801001,&quot;username&quot;:&quot;manticore_bot&quot;,&quot;name&quot;:&quot;manticore_bot&quot;,&quot;state&quot;:&quot;active&quot;,&quot;locked&quot;:false,&quot;avatar_url&quot;:&quot;https://secure.gravatar.com/avatar/e5d8eaba32898b9b901210d0d5a8c383?s=80\u0026d=identicon&quot;,&quot;web_url&quot;:&quot;https://gitlab.com/manticore_bot&quot;,&quot;show_status&quot;:false,&quot;path&quot;:&quot;/manticore_bot&quot;,&quot;user_preference&quot;:{&quot;issue_notes_filter&quot;:0,&quot;merge_request_notes_filter&quot;:0,&quot;notes_filters&quot;:{&quot;Show all activity&quot;:0,&quot;Show comments only&quot;:1,&quot;Show history only&quot;:2},&quot;default_notes_filter&quot;:0,&quot;epic_notes_filter&quot;:0}}" data-new-comment-template-path="/-/profile/comment_templates" data-noteable-data="{&quot;id&quot;:138675680,&quot;iid&quot;:108,&quot;description&quot;:&quot;I have not changed Manticore settings for weeks but suddenly yesterday after a recent update it started to consume majority of server RAM just few hours later. Our index size is 30GB but consumed RAM is 300 GB and server was swapping all night long. \n\nThis has forced to keep clearing file and page cache every few minutes on the server to avoid running into SWAP which makes server slow.\n\nAny ideas what went wrong here?\n\n![image.png](/uploads/83d81feb206bf34c71e38addcfcbcab4/image.png)&quot;,&quot;title&quot;:&quot;High memory usage&quot;,&quot;time_estimate&quot;:0,&quot;total_time_spent&quot;:0,&quot;human_time_estimate&quot;:null,&quot;human_total_time_spent&quot;:null,&quot;state&quot;:&quot;opened&quot;,&quot;milestone_id&quot;:null,&quot;updated_by_id&quot;:null,&quot;created_at&quot;:&quot;2023-11-27T08:10:46Z&quot;,&quot;updated_at&quot;:&quot;2023-11-27T22:01:02Z&quot;,&quot;milestone&quot;:null,&quot;labels&quot;:[],&quot;lock_version&quot;:0,&quot;author_id&quot;:10042007,&quot;confidential&quot;:false,&quot;discussion_locked&quot;:null,&quot;assignees&quot;:[],&quot;due_date&quot;:null,&quot;project_id&quot;:30669110,&quot;moved_to_id&quot;:null,&quot;duplicated_to_id&quot;:null,&quot;web_url&quot;:&quot;/manticore-l4g/support/-/issues/108&quot;,&quot;current_user&quot;:{&quot;can_create_note&quot;:true,&quot;can_create_confidential_note&quot;:true,&quot;can_update&quot;:true,&quot;can_set_issue_metadata&quot;:true,&quot;can_award_emoji&quot;:true},&quot;create_note_path&quot;:&quot;/manticore-l4g/support/notes?target_id=138675680\u0026target_type=issue&quot;,&quot;preview_note_path&quot;:&quot;/manticore-l4g/support/preview_markdown?target_id=108\u0026target_type=Issue&quot;,&quot;is_project_archived&quot;:false,&quot;issue_email_participants&quot;:[],&quot;type&quot;:&quot;INCIDENT&quot;,&quot;blocked&quot;:false,&quot;blocked_by_issues&quot;:[]}" data-noteable-type="Issue" data-notes-data="{&quot;noteableType&quot;:&quot;issue&quot;,&quot;noteableId&quot;:138675680,&quot;projectId&quot;:30669110,&quot;groupId&quot;:null,&quot;discussionsPath&quot;:&quot;/manticore-l4g/support/-/issues/108/discussions.json&quot;,&quot;registerPath&quot;:&quot;/users/sign_in?redirect_to_referer=yes#register-pane&quot;,&quot;newSessionPath&quot;:&quot;/users/sign_in?redirect_to_referer=yes&quot;,&quot;markdownDocsPath&quot;:&quot;/help/user/markdown&quot;,&quot;quickActionsDocsPath&quot;:&quot;/help/user/project/quick_actions&quot;,&quot;closePath&quot;:&quot;/manticore-l4g/support/-/issues/108.json?issue%5Bstate_event%5D=close&quot;,&quot;reopenPath&quot;:&quot;/manticore-l4g/support/-/issues/108.json?issue%5Bstate_event%5D=reopen&quot;,&quot;notesPath&quot;:&quot;/manticore-l4g/support/noteable/issue/138675680/notes&quot;,&quot;prerenderedNotesCount&quot;:10,&quot;lastFetchedAt&quot;:1701122479000000,&quot;notesFilter&quot;:0}" data-notes-filter-value="0" data-notes-filters="{&quot;Show all activity&quot;:0,&quot;Show comments only&quot;:1,&quot;Show history only&quot;:2}" data-report-abuse-path="/-/abuse_reports/add_category" data-show-timeline-view-toggle="false" data-target-type="issue" id="js-vue-notes"></div>
+</section>
+
+</div>
+</div>
+<aside aria-label="issue" aria-live="polite" class="right-sidebar js-right-sidebar js-issuable-sidebar right-sidebar-expanded" data-always-show-toggle data-issuable-type="issue" data-signed-in>
+<div class="issuable-sidebar">
+<div class="issuable-sidebar-header gl-pb-4!">
+<button class="gl-button btn btn-md btn-default gutter-toggle float-right js-sidebar-toggle has-tooltip gl-shadow-none! gl-display-block " type="button" aria-label="Toggle sidebar" title="Collapse sidebar" data-container="body" data-placement="left" data-boundary="viewport" type="button"><span class="gl-button-text">
+<span class="js-sidebar-toggle-container gl-button-text" data-is-expanded="true"><svg class="s16 js-sidebar-expand hidden" data-testid="chevron-double-lg-left-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#chevron-double-lg-left"></use></svg><svg class="s16 js-sidebar-collapse " data-testid="chevron-double-lg-right-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#chevron-double-lg-right"></use></svg></span>
+
+</span>
+
+</button><div class="js-sidebar-todo-widget-root" data-id="138675680" data-iid="108" data-project-path="manticore-l4g/support"></div>
+</div>
+<form class="issuable-context-form inline-update js-issuable-update" action="/manticore-l4g/support/-/issues/108.json" accept-charset="UTF-8" data-remote="true" method="post"><div class="block assignee" data-testid="assignee-block-container">
+<div class="js-sidebar-assignees-root" data-directly-invite-members data-field="issue" data-max-assignees="1">
+<div class="title hide-collapsed">
+Assignee
+<span class="gl-spinner-container" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+</div>
+</div>
+<div class="js-sidebar-assignee-data selectbox hide-collapsed">
+<input type="hidden" name="issue[assignee_ids][]" value="0" autocomplete="off" />
+<div class="dropdown js-sidebar-assignee-dropdown"><button class="dropdown-menu-toggle js-user-search js-author-search js-multiselect js-save-user-data js-invite-members-track" type="button" data-first-user="manticore_bot" data-current-user="true" data-iid="108" data-issuable-type="issue" data-project-id="30669110" data-author-id="10042007" data-field-name="issue[assignee_ids][]" data-issue-update="/manticore-l4g/support/-/issues/108.json" data-ability-name="issue" data-null-user="true" data-display="static" data-multi-select="true" data-dropdown-title="Select assignee" data-dropdown-header="Assignee" data-max-select="1" data-track-action="show_invite_members" data-track-label="edit_assignee" data-toggle="dropdown"><span class="dropdown-toggle-text ">Select assignee</span><svg class="s16 dropdown-menu-toggle-icon" data-testid="chevron-down-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#chevron-down"></use></svg></button><div class="dropdown-menu dropdown-select dropdown-menu-user dropdown-menu-selectable dropdown-menu-author dropdown-extended-height"><div class="dropdown-title gl-display-flex"><span class="gl-ml-auto">Assign to</span><button class="dropdown-title-button dropdown-menu-close gl-ml-auto" aria-label="Close" type="button"><svg class="s16 dropdown-menu-close-icon" data-testid="close-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#close"></use></svg></button></div><div class="dropdown-input"><input type="search" data-testid="dropdown-input-field" class="dropdown-input-field" placeholder="Search users" autocomplete="off" /><svg class="s16 dropdown-input-search" data-testid="search-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#search"></use></svg><svg class="s16 dropdown-input-clear js-dropdown-input-clear" data-testid="close-icon"><use href="/assets/icons-33d285b77c0f9173f577e26a550fb6463b9913e368ebfcdbb54022aff27051db.svg#close"></use></svg></div><div data-testid="dropdown-list-content" class="dropdown-content "></div><div class="dropdown-footer"><ul class="dropdown-footer-list">
+<li>
+<div class="js-invite-members-trigger" data-display-text="Invite Members" data-trigger-element="anchor" data-trigger-source="issue_assignee_dropdown"></div>
+</li>
+</ul>
+</div><div class="dropdown-loading"><div class="gl-spinner-container gl-mt-7" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-md gl-spinner-dark gl-vertical-align-text-bottom!"></span></div></div></div></div>
+</div>
+
+</div>
+<div class="js-sidebar-severity-widget-root"></div>
+<div class="block escalation-status" data-testid="escalation_status_container">
+<div class="js-sidebar-escalation-status-root" data-can-update="true" data-issue-iid="108" data-project-path="manticore-l4g/support"></div>
+</div>
+
+
+<div class="js-sidebar-labels-widget-root" data-allow-label-create="true" data-allow-scoped-labels="false" data-can-edit="true" data-iid="108" data-issuable-type="issue" data-labels-fetch-path="/manticore-l4g/support/-/labels.json?include_ancestor_groups=true" data-labels-manage-path="/manticore-l4g/support/-/labels" data-project-issues-path="/manticore-l4g/support/-/issues" data-project-path="manticore-l4g/support" data-selected-labels="[]"></div>
+<div class="block milestone" data-testid="sidebar-milestones">
+<div class="js-sidebar-milestone-widget-root" data-can-edit="true" data-issue-iid="108" data-project-path="manticore-l4g/support"></div>
+</div>
+
+<div class="js-sidebar-due-date-widget-root"></div>
+<div class="js-sidebar-time-tracking-root block">
+<!-- / Fallback while content is loading -->
+<div class="title hide-collapsed">
+Time tracking
+<span class="gl-spinner-container" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-sm gl-spinner-dark gl-vertical-align-text-bottom!"></span></span>
+</div>
+</div>
+<script id="js-confidential-issue-data" type="application/json">{"is_confidential":false,"is_editable":true}</script>
+<div class="js-sidebar-confidential-widget-root"></div>
+
+<div class="js-sidebar-participants-widget-root"></div>
+<div class="block">
+<div class="js-sidebar-move-issue-block" data-issue-iid="108" data-project-full-path="manticore-l4g/support"></div>
+</div>
+</form><script class="js-sidebar-options" type="application/json">{"endpoint":"/manticore-l4g/support/-/issues/108.json?serializer=sidebar_extras","toggleSubscriptionEndpoint":"/manticore-l4g/support/-/issues/108/toggle_subscription","moveIssueEndpoint":"/manticore-l4g/support/-/issues/108/move","projectsAutocompleteEndpoint":"/-/autocomplete/projects?project_id=30669110","editable":"true","currentUser":{"id":2801001,"username":"manticore_bot","name":"manticore_bot","state":"active","locked":false,"avatar_url":"https://secure.gravatar.com/avatar/e5d8eaba32898b9b901210d0d5a8c383?s=80\u0026d=identicon","web_url":"https://gitlab.com/manticore_bot","todo":null,"can_edit":true,"can_move":true,"can_admin_label":true,"can_create_timelogs":true,"can_update_escalation_status":true},"rootPath":"/","fullPath":"manticore-l4g/support","iid":108,"id":138675680,"severity":"unknown","timeTrackingLimitToHours":true,"canCreateTimelogs":true,"createNoteEmail":"incoming+manticore-l4g-support-30669110-mmsnmd94hewpkuvm2gv62lwo-issue-108@incoming.gitlab.com","issuableType":"issue","weightOptions":["None","Any",0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],"weightNoneValue":"None"}</script>
+</div>
+</aside>
+
+
+
+</main>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script nonce="hlT1aR85/X0NhMGoBflS6Q==">
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    if (imgUrl.indexOf('/avatar/') > -1 && imgUrl.indexOf('?') === -1) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js-lazy-loaded-content';
+  });
+}
+
+//]]>
+</script>
+<script nonce="hlT1aR85/X0NhMGoBflS6Q==">
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+</body>
+</html>
+
