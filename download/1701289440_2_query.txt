@@ -1,0 +1,194 @@
+TID	Name	Proto	State	Connection from	ConnID	This/prev job time	Jobs done	Thread status	Chain	Info
+1800591	jobsite_repl_0		-	wsrep web2-l4g:9312,web2-l4g:9315:replication	-1	1m	32880	working	Repl 	
+1800165	work_0	http	-	10.10.10.5:29136	2032113	1h	2346754	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198394}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+1800166	work_1		-		-1	33us (prev)	2367959	idling		
+1800167	work_2		-		-1	62ms (prev)	2351546	idling		
+1800168	work_3	http	net_read	127.0.0.1:29206	710097	1d	1083607	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701234000}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"it specilist remote eligible IT\\\\/Tech\\"/0.6"}]}}" comment="" index="jobs"
+1800169	work_4	http	-	10.10.10.5:64698	2032303	1h	2336255	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198412}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+1800170	work_5	http	-	127.0.0.1:53798	1851273	5h	2275650	working	Mini Mini Query Conn 	1 ch 7: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"Management \\\\& Program Analyst \\\\/MTS Space Operations Coordinator Government\\"/0.6"}]}}" comment="" index="jobs"
+1800171	work_6	http	net_read	127.0.0.1:40962	1851495	5h	2266137	working	Mini Mini Query Conn 	4 ch 7: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"Management \\\\& Program Analyst \\\\/MTS Space Operations Coordinator Government\\"/0.6"}]}}" comment="" index="jobs"
+1800172	work_7	http	net_read	127.0.0.1:62412	1851158	5h	2251667	working	Mini Mini Query Conn 	1 ch 2: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"Management \\\\& Program Analyst \\\\/MTS Space Operations Coordinator Government\\"/0.6"}]}}" comment="" index="jobs"
+1800173	work_8	http	net_read	127.0.0.1:52550	709673	1d	1071039	working	Mini Mini Mini Query Conn 	5 ch 0: 5 ch 6: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701234000}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"it specilist remote eligible IT\\\\/Tech\\"/0.6"}]}}" comment="" index="jobs"
+1800174	work_9	http	net_read	127.0.0.1:52058	709619	1d	1079497	working	Mini Mini Query Conn 	1 ch 1: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701234000}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"it specilist remote eligible IT\\\\/Tech\\"/0.6"}]}}" comment="" index="jobs"
+1800175	work_10	http	net_read	127.0.0.1:52286	709645	1d	1068768	working	Mini Mini Query Conn 	1 ch 1: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701234000}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"it specilist remote eligible IT\\\\/Tech\\"/0.6"}]}}" comment="" index="jobs"
+1800176	work_11		-		-1	11ms (prev)	2342765	idling		
+1800177	work_12	http	net_read	127.0.0.1:62412	1851158	5h	2249549	working	Mini Mini Query Conn 	1 ch 3: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"Management \\\\& Program Analyst \\\\/MTS Space Operations Coordinator Government\\"/0.6"}]}}" comment="" index="jobs"
+1800178	work_13	http	-	127.0.0.1:54948	1851578	5h	2250978	working	Mini Mini Query Conn 	1 ch 7: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"Management \\\\& Program Analyst \\\\/MTS Space Operations Coordinator Government\\"/0.6"}]}}" comment="" index="jobs"
+1800179	work_14		-		-1	17ms (prev)	2363699	idling		
+1800180	work_15		-		-1	14ms (prev)	2345062	idling		
+1800181	work_16	http	net_read	127.0.0.1:52610	709680	1d	1073347	working	Mini Mini Query Conn 	1 ch 1: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701234000}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"it specilist remote eligible IT\\\\/Tech\\"/0.6"}]}}" comment="" index="jobs"
+1800182	work_17	http	net_read	127.0.0.1:62412	1851158	5h	2260623	working	Mini Mini Query Conn 	1 ch 5: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"Management \\\\& Program Analyst \\\\/MTS Space Operations Coordinator Government\\"/0.6"}]}}" comment="" index="jobs"
+1800183	work_18	http	net_read	127.0.0.1:61162	709773	1d	1063969	working	Mini Mini Query Conn 	1 ch 1: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701234000}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"it specilist remote eligible IT\\\\/Tech\\"/0.6"}]}}" comment="" index="jobs"
+1800184	work_19	http	-	10.10.10.5:29122	2032094	1h	2334096	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198385}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+1800185	work_20	http	-	10.10.10.5:28694	2031983	1h	2334752	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198385}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+1800186	work_21	http	net_read	127.0.0.1:52550	709673	1d	1074230	working	Mini Mini Query Conn 	1 ch 1: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701234000}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"it specilist remote eligible IT\\\\/Tech\\"/0.6"}]}}" comment="" index="jobs"
+1800187	work_22	http	net_read	127.0.0.1:51956	709610	1d	1076268	working	Mini Mini Query Conn 	1 ch 1: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701234000}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"it specilist remote eligible IT\\\\/Tech\\"/0.6"}]}}" comment="" index="jobs"
+1800188	work_23		-		-1	27ms (prev)	2354194	idling		
+1800189	work_24	http	-	10.10.10.5:61412	2032186	1h	2328650	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198394}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+1800190	work_25	http	net_read	127.0.0.1:26694	709880	1d	1069449	working	Mini Mini Query Conn 	1 ch 1: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701234000}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"it specilist remote eligible IT\\\\/Tech\\"/0.6"}]}}" comment="" index="jobs"
+1800191	work_26		-		-1	2ms (prev)	2346413	idling		
+1800192	work_27	http	-	10.10.10.5:29148	2032138	1h	2345395	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198390}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+1800193	work_28	http	net_read	127.0.0.1:62412	1851158	5h	2273281	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"Management \\\\& Program Analyst \\\\/MTS Space Operations Coordinator Government\\"/0.6"}]}}" comment="" index="jobs"
+1800194	work_29	http	-	10.10.10.5:61400	2032184	1h	2296316	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198400}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+1800195	work_30	http	net_read	127.0.0.1:62412	1851158	5h	2267478	working	Mini Mini Query Conn 	1 ch 4: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"Management \\\\& Program Analyst \\\\/MTS Space Operations Coordinator Government\\"/0.6"}]}}" comment="" index="jobs"
+1800196	work_31	http	net_read	127.0.0.1:62412	1851158	5h	2263140	working	Mini Mini Query Conn 	4 ch 7: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"Management \\\\& Program Analyst \\\\/MTS Space Operations Coordinator Government\\"/0.6"}]}}" comment="" index="jobs"
+1800197	work_32	http	-	10.10.10.5:29114	2032078	1h	2313399	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198390}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+1800198	work_33		-		-1	37us (prev)	2353930	idling		
+1800199	work_34	http	net_read	127.0.0.1:29206	710097	1d	1078573	working	Mini Mini Query Conn 	1 ch 1: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701234000}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"in":{"any(accepted_countries)":[0,500]}},{"query_string":"@!(additional_locations) \\"it specilist remote eligible IT\\\\/Tech\\"/0.6"}]}}" comment="" index="jobs"
+1800200	work_35	mysql	query	127.0.0.1:39238	2075455	395us	2359029	working	Conn 	show threads option format=all
+1800201	work_36		-		-1	7us (prev)	2381099	idling		
+1800202	work_37	http	-	10.10.10.5:32756	2032395	1h	2366729	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198412}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+1800203	work_38		-		-1	2ms (prev)	2345825	idling		
+1800204	work_39	http	-	10.10.10.5:61416	2032251	1h	2336628	working	Mini Mini Query Conn 	1 ch 6: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198400}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+1800427	TickPool_0		-		-1	2us (prev)	0	idling	Listen 	tick:  15115929  works:  0  state:  in polling
+1800205	Timer		-		-1	-	0	idling		
+id	proto	state	host	connid	killed	last cmd
+2	http	net_read	127.0.0.1:52058	709619	0	call
+3	http	net_read	127.0.0.1:52286	709645	0	call
+4	http	net_read	127.0.0.1:52550	709673	0	call
+5	http	net_read	127.0.0.1:52610	709680	0	call
+6	http	net_read	127.0.0.1:61162	709773	0	call
+7	http	net_read	127.0.0.1:26694	709880	0	call
+8	http	net_read	127.0.0.1:29206	710097	0	call
+9	http	net_read	127.0.0.1:62412	1851158	0	call
+10	http	net_read	127.0.0.1:40962	1851495	0	call
+11	http	net_idle	10.10.10.11:48102	2075314	0	show_tables
+12	http	net_idle	10.10.10.5:43104	2075387	0	show_tables
+13	http	net_idle	127.0.0.1:64942	2075391	0	show_tables
+14	http	net_idle	10.10.10.1:34382	2075416	0	show_tables
+15	mysql	query	127.0.0.1:39242	2075456	0	select * from @@system.sessions
+1	http	net_read	127.0.0.1:51956	709610	0	call
+Counter	Value
+uptime	169211
+connections	2075457
+maxed_out	0
+version	6.2.13 949a248c0@231122 dev (columnar 2.2.5 5578d83@231122) (secondary 2.2.5 5578d83@231122) (knn 2.2.5 5578d83@231122)
+mysql_version	6.2.13 949a248c0@231122 dev (columnar 2.2.5 5578d83@231122) (secondary 2.2.5 5578d83@231122) (knn 2.2.5 5578d83@231122)
+command_search	2520317
+command_excerpt	0
+command_update	0
+command_keywords	2586
+command_persist	0
+command_status	918720
+command_flushattrs	0
+command_sphinxql	0
+command_ping	0
+command_delete	4288
+command_set	0
+command_insert	1313007
+command_replace	2626272
+command_commit	8617
+command_suggest	0
+command_json	0
+command_callpq	0
+command_cluster	432
+command_getfield	0
+agent_connect	4
+agent_tfo	0
+agent_retry	1
+queries	3342335
+dist_queries	0
+workers_total	40
+workers_active	41
+workers_clients	27
+workers_clients_vip	0
+work_queue_length	80
+load	29.20 29.18 29.22
+load_primary	0.00 0.00 0.00
+load_secondary	0.00 0.00 0.00
+query_wall	24365.979
+query_cpu	OFF
+dist_wall	0.000
+dist_local	0.000
+dist_wait	0.000
+query_reads	OFF
+query_readkb	OFF
+query_readtime	OFF
+avg_query_wall	0.007
+avg_query_cpu	OFF
+avg_dist_wall	0.000
+avg_dist_local	0.000
+avg_dist_wait	0.000
+avg_query_reads	OFF
+avg_query_readkb	OFF
+avg_query_readtime	OFF
+qcache_max_bytes	16777216
+qcache_thresh_msec	3000
+qcache_ttl_sec	60
+qcache_cached_queries	0
+qcache_used_bytes	0
+qcache_hits	0
+cluster_name	jobsite
+cluster_jobsite_state_uuid	1a17a31d-7a6f-11ee-a765-b3f8a8e15481
+cluster_jobsite_conf_id	125
+cluster_jobsite_status	primary
+cluster_jobsite_size	3
+cluster_jobsite_local_index	1
+cluster_jobsite_node_state	synced
+cluster_jobsite_nodes_set	web1-l4g:9312,web2-l4g:9312,web3-l4g:9312
+cluster_jobsite_nodes_view	web1-l4g:9312,web1-l4g:9315:replication,web2-l4g:9312,web2-l4g:9315:replication,web3-l4g:9312,web3-l4g:9315:replication
+cluster_jobsite_indexes_count	8
+cluster_jobsite_indexes	admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements
+cluster_jobsite_local_state_uuid	1a17a31d-7a6f-11ee-a765-b3f8a8e15481
+cluster_jobsite_protocol_version	9
+cluster_jobsite_last_applied	736859
+cluster_jobsite_last_committed	736859
+cluster_jobsite_replicated	12905
+cluster_jobsite_replicated_bytes	11983900984
+cluster_jobsite_repl_keys	6936021
+cluster_jobsite_repl_keys_bytes	55817704
+cluster_jobsite_repl_data_bytes	3298213967
+cluster_jobsite_repl_other_bytes	0
+cluster_jobsite_received	54055
+cluster_jobsite_received_bytes	36303313618
+cluster_jobsite_local_commits	12904
+cluster_jobsite_local_cert_failures	1
+cluster_jobsite_local_replays	0
+cluster_jobsite_local_send_queue	0
+cluster_jobsite_local_send_queue_max	2
+cluster_jobsite_local_send_queue_min	0
+cluster_jobsite_local_send_queue_avg	0.00016980
+cluster_jobsite_local_recv_queue	0
+cluster_jobsite_local_recv_queue_max	82
+cluster_jobsite_local_recv_queue_min	0
+cluster_jobsite_local_recv_queue_avg	0.10437518
+cluster_jobsite_local_cached_downto	736700
+cluster_jobsite_flow_control_paused_ns	0
+cluster_jobsite_flow_control_paused	0.000000
+cluster_jobsite_flow_control_sent	0
+cluster_jobsite_flow_control_recv	0
+cluster_jobsite_flow_control_interval	[ 173, 173 ]
+cluster_jobsite_flow_control_interval_low	173
+cluster_jobsite_flow_control_interval_high	173
+cluster_jobsite_flow_control_status	OFF
+cluster_jobsite_cert_deps_distance	10.172260
+cluster_jobsite_apply_oooe	0.00390368
+cluster_jobsite_apply_oool	0.000000
+cluster_jobsite_apply_window	1.00390363
+cluster_jobsite_commit_oooe	0.000000
+cluster_jobsite_commit_oool	0.000000
+cluster_jobsite_commit_window	1.000239
+cluster_jobsite_local_state	4
+cluster_jobsite_local_state_comment	Synced
+cluster_jobsite_cert_index_size	856
+cluster_jobsite_cert_bucket_count	20754
+cluster_jobsite_gcache_pool_size	134199176
+cluster_jobsite_causal_reads	0
+cluster_jobsite_cert_interval	0.03063196
+cluster_jobsite_open_transactions	0
+cluster_jobsite_open_connections	0
+cluster_jobsite_ist_receive_status	
+cluster_jobsite_ist_receive_seqno_start	0
+cluster_jobsite_ist_receive_seqno_current	0
+cluster_jobsite_ist_receive_seqno_end	0
+cluster_jobsite_incoming_addresses	web1-l4g:9312,web1-l4g:9315:replication,web2-l4g:9312,web2-l4g:9315:replication,web3-l4g:9312,web3-l4g:9315:replication
+cluster_jobsite_cluster_weight	3
+cluster_jobsite_desync_count	0
+cluster_jobsite_evs_delayed	14d6760e-8d64-11ee-894e-fb756e062a23::1,150b6510-8d6a-11ee-9fb9-ef41a51b7fa0:tcp://10.10.10.1:9315:1,1b675c96-8d6b-11ee-8b4a-3ea21aee65be:tcp://10.10.10.1:9315:1,aa5ed560-8d6b-11ee-bfa0-32ed33db29eb:tcp://10.10.10.1:9315:1,e7819fa3-8d6b-11ee-986b-06322efd2b4a:tcp://10.10.10.1:9315:1
+cluster_jobsite_evs_evict_list	
+cluster_jobsite_evs_repl_latency	0/0/0/0/0
+cluster_jobsite_evs_state	OPERATIONAL
+cluster_jobsite_gcomm_uuid	8b5452c3-8d64-11ee-a6b8-43ee0c87c892
+mantico+ 1800163  0.0  0.0  57760  4992 ?        S    Nov27   0:00 /usr/bin/searchd --config /etc/manticoresearch/manticore.conf --coredump --logreplication --force-preread
+mantico+ 1800164  812 21.0 119141632 111041600 ? SLl  Nov27 22901:57 /usr/bin/searchd --config /etc/manticoresearch/manticore.conf --coredump --logreplication --force-preread
+root     3750742  0.0  0.0   7004  2164 pts/1    S+   15:15   0:00 grep --color=auto searchd
