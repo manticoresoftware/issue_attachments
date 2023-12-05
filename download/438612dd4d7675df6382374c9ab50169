@@ -1,0 +1,4459 @@
+
+# team searchd config (sphinx/rtsd), instance 1
+#
+
+common
+{
+    json_autoconv_numbers = 1
+    #lemmatizer_base       = /u/sphinx/etc/A
+    # disable progressive merge to to corruption bug(s).
+    #
+    # https://gitlab.com/manticoresearch/craigslist/issues/12
+    #
+    # (ask jzawodn for details if you care)
+    #
+    progressive_merge     = 0
+}
+
+searchd
+{
+    workers         = thread_pool
+    pid_file        = /var/run/sphinx/searchd-1.pid
+    log             = syslog
+    query_log       = /u/sphinx/var/log/query-1.log
+    query_log_format= sphinxql
+    listen          = 10.21.3.244:9306:mysql41
+    listen          = 10.21.3.244:8306:mysql41_vip
+    listen          = 10.21.3.244:9386:http
+    listen          = 10.21.3.244:9346:sphinx
+    max_packet_size = 32M
+
+    # binlog stuff
+    binlog_flush         = 0
+    binlog_path          = /u/sphinx/var/data/binlog/1
+    binlog_max_log_size  = 512M
+
+    # flush every 60 minutes
+    rt_flush_period   = 3600
+
+    expansion_limit  = 1000
+    preopen_indexes  = 1
+
+    agent_query_timeout = 3000
+    persistent_connections_limit = 20
+    max_threads_per_query = 16
+}
+
+
+index index_0
+{
+    type              = rt
+    path              = /u/sphinx/var/data/indexes/1/index_0
+    min_word_len      = 1
+    html_strip        = 1
+    blend_chars       = -, @, &, {, }, [, ], /, =, ^, ~, !, <, >, \#, *, $, ?, |, %, \, _, (, )
+    blend_mode        = trim_none
+    dict              = keywords
+    access_blob_attrs = mmap_preread
+    access_plain_attrs = mmap_preread
+    exceptions        = /u/sphinx/etc/sphinx-exceptions.txt
+    #morphology       = lemmatize_en
+    morphology        = none
+    #min_stemming_len  = 4
+    #index_exact_words = 1
+    min_prefix_len    = 1
+    charset_table     = 0..9, A..Z->a..z, a..z, U+0100..U+2ffff
+    rt_mem_limit      = 128M
+
+    rt_field = title_ft
+    rt_field = body_ft
+    rt_field = geoarea_ft
+    rt_field = phone_ft
+    rt_field = ip_ft
+    rt_field = email_ft
+    rt_field = domain_ft
+    rt_field = attribute_ft
+    rt_field = contact_ft
+    rt_field = log_id_ft
+    rt_field = comp_ft
+    rt_field = ocr_ft
+    rt_field = xstreets_ft
+    rt_field = user_id_ft
+    rt_field = posting_isp_ft
+    rt_field = posting_asn_ft
+    rt_field = user_isp_ft
+    rt_field = user_asn_ft
+    rt_field = oob_handle_ft
+    rt_field = areaabbrev
+    rt_field = catabbrev
+    rt_field = emailhash_ft
+    rt_field = domainhash_ft
+    rt_attr_bigint = ask
+    rt_attr_timestamp = posteddate
+    rt_attr_timestamp = recordcreated
+    rt_attr_timestamp = recordmodified
+    rt_attr_string = title
+    rt_attr_string = geoarea
+    rt_attr_string = phone
+    rt_attr_string = email
+    rt_attr_string = domain
+    rt_attr_string = attribute
+    rt_attr_string = contact
+    rt_attr_string = log_id
+    rt_attr_string = comp
+    rt_attr_string = ocr
+    rt_attr_string = xstreets
+    rt_attr_multi = attributes
+    rt_attr_json = attr
+    rt_attr_uint = ip
+    rt_attr_uint = user_id
+    rt_attr_uint = account_creation_time
+    rt_attr_uint = areaid
+    rt_attr_uint = subareaid
+    rt_attr_uint = type
+    rt_attr_uint = categoryid
+    rt_attr_uint = spamscore
+    rt_attr_uint = visible
+    rt_attr_uint = posted
+    rt_attr_uint = privacy
+    rt_attr_uint = haspic
+    rt_attr_uint = paid
+    rt_attr_uint = user_status
+    rt_attr_uint = image_count
+    rt_attr_uint = has_phone_auth
+    rt_attr_uint = has_oob_handle
+}
+
+index index_pq: index_0
+{
+    type              = percolate
+    path              = /u/sphinx/var/data/indexes/1/index_pq
+}
+index index_1: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_1
+}
+index index_2: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_2
+}
+index index_3: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_3
+}
+index index_4: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_4
+}
+index index_5: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_5
+}
+index index_6: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_6
+}
+index index_7: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_7
+}
+index index_8: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_8
+}
+index index_9: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_9
+}
+index index_10: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_10
+}
+index index_11: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_11
+}
+index index_12: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_12
+}
+index index_13: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_13
+}
+index index_14: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_14
+}
+index index_15: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_15
+}
+index index_16: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_16
+}
+index index_17: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_17
+}
+index index_18: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_18
+}
+index index_19: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_19
+}
+index index_20: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_20
+}
+index index_21: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_21
+}
+index index_22: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_22
+}
+index index_23: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_23
+}
+index index_24: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_24
+}
+index index_25: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_25
+}
+index index_26: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_26
+}
+index index_27: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_27
+}
+index index_28: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_28
+}
+index index_29: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_29
+}
+index index_30: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_30
+}
+index index_31: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_31
+}
+index index_32: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_32
+}
+index index_33: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_33
+}
+index index_34: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_34
+}
+index index_35: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_35
+}
+index index_36: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_36
+}
+index index_37: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_37
+}
+index index_38: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_38
+}
+index index_39: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_39
+}
+index index_40: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_40
+}
+index index_41: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_41
+}
+index index_42: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_42
+}
+index index_43: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_43
+}
+index index_44: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_44
+}
+index index_45: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_45
+}
+index index_46: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_46
+}
+index index_47: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_47
+}
+index index_48: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_48
+}
+index index_49: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_49
+}
+index index_50: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_50
+}
+index index_51: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_51
+}
+index index_52: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_52
+}
+index index_53: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_53
+}
+index index_54: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_54
+}
+index index_55: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_55
+}
+index index_56: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_56
+}
+index index_57: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_57
+}
+index index_58: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_58
+}
+index index_59: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_59
+}
+index index_60: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_60
+}
+index index_61: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_61
+}
+index index_62: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_62
+}
+index index_63: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_63
+}
+index index_64: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_64
+}
+index index_65: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_65
+}
+index index_66: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_66
+}
+index index_67: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_67
+}
+index index_68: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_68
+}
+index index_69: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_69
+}
+index index_70: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_70
+}
+index index_71: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_71
+}
+index index_72: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_72
+}
+index index_73: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_73
+}
+index index_74: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_74
+}
+index index_75: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_75
+}
+index index_76: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_76
+}
+index index_77: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_77
+}
+index index_78: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_78
+}
+index index_79: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_79
+}
+index index_80: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_80
+}
+index index_81: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_81
+}
+index index_82: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_82
+}
+index index_83: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_83
+}
+index index_84: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_84
+}
+index index_85: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_85
+}
+index index_86: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_86
+}
+index index_87: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_87
+}
+index index_88: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_88
+}
+index index_89: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_89
+}
+index index_90: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_90
+}
+index index_91: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_91
+}
+index index_92: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_92
+}
+index index_93: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_93
+}
+index index_94: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_94
+}
+index index_95: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_95
+}
+index index_96: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_96
+}
+index index_97: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_97
+}
+index index_98: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_98
+}
+index index_99: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_99
+}
+index index_100: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_100
+}
+index index_101: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_101
+}
+index index_102: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_102
+}
+index index_103: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_103
+}
+index index_104: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_104
+}
+index index_105: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_105
+}
+index index_106: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_106
+}
+index index_107: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_107
+}
+index index_108: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_108
+}
+index index_109: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_109
+}
+index index_110: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_110
+}
+index index_111: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_111
+}
+index index_112: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_112
+}
+index index_113: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_113
+}
+index index_114: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_114
+}
+index index_115: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_115
+}
+index index_116: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_116
+}
+index index_117: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_117
+}
+index index_118: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_118
+}
+index index_119: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_119
+}
+index index_120: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_120
+}
+index index_121: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_121
+}
+index index_122: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_122
+}
+index index_123: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_123
+}
+index index_124: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_124
+}
+index index_125: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_125
+}
+index index_126: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_126
+}
+index index_127: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_127
+}
+index index_128: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_128
+}
+index index_129: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_129
+}
+index index_130: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_130
+}
+index index_131: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_131
+}
+index index_132: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_132
+}
+index index_133: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_133
+}
+index index_134: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_134
+}
+index index_135: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_135
+}
+index index_136: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_136
+}
+index index_137: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_137
+}
+index index_138: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_138
+}
+index index_139: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_139
+}
+index index_140: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_140
+}
+index index_141: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_141
+}
+index index_142: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_142
+}
+index index_143: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_143
+}
+index index_144: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_144
+}
+index index_145: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_145
+}
+index index_146: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_146
+}
+index index_147: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_147
+}
+index index_148: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_148
+}
+index index_149: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_149
+}
+index index_150: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_150
+}
+index index_151: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_151
+}
+index index_152: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_152
+}
+index index_153: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_153
+}
+index index_154: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_154
+}
+index index_155: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_155
+}
+index index_156: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_156
+}
+index index_157: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_157
+}
+index index_158: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_158
+}
+index index_159: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_159
+}
+index index_160: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_160
+}
+index index_161: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_161
+}
+index index_162: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_162
+}
+index index_163: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_163
+}
+index index_164: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_164
+}
+index index_165: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_165
+}
+index index_166: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_166
+}
+index index_167: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_167
+}
+index index_168: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_168
+}
+index index_169: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_169
+}
+index index_170: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_170
+}
+index index_171: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_171
+}
+index index_172: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_172
+}
+index index_173: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_173
+}
+index index_174: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_174
+}
+index index_175: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_175
+}
+index index_176: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_176
+}
+index index_177: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_177
+}
+index index_178: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_178
+}
+index index_179: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_179
+}
+index index_180: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_180
+}
+index index_181: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_181
+}
+index index_182: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_182
+}
+index index_183: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_183
+}
+index index_184: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_184
+}
+index index_185: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_185
+}
+index index_186: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_186
+}
+index index_187: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_187
+}
+index index_188: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_188
+}
+index index_189: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_189
+}
+index index_190: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_190
+}
+index index_191: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_191
+}
+index index_192: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_192
+}
+index index_193: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_193
+}
+index index_194: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_194
+}
+index index_195: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_195
+}
+index index_196: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_196
+}
+index index_197: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_197
+}
+index index_198: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_198
+}
+index index_199: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_199
+}
+index index_200: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_200
+}
+index index_201: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_201
+}
+index index_202: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_202
+}
+index index_203: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_203
+}
+index index_204: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_204
+}
+index index_205: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_205
+}
+index index_206: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_206
+}
+index index_207: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_207
+}
+index index_208: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_208
+}
+index index_209: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_209
+}
+index index_210: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_210
+}
+index index_211: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_211
+}
+index index_212: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_212
+}
+index index_213: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_213
+}
+index index_214: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_214
+}
+index index_215: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_215
+}
+index index_216: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_216
+}
+index index_217: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_217
+}
+index index_218: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_218
+}
+index index_219: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_219
+}
+index index_220: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_220
+}
+index index_221: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_221
+}
+index index_222: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_222
+}
+index index_223: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_223
+}
+index index_224: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_224
+}
+index index_225: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_225
+}
+index index_226: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_226
+}
+index index_227: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_227
+}
+index index_228: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_228
+}
+index index_229: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_229
+}
+index index_230: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_230
+}
+index index_231: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_231
+}
+index index_232: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_232
+}
+index index_233: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_233
+}
+index index_234: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_234
+}
+index index_235: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_235
+}
+index index_236: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_236
+}
+index index_237: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_237
+}
+index index_238: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_238
+}
+index index_239: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_239
+}
+index index_240: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_240
+}
+index index_241: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_241
+}
+index index_242: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_242
+}
+index index_243: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_243
+}
+index index_244: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_244
+}
+index index_245: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_245
+}
+index index_246: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_246
+}
+index index_247: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_247
+}
+index index_248: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_248
+}
+index index_249: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_249
+}
+index index_250: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_250
+}
+index index_251: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_251
+}
+index index_252: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_252
+}
+index index_253: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_253
+}
+index index_254: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_254
+}
+index index_255: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_255
+}
+index index_256: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_256
+}
+index index_257: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_257
+}
+index index_258: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_258
+}
+index index_259: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_259
+}
+index index_260: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_260
+}
+index index_261: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_261
+}
+index index_262: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_262
+}
+index index_263: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_263
+}
+index index_264: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_264
+}
+index index_265: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_265
+}
+index index_266: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_266
+}
+index index_267: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_267
+}
+index index_268: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_268
+}
+index index_269: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_269
+}
+index index_270: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_270
+}
+index index_271: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_271
+}
+index index_272: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_272
+}
+index index_273: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_273
+}
+index index_274: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_274
+}
+index index_275: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_275
+}
+index index_276: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_276
+}
+index index_277: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_277
+}
+index index_278: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_278
+}
+index index_279: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_279
+}
+index index_280: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_280
+}
+index index_281: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_281
+}
+index index_282: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_282
+}
+index index_283: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_283
+}
+index index_284: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_284
+}
+index index_285: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_285
+}
+index index_286: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_286
+}
+index index_287: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_287
+}
+index index_288: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_288
+}
+index index_289: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_289
+}
+index index_290: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_290
+}
+index index_291: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_291
+}
+index index_292: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_292
+}
+index index_293: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_293
+}
+index index_294: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_294
+}
+index index_295: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_295
+}
+index index_296: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_296
+}
+index index_297: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_297
+}
+index index_298: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_298
+}
+index index_299: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_299
+}
+index index_300: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_300
+}
+index index_301: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_301
+}
+index index_302: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_302
+}
+index index_303: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_303
+}
+index index_304: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_304
+}
+index index_305: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_305
+}
+index index_306: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_306
+}
+index index_307: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_307
+}
+index index_308: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_308
+}
+index index_309: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_309
+}
+index index_310: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_310
+}
+index index_311: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_311
+}
+index index_312: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_312
+}
+index index_313: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_313
+}
+index index_314: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_314
+}
+index index_315: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_315
+}
+index index_316: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_316
+}
+index index_317: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_317
+}
+index index_318: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_318
+}
+index index_319: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_319
+}
+index index_320: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_320
+}
+index index_321: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_321
+}
+index index_322: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_322
+}
+index index_323: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_323
+}
+index index_324: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_324
+}
+index index_325: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_325
+}
+index index_326: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_326
+}
+index index_327: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_327
+}
+index index_328: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_328
+}
+index index_329: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_329
+}
+index index_330: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_330
+}
+index index_331: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_331
+}
+index index_332: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_332
+}
+index index_333: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_333
+}
+index index_334: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_334
+}
+index index_335: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_335
+}
+index index_336: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_336
+}
+index index_337: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_337
+}
+index index_338: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_338
+}
+index index_339: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_339
+}
+index index_340: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_340
+}
+index index_341: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_341
+}
+index index_342: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_342
+}
+index index_343: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_343
+}
+index index_344: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_344
+}
+index index_345: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_345
+}
+index index_346: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_346
+}
+index index_347: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_347
+}
+index index_348: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_348
+}
+index index_349: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_349
+}
+index index_350: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_350
+}
+index index_351: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_351
+}
+index index_352: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_352
+}
+index index_353: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_353
+}
+index index_354: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_354
+}
+index index_355: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_355
+}
+index index_356: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_356
+}
+index index_357: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_357
+}
+index index_358: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_358
+}
+index index_359: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_359
+}
+index index_360: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_360
+}
+index index_361: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_361
+}
+index index_362: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_362
+}
+index index_363: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_363
+}
+index index_364: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_364
+}
+index index_365: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_365
+}
+index index_366: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_366
+}
+index index_367: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_367
+}
+index index_368: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_368
+}
+index index_369: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_369
+}
+index index_370: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_370
+}
+index index_371: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_371
+}
+index index_372: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_372
+}
+index index_373: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_373
+}
+index index_374: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_374
+}
+index index_375: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_375
+}
+index index_376: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_376
+}
+index index_377: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_377
+}
+index index_378: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_378
+}
+index index_379: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_379
+}
+index index_380: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_380
+}
+index index_381: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_381
+}
+index index_382: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_382
+}
+index index_383: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_383
+}
+index index_384: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_384
+}
+index index_385: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_385
+}
+index index_386: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_386
+}
+index index_387: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_387
+}
+index index_388: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_388
+}
+index index_389: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_389
+}
+index index_390: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_390
+}
+index index_391: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_391
+}
+index index_392: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_392
+}
+index index_393: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_393
+}
+index index_394: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_394
+}
+index index_395: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_395
+}
+index index_396: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_396
+}
+index index_397: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_397
+}
+index index_398: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_398
+}
+index index_399: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_399
+}
+index index_400: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_400
+}
+index index_401: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_401
+}
+index index_402: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_402
+}
+index index_403: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_403
+}
+index index_404: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_404
+}
+index index_405: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_405
+}
+index index_406: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_406
+}
+index index_407: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_407
+}
+index index_408: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_408
+}
+index index_409: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_409
+}
+index index_410: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_410
+}
+index index_411: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_411
+}
+index index_412: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_412
+}
+index index_413: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_413
+}
+index index_414: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_414
+}
+index index_415: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_415
+}
+index index_416: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_416
+}
+index index_417: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_417
+}
+index index_418: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_418
+}
+index index_419: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_419
+}
+index index_420: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_420
+}
+index index_421: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_421
+}
+index index_422: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_422
+}
+index index_423: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_423
+}
+index index_424: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_424
+}
+index index_425: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_425
+}
+index index_426: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_426
+}
+index index_427: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_427
+}
+index index_428: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_428
+}
+index index_429: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_429
+}
+index index_430: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_430
+}
+index index_431: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_431
+}
+index index_432: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_432
+}
+index index_433: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_433
+}
+index index_434: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_434
+}
+index index_435: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_435
+}
+index index_436: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_436
+}
+index index_437: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_437
+}
+index index_438: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_438
+}
+index index_439: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_439
+}
+index index_440: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_440
+}
+index index_441: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_441
+}
+index index_442: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_442
+}
+index index_443: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_443
+}
+index index_444: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_444
+}
+index index_445: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_445
+}
+index index_446: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_446
+}
+index index_447: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_447
+}
+index index_448: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_448
+}
+index index_449: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_449
+}
+index index_450: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_450
+}
+index index_451: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_451
+}
+index index_452: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_452
+}
+index index_453: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_453
+}
+index index_454: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_454
+}
+index index_455: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_455
+}
+index index_456: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_456
+}
+index index_457: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_457
+}
+index index_458: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_458
+}
+index index_459: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_459
+}
+index index_460: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_460
+}
+index index_461: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_461
+}
+index index_462: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_462
+}
+index index_463: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_463
+}
+index index_464: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_464
+}
+index index_465: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_465
+}
+index index_466: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_466
+}
+index index_467: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_467
+}
+index index_468: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_468
+}
+index index_469: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_469
+}
+index index_470: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_470
+}
+index index_471: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_471
+}
+index index_472: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_472
+}
+index index_473: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_473
+}
+index index_474: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_474
+}
+index index_475: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_475
+}
+index index_476: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_476
+}
+index index_477: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_477
+}
+index index_478: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_478
+}
+index index_479: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_479
+}
+index index_480: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_480
+}
+index index_481: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_481
+}
+index index_482: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_482
+}
+index index_483: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_483
+}
+index index_484: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_484
+}
+index index_485: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_485
+}
+index index_486: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_486
+}
+index index_487: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_487
+}
+index index_488: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_488
+}
+index index_489: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_489
+}
+index index_490: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_490
+}
+index index_491: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_491
+}
+index index_492: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_492
+}
+index index_493: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_493
+}
+index index_494: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_494
+}
+index index_495: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_495
+}
+index index_496: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_496
+}
+index index_497: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_497
+}
+index index_498: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_498
+}
+index index_499: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_499
+}
+index index_500: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_500
+}
+index index_501: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_501
+}
+index index_502: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_502
+}
+index index_503: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_503
+}
+index index_504: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_504
+}
+index index_505: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_505
+}
+index index_506: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_506
+}
+index index_507: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_507
+}
+index index_508: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_508
+}
+index index_509: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_509
+}
+index index_510: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_510
+}
+index index_511: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_511
+}
+index index_512: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_512
+}
+index index_513: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_513
+}
+index index_514: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_514
+}
+index index_515: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_515
+}
+index index_516: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_516
+}
+index index_517: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_517
+}
+index index_518: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_518
+}
+index index_519: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_519
+}
+index index_520: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_520
+}
+index index_521: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_521
+}
+index index_522: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_522
+}
+index index_523: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_523
+}
+index index_524: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_524
+}
+index index_525: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_525
+}
+index index_526: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_526
+}
+index index_527: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_527
+}
+index index_528: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_528
+}
+index index_529: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_529
+}
+index index_530: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_530
+}
+index index_531: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_531
+}
+index index_532: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_532
+}
+index index_533: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_533
+}
+index index_534: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_534
+}
+index index_535: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_535
+}
+index index_536: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_536
+}
+index index_537: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_537
+}
+index index_538: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_538
+}
+index index_539: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_539
+}
+index index_540: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_540
+}
+index index_541: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_541
+}
+index index_542: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_542
+}
+index index_543: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_543
+}
+index index_544: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_544
+}
+index index_545: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_545
+}
+index index_546: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_546
+}
+index index_547: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_547
+}
+index index_548: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_548
+}
+index index_549: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_549
+}
+index index_550: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_550
+}
+index index_551: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_551
+}
+index index_552: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_552
+}
+index index_553: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_553
+}
+index index_554: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_554
+}
+index index_555: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_555
+}
+index index_556: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_556
+}
+index index_557: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_557
+}
+index index_558: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_558
+}
+index index_559: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_559
+}
+index index_560: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_560
+}
+index index_561: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_561
+}
+index index_562: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_562
+}
+index index_563: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_563
+}
+index index_564: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_564
+}
+index index_565: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_565
+}
+index index_566: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_566
+}
+index index_567: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_567
+}
+index index_568: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_568
+}
+index index_569: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_569
+}
+index index_570: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_570
+}
+index index_571: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_571
+}
+index index_572: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_572
+}
+index index_573: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_573
+}
+index index_574: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_574
+}
+index index_575: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_575
+}
+index index_576: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_576
+}
+index index_577: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_577
+}
+index index_578: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_578
+}
+index index_579: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_579
+}
+index index_580: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_580
+}
+index index_581: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_581
+}
+index index_582: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_582
+}
+index index_583: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_583
+}
+index index_584: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_584
+}
+index index_585: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_585
+}
+index index_586: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_586
+}
+index index_587: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_587
+}
+index index_588: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_588
+}
+index index_589: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_589
+}
+index index_590: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_590
+}
+index index_591: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_591
+}
+index index_592: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_592
+}
+index index_593: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_593
+}
+index index_594: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_594
+}
+index index_595: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_595
+}
+index index_596: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_596
+}
+index index_597: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_597
+}
+index index_598: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_598
+}
+index index_599: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_599
+}
+index index_600: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_600
+}
+index index_601: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_601
+}
+index index_602: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_602
+}
+index index_603: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_603
+}
+index index_604: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_604
+}
+index index_605: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_605
+}
+index index_606: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_606
+}
+index index_607: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_607
+}
+index index_608: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_608
+}
+index index_609: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_609
+}
+index index_610: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_610
+}
+index index_611: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_611
+}
+index index_612: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_612
+}
+index index_613: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_613
+}
+index index_614: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_614
+}
+index index_615: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_615
+}
+index index_616: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_616
+}
+index index_617: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_617
+}
+index index_618: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_618
+}
+index index_619: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_619
+}
+index index_620: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_620
+}
+index index_621: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_621
+}
+index index_622: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_622
+}
+index index_623: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_623
+}
+index index_624: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_624
+}
+index index_625: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_625
+}
+index index_626: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_626
+}
+index index_627: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_627
+}
+index index_628: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_628
+}
+index index_629: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_629
+}
+index index_630: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_630
+}
+index index_631: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_631
+}
+index index_632: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_632
+}
+index index_633: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_633
+}
+index index_634: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_634
+}
+index index_635: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_635
+}
+index index_636: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_636
+}
+index index_637: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_637
+}
+index index_638: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_638
+}
+index index_639: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_639
+}
+index index_640: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_640
+}
+index index_641: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_641
+}
+index index_642: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_642
+}
+index index_643: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_643
+}
+index index_644: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_644
+}
+index index_645: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_645
+}
+index index_646: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_646
+}
+index index_647: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_647
+}
+index index_648: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_648
+}
+index index_649: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_649
+}
+index index_650: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_650
+}
+index index_651: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_651
+}
+index index_652: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_652
+}
+index index_653: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_653
+}
+index index_654: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_654
+}
+index index_655: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_655
+}
+index index_656: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_656
+}
+index index_657: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_657
+}
+index index_658: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_658
+}
+index index_659: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_659
+}
+index index_660: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_660
+}
+index index_661: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_661
+}
+index index_662: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_662
+}
+index index_663: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_663
+}
+index index_664: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_664
+}
+index index_665: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_665
+}
+index index_666: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_666
+}
+index index_667: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_667
+}
+index index_668: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_668
+}
+index index_669: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_669
+}
+index index_670: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_670
+}
+index index_671: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_671
+}
+index index_672: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_672
+}
+index index_673: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_673
+}
+index index_674: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_674
+}
+index index_675: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_675
+}
+index index_676: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_676
+}
+index index_677: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_677
+}
+index index_678: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_678
+}
+index index_679: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_679
+}
+index index_680: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_680
+}
+index index_681: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_681
+}
+index index_682: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_682
+}
+index index_683: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_683
+}
+index index_684: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_684
+}
+index index_685: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_685
+}
+index index_686: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_686
+}
+index index_687: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_687
+}
+index index_688: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_688
+}
+index index_689: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_689
+}
+index index_690: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_690
+}
+index index_691: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_691
+}
+index index_692: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_692
+}
+index index_693: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_693
+}
+index index_694: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_694
+}
+index index_695: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_695
+}
+index index_696: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_696
+}
+index index_697: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_697
+}
+index index_698: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_698
+}
+index index_699: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_699
+}
+index index_700: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_700
+}
+index index_701: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_701
+}
+index index_702: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_702
+}
+index index_703: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_703
+}
+index index_704: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_704
+}
+index index_705: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_705
+}
+index index_706: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_706
+}
+index index_707: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_707
+}
+index index_708: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_708
+}
+index index_709: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_709
+}
+index index_710: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_710
+}
+index index_711: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_711
+}
+index index_712: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_712
+}
+index index_713: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_713
+}
+index index_714: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_714
+}
+index index_715: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_715
+}
+index index_716: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_716
+}
+index index_717: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_717
+}
+index index_718: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_718
+}
+index index_719: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_719
+}
+index index_720: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_720
+}
+index index_all_local
+{
+    type = distributed
+    local = index_1
+    local = index_2
+    local = index_3
+    local = index_4
+    local = index_5
+    local = index_6
+    local = index_7
+    local = index_8
+    local = index_9
+    local = index_10
+    local = index_11
+    local = index_12
+    local = index_13
+    local = index_14
+    local = index_15
+    local = index_16
+    local = index_17
+    local = index_18
+    local = index_19
+    local = index_20
+    local = index_21
+    local = index_22
+    local = index_23
+    local = index_24
+    local = index_25
+    local = index_26
+    local = index_27
+    local = index_28
+    local = index_29
+    local = index_30
+    local = index_31
+    local = index_32
+    local = index_33
+    local = index_34
+    local = index_35
+    local = index_36
+    local = index_37
+    local = index_38
+    local = index_39
+    local = index_40
+    local = index_41
+    local = index_42
+    local = index_43
+    local = index_44
+    local = index_45
+    local = index_46
+    local = index_47
+    local = index_48
+    local = index_49
+    local = index_50
+    local = index_51
+    local = index_52
+    local = index_53
+    local = index_54
+    local = index_55
+    local = index_56
+    local = index_57
+    local = index_58
+    local = index_59
+    local = index_60
+    local = index_61
+    local = index_62
+    local = index_63
+    local = index_64
+    local = index_65
+    local = index_66
+    local = index_67
+    local = index_68
+    local = index_69
+    local = index_70
+    local = index_71
+    local = index_72
+    local = index_73
+    local = index_74
+    local = index_75
+    local = index_76
+    local = index_77
+    local = index_78
+    local = index_79
+    local = index_80
+    local = index_81
+    local = index_82
+    local = index_83
+    local = index_84
+    local = index_85
+    local = index_86
+    local = index_87
+    local = index_88
+    local = index_89
+    local = index_90
+    local = index_91
+    local = index_92
+    local = index_93
+    local = index_94
+    local = index_95
+    local = index_96
+    local = index_97
+    local = index_98
+    local = index_99
+    local = index_100
+    local = index_101
+    local = index_102
+    local = index_103
+    local = index_104
+    local = index_105
+    local = index_106
+    local = index_107
+    local = index_108
+    local = index_109
+    local = index_110
+    local = index_111
+    local = index_112
+    local = index_113
+    local = index_114
+    local = index_115
+    local = index_116
+    local = index_117
+    local = index_118
+    local = index_119
+    local = index_120
+    local = index_121
+    local = index_122
+    local = index_123
+    local = index_124
+    local = index_125
+    local = index_126
+    local = index_127
+    local = index_128
+    local = index_129
+    local = index_130
+    local = index_131
+    local = index_132
+    local = index_133
+    local = index_134
+    local = index_135
+    local = index_136
+    local = index_137
+    local = index_138
+    local = index_139
+    local = index_140
+    local = index_141
+    local = index_142
+    local = index_143
+    local = index_144
+    local = index_145
+    local = index_146
+    local = index_147
+    local = index_148
+    local = index_149
+    local = index_150
+    local = index_151
+    local = index_152
+    local = index_153
+    local = index_154
+    local = index_155
+    local = index_156
+    local = index_157
+    local = index_158
+    local = index_159
+    local = index_160
+    local = index_161
+    local = index_162
+    local = index_163
+    local = index_164
+    local = index_165
+    local = index_166
+    local = index_167
+    local = index_168
+    local = index_169
+    local = index_170
+    local = index_171
+    local = index_172
+    local = index_173
+    local = index_174
+    local = index_175
+    local = index_176
+    local = index_177
+    local = index_178
+    local = index_179
+    local = index_180
+    local = index_181
+    local = index_182
+    local = index_183
+    local = index_184
+    local = index_185
+    local = index_186
+    local = index_187
+    local = index_188
+    local = index_189
+    local = index_190
+    local = index_191
+    local = index_192
+    local = index_193
+    local = index_194
+    local = index_195
+    local = index_196
+    local = index_197
+    local = index_198
+    local = index_199
+    local = index_200
+    local = index_201
+    local = index_202
+    local = index_203
+    local = index_204
+    local = index_205
+    local = index_206
+    local = index_207
+    local = index_208
+    local = index_209
+    local = index_210
+    local = index_211
+    local = index_212
+    local = index_213
+    local = index_214
+    local = index_215
+    local = index_216
+    local = index_217
+    local = index_218
+    local = index_219
+    local = index_220
+    local = index_221
+    local = index_222
+    local = index_223
+    local = index_224
+    local = index_225
+    local = index_226
+    local = index_227
+    local = index_228
+    local = index_229
+    local = index_230
+    local = index_231
+    local = index_232
+    local = index_233
+    local = index_234
+    local = index_235
+    local = index_236
+    local = index_237
+    local = index_238
+    local = index_239
+    local = index_240
+    local = index_241
+    local = index_242
+    local = index_243
+    local = index_244
+    local = index_245
+    local = index_246
+    local = index_247
+    local = index_248
+    local = index_249
+    local = index_250
+    local = index_251
+    local = index_252
+    local = index_253
+    local = index_254
+    local = index_255
+    local = index_256
+    local = index_257
+    local = index_258
+    local = index_259
+    local = index_260
+    local = index_261
+    local = index_262
+    local = index_263
+    local = index_264
+    local = index_265
+    local = index_266
+    local = index_267
+    local = index_268
+    local = index_269
+    local = index_270
+    local = index_271
+    local = index_272
+    local = index_273
+    local = index_274
+    local = index_275
+    local = index_276
+    local = index_277
+    local = index_278
+    local = index_279
+    local = index_280
+    local = index_281
+    local = index_282
+    local = index_283
+    local = index_284
+    local = index_285
+    local = index_286
+    local = index_287
+    local = index_288
+    local = index_289
+    local = index_290
+    local = index_291
+    local = index_292
+    local = index_293
+    local = index_294
+    local = index_295
+    local = index_296
+    local = index_297
+    local = index_298
+    local = index_299
+    local = index_300
+    local = index_301
+    local = index_302
+    local = index_303
+    local = index_304
+    local = index_305
+    local = index_306
+    local = index_307
+    local = index_308
+    local = index_309
+    local = index_310
+    local = index_311
+    local = index_312
+    local = index_313
+    local = index_314
+    local = index_315
+    local = index_316
+    local = index_317
+    local = index_318
+    local = index_319
+    local = index_320
+    local = index_321
+    local = index_322
+    local = index_323
+    local = index_324
+    local = index_325
+    local = index_326
+    local = index_327
+    local = index_328
+    local = index_329
+    local = index_330
+    local = index_331
+    local = index_332
+    local = index_333
+    local = index_334
+    local = index_335
+    local = index_336
+    local = index_337
+    local = index_338
+    local = index_339
+    local = index_340
+    local = index_341
+    local = index_342
+    local = index_343
+    local = index_344
+    local = index_345
+    local = index_346
+    local = index_347
+    local = index_348
+    local = index_349
+    local = index_350
+    local = index_351
+    local = index_352
+    local = index_353
+    local = index_354
+    local = index_355
+    local = index_356
+    local = index_357
+    local = index_358
+    local = index_359
+    local = index_360
+    local = index_361
+    local = index_362
+    local = index_363
+    local = index_364
+    local = index_365
+    local = index_366
+    local = index_367
+    local = index_368
+    local = index_369
+    local = index_370
+    local = index_371
+    local = index_372
+    local = index_373
+    local = index_374
+    local = index_375
+    local = index_376
+    local = index_377
+    local = index_378
+    local = index_379
+    local = index_380
+    local = index_381
+    local = index_382
+    local = index_383
+    local = index_384
+    local = index_385
+    local = index_386
+    local = index_387
+    local = index_388
+    local = index_389
+    local = index_390
+    local = index_391
+    local = index_392
+    local = index_393
+    local = index_394
+    local = index_395
+    local = index_396
+    local = index_397
+    local = index_398
+    local = index_399
+    local = index_400
+    local = index_401
+    local = index_402
+    local = index_403
+    local = index_404
+    local = index_405
+    local = index_406
+    local = index_407
+    local = index_408
+    local = index_409
+    local = index_410
+    local = index_411
+    local = index_412
+    local = index_413
+    local = index_414
+    local = index_415
+    local = index_416
+    local = index_417
+    local = index_418
+    local = index_419
+    local = index_420
+    local = index_421
+    local = index_422
+    local = index_423
+    local = index_424
+    local = index_425
+    local = index_426
+    local = index_427
+    local = index_428
+    local = index_429
+    local = index_430
+    local = index_431
+    local = index_432
+    local = index_433
+    local = index_434
+    local = index_435
+    local = index_436
+    local = index_437
+    local = index_438
+    local = index_439
+    local = index_440
+    local = index_441
+    local = index_442
+    local = index_443
+    local = index_444
+    local = index_445
+    local = index_446
+    local = index_447
+    local = index_448
+    local = index_449
+    local = index_450
+    local = index_451
+    local = index_452
+    local = index_453
+    local = index_454
+    local = index_455
+    local = index_456
+    local = index_457
+    local = index_458
+    local = index_459
+    local = index_460
+    local = index_461
+    local = index_462
+    local = index_463
+    local = index_464
+    local = index_465
+    local = index_466
+    local = index_467
+    local = index_468
+    local = index_469
+    local = index_470
+    local = index_471
+    local = index_472
+    local = index_473
+    local = index_474
+    local = index_475
+    local = index_476
+    local = index_477
+    local = index_478
+    local = index_479
+    local = index_480
+    local = index_481
+    local = index_482
+    local = index_483
+    local = index_484
+    local = index_485
+    local = index_486
+    local = index_487
+    local = index_488
+    local = index_489
+    local = index_490
+    local = index_491
+    local = index_492
+    local = index_493
+    local = index_494
+    local = index_495
+    local = index_496
+    local = index_497
+    local = index_498
+    local = index_499
+    local = index_500
+    local = index_501
+    local = index_502
+    local = index_503
+    local = index_504
+    local = index_505
+    local = index_506
+    local = index_507
+    local = index_508
+    local = index_509
+    local = index_510
+    local = index_511
+    local = index_512
+    local = index_513
+    local = index_514
+    local = index_515
+    local = index_516
+    local = index_517
+    local = index_518
+    local = index_519
+    local = index_520
+    local = index_521
+    local = index_522
+    local = index_523
+    local = index_524
+    local = index_525
+    local = index_526
+    local = index_527
+    local = index_528
+    local = index_529
+    local = index_530
+    local = index_531
+    local = index_532
+    local = index_533
+    local = index_534
+    local = index_535
+    local = index_536
+    local = index_537
+    local = index_538
+    local = index_539
+    local = index_540
+    local = index_541
+    local = index_542
+    local = index_543
+    local = index_544
+    local = index_545
+    local = index_546
+    local = index_547
+    local = index_548
+    local = index_549
+    local = index_550
+    local = index_551
+    local = index_552
+    local = index_553
+    local = index_554
+    local = index_555
+    local = index_556
+    local = index_557
+    local = index_558
+    local = index_559
+    local = index_560
+    local = index_561
+    local = index_562
+    local = index_563
+    local = index_564
+    local = index_565
+    local = index_566
+    local = index_567
+    local = index_568
+    local = index_569
+    local = index_570
+    local = index_571
+    local = index_572
+    local = index_573
+    local = index_574
+    local = index_575
+    local = index_576
+    local = index_577
+    local = index_578
+    local = index_579
+    local = index_580
+    local = index_581
+    local = index_582
+    local = index_583
+    local = index_584
+    local = index_585
+    local = index_586
+    local = index_587
+    local = index_588
+    local = index_589
+    local = index_590
+    local = index_591
+    local = index_592
+    local = index_593
+    local = index_594
+    local = index_595
+    local = index_596
+    local = index_597
+    local = index_598
+    local = index_599
+    local = index_600
+    local = index_601
+    local = index_602
+    local = index_603
+    local = index_604
+    local = index_605
+    local = index_606
+    local = index_607
+    local = index_608
+    local = index_609
+    local = index_610
+    local = index_611
+    local = index_612
+    local = index_613
+    local = index_614
+    local = index_615
+    local = index_616
+    local = index_617
+    local = index_618
+    local = index_619
+    local = index_620
+    local = index_621
+    local = index_622
+    local = index_623
+    local = index_624
+    local = index_625
+    local = index_626
+    local = index_627
+    local = index_628
+    local = index_629
+    local = index_630
+    local = index_631
+    local = index_632
+    local = index_633
+    local = index_634
+    local = index_635
+    local = index_636
+    local = index_637
+    local = index_638
+    local = index_639
+    local = index_640
+    local = index_641
+    local = index_642
+    local = index_643
+    local = index_644
+    local = index_645
+    local = index_646
+    local = index_647
+    local = index_648
+    local = index_649
+    local = index_650
+    local = index_651
+    local = index_652
+    local = index_653
+    local = index_654
+    local = index_655
+    local = index_656
+    local = index_657
+    local = index_658
+    local = index_659
+    local = index_660
+    local = index_661
+    local = index_662
+    local = index_663
+    local = index_664
+    local = index_665
+    local = index_666
+    local = index_667
+    local = index_668
+    local = index_669
+    local = index_670
+    local = index_671
+    local = index_672
+    local = index_673
+    local = index_674
+    local = index_675
+    local = index_676
+    local = index_677
+    local = index_678
+    local = index_679
+    local = index_680
+    local = index_681
+    local = index_682
+    local = index_683
+    local = index_684
+    local = index_685
+    local = index_686
+    local = index_687
+    local = index_688
+    local = index_689
+    local = index_690
+    local = index_691
+    local = index_692
+    local = index_693
+    local = index_694
+    local = index_695
+    local = index_696
+    local = index_697
+    local = index_698
+    local = index_699
+    local = index_700
+    local = index_701
+    local = index_702
+    local = index_703
+    local = index_704
+    local = index_705
+    local = index_706
+    local = index_707
+    local = index_708
+    local = index_709
+    local = index_710
+    local = index_711
+    local = index_712
+    local = index_713
+    local = index_714
+    local = index_715
+    local = index_716
+    local = index_717
+    local = index_718
+    local = index_719
+    local = index_720
+}
+index index_all
+{
+    type = distributed
+    local = index_1
+    local = index_2
+    local = index_3
+    local = index_4
+    local = index_5
+    local = index_6
+    local = index_7
+    local = index_8
+    local = index_9
+    local = index_10
+    local = index_11
+    local = index_12
+    local = index_13
+    local = index_14
+    local = index_15
+    local = index_16
+    local = index_17
+    local = index_18
+    local = index_19
+    local = index_20
+    local = index_21
+    local = index_22
+    local = index_23
+    local = index_24
+    local = index_25
+    local = index_26
+    local = index_27
+    local = index_28
+    local = index_29
+    local = index_30
+    local = index_31
+    local = index_32
+    local = index_33
+    local = index_34
+    local = index_35
+    local = index_36
+    local = index_37
+    local = index_38
+    local = index_39
+    local = index_40
+    local = index_41
+    local = index_42
+    local = index_43
+    local = index_44
+    local = index_45
+    local = index_46
+    local = index_47
+    local = index_48
+    local = index_49
+    local = index_50
+    local = index_51
+    local = index_52
+    local = index_53
+    local = index_54
+    local = index_55
+    local = index_56
+    local = index_57
+    local = index_58
+    local = index_59
+    local = index_60
+    local = index_61
+    local = index_62
+    local = index_63
+    local = index_64
+    local = index_65
+    local = index_66
+    local = index_67
+    local = index_68
+    local = index_69
+    local = index_70
+    local = index_71
+    local = index_72
+    local = index_73
+    local = index_74
+    local = index_75
+    local = index_76
+    local = index_77
+    local = index_78
+    local = index_79
+    local = index_80
+    local = index_81
+    local = index_82
+    local = index_83
+    local = index_84
+    local = index_85
+    local = index_86
+    local = index_87
+    local = index_88
+    local = index_89
+    local = index_90
+    local = index_91
+    local = index_92
+    local = index_93
+    local = index_94
+    local = index_95
+    local = index_96
+    local = index_97
+    local = index_98
+    local = index_99
+    local = index_100
+    local = index_101
+    local = index_102
+    local = index_103
+    local = index_104
+    local = index_105
+    local = index_106
+    local = index_107
+    local = index_108
+    local = index_109
+    local = index_110
+    local = index_111
+    local = index_112
+    local = index_113
+    local = index_114
+    local = index_115
+    local = index_116
+    local = index_117
+    local = index_118
+    local = index_119
+    local = index_120
+    local = index_121
+    local = index_122
+    local = index_123
+    local = index_124
+    local = index_125
+    local = index_126
+    local = index_127
+    local = index_128
+    local = index_129
+    local = index_130
+    local = index_131
+    local = index_132
+    local = index_133
+    local = index_134
+    local = index_135
+    local = index_136
+    local = index_137
+    local = index_138
+    local = index_139
+    local = index_140
+    local = index_141
+    local = index_142
+    local = index_143
+    local = index_144
+    local = index_145
+    local = index_146
+    local = index_147
+    local = index_148
+    local = index_149
+    local = index_150
+    local = index_151
+    local = index_152
+    local = index_153
+    local = index_154
+    local = index_155
+    local = index_156
+    local = index_157
+    local = index_158
+    local = index_159
+    local = index_160
+    local = index_161
+    local = index_162
+    local = index_163
+    local = index_164
+    local = index_165
+    local = index_166
+    local = index_167
+    local = index_168
+    local = index_169
+    local = index_170
+    local = index_171
+    local = index_172
+    local = index_173
+    local = index_174
+    local = index_175
+    local = index_176
+    local = index_177
+    local = index_178
+    local = index_179
+    local = index_180
+    local = index_181
+    local = index_182
+    local = index_183
+    local = index_184
+    local = index_185
+    local = index_186
+    local = index_187
+    local = index_188
+    local = index_189
+    local = index_190
+    local = index_191
+    local = index_192
+    local = index_193
+    local = index_194
+    local = index_195
+    local = index_196
+    local = index_197
+    local = index_198
+    local = index_199
+    local = index_200
+    local = index_201
+    local = index_202
+    local = index_203
+    local = index_204
+    local = index_205
+    local = index_206
+    local = index_207
+    local = index_208
+    local = index_209
+    local = index_210
+    local = index_211
+    local = index_212
+    local = index_213
+    local = index_214
+    local = index_215
+    local = index_216
+    local = index_217
+    local = index_218
+    local = index_219
+    local = index_220
+    local = index_221
+    local = index_222
+    local = index_223
+    local = index_224
+    local = index_225
+    local = index_226
+    local = index_227
+    local = index_228
+    local = index_229
+    local = index_230
+    local = index_231
+    local = index_232
+    local = index_233
+    local = index_234
+    local = index_235
+    local = index_236
+    local = index_237
+    local = index_238
+    local = index_239
+    local = index_240
+    local = index_241
+    local = index_242
+    local = index_243
+    local = index_244
+    local = index_245
+    local = index_246
+    local = index_247
+    local = index_248
+    local = index_249
+    local = index_250
+    local = index_251
+    local = index_252
+    local = index_253
+    local = index_254
+    local = index_255
+    local = index_256
+    local = index_257
+    local = index_258
+    local = index_259
+    local = index_260
+    local = index_261
+    local = index_262
+    local = index_263
+    local = index_264
+    local = index_265
+    local = index_266
+    local = index_267
+    local = index_268
+    local = index_269
+    local = index_270
+    local = index_271
+    local = index_272
+    local = index_273
+    local = index_274
+    local = index_275
+    local = index_276
+    local = index_277
+    local = index_278
+    local = index_279
+    local = index_280
+    local = index_281
+    local = index_282
+    local = index_283
+    local = index_284
+    local = index_285
+    local = index_286
+    local = index_287
+    local = index_288
+    local = index_289
+    local = index_290
+    local = index_291
+    local = index_292
+    local = index_293
+    local = index_294
+    local = index_295
+    local = index_296
+    local = index_297
+    local = index_298
+    local = index_299
+    local = index_300
+    local = index_301
+    local = index_302
+    local = index_303
+    local = index_304
+    local = index_305
+    local = index_306
+    local = index_307
+    local = index_308
+    local = index_309
+    local = index_310
+    local = index_311
+    local = index_312
+    local = index_313
+    local = index_314
+    local = index_315
+    local = index_316
+    local = index_317
+    local = index_318
+    local = index_319
+    local = index_320
+    local = index_321
+    local = index_322
+    local = index_323
+    local = index_324
+    local = index_325
+    local = index_326
+    local = index_327
+    local = index_328
+    local = index_329
+    local = index_330
+    local = index_331
+    local = index_332
+    local = index_333
+    local = index_334
+    local = index_335
+    local = index_336
+    local = index_337
+    local = index_338
+    local = index_339
+    local = index_340
+    local = index_341
+    local = index_342
+    local = index_343
+    local = index_344
+    local = index_345
+    local = index_346
+    local = index_347
+    local = index_348
+    local = index_349
+    local = index_350
+    local = index_351
+    local = index_352
+    local = index_353
+    local = index_354
+    local = index_355
+    local = index_356
+    local = index_357
+    local = index_358
+    local = index_359
+    local = index_360
+    local = index_361
+    local = index_362
+    local = index_363
+    local = index_364
+    local = index_365
+    local = index_366
+    local = index_367
+    local = index_368
+    local = index_369
+    local = index_370
+    local = index_371
+    local = index_372
+    local = index_373
+    local = index_374
+    local = index_375
+    local = index_376
+    local = index_377
+    local = index_378
+    local = index_379
+    local = index_380
+    local = index_381
+    local = index_382
+    local = index_383
+    local = index_384
+    local = index_385
+    local = index_386
+    local = index_387
+    local = index_388
+    local = index_389
+    local = index_390
+    local = index_391
+    local = index_392
+    local = index_393
+    local = index_394
+    local = index_395
+    local = index_396
+    local = index_397
+    local = index_398
+    local = index_399
+    local = index_400
+    local = index_401
+    local = index_402
+    local = index_403
+    local = index_404
+    local = index_405
+    local = index_406
+    local = index_407
+    local = index_408
+    local = index_409
+    local = index_410
+    local = index_411
+    local = index_412
+    local = index_413
+    local = index_414
+    local = index_415
+    local = index_416
+    local = index_417
+    local = index_418
+    local = index_419
+    local = index_420
+    local = index_421
+    local = index_422
+    local = index_423
+    local = index_424
+    local = index_425
+    local = index_426
+    local = index_427
+    local = index_428
+    local = index_429
+    local = index_430
+    local = index_431
+    local = index_432
+    local = index_433
+    local = index_434
+    local = index_435
+    local = index_436
+    local = index_437
+    local = index_438
+    local = index_439
+    local = index_440
+    local = index_441
+    local = index_442
+    local = index_443
+    local = index_444
+    local = index_445
+    local = index_446
+    local = index_447
+    local = index_448
+    local = index_449
+    local = index_450
+    local = index_451
+    local = index_452
+    local = index_453
+    local = index_454
+    local = index_455
+    local = index_456
+    local = index_457
+    local = index_458
+    local = index_459
+    local = index_460
+    local = index_461
+    local = index_462
+    local = index_463
+    local = index_464
+    local = index_465
+    local = index_466
+    local = index_467
+    local = index_468
+    local = index_469
+    local = index_470
+    local = index_471
+    local = index_472
+    local = index_473
+    local = index_474
+    local = index_475
+    local = index_476
+    local = index_477
+    local = index_478
+    local = index_479
+    local = index_480
+    local = index_481
+    local = index_482
+    local = index_483
+    local = index_484
+    local = index_485
+    local = index_486
+    local = index_487
+    local = index_488
+    local = index_489
+    local = index_490
+    local = index_491
+    local = index_492
+    local = index_493
+    local = index_494
+    local = index_495
+    local = index_496
+    local = index_497
+    local = index_498
+    local = index_499
+    local = index_500
+    local = index_501
+    local = index_502
+    local = index_503
+    local = index_504
+    local = index_505
+    local = index_506
+    local = index_507
+    local = index_508
+    local = index_509
+    local = index_510
+    local = index_511
+    local = index_512
+    local = index_513
+    local = index_514
+    local = index_515
+    local = index_516
+    local = index_517
+    local = index_518
+    local = index_519
+    local = index_520
+    local = index_521
+    local = index_522
+    local = index_523
+    local = index_524
+    local = index_525
+    local = index_526
+    local = index_527
+    local = index_528
+    local = index_529
+    local = index_530
+    local = index_531
+    local = index_532
+    local = index_533
+    local = index_534
+    local = index_535
+    local = index_536
+    local = index_537
+    local = index_538
+    local = index_539
+    local = index_540
+    local = index_541
+    local = index_542
+    local = index_543
+    local = index_544
+    local = index_545
+    local = index_546
+    local = index_547
+    local = index_548
+    local = index_549
+    local = index_550
+    local = index_551
+    local = index_552
+    local = index_553
+    local = index_554
+    local = index_555
+    local = index_556
+    local = index_557
+    local = index_558
+    local = index_559
+    local = index_560
+    local = index_561
+    local = index_562
+    local = index_563
+    local = index_564
+    local = index_565
+    local = index_566
+    local = index_567
+    local = index_568
+    local = index_569
+    local = index_570
+    local = index_571
+    local = index_572
+    local = index_573
+    local = index_574
+    local = index_575
+    local = index_576
+    local = index_577
+    local = index_578
+    local = index_579
+    local = index_580
+    local = index_581
+    local = index_582
+    local = index_583
+    local = index_584
+    local = index_585
+    local = index_586
+    local = index_587
+    local = index_588
+    local = index_589
+    local = index_590
+    local = index_591
+    local = index_592
+    local = index_593
+    local = index_594
+    local = index_595
+    local = index_596
+    local = index_597
+    local = index_598
+    local = index_599
+    local = index_600
+    local = index_601
+    local = index_602
+    local = index_603
+    local = index_604
+    local = index_605
+    local = index_606
+    local = index_607
+    local = index_608
+    local = index_609
+    local = index_610
+    local = index_611
+    local = index_612
+    local = index_613
+    local = index_614
+    local = index_615
+    local = index_616
+    local = index_617
+    local = index_618
+    local = index_619
+    local = index_620
+    local = index_621
+    local = index_622
+    local = index_623
+    local = index_624
+    local = index_625
+    local = index_626
+    local = index_627
+    local = index_628
+    local = index_629
+    local = index_630
+    local = index_631
+    local = index_632
+    local = index_633
+    local = index_634
+    local = index_635
+    local = index_636
+    local = index_637
+    local = index_638
+    local = index_639
+    local = index_640
+    local = index_641
+    local = index_642
+    local = index_643
+    local = index_644
+    local = index_645
+    local = index_646
+    local = index_647
+    local = index_648
+    local = index_649
+    local = index_650
+    local = index_651
+    local = index_652
+    local = index_653
+    local = index_654
+    local = index_655
+    local = index_656
+    local = index_657
+    local = index_658
+    local = index_659
+    local = index_660
+    local = index_661
+    local = index_662
+    local = index_663
+    local = index_664
+    local = index_665
+    local = index_666
+    local = index_667
+    local = index_668
+    local = index_669
+    local = index_670
+    local = index_671
+    local = index_672
+    local = index_673
+    local = index_674
+    local = index_675
+    local = index_676
+    local = index_677
+    local = index_678
+    local = index_679
+    local = index_680
+    local = index_681
+    local = index_682
+    local = index_683
+    local = index_684
+    local = index_685
+    local = index_686
+    local = index_687
+    local = index_688
+    local = index_689
+    local = index_690
+    local = index_691
+    local = index_692
+    local = index_693
+    local = index_694
+    local = index_695
+    local = index_696
+    local = index_697
+    local = index_698
+    local = index_699
+    local = index_700
+    local = index_701
+    local = index_702
+    local = index_703
+    local = index_704
+    local = index_705
+    local = index_706
+    local = index_707
+    local = index_708
+    local = index_709
+    local = index_710
+    local = index_711
+    local = index_712
+    local = index_713
+    local = index_714
+    local = index_715
+    local = index_716
+    local = index_717
+    local = index_718
+    local = index_719
+    local = index_720
+}
