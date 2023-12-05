@@ -1,0 +1,3 @@
+[root@cir kamil newcir]$ ps aux|grep searchd
+root      1434  0.0  0.0  72644  1312 ?        S    18:32   0:00 searchd --config /etc/manticoresearch/manticore.conf
+root      1435 17.3  9.1 1552004 347960 ?      Sl   18:32   0:56 searchd --config /etc/manticoresearch/manticore.conf
