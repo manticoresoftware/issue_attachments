@@ -1,0 +1,65 @@
+[Tue Nov  5 21:28:31.430 2019] [33072] watchdog: main process 33073 forked ok
+[Tue Nov  5 21:28:31.433 2019] [33073] listening on 172.19.17.26:9306
+[Tue Nov  5 21:28:31.434 2019] [33073] listening on 172.19.17.26:8306
+[Tue Nov  5 21:28:31.434 2019] [33073] listening on 172.19.17.26:9386
+[Tue Nov  5 21:28:31.434 2019] [33073] listening on 172.19.17.26:9346
+[Tue Nov  5 21:28:36.059 2019] [33073] WARNING: index 'index_all': no such local index 'index_all_local', SKIPPED
+[Tue Nov  5 21:28:36.059 2019] [33073] WARNING: index 'index_all': no valid local/remote indexes in distributed index - NOT SERVING
+[Tue Nov  5 21:28:36.059 2019] [33073] WARNING: index 'suggest_base': no fields configured (use rt_field directive) - NOT SERVING
+[Tue Nov  5 21:28:36.359 2019] [33073] binlog: replaying log /sandbox/dwatson/local/sphinx/sphinx/var/data/binlog/1/binlog.001
+[Tue Nov  5 21:28:36.662 2019] [33073] binlog: index index_1: recovered from tid 592691 to tid 599256
+[Tue Nov  5 21:28:36.662 2019] [33073] binlog: index index_119: recovered from tid 70 to tid 73
+[Tue Nov  5 21:28:36.662 2019] [33073] binlog: index index_3: recovered from tid 15874 to tid 17524
+[Tue Nov  5 21:28:36.662 2019] [33073] binlog: index index_64: recovered from tid 735 to tid 2376
+[Tue Nov  5 21:28:36.662 2019] [33073] binlog: index index_148: recovered from tid 20 to tid 22
+[Tue Nov  5 21:28:36.662 2019] [33073] binlog: index index_33: recovered from tid 291 to tid 311
+[Tue Nov  5 21:28:36.662 2019] [33073] binlog: index index_16: recovered from tid 882 to tid 889
+[Tue Nov  5 21:28:36.662 2019] [33073] binlog: replay stats: 10205 rows in 9888 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 7 indexes
+[Tue Nov  5 21:28:36.662 2019] [33073] binlog: finished replaying /sandbox/dwatson/local/sphinx/sphinx/var/data/binlog/1/binlog.001; 9.2 MB in 0.302 sec
+[Tue Nov  5 21:28:36.662 2019] [33073] binlog: replaying log /sandbox/dwatson/local/sphinx/sphinx/var/data/binlog/1/binlog.002
+[Tue Nov  5 21:28:36.663 2019] [33073] binlog: index index_1: recovered from tid 599256 to tid 599258
+[Tue Nov  5 21:28:36.663 2019] [33073] binlog: replay stats: 2 rows in 2 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Tue Nov  5 21:28:36.663 2019] [33073] binlog: finished replaying /sandbox/dwatson/local/sphinx/sphinx/var/data/binlog/1/binlog.002; 0.0 MB in 0.000 sec
+[Tue Nov  5 21:28:36.663 2019] [33073] binlog: finished replaying total 2 in 0.303 sec
+[Tue Nov  5 21:28:36.663 2019] [33073] accepting connections
+[Tue Nov  5 21:28:36.663 2019] [33075] prereading 725 indexes
+[Tue Nov  5 21:28:36.664 2019] [33075] prereaded 725 indexes in 0.001 sec
+[Tue Nov  5 21:29:34.172 2019] [33072] watchdog: main process 33073 killed cleanly with SIGKILL, shutting down
+[Tue Nov  5 21:29:34.180 2019] [33072] watchdog: got error 10, No child processes
+[Tue Nov  5 21:50:24.145 2019] [24626] watchdog: main process 24627 forked ok
+[Tue Nov  5 21:50:24.148 2019] [24627] listening on 172.19.17.26:9306
+[Tue Nov  5 21:50:24.149 2019] [24627] listening on 172.19.17.26:8306
+[Tue Nov  5 21:50:24.149 2019] [24627] listening on 172.19.17.26:9386
+[Tue Nov  5 21:50:24.149 2019] [24627] listening on 172.19.17.26:9346
+[Tue Nov  5 21:50:28.846 2019] [24627] WARNING: index 'index_all': no such local index 'index_all_local', SKIPPED
+[Tue Nov  5 21:50:28.846 2019] [24627] WARNING: index 'index_all': no valid local/remote indexes in distributed index - NOT SERVING
+[Tue Nov  5 21:50:28.846 2019] [24627] WARNING: index 'suggest_base': no fields configured (use rt_field directive) - NOT SERVING
+[Tue Nov  5 21:50:29.164 2019] [24627] binlog: replaying log /sandbox/dwatson/local/sphinx/sphinx/var/data/binlog/1/binlog.001
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: index index_1: recovered from tid 592691 to tid 599256
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: index index_119: recovered from tid 70 to tid 73
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: index index_3: recovered from tid 15874 to tid 17524
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: index index_64: recovered from tid 735 to tid 2376
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: index index_148: recovered from tid 20 to tid 22
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: index index_33: recovered from tid 291 to tid 311
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: index index_16: recovered from tid 882 to tid 889
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: replay stats: 10205 rows in 9888 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 7 indexes
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: finished replaying /sandbox/dwatson/local/sphinx/sphinx/var/data/binlog/1/binlog.001; 9.2 MB in 0.302 sec
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: replaying log /sandbox/dwatson/local/sphinx/sphinx/var/data/binlog/1/binlog.002
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: index index_1: recovered from tid 599256 to tid 599258
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: replay stats: 2 rows in 2 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: finished replaying /sandbox/dwatson/local/sphinx/sphinx/var/data/binlog/1/binlog.002; 0.0 MB in 0.000 sec
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: replaying log /sandbox/dwatson/local/sphinx/sphinx/var/data/binlog/1/binlog.003
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: index index_1: recovered from tid 599258 to tid 599260
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: replay stats: 2 rows in 2 commits; 0 updates, 0 reconfigure; 0 pq-add; 0 pq-delete; 1 indexes
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: finished replaying /sandbox/dwatson/local/sphinx/sphinx/var/data/binlog/1/binlog.003; 0.0 MB in 0.000 sec
+[Tue Nov  5 21:50:29.467 2019] [24627] binlog: finished replaying total 3 in 0.303 sec
+[Tue Nov  5 21:50:29.468 2019] [24629] prereading 725 indexes
+[Tue Nov  5 21:50:29.469 2019] [24629] prereaded 725 indexes in 0.001 sec
+[Tue Nov  5 21:50:29.471 2019] [24627] accepting connections
+[Tue Nov  5 22:50:24.480 2019] [24629] rt: index index_1: ramchunk saved ok (mode=periodic, last TID=592691, current TID=599262, ram=18.380 Mb, time delta=3600 sec, took=0.059 sec)
+[Tue Nov  5 22:50:24.691 2019] [24629] rt: index index_3: ramchunk saved ok (mode=periodic, last TID=15874, current TID=17524, ram=21.381 Mb, time delta=3600 sec, took=0.048 sec)
+[Tue Nov  5 22:50:25.094 2019] [30837] rt: index index_16: ramchunk saved ok (mode=periodic, last TID=882, current TID=889, ram=0.085 Mb, time delta=3600 sec, took=0.005 sec)
+[Tue Nov  5 22:50:25.555 2019] [24629] rt: index index_33: ramchunk saved ok (mode=periodic, last TID=291, current TID=311, ram=0.196 Mb, time delta=3600 sec, took=0.001 sec)
+[Tue Nov  5 22:50:25.987 2019] [30837] rt: index index_64: ramchunk saved ok (mode=periodic, last TID=735, current TID=2376, ram=0.001 Mb, time delta=3600 sec, took=0.001 sec)
+[Tue Nov  5 22:50:26.376 2019] [24629] rt: index index_119: ramchunk saved ok (mode=periodic, last TID=70, current TID=73, ram=0.001 Mb, time delta=3600 sec, took=0.001 sec)
+[Tue Nov  5 22:50:26.493 2019] [30837] rt: index index_148: ramchunk saved ok (mode=periodic, last TID=20, current TID=22, ram=0.001 Mb, time delta=3600 sec, took=0.003 sec)
