@@ -1,0 +1,2755 @@
+Script started on Wed 26 Jun 2019 04:28:27 PM UTC
+
+ [32;01m*[0m [35;01mkeychain [0m[36m2.7.1[0m ~ [32;01mhttp://www.funtoo.org[0m
+ [32;01m*[0m Found existing ssh-agent: [36m28282[0m
+ [32;01m*[0m Found existing gpg-agent: [36m28307[0m
+ [31;01m* Warning[0m: can't find /home/jzawodn/.ssh/id_rsa; skipping
+
+]0; jzawodn@acctsphinx3a.int.craigslist.org| jzawodn@acctsphinx3a:~$ sudo gdb -p 4207[H[Jjzawodn@acctsphinx3a:~$ sudo gdb -p 4207
+GNU gdb (GDB) Red Hat Enterprise Linux (7.2-92.el6)
+Copyright (C) 2010 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Attaching to process 4207
+Reading symbols from /usr/bin/searchd...Reading symbols from /usr/lib/debug/usr/bin/searchd.debug...done.
+done.
+Reading symbols from /lib64/libpthread.so.0...(no debugging symbols found)...done.
+[New LWP 2904]
+[New LWP 4412]
+[New LWP 4410]
+[New LWP 4409]
+[New LWP 4408]
+[New LWP 4407]
+[New LWP 4406]
+[New LWP 4405]
+[New LWP 4404]
+[New LWP 4403]
+[New LWP 4402]
+[New LWP 4401]
+[New LWP 4400]
+[New LWP 4399]
+[New LWP 4398]
+[New LWP 4397]
+[New LWP 4396]
+[New LWP 4395]
+[New LWP 4394]
+[New LWP 4393]
+[New LWP 4392]
+[New LWP 4391]
+[New LWP 4390]
+[New LWP 4389]
+[New LWP 4388]
+[New LWP 4387]
+[New LWP 4386]
+[New LWP 4385]
+[New LWP 4384]
+[New LWP 4383]
+[New LWP 4382]
+[New LWP 4381]
+[New LWP 4380]
+[New LWP 4379]
+[New LWP 4378]
+[New LWP 4377]
+[New LWP 4376]
+[New LWP 4375]
+[New LWP 4374]
+[New LWP 4373]
+[New LWP 4372]
+[New LWP 4371]
+[New LWP 4370]
+[New LWP 4369]
+[New LWP 4368]
+[New LWP 4367]
+[New LWP 4366]
+[New LWP 4365]
+[New LWP 4364]
+[New LWP 4363]
+[New LWP 4362]
+[New LWP 4361]
+[New LWP 4360]
+[New LWP 4359]
+[New LWP 4358]
+[New LWP 4357]
+[New LWP 4356]
+[New LWP 4355]
+[New LWP 4354]
+[New LWP 4353]
+[New LWP 4352]
+[New LWP 4351]
+[New LWP 4350]
+[New LWP 4349]
+[New LWP 4348]
+[New LWP 4347]
+[New LWP 4346]
+[New LWP 4345]
+[New LWP 4344]
+[New LWP 4343]
+[New LWP 4342]
+[New LWP 4341]
+[New LWP 4340]
+[New LWP 4339]
+[New LWP 4338]
+[New LWP 4337]
+[New LWP 4336]
+[New LWP 4335]
+[New LWP 4334]
+[New LWP 4333]
+[New LWP 4332]
+[New LWP 4331]
+[New LWP 4330]
+[New LWP 4329]
+[New LWP 4328]
+[New LWP 4327]
+[New LWP 4326]
+[New LWP 4325]
+[New LWP 4324]
+[New LWP 4323]
+[New LWP 4322]
+[New LWP 4321]
+[New LWP 4320]
+[New LWP 4319]
+[New LWP 4318]
+[New LWP 4317]
+[New LWP 4316]
+[New LWP 4315]
+[New LWP 4314]
+[New LWP 4313]
+[New LWP 4312]
+[New LWP 4311]
+[New LWP 4310]
+[New LWP 4309]
+[New LWP 4308]
+[New LWP 4307]
+[New LWP 4306]
+[New LWP 4305]
+[New LWP 4304]
+[New LWP 4303]
+[New LWP 4302]
+[New LWP 4301]
+[New LWP 4300]
+[New LWP 4299]
+[New LWP 4298]
+[New LWP 4297]
+[New LWP 4296]
+[New LWP 4295]
+[New LWP 4294]
+[New LWP 4293]
+[New LWP 4292]
+[New LWP 4291]
+[New LWP 4290]
+[New LWP 4289]
+[New LWP 4288]
+[New LWP 4287]
+[New LWP 4286]
+[New LWP 4285]
+[New LWP 4284]
+[New LWP 4283]
+[New LWP 4282]
+[New LWP 4281]
+[New LWP 4280]
+[New LWP 4279]
+[New LWP 4278]
+[New LWP 4277]
+[New LWP 4276]
+[New LWP 4275]
+[New LWP 4274]
+[New LWP 4273]
+[New LWP 4272]
+[New LWP 4271]
+[New LWP 4270]
+[New LWP 4269]
+[New LWP 4268]
+[New LWP 4267]
+[New LWP 4266]
+[New LWP 4265]
+[New LWP 4264]
+[New LWP 4263]
+[New LWP 4262]
+[New LWP 4261]
+[New LWP 4260]
+[New LWP 4259]
+[New LWP 4258]
+[New LWP 4257]
+[New LWP 4256]
+[New LWP 4255]
+[New LWP 4254]
+[New LWP 4253]
+[New LWP 4252]
+[New LWP 4251]
+[New LWP 4250]
+[New LWP 4249]
+[New LWP 4248]
+[New LWP 4247]
+[New LWP 4246]
+[New LWP 4245]
+[New LWP 4244]
+[New LWP 4243]
+[New LWP 4242]
+[New LWP 4241]
+[New LWP 4240]
+[New LWP 4239]
+[New LWP 4238]
+[New LWP 4237]
+[New LWP 4236]
+[New LWP 4235]
+[New LWP 4234]
+[New LWP 4233]
+[New LWP 4232]
+[New LWP 4231]
+[New LWP 4230]
+[New LWP 4229]
+[New LWP 4228]
+[New LWP 4227]
+[New LWP 4226]
+[New LWP 4225]
+[New LWP 4224]
+[New LWP 4223]
+[New LWP 4222]
+[New LWP 4221]
+[New LWP 4220]
+[New LWP 4219]
+[New LWP 4218]
+[New LWP 4217]
+[New LWP 4216]
+[New LWP 4215]
+[New LWP 4214]
+[New LWP 4213]
+[Thread debugging using libthread_db enabled]
+Loaded symbols for /lib64/libpthread.so.0
+Reading symbols from /lib64/libdl.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libdl.so.2
+Reading symbols from /lib64/libanl.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libanl.so.1
+Reading symbols from /lib64/librt.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib64/librt.so.1
+Reading symbols from /lib64/libz.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libz.so.1
+Reading symbols from /usr/lib64/libstdc++.so.6...(no debugging symbols found)...done.
+Loaded symbols for /usr/lib64/libstdc++.so.6
+Reading symbols from /lib64/libm.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libm.so.6
+Reading symbols from /lib64/libgcc_s.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libgcc_s.so.1
+Reading symbols from /lib64/libc.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libc.so.6
+Reading symbols from /lib64/ld-linux-x86-64.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/ld-linux-x86-64.so.2
+0x00007efe5f5ce6a3 in select () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.212.el6_10.3.x86_64 libgcc-4.4.7-23.el6.x86_64 libstdc++-4.4.7-23.el6.x86_64 zlib-1.2.3-29.el6.x86_64
+(gdb) thread apply all bt
+
+Thread 201 (Thread 0x7efb7364e700 (LWP 4213)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85cbc990)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 200 (Thread 0x7efb7354a700 (LWP 4214)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85ca68c0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 199 (Thread 0x7efb73446700 (LWP 4215)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85caabe0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 198 (Thread 0x7efb73342700 (LWP 4216)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x83d48510)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 197 (Thread 0x7efb7323e700 (LWP 4217)):
+---Type <return> to continue, or q <return> to quit---
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x8102fb90)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 196 (Thread 0x7efb7313a700 (LWP 4218)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x7fdcd150)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 195 (Thread 0x7efb73036700 (LWP 4219)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x7e97c9e0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 194 (Thread 0x7efb72f32700 (LWP 4220)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x7dd8a9f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 193 (Thread 0x7efb72e2e700 (LWP 4221)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x7d8a9d70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 192 (Thread 0x7efb72d2a700 (LWP 4222)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x7cb802e0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 191 (Thread 0x7efb72c26700 (LWP 4223)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x7cb69d20)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 190 (Thread 0x7efb72b22700 (LWP 4224)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x7b36aec0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 189 (Thread 0x7efb72a1e700 (LWP 4225)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x79cb1c40)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 188 (Thread 0x7efb7291a700 (LWP 4226)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x784283c0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 187 (Thread 0x7efb72816700 (LWP 4227)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x76bc33d0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 186 (Thread 0x7efb72712700 (LWP 4228)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x7519e740)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 185 (Thread 0x7efb7260e700 (LWP 4229)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+---Type <return> to continue, or q <return> to quit---
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x73f815c0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 184 (Thread 0x7efb7250a700 (LWP 4230)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x72a81a30)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 183 (Thread 0x7efb72406700 (LWP 4231)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x721acd30)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 182 (Thread 0x7efb72302700 (LWP 4232)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x713e6ec0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 181 (Thread 0x7efb721fe700 (LWP 4233)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x6fdc3450)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+---Type <return> to continue, or q <return> to quit---
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 180 (Thread 0x7efb720fa700 (LWP 4234)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x6fdacec0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 179 (Thread 0x7efb71ff6700 (LWP 4235)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x6ddff6b0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 178 (Thread 0x7efb71ef2700 (LWP 4236)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x6dde9100)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 177 (Thread 0x7efb71dee700 (LWP 4237)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x6baa4500)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+---Type <return> to continue, or q <return> to quit---
+
+Thread 176 (Thread 0x7efb71cea700 (LWP 4238)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x6a323fa0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 175 (Thread 0x7efb71be6700 (LWP 4239)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x69c9b7c0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 174 (Thread 0x7efb71ae2700 (LWP 4240)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x6897b1a0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 173 (Thread 0x7efb719de700 (LWP 4241)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x673bb5d0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 172 (Thread 0x7efb718da700 (LWP 4242)):
+---Type <return> to continue, or q <return> to quit---
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x673a5010)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 171 (Thread 0x7efb717d6700 (LWP 4243)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x66201440)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 170 (Thread 0x7efb716d2700 (LWP 4244)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x653ef610)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 169 (Thread 0x7efb715ce700 (LWP 4245)):
+#0  0x00007efe5f576b4a in memcpy () from /lib64/libc.so.6
+#1  0x00000000006b13c1 in StringBuilder_c::Grow (this=0x7efb715ccef0, iLen=Unhandled dwarf expression opcode 0xf3
+)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:2474
+#2  0x00000000006b15f6 in GrowEnough (this=0x7efb715ccef0, sTemplate=0x86fc2f "%li", ap=0x7efb715ccdd8)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.h:2662
+#3  StringBuilder_c::vAppendf(const char *, typedef __va_list_tag __va_list_tag *) (this=0x7efb715ccef0, sTemplate=0x86fc2f "%li", ap=0x7efb715ccdd8)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:2331
+#4  0x00000000006b174e in StringBuilder_c::Appendf (this=0x7efb715ccef0, sTemplate=Unhandled dwarf expression opcode 0xf3
+)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:2340
+#5  0x0000000000597541 in EncodeResultJson (this=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchdhttp.cpp:141
+#6  HttpSearchHandler_Plain_c::EncodeResult (this=Unhandled dwarf expression opcode 0xf3
+)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchdhttp.cpp:806
+#7  0x0000000000599488 in HttpSearchHandler_c::Process (this=0x7efb2802d330)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchdhttp.cpp:759
+---Type <return> to continue, or q <return> to quit---
+#8  0x0000000000591e26 in sphProcessHttpQuery (eEndpoint=SPH_HTTP_ENDPOINT_SQL, 
+    sQuery=0x7efb2818c710 "query=SELECT+*+FROM+index_42+WHERE+MATCH%28%27%40userid+306223145%27%29+ORDER+BY+posteddate+DESC+LIMIT+0%2C+50000+OPTION+max_matches%3D50000", tOptions=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchdhttp.cpp:1224
+#9  0x0000000000592357 in sphLoopClientHttp (pRequest=Unhandled dwarf expression opcode 0xf3
+)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchdhttp.cpp:1246
+
+#10 0x0000000000519e50 in ThdJobHttp_t::Call (this=0x7ef7cc1fed90)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:23154
+#11 0x00000000006b2cbb in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1962
+#12 CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#13 0x00000000006b0365 in sphThreadProcWrapper (pArg=0x63c24a60)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#14 0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#15 0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 168 (Thread 0x7efb714ca700 (LWP 4246)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x6304aa20)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 167 (Thread 0x7efb713c6700 (LWP 4247)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x6150c340)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 166 (Thread 0x7efb712c2700 (LWP 4248)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5fd2ab50)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+---Type <return> to continue, or q <return> to quit---
+
+Thread 165 (Thread 0x7efb711be700 (LWP 4249)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5e672400)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 164 (Thread 0x7efb710ba700 (LWP 4250)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5d0be190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 163 (Thread 0x7efb70fb6700 (LWP 4251)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5c3a94e0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 162 (Thread 0x7efb70eb2700 (LWP 4252)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5b20e380)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 161 (Thread 0x7efb70dae700 (LWP 4253)):
+---Type <return> to continue, or q <return> to quit---
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5a3cc0a0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 160 (Thread 0x7efb70caa700 (LWP 4254)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5a3b5b00)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 159 (Thread 0x7efb70ba6700 (LWP 4255)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x595da630)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 158 (Thread 0x7efb70aa2700 (LWP 4256)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x56e50490)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 157 (Thread 0x7efb7099e700 (LWP 4257)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x55c32e50)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 156 (Thread 0x7efb7089a700 (LWP 4258)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x55c1c890)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 155 (Thread 0x7efb70796700 (LWP 4259)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5546ef70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 154 (Thread 0x7efb70692700 (LWP 4260)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5388df50)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 153 (Thread 0x7efb7058e700 (LWP 4261)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x52aba2e0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 152 (Thread 0x7efb7048a700 (LWP 4262)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x52aa3d20)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 151 (Thread 0x7efb70386700 (LWP 4263)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5115df20)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 150 (Thread 0x7efb70282700 (LWP 4264)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x4f76f6d0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 149 (Thread 0x7efb7017e700 (LWP 4265)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+---Type <return> to continue, or q <return> to quit---
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x4f759110)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 148 (Thread 0x7efb7007a700 (LWP 4266)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x4ccc4af0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 147 (Thread 0x7efb6ff76700 (LWP 4267)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x4bee5790)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 146 (Thread 0x7efb6fe72700 (LWP 4268)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x4becf1d0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 145 (Thread 0x7efb6fd6e700 (LWP 4269)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x4a606eb0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+---Type <return> to continue, or q <return> to quit---
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 144 (Thread 0x7efb6fc6a700 (LWP 4270)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x49431e70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 143 (Thread 0x7efb6fb66700 (LWP 4271)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x47b37470)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 142 (Thread 0x7efb6fa62700 (LWP 4272)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x474eba50)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 141 (Thread 0x7efb6f95e700 (LWP 4273)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x46f90610)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+---Type <return> to continue, or q <return> to quit---
+
+Thread 140 (Thread 0x7efb6f85a700 (LWP 4274)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x46f7a060)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 139 (Thread 0x7efb6f756700 (LWP 4275)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x462f35a0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 138 (Thread 0x7efb6f652700 (LWP 4276)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x43459b20)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 137 (Thread 0x7efb6f54e700 (LWP 4277)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x429b1cf0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 136 (Thread 0x7efb6f44a700 (LWP 4278)):
+---Type <return> to continue, or q <return> to quit---
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x4175e280)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 135 (Thread 0x7efb6f346700 (LWP 4279)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x40f50d50)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 134 (Thread 0x7efb6f242700 (LWP 4280)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x40f3a790)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 133 (Thread 0x7efb6f13e700 (LWP 4281)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x40526190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 132 (Thread 0x7efb6f03a700 (LWP 4282)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x3e3cd780)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 131 (Thread 0x7efb6ef36700 (LWP 4283)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x3d67ff70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 130 (Thread 0x7efb6ee32700 (LWP 4284)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x3c408480)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 129 (Thread 0x7efb6ed2e700 (LWP 4285)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x3c3f1f00)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 128 (Thread 0x7efb6ec2a700 (LWP 4286)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x3a175140)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 127 (Thread 0x7efb6eb26700 (LWP 4287)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x38b8b180)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 126 (Thread 0x7efb6ea22700 (LWP 4288)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x38b74bd0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 125 (Thread 0x7efb6e91e700 (LWP 4289)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x37bb4430)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 124 (Thread 0x7efb6e81a700 (LWP 4290)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+---Type <return> to continue, or q <return> to quit---
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x35ded4f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 123 (Thread 0x7efb6e716700 (LWP 4291)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x345453c0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 122 (Thread 0x7efb6e612700 (LWP 4292)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x32d40b20)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 121 (Thread 0x7efb6e50e700 (LWP 4293)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x31cb5f30)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 120 (Thread 0x7efb6e40a700 (LWP 4294)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x3143c510)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+---Type <return> to continue, or q <return> to quit---
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 119 (Thread 0x7efb6e306700 (LWP 4295)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x308bcb60)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 118 (Thread 0x7efb6e202700 (LWP 4296)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2f3d32a0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 117 (Thread 0x7efb6e0fe700 (LWP 4297)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2e5d7f70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 116 (Thread 0x7efb6dffa700 (LWP 4298)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2d87bbf0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+---Type <return> to continue, or q <return> to quit---
+
+Thread 115 (Thread 0x7efb6def6700 (LWP 4299)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2d06ebf0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 114 (Thread 0x7efb6ddf2700 (LWP 4300)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2d058640)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 113 (Thread 0x7efb6dcee700 (LWP 4301)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2b0b80e0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 112 (Thread 0x7efb6dbea700 (LWP 4302)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2a2bdf40)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 111 (Thread 0x7efb6dae6700 (LWP 4303)):
+---Type <return> to continue, or q <return> to quit---
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2a2a79a0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 110 (Thread 0x7efb6d9e2700 (LWP 4304)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x28db5a10)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 109 (Thread 0x7efb6d8de700 (LWP 4305)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2818c080)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 108 (Thread 0x7efb6d7da700 (LWP 4306)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x25953810)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 107 (Thread 0x7efb6d6d6700 (LWP 4307)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x245cc230)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 106 (Thread 0x7efb6d5d2700 (LWP 4308)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x237e06e0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 105 (Thread 0x7efb6d4ce700 (LWP 4309)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2293c3e0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 104 (Thread 0x7efb6d3ca700 (LWP 4310)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x21b07c00)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 103 (Thread 0x7efb6d2c6700 (LWP 4311)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x21af1640)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 102 (Thread 0x7efb6d1c2700 (LWP 4312)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x1fad5430)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 101 (Thread 0x7efb6d0be700 (LWP 4313)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x1e57f140)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 100 (Thread 0x7efb6cfba700 (LWP 4314)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x1e568b80)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 99 (Thread 0x7efb6ceb6700 (LWP 4315)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+---Type <return> to continue, or q <return> to quit---
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x1d4de4b0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 98 (Thread 0x7efb6cdb2700 (LWP 4316)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x1ad4d070)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 97 (Thread 0x7efb6ccae700 (LWP 4317)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x19f7d730)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 96 (Thread 0x7efb6cbaa700 (LWP 4318)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x19f67170)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 95 (Thread 0x7efb6caa6700 (LWP 4319)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x18fba500)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+---Type <return> to continue, or q <return> to quit---
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 94 (Thread 0x7efb6c9a2700 (LWP 4320)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x1779c110)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 93 (Thread 0x7efb6c89e700 (LWP 4321)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x15e4a920)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 92 (Thread 0x7efb6c79a700 (LWP 4322)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x14a6cd70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 91 (Thread 0x7efb6c696700 (LWP 4323)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x13c60fa0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+---Type <return> to continue, or q <return> to quit---
+
+Thread 90 (Thread 0x7efb6c592700 (LWP 4324)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x12fe7d40)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 89 (Thread 0x7efb6c48e700 (LWP 4325)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x11d70d10)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 88 (Thread 0x7efb6c38a700 (LWP 4326)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x10b21430)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 87 (Thread 0x7efb6c286700 (LWP 4327)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0xf783690)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 86 (Thread 0x7efb6c182700 (LWP 4328)):
+---Type <return> to continue, or q <return> to quit---
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0xf76d0d0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 85 (Thread 0x7efb6c07e700 (LWP 4329)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0xe13afc0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 84 (Thread 0x7efb6bf7a700 (LWP 4330)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0xccd7a50)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 83 (Thread 0x7efb6be76700 (LWP 4331)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0xa120690)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 82 (Thread 0x7efb6bd72700 (LWP 4332)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x90277d0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 81 (Thread 0x7efb6bc6e700 (LWP 4333)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x7d52c90)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 80 (Thread 0x7efb6bb6a700 (LWP 4334)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x6cf6870)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 79 (Thread 0x7efb6ba66700 (LWP 4335)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x5b0c210)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 78 (Thread 0x7efb6b962700 (LWP 4336)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x563d270)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 77 (Thread 0x7efb6b85e700 (LWP 4337)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x3fc5710)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 76 (Thread 0x7efb6b75a700 (LWP 4338)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2aa1f00)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 75 (Thread 0x7efb6b656700 (LWP 4339)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x2875a00)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 74 (Thread 0x7efb6b552700 (LWP 4340)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+---Type <return> to continue, or q <return> to quit---
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x28089e0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 73 (Thread 0x7efb6b44e700 (LWP 4341)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x27f2430)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 72 (Thread 0x7efb6b34a700 (LWP 4342)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x274d0b0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 71 (Thread 0x7efb6b246700 (LWP 4343)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x206db30)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 70 (Thread 0x7efb6b142700 (LWP 4344)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x84aa7cd0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+---Type <return> to continue, or q <return> to quit---
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 69 (Thread 0x7efb6b03e700 (LWP 4345)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x84aa7d00)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 68 (Thread 0x7efb6af3a700 (LWP 4346)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85cb8750)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 67 (Thread 0x7efb6ae36700 (LWP 4347)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85cb8780)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 66 (Thread 0x7efb6ad32700 (LWP 4348)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85cb87b0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+---Type <return> to continue, or q <return> to quit---
+
+Thread 65 (Thread 0x7efb6ac2e700 (LWP 4349)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85cc1610)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 64 (Thread 0x7efb6ab2a700 (LWP 4350)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85cc1640)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 63 (Thread 0x7efb6aa26700 (LWP 4351)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85cc1670)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 62 (Thread 0x7efb6a922700 (LWP 4352)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85cc16a0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 61 (Thread 0x7efb6a81e700 (LWP 4353)):
+---Type <return> to continue, or q <return> to quit---
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86aefb70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 60 (Thread 0x7efb6a71a700 (LWP 4354)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86aefdf0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 59 (Thread 0x7efb6a616700 (LWP 4355)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af0070)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 58 (Thread 0x7efb6a512700 (LWP 4356)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af02f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 57 (Thread 0x7efb6a40e700 (LWP 4357)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af0570)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 56 (Thread 0x7efb6a30a700 (LWP 4358)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af07f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 55 (Thread 0x7efb6a206700 (LWP 4359)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af0a70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 54 (Thread 0x7efb6a102700 (LWP 4360)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af0cf0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 53 (Thread 0x7efb69ffe700 (LWP 4361)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af0f70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 52 (Thread 0x7efb69efa700 (LWP 4362)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af11f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 51 (Thread 0x7efb69df6700 (LWP 4363)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af1470)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 50 (Thread 0x7efb69cf2700 (LWP 4364)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af16f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 49 (Thread 0x7efb69bee700 (LWP 4365)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+---Type <return> to continue, or q <return> to quit---
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af1970)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 48 (Thread 0x7efb69aea700 (LWP 4366)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af1bf0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 47 (Thread 0x7efb699e6700 (LWP 4367)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af1e70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 46 (Thread 0x7efb698e2700 (LWP 4368)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af20f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 45 (Thread 0x7efb697de700 (LWP 4369)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af2370)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+---Type <return> to continue, or q <return> to quit---
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 44 (Thread 0x7efb696da700 (LWP 4370)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af25f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 43 (Thread 0x7efb695d6700 (LWP 4371)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af2870)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 42 (Thread 0x7efb694d2700 (LWP 4372)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af2af0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 41 (Thread 0x7efb693ce700 (LWP 4373)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af2d70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+---Type <return> to continue, or q <return> to quit---
+
+Thread 40 (Thread 0x7efb692ca700 (LWP 4374)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af2ff0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 39 (Thread 0x7efb691c6700 (LWP 4375)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af3270)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 38 (Thread 0x7efb690c2700 (LWP 4376)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af34f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 37 (Thread 0x7efb68fbe700 (LWP 4377)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af3770)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 36 (Thread 0x7efb68eba700 (LWP 4378)):
+---Type <return> to continue, or q <return> to quit---
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af39f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 35 (Thread 0x7efb68db6700 (LWP 4379)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af3c70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 34 (Thread 0x7efb68cb2700 (LWP 4380)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af3ef0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 33 (Thread 0x7efb68bae700 (LWP 4381)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af4170)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 32 (Thread 0x7efb68aaa700 (LWP 4382)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af43f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 31 (Thread 0x7efb689a6700 (LWP 4383)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af4670)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 30 (Thread 0x7efb688a2700 (LWP 4384)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af48f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7efb6879e700 (LWP 4385)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af4b70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7efb6869a700 (LWP 4386)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af4df0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7efb68596700 (LWP 4387)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af5070)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7efb68492700 (LWP 4388)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af52f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7efb6838e700 (LWP 4389)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af5570)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7efb6828a700 (LWP 4390)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+---Type <return> to continue, or q <return> to quit---
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af57f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7efb68186700 (LWP 4391)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af5a70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7efb68082700 (LWP 4392)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af5cf0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7efb67f7e700 (LWP 4393)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af5f70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7efb67e7a700 (LWP 4394)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af61f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+---Type <return> to continue, or q <return> to quit---
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7efb67d76700 (LWP 4395)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af6470)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7efb67c72700 (LWP 4396)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af66f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7efb67b6e700 (LWP 4397)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af6970)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7efb67a6a700 (LWP 4398)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af6bf0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+---Type <return> to continue, or q <return> to quit---
+
+Thread 15 (Thread 0x7efb67966700 (LWP 4399)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af6e70)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7efb67862700 (LWP 4400)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af70f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7efb6775e700 (LWP 4401)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af7370)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7efb6765a700 (LWP 4402)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af75f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7efb67556700 (LWP 4403)):
+---Type <return> to continue, or q <return> to quit---
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af7870)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7efb67452700 (LWP 4404)):
+#0  0x00007efe6085268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006b0ceb in CSphAutoEvent::WaitEvent (this=0x85cbc198)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1325
+#2  0x00000000006b2c4a in TickImpl (pArg=0x85cbc190)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1935
+#3  CSphThdPool::Tick (pArg=0x85cbc190) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1928
+#4  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af7af0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#5  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7efb6734e700 (LWP 4405)):
+#0  0x00007efe5f5ce6a3 in select () from /lib64/libc.so.6
+
+#1  0x00000000005aaab4 in sphSleepMsec (iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:1845
+#2  0x000000000051effd in RotationThreadFunc () at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:18827
+#3  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x85cbc880)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#4  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7efb6724a700 (LWP 4406)):
+#0  0x00007efe5f5ce6a3 in select () from /lib64/libc.so.6
+#1  0x00000000005aaab4 in sphSleepMsec (iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:1845
+#2  0x00000000004ff237 in RtBinlogAutoflushThreadFunc ()
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:18604
+#3  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af97f0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#4  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7efb67146700 (LWP 4407)):
+#0  0x00007efe5f5ce6a3 in select () from /lib64/libc.so.6
+#1  0x00000000005aaab4 in sphSleepMsec (iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:1845
+#2  0x000000000053d562 in RtFlushThreadFunc () at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:18554
+#3  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af97c0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#4  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+---Type <return> to continue, or q <return> to quit---
+
+Thread 6 (Thread 0x7efb67042700 (LWP 4408)):
+#0  0x00007efe5f5ce6a3 in select () from /lib64/libc.so.6
+#1  0x00000000005aaab4 in sphSleepMsec (iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:1845
+#2  0x0000000000500a22 in OptimizeThreadFunc () at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:19183
+#3  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af9790)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#4  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7efb66f3e700 (LWP 4409)):
+#0  0x00007efe5f5ce6a3 in select () from /lib64/libc.so.6
+#1  0x00000000005aaab4 in sphSleepMsec (iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:1845
+#2  0x0000000000525782 in RotationServiceThreadFunc ()
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:20021
+#3  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af9760)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#4  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7efb66e3a700 (LWP 4410)):
+#0  0x00007efe5f5ce6a3 in select () from /lib64/libc.so.6
+#1  0x00000000005aaab4 in sphSleepMsec (iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:1845
+#2  0x0000000000517549 in PingThreadFunc () at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:14924
+#3  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af9730)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#4  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7efb66c32700 (LWP 4412)):
+#0  0x00007efe5f5d6243 in epoll_wait () from /lib64/libc.so.6
+
+#1  0x000000000058b7a1 in EpollEvents_c::Wait (this=0x7efb500008c0, timeoutMs=Unhandled dwarf expression opcode 0xf3
+)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchdha.cpp:4137
+#2  0x000000000056bb86 in Wait (this=0x7efb66c31db0) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:21420
+#3  CSphNetLoop::Tick (this=0x7efb66c31db0) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:21761
+#4  0x000000000056c451 in CSphNetLoop::ThdTick () at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:21932
+#5  0x00000000006b0365 in sphThreadProcWrapper (pArg=0x86af96d0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#6  0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7efb652d0700 (LWP 2904)):
+#0  0x00007efe5f5769ef in memcpy () from /lib64/libc.so.6
+#1  0x00000000005b0831 in CSphLowercaser::SetRemap (this=0x7efad02742b0, pLC=0x46f89ae0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:2809
+#2  0x00000000005b16a6 in operator= (this=0x7efad02742a0, pFrom=0x46f89ad0, eMode=SPH_CLONE_INDEX)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:2916
+#3  CSphTokenizerBase::CloneBase (this=0x7efad02742a0, pFrom=0x46f89ad0, eMode=SPH_CLONE_INDEX)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:4069
+#4  0x000000000066cb4f in CSphTokenizer_UTF8<false>::Clone (this=0x46f89ad0, eMode=SPH_CLONE_INDEX)
+---Type <return> to continue, or q <return> to quit---
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:5104
+#5  0x00000000007b650c in CloneIndexingTokenizer (this=0x463067f0, dFields=..., tDoc=..., bReplace=Unhandled dwarf expression opcode 0xf3
+)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxrt.cpp:1237
+#6  RtIndex_t::AddDocument (this=0x463067f0, dFields=..., tDoc=..., bReplace=Unhandled dwarf expression opcode 0xf3
+)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxrt.cpp:1561
+#7  0x0000000000553904 in sphHandleMysqlInsert (tOut=Unhandled dwarf expression opcode 0xf3
+)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:13818
+#8  0x00000000005813c2 in CSphinxqlSession::Execute (this=Unhandled dwarf expression opcode 0xf3
+)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:17662
+#9  0x000000000055740b in LoopClientMySQL (uPacketID=@0x7efb50008a19, tSession=..., sQuery=..., iPacketLen=Unhandled dwarf expression opcode 0xf3
+)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:18297
+#10 0x0000000000557e22 in ThdJobQL_t::Call (this=0x7efb50009950)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:23059
+#11 0x00000000006b251f in CSphThdPool::Start (pArg=0x7efb50009950)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:1975
+
+#12 0x00000000006b0365 in sphThreadProcWrapper (pArg=0x7efb534733b0)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinxstd.cpp:889
+#13 0x00007efe6084eaa1 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007efe5f5d5c4d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7efe60c74720 (LWP 4207)):
+#0  0x00007efe5f5ce6a3 in select () from /lib64/libc.so.6
+#1  0x00000000005aaab4 in sphSleepMsec (iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/sphinx.cpp:1845
+#2  0x0000000000529b99 in TickHead () at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:21142
+#3  0x000000000055a75a in ServiceMain (argc=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:24517
+#4  0x00000000004fa7d7 in mainimpl (argc=5, argv=0x7fffd1ea3d58)
+    at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:24591
+#5  main (argc=5, argv=0x7fffd1ea3d58) at /usr/src/debug/manticore-2.8.2-190402-4e81114-release-stemmer-rhel6/src_0/src/searchd.cpp:24597
+(gdb) 
+(gdb) 
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 4207] will be detached.
+
+Quit anyway? (y or n) y
+Detaching from program: /usr/bin/searchd, process 4207
+]0; jzawodn@acctsphinx3a.int.craigslist.org| jzawodn@acctsphinx3a:~$ exit
+
+Script done on Wed 26 Jun 2019 04:28:53 PM UTC
