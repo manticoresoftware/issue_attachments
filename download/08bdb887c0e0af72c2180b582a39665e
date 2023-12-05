@@ -1,0 +1,1682 @@
+Script started on Thu 11 Nov 2021 06:19:21 PM UTC
+kroot@searchcat1f:/u/sphinx/var/log\[root@searchcat1f log]# gdb /usr/bin/searchd 74769
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /usr/bin/searchd...Reading symbols from /usr/lib/debug/usr/bin/searchd.debug...done.
+done.
+Attaching to program: /usr/bin/searchd, process 74769
+Reading symbols from /lib64/libssl.so.10...Reading symbols from /lib64/libssl.so.10...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libssl.so.10
+Reading symbols from /lib64/libcrypto.so.10...Reading symbols from /lib64/libcrypto.so.10...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libcrypto.so.10
+Reading symbols from /lib64/libz.so.1...Reading symbols from /lib64/libz.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libz.so.1
+Reading symbols from /lib64/libanl.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libanl.so.1
+Reading symbols from /lib64/libm.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libm.so.6
+Reading symbols from /lib64/libdl.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libdl.so.2
+Reading symbols from /lib64/libstdc++.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libstdc++.so.6
+Reading symbols from /lib64/libgcc_s.so.1...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libgcc_s.so.1
+Reading symbols from /lib64/libpthread.so.0...(no debugging symbols found)...done.
+[New LWP 74857]
+[New LWP 74856]
+[New LWP 74855]
+[New LWP 74854]
+[New LWP 74853]
+[New LWP 74852]
+[New LWP 74851]
+[New LWP 74850]
+[New LWP 74849]
+[New LWP 74848]
+[New LWP 74847]
+[New LWP 74846]
+[New LWP 74845]
+[New LWP 74844]
+[New LWP 74843]
+[New LWP 74842]
+[New LWP 74841]
+[New LWP 74840]
+[New LWP 74839]
+[New LWP 74838]
+[New LWP 74837]
+[New LWP 74836]
+[New LWP 74835]
+[New LWP 74834]
+[New LWP 74833]
+[New LWP 74832]
+[New LWP 74831]
+[New LWP 74830]
+[New LWP 74829]
+[New LWP 74828]
+[New LWP 74827]
+[New LWP 74826]
+[New LWP 74825]
+[New LWP 74824]
+[New LWP 74823]
+[New LWP 74822]
+[New LWP 74821]
+[New LWP 74820]
+[New LWP 74819]
+[New LWP 74818]
+[New LWP 74817]
+[New LWP 74816]
+[New LWP 74815]
+[New LWP 74814]
+[New LWP 74813]
+[New LWP 74812]
+[New LWP 74811]
+[New LWP 74810]
+[New LWP 74809]
+[New LWP 74808]
+[New LWP 74807]
+[New LWP 74806]
+[New LWP 74805]
+[New LWP 74804]
+[New LWP 74803]
+[New LWP 74802]
+[New LWP 74801]
+[New LWP 74800]
+[New LWP 74799]
+[New LWP 74798]
+[New LWP 74797]
+[New LWP 74796]
+[New LWP 74795]
+[New LWP 74794]
+[New LWP 74793]
+[New LWP 74792]
+[New LWP 74791]
+[New LWP 74790]
+[New LWP 74789]
+[New LWP 74788]
+[New LWP 74787]
+[New LWP 74786]
+[New LWP 74785]
+[New LWP 74784]
+[New LWP 74783]
+[New LWP 74782]
+[New LWP 74781]
+[New LWP 74780]
+[New LWP 74779]
+[New LWP 74778]
+[New LWP 74777]
+[New LWP 74776]
+[New LWP 74775]
+[New LWP 74774]
+[New LWP 74773]
+[New LWP 74772]
+[New LWP 74771]
+[New LWP 74770]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+Loaded symbols for /lib64/libpthread.so.0
+Reading symbols from /lib64/libc.so.6...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libc.so.6
+Reading symbols from /lib64/libgssapi_krb5.so.2...Reading symbols from /lib64/libgssapi_krb5.so.2...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libgssapi_krb5.so.2
+Reading symbols from /lib64/libkrb5.so.3...Reading symbols from /lib64/libkrb5.so.3...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libkrb5.so.3
+Reading symbols from /lib64/libcom_err.so.2...Reading symbols from /lib64/libcom_err.so.2...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libcom_err.so.2
+Reading symbols from /lib64/libk5crypto.so.3...Reading symbols from /lib64/libk5crypto.so.3...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libk5crypto.so.3
+Reading symbols from /lib64/ld-linux-x86-64.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/ld-linux-x86-64.so.2
+Reading symbols from /lib64/libkrb5support.so.0...Reading symbols from /lib64/libkrb5support.so.0...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libkrb5support.so.0
+Reading symbols from /lib64/libkeyutils.so.1...Reading symbols from /lib64/libkeyutils.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libkeyutils.so.1
+Reading symbols from /lib64/libresolv.so.2...(no debugging symbols found)...done.
+Loaded symbols for /lib64/libresolv.so.2
+Reading symbols from /lib64/libselinux.so.1...Reading symbols from /lib64/libselinux.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libselinux.so.1
+Reading symbols from /lib64/libpcre.so.1...Reading symbols from /lib64/libpcre.so.1...(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+Loaded symbols for /lib64/libpcre.so.1
+0x00007f882c7c9017 in pthread_join () from /lib64/libpthread.so.0
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-325.el7_9.x86_64 keyutils-libs-1.5.8-3.el7.x86_64 krb5-libs-1.15.1-50.el7.x86_64 libcom_err-1.42.9-19.el7.x86_64 libgcc-4.8.5-44.el7.x86_64 libselinux-2.5-15.el7.x86_64 libstdc++-4.8.5-44.el7.x86_64 openssl-libs-1.0.2k-22.el7_9.x86_64 pcre-8.32-17.el7.x86_64 zlib-1.2.7-19.el7_9.x86_64
+(gdb) set pagination off
+(gdb) info threads
+  Id   Target Id         Frame 
+  89   Thread 0x7f882e0f9700 (LWP 74770) "work_0" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  88   Thread 0x7f882e0d8700 (LWP 74771) "work_1" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  87   Thread 0x7f882e0b7700 (LWP 74772) "work_2" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  86   Thread 0x7f882e096700 (LWP 74773) "work_3" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  85   Thread 0x7f882e075700 (LWP 74774) "work_4" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  84   Thread 0x7f882e054700 (LWP 74775) "work_5" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  83   Thread 0x7f882e033700 (LWP 74776) "work_6" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  82   Thread 0x7f882e012700 (LWP 74777) "work_7" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  81   Thread 0x7f882dff1700 (LWP 74778) "work_8" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  80   Thread 0x7f882dfd0700 (LWP 74779) "work_9" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  79   Thread 0x7f882dfaf700 (LWP 74780) "work_10" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  78   Thread 0x7f882df8e700 (LWP 74781) "work_11" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  77   Thread 0x7f882df6d700 (LWP 74782) "work_12" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  76   Thread 0x7f882df4c700 (LWP 74783) "work_13" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  75   Thread 0x7f882afcd700 (LWP 74784) "work_14" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  74   Thread 0x7f882afac700 (LWP 74785) "work_15" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  73   Thread 0x7f882af8b700 (LWP 74786) "work_16" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  72   Thread 0x7f882af6a700 (LWP 74787) "work_17" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  71   Thread 0x7f882af49700 (LWP 74788) "work_18" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  70   Thread 0x7f882af28700 (LWP 74789) "work_19" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  69   Thread 0x7f882af07700 (LWP 74790) "work_20" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  68   Thread 0x7f882aee6700 (LWP 74791) "work_21" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  67   Thread 0x7f882aec5700 (LWP 74792) "work_22" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  66   Thread 0x7f882aea4700 (LWP 74793) "work_23" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  65   Thread 0x7f882ae83700 (LWP 74794) "work_24" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  64   Thread 0x7f882ae62700 (LWP 74795) "work_25" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  63   Thread 0x7f882ae41700 (LWP 74796) "work_26" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  62   Thread 0x7f882ae20700 (LWP 74797) "work_27" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  61   Thread 0x7f882adff700 (LWP 74798) "work_28" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  60   Thread 0x7f882adde700 (LWP 74799) "work_29" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  59   Thread 0x7f882adbd700 (LWP 74800) "work_30" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  58   Thread 0x7f882ad9c700 (LWP 74801) "work_31" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  57   Thread 0x7f882ad7b700 (LWP 74802) "work_32" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  56   Thread 0x7f882ad5a700 (LWP 74803) "work_33" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  55   Thread 0x7f882ad39700 (LWP 74804) "work_34" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  54   Thread 0x7f882ad18700 (LWP 74805) "work_35" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  53   Thread 0x7f882acf7700 (LWP 74806) "work_36" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  52   Thread 0x7f882acd6700 (LWP 74807) "work_37" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  51   Thread 0x7f882acb5700 (LWP 74808) "work_38" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  50   Thread 0x7f882ac94700 (LWP 74809) "work_39" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  49   Thread 0x7f882ac73700 (LWP 74810) "work_40" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  48   Thread 0x7f882ac52700 (LWP 74811) "work_41" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  47   Thread 0x7f882ac31700 (LWP 74812) "work_42" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  46   Thread 0x7f882ac10700 (LWP 74813) "work_43" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  45   Thread 0x7f882abef700 (LWP 74814) "work_44" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  44   Thread 0x7f882abce700 (LWP 74815) "work_45" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  43   Thread 0x7f882abad700 (LWP 74816) "work_46" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  42   Thread 0x7f882ab8c700 (LWP 74817) "work_47" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  41   Thread 0x7f882ab6b700 (LWP 74818) "work_48" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  40   Thread 0x7f882ab4a700 (LWP 74819) "work_49" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  39   Thread 0x7f882ab29700 (LWP 74820) "work_50" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  38   Thread 0x7f882ab08700 (LWP 74821) "work_51" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  37   Thread 0x7f882aae7700 (LWP 74822) "work_52" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  36   Thread 0x7f882aac6700 (LWP 74823) "work_53" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  35   Thread 0x7f882aaa5700 (LWP 74824) "work_54" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  34   Thread 0x7f882aa84700 (LWP 74825) "work_55" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  33   Thread 0x7f882aa63700 (LWP 74826) "work_56" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  32   Thread 0x7f882aa42700 (LWP 74827) "work_57" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  31   Thread 0x7f882aa21700 (LWP 74828) "work_58" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  30   Thread 0x7f882aa00700 (LWP 74829) "work_59" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  29   Thread 0x7f882a9df700 (LWP 74830) "work_60" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  28   Thread 0x7f882a9be700 (LWP 74831) "work_61" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  27   Thread 0x7f882a99d700 (LWP 74832) "work_62" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  26   Thread 0x7f882a97c700 (LWP 74833) "work_63" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  25   Thread 0x7f882a95b700 (LWP 74834) "work_64" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  24   Thread 0x7f882a93a700 (LWP 74835) "work_65" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  23   Thread 0x7f882a919700 (LWP 74836) "work_66" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  22   Thread 0x7f882a8f8700 (LWP 74837) "work_67" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  21   Thread 0x7f882a8d7700 (LWP 74838) "work_68" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  20   Thread 0x7f882a8b6700 (LWP 74839) "work_69" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  19   Thread 0x7f882a895700 (LWP 74840) "work_70" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  18   Thread 0x7f882a874700 (LWP 74841) "work_71" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  17   Thread 0x7f882a853700 (LWP 74842) "work_72" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  16   Thread 0x7f882a832700 (LWP 74843) "work_73" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  15   Thread 0x7f882a811700 (LWP 74844) "work_74" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  14   Thread 0x7f882a7f0700 (LWP 74845) "work_75" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  13   Thread 0x7f882a7cf700 (LWP 74846) "work_76" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  12   Thread 0x7f882a7ae700 (LWP 74847) "work_77" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  11   Thread 0x7f882a78d700 (LWP 74848) "work_78" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  10   Thread 0x7f882a76c700 (LWP 74849) "work_79" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  9    Thread 0x7f882a74b700 (LWP 74850) "work_80" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  8    Thread 0x7f882a72a700 (LWP 74851) "work_81" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  7    Thread 0x7f882a709700 (LWP 74852) "work_82" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  6    Thread 0x7f882a6e8700 (LWP 74853) "work_83" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  5    Thread 0x7f882a6c7700 (LWP 74854) "work_84" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  4    Thread 0x7f882a6a6700 (LWP 74855) "work_85" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  3    Thread 0x7f882a685700 (LWP 74856) "work_86" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  2    Thread 0x7f882a664700 (LWP 74857) "work_87" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+* 1    Thread 0x7f882e0fb900 (LWP 74769) "searchd" 0x00007f882c7c9017 in pthread_join () from /lib64/libpthread.so.0
+(gdb) 
+  Id   Target Id         Frame 
+  89   Thread 0x7f882e0f9700 (LWP 74770) "work_0" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  88   Thread 0x7f882e0d8700 (LWP 74771) "work_1" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  87   Thread 0x7f882e0b7700 (LWP 74772) "work_2" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  86   Thread 0x7f882e096700 (LWP 74773) "work_3" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  85   Thread 0x7f882e075700 (LWP 74774) "work_4" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  84   Thread 0x7f882e054700 (LWP 74775) "work_5" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  83   Thread 0x7f882e033700 (LWP 74776) "work_6" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  82   Thread 0x7f882e012700 (LWP 74777) "work_7" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  81   Thread 0x7f882dff1700 (LWP 74778) "work_8" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  80   Thread 0x7f882dfd0700 (LWP 74779) "work_9" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  79   Thread 0x7f882dfaf700 (LWP 74780) "work_10" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  78   Thread 0x7f882df8e700 (LWP 74781) "work_11" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  77   Thread 0x7f882df6d700 (LWP 74782) "work_12" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  76   Thread 0x7f882df4c700 (LWP 74783) "work_13" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  75   Thread 0x7f882afcd700 (LWP 74784) "work_14" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  74   Thread 0x7f882afac700 (LWP 74785) "work_15" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  73   Thread 0x7f882af8b700 (LWP 74786) "work_16" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  72   Thread 0x7f882af6a700 (LWP 74787) "work_17" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  71   Thread 0x7f882af49700 (LWP 74788) "work_18" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  70   Thread 0x7f882af28700 (LWP 74789) "work_19" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  69   Thread 0x7f882af07700 (LWP 74790) "work_20" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  68   Thread 0x7f882aee6700 (LWP 74791) "work_21" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  67   Thread 0x7f882aec5700 (LWP 74792) "work_22" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  66   Thread 0x7f882aea4700 (LWP 74793) "work_23" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  65   Thread 0x7f882ae83700 (LWP 74794) "work_24" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  64   Thread 0x7f882ae62700 (LWP 74795) "work_25" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  63   Thread 0x7f882ae41700 (LWP 74796) "work_26" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  62   Thread 0x7f882ae20700 (LWP 74797) "work_27" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  61   Thread 0x7f882adff700 (LWP 74798) "work_28" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  60   Thread 0x7f882adde700 (LWP 74799) "work_29" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  59   Thread 0x7f882adbd700 (LWP 74800) "work_30" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  58   Thread 0x7f882ad9c700 (LWP 74801) "work_31" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  57   Thread 0x7f882ad7b700 (LWP 74802) "work_32" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  56   Thread 0x7f882ad5a700 (LWP 74803) "work_33" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  55   Thread 0x7f882ad39700 (LWP 74804) "work_34" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  54   Thread 0x7f882ad18700 (LWP 74805) "work_35" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  53   Thread 0x7f882acf7700 (LWP 74806) "work_36" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  52   Thread 0x7f882acd6700 (LWP 74807) "work_37" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  51   Thread 0x7f882acb5700 (LWP 74808) "work_38" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  50   Thread 0x7f882ac94700 (LWP 74809) "work_39" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  49   Thread 0x7f882ac73700 (LWP 74810) "work_40" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  48   Thread 0x7f882ac52700 (LWP 74811) "work_41" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  47   Thread 0x7f882ac31700 (LWP 74812) "work_42" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  46   Thread 0x7f882ac10700 (LWP 74813) "work_43" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  45   Thread 0x7f882abef700 (LWP 74814) "work_44" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  44   Thread 0x7f882abce700 (LWP 74815) "work_45" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  43   Thread 0x7f882abad700 (LWP 74816) "work_46" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  42   Thread 0x7f882ab8c700 (LWP 74817) "work_47" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  41   Thread 0x7f882ab6b700 (LWP 74818) "work_48" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  40   Thread 0x7f882ab4a700 (LWP 74819) "work_49" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  39   Thread 0x7f882ab29700 (LWP 74820) "work_50" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  38   Thread 0x7f882ab08700 (LWP 74821) "work_51" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  37   Thread 0x7f882aae7700 (LWP 74822) "work_52" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  36   Thread 0x7f882aac6700 (LWP 74823) "work_53" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  35   Thread 0x7f882aaa5700 (LWP 74824) "work_54" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  34   Thread 0x7f882aa84700 (LWP 74825) "work_55" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  33   Thread 0x7f882aa63700 (LWP 74826) "work_56" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  32   Thread 0x7f882aa42700 (LWP 74827) "work_57" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  31   Thread 0x7f882aa21700 (LWP 74828) "work_58" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  30   Thread 0x7f882aa00700 (LWP 74829) "work_59" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  29   Thread 0x7f882a9df700 (LWP 74830) "work_60" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  28   Thread 0x7f882a9be700 (LWP 74831) "work_61" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  27   Thread 0x7f882a99d700 (LWP 74832) "work_62" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  26   Thread 0x7f882a97c700 (LWP 74833) "work_63" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  25   Thread 0x7f882a95b700 (LWP 74834) "work_64" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  24   Thread 0x7f882a93a700 (LWP 74835) "work_65" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  23   Thread 0x7f882a919700 (LWP 74836) "work_66" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  22   Thread 0x7f882a8f8700 (LWP 74837) "work_67" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  21   Thread 0x7f882a8d7700 (LWP 74838) "work_68" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  20   Thread 0x7f882a8b6700 (LWP 74839) "work_69" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  19   Thread 0x7f882a895700 (LWP 74840) "work_70" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  18   Thread 0x7f882a874700 (LWP 74841) "work_71" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  17   Thread 0x7f882a853700 (LWP 74842) "work_72" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  16   Thread 0x7f882a832700 (LWP 74843) "work_73" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  15   Thread 0x7f882a811700 (LWP 74844) "work_74" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  14   Thread 0x7f882a7f0700 (LWP 74845) "work_75" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  13   Thread 0x7f882a7cf700 (LWP 74846) "work_76" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  12   Thread 0x7f882a7ae700 (LWP 74847) "work_77" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  11   Thread 0x7f882a78d700 (LWP 74848) "work_78" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  10   Thread 0x7f882a76c700 (LWP 74849) "work_79" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  9    Thread 0x7f882a74b700 (LWP 74850) "work_80" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  8    Thread 0x7f882a72a700 (LWP 74851) "work_81" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  7    Thread 0x7f882a709700 (LWP 74852) "work_82" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  6    Thread 0x7f882a6e8700 (LWP 74853) "work_83" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  5    Thread 0x7f882a6c7700 (LWP 74854) "work_84" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  4    Thread 0x7f882a6a6700 (LWP 74855) "work_85" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  3    Thread 0x7f882a685700 (LWP 74856) "work_86" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  2    Thread 0x7f882a664700 (LWP 74857) "work_87" 0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+* 1    Thread 0x7f882e0fb900 (LWP 74769) "searchd" 0x00007f882c7c9017 in pthread_join () from /lib64/libpthread.so.0
+(gdb) thread apply all bt
+
+Thread 89 (Thread 0x7f882e0f9700 (LWP 74770)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6cbb0, pStack=0x7f882e0f8d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6cbb0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 88 (Thread 0x7f882e0d8700 (LWP 74771)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b5c9f0, pStack=0x7f882e0d7d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b5c9f0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 87 (Thread 0x7f882e0b7700 (LWP 74772)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b58d50, pStack=0x7f882e0b6d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b58d50) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 86 (Thread 0x7f882e096700 (LWP 74773)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b590c0, pStack=0x7f882e095d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b590c0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 85 (Thread 0x7f882e075700 (LWP 74774)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b59430, pStack=0x7f882e074d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b59430) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 84 (Thread 0x7f882e054700 (LWP 74775)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b597a0, pStack=0x7f882e053d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b597a0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 83 (Thread 0x7f882e033700 (LWP 74776)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b59b10, pStack=0x7f882e032d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b59b10) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 82 (Thread 0x7f882e012700 (LWP 74777)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b59e80, pStack=0x7f882e011d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b59e80) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 81 (Thread 0x7f882dff1700 (LWP 74778)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b5e890, pStack=0x7f882dff0d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b5e890) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 80 (Thread 0x7f882dfd0700 (LWP 74779)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b5ec00, pStack=0x7f882dfcfd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b5ec00) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 79 (Thread 0x7f882dfaf700 (LWP 74780)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b5ef70, pStack=0x7f882dfaed47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b5ef70) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 78 (Thread 0x7f882df8e700 (LWP 74781)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b5f2e0, pStack=0x7f882df8dd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b5f2e0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 77 (Thread 0x7f882df6d700 (LWP 74782)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b5f650, pStack=0x7f882df6cd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b5f650) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 76 (Thread 0x7f882df4c700 (LWP 74783)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b5f9c0, pStack=0x7f882df4bd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b5f9c0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 75 (Thread 0x7f882afcd700 (LWP 74784)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b5fd30, pStack=0x7f882afccd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b5fd30) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 74 (Thread 0x7f882afac700 (LWP 74785)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b600a0, pStack=0x7f882afabd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b600a0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 73 (Thread 0x7f882af8b700 (LWP 74786)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b60410, pStack=0x7f882af8ad47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b60410) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 72 (Thread 0x7f882af6a700 (LWP 74787)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b60780, pStack=0x7f882af69d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b60780) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 71 (Thread 0x7f882af49700 (LWP 74788)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b60af0, pStack=0x7f882af48d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b60af0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 70 (Thread 0x7f882af28700 (LWP 74789)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b60e60, pStack=0x7f882af27d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b60e60) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 69 (Thread 0x7f882af07700 (LWP 74790)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b611d0, pStack=0x7f882af06d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b611d0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 68 (Thread 0x7f882aee6700 (LWP 74791)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b61540, pStack=0x7f882aee5d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b61540) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 67 (Thread 0x7f882aec5700 (LWP 74792)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b618b0, pStack=0x7f882aec4d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b618b0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 66 (Thread 0x7f882aea4700 (LWP 74793)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b61c20, pStack=0x7f882aea3d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b61c20) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 65 (Thread 0x7f882ae83700 (LWP 74794)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b61f90, pStack=0x7f882ae82d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b61f90) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 64 (Thread 0x7f882ae62700 (LWP 74795)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b62300, pStack=0x7f882ae61d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b62300) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 63 (Thread 0x7f882ae41700 (LWP 74796)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b62670, pStack=0x7f882ae40d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b62670) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 62 (Thread 0x7f882ae20700 (LWP 74797)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b629e0, pStack=0x7f882ae1fd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b629e0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 61 (Thread 0x7f882adff700 (LWP 74798)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b62d50, pStack=0x7f882adfed47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b62d50) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 60 (Thread 0x7f882adde700 (LWP 74799)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b630c0, pStack=0x7f882adddd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b630c0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 59 (Thread 0x7f882adbd700 (LWP 74800)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b63430, pStack=0x7f882adbcd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b63430) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 58 (Thread 0x7f882ad9c700 (LWP 74801)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b637a0, pStack=0x7f882ad9bd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b637a0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 57 (Thread 0x7f882ad7b700 (LWP 74802)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b63b10, pStack=0x7f882ad7ad47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b63b10) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 56 (Thread 0x7f882ad5a700 (LWP 74803)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b63e80, pStack=0x7f882ad59d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b63e80) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 55 (Thread 0x7f882ad39700 (LWP 74804)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b641f0, pStack=0x7f882ad38d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b641f0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 54 (Thread 0x7f882ad18700 (LWP 74805)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b64560, pStack=0x7f882ad17d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b64560) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 53 (Thread 0x7f882acf7700 (LWP 74806)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b648d0, pStack=0x7f882acf6d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b648d0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 52 (Thread 0x7f882acd6700 (LWP 74807)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b64c40, pStack=0x7f882acd5d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b64c40) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 51 (Thread 0x7f882acb5700 (LWP 74808)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b64fb0, pStack=0x7f882acb4d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b64fb0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 50 (Thread 0x7f882ac94700 (LWP 74809)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b65320, pStack=0x7f882ac93d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b65320) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 49 (Thread 0x7f882ac73700 (LWP 74810)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b65690, pStack=0x7f882ac72d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b65690) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 48 (Thread 0x7f882ac52700 (LWP 74811)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b65a00, pStack=0x7f882ac51d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b65a00) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 47 (Thread 0x7f882ac31700 (LWP 74812)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b65d70, pStack=0x7f882ac30d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b65d70) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 46 (Thread 0x7f882ac10700 (LWP 74813)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b660e0, pStack=0x7f882ac0fd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b660e0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 45 (Thread 0x7f882abef700 (LWP 74814)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b66450, pStack=0x7f882abeed47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b66450) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 44 (Thread 0x7f882abce700 (LWP 74815)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b667c0, pStack=0x7f882abcdd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b667c0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 43 (Thread 0x7f882abad700 (LWP 74816)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b66b30, pStack=0x7f882abacd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b66b30) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 42 (Thread 0x7f882ab8c700 (LWP 74817)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b66ea0, pStack=0x7f882ab8bd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b66ea0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 41 (Thread 0x7f882ab6b700 (LWP 74818)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b67210, pStack=0x7f882ab6ad47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b67210) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 40 (Thread 0x7f882ab4a700 (LWP 74819)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b67580, pStack=0x7f882ab49d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b67580) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 39 (Thread 0x7f882ab29700 (LWP 74820)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b678f0, pStack=0x7f882ab28d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b678f0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 38 (Thread 0x7f882ab08700 (LWP 74821)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b67c60, pStack=0x7f882ab07d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b67c60) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 37 (Thread 0x7f882aae7700 (LWP 74822)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b67fd0, pStack=0x7f882aae6d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b67fd0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 36 (Thread 0x7f882aac6700 (LWP 74823)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b68340, pStack=0x7f882aac5d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b68340) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 35 (Thread 0x7f882aaa5700 (LWP 74824)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b686b0, pStack=0x7f882aaa4d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b686b0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 34 (Thread 0x7f882aa84700 (LWP 74825)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b68a20, pStack=0x7f882aa83d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b68a20) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 33 (Thread 0x7f882aa63700 (LWP 74826)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b68d90, pStack=0x7f882aa62d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b68d90) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 32 (Thread 0x7f882aa42700 (LWP 74827)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b69100, pStack=0x7f882aa41d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b69100) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 31 (Thread 0x7f882aa21700 (LWP 74828)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b69470, pStack=0x7f882aa20d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b69470) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 30 (Thread 0x7f882aa00700 (LWP 74829)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b697e0, pStack=0x7f882a9ffd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b697e0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7f882a9df700 (LWP 74830)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b69b50, pStack=0x7f882a9ded47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b69b50) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7f882a9be700 (LWP 74831)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b69ec0, pStack=0x7f882a9bdd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b69ec0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7f882a99d700 (LWP 74832)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6a230, pStack=0x7f882a99cd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6a230) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7f882a97c700 (LWP 74833)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6a5a0, pStack=0x7f882a97bd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6a5a0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7f882a95b700 (LWP 74834)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6a910, pStack=0x7f882a95ad47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6a910) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7f882a93a700 (LWP 74835)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6ac80, pStack=0x7f882a939d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6ac80) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7f882a919700 (LWP 74836)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6aff0, pStack=0x7f882a918d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6aff0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7f882a8f8700 (LWP 74837)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6b360, pStack=0x7f882a8f7d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6b360) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7f882a8d7700 (LWP 74838)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6b6d0, pStack=0x7f882a8d6d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6b6d0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7f882a8b6700 (LWP 74839)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6ba40, pStack=0x7f882a8b5d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6ba40) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7f882a895700 (LWP 74840)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6bdb0, pStack=0x7f882a894d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6bdb0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7f882a874700 (LWP 74841)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6c120, pStack=0x7f882a873d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6c120) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7f882a853700 (LWP 74842)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6c490, pStack=0x7f882a852d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6c490) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7f882a832700 (LWP 74843)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1b6c800, pStack=0x7f882a831d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1b6c800) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 15 (Thread 0x7f882a811700 (LWP 74844)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c6e270, pStack=0x7f882a810d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c6e270) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7f882a7f0700 (LWP 74845)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c6e5e0, pStack=0x7f882a7efd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c6e5e0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7f882a7cf700 (LWP 74846)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c6e950, pStack=0x7f882a7ced47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c6e950) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7f882a7ae700 (LWP 74847)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c6ecc0, pStack=0x7f882a7add47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c6ecc0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7f882a78d700 (LWP 74848)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c6f030, pStack=0x7f882a78cd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c6f030) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7f882a76c700 (LWP 74849)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c6f3a0, pStack=0x7f882a76bd47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c6f3a0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7f882a74b700 (LWP 74850)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c6f710, pStack=0x7f882a74ad47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c6f710) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7f882a72a700 (LWP 74851)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c6fa80, pStack=0x7f882a729d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c6fa80) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7f882a709700 (LWP 74852)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c6fdf0, pStack=0x7f882a708d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c6fdf0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7f882a6e8700 (LWP 74853)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c70160, pStack=0x7f882a6e7d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c70160) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7f882a6c7700 (LWP 74854)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c704d0, pStack=0x7f882a6c6d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c704d0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7f882a6a6700 (LWP 74855)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c70840, pStack=0x7f882a6a5d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c70840) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7f882a685700 (LWP 74856)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c70bb0, pStack=0x7f882a684d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c70bb0) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7f882a664700 (LWP 74857)):
+#0  0x00007f882c7cba35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000094e7d1 in Wait<CSphScopedLock<CSphMutex> > (this=<optimized out>, dLock=...) at ../src/event.h:240
+#2  Threads::Service_t::do_run_one (this=0x1b5c5e0, dLock=..., this_thread=...) at ../src/threadutils.cpp:344
+#3  0x000000000094e62e in Threads::Service_t::run (this=0x1b5c5e0) at ../src/threadutils.cpp:325
+#4  0x000000000094e438 in Threads::ThreadPool_c::loop (this=0x1b5c5d0, iChild=<optimized out>) at ../src/threadutils.cpp:729
+#5  0x000000000094d0f7 in operator() (this=0x1b5c61c) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#6  operator() (this=0x1b5c61c) at ../src/threadutils.cpp:1685
+#7  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:297
+#8  0x000000000094c3fc in operator() (this=<optimized out>) at /opt/rh/devtoolset-8/root/usr/include/c++/8/bits/std_function.h:687
+#9  RuntimeThreadContext_t::Run (this=0x1c70f20, pStack=0x7f882a663d47) at ../src/threadutils.cpp:1531
+#10 0x000000000094c4e1 in ThreadProcWrapper_fn (pArg=0x1c70f20) at ../src/threadutils.cpp:1563
+#11 0x00007f882c7c7ea5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f882c4f0b0d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f882e0fb900 (LWP 74769)):
+#0  0x00007f882c7c9017 in pthread_join () from /lib64/libpthread.so.0
+#1  0x000000000094e06b in Join (pThread=<optimized out>) at ../src/threadutils.cpp:1351
+#2  Threads::ThreadPool_c::StopAll (this=0x1b5c5d0) at ../src/threadutils.cpp:813
+#3  0x000000000047c1b3 in Shutdown () at ../src/searchd.cpp:773
+#4  0x00000000004c63f7 in CheckSignals () at ../src/searchd.cpp:18534
+#5  0x00000000004c640a in TickHead () at ../src/searchd.cpp:18569
+#6  0x00000000004d2f55 in ServiceMain (argc=<optimized out>, argv=<optimized out>) at ../src/searchd.cpp:19984
+#7  0x00000000004d41cb in mainimpl (argc=772774352, argv=0x7ffcfd426e28) at ../src/searchd.cpp:20034
+#8  main (argc=772774352, argv=0x7ffcfd426e28) at ../src/searchd.cpp:20040
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 74769] will be detached.
+
+Quit anyway? (y or n) y
+Quitting: Couldn't write debug register: No such process.
+kroot@searchcat1f:/u/sphinx/var/log\[root@searchcat1f log]# exit
+
+Script done on Thu 11 Nov 2021 06:20:08 PM UTC
