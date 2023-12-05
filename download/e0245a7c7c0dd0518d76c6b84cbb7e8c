@@ -1,0 +1,1006 @@
+
+# archive searchd config (sphinx/rtsd), instance 1
+#
+
+common
+{
+    json_autoconv_numbers = 1
+    #lemmatizer_base       = /u/sphinx/etc/A
+    # disable progressive merge to to corruption bug(s).
+    #
+    # https://gitlab.com/manticoresearch/craigslist/issues/12
+    #
+    # (ask jzawodn for details if you care)
+    #
+    progressive_merge     = 0
+}
+
+searchd
+{
+    workers         = thread_pool
+    pid_file        = /var/run/sphinx/searchd-1.pid
+    log             = /u/sphinx/var/log/searchd-1.log
+    query_log       = /u/sphinx/var/log/query-1.log
+    query_log_format= sphinxql
+    listen          = 10.21.30.80:9306:mysql41
+    listen          = 10.21.30.80:8306:mysql41_vip
+    listen          = 10.21.30.80:9386:http
+    listen          = 10.21.30.80:9322:sphinx
+    max_packet_size = 32M
+
+    # binlog stuff
+    binlog_flush         = 2
+    binlog_path          = /u/sphinx/var/data/binlog/1
+    binlog_max_log_size  = 512M
+
+    # flush every 60 minutes
+    rt_flush_period   = 3600
+
+    expansion_limit  = 1000
+    preopen_indexes  = 1
+    max_children     = 192
+    queue_max_length = 64
+
+    agent_query_timeout = 30000
+}
+
+
+index index_0
+{
+    type              = rt
+    path              = /u/sphinx/var/data/indexes/1/index_0
+    min_word_len      = 1
+    html_strip        = 1
+    blend_chars       = -, @, &
+    blend_mode        = trim_none, skip_pure
+    dict              = keywords
+    ondisk_attrs      = 1
+    exceptions        = /etc/sysconfig/sphinx-exceptions.txt
+    #morphology       = lemmatize_en
+    morphology        = none
+    #min_stemming_len  = 4
+    #index_exact_words = 1
+    min_prefix_len    = 1
+    charset_table     = 0..9, _, \
+U+0061, U+0062, U+0063, U+0064, U+0065, U+0066, U+0067, U+0068, U+0069, \
+U+006A, U+006B, U+006C, U+006D, U+006E, U+006F, U+0070, U+0071, U+0072, U+0073, \
+U+0074, U+0075, U+0076, U+0077, U+0078, U+0079, U+007A, U+03BC, U+00E0, U+00E1, \
+U+00E2, U+00E3, U+00E4, U+00E5, U+00E6, U+00E7, U+00E8, U+00E9, U+00EA, U+00EB, \
+U+00EC, U+00ED, U+00EE, U+00EF, U+00F0, U+00F1, U+00F2, U+00F3, U+00F4, U+00F5, \
+U+00F6, U+00F8, U+00F9, U+00FA, U+00FB, U+00FC, U+00FD, U+00FE, U+0101, U+0103, \
+U+0105, U+0107, U+0109, U+010B, U+010D, U+010F, U+0111, U+0113, U+0115, U+0117, \
+U+0119, U+011B, U+011D, U+011F, U+0121, U+0123, U+0125, U+0127, U+0129, U+012B, \
+U+012D, U+012F, U+0133, U+0135, U+0137, U+013A, U+013C, U+013E, U+0140, U+0142, \
+U+0144, U+0146, U+0148, U+014B, U+014D, U+014F, U+0151, U+0153, U+0155, U+0157, \
+U+0159, U+015B, U+015D, U+015F, U+0161, U+0163, U+0165, U+0167, U+0169, U+016B, \
+U+016D, U+016F, U+0171, U+0173, U+0175, U+0177, U+00FF, U+017A, U+017C, U+017E, \
+U+0073, U+0253, U+0183, U+0185, U+0254, U+0188, U+0256, U+0257, U+018C, U+01DD, \
+U+0259, U+025B, U+0192, U+0260, U+0263, U+0269, U+0268, U+0199, U+026F, U+0272, \
+U+0275, U+01A1, U+01A3, U+01A5, U+0280, U+01A8, U+0283, U+01AD, U+0288, U+01B0, \
+U+028A, U+028B, U+01B4, U+01B6, U+0292, U+01B9, U+01BD, U+01C6, U+01C6, U+01C9, \
+U+01C9, U+01CC, U+01CC, U+01CE, U+01D0, U+01D2, U+01D4, U+01D6, U+01D8, U+01DA, \
+U+01DC, U+01DF, U+01E1, U+01E3, U+01E5, U+01E7, U+01E9, U+01EB, U+01ED, U+01EF, \
+U+01F3, U+01F3, U+01F5, U+0195, U+01BF, U+01F9, U+01FB, U+01FD, U+01FF, U+0201, \
+U+0203, U+0205, U+0207, U+0209, U+020B, U+020D, U+020F, U+0211, U+0213, U+0215, \
+U+0217, U+0219, U+021B, U+021D, U+021F, U+019E, U+0223, U+0225, U+0227, U+0229, \
+U+022B, U+022D, U+022F, U+0231, U+0233, U+03B9, U+03AC, U+03AD, U+03AE, U+03AF, \
+U+03CC, U+03CD, U+03CE, U+03B1, U+03B2, U+03B3, U+03B4, U+03B5, U+03B6, U+03B7, \
+U+03B8, U+03B9, U+03BA, U+03BB, U+03BC, U+03BD, U+03BE, U+03BF, U+03C0, U+03C1, \
+U+03C3, U+03C4, U+03C5, U+03C6, U+03C7, U+03C8, U+03C9, U+03CA, U+03CB, U+03C3, \
+U+03B2, U+03B8, U+03C6, U+03C0, U+03D9, U+03DB, U+03DD, U+03DF, U+03E1, U+03E3, \
+U+03E5, U+03E7, U+03E9, U+03EB, U+03ED, U+03EF, U+03BA, U+03C1, U+03C3, U+03B8, \
+U+03B5, U+0450, U+0451, U+0452, U+0453, U+0454, U+0455, U+0456, U+0457, U+0458, \
+U+0459, U+045A, U+045B, U+045C, U+045D, U+045E, U+045F, U+0430, U+0431, U+0432, \
+U+0433, U+0434, U+0435, U+0436, U+0437, U+0438, U+0439, U+043A, U+043B, U+043C, \
+U+043D, U+043E, U+043F, U+0440, U+0441, U+0442, U+0443, U+0444, U+0445, U+0446, \
+U+0447, U+0448, U+0449, U+044A, U+044B, U+044C, U+044D, U+044E, U+044F, U+0461, \
+U+0463, U+0465, U+0467, U+0469, U+046B, U+046D, U+046F, U+0471, U+0473, U+0475, \
+U+0477, U+0479, U+047B, U+047D, U+047F, U+0481, U+048B, U+048D, U+048F, U+0491, \
+U+0493, U+0495, U+0497, U+0499, U+049B, U+049D, U+049F, U+04A1, U+04A3, U+04A5, \
+U+04A7, U+04A9, U+04AB, U+04AD, U+04AF, U+04B1, U+04B3, U+04B5, U+04B7, U+04B9, \
+U+04BB, U+04BD, U+04BF, U+04C2, U+04C4, U+04C6, U+04C8, U+04CA, U+04CC, U+04CE, \
+U+04D1, U+04D3, U+04D5, U+04D7, U+04D9, U+04DB, U+04DD, U+04DF, U+04E1, U+04E3, \
+U+04E5, U+04E7, U+04E9, U+04EB, U+04ED, U+04EF, U+04F1, U+04F3, U+04F5, U+04F9, \
+U+0501, U+0503, U+0505, U+0507, U+0509, U+050B, U+050D, U+050F, U+0561, U+0562, \
+U+0563, U+0564, U+0565, U+0566, U+0567, U+0568, U+0569, U+056A, U+056B, U+056C, \
+U+056D, U+056E, U+056F, U+0570, U+0571, U+0572, U+0573, U+0574, U+0575, U+0576, \
+U+0577, U+0578, U+0579, U+057A, U+057B, U+057C, U+057D, U+057E, U+057F, U+0580, \
+U+0581, U+0582, U+0583, U+0584, U+0585, U+0586, U+1E01, U+1E03, U+1E05, U+1E07, \
+U+1E09, U+1E0B, U+1E0D, U+1E0F, U+1E11, U+1E13, U+1E15, U+1E17, U+1E19, U+1E1B, \
+U+1E1D, U+1E1F, U+1E21, U+1E23, U+1E25, U+1E27, U+1E29, U+1E2B, U+1E2D, U+1E2F, \
+U+1E31, U+1E33, U+1E35, U+1E37, U+1E39, U+1E3B, U+1E3D, U+1E3F, U+1E41, U+1E43, \
+U+1E45, U+1E47, U+1E49, U+1E4B, U+1E4D, U+1E4F, U+1E51, U+1E53, U+1E55, U+1E57, \
+U+1E59, U+1E5B, U+1E5D, U+1E5F, U+1E61, U+1E63, U+1E65, U+1E67, U+1E69, U+1E6B, \
+U+1E6D, U+1E6F, U+1E71, U+1E73, U+1E75, U+1E77, U+1E79, U+1E7B, U+1E7D, U+1E7F, \
+U+1E81, U+1E83, U+1E85, U+1E87, U+1E89, U+1E8B, U+1E8D, U+1E8F, U+1E91, U+1E93, \
+U+1E95, U+1E61, U+1EA1, U+1EA3, U+1EA5, U+1EA7, U+1EA9, U+1EAB, U+1EAD, U+1EAF, \
+U+1EB1, U+1EB3, U+1EB5, U+1EB7, U+1EB9, U+1EBB, U+1EBD, U+1EBF, U+1EC1, U+1EC3, \
+U+1EC5, U+1EC7, U+1EC9, U+1ECB, U+1ECD, U+1ECF, U+1ED1, U+1ED3, U+1ED5, U+1ED7, \
+U+1ED9, U+1EDB, U+1EDD, U+1EDF, U+1EE1, U+1EE3, U+1EE5, U+1EE7, U+1EE9, U+1EEB, \
+U+1EED, U+1EEF, U+1EF1, U+1EF3, U+1EF5, U+1EF7, U+1EF9, U+1F00, U+1F01, U+1F02, \
+U+1F03, U+1F04, U+1F05, U+1F06, U+1F07, U+1F10, U+1F11, U+1F12, U+1F13, U+1F14, \
+U+1F15, U+1F20, U+1F21, U+1F22, U+1F23, U+1F24, U+1F25, U+1F26, U+1F27, U+1F30, \
+U+1F31, U+1F32, U+1F33, U+1F34, U+1F35, U+1F36, U+1F37, U+1F40, U+1F41, U+1F42, \
+U+1F43, U+1F44, U+1F45, U+1F51, U+1F53, U+1F55, U+1F57, U+1F60, U+1F61, U+1F62, \
+U+1F63, U+1F64, U+1F65, U+1F66, U+1F67, U+1F80, U+1F81, U+1F82, U+1F83, U+1F84, \
+U+1F85, U+1F86, U+1F87, U+1F90, U+1F91, U+1F92, U+1F93, U+1F94, U+1F95, U+1F96, \
+U+1F97, U+1FA0, U+1FA1, U+1FA2, U+1FA3, U+1FA4, U+1FA5, U+1FA6, U+1FA7, U+1FB0, \
+U+1FB1, U+1F70, U+1F71, U+1FB3, U+03B9, U+1F72, U+1F73, U+1F74, U+1F75, U+1FC3, \
+U+1FD0, U+1FD1, U+1F76, U+1F77, U+1FE0, U+1FE1, U+1F7A, U+1F7B, U+1FE5, U+1F78, \
+U+1F79, U+1F7C, U+1F7D, U+1FF3, U+03C9, U+006B, U+00E5, U+2170, U+2171, U+2172, \
+U+2173, U+2174, U+2175, U+2176, U+2177, U+2178, U+2179, U+217A, U+217B, U+217C, \
+U+217D, U+217E, U+217F, U+24D0, U+24D1, U+24D2, U+24D3, U+24D4, U+24D5, U+24D6, \
+U+24D7, U+24D8, U+24D9, U+24DA, U+24DB, U+24DC, U+24DD, U+24DE, U+24DF, U+24E0, \
+U+24E1, U+24E2, U+24E3, U+24E4, U+24E5, U+24E6, U+24E7, U+24E8, U+24E9, U+FF41, \
+U+FF42, U+FF43, U+FF44, U+FF45, U+FF46, U+FF47, U+FF48, U+FF49, U+FF4A, U+FF4B, \
+U+FF4C, U+FF4D, U+FF4E, U+FF4F, U+FF50, U+FF51, U+FF52, U+FF53, U+FF54, U+FF55, \
+U+FF56, U+FF57, U+FF58, U+FF59, U+FF5A, \
+U+0041->U+0061, U+0042->U+0062, U+0043->U+0063, U+0044->U+0064, U+0045->U+0065, \
+U+0046->U+0066, U+0047->U+0067, U+0048->U+0068, U+0049->U+0069, U+004A->U+006A, \
+U+004B->U+006B, U+004C->U+006C, U+004D->U+006D, U+004E->U+006E, U+004F->U+006F, \
+U+0050->U+0070, U+0051->U+0071, U+0052->U+0072, U+0053->U+0073, U+0054->U+0074, \
+U+0055->U+0075, U+0056->U+0076, U+0057->U+0077, U+0058->U+0078, U+0059->U+0079, \
+U+005A->U+007A, U+00B5->U+03BC, U+00C0->U+00E0, U+00C1->U+00E1, U+00C2->U+00E2, \
+U+00C3->U+00E3, U+00C4->U+00E4, U+00C5->U+00E5, U+00C6->U+00E6, U+00C7->U+00E7, \
+U+00C8->U+00E8, U+00C9->U+00E9, U+00CA->U+00EA, U+00CB->U+00EB, U+00CC->U+00EC, \
+U+00CD->U+00ED, U+00CE->U+00EE, U+00CF->U+00EF, U+00D0->U+00F0, U+00D1->U+00F1, \
+U+00D2->U+00F2, U+00D3->U+00F3, U+00D4->U+00F4, U+00D5->U+00F5, U+00D6->U+00F6, \
+U+00D8->U+00F8, U+00D9->U+00F9, U+00DA->U+00FA, U+00DB->U+00FB, U+00DC->U+00FC, \
+U+00DD->U+00FD, U+00DE->U+00FE, U+0100->U+0101, U+0102->U+0103, U+0104->U+0105, \
+U+0106->U+0107, U+0108->U+0109, U+010A->U+010B, U+010C->U+010D, U+010E->U+010F, \
+U+0110->U+0111, U+0112->U+0113, U+0114->U+0115, U+0116->U+0117, U+0118->U+0119, \
+U+011A->U+011B, U+011C->U+011D, U+011E->U+011F, U+0120->U+0121, U+0122->U+0123, \
+U+0124->U+0125, U+0126->U+0127, U+0128->U+0129, U+012A->U+012B, U+012C->U+012D, \
+U+012E->U+012F, U+0132->U+0133, U+0134->U+0135, U+0136->U+0137, U+0139->U+013A, \
+U+013B->U+013C, U+013D->U+013E, U+013F->U+0140, U+0141->U+0142, U+0143->U+0144, \
+U+0145->U+0146, U+0147->U+0148, U+014A->U+014B, U+014C->U+014D, U+014E->U+014F, \
+U+0150->U+0151, U+0152->U+0153, U+0154->U+0155, U+0156->U+0157, U+0158->U+0159, \
+U+015A->U+015B, U+015C->U+015D, U+015E->U+015F, U+0160->U+0161, U+0162->U+0163, \
+U+0164->U+0165, U+0166->U+0167, U+0168->U+0169, U+016A->U+016B, U+016C->U+016D, \
+U+016E->U+016F, U+0170->U+0171, U+0172->U+0173, U+0174->U+0175, U+0176->U+0177, \
+U+0178->U+00FF, U+0179->U+017A, U+017B->U+017C, U+017D->U+017E, U+017F->U+0073, \
+U+0181->U+0253, U+0182->U+0183, U+0184->U+0185, U+0186->U+0254, U+0187->U+0188, \
+U+0189->U+0256, U+018A->U+0257, U+018B->U+018C, U+018E->U+01DD, U+018F->U+0259, \
+U+0190->U+025B, U+0191->U+0192, U+0193->U+0260, U+0194->U+0263, U+0196->U+0269, \
+U+0197->U+0268, U+0198->U+0199, U+019C->U+026F, U+019D->U+0272, U+019F->U+0275, \
+U+01A0->U+01A1, U+01A2->U+01A3, U+01A4->U+01A5, U+01A6->U+0280, U+01A7->U+01A8, \
+U+01A9->U+0283, U+01AC->U+01AD, U+01AE->U+0288, U+01AF->U+01B0, U+01B1->U+028A, \
+U+01B2->U+028B, U+01B3->U+01B4, U+01B5->U+01B6, U+01B7->U+0292, U+01B8->U+01B9, \
+U+01BC->U+01BD, U+01C4->U+01C6, U+01C5->U+01C6, U+01C7->U+01C9, U+01C8->U+01C9, \
+U+01CA->U+01CC, U+01CB->U+01CC, U+01CD->U+01CE, U+01CF->U+01D0, U+01D1->U+01D2, \
+U+01D3->U+01D4, U+01D5->U+01D6, U+01D7->U+01D8, U+01D9->U+01DA, U+01DB->U+01DC, \
+U+01DE->U+01DF, U+01E0->U+01E1, U+01E2->U+01E3, U+01E4->U+01E5, U+01E6->U+01E7, \
+U+01E8->U+01E9, U+01EA->U+01EB, U+01EC->U+01ED, U+01EE->U+01EF, U+01F1->U+01F3, \
+U+01F2->U+01F3, U+01F4->U+01F5, U+01F6->U+0195, U+01F7->U+01BF, U+01F8->U+01F9, \
+U+01FA->U+01FB, U+01FC->U+01FD, U+01FE->U+01FF, U+0200->U+0201, U+0202->U+0203, \
+U+0204->U+0205, U+0206->U+0207, U+0208->U+0209, U+020A->U+020B, U+020C->U+020D, \
+U+020E->U+020F, U+0210->U+0211, U+0212->U+0213, U+0214->U+0215, U+0216->U+0217, \
+U+0218->U+0219, U+021A->U+021B, U+021C->U+021D, U+021E->U+021F, U+0220->U+019E, \
+U+0222->U+0223, U+0224->U+0225, U+0226->U+0227, U+0228->U+0229, U+022A->U+022B, \
+U+022C->U+022D, U+022E->U+022F, U+0230->U+0231, U+0232->U+0233, U+0345->U+03B9, \
+U+0386->U+03AC, U+0388->U+03AD, U+0389->U+03AE, U+038A->U+03AF, U+038C->U+03CC, \
+U+038E->U+03CD, U+038F->U+03CE, U+0391->U+03B1, U+0392->U+03B2, U+0393->U+03B3, \
+U+0394->U+03B4, U+0395->U+03B5, U+0396->U+03B6, U+0397->U+03B7, U+0398->U+03B8, \
+U+0399->U+03B9, U+039A->U+03BA, U+039B->U+03BB, U+039C->U+03BC, U+039D->U+03BD, \
+U+039E->U+03BE, U+039F->U+03BF, U+03A0->U+03C0, U+03A1->U+03C1, U+03A3->U+03C3, \
+U+03A4->U+03C4, U+03A5->U+03C5, U+03A6->U+03C6, U+03A7->U+03C7, U+03A8->U+03C8, \
+U+03A9->U+03C9, U+03AA->U+03CA, U+03AB->U+03CB, U+03C2->U+03C3, U+03D0->U+03B2, \
+U+03D1->U+03B8, U+03D5->U+03C6, U+03D6->U+03C0, U+03D8->U+03D9, U+03DA->U+03DB, \
+U+03DC->U+03DD, U+03DE->U+03DF, U+03E0->U+03E1, U+03E2->U+03E3, U+03E4->U+03E5, \
+U+03E6->U+03E7, U+03E8->U+03E9, U+03EA->U+03EB, U+03EC->U+03ED, U+03EE->U+03EF, \
+U+03F0->U+03BA, U+03F1->U+03C1, U+03F2->U+03C3, U+03F4->U+03B8, U+03F5->U+03B5, \
+U+0400->U+0450, U+0401->U+0451, U+0402->U+0452, U+0403->U+0453, U+0404->U+0454, \
+U+0405->U+0455, U+0406->U+0456, U+0407->U+0457, U+0408->U+0458, U+0409->U+0459, \
+U+040A->U+045A, U+040B->U+045B, U+040C->U+045C, U+040D->U+045D, U+040E->U+045E, \
+U+040F->U+045F, U+0410->U+0430, U+0411->U+0431, U+0412->U+0432, U+0413->U+0433, \
+U+0414->U+0434, U+0415->U+0435, U+0416->U+0436, U+0417->U+0437, U+0418->U+0438, \
+U+0419->U+0439, U+041A->U+043A, U+041B->U+043B, U+041C->U+043C, U+041D->U+043D, \
+U+041E->U+043E, U+041F->U+043F, U+0420->U+0440, U+0421->U+0441, U+0422->U+0442, \
+U+0423->U+0443, U+0424->U+0444, U+0425->U+0445, U+0426->U+0446, U+0427->U+0447, \
+U+0428->U+0448, U+0429->U+0449, U+042A->U+044A, U+042B->U+044B, U+042C->U+044C, \
+U+042D->U+044D, U+042E->U+044E, U+042F->U+044F, U+0460->U+0461, U+0462->U+0463, \
+U+0464->U+0465, U+0466->U+0467, U+0468->U+0469, U+046A->U+046B, U+046C->U+046D, \
+U+046E->U+046F, U+0470->U+0471, U+0472->U+0473, U+0474->U+0475, U+0476->U+0477, \
+U+0478->U+0479, U+047A->U+047B, U+047C->U+047D, U+047E->U+047F, U+0480->U+0481, \
+U+048A->U+048B, U+048C->U+048D, U+048E->U+048F, U+0490->U+0491, U+0492->U+0493, \
+U+0494->U+0495, U+0496->U+0497, U+0498->U+0499, U+049A->U+049B, U+049C->U+049D, \
+U+049E->U+049F, U+04A0->U+04A1, U+04A2->U+04A3, U+04A4->U+04A5, U+04A6->U+04A7, \
+U+04A8->U+04A9, U+04AA->U+04AB, U+04AC->U+04AD, U+04AE->U+04AF, U+04B0->U+04B1, \
+U+04B2->U+04B3, U+04B4->U+04B5, U+04B6->U+04B7, U+04B8->U+04B9, U+04BA->U+04BB, \
+U+04BC->U+04BD, U+04BE->U+04BF, U+04C1->U+04C2, U+04C3->U+04C4, U+04C5->U+04C6, \
+U+04C7->U+04C8, U+04C9->U+04CA, U+04CB->U+04CC, U+04CD->U+04CE, U+04D0->U+04D1, \
+U+04D2->U+04D3, U+04D4->U+04D5, U+04D6->U+04D7, U+04D8->U+04D9, U+04DA->U+04DB, \
+U+04DC->U+04DD, U+04DE->U+04DF, U+04E0->U+04E1, U+04E2->U+04E3, U+04E4->U+04E5, \
+U+04E6->U+04E7, U+04E8->U+04E9, U+04EA->U+04EB, U+04EC->U+04ED, U+04EE->U+04EF, \
+U+04F0->U+04F1, U+04F2->U+04F3, U+04F4->U+04F5, U+04F8->U+04F9, U+0500->U+0501, \
+U+0502->U+0503, U+0504->U+0505, U+0506->U+0507, U+0508->U+0509, U+050A->U+050B, \
+U+050C->U+050D, U+050E->U+050F, U+0531->U+0561, U+0532->U+0562, U+0533->U+0563, \
+U+0534->U+0564, U+0535->U+0565, U+0536->U+0566, U+0537->U+0567, U+0538->U+0568, \
+U+0539->U+0569, U+053A->U+056A, U+053B->U+056B, U+053C->U+056C, U+053D->U+056D, \
+U+053E->U+056E, U+053F->U+056F, U+0540->U+0570, U+0541->U+0571, U+0542->U+0572, \
+U+0543->U+0573, U+0544->U+0574, U+0545->U+0575, U+0546->U+0576, U+0547->U+0577, \
+U+0548->U+0578, U+0549->U+0579, U+054A->U+057A, U+054B->U+057B, U+054C->U+057C, \
+U+054D->U+057D, U+054E->U+057E, U+054F->U+057F, U+0550->U+0580, U+0551->U+0581, \
+U+0552->U+0582, U+0553->U+0583, U+0554->U+0584, U+0555->U+0585, U+0556->U+0586, \
+U+1E00->U+1E01, U+1E02->U+1E03, U+1E04->U+1E05, U+1E06->U+1E07, U+1E08->U+1E09, \
+U+1E0A->U+1E0B, U+1E0C->U+1E0D, U+1E0E->U+1E0F, U+1E10->U+1E11, U+1E12->U+1E13, \
+U+1E14->U+1E15, U+1E16->U+1E17, U+1E18->U+1E19, U+1E1A->U+1E1B, U+1E1C->U+1E1D, \
+U+1E1E->U+1E1F, U+1E20->U+1E21, U+1E22->U+1E23, U+1E24->U+1E25, U+1E26->U+1E27, \
+U+1E28->U+1E29, U+1E2A->U+1E2B, U+1E2C->U+1E2D, U+1E2E->U+1E2F, U+1E30->U+1E31, \
+U+1E32->U+1E33, U+1E34->U+1E35, U+1E36->U+1E37, U+1E38->U+1E39, U+1E3A->U+1E3B, \
+U+1E3C->U+1E3D, U+1E3E->U+1E3F, U+1E40->U+1E41, U+1E42->U+1E43, U+1E44->U+1E45, \
+U+1E46->U+1E47, U+1E48->U+1E49, U+1E4A->U+1E4B, U+1E4C->U+1E4D, U+1E4E->U+1E4F, \
+U+1E50->U+1E51, U+1E52->U+1E53, U+1E54->U+1E55, U+1E56->U+1E57, U+1E58->U+1E59, \
+U+1E5A->U+1E5B, U+1E5C->U+1E5D, U+1E5E->U+1E5F, U+1E60->U+1E61, U+1E62->U+1E63, \
+U+1E64->U+1E65, U+1E66->U+1E67, U+1E68->U+1E69, U+1E6A->U+1E6B, U+1E6C->U+1E6D, \
+U+1E6E->U+1E6F, U+1E70->U+1E71, U+1E72->U+1E73, U+1E74->U+1E75, U+1E76->U+1E77, \
+U+1E78->U+1E79, U+1E7A->U+1E7B, U+1E7C->U+1E7D, U+1E7E->U+1E7F, U+1E80->U+1E81, \
+U+1E82->U+1E83, U+1E84->U+1E85, U+1E86->U+1E87, U+1E88->U+1E89, U+1E8A->U+1E8B, \
+U+1E8C->U+1E8D, U+1E8E->U+1E8F, U+1E90->U+1E91, U+1E92->U+1E93, U+1E94->U+1E95, \
+U+1E9B->U+1E61, U+1EA0->U+1EA1, U+1EA2->U+1EA3, U+1EA4->U+1EA5, U+1EA6->U+1EA7, \
+U+1EA8->U+1EA9, U+1EAA->U+1EAB, U+1EAC->U+1EAD, U+1EAE->U+1EAF, U+1EB0->U+1EB1, \
+U+1EB2->U+1EB3, U+1EB4->U+1EB5, U+1EB6->U+1EB7, U+1EB8->U+1EB9, U+1EBA->U+1EBB, \
+U+1EBC->U+1EBD, U+1EBE->U+1EBF, U+1EC0->U+1EC1, U+1EC2->U+1EC3, U+1EC4->U+1EC5, \
+U+1EC6->U+1EC7, U+1EC8->U+1EC9, U+1ECA->U+1ECB, U+1ECC->U+1ECD, U+1ECE->U+1ECF, \
+U+1ED0->U+1ED1, U+1ED2->U+1ED3, U+1ED4->U+1ED5, U+1ED6->U+1ED7, U+1ED8->U+1ED9, \
+U+1EDA->U+1EDB, U+1EDC->U+1EDD, U+1EDE->U+1EDF, U+1EE0->U+1EE1, U+1EE2->U+1EE3, \
+U+1EE4->U+1EE5, U+1EE6->U+1EE7, U+1EE8->U+1EE9, U+1EEA->U+1EEB, U+1EEC->U+1EED, \
+U+1EEE->U+1EEF, U+1EF0->U+1EF1, U+1EF2->U+1EF3, U+1EF4->U+1EF5, U+1EF6->U+1EF7, \
+U+1EF8->U+1EF9, U+1F08->U+1F00, U+1F09->U+1F01, U+1F0A->U+1F02, U+1F0B->U+1F03, \
+U+1F0C->U+1F04, U+1F0D->U+1F05, U+1F0E->U+1F06, U+1F0F->U+1F07, U+1F18->U+1F10, \
+U+1F19->U+1F11, U+1F1A->U+1F12, U+1F1B->U+1F13, U+1F1C->U+1F14, U+1F1D->U+1F15, \
+U+1F28->U+1F20, U+1F29->U+1F21, U+1F2A->U+1F22, U+1F2B->U+1F23, U+1F2C->U+1F24, \
+U+1F2D->U+1F25, U+1F2E->U+1F26, U+1F2F->U+1F27, U+1F38->U+1F30, U+1F39->U+1F31, \
+U+1F3A->U+1F32, U+1F3B->U+1F33, U+1F3C->U+1F34, U+1F3D->U+1F35, U+1F3E->U+1F36, \
+U+1F3F->U+1F37, U+1F48->U+1F40, U+1F49->U+1F41, U+1F4A->U+1F42, U+1F4B->U+1F43, \
+U+1F4C->U+1F44, U+1F4D->U+1F45, U+1F59->U+1F51, U+1F5B->U+1F53, U+1F5D->U+1F55, \
+U+1F5F->U+1F57, U+1F68->U+1F60, U+1F69->U+1F61, U+1F6A->U+1F62, U+1F6B->U+1F63, \
+U+1F6C->U+1F64, U+1F6D->U+1F65, U+1F6E->U+1F66, U+1F6F->U+1F67, U+1F88->U+1F80, \
+U+1F89->U+1F81, U+1F8A->U+1F82, U+1F8B->U+1F83, U+1F8C->U+1F84, U+1F8D->U+1F85, \
+U+1F8E->U+1F86, U+1F8F->U+1F87, U+1F98->U+1F90, U+1F99->U+1F91, U+1F9A->U+1F92, \
+U+1F9B->U+1F93, U+1F9C->U+1F94, U+1F9D->U+1F95, U+1F9E->U+1F96, U+1F9F->U+1F97, \
+U+1FA8->U+1FA0, U+1FA9->U+1FA1, U+1FAA->U+1FA2, U+1FAB->U+1FA3, U+1FAC->U+1FA4, \
+U+1FAD->U+1FA5, U+1FAE->U+1FA6, U+1FAF->U+1FA7, U+1FB8->U+1FB0, U+1FB9->U+1FB1, \
+U+1FBA->U+1F70, U+1FBB->U+1F71, U+1FBC->U+1FB3, U+1FBE->U+03B9, U+1FC8->U+1F72, \
+U+1FC9->U+1F73, U+1FCA->U+1F74, U+1FCB->U+1F75, U+1FCC->U+1FC3, U+1FD8->U+1FD0, \
+U+1FD9->U+1FD1, U+1FDA->U+1F76, U+1FDB->U+1F77, U+1FE8->U+1FE0, U+1FE9->U+1FE1, \
+U+1FEA->U+1F7A, U+1FEB->U+1F7B, U+1FEC->U+1FE5, U+1FF8->U+1F78, U+1FF9->U+1F79, \
+U+1FFA->U+1F7C, U+1FFB->U+1F7D, U+1FFC->U+1FF3, U+2126->U+03C9, U+212A->U+006B, \
+U+212B->U+00E5, U+2160->U+2170, U+2161->U+2171, U+2162->U+2172, U+2163->U+2173, \
+U+2164->U+2174, U+2165->U+2175, U+2166->U+2176, U+2167->U+2177, U+2168->U+2178, \
+U+2169->U+2179, U+216A->U+217A, U+216B->U+217B, U+216C->U+217C, U+216D->U+217D, \
+U+216E->U+217E, U+216F->U+217F, U+24B6->U+24D0, U+24B7->U+24D1, U+24B8->U+24D2, \
+U+24B9->U+24D3, U+24BA->U+24D4, U+24BB->U+24D5, U+24BC->U+24D6, U+24BD->U+24D7, \
+U+24BE->U+24D8, U+24BF->U+24D9, U+24C0->U+24DA, U+24C1->U+24DB, U+24C2->U+24DC, \
+U+24C3->U+24DD, U+24C4->U+24DE, U+24C5->U+24DF, U+24C6->U+24E0, U+24C7->U+24E1, \
+U+24C8->U+24E2, U+24C9->U+24E3, U+24CA->U+24E4, U+24CB->U+24E5, U+24CC->U+24E6, \
+U+24CD->U+24E7, U+24CE->U+24E8, U+24CF->U+24E9, U+FF21->U+FF41, U+FF22->U+FF42, \
+U+FF23->U+FF43, U+FF24->U+FF44, U+FF25->U+FF45, U+FF26->U+FF46, U+FF27->U+FF47, \
+U+FF28->U+FF48, U+FF29->U+FF49, U+FF2A->U+FF4A, U+FF2B->U+FF4B, U+FF2C->U+FF4C, \
+U+FF2D->U+FF4D, U+FF2E->U+FF4E, U+FF2F->U+FF4F, U+FF30->U+FF50, U+FF31->U+FF51, \
+U+FF32->U+FF52, U+FF33->U+FF53, U+FF34->U+FF54, U+FF35->U+FF55, U+FF36->U+FF56, \
+U+FF37->U+FF57, U+FF38->U+FF58, U+FF39->U+FF59, U+FF3A->U+FF5A
+    
+    rt_mem_limit      = 128M
+
+
+    rt_field          = title
+    rt_field          = body
+    rt_field          = keywords
+    rt_field          = geographicarea
+    rt_field          = fromemail
+    rt_field          = fromemaillhs
+    rt_field          = fromemailhash
+    rt_field          = fromdomain
+    rt_field          = fromdomainhash
+    rt_field          = phonenumbers
+    rt_field          = posterip
+    rt_field          = hashkey
+    rt_field          = profileid
+    rt_field          = invoice
+
+    rt_attr_uint      = spamscore
+    rt_attr_uint      = areaid
+    rt_attr_uint      = subareaid
+    rt_attr_uint      = type
+    rt_attr_uint      = categoryid
+    rt_attr_uint      = ask
+    rt_attr_uint      = neighborhood
+    rt_attr_uint      = posted
+
+    rt_attr_timestamp = posteddate
+    rt_attr_timestamp = recordcreated
+
+    rt_attr_uint      = ip
+    rt_attr_uint      = invoiceitemid
+    rt_attr_uint      = isaccount
+    rt_attr_uint      = paid
+
+    rt_attr_string    = postingtitle
+
+}
+index index_pq: index_0
+{
+    type              = percolate
+    path              = /u/sphinx/var/data/indexes/1/index_pq
+}
+# index slot 1 not in this instance
+# index slot 2 not in this instance
+# index slot 3 not in this instance
+# index slot 4 not in this instance
+# index slot 5 not in this instance
+# index slot 6 not in this instance
+# index slot 7 not in this instance
+# index slot 8 not in this instance
+index index_9: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_9
+}
+# index slot 10 not in this instance
+# index slot 11 not in this instance
+# index slot 12 not in this instance
+# index slot 13 not in this instance
+# index slot 14 not in this instance
+# index slot 15 not in this instance
+# index slot 16 not in this instance
+# index slot 17 not in this instance
+index index_18: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_18
+}
+# index slot 19 not in this instance
+# index slot 20 not in this instance
+# index slot 21 not in this instance
+# index slot 22 not in this instance
+# index slot 23 not in this instance
+# index slot 24 not in this instance
+# index slot 25 not in this instance
+# index slot 26 not in this instance
+index index_27: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_27
+}
+# index slot 28 not in this instance
+# index slot 29 not in this instance
+# index slot 30 not in this instance
+# index slot 31 not in this instance
+# index slot 32 not in this instance
+# index slot 33 not in this instance
+# index slot 34 not in this instance
+# index slot 35 not in this instance
+index index_36: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_36
+}
+# index slot 37 not in this instance
+# index slot 38 not in this instance
+# index slot 39 not in this instance
+# index slot 40 not in this instance
+# index slot 41 not in this instance
+# index slot 42 not in this instance
+# index slot 43 not in this instance
+# index slot 44 not in this instance
+index index_45: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_45
+}
+# index slot 46 not in this instance
+# index slot 47 not in this instance
+# index slot 48 not in this instance
+# index slot 49 not in this instance
+# index slot 50 not in this instance
+# index slot 51 not in this instance
+# index slot 52 not in this instance
+# index slot 53 not in this instance
+index index_54: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_54
+}
+# index slot 55 not in this instance
+# index slot 56 not in this instance
+# index slot 57 not in this instance
+# index slot 58 not in this instance
+# index slot 59 not in this instance
+# index slot 60 not in this instance
+# index slot 61 not in this instance
+# index slot 62 not in this instance
+index index_63: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_63
+}
+# index slot 64 not in this instance
+# index slot 65 not in this instance
+# index slot 66 not in this instance
+# index slot 67 not in this instance
+# index slot 68 not in this instance
+# index slot 69 not in this instance
+# index slot 70 not in this instance
+# index slot 71 not in this instance
+index index_72: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_72
+}
+# index slot 73 not in this instance
+# index slot 74 not in this instance
+# index slot 75 not in this instance
+# index slot 76 not in this instance
+# index slot 77 not in this instance
+# index slot 78 not in this instance
+# index slot 79 not in this instance
+# index slot 80 not in this instance
+index index_81: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_81
+}
+# index slot 82 not in this instance
+# index slot 83 not in this instance
+# index slot 84 not in this instance
+# index slot 85 not in this instance
+# index slot 86 not in this instance
+# index slot 87 not in this instance
+# index slot 88 not in this instance
+# index slot 89 not in this instance
+index index_90: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_90
+}
+# index slot 91 not in this instance
+# index slot 92 not in this instance
+# index slot 93 not in this instance
+# index slot 94 not in this instance
+# index slot 95 not in this instance
+# index slot 96 not in this instance
+# index slot 97 not in this instance
+# index slot 98 not in this instance
+index index_99: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_99
+}
+# index slot 100 not in this instance
+# index slot 101 not in this instance
+# index slot 102 not in this instance
+# index slot 103 not in this instance
+# index slot 104 not in this instance
+# index slot 105 not in this instance
+# index slot 106 not in this instance
+# index slot 107 not in this instance
+index index_108: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_108
+}
+# index slot 109 not in this instance
+# index slot 110 not in this instance
+# index slot 111 not in this instance
+# index slot 112 not in this instance
+# index slot 113 not in this instance
+# index slot 114 not in this instance
+# index slot 115 not in this instance
+# index slot 116 not in this instance
+index index_117: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_117
+}
+# index slot 118 not in this instance
+# index slot 119 not in this instance
+# index slot 120 not in this instance
+# index slot 121 not in this instance
+# index slot 122 not in this instance
+# index slot 123 not in this instance
+# index slot 124 not in this instance
+# index slot 125 not in this instance
+index index_126: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_126
+}
+# index slot 127 not in this instance
+# index slot 128 not in this instance
+# index slot 129 not in this instance
+# index slot 130 not in this instance
+# index slot 131 not in this instance
+# index slot 132 not in this instance
+# index slot 133 not in this instance
+# index slot 134 not in this instance
+index index_135: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_135
+}
+# index slot 136 not in this instance
+# index slot 137 not in this instance
+# index slot 138 not in this instance
+# index slot 139 not in this instance
+# index slot 140 not in this instance
+# index slot 141 not in this instance
+# index slot 142 not in this instance
+# index slot 143 not in this instance
+index index_144: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_144
+}
+# index slot 145 not in this instance
+# index slot 146 not in this instance
+# index slot 147 not in this instance
+# index slot 148 not in this instance
+# index slot 149 not in this instance
+# index slot 150 not in this instance
+# index slot 151 not in this instance
+# index slot 152 not in this instance
+index index_153: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_153
+}
+# index slot 154 not in this instance
+# index slot 155 not in this instance
+# index slot 156 not in this instance
+# index slot 157 not in this instance
+# index slot 158 not in this instance
+# index slot 159 not in this instance
+# index slot 160 not in this instance
+# index slot 161 not in this instance
+index index_162: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_162
+}
+# index slot 163 not in this instance
+# index slot 164 not in this instance
+# index slot 165 not in this instance
+# index slot 166 not in this instance
+# index slot 167 not in this instance
+# index slot 168 not in this instance
+# index slot 169 not in this instance
+# index slot 170 not in this instance
+index index_171: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_171
+}
+# index slot 172 not in this instance
+# index slot 173 not in this instance
+# index slot 174 not in this instance
+# index slot 175 not in this instance
+# index slot 176 not in this instance
+# index slot 177 not in this instance
+# index slot 178 not in this instance
+# index slot 179 not in this instance
+index index_180: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_180
+}
+# index slot 181 not in this instance
+# index slot 182 not in this instance
+# index slot 183 not in this instance
+# index slot 184 not in this instance
+# index slot 185 not in this instance
+# index slot 186 not in this instance
+# index slot 187 not in this instance
+# index slot 188 not in this instance
+index index_189: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_189
+}
+# index slot 190 not in this instance
+# index slot 191 not in this instance
+# index slot 192 not in this instance
+# index slot 193 not in this instance
+# index slot 194 not in this instance
+# index slot 195 not in this instance
+# index slot 196 not in this instance
+# index slot 197 not in this instance
+index index_198: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_198
+}
+# index slot 199 not in this instance
+# index slot 200 not in this instance
+# index slot 201 not in this instance
+# index slot 202 not in this instance
+# index slot 203 not in this instance
+# index slot 204 not in this instance
+# index slot 205 not in this instance
+# index slot 206 not in this instance
+index index_207: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_207
+}
+# index slot 208 not in this instance
+# index slot 209 not in this instance
+# index slot 210 not in this instance
+# index slot 211 not in this instance
+# index slot 212 not in this instance
+# index slot 213 not in this instance
+# index slot 214 not in this instance
+# index slot 215 not in this instance
+index index_216: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_216
+}
+# index slot 217 not in this instance
+# index slot 218 not in this instance
+# index slot 219 not in this instance
+# index slot 220 not in this instance
+# index slot 221 not in this instance
+# index slot 222 not in this instance
+# index slot 223 not in this instance
+# index slot 224 not in this instance
+index index_225: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_225
+}
+# index slot 226 not in this instance
+# index slot 227 not in this instance
+# index slot 228 not in this instance
+# index slot 229 not in this instance
+# index slot 230 not in this instance
+# index slot 231 not in this instance
+# index slot 232 not in this instance
+# index slot 233 not in this instance
+index index_234: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_234
+}
+# index slot 235 not in this instance
+# index slot 236 not in this instance
+# index slot 237 not in this instance
+# index slot 238 not in this instance
+# index slot 239 not in this instance
+# index slot 240 not in this instance
+# index slot 241 not in this instance
+# index slot 242 not in this instance
+index index_243: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_243
+}
+# index slot 244 not in this instance
+# index slot 245 not in this instance
+# index slot 246 not in this instance
+# index slot 247 not in this instance
+# index slot 248 not in this instance
+# index slot 249 not in this instance
+# index slot 250 not in this instance
+# index slot 251 not in this instance
+index index_252: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_252
+}
+# index slot 253 not in this instance
+# index slot 254 not in this instance
+# index slot 255 not in this instance
+# index slot 256 not in this instance
+# index slot 257 not in this instance
+# index slot 258 not in this instance
+# index slot 259 not in this instance
+# index slot 260 not in this instance
+index index_261: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_261
+}
+# index slot 262 not in this instance
+# index slot 263 not in this instance
+# index slot 264 not in this instance
+# index slot 265 not in this instance
+# index slot 266 not in this instance
+# index slot 267 not in this instance
+# index slot 268 not in this instance
+# index slot 269 not in this instance
+index index_270: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_270
+}
+# index slot 271 not in this instance
+# index slot 272 not in this instance
+# index slot 273 not in this instance
+# index slot 274 not in this instance
+# index slot 275 not in this instance
+# index slot 276 not in this instance
+# index slot 277 not in this instance
+# index slot 278 not in this instance
+index index_279: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_279
+}
+# index slot 280 not in this instance
+# index slot 281 not in this instance
+# index slot 282 not in this instance
+# index slot 283 not in this instance
+# index slot 284 not in this instance
+# index slot 285 not in this instance
+# index slot 286 not in this instance
+# index slot 287 not in this instance
+index index_288: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_288
+}
+# index slot 289 not in this instance
+# index slot 290 not in this instance
+# index slot 291 not in this instance
+# index slot 292 not in this instance
+# index slot 293 not in this instance
+# index slot 294 not in this instance
+# index slot 295 not in this instance
+# index slot 296 not in this instance
+index index_297: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_297
+}
+# index slot 298 not in this instance
+# index slot 299 not in this instance
+# index slot 300 not in this instance
+# index slot 301 not in this instance
+# index slot 302 not in this instance
+# index slot 303 not in this instance
+# index slot 304 not in this instance
+# index slot 305 not in this instance
+index index_306: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_306
+}
+# index slot 307 not in this instance
+# index slot 308 not in this instance
+# index slot 309 not in this instance
+# index slot 310 not in this instance
+# index slot 311 not in this instance
+# index slot 312 not in this instance
+# index slot 313 not in this instance
+# index slot 314 not in this instance
+index index_315: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_315
+}
+# index slot 316 not in this instance
+# index slot 317 not in this instance
+# index slot 318 not in this instance
+# index slot 319 not in this instance
+# index slot 320 not in this instance
+# index slot 321 not in this instance
+# index slot 322 not in this instance
+# index slot 323 not in this instance
+index index_324: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_324
+}
+# index slot 325 not in this instance
+# index slot 326 not in this instance
+# index slot 327 not in this instance
+# index slot 328 not in this instance
+# index slot 329 not in this instance
+# index slot 330 not in this instance
+# index slot 331 not in this instance
+# index slot 332 not in this instance
+index index_333: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_333
+}
+# index slot 334 not in this instance
+# index slot 335 not in this instance
+# index slot 336 not in this instance
+# index slot 337 not in this instance
+# index slot 338 not in this instance
+# index slot 339 not in this instance
+# index slot 340 not in this instance
+# index slot 341 not in this instance
+index index_342: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_342
+}
+# index slot 343 not in this instance
+# index slot 344 not in this instance
+# index slot 345 not in this instance
+# index slot 346 not in this instance
+# index slot 347 not in this instance
+# index slot 348 not in this instance
+# index slot 349 not in this instance
+# index slot 350 not in this instance
+index index_351: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_351
+}
+# index slot 352 not in this instance
+# index slot 353 not in this instance
+# index slot 354 not in this instance
+# index slot 355 not in this instance
+# index slot 356 not in this instance
+# index slot 357 not in this instance
+# index slot 358 not in this instance
+# index slot 359 not in this instance
+index index_360: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_360
+}
+# index slot 361 not in this instance
+# index slot 362 not in this instance
+# index slot 363 not in this instance
+# index slot 364 not in this instance
+# index slot 365 not in this instance
+# index slot 366 not in this instance
+# index slot 367 not in this instance
+# index slot 368 not in this instance
+index index_369: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_369
+}
+# index slot 370 not in this instance
+# index slot 371 not in this instance
+# index slot 372 not in this instance
+# index slot 373 not in this instance
+# index slot 374 not in this instance
+# index slot 375 not in this instance
+# index slot 376 not in this instance
+# index slot 377 not in this instance
+index index_378: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_378
+}
+# index slot 379 not in this instance
+# index slot 380 not in this instance
+# index slot 381 not in this instance
+# index slot 382 not in this instance
+# index slot 383 not in this instance
+# index slot 384 not in this instance
+# index slot 385 not in this instance
+# index slot 386 not in this instance
+index index_387: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_387
+}
+# index slot 388 not in this instance
+# index slot 389 not in this instance
+# index slot 390 not in this instance
+# index slot 391 not in this instance
+# index slot 392 not in this instance
+# index slot 393 not in this instance
+# index slot 394 not in this instance
+# index slot 395 not in this instance
+index index_396: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_396
+}
+# index slot 397 not in this instance
+# index slot 398 not in this instance
+# index slot 399 not in this instance
+# index slot 400 not in this instance
+# index slot 401 not in this instance
+# index slot 402 not in this instance
+# index slot 403 not in this instance
+# index slot 404 not in this instance
+index index_405: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_405
+}
+# index slot 406 not in this instance
+# index slot 407 not in this instance
+# index slot 408 not in this instance
+# index slot 409 not in this instance
+# index slot 410 not in this instance
+# index slot 411 not in this instance
+# index slot 412 not in this instance
+# index slot 413 not in this instance
+index index_414: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_414
+}
+# index slot 415 not in this instance
+# index slot 416 not in this instance
+# index slot 417 not in this instance
+# index slot 418 not in this instance
+# index slot 419 not in this instance
+# index slot 420 not in this instance
+# index slot 421 not in this instance
+# index slot 422 not in this instance
+index index_423: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_423
+}
+# index slot 424 not in this instance
+# index slot 425 not in this instance
+# index slot 426 not in this instance
+# index slot 427 not in this instance
+# index slot 428 not in this instance
+# index slot 429 not in this instance
+# index slot 430 not in this instance
+# index slot 431 not in this instance
+index index_432: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_432
+}
+# index slot 433 not in this instance
+# index slot 434 not in this instance
+# index slot 435 not in this instance
+# index slot 436 not in this instance
+# index slot 437 not in this instance
+# index slot 438 not in this instance
+# index slot 439 not in this instance
+# index slot 440 not in this instance
+index index_441: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_441
+}
+# index slot 442 not in this instance
+# index slot 443 not in this instance
+# index slot 444 not in this instance
+# index slot 445 not in this instance
+# index slot 446 not in this instance
+# index slot 447 not in this instance
+# index slot 448 not in this instance
+# index slot 449 not in this instance
+index index_450: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_450
+}
+# index slot 451 not in this instance
+# index slot 452 not in this instance
+# index slot 453 not in this instance
+# index slot 454 not in this instance
+# index slot 455 not in this instance
+# index slot 456 not in this instance
+# index slot 457 not in this instance
+# index slot 458 not in this instance
+index index_459: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_459
+}
+# index slot 460 not in this instance
+# index slot 461 not in this instance
+# index slot 462 not in this instance
+# index slot 463 not in this instance
+# index slot 464 not in this instance
+# index slot 465 not in this instance
+# index slot 466 not in this instance
+# index slot 467 not in this instance
+index index_468: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_468
+}
+# index slot 469 not in this instance
+# index slot 470 not in this instance
+# index slot 471 not in this instance
+# index slot 472 not in this instance
+# index slot 473 not in this instance
+# index slot 474 not in this instance
+# index slot 475 not in this instance
+# index slot 476 not in this instance
+index index_477: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_477
+}
+# index slot 478 not in this instance
+# index slot 479 not in this instance
+# index slot 480 not in this instance
+# index slot 481 not in this instance
+# index slot 482 not in this instance
+# index slot 483 not in this instance
+# index slot 484 not in this instance
+# index slot 485 not in this instance
+index index_486: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_486
+}
+# index slot 487 not in this instance
+# index slot 488 not in this instance
+# index slot 489 not in this instance
+# index slot 490 not in this instance
+# index slot 491 not in this instance
+# index slot 492 not in this instance
+# index slot 493 not in this instance
+# index slot 494 not in this instance
+index index_495: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_495
+}
+# index slot 496 not in this instance
+# index slot 497 not in this instance
+# index slot 498 not in this instance
+# index slot 499 not in this instance
+# index slot 500 not in this instance
+# index slot 501 not in this instance
+# index slot 502 not in this instance
+# index slot 503 not in this instance
+index index_504: index_0
+{
+    path = /u/sphinx/var/data/indexes/1/index_504
+}
+# index slot 505 not in this instance
+# index slot 506 not in this instance
+# index slot 507 not in this instance
+# index slot 508 not in this instance
+# index slot 509 not in this instance
+# index slot 510 not in this instance
+# index slot 511 not in this instance
+# index slot 512 not in this instance
