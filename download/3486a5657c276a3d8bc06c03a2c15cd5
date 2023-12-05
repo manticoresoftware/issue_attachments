@@ -1,0 +1,1323 @@
+
+Thread 97 (Thread 0x7f95a904a700 (LWP 85980)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x3f9a1920) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 96 (Thread 0x7f95a8f46700 (LWP 85981)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x3d9fd5f0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 95 (Thread 0x7f95a8b36700 (LWP 85985)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x2f47adc0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 94 (Thread 0x7f95ab2d2700 (LWP 85946)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x16d987f40) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 93 (Thread 0x7f95aa8aa700 (LWP 85956)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x128c36660) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 92 (Thread 0x7f9ccad24700 (LWP 86330)):
+#0  0x00007f9ce9705243 in epoll_wait () from /lib64/libc.so.6
+#1  0x00000000005fe263 in EpollEvents_c::Wait (this=0x7f95a0000960, timeoutMs=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdha.cpp:4010
+#2  0x0000000000655bde in CSphNetLoop::Impl_c::LoopNetPoll (this=0x7f95a00008c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/networking_daemon.cpp:187
+#3  0x0000000000655353 in LoopNetPoll (dListeners=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/networking_daemon.cpp:353
+#4  ServeNetLoop (dListeners=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/networking_daemon.cpp:378
+#5  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1bc7db0c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#6  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 91 (Thread 0x7f95a996e700 (LWP 85971)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x924e1500) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 90 (Thread 0x7f95a8316700 (LWP 85993)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x132e599d0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 89 (Thread 0x7f9cc9b99700 (LWP 86339)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000090df89 in Wait<CSphScopedLock<CSphMutex> > (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/event.h:242
+#2  do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:604
+#3  run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#4  loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#5  operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#6  std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#7  0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c164170) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#8  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c1641b0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#9  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#10 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 88 (Thread 0x7f95a9662700 (LWP 85974)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x6f695f30) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 87 (Thread 0x7f95a9c7a700 (LWP 85968)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xa94c8f00) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 86 (Thread 0x7f95aa08a700 (LWP 85964)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xcba73410) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 85 (Thread 0x7f95a7af6700 (LWP 86001)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x9aea1e50) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 84 (Thread 0x7f95a8726700 (LWP 85989)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1bcfffe20) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 83 (Thread 0x7f95aacba700 (LWP 85952)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x14e831cf0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 82 (Thread 0x7f95a8a32700 (LWP 85986)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xaf03b00) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 81 (Thread 0x7f95a9f86700 (LWP 85965)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xc600a6d0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 80 (Thread 0x7f95a77ea700 (LWP 86004)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x51340da0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 79 (Thread 0x7f95a9766700 (LWP 85973)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x768d5f90) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 78 (Thread 0x7f95aa6a2700 (LWP 85958)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1135f3f30) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 77 (Thread 0x7f95a955e700 (LWP 85975)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x61ee7050) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 76 (Thread 0x7f95a7bfa700 (LWP 86000)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xfc1acde0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 75 (Thread 0x7f95a9b76700 (LWP 85969)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xa12e9580) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 74 (Thread 0x7f95a8622700 (LWP 85990)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x16e98a0e0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 73 (Thread 0x7f95a851e700 (LWP 85991)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x16d7ea7a0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 72 (Thread 0x7f95a800a700 (LWP 85996)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x11546a410) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 71 (Thread 0x7f95aaab2700 (LWP 85954)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x14a2e4f90) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 70 (Thread 0x7f9cc9da1700 (LWP 86337)):
+#0  DiskIndexQwordSetup_c::Setup (this=0x7f9cc9d9e8c0, pWord=0x7f94e0071730) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:13664
+#1  0x00000000008af317 in CreateQueryWord (tWord=..., tSetup=..., pZonesDict=<value optimized out>) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:874
+#2  0x00000000008c6d5d in ExtMultiAnd_T<true, true>::ExtMultiAnd_T (this=0x7f94e0008830, dXQNodes=..., tSetup=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:2778
+#3  0x00000000008b9b7d in CreateMultiAndNode (pNode=0x7f94e0009180, tSetup=..., bUseBM25=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:1128
+#4  ExtNode_i::Create (pNode=0x7f94e0009180, tSetup=..., bUseBM25=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:1770
+#5  0x0000000000826f4a in ExtRanker_c::ExtRanker_c (this=0x7f94e0007580, tXQ=..., tSetup=..., bSkipQCache=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:344
+#6  0x000000000083317b in ExtRanker_T (this=0x7f94e0007580, tXQ=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:819
+#7  ExtRanker_State_T<RankerState_Proximity_fn<true, false>, true>::ExtRanker_State_T (this=0x7f94e0007580, tXQ=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:973
+#8  0x00000000008297e0 in sphCreateRanker (tXQ=..., pQuery=0x7f95840b5008, pResult=0x7f9cc9da0040, tTermSetup=..., tCtx=..., tSorterSchema=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:4001
+#9  0x0000000000691af9 in CSphIndex_VLN::ParsedMultiQuery (this=0x1bbce5630, pQuery=0x7f95840b5008, pResult=0x7f9cc9da0040, iSorters=1, ppSorters=0x7f94e0006f30, tXQ=..., pDict=0x7f95c231d010, tArgs=..., pNodeCache=0x7f9cc9d9eed0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:16175
+#10 0x00000000006a70f1 in CSphIndex_VLN::MultiQuery (this=0x1bbce5630, pQuery=0x7f95840b5008, pResult=0x7f9cc9da0040, iSorters=<value optimized out>, ppSorters=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:15921
+#11 0x0000000000861cbe in __lambda12::operator() (__closure=0x7f94e0000ef0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6192
+#12 0x000000000090e34d in Threads::CompletionHandler_c<std::function<void()> >::DoComplete(void *, Threads::SchedulerOperation_t *) (pOwner=0x7f959c003488, pBase=0x7f9584024b10) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:429
+#13 0x000000000090e03a in Complete (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:389
+#14 do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:617
+#15 run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#16 loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#17 operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#18 std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#19 0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c1638d0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#20 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c1644e0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#21 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#22 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 69 (Thread 0x7f95aa59e700 (LWP 85959)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x103b970a0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 68 (Thread 0x7f95a9d7e700 (LWP 85967)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xb3dbea00) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 67 (Thread 0x7f95a892e700 (LWP 85987)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7225000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 66 (Thread 0x7f95a8e42700 (LWP 85982)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x3dd0dd00) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 65 (Thread 0x7f95a78ee700 (LWP 86003)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000007165bb in AutoEvent_T<true>::WaitEvent (this=0x7f95a78e9af0, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1396
+#2  0x000000000086558a in QueryDiskChunks (pQuery=0x7f946800cdc8, pResult=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6254
+#3  0x00000000008678d5 in RtIndex_c::MultiQuery (this=0xec3b7780, pQuery=0x7f946800cdc8, pResult=0x7f9468003708, iSorters=1, ppSorters=0x7f94680c20c0, tArgs=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6360
+#4  0x0000000000869697 in RtIndex_c::MultiQueryEx (this=0xec3b7780, iQueries=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6769
+#5  0x00000000005bc3a1 in SearchHandler_c::RunLocalSearches (this=0x7f9468042ca0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5714
+#6  0x00000000005ceab7 in SearchHandler_c::RunSubset (this=0x7f9468042ca0, iStart=0, iEnd=0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:6465
+#7  0x00000000005cf835 in SearchHandler_c::RunQueries (this=0x7f9468042ca0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5119
+#8  0x00000000006090de in HttpSearchHandler_c::Process (this=0x7f94680124f0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:570
+#9  0x00000000006044aa in sphProcessHttpQuery (eEndpoint=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:1220
+#10 0x0000000000604a67 in sphLoopClientHttp (pRequest=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:1242
+#11 0x0000000000659540 in ThdJobHttp_c::Impl_c::CallHttp (this=0x7f95a002afb0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/netreceive_http.cpp:132
+#12 0x000000000071a340 in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2055
+#13 CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#14 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x59f0a6b0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#15 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#16 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 64 (Thread 0x7f95a986a700 (LWP 85972)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x79a9fc60) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 63 (Thread 0x7f95abaf2700 (LWP 85938)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1b2be0cf0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 62 (Thread 0x7f95a9e82700 (LWP 85966)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xbc5c5730) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 61 (Thread 0x7f95aa18e700 (LWP 85963)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xd13a53b0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 60 (Thread 0x7f95ab0ca700 (LWP 85948)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x16249ab20) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 59 (Thread 0x7f95a7f06700 (LWP 85997)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x113a51c20) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 58 (Thread 0x7f95ab4da700 (LWP 85944)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000007165bb in AutoEvent_T<true>::WaitEvent (this=0x7f95ab4d5af0, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1396
+#2  0x000000000086558a in QueryDiskChunks (pQuery=0x7f95840b5008, pResult=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6254
+#3  0x00000000008678d5 in RtIndex_c::MultiQuery (this=0x1bbcdb600, pQuery=0x7f95840b5008, pResult=0x7f95840025e8, iSorters=1, ppSorters=0x7f95840c5b30, tArgs=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6360
+#4  0x0000000000869697 in RtIndex_c::MultiQueryEx (this=0x1bbcdb600, iQueries=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6769
+#5  0x00000000005bc3a1 in SearchHandler_c::RunLocalSearches (this=0x7f958400c310) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5714
+#6  0x00000000005ceab7 in SearchHandler_c::RunSubset (this=0x7f958400c310, iStart=0, iEnd=0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:6465
+#7  0x00000000005cf835 in SearchHandler_c::RunQueries (this=0x7f958400c310) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5119
+#8  0x00000000006090de in HttpSearchHandler_c::Process (this=0x7f95840c7e80) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:570
+#9  0x00000000006044aa in sphProcessHttpQuery (eEndpoint=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:1220
+#10 0x0000000000604a67 in sphLoopClientHttp (pRequest=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:1242
+#11 0x0000000000659540 in ThdJobHttp_c::Impl_c::CallHttp (this=0x7f95a00a2780) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/netreceive_http.cpp:132
+#12 0x000000000071a340 in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2055
+#13 CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#14 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x16ef04dd0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#15 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#16 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 57 (Thread 0x7f95a7cfe700 (LWP 85999)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x10048c620) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 56 (Thread 0x7f95a945a700 (LWP 85976)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x5bd243d0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 55 (Thread 0x7f95a76e6700 (LWP 86005)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1d92af10) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 54 (Thread 0x7f9cca914700 (LWP 86334)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000090df89 in Wait<CSphScopedLock<CSphMutex> > (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/event.h:242
+#2  do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:604
+#3  run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#4  loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#5  operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#6  std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#7  0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c003710) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#8  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c163bb0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#9  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#10 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 53 (Thread 0x7f95a8c3a700 (LWP 85984)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x2e61a670) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 52 (Thread 0x7f9cc9c9d700 (LWP 86338)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000090df89 in Wait<CSphScopedLock<CSphMutex> > (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/event.h:242
+#2  do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:604
+#3  run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#4  loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#5  operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#6  std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#7  0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c164790) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#8  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c1647d0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#9  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#10 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 51 (Thread 0x7f9cc9685700 (LWP 86344)):
+#0  0x0000000000760aca in CSphMatch (this=0x7f94b80031f0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.h:1104
+#1  Allocate (this=0x7f94b80031f0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.h:1295
+#2  CSphFixedVector (this=0x7f94b80031f0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.h:1997
+#3  CSphMatchQueueTraits::CSphMatchQueueTraits (this=0x7f94b80031f0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsort.cpp:149
+#4  0x0000000000761434 in CSphMatchQueue (this=0x7f933c000b10) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsort.cpp:257
+#5  CSphMatchQueue<MatchGeneric2_fn, false>::Clone (this=0x7f933c000b10) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsort.cpp:327
+#6  0x00000000008620bd in PrepareLocalTlsContext (__closure=0x7f94b80008c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:5968
+#7  __lambda12::operator() (__closure=0x7f94b80008c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6173
+#8  0x000000000090e34d in Threads::CompletionHandler_c<std::function<void()> >::DoComplete(void *, Threads::SchedulerOperation_t *) (pOwner=0x7f959c003488, pBase=0x7f933c110700) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:429
+#9  0x000000000090e03a in Complete (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:389
+#10 do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:617
+#11 run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#12 loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#13 operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#14 std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#15 0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c1659f0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#16 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c165a30) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#17 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#18 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 50 (Thread 0x7f95a914e700 (LWP 85979)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x48eba2d0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 49 (Thread 0x7f95a7e02700 (LWP 85998)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x112f43dd0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 48 (Thread 0x7f95a8212700 (LWP 85994)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x11d934bd0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 47 (Thread 0x7f9ccaa18700 (LWP 86333)):
+#0  0x00007f9ce9695588 in sYSMALLOc () from /lib64/libc.so.6
+#1  0x00007f9ce9696469 in _int_malloc () from /lib64/libc.so.6
+#2  0x00007f9ce9696b1c in malloc () from /lib64/libc.so.6
+#3  0x0000000000715d09 in operator new[] (iSize=800008) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:659
+#4  0x0000000000760a97 in Allocate (this=0x7f95800098e0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.h:1295
+#5  CSphFixedVector (this=0x7f95800098e0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.h:1997
+#6  CSphMatchQueueTraits::CSphMatchQueueTraits (this=0x7f95800098e0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsort.cpp:149
+#7  0x0000000000761434 in CSphMatchQueue (this=0x7f937c0b4d80) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsort.cpp:257
+#8  CSphMatchQueue<MatchGeneric2_fn, false>::Clone (this=0x7f937c0b4d80) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsort.cpp:327
+#9  0x00000000008620bd in PrepareLocalTlsContext (__closure=0x7f9580001440) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:5968
+#10 __lambda12::operator() (__closure=0x7f9580001440) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6173
+#11 0x000000000090e34d in Threads::CompletionHandler_c<std::function<void()> >::DoComplete(void *, Threads::SchedulerOperation_t *) (pOwner=0x7f959c003488, pBase=0x7f937c06ee10) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:429
+#12 0x000000000090e03a in Complete (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:389
+#13 do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:617
+#14 run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#15 loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#16 operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#17 std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#18 0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c003680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#19 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c0036c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#20 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#21 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 46 (Thread 0x7f9cbcd6b700 (LWP 28561)):
+#0  0x00007f9ce96a59d0 in memcpy () from /lib64/libc.so.6
+#1  0x00000000006662d1 in CSphLowercaser::SetRemap (this=0x7f9390070f50, pLC=0x7e025700) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:3305
+#2  0x0000000000667288 in operator= (this=0x7f9390070f40, pFrom=0x7e0256f0, eMode=SPH_CLONE_QUERY) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:3412
+#3  CSphTokenizerBase::CloneBase (this=0x7f9390070f40, pFrom=0x7e0256f0, eMode=SPH_CLONE_QUERY) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:4342
+#4  0x00000000006e002f in CSphTokenizer_UTF8<false>::Clone (this=0x7e0256f0, eMode=SPH_CLONE_QUERY) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:5364
+#5  0x00000000008682fa in RtIndex_c::MultiQuery (this=0x7d03e7a0, pQuery=0x7f954c028bb8, pResult=0x7f954c248f78, iSorters=1, ppSorters=0x7f954c08a4d0, tArgs=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6444
+#6  0x0000000000869697 in RtIndex_c::MultiQueryEx (this=0x7d03e7a0, iQueries=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6769
+#7  0x000000000059d0bf in SearchHandler_c::RunLocalSearchMT (this=0x7f954c096960, dWork=..., tThd=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5535
+#8  0x000000000059d1dc in LocalSearch (pArg=0x7f954c250be0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5193
+#9  LocalSearchThreadFunc (pArg=0x7f954c250be0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5200
+#10 0x0000000000585e13 in SphCrashLogger_c::ThreadWrapper (pArg=0x7f954c250e00) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:1197
+#11 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f954c085fa0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#12 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#13 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 45 (Thread 0x7f95a841a700 (LWP 85992)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x14c4448c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 44 (Thread 0x7f9cca70c700 (LWP 86336)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000090df89 in Wait<CSphScopedLock<CSphMutex> > (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/event.h:242
+#2  do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:604
+#3  run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#4  loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#5  operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#6  std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#7  0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c163840) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#8  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c163880) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#9  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#10 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 43 (Thread 0x7f9ccab1c700 (LWP 86332)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000090df89 in Wait<CSphScopedLock<CSphMutex> > (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/event.h:242
+#2  do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:604
+#3  run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#4  loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#5  operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#6  std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#7  0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c003a80) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#8  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c163570) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#9  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#10 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 42 (Thread 0x7f9cca810700 (LWP 86335)):
+#0  Begin (this=0x7f9528001ca0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.h:1074
+#1  begin (this=0x7f9528001ca0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.h:1086
+#2  GetDocFieldsMask (this=0x7f9528001ca0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:2808
+#3  ExtMultiAnd_T<true, true>::GetDocsChunk (this=0x7f9528001ca0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:2950
+#4  0x0000000000833f90 in ExtRanker_T<true>::GetFilteredDocs (this=0x7f95280037a0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:835
+#5  0x0000000000842328 in ExtRanker_State_T<RankerState_Expr_fn<false, false>, true>::GetMatches (this=0x7f95280037a0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:1089
+#6  0x00000000006bb2fb in CSphIndex_VLN::MatchExtended<true, false, false> (this=0xed348050, pCtx=0x7f9cca80d940, pQuery=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:12990
+#7  0x0000000000691f7c in CSphIndex_VLN::ParsedMultiQuery (this=0xed348050, pQuery=0x7f946800cdc8, pResult=0x7f9cca80f040, iSorters=1, ppSorters=0x7f9528001180, tXQ=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:16295
+#8  0x00000000006a70f1 in CSphIndex_VLN::MultiQuery (this=0xed348050, pQuery=0x7f946800cdc8, pResult=0x7f9cca80f040, iSorters=<value optimized out>, ppSorters=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:15921
+#9  0x0000000000861cbe in __lambda12::operator() (__closure=0x7f95280008c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6192
+#10 0x000000000090e34d in Threads::CompletionHandler_c<std::function<void()> >::DoComplete(void *, Threads::SchedulerOperation_t *) (pOwner=0x7f959c003488, pBase=0x7f94680a0390) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:429
+#11 0x000000000090e03a in Complete (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:389
+#12 do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:617
+#13 run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#14 loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#15 operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#16 std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#17 0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c163e60) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#18 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c163ea0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#19 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#20 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 41 (Thread 0x7f95a882a700 (LWP 85988)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1be0af210) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 40 (Thread 0x7f95a8d3e700 (LWP 85983)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x36498130) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 39 (Thread 0x7f9ccac20700 (LWP 86331)):
+#0  0x000000000081e3eb in Filter_SingleValueStatic32::Eval (this=0x7f9588002b20, tMatch=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxfilter.cpp:227
+#1  0x000000000081e5e5 in Filter_And::Eval (this=0x7f9588002b20, tMatch=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxfilter.cpp:707
+#2  0x00000000006625ed in CSphIndex_VLN::EarlyReject (this=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:12725
+#3  0x000000000083401c in ExtRanker_T<true>::GetFilteredDocs (this=0x7f95880008c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:853
+#4  0x000000000082f627 in ExtRanker_WeightSum_c<true>::GetMatches (this=0x7f95880008c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:905
+#5  0x00000000006bb2fb in CSphIndex_VLN::MatchExtended<true, false, false> (this=0x49ef7610, pCtx=0x7f9ccac1d940, pQuery=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:12990
+#6  0x0000000000691f7c in CSphIndex_VLN::ParsedMultiQuery (this=0x49ef7610, pQuery=0x7f954c028bb8, pResult=0x7f9ccac1f040, iSorters=1, ppSorters=0x7f91f54943d0, tXQ=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:16295
+#7  0x00000000006a70f1 in CSphIndex_VLN::MultiQuery (this=0x49ef7610, pQuery=0x7f954c028bb8, pResult=0x7f9ccac1f040, iSorters=<value optimized out>, ppSorters=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:15921
+#8  0x0000000000861cbe in __lambda12::operator() (__closure=0x7f91f5494220) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6192
+#9  0x000000000090e34d in Threads::CompletionHandler_c<std::function<void()> >::DoComplete(void *, Threads::SchedulerOperation_t *) (pOwner=0x7f959c003488, pBase=0x7f936c088c10) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:429
+#10 0x000000000090e03a in Complete (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:389
+#11 do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:617
+#12 run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#13 loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#14 operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#15 std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#16 0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c003770) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#17 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c0037b0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#18 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#19 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 38 (Thread 0x7f95a79f2700 (LWP 86002)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x82b9c6c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 37 (Thread 0x7f95a810e700 (LWP 85995)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1187e48d0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 36 (Thread 0x7f95aaec2700 (LWP 85950)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1521a85b0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 35 (Thread 0x7f95a9252700 (LWP 85978)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x4d9cf380) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 34 (Thread 0x7f95aadbe700 (LWP 85951)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1503c9460) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 33 (Thread 0x7f95aabb6700 (LWP 85953)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x14c65ead0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 32 (Thread 0x7f95a9a72700 (LWP 85970)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x946196b0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 31 (Thread 0x7f95a9356700 (LWP 85977)):
+#0  0x000000000084df06 in RtWordReader_t::UnzipWord (this=0x7f95a9351b60) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:523
+#1  0x00000000008615fa in RtIndex_c::RtQwordSetupSegment (pQword=0x7f93d4010390, pCurSeg=0x1bbeaf7a0, bSetup=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:5207
+#2  0x00000000008cbe1e in ExtMultiAnd_T<true, true>::Reset (this=0x7f93d4022d10, tSetup=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:3231
+#3  0x0000000000824e46 in ExtRanker_c::Reset (this=0x7f93d401cad0, tSetup=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:434
+#4  0x0000000000868d3c in RtIndex_c::MultiQuery (this=0x1bbe79640, pQuery=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6637
+#5  0x0000000000869697 in RtIndex_c::MultiQueryEx (this=0x1bbe79640, iQueries=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6769
+#6  0x00000000005bc3a1 in SearchHandler_c::RunLocalSearches (this=0x7f93d404e0f0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5714
+#7  0x00000000005ceab7 in SearchHandler_c::RunSubset (this=0x7f93d404e0f0, iStart=0, iEnd=0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:6465
+#8  0x00000000005cf835 in SearchHandler_c::RunQueries (this=0x7f93d404e0f0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5119
+#9  0x00000000006090de in HttpSearchHandler_c::Process (this=0x7f93d40106e0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:570
+#10 0x00000000006044aa in sphProcessHttpQuery (eEndpoint=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:1220
+#11 0x0000000000604a67 in sphLoopClientHttp (pRequest=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:1242
+#12 0x0000000000659540 in ThdJobHttp_c::Impl_c::CallHttp (this=0x7f95a009c430) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/netreceive_http.cpp:132
+#13 0x000000000071a340 in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2055
+#14 CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#15 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x538e2780) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#16 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#17 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 30 (Thread 0x7f95aa292700 (LWP 85962)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xd2b2b520) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7f95aa49a700 (LWP 85960)):
+#0  0x00007f9ceafcf2fd in pthread_join () from /lib64/libpthread.so.0
+#1  0x0000000000715fde in sphThreadJoin (pThread=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1035
+#2  0x00000000005bb25e in SearchHandler_c::RunLocalSearchesParallel (this=0x7f954c096960) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5336
+#3  0x00000000005bbb46 in SearchHandler_c::RunLocalSearches (this=0x7f954c096960) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5614
+#4  0x00000000005ceab7 in SearchHandler_c::RunSubset (this=0x7f954c096960, iStart=0, iEnd=0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:6465
+#5  0x00000000005cf835 in SearchHandler_c::RunQueries (this=0x7f954c096960) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5119
+#6  0x00000000006090de in HttpSearchHandler_c::Process (this=0x7f954c081870) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:570
+#7  0x00000000006044aa in sphProcessHttpQuery (eEndpoint=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:1220
+#8  0x0000000000604a67 in sphLoopClientHttp (pRequest=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:1242
+#9  0x0000000000659540 in ThdJobHttp_c::Impl_c::CallHttp (this=0x7f95a04146a0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/netreceive_http.cpp:132
+#10 0x000000000071a340 in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2055
+#11 CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#12 0x0000000000715a13 in sphThreadProcWrapper (pArg=0xff34f0c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#13 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7f95aa396700 (LWP 85961)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0xed0fba50) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7f95ab8ea700 (LWP 85940)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x197a61ca0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7f95aa7a6700 (LWP 85957)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1156171d0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7f95aa9ae700 (LWP 85955)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x149d56a50) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7f95abcfa700 (LWP 85936)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1bb6926e0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7f95aafc6700 (LWP 85949)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x158567e80) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7f95ab1ce700 (LWP 85947)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x16ae690e0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7f95ab5de700 (LWP 85943)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x170174850) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7f95ab3d6700 (LWP 85945)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x16eb728d0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7f95ab7e6700 (LWP 85941)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x18f209c90) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7f95ab6e2700 (LWP 85942)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x171f6a380) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7f95ab9ee700 (LWP 85939)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000071646b in AutoEvent_T<false>::WaitEvent (this=0x1bc7cf688, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1358
+#2  0x000000000071a2cf in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2028
+#3  CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#4  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1b1bc4d60) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#5  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7f95abbf6700 (LWP 85937)):
+#0  0x00007f9ceafcf2fd in pthread_join () from /lib64/libpthread.so.0
+#1  0x0000000000715fde in sphThreadJoin (pThread=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1035
+#2  0x00000000005bb25e in SearchHandler_c::RunLocalSearchesParallel (this=0x7f94980c4010) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5336
+#3  0x00000000005bbb46 in SearchHandler_c::RunLocalSearches (this=0x7f94980c4010) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5614
+#4  0x00000000005ceab7 in SearchHandler_c::RunSubset (this=0x7f94980c4010, iStart=0, iEnd=0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:6465
+#5  0x00000000005cf835 in SearchHandler_c::RunQueries (this=0x7f94980c4010) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5119
+#6  0x00000000006090de in HttpSearchHandler_c::Process (this=0x7f949800b040) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:570
+#7  0x00000000006044aa in sphProcessHttpQuery (eEndpoint=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:1220
+#8  0x0000000000604a67 in sphLoopClientHttp (pRequest=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdhttp.cpp:1242
+#9  0x0000000000659540 in ThdJobHttp_c::Impl_c::CallHttp (this=0x7f95a002e010) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/netreceive_http.cpp:132
+#10 0x000000000071a340 in TickImpl (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2055
+#11 CSphThdPool::Tick (pArg=0x1bc7cf680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:2021
+#12 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x1b35987f0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#13 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 15 (Thread 0x7f9ce83c9700 (LWP 85863)):
+#0  0x00007f9ceafd2a5e in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000007163f6 in AutoEvent_T<false>::WaitEvent (this=0xe2a748, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1376
+#2  0x00000000006220e4 in JobTick (pArg=0x524e2e0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdtask.cpp:602
+#3  JobLoop (pArg=0x524e2e0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdtask.cpp:630
+#4  LazyJobs_c::TheadPoolWorker (pArg=0x524e2e0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdtask.cpp:676
+#5  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x524e340) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#6  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7f9ceb3ef820 (LWP 85861)):
+#0  0x00007f9ce96fd6a3 in select () from /lib64/libc.so.6
+#1  0x000000000065e1d4 in sphSleepMsec (iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.cpp:2377
+#2  0x00000000005c5ed2 in TickHead () at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:18633
+#3  0x00000000005c8cfa in ServiceMain (argc=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:20066
+#4  0x0000000000583559 in mainimpl (argc=5, argv=0x7fff6dd56b78) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:20126
+#5  main (argc=5, argv=0x7fff6dd56b78) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:20132
+
+Thread 13 (Thread 0x7f9cbc54b700 (LWP 28563)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000007165bb in AutoEvent_T<true>::WaitEvent (this=0x7f9cbc549880, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1396
+#2  0x000000000086558a in QueryDiskChunks (pQuery=0x7f954c028bb8, pResult=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6254
+#3  0x00000000008678d5 in RtIndex_c::MultiQuery (this=0x48eb6670, pQuery=0x7f954c028bb8, pResult=0x7f954c248370, iSorters=1, ppSorters=0x7f954c08a4c8, tArgs=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6360
+#4  0x0000000000869697 in RtIndex_c::MultiQueryEx (this=0x48eb6670, iQueries=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6769
+#5  0x000000000059d0bf in SearchHandler_c::RunLocalSearchMT (this=0x7f954c096960, dWork=..., tThd=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5535
+#6  0x000000000059d1dc in LocalSearch (pArg=0x7f954c250c90) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5193
+#7  LocalSearchThreadFunc (pArg=0x7f954c250c90) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5200
+#8  0x0000000000585e13 in SphCrashLogger_c::ThreadWrapper (pArg=0x7f954c071470) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:1197
+#9  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f954c030840) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#10 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#11 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7f9ceb3ed700 (LWP 85862)):
+#0  0x00007f9ceafd2a5e in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000000716546 in AutoEvent_T<true>::WaitEvent (this=0xe2a680, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1414
+#2  0x0000000000622b9a in EventTick (pArg=0xe2a600) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdtask.cpp:510
+#3  EventLoop (pArg=0xe2a600) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdtask.cpp:450
+#4  LazyJobs_c::WorkerFunc (pArg=0xe2a600) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchdtask.cpp:579
+#5  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x524d5e0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#6  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7f9c97271700 (LWP 28562)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000007165bb in AutoEvent_T<true>::WaitEvent (this=0x7f9c9726f880, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1396
+#2  0x000000000086558a in QueryDiskChunks (pQuery=0x7f954c028bb8, pResult=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6254
+#3  0x00000000008678d5 in RtIndex_c::MultiQuery (this=0x47e18570, pQuery=0x7f954c028bb8, pResult=0x7f954c247768, iSorters=1, ppSorters=0x7f954c08a4c0, tArgs=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6360
+#4  0x0000000000869697 in RtIndex_c::MultiQueryEx (this=0x47e18570, iQueries=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6769
+#5  0x000000000059d0bf in SearchHandler_c::RunLocalSearchMT (this=0x7f954c096960, dWork=..., tThd=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5535
+#6  0x000000000059d1dc in LocalSearch (pArg=0x7f954c250c38) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5193
+#7  LocalSearchThreadFunc (pArg=0x7f954c250c38) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5200
+#8  0x0000000000585e13 in SphCrashLogger_c::ThreadWrapper (pArg=0x7f954c071450) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:1197
+#9  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f954c0abfe0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#10 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#11 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7f9cbd383700 (LWP 28564)):
+#0  0x00007f9ce96a5720 in memcpy () from /lib64/libc.so.6
+#1  0x000000000084defa in RtWordReader_t::UnzipWord (this=0x7f9cbd381900) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:522
+#2  0x00000000008615fa in RtIndex_c::RtQwordSetupSegment (pQword=0x7f93500c3d50, pCurSeg=0x137023180, bSetup=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:5207
+#3  0x00000000008be755 in ExtTerm_T<true>::Reset (this=0x7f93500c2f60, tSetup=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:1867
+#4  0x0000000000824e46 in ExtRanker_c::Reset (this=0x7f9350080e10, tSetup=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:434
+#5  0x0000000000868d3c in RtIndex_c::MultiQuery (this=0x133d9dba0, pQuery=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6637
+#6  0x0000000000869697 in RtIndex_c::MultiQueryEx (this=0x133d9dba0, iQueries=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6769
+#7  0x000000000059d0bf in SearchHandler_c::RunLocalSearchMT (this=0x7f954c096960, dWork=..., tThd=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5535
+#8  0x000000000059d1dc in LocalSearch (pArg=0x7f954c250ce8) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5193
+#9  LocalSearchThreadFunc (pArg=0x7f954c250ce8) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5200
+#10 0x0000000000585e13 in SphCrashLogger_c::ThreadWrapper (pArg=0x7f954c05a680) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:1197
+#11 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f954cb43560) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#12 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#13 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7f9c675ba700 (LWP 28560)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000007165bb in AutoEvent_T<true>::WaitEvent (this=0x7f9c675b8880, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1396
+#2  0x000000000086558a in QueryDiskChunks (pQuery=0x7f954c028bb8, pResult=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6254
+#3  0x00000000008678d5 in RtIndex_c::MultiQuery (this=0x86af2d0, pQuery=0x7f954c028bb8, pResult=0x7f954c246b60, iSorters=1, ppSorters=0x7f954c08a4b8, tArgs=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6360
+#4  0x0000000000869697 in RtIndex_c::MultiQueryEx (this=0x86af2d0, iQueries=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6769
+#5  0x000000000059d0bf in SearchHandler_c::RunLocalSearchMT (this=0x7f954c096960, dWork=..., tThd=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5535
+#6  0x000000000059d1dc in LocalSearch (pArg=0x7f954c250b88) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5193
+#7  LocalSearchThreadFunc (pArg=0x7f954c250b88) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5200
+#8  0x0000000000585e13 in SphCrashLogger_c::ThreadWrapper (pArg=0x7f954c061050) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:1197
+#9  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f954c081da0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#10 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#11 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7f9cbd58b700 (LWP 28559)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000007165bb in AutoEvent_T<true>::WaitEvent (this=0x7f9cbd589880, iMsec=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:1396
+#2  0x000000000086558a in QueryDiskChunks (pQuery=0x7f954c028bb8, pResult=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6254
+#3  0x00000000008678d5 in RtIndex_c::MultiQuery (this=0x7545ba0, pQuery=0x7f954c028bb8, pResult=0x7f954c245f58, iSorters=1, ppSorters=0x7f954c08a4b0, tArgs=...) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6360
+#4  0x0000000000869697 in RtIndex_c::MultiQueryEx (this=0x7545ba0, iQueries=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6769
+#5  0x000000000059d0bf in SearchHandler_c::RunLocalSearchMT (this=0x7f954c096960, dWork=..., tThd=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5535
+#6  0x000000000059d1dc in LocalSearch (pArg=0x7f954c250b30) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5193
+#7  LocalSearchThreadFunc (pArg=0x7f954c250b30) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5200
+#8  0x0000000000585e13 in SphCrashLogger_c::ThreadWrapper (pArg=0x7f954c0607a0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:1197
+#9  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f954c071070) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#10 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#11 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7f9cc947d700 (LWP 86346)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000090df89 in Wait<CSphScopedLock<CSphMutex> > (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/event.h:242
+#2  do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:604
+#3  run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#4  loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#5  operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#6  std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#7  0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c165460) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#8  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c166070) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#9  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#10 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7f9cad883700 (LWP 28546)):
+#0  0x00000000008ad49f in ExtOr_c::GetDocsChunk (this=0x7f93f802bbe0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:3490
+#1  0x00000000008ad439 in ExtOr_c::GetDocsChunk (this=0x7f93f80b5e00) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:3463
+#2  0x00000000008ad439 in ExtOr_c::GetDocsChunk (this=0x7f93f80481e0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:3463
+#3  0x00000000008ad439 in ExtOr_c::GetDocsChunk (this=0x7f93f8048d50) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:3463
+#4  0x00000000008ad439 in ExtOr_c::GetDocsChunk (this=0x7f93f8002160) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:3463
+#5  0x00000000008ad439 in ExtOr_c::GetDocsChunk (this=0x7f93f8002cd0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:3463
+#6  0x00000000008ad439 in ExtOr_c::GetDocsChunk (this=0x7f93f8003840) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:3463
+#7  0x00000000008ae29b in WarmupDocs (this=0x7f93f8003d30) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:139
+#8  ExtAnd_c::GetDocsChunk (this=0x7f93f8003d30) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchnode.cpp:2577
+#9  0x0000000000833f90 in ExtRanker_T<true>::GetFilteredDocs (this=0x7f93f80add50) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:835
+#10 0x0000000000837836 in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::GetMatches (this=0x7f93f80add50) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsearch.cpp:1022
+#11 0x0000000000868dd4 in RtIndex_c::MultiQuery (this=0x255de3a0, pQuery=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6655
+#12 0x0000000000869697 in RtIndex_c::MultiQueryEx (this=0x255de3a0, iQueries=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6769
+#13 0x000000000059d0bf in SearchHandler_c::RunLocalSearchMT (this=0x7f94980c4010, dWork=..., tThd=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5535
+#14 0x000000000059d1dc in LocalSearch (pArg=0x7f949802dc28) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5193
+#15 LocalSearchThreadFunc (pArg=0x7f949802dc28) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:5200
+#16 0x0000000000585e13 in SphCrashLogger_c::ThreadWrapper (pArg=0x7f94980cfb90) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:1197
+#17 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f94980d9330) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#18 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#19 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7f9cc9581700 (LWP 86345)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000090df89 in Wait<CSphScopedLock<CSphMutex> > (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/event.h:242
+#2  do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:604
+#3  run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#4  loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#5  operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#6  std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#7  0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c1653d0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#8  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c165410) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#9  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#10 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7f9cc988d700 (LWP 86342)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000090df89 in Wait<CSphScopedLock<CSphMutex> > (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/event.h:242
+#2  do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:604
+#3  run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#4  loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#5  operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#6  std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#7  0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c164aa0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#8  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c164ae0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#9  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#10 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7f9cc9991700 (LWP 86341)):
+#0  0x00007f9ceafd268c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000090df89 in Wait<CSphScopedLock<CSphMutex> > (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/event.h:242
+#2  do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:604
+#3  run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#4  loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#5  operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#6  std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#7  0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c1650c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#8  0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c165100) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#9  0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#10 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7f9cc9789700 (LWP 86343)):
+#0  0x0000000000760aba in CSphMatch (this=0x7f94c00009a0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinx.h:1104
+#1  Allocate (this=0x7f94c00009a0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.h:1295
+#2  CSphFixedVector (this=0x7f94c00009a0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.h:1997
+#3  CSphMatchQueueTraits::CSphMatchQueueTraits (this=0x7f94c00009a0, iSize=25000) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsort.cpp:149
+#4  0x0000000000761434 in CSphMatchQueue (this=0x7f937c0b4d80) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsort.cpp:257
+#5  CSphMatchQueue<MatchGeneric2_fn, false>::Clone (this=0x7f937c0b4d80) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxsort.cpp:327
+#6  0x00000000008620bd in PrepareLocalTlsContext (__closure=0x7f94c00008c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:5968
+#7  __lambda12::operator() (__closure=0x7f94c00008c0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6173
+#8  0x000000000090e34d in Threads::CompletionHandler_c<std::function<void()> >::DoComplete(void *, Threads::SchedulerOperation_t *) (pOwner=0x7f959c003488, pBase=0x7f937c0b4c40) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:429
+#9  0x000000000090e03a in Complete (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:389
+#10 do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:617
+#11 run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#12 loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#13 operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#14 std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#15 0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c164b30) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#16 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c165740) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#17 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#18 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f9cc9a95700 (LWP 86340)):
+#0  SphCrashLogger_c::GetQuery () at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:1180
+#1  0x0000000000586030 in SphCrashLogger_c::HandleCrash (sig=11) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:981
+#2  <signal handler called>
+#3  SphCrashLogger_c::GetQuery () at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/searchd.cpp:1180
+#4  0x000000000070cfba in CrashQueryGet () at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxutils.cpp:3153
+#5  0x0000000000861b9e in __lambda12::operator() (__closure=0x7f94bc0e04f0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxrt.cpp:6170
+#6  0x000000000090e34d in Threads::CompletionHandler_c<std::function<void()> >::DoComplete(void *, Threads::SchedulerOperation_t *) (pOwner=0x7f959c003488, pBase=0x7f9288084cc0) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:429
+#7  0x000000000090e03a in Complete (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:389
+#8  do_run_one (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:617
+#9  run (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:590
+#10 loop (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:786
+#11 operator() (__functor=Unhandled dwarf expression opcode 0xf3
+) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:726
+#12 std::_Function_handler<void(), Threads::ThreadPool_c::Impl_t::Impl_t(size_t, char const*)::__lambda9>::_M_invoke(const std::_Any_data &) (__functor=Unhandled dwarf expression opcode 0xf3
+) at /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:2071
+#13 0x000000000090cfd8 in Threads::TinyThread_t::Do (pTr=0x7f959c164200) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/threadutils.cpp:279
+#14 0x0000000000715a13 in sphThreadProcWrapper (pArg=0x7f959c164e10) at /usr/src/debug/manticore-3.4.3-200414-21a3459-release-rhel6/bin/src_0/src/sphinxstd.cpp:884
+#15 0x00007f9ceafceaa1 in start_thread () from /lib64/libpthread.so.0
+#16 0x00007f9ce9704c4d in clone () from /lib64/libc.so.6
+quit
