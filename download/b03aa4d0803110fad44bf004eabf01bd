@@ -1,0 +1,472 @@
+
+searchd
+{
+	listen		= 7412
+	listen		= 7406:mysql41
+	listen          = 127.0.0.1:7407:mysql41_vip
+	log			= searchd.log
+	query_log		= query.log
+	query_log_format = sphinxql
+	read_timeout	= 600
+	client_timeout = 600
+#	dist_threads = 3
+
+	net_workers = 3
+	max_children	= 20
+#	queue_max_length = 2
+
+	pid_file		= searchd.pid
+
+	binlog_path = #a1/
+
+	seamless_rotate = 1
+	sphinxql_state = state.sql
+
+#	data_dir = data
+#	shutdown_token = a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+}
+
+common
+{
+	plugin_dir = /home/stas/bin
+	lemmatizer_base = /home/stas/aot/
+}
+
+source sql1
+{
+	type = mysql
+		sql_host		= 127.0.0.1
+	sql_user		= test
+	sql_pass		= 
+	sql_port		= 3306
+	sql_db		= test
+
+        sql_query = select id, title, UNCOMPRESS(content) as content, 1 as mode, id/100 as flt from posting limit 100000
+        sql_attr_uint = mode
+	sql_attr_float		= flt
+}
+
+index i111
+{
+	source = sql1
+	path = quora_document_rt_1.27621
+	dict = keywords
+#	columnar_attrs 		= flt
+#	min_infix_len = 3
+#	morphology = stem_en
+#	index_exact_words      = 1
+}
+
+index i112
+{
+        source = sql1
+        path = data/i112
+	dict = keywords
+#       min_infix_len = 3
+       morphology = stem_en
+       index_exact_words      = 1
+}
+
+index i121
+{
+        source = sql1
+        path = data/i121
+	dict = keywords
+       min_infix_len = 3
+#       morphology = stem_en
+#       index_exact_words      = 1
+}
+
+index i122
+{
+        source = sql1
+        path = data/i122
+	dict = keywords
+       min_infix_len = 3
+       morphology = stem_en
+       index_exact_words      = 1
+}
+
+
+
+source sql2 : sql1
+{
+	sql_query = select id, title, 1 as mode from posting where id>16005000 limit 100000
+}
+
+
+index i2
+{
+	source = sql2
+	path = data/i2
+}
+
+source sql3 : sql1
+{
+        sql_query = select id, title, 1 as mode from posting where id>17005000 limit 100000
+}
+
+
+index i3
+{
+        source = sql3
+        path = data/i3/i2
+}
+
+source sql4 : sql1
+{
+        sql_query = select id, title, 1 as mode from posting where id>15005000 limit 100000
+}
+
+
+index i4
+{
+        source = sql4
+        path = data/i4
+}
+
+source sql5 : sql1
+{
+        sql_query = select id, title, 1 as mode from posting where id>16005000 limit 100000
+}
+
+
+index i5
+{
+        source = sql5
+        path = data/i5
+}
+
+source sql6 : sql1
+{
+        sql_query = select id, title, 1 as mode from posting where id>17005000 limit 100000
+}
+
+
+index i6
+{
+        source = sql6
+        path = data/i6
+}
+
+index d1
+{
+        type = distributed
+        local = i1
+	local = i2
+	local = i3
+	local = i4
+	local = i5
+	local = i6
+}
+
+index d2
+{
+	type = distributed
+	agent_persistent = 127.0.0.1:8312|127.0.0.1:8312|127.0.0.1:8312:i1
+	ha_strategy = nodeads
+	agent_query_timeout = 60000
+}
+
+#index plain3
+#{
+#        source = sql2
+#        path = data1/plain1
+#}
+
+index dist
+{
+	type = distributed
+	agent = 127.0.0.1:8312:rt_d1
+}
+
+index rt1
+{
+	type = rt
+	path = 
+	rt_mem_limit = 1024M
+
+	rt_field = content	
+	rt_attr_string = content
+	rt_field = text
+	rt_attr_string = text
+	rt_attr_uint = ts
+}
+
+#index p1
+#{
+#	type = persistent
+#	path = a1/p1
+#}
+
+#index p2
+#{
+#        type = persistent
+#        path = a1/p2
+#        min_infix_len = 2
+#}
+
+index pq
+{
+        type = percolate
+        path = data/pq
+}
+
+source sql11
+{
+        type = mysql
+        sql_host                = 127.0.0.1
+        sql_user                = test
+        sql_pass                =
+        sql_port                = 3306
+        sql_db          = test
+
+        #sql_query = select id, title, channel_id, ts, url_crc, TRIM(BOTH '\n' from tags) as tags from posting where id>15005000 limit 5000000
+	sql_query = select id, title, channel_id, ts, url_crc, TRIM(BOTH ' ' from REPLACE(tags, '\n', ' ')) as tags from posting where id>15005000 limit 5000000
+        sql_attr_uint = channel_id
+	sql_attr_uint = ts
+	sql_attr_uint = url_crc
+	sql_attr_string = tags
+}
+
+index node1
+{
+        source = sql11
+        path = data/node1
+#	access_plain_attrs = mmap
+#	access_blob_attrs = mmap
+	access_doclists = file
+	access_hitlists = file
+}
+
+index rt2
+{
+        type = rt
+#       path = /home/stas/usr/bin/a1/rt2
+        rt_mem_limit = 128k
+
+        rt_field = content
+        rt_attr_uint = gid
+	rt_attr_string = text
+}
+
+index clist
+{
+	type = rt
+#	path = clist/index_40
+        rt_field = content
+        rt_attr_uint = gid
+
+}
+
+index section_4
+{
+    type                = rt
+#    path                = data/rtsection_4
+    rt_field            = name
+    rt_attr_string      = attr
+    rt_mem_limit        = 50M
+}
+
+index section_9
+{
+    type                = rt
+#    path                = data/rtsection_9
+    rt_field            = name
+    rt_attr_string      = attr
+    rt_mem_limit        = 50M
+}
+
+index pq3
+{
+##        type = percolate
+##        path = data/idx_pq3
+
+    type                = rt
+    path                = data/idx_rt3
+    rt_field            = name
+    rt_attr_string      = attr
+    rt_mem_limit        = 50M
+}
+
+index rt_d1
+{
+	type = rt
+    path                = data/rt_d1
+    rt_field            = title
+    rt_attr_string      = title
+	rt_attr_uint = gid
+
+}
+
+source swiki
+{
+        type = mysql
+        sql_host                = 127.0.0.1
+        sql_user                = test
+        sql_pass                =
+        sql_port                = 3306
+        sql_db          = test
+
+        sql_query = select id, pageid, touched, title, uncompress(bodyc) as body from wiki where id<143431383
+        sql_attr_uint = pageid
+        sql_attr_uint = touched
+}
+
+index wiki
+{
+        source = swiki
+        path = data/wiki
+	min_infix_len = 3
+}
+
+index conv
+{
+        source = swiki
+        path = mnt/data1/idx/forumidx64
+        min_infix_len = 3
+}
+
+index i21
+{
+        source = swiki
+        path = data/i2/idx_full
+}
+
+index i31
+{
+        source = swiki
+        path = data/i3/idx_full
+}
+
+index i41
+{
+        source = swiki
+        path = data/i4/idx_full
+}
+
+index test
+{
+	path = i564/var/lib/manticore/indxall_b.125
+}
+
+index d_loc
+{
+	type = distributed
+	local = i21,i31,i41
+        local = i21,i31,i41
+        local = i21,i31,i41
+        local = i21,i31,i41
+        local = i21,i31,i41
+        local = i21,i31,i41
+
+}
+
+
+index d_dist
+{
+	type = distributed
+	agent = 127.0.0.1:8312:d_loc
+	agent_connect_timeout	= 1000
+	agent_query_timeout	= 10000
+
+}
+
+index pq301
+{
+        type = percolate
+        path = data/idx_pq301
+}
+
+index pq302
+{
+        type = percolate
+        path = data/idx_pq302
+}
+
+index pq303
+{
+        type = percolate
+        path = data/idx_pq303
+}
+
+index pq304
+{
+        type = percolate
+        path = data/idx_pq304
+}
+
+index rt10
+{
+    type = rt
+    path = data/rt10
+    rt_field = text
+    rt_attr_uint = a
+}
+
+index pq_l
+{
+        type = percolate
+        path = data/pq_l
+	morphology = lemmatize_ru_all, lemmatize_en_all
+}
+
+index rt_l
+{
+    type = rt
+    path = data/rt_l
+    rt_field = text
+    rt_attr_uint = a
+	morphology = lemmatize_ru_all, lemmatize_en_all
+}
+
+index myHB_index2
+{
+        source = swiki
+        path = gh190/myHB_index2
+}
+
+index weblog3
+{
+	type = rt
+	path			= gh319/prod_addr_v2
+	rt_mem_limit = 8M
+	
+	rt_field		= title
+	rt_field		= type
+	rt_field		= namespace
+	rt_attr_uint	= idd
+	rt_attr_uint	= @timestamp
+	
+	dict = keywords
+	index_field_lengths = 1
+}
+
+source test_4_1_source
+{
+    type = xmlpipe2
+    #xmlpipe_command = cat ex/7bad.xml
+    #xmlpipe_fixup_utf8 = 1
+    
+    xmlpipe_command = cat ex/xbad21.xml
+    #xmlpipe_command = cat ex/xbad3.xml
+}
+
+
+index test_4_1
+{
+    type = plain
+    path = ex/test_4_1
+    dict = keywords
+
+    source = test_4_1_source
+}
+
+index quora_document_rt_4
+{
+    path               = ivi/quora_document_rt_4
+    type               = rt
+    rt_field = title
+    rt_attr_uint	= idd
+}
+
