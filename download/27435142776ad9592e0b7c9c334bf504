@@ -1,0 +1,151 @@
+[Sat Jul  7 05:52:04.762 2018] [37300] watchdog: main process 37301 forked ok
+[Sat Jul  7 05:52:04.762 2018] [37301] listening on all interfaces, port=6313
+[Sat Jul  7 05:52:04.762 2018] [37301] listening on all interfaces, port=6314
+[Sat Jul  7 05:52:04.762 2018] [37301] listening on all interfaces, port=9314
+[Sat Jul  7 05:58:27.878 2018] [37301] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jul  7 06:16:09.908 2018] [37301] binlog: index vk_pq_rt: recovered from tid 3455313 to tid 3455411
+[Sat Jul  7 06:16:09.908 2018] [37301] binlog: replay stats: 96423 rows in 98 commits; 0 updates, 0 reconfigure; 1 indexes
+[Sat Jul  7 06:16:09.908 2018] [37301] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 45.9 MB in 1062.029 sec
+[Sat Jul  7 06:16:09.908 2018] [37301] binlog: finished replaying total 1 in 1062.029 sec
+[Sat Jul  7 06:16:09.908 2018] [37301] prereading 4 indexes
+[Sat Jul  7 06:16:09.941 2018] [37301] prereaded 3 indexes in 0.033 sec
+[Sat Jul  7 06:16:09.941 2018] [37301] accepting connections
+[Sat Jul  7 06:19:10.115 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3455313, current TID=3455425, ram=286.431 Mb, time delta=1242 sec, took=39.972 sec)
+[Sat Jul  7 06:39:43.276 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3455425, current TID=3455526, ram=328.402 Mb, time delta=1233 sec, took=31.250 sec)
+[Sat Jul  7 07:00:46.899 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3455526, current TID=3455605, ram=357.576 Mb, time delta=1263 sec, took=61.660 sec)
+[Sat Jul  7 07:21:26.365 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3455605, current TID=3455694, ram=392.613 Mb, time delta=1239 sec, took=37.471 sec)
+[Sat Jul  7 07:41:59.229 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3455694, current TID=3455780, ram=426.556 Mb, time delta=1232 sec, took=30.872 sec)
+[Sat Jul  7 08:02:38.950 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3455780, current TID=3455875, ram=462.843 Mb, time delta=1239 sec, took=37.734 sec)
+[Sat Jul  7 08:23:13.711 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3455875, current TID=3455970, ram=501.067 Mb, time delta=1234 sec, took=32.775 sec)
+[Sat Jul  7 08:43:49.968 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3455970, current TID=3456068, ram=543.221 Mb, time delta=1236 sec, took=34.218 sec)
+[Sat Jul  7 09:04:22.680 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3456068, current TID=3456172, ram=585.810 Mb, time delta=1232 sec, took=30.686 sec)
+[Sat Jul  7 09:24:58.614 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3456172, current TID=3456273, ram=621.716 Mb, time delta=1235 sec, took=33.924 sec)
+[Sat Jul  7 09:45:31.186 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3456273, current TID=3456366, ram=656.744 Mb, time delta=1232 sec, took=30.549 sec)
+[Sat Jul  7 10:05:55.729 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3456366, current TID=3456466, ram=691.557 Mb, time delta=1224 sec, took=22.543 sec)
+[Sat Jul  7 10:26:27.198 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3456466, current TID=3456566, ram=729.420 Mb, time delta=1231 sec, took=29.484 sec)
+[Sat Jul  7 10:47:00.962 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3456566, current TID=3456668, ram=768.069 Mb, time delta=1233 sec, took=31.756 sec)
+[Sat Jul  7 11:07:27.967 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3456668, current TID=3456773, ram=805.337 Mb, time delta=1227 sec, took=25.011 sec)
+[Sat Jul  7 11:27:57.164 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3456773, current TID=3456878, ram=844.642 Mb, time delta=1229 sec, took=27.190 sec)
+[Sat Jul  7 11:48:28.416 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3456878, current TID=3456984, ram=885.968 Mb, time delta=1231 sec, took=29.228 sec)
+[Sat Jul  7 12:08:51.874 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3456984, current TID=3457088, ram=922.132 Mb, time delta=1223 sec, took=21.364 sec)
+[Sat Jul  7 12:29:13.443 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3457088, current TID=3457193, ram=959.882 Mb, time delta=1221 sec, took=19.551 sec)
+[Sat Jul  7 12:49:46.906 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3457193, current TID=3457298, ram=1007.681 Mb, time delta=1233 sec, took=31.474 sec)
+[Sat Jul  7 13:10:22.251 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3457298, current TID=3457409, ram=1057.642 Mb, time delta=1235 sec, took=33.340 sec)
+[Sat Jul  7 13:30:44.488 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3457409, current TID=3457519, ram=1101.654 Mb, time delta=1222 sec, took=20.209 sec)
+[Sat Jul  7 13:51:20.020 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3457519, current TID=3457626, ram=1138.292 Mb, time delta=1235 sec, took=33.541 sec)
+[Sat Jul  7 14:11:58.822 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3457626, current TID=3457736, ram=1176.890 Mb, time delta=1238 sec, took=36.827 sec)
+[Sat Jul  7 14:32:36.125 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3457736, current TID=3457848, ram=1220.773 Mb, time delta=1237 sec, took=35.308 sec)
+[Sat Jul  7 14:53:02.143 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3457848, current TID=3457956, ram=1259.942 Mb, time delta=1226 sec, took=23.967 sec)
+[Sat Jul  7 15:13:29.903 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3457956, current TID=3458066, ram=1295.340 Mb, time delta=1227 sec, took=25.749 sec)
+[Sat Jul  7 15:33:44.066 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3458066, current TID=3458172, ram=1332.309 Mb, time delta=1214 sec, took=12.177 sec)
+[Sat Jul  7 15:54:10.991 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3458172, current TID=3458287, ram=1376.043 Mb, time delta=1226 sec, took=24.932 sec)
+[Sat Jul  7 16:14:43.544 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3458287, current TID=3458400, ram=1412.522 Mb, time delta=1232 sec, took=30.534 sec)
+[Sat Jul  7 16:35:13.297 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3458400, current TID=3458508, ram=1450.803 Mb, time delta=1229 sec, took=27.767 sec)
+[Sat Jul  7 16:55:52.810 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3458508, current TID=3458617, ram=1485.205 Mb, time delta=1239 sec, took=37.561 sec)
+[Sat Jul  7 17:16:22.511 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3458617, current TID=3458725, ram=1516.182 Mb, time delta=1229 sec, took=27.687 sec)
+[Sat Jul  7 17:36:53.563 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3458725, current TID=3458839, ram=1552.768 Mb, time delta=1231 sec, took=29.052 sec)
+[Sat Jul  7 17:57:26.969 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3458839, current TID=3458954, ram=1588.403 Mb, time delta=1233 sec, took=31.376 sec)
+[Sat Jul  7 18:18:00.474 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3458954, current TID=3459067, ram=1628.409 Mb, time delta=1233 sec, took=31.490 sec)
+[Sat Jul  7 18:38:33.201 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3459067, current TID=3459182, ram=1670.098 Mb, time delta=1232 sec, took=30.704 sec)
+[Sat Jul  7 18:58:55.867 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3459182, current TID=3459299, ram=1714.506 Mb, time delta=1222 sec, took=20.673 sec)
+[Sat Jul  7 19:26:25.682 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3459330, current TID=3459465, ram=55.118 Mb, time delta=1229 sec, took=27.101 sec)
+[Sat Jul  7 19:46:46.020 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3459464, current TID=3459584, ram=104.747 Mb, time delta=1220 sec, took=18.325 sec)
+[Sat Jul  7 20:09:32.978 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3459596, current TID=3459723, ram=53.804 Mb, time delta=1228 sec, took=24.696 sec)
+[Sat Jul  7 20:29:53.862 2018] [28074] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3459723, current TID=3459843, ram=99.195 Mb, time delta=1220 sec, took=18.869 sec)
+[Sat Jul  7 20:33:14.428 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.429 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.429 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.431 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.431 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.432 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.432 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.434 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.434 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.435 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.435 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.437 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.437 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.438 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.438 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.439 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.439 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.441 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.441 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.442 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.442 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.443 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.443 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.444 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.444 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.445 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.445 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.447 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.447 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:14.448 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:14.448 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:18.277 2018] [28095] WARNING: last message repeated 100 times
+[Sat Jul  7 20:33:18.277 2018] [28095] WARNING: accept() failed, raise ulimit -n and restart searchd: Too many open files
+[Sat Jul  7 20:33:19.211 2018] [40487] FATAL: last message repeated 2 times
+[Sat Jul  7 20:33:19.211 2018] [40487] FATAL: disk chunk /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.11163: prealloc failed: failed to open file '/boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.11163.spm': 'No such file or directory'
+------- FATAL: CRASH DUMP -------
+[Sat Jul  7 20:33:19.948 2018] [37301]
+
+--- crashed invalid query ---
+
+--- request dump end ---
+Manticore 2.7.1 668faae@180620 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DDATADIR=/var/data -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_RLP=1 -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinx
+Host OS is Linux rpmbuild02.boardreader.com 3.10.0-693.21.1.vz7.47.4 #1 SMP Sat Apr 28 11:48:07 MSK 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f8bf87d2ef7, thread stack size = 0x40000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x4)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x4, stack=0x7f8bf87e0000, stacksize=0x40000)
+Trying system backtrace:
+begin of manual symbols:
+671c48
+4d7d54
+7fa078925370
+7fa078920deb
+67a409
+55ba40
+4f52e3
+6798bf
+7fa07891ddc5
+7fa076fbb76d
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 10): ---
+--- BT to source lines finished ---
+--- 9 active threads ---
+thd 0, proto sphinxql, state handshake, command SYSTEM
+thd 1, proto sphinxql, state handshake, command SYSTEM
+thd 2, proto sphinxql, state query, command replace
+thd 3, proto sphinxql, state query, command replace
+thd 4, proto sphinxql, state query, command replace
+thd 5, proto sphinxql, state query, command update
+thd 6, proto sphinxql, state query, command optimize_index
+thd 7, proto sphinxql, state query, command delete
+thd 8, proto sphinxql, state query, command update
+------- CRASH DUMP END -------
+[Sat Jul  7 20:34:05.528 2018] [56474] watchdog: main process 56475 forked ok
+[Sat Jul  7 20:34:05.528 2018] [56475] listening on all interfaces, port=6313
+[Sat Jul  7 20:34:05.528 2018] [56475] listening on all interfaces, port=6314
+[Sat Jul  7 20:34:05.528 2018] [56475] listening on all interfaces, port=9314
+[Sat Jul  7 20:38:01.534 2018] [56475] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jul  7 20:41:18.002 2018] [56475] binlog: index vk_pq_rt: recovered from tid 3459843 to tid 3459867
+[Sat Jul  7 20:41:18.002 2018] [56475] binlog: replay stats: 23520 rows in 24 commits; 0 updates, 0 reconfigure; 1 indexes
+[Sat Jul  7 20:41:18.002 2018] [56475] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 9.9 MB in 196.450 sec
+[Sat Jul  7 20:41:18.002 2018] [56475] binlog: finished replaying total 1 in 196.467 sec
+[Sat Jul  7 20:41:18.002 2018] [56475] prereading 4 indexes
+[Sat Jul  7 20:41:18.039 2018] [56475] prereaded 3 indexes in 0.037 sec
+[Sat Jul  7 20:41:18.039 2018] [56475] accepting connections
+[Sat Jul  7 20:58:21.975 2018] [24024] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3459843, current TID=3459967, ram=146.422 Mb, time delta=1220 sec, took=17.288 sec)
+[Sat Jul  7 21:18:42.650 2018] [24024] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3459967, current TID=3460090, ram=194.958 Mb, time delta=1220 sec, took=18.687 sec)
+[Sat Jul  7 21:39:02.657 2018] [24024] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3460090, current TID=3460213, ram=240.896 Mb, time delta=1220 sec, took=18.035 sec)
