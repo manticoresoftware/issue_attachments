@@ -1,0 +1,1030 @@
+[Thu Jun 28 20:51:48.002 2018] [40440] watchdog: main process 40441 forked ok
+[Thu Jun 28 20:51:48.002 2018] [40441] listening on all interfaces, port=6313
+[Thu Jun 28 20:51:48.002 2018] [40441] listening on all interfaces, port=6314
+[Thu Jun 28 20:51:48.002 2018] [40441] listening on all interfaces, port=9314
+[Thu Jun 28 20:52:44.141 2018] [40441] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Thu Jun 28 20:52:58.949 2018] [40441] binlog: index vk_pq_rt: recovered from tid 3163988 to tid 3164901
+[Thu Jun 28 20:52:58.949 2018] [40441] binlog: replay stats: 267350 rows in 299 commits; 614 updates, 0 reconfigure; 1 indexes
+[Thu Jun 28 20:52:58.949 2018] [40441] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 120.3 MB in 14.807 sec
+[Thu Jun 28 20:52:58.949 2018] [40441] binlog: finished replaying total 1 in 14.807 sec
+[Thu Jun 28 20:52:58.956 2018] [40441] prereading 4 indexes
+[Thu Jun 28 20:52:58.956 2018] [40441] prereaded 3 indexes in 0.000 sec
+[Thu Jun 28 20:52:58.956 2018] [40441] accepting connections
+[Thu Jun 28 23:27:57.815 2018] [40441] caught SIGTERM, shutting down
+[Thu Jun 28 23:28:00.943 2018] [17849] watchdog: main process 17850 forked ok
+[Thu Jun 28 23:28:00.943 2018] [17850] listening on all interfaces, port=6313
+[Thu Jun 28 23:28:00.943 2018] [17850] listening on all interfaces, port=6314
+[Thu Jun 28 23:28:00.943 2018] [17850] listening on all interfaces, port=9314
+[Thu Jun 28 23:28:01.075 2018] [17850] WARNING: index 'vk_document_maintenance': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance.spl: Resource temporarily unavailable; NOT SERVING
+[Thu Jun 28 23:28:01.080 2018] [17850] WARNING: index 'vk_document_maintenance_delta': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance_delta.spl: Resource temporarily unavailable; NOT SERVING
+[Thu Jun 28 23:28:01.080 2018] [17850] WARNING: index 'vk_pq_rt': prealloc: failed to lock /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.lock: Resource temporarily unavailable; NOT SERVING
+[Thu Jun 28 23:28:01.084 2018] [17850] FATAL: failed to lock '/mnt/data/datart_pq/binlog//binlog.lock': 11 'Resource temporarily unavailable'
+[Thu Jun 28 23:28:01.087 2018] [17849] watchdog: main process 17850 exited cleanly (exit code 1), shutting down
+[Thu Jun 28 23:28:28.350 2018] [24219] watchdog: main process 24220 forked ok
+[Thu Jun 28 23:28:28.350 2018] [24220] listening on all interfaces, port=6313
+[Thu Jun 28 23:28:28.350 2018] [24220] listening on all interfaces, port=6314
+[Thu Jun 28 23:28:28.350 2018] [24220] listening on all interfaces, port=9314
+[Thu Jun 28 23:29:56.834 2018] [24220] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Thu Jun 28 23:30:15.663 2018] [24220] binlog: index vk_pq_rt: recovered from tid 3163988 to tid 3164901
+[Thu Jun 28 23:30:15.663 2018] [24220] binlog: replay stats: 267350 rows in 299 commits; 614 updates, 0 reconfigure; 1 indexes
+[Thu Jun 28 23:30:15.663 2018] [24220] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 120.3 MB in 18.816 sec
+[Thu Jun 28 23:30:15.663 2018] [24220] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Thu Jun 28 23:30:32.851 2018] [24220] binlog: index vk_pq_rt: recovered from tid 3164901 to tid 3165202
+[Thu Jun 28 23:30:32.851 2018] [24220] binlog: replay stats: 292356 rows in 293 commits; 8 updates, 0 reconfigure; 1 indexes
+[Thu Jun 28 23:30:32.851 2018] [24220] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 128.2 MB in 17.166 sec
+[Thu Jun 28 23:30:32.851 2018] [24220] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.003
+[Thu Jun 28 23:30:38.857 2018] [24220] binlog: index vk_pq_rt: recovered from tid 3165202 to tid 3165367
+[Thu Jun 28 23:30:38.857 2018] [24220] binlog: replay stats: 133507 rows in 153 commits; 12 updates, 0 reconfigure; 1 indexes
+[Thu Jun 28 23:30:38.857 2018] [24220] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.003; 58.7 MB in 5.994 sec
+[Thu Jun 28 23:30:38.857 2018] [24220] binlog: finished replaying total 3 in 42.022 sec
+[Thu Jun 28 23:30:38.862 2018] [24220] prereading 4 indexes
+[Thu Jun 28 23:30:38.867 2018] [24220] prereaded 3 indexes in 0.005 sec
+[Thu Jun 28 23:30:38.867 2018] [24220] accepting connections
+[Thu Jun 28 23:50:05.109 2018] [69200] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3163988, current TID=3166216, ram=1574.855 Mb, time delta=1208 sec, took=4.395 sec)
+[Fri Jun 29 00:11:51.503 2018] [24220] caught SIGTERM, shutting down
+[Fri Jun 29 00:11:54.722 2018] [43767] watchdog: main process 43768 forked ok
+[Fri Jun 29 00:11:54.722 2018] [43768] listening on all interfaces, port=6313
+[Fri Jun 29 00:11:54.723 2018] [43768] listening on all interfaces, port=6314
+[Fri Jun 29 00:11:54.723 2018] [43768] listening on all interfaces, port=9314
+[Fri Jun 29 00:11:54.873 2018] [43768] WARNING: index 'vk_document_maintenance': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 00:11:54.889 2018] [43768] WARNING: index 'vk_document_maintenance_delta': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance_delta.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 00:11:54.889 2018] [43768] WARNING: index 'vk_pq_rt': prealloc: failed to lock /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.lock: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 00:11:54.890 2018] [43768] FATAL: failed to lock '/mnt/data/datart_pq/binlog//binlog.lock': 11 'Resource temporarily unavailable'
+[Fri Jun 29 00:11:54.893 2018] [43767] watchdog: main process 43768 exited cleanly (exit code 1), shutting down
+[Fri Jun 29 00:12:05.697 2018] [48512] watchdog: main process 48514 forked ok
+[Fri Jun 29 00:12:05.697 2018] [48514] listening on all interfaces, port=6313
+[Fri Jun 29 00:12:05.697 2018] [48514] listening on all interfaces, port=6314
+[Fri Jun 29 00:12:05.697 2018] [48514] listening on all interfaces, port=9314
+[Fri Jun 29 00:14:14.436 2018] [48514] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 00:14:28.544 2018] [48514] binlog: index vk_pq_rt: recovered from tid 3166216 to tid 3166630
+[Fri Jun 29 00:14:28.544 2018] [48514] binlog: replay stats: 294929 rows in 384 commits; 30 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 00:14:28.544 2018] [48514] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.1 MB in 14.102 sec
+[Fri Jun 29 00:14:28.544 2018] [48514] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Fri Jun 29 00:14:30.342 2018] [48514] binlog: index vk_pq_rt: recovered from tid 3166630 to tid 3166694
+[Fri Jun 29 00:14:30.342 2018] [48514] binlog: replay stats: 41766 rows in 59 commits; 5 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 00:14:30.342 2018] [48514] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 19.0 MB in 1.773 sec
+[Fri Jun 29 00:14:30.342 2018] [48514] binlog: finished replaying total 2 in 15.906 sec
+[Fri Jun 29 00:14:30.346 2018] [48514] prereading 4 indexes
+[Fri Jun 29 00:14:30.346 2018] [48514] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 00:14:30.346 2018] [48514] accepting connections
+[Fri Jun 29 00:34:22.724 2018] [64377] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3166216, current TID=3167787, ram=1851.668 Mb, time delta=1208 sec, took=5.477 sec)
+[Fri Jun 29 01:11:41.948 2018] [64377] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3168511, current TID=3169610, ram=350.049 Mb, time delta=1201 sec, took=0.608 sec)
+[Fri Jun 29 02:49:39.131 2018] [48514] caught SIGTERM, shutting down
+[Fri Jun 29 02:49:42.194 2018] [58403] watchdog: main process 58404 forked ok
+[Fri Jun 29 02:49:42.195 2018] [58404] listening on all interfaces, port=6313
+[Fri Jun 29 02:49:42.195 2018] [58404] listening on all interfaces, port=6314
+[Fri Jun 29 02:49:42.195 2018] [58404] listening on all interfaces, port=9314
+[Fri Jun 29 02:49:42.399 2018] [58404] WARNING: index 'vk_document_maintenance': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 02:49:42.403 2018] [58404] WARNING: index 'vk_document_maintenance_delta': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance_delta.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 02:49:42.403 2018] [58404] WARNING: index 'vk_pq_rt': prealloc: failed to lock /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.lock: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 02:49:42.407 2018] [58404] FATAL: failed to lock '/mnt/data/datart_pq/binlog//binlog.lock': 11 'Resource temporarily unavailable'
+[Fri Jun 29 02:49:42.410 2018] [58403] watchdog: main process 58404 exited cleanly (exit code 1), shutting down
+[Fri Jun 29 03:32:46.701 2018] [52178] watchdog: main process 52179 forked ok
+[Fri Jun 29 03:32:46.701 2018] [52179] listening on all interfaces, port=6313
+[Fri Jun 29 03:32:46.701 2018] [52179] listening on all interfaces, port=6314
+[Fri Jun 29 03:32:46.702 2018] [52179] listening on all interfaces, port=9314
+[Fri Jun 29 03:36:08.565 2018] [52179] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 03:36:11.107 2018] [52179] binlog: index vk_pq_rt: skipped at tid 3170572 and max binlog tid 3169989
+[Fri Jun 29 03:36:11.107 2018] [52179] binlog: replay stats: 286234 rows in 344 commits; 35 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 03:36:11.107 2018] [52179] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.0 MB in 2.527 sec
+[Fri Jun 29 03:36:11.107 2018] [52179] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Fri Jun 29 03:36:12.863 2018] [52179] binlog: index vk_pq_rt: skipped at tid 3170572 and max binlog tid 3170353
+[Fri Jun 29 03:36:12.863 2018] [52179] binlog: replay stats: 285706 rows in 327 commits; 37 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 03:36:12.863 2018] [52179] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 128.3 MB in 1.734 sec
+[Fri Jun 29 03:36:12.863 2018] [52179] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.003
+[Fri Jun 29 03:36:14.011 2018] [52179] binlog: index vk_pq_rt: skipped at tid 3170572 and max binlog tid 3170572
+[Fri Jun 29 03:36:14.011 2018] [52179] binlog: replay stats: 179367 rows in 201 commits; 18 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 03:36:14.011 2018] [52179] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.003; 83.8 MB in 1.144 sec
+[Fri Jun 29 03:36:14.011 2018] [52179] binlog: finished replaying total 3 in 5.445 sec
+[Fri Jun 29 03:36:14.013 2018] [52179] prereading 4 indexes
+[Fri Jun 29 03:36:14.013 2018] [52179] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 03:36:14.013 2018] [52179] accepting connections
+[Fri Jun 29 03:56:12.603 2018] [37318] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3170572, current TID=3171823, ram=759.058 Mb, time delta=1204 sec, took=1.678 sec)
+[Fri Jun 29 04:16:19.783 2018] [37318] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3171823, current TID=3173057, ram=1073.315 Mb, time delta=1207 sec, took=5.241 sec)
+[Fri Jun 29 04:19:12.750 2018] [52178] watchdog: main process 52179 killed cleanly with SIGKILL, shutting down
+[Fri Jun 29 04:21:19.640 2018] [31998] watchdog: main process 31999 forked ok
+[Fri Jun 29 04:21:19.640 2018] [31999] listening on all interfaces, port=6313
+[Fri Jun 29 04:21:19.641 2018] [31999] listening on all interfaces, port=6314
+[Fri Jun 29 04:21:19.641 2018] [31999] listening on all interfaces, port=9314
+[Fri Jun 29 04:25:17.513 2018] [31999] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 04:25:24.496 2018] [31999] binlog: index vk_pq_rt: recovered from tid 3173057 to tid 3173239
+[Fri Jun 29 04:25:24.496 2018] [31999] binlog: replay stats: 149031 rows in 164 commits; 18 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 04:25:24.496 2018] [31999] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 64.6 MB in 6.982 sec
+[Fri Jun 29 04:25:24.496 2018] [31999] binlog: finished replaying total 1 in 6.982 sec
+[Fri Jun 29 04:25:24.506 2018] [31999] prereading 4 indexes
+[Fri Jun 29 04:25:24.506 2018] [31999] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 04:25:24.506 2018] [31999] accepting connections
+[Fri Jun 29 05:33:00.739 2018] [31999] caught SIGTERM, shutting down
+[Fri Jun 29 05:35:31.170 2018] [15212] watchdog: main process 15213 forked ok
+[Fri Jun 29 05:35:31.171 2018] [15213] listening on all interfaces, port=6313
+[Fri Jun 29 05:35:31.171 2018] [15213] listening on all interfaces, port=6314
+[Fri Jun 29 05:35:31.171 2018] [15213] listening on all interfaces, port=9314
+[Fri Jun 29 05:35:51.224 2018] [19334] watchdog: main process 19335 forked ok
+[Fri Jun 29 05:35:51.224 2018] [19335] FATAL: failed to lock pid file '/var/run/sphinx/searchd.rt_pq.pid': Resource temporarily unavailable (searchd already running?)
+[Fri Jun 29 05:35:51.224 2018] [19335] shutdown complete
+[Fri Jun 29 05:35:51.225 2018] [19334] watchdog: main process 19335 exited cleanly (exit code 1), shutting down
+[Fri Jun 29 05:38:29.510 2018] [15213] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 05:38:36.441 2018] [15213] binlog: index vk_pq_rt: recovered from tid 3173057 to tid 3173239
+[Fri Jun 29 05:38:36.441 2018] [15213] binlog: replay stats: 149031 rows in 164 commits; 18 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 05:38:36.441 2018] [15213] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 64.6 MB in 6.920 sec
+[Fri Jun 29 05:38:36.441 2018] [15213] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Fri Jun 29 05:38:49.172 2018] [15213] binlog: index vk_pq_rt: recovered from tid 3173239 to tid 3173550
+[Fri Jun 29 05:38:49.172 2018] [15213] binlog: replay stats: 283096 rows in 290 commits; 21 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 05:38:49.172 2018] [15213] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 128.1 MB in 12.720 sec
+[Fri Jun 29 05:38:49.172 2018] [15213] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.003
+[Fri Jun 29 05:38:52.734 2018] [15213] binlog: index vk_pq_rt: recovered from tid 3173550 to tid 3173642
+[Fri Jun 29 05:38:52.734 2018] [15213] binlog: replay stats: 75941 rows in 83 commits; 9 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 05:38:52.734 2018] [15213] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.003; 33.7 MB in 3.551 sec
+[Fri Jun 29 05:38:52.734 2018] [15213] binlog: finished replaying total 3 in 23.223 sec
+[Fri Jun 29 05:38:52.741 2018] [15213] prereading 4 indexes
+[Fri Jun 29 05:38:52.741 2018] [15213] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 05:38:52.741 2018] [15213] accepting connections
+[Fri Jun 29 05:58:33.979 2018] [42421] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3173057, current TID=3174795, ram=1535.631 Mb, time delta=1204 sec, took=4.286 sec)
+[Fri Jun 29 08:08:47.258 2018] [15213] caught SIGTERM, shutting down
+[Fri Jun 29 08:20:25.976 2018] [9557] watchdog: main process 9558 forked ok
+[Fri Jun 29 08:20:25.976 2018] [9558] listening on all interfaces, port=6313
+[Fri Jun 29 08:20:25.976 2018] [9558] listening on all interfaces, port=6314
+[Fri Jun 29 08:20:25.976 2018] [9558] listening on all interfaces, port=9314
+[Fri Jun 29 08:21:25.609 2018] [9558] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 08:21:29.833 2018] [9558] binlog: index vk_pq_rt: recovered from tid 3174795 to tid 3174879
+[Fri Jun 29 08:21:29.833 2018] [9558] binlog: replay stats: 71786 rows in 82 commits; 2 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 08:21:29.833 2018] [9558] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 32.6 MB in 4.219 sec
+[Fri Jun 29 08:21:29.833 2018] [9558] binlog: finished replaying total 1 in 4.223 sec
+[Fri Jun 29 08:21:29.842 2018] [9558] prereading 3 indexes
+[Fri Jun 29 08:21:29.842 2018] [9558] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 08:21:29.842 2018] [9558] accepting connections
+[Fri Jun 29 08:41:33.800 2018] [22541] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3174795, current TID=3175985, ram=1884.938 Mb, time delta=1208 sec, took=6.977 sec)
+[Fri Jun 29 09:18:27.093 2018] [22546] WARNING: bailing on failed request header (client=192.168.8.196:55940(12190)), error: 104 'Connection reset by peer', sock=38
+[Fri Jun 29 09:31:36.182 2018] [9558] caught SIGTERM, shutting down
+[Fri Jun 29 09:31:39.204 2018] [58444] watchdog: main process 58445 forked ok
+[Fri Jun 29 09:31:39.204 2018] [58445] listening on all interfaces, port=6313
+[Fri Jun 29 09:31:39.204 2018] [58445] listening on all interfaces, port=6314
+[Fri Jun 29 09:31:39.204 2018] [58445] listening on all interfaces, port=9314
+[Fri Jun 29 09:31:39.326 2018] [58445] WARNING: index 'vk_document_maintenance': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 09:31:39.330 2018] [58445] WARNING: index 'vk_document_maintenance_delta': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance_delta.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 09:31:39.330 2018] [58445] WARNING: index 'vk_pq_rt': prealloc: failed to lock /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.lock: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 09:31:39.330 2018] [58445] FATAL: failed to lock '/mnt/data/datart_pq/binlog//binlog.lock': 11 'Resource temporarily unavailable'
+[Fri Jun 29 09:31:39.333 2018] [58444] watchdog: main process 58445 exited cleanly (exit code 1), shutting down
+[Fri Jun 29 09:43:05.509 2018] [14898] watchdog: main process 14900 forked ok
+[Fri Jun 29 09:43:05.509 2018] [14900] listening on all interfaces, port=6313
+[Fri Jun 29 09:43:05.509 2018] [14900] listening on all interfaces, port=6314
+[Fri Jun 29 09:43:05.509 2018] [14900] listening on all interfaces, port=9314
+[Fri Jun 29 09:46:53.213 2018] [14900] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 09:46:56.458 2018] [14900] binlog: index vk_pq_rt: skipped at tid 3177256 and max binlog tid 3176907
+[Fri Jun 29 09:46:56.458 2018] [14900] binlog: replay stats: 276359 rows in 292 commits; 22 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 09:46:56.458 2018] [14900] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.0 MB in 3.134 sec
+[Fri Jun 29 09:46:56.458 2018] [14900] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Fri Jun 29 09:47:00.143 2018] [14900] binlog: index vk_pq_rt: skipped at tid 3177256 and max binlog tid 3177233
+[Fri Jun 29 09:47:00.143 2018] [14900] binlog: replay stats: 272824 rows in 300 commits; 26 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 09:47:00.143 2018] [14900] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 128.3 MB in 3.670 sec
+[Fri Jun 29 09:47:00.143 2018] [14900] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.003
+[Fri Jun 29 09:47:01.113 2018] [14900] binlog: index vk_pq_rt: recovered from tid 3177256 to tid 3177384
+[Fri Jun 29 09:47:01.113 2018] [14900] binlog: replay stats: 17874 rows in 22 commits; 129 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 09:47:01.113 2018] [14900] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.003; 10.4 MB in 0.966 sec
+[Fri Jun 29 09:47:01.113 2018] [14900] binlog: finished replaying total 3 in 7.900 sec
+[Fri Jun 29 09:47:01.119 2018] [14900] prereading 3 indexes
+[Fri Jun 29 09:47:01.136 2018] [14900] prereaded 3 indexes in 0.016 sec
+[Fri Jun 29 09:47:01.136 2018] [14900] accepting connections
+[Fri Jun 29 10:06:54.126 2018] [40852] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3177256, current TID=3178369, ram=352.392 Mb, time delta=1201 sec, took=0.788 sec)
+[Fri Jun 29 10:26:57.652 2018] [40852] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3178369, current TID=3178999, ram=530.127 Mb, time delta=1203 sec, took=1.343 sec)
+[Fri Jun 29 11:17:29.035 2018] [14900] caught SIGTERM, shutting down
+[Fri Jun 29 11:17:32.156 2018] [7267] watchdog: main process 7268 forked ok
+[Fri Jun 29 11:17:32.156 2018] [7268] listening on all interfaces, port=6313
+[Fri Jun 29 11:17:32.156 2018] [7268] listening on all interfaces, port=6314
+[Fri Jun 29 11:17:32.157 2018] [7268] listening on all interfaces, port=9314
+[Fri Jun 29 11:17:32.273 2018] [7268] WARNING: index 'vk_document_maintenance': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 11:17:32.277 2018] [7268] WARNING: index 'vk_document_maintenance_delta': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance_delta.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 11:17:32.277 2018] [7268] WARNING: index 'vk_pq_rt': prealloc: failed to lock /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.lock: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 11:17:32.277 2018] [7268] FATAL: failed to lock '/mnt/data/datart_pq/binlog//binlog.lock': 11 'Resource temporarily unavailable'
+[Fri Jun 29 11:17:32.280 2018] [7267] watchdog: main process 7268 exited cleanly (exit code 1), shutting down
+[Fri Jun 29 11:59:39.327 2018] [71083] watchdog: main process 71084 forked ok
+[Fri Jun 29 11:59:39.327 2018] [71084] listening on all interfaces, port=6313
+[Fri Jun 29 11:59:39.327 2018] [71084] listening on all interfaces, port=6314
+[Fri Jun 29 11:59:39.327 2018] [71084] listening on all interfaces, port=9314
+[Fri Jun 29 12:00:25.737 2018] [71084] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 12:00:29.235 2018] [71084] binlog: index vk_pq_rt: recovered from tid 3178999 to tid 3179342
+[Fri Jun 29 12:00:29.235 2018] [71084] binlog: replay stats: 71795 rows in 85 commits; 258 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 12:00:29.235 2018] [71084] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 35.2 MB in 3.497 sec
+[Fri Jun 29 12:00:29.235 2018] [71084] binlog: finished replaying total 1 in 3.497 sec
+[Fri Jun 29 12:00:29.235 2018] [71084] prereading 3 indexes
+[Fri Jun 29 12:00:29.236 2018] [71084] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 12:00:29.236 2018] [71084] accepting connections
+[Fri Jun 29 12:20:28.395 2018] [11715] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3178999, current TID=3180549, ram=989.996 Mb, time delta=1202 sec, took=2.292 sec)
+[Fri Jun 29 12:40:34.513 2018] [11715] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3180549, current TID=3181691, ram=1371.060 Mb, time delta=1206 sec, took=4.257 sec)
+[Fri Jun 29 13:00:40.205 2018] [11715] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3181691, current TID=3182837, ram=1686.838 Mb, time delta=1205 sec, took=3.801 sec)
+[Fri Jun 29 13:20:47.010 2018] [11715] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3182837, current TID=3184023, ram=1989.063 Mb, time delta=1206 sec, took=4.774 sec)
+[Fri Jun 29 14:01:03.155 2018] [71083] watchdog: main process 71084 forked ok
+[Fri Jun 29 14:01:03.155 2018] [71084] log reopened
+[Fri Jun 29 14:01:03.155 2018] [71084] query log reopened
+[Fri Jun 29 15:54:15.469 2018] [71084] caught SIGTERM, shutting down
+[Fri Jun 29 15:54:59.543 2018] [3311] watchdog: main process 3312 forked ok
+[Fri Jun 29 15:54:59.544 2018] [3312] listening on all interfaces, port=6313
+[Fri Jun 29 15:54:59.544 2018] [3312] listening on all interfaces, port=6314
+[Fri Jun 29 15:54:59.544 2018] [3312] listening on all interfaces, port=9314
+[Fri Jun 29 15:56:08.577 2018] [3312] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 15:56:11.923 2018] [3312] binlog: index vk_pq_rt: recovered from tid 3184508 to tid 3184874
+[Fri Jun 29 15:56:11.923 2018] [3312] binlog: replay stats: 244167 rows in 271 commits; 379 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 15:56:11.923 2018] [3312] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 116.4 MB in 3.331 sec
+[Fri Jun 29 15:56:11.923 2018] [3312] binlog: finished replaying total 1 in 3.346 sec
+[Fri Jun 29 15:56:11.923 2018] [3312] prereading 3 indexes
+[Fri Jun 29 15:56:11.924 2018] [3312] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 15:56:11.924 2018] [3312] accepting connections
+[Fri Jun 29 16:16:09.567 2018] [25919] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3184508, current TID=3186197, ram=443.211 Mb, time delta=1201 sec, took=0.574 sec)
+[Fri Jun 29 18:01:02.152 2018] [3311] watchdog: main process 3312 forked ok
+[Fri Jun 29 18:01:02.152 2018] [3312] log reopened
+[Fri Jun 29 18:01:02.152 2018] [3312] query log reopened
+[Fri Jun 29 18:20:33.810 2018] [3312] caught SIGTERM, shutting down
+[Fri Jun 29 18:21:20.035 2018] [41656] watchdog: main process 41657 forked ok
+[Fri Jun 29 18:21:20.036 2018] [41657] listening on all interfaces, port=6313
+[Fri Jun 29 18:21:20.036 2018] [41657] listening on all interfaces, port=6314
+[Fri Jun 29 18:21:20.036 2018] [41657] listening on all interfaces, port=9314
+[Fri Jun 29 18:22:24.474 2018] [41657] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 18:22:33.748 2018] [41657] binlog: index vk_pq_rt: recovered from tid 3186197 to tid 3186531
+[Fri Jun 29 18:22:33.748 2018] [41657] binlog: replay stats: 290108 rows in 319 commits; 15 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 18:22:33.748 2018] [41657] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.1 MB in 9.267 sec
+[Fri Jun 29 18:22:33.748 2018] [41657] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Fri Jun 29 18:22:42.101 2018] [41657] binlog: index vk_pq_rt: recovered from tid 3186531 to tid 3186866
+[Fri Jun 29 18:22:42.101 2018] [41657] binlog: replay stats: 291519 rows in 319 commits; 16 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 18:22:42.101 2018] [41657] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 128.1 MB in 8.348 sec
+[Fri Jun 29 18:22:42.101 2018] [41657] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.003
+[Fri Jun 29 18:22:46.684 2018] [41657] binlog: index vk_pq_rt: recovered from tid 3186866 to tid 3187244
+[Fri Jun 29 18:22:46.684 2018] [41657] binlog: replay stats: 91867 rows in 106 commits; 272 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 18:22:46.684 2018] [41657] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.003; 42.2 MB in 4.574 sec
+[Fri Jun 29 18:22:46.684 2018] [41657] binlog: finished replaying total 3 in 22.210 sec
+[Fri Jun 29 18:22:46.684 2018] [41657] prereading 4 indexes
+[Fri Jun 29 18:22:46.685 2018] [41657] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 18:22:46.685 2018] [41657] accepting connections
+[Fri Jun 29 18:42:30.065 2018] [50169] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3186197, current TID=3188053, ram=786.351 Mb, time delta=1205 sec, took=1.333 sec)
+[Fri Jun 29 19:02:35.270 2018] [50169] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3188053, current TID=3188806, ram=914.087 Mb, time delta=1205 sec, took=3.184 sec)
+[Fri Jun 29 19:22:40.055 2018] [50169] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3188806, current TID=3189534, ram=1045.370 Mb, time delta=1204 sec, took=2.474 sec)
+[Fri Jun 29 19:49:00.730 2018] [41657] caught SIGTERM, shutting down
+[Fri Jun 29 19:49:03.822 2018] [70084] watchdog: main process 70085 forked ok
+[Fri Jun 29 19:49:03.822 2018] [70085] listening on all interfaces, port=6313
+[Fri Jun 29 19:49:03.822 2018] [70085] listening on all interfaces, port=6314
+[Fri Jun 29 19:49:03.822 2018] [70085] listening on all interfaces, port=9314
+[Fri Jun 29 19:49:03.939 2018] [70085] WARNING: index 'vk_document_maintenance': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 19:49:03.943 2018] [70085] WARNING: index 'vk_document_maintenance_delta': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance_delta.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 19:49:03.943 2018] [70085] WARNING: index 'vk_pq_rt': prealloc: failed to lock /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.lock: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 19:49:03.944 2018] [70085] FATAL: failed to lock '/mnt/data/datart_pq/binlog//binlog.lock': 11 'Resource temporarily unavailable'
+[Fri Jun 29 19:49:03.946 2018] [70084] watchdog: main process 70085 exited cleanly (exit code 1), shutting down
+[Fri Jun 29 20:50:42.784 2018] [23961] watchdog: main process 23962 forked ok
+[Fri Jun 29 20:50:42.784 2018] [23962] listening on all interfaces, port=6313
+[Fri Jun 29 20:50:42.784 2018] [23962] listening on all interfaces, port=6314
+[Fri Jun 29 20:50:42.784 2018] [23962] listening on all interfaces, port=9314
+[Fri Jun 29 20:51:31.404 2018] [23962] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 20:51:38.358 2018] [23962] binlog: index vk_pq_rt: recovered from tid 3189534 to tid 3189788
+[Fri Jun 29 20:51:38.358 2018] [23962] binlog: replay stats: 216142 rows in 246 commits; 8 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 20:51:38.358 2018] [23962] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 94.9 MB in 6.953 sec
+[Fri Jun 29 20:51:38.358 2018] [23962] binlog: finished replaying total 1 in 6.953 sec
+[Fri Jun 29 20:51:38.358 2018] [23962] prereading 4 indexes
+[Fri Jun 29 20:51:38.358 2018] [23962] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 20:51:38.358 2018] [23962] accepting connections
+[Fri Jun 29 21:55:21.847 2018] [23962] caught SIGTERM, shutting down
+[Fri Jun 29 21:57:36.550 2018] [39723] watchdog: main process 39724 forked ok
+[Fri Jun 29 21:57:36.550 2018] [39724] listening on all interfaces, port=6313
+[Fri Jun 29 21:57:36.551 2018] [39724] listening on all interfaces, port=6314
+[Fri Jun 29 21:57:36.551 2018] [39724] listening on all interfaces, port=9314
+[Fri Jun 29 21:58:49.140 2018] [39724] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 21:58:56.656 2018] [39724] binlog: index vk_pq_rt: recovered from tid 3189534 to tid 3189788
+[Fri Jun 29 21:58:56.656 2018] [39724] binlog: replay stats: 216142 rows in 246 commits; 8 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 21:58:56.656 2018] [39724] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 94.9 MB in 7.500 sec
+[Fri Jun 29 21:58:56.656 2018] [39724] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Fri Jun 29 21:59:01.232 2018] [39724] binlog: index vk_pq_rt: recovered from tid 3189788 to tid 3190133
+[Fri Jun 29 21:59:01.232 2018] [39724] binlog: replay stats: 173650 rows in 337 commits; 8 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 21:59:01.232 2018] [39724] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 82.1 MB in 4.563 sec
+[Fri Jun 29 21:59:01.232 2018] [39724] binlog: finished replaying total 2 in 12.091 sec
+[Fri Jun 29 21:59:01.241 2018] [39724] prereading 4 indexes
+[Fri Jun 29 21:59:01.241 2018] [39724] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 21:59:01.241 2018] [39724] accepting connections
+[Fri Jun 29 22:18:56.445 2018] [48622] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3189534, current TID=3191097, ram=1265.367 Mb, time delta=1207 sec, took=3.146 sec)
+[Fri Jun 29 22:46:31.927 2018] [39724] caught SIGTERM, shutting down
+[Fri Jun 29 22:46:34.950 2018] [27629] watchdog: main process 27630 forked ok
+[Fri Jun 29 22:46:34.950 2018] [27630] listening on all interfaces, port=6313
+[Fri Jun 29 22:46:34.950 2018] [27630] listening on all interfaces, port=6314
+[Fri Jun 29 22:46:34.950 2018] [27630] listening on all interfaces, port=9314
+[Fri Jun 29 22:46:35.070 2018] [27630] WARNING: index 'vk_document_maintenance': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 22:46:35.074 2018] [27630] WARNING: index 'vk_document_maintenance_delta': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance_delta.spl: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 22:46:35.074 2018] [27630] WARNING: index 'vk_pq_rt': prealloc: failed to lock /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.lock: Resource temporarily unavailable; NOT SERVING
+[Fri Jun 29 22:46:35.075 2018] [27630] FATAL: failed to lock '/mnt/data/datart_pq/binlog//binlog.lock': 11 'Resource temporarily unavailable'
+[Fri Jun 29 22:46:35.077 2018] [27629] watchdog: main process 27630 exited cleanly (exit code 1), shutting down
+[Fri Jun 29 23:47:36.570 2018] [58375] watchdog: main process 58376 forked ok
+[Fri Jun 29 23:47:36.570 2018] [58376] listening on all interfaces, port=6313
+[Fri Jun 29 23:47:36.570 2018] [58376] listening on all interfaces, port=6314
+[Fri Jun 29 23:47:36.570 2018] [58376] listening on all interfaces, port=9314
+[Fri Jun 29 23:48:28.157 2018] [58376] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Fri Jun 29 23:49:06.449 2018] [58376] binlog: index vk_pq_rt: recovered from tid 3191097 to tid 3191542
+[Fri Jun 29 23:49:06.449 2018] [58376] binlog: replay stats: 214973 rows in 423 commits; 22 updates, 0 reconfigure; 1 indexes
+[Fri Jun 29 23:49:06.449 2018] [58376] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 95.6 MB in 38.291 sec
+[Fri Jun 29 23:49:06.449 2018] [58376] binlog: finished replaying total 1 in 38.291 sec
+[Fri Jun 29 23:49:06.449 2018] [58376] prereading 4 indexes
+[Fri Jun 29 23:49:06.450 2018] [58376] prereaded 3 indexes in 0.000 sec
+[Fri Jun 29 23:49:06.450 2018] [58376] accepting connections
+[Sat Jun 30 00:12:17.918 2018] [58376] caught SIGTERM, shutting down
+[Sat Jun 30 00:12:24.265 2018] [23606] watchdog: main process 23607 forked ok
+[Sat Jun 30 00:12:24.265 2018] [23607] listening on all interfaces, port=6313
+[Sat Jun 30 00:12:24.265 2018] [23607] listening on all interfaces, port=6314
+[Sat Jun 30 00:12:24.265 2018] [23607] listening on all interfaces, port=9314
+[Sat Jun 30 00:13:00.986 2018] [23607] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 00:13:31.438 2018] [23607] binlog: index vk_pq_rt: recovered from tid 3191097 to tid 3191542
+[Sat Jun 30 00:13:31.438 2018] [23607] binlog: replay stats: 214973 rows in 423 commits; 22 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 00:13:31.438 2018] [23607] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 95.6 MB in 30.452 sec
+[Sat Jun 30 00:13:31.438 2018] [23607] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Sat Jun 30 00:13:50.811 2018] [23607] binlog: index vk_pq_rt: recovered from tid 3191542 to tid 3191875
+[Sat Jun 30 00:13:50.811 2018] [23607] binlog: replay stats: 290443 rows in 322 commits; 11 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 00:13:50.811 2018] [23607] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 128.1 MB in 19.364 sec
+[Sat Jun 30 00:13:50.811 2018] [23607] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.003
+[Sat Jun 30 00:13:57.714 2018] [23607] binlog: index vk_pq_rt: recovered from tid 3191875 to tid 3192117
+[Sat Jun 30 00:13:57.714 2018] [23607] binlog: replay stats: 151015 rows in 231 commits; 11 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 00:13:57.714 2018] [23607] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.003; 66.9 MB in 6.903 sec
+[Sat Jun 30 00:13:57.714 2018] [23607] binlog: finished replaying total 3 in 56.728 sec
+[Sat Jun 30 00:13:57.721 2018] [23607] prereading 4 indexes
+[Sat Jun 30 00:13:57.721 2018] [23607] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 00:13:57.721 2018] [23607] accepting connections
+[Sat Jun 30 00:33:08.996 2018] [31724] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3191097, current TID=3193076, ram=1590.776 Mb, time delta=1208 sec, took=4.313 sec)
+[Sat Jun 30 00:53:16.473 2018] [31724] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3193076, current TID=3193926, ram=1711.148 Mb, time delta=1207 sec, took=5.098 sec)
+[Sat Jun 30 01:13:22.916 2018] [31724] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3193926, current TID=3194813, ram=1847.279 Mb, time delta=1206 sec, took=4.353 sec)
+[Sat Jun 30 01:40:31.706 2018] [23607] caught SIGTERM, shutting down
+[Sat Jun 30 01:40:35.071 2018] [4934] watchdog: main process 4935 forked ok
+[Sat Jun 30 01:40:35.071 2018] [4935] listening on all interfaces, port=6313
+[Sat Jun 30 01:40:35.071 2018] [4935] listening on all interfaces, port=6314
+[Sat Jun 30 01:40:35.071 2018] [4935] listening on all interfaces, port=9314
+[Sat Jun 30 01:40:35.194 2018] [4935] WARNING: index 'vk_document_maintenance': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance.spl: Resource temporarily unavailable; NOT SERVING
+[Sat Jun 30 01:40:35.197 2018] [4935] WARNING: index 'vk_document_maintenance_delta': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance_delta.spl: Resource temporarily unavailable; NOT SERVING
+[Sat Jun 30 01:40:35.198 2018] [4935] WARNING: index 'vk_pq_rt': prealloc: failed to lock /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.lock: Resource temporarily unavailable; NOT SERVING
+[Sat Jun 30 01:40:35.198 2018] [4935] FATAL: failed to lock '/mnt/data/datart_pq/binlog//binlog.lock': 11 'Resource temporarily unavailable'
+[Sat Jun 30 01:40:35.202 2018] [4934] watchdog: main process 4935 exited cleanly (exit code 1), shutting down
+[Sat Jun 30 01:58:22.155 2018] [6874] watchdog: main process 6875 forked ok
+[Sat Jun 30 01:58:22.155 2018] [6875] listening on all interfaces, port=6313
+[Sat Jun 30 01:58:22.155 2018] [6875] listening on all interfaces, port=6314
+[Sat Jun 30 01:58:22.155 2018] [6875] listening on all interfaces, port=9314
+[Sat Jun 30 01:58:46.187 2018] [6875] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 01:59:18.313 2018] [6875] binlog: index vk_pq_rt: recovered from tid 3194813 to tid 3195212
+[Sat Jun 30 01:59:18.313 2018] [6875] binlog: replay stats: 290275 rows in 383 commits; 16 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 01:59:18.313 2018] [6875] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.3 MB in 32.125 sec
+[Sat Jun 30 01:59:18.313 2018] [6875] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Sat Jun 30 01:59:43.917 2018] [6875] binlog: index vk_pq_rt: recovered from tid 3195212 to tid 3195569
+[Sat Jun 30 01:59:43.917 2018] [6875] binlog: replay stats: 256224 rows in 339 commits; 18 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 01:59:43.917 2018] [6875] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 117.7 MB in 25.603 sec
+[Sat Jun 30 01:59:43.917 2018] [6875] binlog: finished replaying total 2 in 57.729 sec
+[Sat Jun 30 01:59:43.917 2018] [6875] prereading 4 indexes
+[Sat Jun 30 01:59:43.917 2018] [6875] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 01:59:43.917 2018] [6875] accepting connections
+[Sat Jun 30 02:23:26.819 2018] [14255] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3195807, current TID=3196851, ram=328.623 Mb, time delta=1205 sec, took=0.478 sec)
+[Sat Jun 30 02:43:30.110 2018] [14255] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3196851, current TID=3197891, ram=633.957 Mb, time delta=1203 sec, took=1.259 sec)
+[Sat Jun 30 03:08:29.170 2018] [6875] caught SIGTERM, shutting down
+[Sat Jun 30 03:08:32.430 2018] [43594] watchdog: main process 43595 forked ok
+[Sat Jun 30 03:08:32.430 2018] [43595] listening on all interfaces, port=6313
+[Sat Jun 30 03:08:32.430 2018] [43595] listening on all interfaces, port=6314
+[Sat Jun 30 03:08:32.430 2018] [43595] listening on all interfaces, port=9314
+[Sat Jun 30 03:08:32.545 2018] [43595] WARNING: index 'vk_document_maintenance': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance.spl: Resource temporarily unavailable; NOT SERVING
+[Sat Jun 30 03:08:32.548 2018] [43595] WARNING: index 'vk_document_maintenance_delta': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance_delta.spl: Resource temporarily unavailable; NOT SERVING
+[Sat Jun 30 03:08:32.549 2018] [43595] WARNING: index 'vk_pq_rt': prealloc: failed to lock /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.lock: Resource temporarily unavailable; NOT SERVING
+[Sat Jun 30 03:08:32.549 2018] [43595] FATAL: failed to lock '/mnt/data/datart_pq/binlog//binlog.lock': 11 'Resource temporarily unavailable'
+[Sat Jun 30 03:08:32.552 2018] [43594] watchdog: main process 43595 exited cleanly (exit code 1), shutting down
+[Sat Jun 30 03:17:35.647 2018] [53545] watchdog: main process 53546 forked ok
+[Sat Jun 30 03:17:35.647 2018] [53546] listening on all interfaces, port=6313
+[Sat Jun 30 03:17:35.647 2018] [53546] listening on all interfaces, port=6314
+[Sat Jun 30 03:17:35.647 2018] [53546] listening on all interfaces, port=9314
+[Sat Jun 30 03:18:18.310 2018] [53546] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 03:18:19.110 2018] [53546] binlog: index vk_pq_rt: skipped at tid 3198737 and max binlog tid 3198227
+[Sat Jun 30 03:18:19.110 2018] [53546] binlog: replay stats: 279444 rows in 324 commits; 12 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 03:18:19.110 2018] [53546] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.1 MB in 0.800 sec
+[Sat Jun 30 03:18:19.110 2018] [53546] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Sat Jun 30 03:18:19.926 2018] [53546] binlog: index vk_pq_rt: skipped at tid 3198737 and max binlog tid 3198551
+[Sat Jun 30 03:18:19.926 2018] [53546] binlog: replay stats: 288749 rows in 311 commits; 13 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 03:18:19.926 2018] [53546] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 128.0 MB in 0.815 sec
+[Sat Jun 30 03:18:19.926 2018] [53546] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.003
+[Sat Jun 30 03:18:20.309 2018] [53546] binlog: index vk_pq_rt: skipped at tid 3198737 and max binlog tid 3198737
+[Sat Jun 30 03:18:20.309 2018] [53546] binlog: replay stats: 148334 rows in 178 commits; 8 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 03:18:20.309 2018] [53546] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.003; 65.3 MB in 0.383 sec
+[Sat Jun 30 03:18:20.309 2018] [53546] binlog: finished replaying total 3 in 1.999 sec
+[Sat Jun 30 03:18:20.309 2018] [53546] prereading 4 indexes
+[Sat Jun 30 03:18:20.309 2018] [53546] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 03:18:20.310 2018] [53546] accepting connections
+[Sat Jun 30 03:38:24.095 2018] [59457] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3198737, current TID=3199798, ram=923.175 Mb, time delta=1205 sec, took=1.759 sec)
+[Sat Jun 30 03:58:28.600 2018] [59457] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3199798, current TID=3200864, ram=1135.067 Mb, time delta=1204 sec, took=2.442 sec)
+[Sat Jun 30 04:18:33.890 2018] [59457] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3200864, current TID=3201947, ram=1401.720 Mb, time delta=1205 sec, took=3.224 sec)
+[Sat Jun 30 04:39:28.348 2018] [53546] caught SIGTERM, shutting down
+[Sat Jun 30 04:39:36.625 2018] [6227] watchdog: main process 6228 forked ok
+[Sat Jun 30 04:39:36.625 2018] [6228] listening on all interfaces, port=6313
+[Sat Jun 30 04:39:36.625 2018] [6228] listening on all interfaces, port=6314
+[Sat Jun 30 04:39:36.625 2018] [6228] listening on all interfaces, port=9314
+[Sat Jun 30 04:40:33.224 2018] [6228] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 04:40:44.402 2018] [6228] binlog: index vk_pq_rt: recovered from tid 3201947 to tid 3202305
+[Sat Jun 30 04:40:44.402 2018] [6228] binlog: replay stats: 289036 rows in 343 commits; 15 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 04:40:44.402 2018] [6228] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.1 MB in 11.177 sec
+[Sat Jun 30 04:40:44.402 2018] [6228] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Sat Jun 30 04:40:51.651 2018] [6228] binlog: index vk_pq_rt: recovered from tid 3202305 to tid 3202549
+[Sat Jun 30 04:40:51.651 2018] [6228] binlog: replay stats: 189650 rows in 236 commits; 8 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 04:40:51.651 2018] [6228] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 84.4 MB in 7.249 sec
+[Sat Jun 30 04:40:51.651 2018] [6228] binlog: finished replaying total 2 in 18.427 sec
+[Sat Jun 30 04:40:51.652 2018] [6228] prereading 4 indexes
+[Sat Jun 30 04:40:51.652 2018] [6228] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 04:40:51.652 2018] [6228] accepting connections
+[Sat Jun 30 05:00:37.781 2018] [28424] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3201947, current TID=3203762, ram=1763.083 Mb, time delta=1204 sec, took=4.163 sec)
+[Sat Jun 30 05:01:05.474 2018] [6227] watchdog: main process 6228 forked ok
+[Sat Jun 30 05:01:05.474 2018] [6228] log reopened
+[Sat Jun 30 05:01:05.474 2018] [6228] query log reopened
+[Sat Jun 30 05:20:44.923 2018] [28424] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3203762, current TID=3204871, ram=2032.488 Mb, time delta=1207 sec, took=5.154 sec)
+[Sat Jun 30 05:28:52.619 2018] [6228] caught SIGTERM, shutting down
+[Sat Jun 30 05:28:52.668 2018] [6228] WARNING: index vk_template: attrs save failed: (null)
+[Sat Jun 30 05:29:00.916 2018] [60885] watchdog: main process 60886 forked ok
+[Sat Jun 30 05:29:00.917 2018] [60886] listening on all interfaces, port=6313
+[Sat Jun 30 05:29:00.917 2018] [60886] listening on all interfaces, port=6314
+[Sat Jun 30 05:29:00.917 2018] [60886] listening on all interfaces, port=9314
+[Sat Jun 30 05:29:47.930 2018] [60886] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 05:29:47.933 2018] [60886] WARNING: binlog: commit: unexpected tid (index=vk_pq_rt, indextid=3205021, logtid=3205024, pos=47)
+[Sat Jun 30 05:29:51.508 2018] [60886] binlog: index vk_pq_rt: recovered from tid 3205021 to tid 3205311
+[Sat Jun 30 05:29:51.508 2018] [60886] binlog: replay stats: 216856 rows in 279 commits; 9 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 05:29:51.508 2018] [60886] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 95.7 MB in 3.578 sec
+[Sat Jun 30 05:29:51.508 2018] [60886] binlog: finished replaying total 1 in 3.578 sec
+[Sat Jun 30 05:29:51.509 2018] [60886] prereading 4 indexes
+[Sat Jun 30 05:29:51.509 2018] [60886] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 05:29:51.509 2018] [60886] accepting connections
+[Sat Jun 30 05:49:49.167 2018] [66463] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3205021, current TID=3206412, ram=444.672 Mb, time delta=1201 sec, took=0.688 sec)
+[Sat Jun 30 06:03:12.045 2018] [60886] caught SIGTERM, shutting down
+[Sat Jun 30 06:03:20.306 2018] [24280] watchdog: main process 24281 forked ok
+[Sat Jun 30 06:03:20.306 2018] [24281] listening on all interfaces, port=6313
+[Sat Jun 30 06:03:20.306 2018] [24281] listening on all interfaces, port=6314
+[Sat Jun 30 06:03:20.306 2018] [24281] listening on all interfaces, port=9314
+[Sat Jun 30 06:04:02.061 2018] [24281] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 06:04:02.751 2018] [24281] binlog: index vk_pq_rt: skipped at tid 3206928 and max binlog tid 3206758
+[Sat Jun 30 06:04:02.751 2018] [24281] binlog: replay stats: 293163 rows in 331 commits; 15 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 06:04:02.751 2018] [24281] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.1 MB in 0.690 sec
+[Sat Jun 30 06:04:02.751 2018] [24281] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Sat Jun 30 06:04:03.026 2018] [24281] binlog: index vk_pq_rt: skipped at tid 3206928 and max binlog tid 3206928
+[Sat Jun 30 06:04:03.026 2018] [24281] binlog: replay stats: 141210 rows in 164 commits; 6 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 06:04:03.026 2018] [24281] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 61.6 MB in 0.274 sec
+[Sat Jun 30 06:04:03.026 2018] [24281] binlog: finished replaying total 2 in 0.964 sec
+[Sat Jun 30 06:04:03.026 2018] [24281] prereading 4 indexes
+[Sat Jun 30 06:04:03.032 2018] [24281] prereaded 3 indexes in 0.006 sec
+[Sat Jun 30 06:04:03.032 2018] [24281] accepting connections
+[Sat Jun 30 06:24:06.461 2018] [28746] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3206928, current TID=3207991, ram=761.031 Mb, time delta=1204 sec, took=1.480 sec)
+[Sat Jun 30 06:44:10.757 2018] [28746] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3207991, current TID=3209006, ram=1044.088 Mb, time delta=1204 sec, took=2.252 sec)
+[Sat Jun 30 07:04:16.621 2018] [28746] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3209006, current TID=3210047, ram=1373.186 Mb, time delta=1205 sec, took=3.903 sec)
+[Sat Jun 30 07:24:22.438 2018] [28746] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3210047, current TID=3210580, ram=1514.664 Mb, time delta=1205 sec, took=3.809 sec)
+[Sat Jun 30 08:46:31.320 2018] [24281] caught SIGTERM, shutting down
+[Sat Jun 30 08:46:39.524 2018] [32379] watchdog: main process 32380 forked ok
+[Sat Jun 30 08:46:39.525 2018] [32380] listening on all interfaces, port=6313
+[Sat Jun 30 08:46:39.525 2018] [32380] listening on all interfaces, port=6314
+[Sat Jun 30 08:46:39.525 2018] [32380] listening on all interfaces, port=9314
+[Sat Jun 30 08:47:31.769 2018] [32380] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 08:47:32.168 2018] [32380] binlog: index vk_pq_rt: skipped at tid 3210742 and max binlog tid 3210742
+[Sat Jun 30 08:47:32.168 2018] [32380] binlog: replay stats: 102702 rows in 150 commits; 12 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 08:47:32.168 2018] [32380] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 47.5 MB in 0.391 sec
+[Sat Jun 30 08:47:32.168 2018] [32380] binlog: finished replaying total 1 in 0.398 sec
+[Sat Jun 30 08:47:32.169 2018] [32380] prereading 4 indexes
+[Sat Jun 30 08:47:32.169 2018] [32380] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 08:47:32.169 2018] [32380] accepting connections
+[Sat Jun 30 09:59:52.744 2018] [32380] caught SIGTERM, shutting down
+[Sat Jun 30 10:00:00.948 2018] [10293] watchdog: main process 10294 forked ok
+[Sat Jun 30 10:00:00.948 2018] [10294] listening on all interfaces, port=6313
+[Sat Jun 30 10:00:00.948 2018] [10294] listening on all interfaces, port=6314
+[Sat Jun 30 10:00:00.948 2018] [10294] listening on all interfaces, port=9314
+[Sat Jun 30 10:00:52.713 2018] [10294] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 10:00:53.027 2018] [10294] binlog: index vk_pq_rt: skipped at tid 3210742 and max binlog tid 3210742
+[Sat Jun 30 10:00:53.027 2018] [10294] binlog: replay stats: 102702 rows in 150 commits; 12 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 10:00:53.027 2018] [10294] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 47.5 MB in 0.309 sec
+[Sat Jun 30 10:00:53.027 2018] [10294] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Sat Jun 30 10:01:04.052 2018] [10294] binlog: index vk_pq_rt: recovered from tid 3210742 to tid 3211031
+[Sat Jun 30 10:01:04.052 2018] [10294] binlog: replay stats: 280235 rows in 282 commits; 7 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 10:01:04.052 2018] [10294] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 128.4 MB in 11.018 sec
+[Sat Jun 30 10:01:04.052 2018] [10294] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.003
+[Sat Jun 30 10:01:15.166 2018] [10294] binlog: index vk_pq_rt: recovered from tid 3211031 to tid 3211348
+[Sat Jun 30 10:01:15.167 2018] [10294] binlog: replay stats: 280924 rows in 309 commits; 8 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 10:01:15.167 2018] [10294] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.003; 128.0 MB in 11.113 sec
+[Sat Jun 30 10:01:15.167 2018] [10294] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.004
+[Sat Jun 30 10:01:23.315 2018] [10294] binlog: index vk_pq_rt: recovered from tid 3211348 to tid 3211577
+[Sat Jun 30 10:01:23.315 2018] [10294] binlog: replay stats: 207459 rows in 219 commits; 10 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 10:01:23.315 2018] [10294] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.004; 96.4 MB in 8.144 sec
+[Sat Jun 30 10:01:23.315 2018] [10294] binlog: finished replaying total 4 in 30.602 sec
+[Sat Jun 30 10:01:23.315 2018] [10294] prereading 4 indexes
+[Sat Jun 30 10:01:23.316 2018] [10294] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 10:01:23.316 2018] [10294] accepting connections
+[Sat Jun 30 10:48:19.208 2018] [10294] caught SIGTERM, shutting down
+[Sat Jun 30 10:48:27.384 2018] [44282] watchdog: main process 44283 forked ok
+[Sat Jun 30 10:48:27.385 2018] [44283] listening on all interfaces, port=6313
+[Sat Jun 30 10:48:27.385 2018] [44283] listening on all interfaces, port=6314
+[Sat Jun 30 10:48:27.385 2018] [44283] listening on all interfaces, port=9314
+[Sat Jun 30 10:49:18.632 2018] [44283] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 10:49:19.366 2018] [44283] binlog: index vk_pq_rt: skipped at tid 3213349 and max binlog tid 3212779
+[Sat Jun 30 10:49:19.366 2018] [44283] binlog: replay stats: 267532 rows in 316 commits; 14 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 10:49:19.366 2018] [44283] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.3 MB in 0.734 sec
+[Sat Jun 30 10:49:19.366 2018] [44283] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Sat Jun 30 10:49:20.274 2018] [44283] binlog: index vk_pq_rt: skipped at tid 3213349 and max binlog tid 3213122
+[Sat Jun 30 10:49:20.274 2018] [44283] binlog: replay stats: 281795 rows in 327 commits; 16 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 10:49:20.274 2018] [44283] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 128.0 MB in 0.908 sec
+[Sat Jun 30 10:49:20.275 2018] [44283] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.003
+[Sat Jun 30 10:49:20.919 2018] [44283] binlog: index vk_pq_rt: skipped at tid 3213349 and max binlog tid 3213349
+[Sat Jun 30 10:49:20.919 2018] [44283] binlog: replay stats: 182599 rows in 218 commits; 9 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 10:49:20.919 2018] [44283] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.003; 81.7 MB in 0.644 sec
+[Sat Jun 30 10:49:20.919 2018] [44283] binlog: finished replaying total 3 in 2.287 sec
+[Sat Jun 30 10:49:20.920 2018] [44283] prereading 4 indexes
+[Sat Jun 30 10:49:20.920 2018] [44283] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 10:49:20.920 2018] [44283] accepting connections
+[Sat Jun 30 11:09:23.549 2018] [50402] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3213349, current TID=3214505, ram=411.458 Mb, time delta=1204 sec, took=0.635 sec)
+[Sat Jun 30 11:29:27.173 2018] [50402] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3214505, current TID=3215614, ram=728.654 Mb, time delta=1203 sec, took=1.372 sec)
+[Sat Jun 30 11:49:31.744 2018] [50402] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3215614, current TID=3216675, ram=976.506 Mb, time delta=1204 sec, took=2.552 sec)
+[Sat Jun 30 12:01:05.027 2018] [44282] watchdog: main process 44283 forked ok
+[Sat Jun 30 12:01:05.027 2018] [44283] log reopened
+[Sat Jun 30 12:01:05.027 2018] [44283] query log reopened
+[Sat Jun 30 12:18:52.641 2018] [44283] caught SIGTERM, shutting down
+[Sat Jun 30 12:19:00.842 2018] [48771] watchdog: main process 48772 forked ok
+[Sat Jun 30 12:19:00.842 2018] [48772] listening on all interfaces, port=6313
+[Sat Jun 30 12:19:00.842 2018] [48772] listening on all interfaces, port=6314
+[Sat Jun 30 12:19:00.842 2018] [48772] listening on all interfaces, port=9314
+[Sat Jun 30 12:19:53.687 2018] [48772] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 12:20:04.304 2018] [48772] binlog: index vk_pq_rt: recovered from tid 3216675 to tid 3216994
+[Sat Jun 30 12:20:04.304 2018] [48772] binlog: replay stats: 278890 rows in 307 commits; 12 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 12:20:04.304 2018] [48772] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.0 MB in 10.613 sec
+[Sat Jun 30 12:20:04.304 2018] [48772] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Sat Jun 30 12:20:11.734 2018] [48772] binlog: index vk_pq_rt: recovered from tid 3216994 to tid 3217236
+[Sat Jun 30 12:20:11.734 2018] [48772] binlog: replay stats: 204807 rows in 234 commits; 8 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 12:20:11.734 2018] [48772] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 93.8 MB in 7.426 sec
+[Sat Jun 30 12:20:11.734 2018] [48772] binlog: finished replaying total 2 in 18.046 sec
+[Sat Jun 30 12:20:11.734 2018] [48772] prereading 4 indexes
+[Sat Jun 30 12:20:11.734 2018] [48772] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 12:20:11.734 2018] [48772] accepting connections
+[Sat Jun 30 12:39:57.583 2018] [72776] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3216675, current TID=3218371, ram=1445.435 Mb, time delta=1203 sec, took=3.895 sec)
+[Sat Jun 30 13:00:03.815 2018] [72776] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3218371, current TID=3219489, ram=1715.558 Mb, time delta=1206 sec, took=4.193 sec)
+[Sat Jun 30 13:20:11.221 2018] [72776] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3219489, current TID=3220594, ram=1988.907 Mb, time delta=1207 sec, took=5.387 sec)
+[Sat Jun 30 14:30:24.473 2018] [48772] caught SIGTERM, shutting down
+[Sat Jun 30 14:30:32.704 2018] [8539] watchdog: main process 8540 forked ok
+[Sat Jun 30 14:30:32.704 2018] [8540] listening on all interfaces, port=6313
+[Sat Jun 30 14:30:32.704 2018] [8540] listening on all interfaces, port=6314
+[Sat Jun 30 14:30:32.704 2018] [8540] listening on all interfaces, port=9314
+[Sat Jun 30 14:31:26.830 2018] [8540] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 14:31:27.459 2018] [8540] binlog: index vk_pq_rt: skipped at tid 3221079 and max binlog tid 3221079
+[Sat Jun 30 14:31:27.459 2018] [8540] binlog: replay stats: 227262 rows in 261 commits; 8 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 14:31:27.459 2018] [8540] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 107.2 MB in 0.621 sec
+[Sat Jun 30 14:31:27.459 2018] [8540] binlog: finished replaying total 1 in 0.629 sec
+[Sat Jun 30 14:31:27.460 2018] [8540] prereading 4 indexes
+[Sat Jun 30 14:31:27.460 2018] [8540] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 14:31:27.460 2018] [8540] accepting connections
+[Sat Jun 30 14:51:29.995 2018] [15470] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3221079, current TID=3222288, ram=400.993 Mb, time delta=1203 sec, took=0.596 sec)
+[Sat Jun 30 20:37:00.606 2018] [8540] caught SIGTERM, shutting down
+[Sat Jun 30 20:37:09.083 2018] [67368] watchdog: main process 67369 forked ok
+[Sat Jun 30 20:37:09.084 2018] [67369] listening on all interfaces, port=6313
+[Sat Jun 30 20:37:09.084 2018] [67369] listening on all interfaces, port=6314
+[Sat Jun 30 20:37:09.084 2018] [67369] listening on all interfaces, port=9314
+[Sat Jun 30 20:38:02.189 2018] [67369] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jun 30 20:38:10.837 2018] [67369] binlog: index vk_pq_rt: recovered from tid 3222288 to tid 3222630
+[Sat Jun 30 20:38:10.837 2018] [67369] binlog: replay stats: 290063 rows in 331 commits; 11 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 20:38:10.837 2018] [67369] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.2 MB in 8.637 sec
+[Sat Jun 30 20:38:10.837 2018] [67369] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Sat Jun 30 20:38:14.065 2018] [67369] binlog: index vk_pq_rt: recovered from tid 3222630 to tid 3222779
+[Sat Jun 30 20:38:14.065 2018] [67369] binlog: replay stats: 125001 rows in 144 commits; 5 updates, 0 reconfigure; 1 indexes
+[Sat Jun 30 20:38:14.065 2018] [67369] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 54.6 MB in 3.217 sec
+[Sat Jun 30 20:38:14.065 2018] [67369] binlog: finished replaying total 2 in 11.876 sec
+[Sat Jun 30 20:38:14.066 2018] [67369] prereading 4 indexes
+[Sat Jun 30 20:38:14.066 2018] [67369] prereaded 3 indexes in 0.000 sec
+[Sat Jun 30 20:38:14.066 2018] [67369] accepting connections
+[Sat Jun 30 20:58:08.443 2018] [1809] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3222288, current TID=3223391, ram=612.114 Mb, time delta=1206 sec, took=2.469 sec)
+[Sat Jun 30 21:18:13.443 2018] [1809] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3223391, current TID=3224226, ram=672.779 Mb, time delta=1204 sec, took=3.041 sec)
+[Sat Jun 30 21:38:17.874 2018] [1809] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3224226, current TID=3225054, ram=770.005 Mb, time delta=1204 sec, took=2.484 sec)
+[Sat Jun 30 21:58:22.959 2018] [1809] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3225054, current TID=3225852, ram=855.816 Mb, time delta=1205 sec, took=3.294 sec)
+[Sat Jun 30 22:18:27.937 2018] [1809] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3225852, current TID=3226729, ram=935.925 Mb, time delta=1204 sec, took=3.029 sec)
+[Sat Jun 30 22:38:33.470 2018] [1809] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3226729, current TID=3227603, ram=988.768 Mb, time delta=1205 sec, took=3.542 sec)
+[Sat Jun 30 22:58:37.974 2018] [1809] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3227603, current TID=3228479, ram=1080.513 Mb, time delta=1204 sec, took=2.568 sec)
+[Sat Jun 30 23:18:41.998 2018] [1809] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3228479, current TID=3229306, ram=1155.163 Mb, time delta=1204 sec, took=1.846 sec)
+[Sat Jun 30 23:38:46.620 2018] [1809] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3229306, current TID=3230135, ram=1222.167 Mb, time delta=1204 sec, took=2.651 sec)
+[Sat Jun 30 23:58:53.487 2018] [1809] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3230135, current TID=3230726, ram=1258.223 Mb, time delta=1206 sec, took=4.900 sec)
+[Sun Jul  1 00:03:49.158 2018] [67369] caught SIGTERM, shutting down
+[Sun Jul  1 00:03:57.429 2018] [48073] watchdog: main process 48074 forked ok
+[Sun Jul  1 00:03:57.429 2018] [48074] listening on all interfaces, port=6313
+[Sun Jul  1 00:03:57.429 2018] [48074] listening on all interfaces, port=6314
+[Sun Jul  1 00:03:57.429 2018] [48074] listening on all interfaces, port=9314
+[Sun Jul  1 00:04:48.303 2018] [48074] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sun Jul  1 00:04:52.987 2018] [48074] binlog: index vk_pq_rt: recovered from tid 3230726 to tid 3230964
+[Sun Jul  1 00:04:52.987 2018] [48074] binlog: replay stats: 126753 rows in 238 commits; 0 updates, 0 reconfigure; 1 indexes
+[Sun Jul  1 00:04:52.987 2018] [48074] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 61.8 MB in 4.684 sec
+[Sun Jul  1 00:04:52.987 2018] [48074] binlog: finished replaying total 1 in 4.684 sec
+[Sun Jul  1 00:04:52.987 2018] [48074] prereading 4 indexes
+[Sun Jul  1 00:04:52.989 2018] [48074] prereaded 3 indexes in 0.002 sec
+[Sun Jul  1 00:04:52.989 2018] [48074] accepting connections
+[Sun Jul  1 00:24:54.260 2018] [54453] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3230726, current TID=3231808, ram=1431.291 Mb, time delta=1205 sec, took=4.349 sec)
+[Sun Jul  1 00:44:59.573 2018] [54453] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3231808, current TID=3232684, ram=1584.206 Mb, time delta=1205 sec, took=3.374 sec)
+[Sun Jul  1 01:08:22.262 2018] [54453] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3232766, current TID=3233766, ram=264.557 Mb, time delta=1205 sec, took=0.422 sec)
+[Sun Jul  1 01:28:25.326 2018] [54453] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3233766, current TID=3234715, ram=503.746 Mb, time delta=1203 sec, took=1.087 sec)
+[Sun Jul  1 01:48:29.336 2018] [54453] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3234715, current TID=3235667, ram=691.340 Mb, time delta=1204 sec, took=2.061 sec)
+[Sun Jul  1 02:12:47.124 2018] [54453] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3235839, current TID=3236775, ram=318.948 Mb, time delta=1200 sec, took=0.466 sec)
+[Sun Jul  1 02:32:50.010 2018] [54453] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3236775, current TID=3237781, ram=603.481 Mb, time delta=1202 sec, took=0.926 sec)
+[Sun Jul  1 03:02:28.396 2018] [54453] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3238246, current TID=3239306, ram=311.959 Mb, time delta=1200 sec, took=0.483 sec)
+[Sun Jul  1 03:04:29.253 2018] [48074] caught SIGTERM, shutting down
+[Sun Jul  1 03:04:37.519 2018] [8117] watchdog: main process 8118 forked ok
+[Sun Jul  1 03:04:37.520 2018] [8118] listening on all interfaces, port=6313
+[Sun Jul  1 03:04:37.520 2018] [8118] listening on all interfaces, port=6314
+[Sun Jul  1 03:04:37.520 2018] [8118] listening on all interfaces, port=9314
+[Sun Jul  1 03:05:45.416 2018] [8118] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sun Jul  1 03:05:49.141 2018] [8118] binlog: index vk_pq_rt: recovered from tid 3239306 to tid 3239419
+[Sun Jul  1 03:05:49.141 2018] [8118] binlog: replay stats: 95652 rows in 113 commits; 0 updates, 0 reconfigure; 1 indexes
+[Sun Jul  1 03:05:49.141 2018] [8118] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 53.1 MB in 3.724 sec
+[Sun Jul  1 03:05:49.141 2018] [8118] binlog: finished replaying total 1 in 3.724 sec
+[Sun Jul  1 03:05:49.141 2018] [8118] prereading 4 indexes
+[Sun Jul  1 03:05:49.142 2018] [8118] prereaded 3 indexes in 0.000 sec
+[Sun Jul  1 03:05:49.142 2018] [8118] accepting connections
+[Sun Jul  1 03:25:47.417 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3239306, current TID=3240493, ram=665.301 Mb, time delta=1202 sec, took=1.306 sec)
+[Sun Jul  1 03:45:51.127 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3240493, current TID=3241560, ram=935.010 Mb, time delta=1203 sec, took=1.739 sec)
+[Sun Jul  1 04:05:54.923 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3241560, current TID=3242614, ram=1156.711 Mb, time delta=1203 sec, took=1.845 sec)
+[Sun Jul  1 04:25:59.800 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3242614, current TID=3243707, ram=1410.619 Mb, time delta=1204 sec, took=2.924 sec)
+[Sun Jul  1 04:46:06.085 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3243707, current TID=3244797, ram=1651.901 Mb, time delta=1206 sec, took=4.172 sec)
+[Sun Jul  1 05:09:59.025 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3244917, current TID=3246105, ram=377.857 Mb, time delta=1205 sec, took=0.606 sec)
+[Sun Jul  1 05:30:02.102 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3246105, current TID=3247210, ram=719.319 Mb, time delta=1203 sec, took=1.105 sec)
+[Sun Jul  1 05:50:06.488 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3247210, current TID=3248257, ram=1016.959 Mb, time delta=1204 sec, took=2.429 sec)
+[Sun Jul  1 06:10:11.440 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3248257, current TID=3249392, ram=1294.979 Mb, time delta=1204 sec, took=2.984 sec)
+[Sun Jul  1 06:30:16.446 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3249392, current TID=3250466, ram=1548.474 Mb, time delta=1205 sec, took=3.057 sec)
+[Sun Jul  1 07:00:49.831 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3250936, current TID=3252080, ram=352.408 Mb, time delta=1205 sec, took=0.337 sec)
+[Sun Jul  1 07:20:52.881 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3252080, current TID=3253208, ram=679.131 Mb, time delta=1203 sec, took=1.108 sec)
+[Sun Jul  1 07:40:57.224 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3253208, current TID=3254287, ram=976.841 Mb, time delta=1204 sec, took=2.210 sec)
+[Sun Jul  1 08:01:02.277 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3254287, current TID=3255354, ram=1246.173 Mb, time delta=1205 sec, took=3.090 sec)
+[Sun Jul  1 08:21:06.874 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3255354, current TID=3256484, ram=1547.921 Mb, time delta=1204 sec, took=2.686 sec)
+[Sun Jul  1 08:52:10.345 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3256969, current TID=3258142, ram=349.701 Mb, time delta=1203 sec, took=0.494 sec)
+[Sun Jul  1 09:12:13.268 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3258142, current TID=3259244, ram=662.876 Mb, time delta=1202 sec, took=1.017 sec)
+[Sun Jul  1 09:32:16.901 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3259244, current TID=3260325, ram=937.221 Mb, time delta=1203 sec, took=1.669 sec)
+[Sun Jul  1 09:52:22.501 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3260325, current TID=3261404, ram=1197.038 Mb, time delta=1205 sec, took=3.655 sec)
+[Sun Jul  1 10:12:27.173 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3261404, current TID=3262482, ram=1489.948 Mb, time delta=1204 sec, took=2.724 sec)
+[Sun Jul  1 10:48:16.021 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3263232, current TID=3264391, ram=329.821 Mb, time delta=1202 sec, took=0.375 sec)
+[Sun Jul  1 11:08:19.143 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3264391, current TID=3265491, ram=645.896 Mb, time delta=1203 sec, took=1.180 sec)
+[Sun Jul  1 11:28:22.964 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3265491, current TID=3266592, ram=947.809 Mb, time delta=1203 sec, took=1.848 sec)
+[Sun Jul  1 11:48:27.716 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3266592, current TID=3267681, ram=1214.663 Mb, time delta=1204 sec, took=2.811 sec)
+[Sun Jul  1 12:08:32.880 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3267681, current TID=3268824, ram=1490.372 Mb, time delta=1205 sec, took=3.214 sec)
+[Sun Jul  1 12:42:21.642 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3269467, current TID=3270698, ram=356.175 Mb, time delta=1203 sec, took=0.467 sec)
+[Sun Jul  1 13:02:25.090 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3270698, current TID=3272032, ram=752.387 Mb, time delta=1203 sec, took=1.509 sec)
+[Sun Jul  1 13:22:29.522 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3272032, current TID=3273337, ram=1127.601 Mb, time delta=1204 sec, took=2.519 sec)
+[Sun Jul  1 13:42:35.133 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3273337, current TID=3274593, ram=1441.155 Mb, time delta=1205 sec, took=3.700 sec)
+[Sun Jul  1 14:17:54.199 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3275439, current TID=3276717, ram=413.989 Mb, time delta=1203 sec, took=0.654 sec)
+[Sun Jul  1 14:37:57.719 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3276717, current TID=3277878, ram=749.303 Mb, time delta=1203 sec, took=1.439 sec)
+[Sun Jul  1 14:58:02.482 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3277878, current TID=3279065, ram=1074.266 Mb, time delta=1204 sec, took=2.829 sec)
+[Sun Jul  1 15:18:07.389 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3279065, current TID=3280239, ram=1397.427 Mb, time delta=1204 sec, took=2.894 sec)
+[Sun Jul  1 19:37:47.293 2018] [22912] WARNING: bailing on failed request header (client=192.168.10.181:65026(209026)), error: 104 'Connection reset by peer', sock=302
+[Sun Jul  1 22:40:30.416 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3299288, current TID=3299879, ram=86.707 Mb, time delta=1200 sec, took=0.117 sec)
+[Sun Jul  1 23:15:03.895 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3300220, current TID=3300694, ram=59.894 Mb, time delta=1201 sec, took=0.096 sec)
+[Sun Jul  1 23:53:37.811 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3301111, current TID=3301630, ram=67.657 Mb, time delta=1202 sec, took=0.118 sec)
+[Mon Jul  2 00:24:55.986 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3301868, current TID=3302259, ram=88.619 Mb, time delta=1202 sec, took=0.119 sec)
+[Mon Jul  2 00:51:48.914 2018] [22908] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3302397, current TID=3302838, ram=94.391 Mb, time delta=1204 sec, took=0.140 sec)
+[Mon Jul  2 02:25:41.161 2018] [22912] WARNING: exiting on handshake error (client=192.168.10.166:50932(430087)), error: 104 'Connection reset by peer', sock=431
+[Mon Jul  2 05:29:53.498 2018] [22912] WARNING: bailing on failed request header (client=192.168.10.181:60838(585236)), error: 104 'Connection reset by peer', sock=560
+[Mon Jul  2 07:31:19.802 2018] [22912] WARNING: exiting on handshake error (client=192.168.10.163:33964(687504)), error: 104 'Connection reset by peer', sock=682
+[Mon Jul  2 08:07:11.265 2018] [22912] WARNING: bailing on failed request header (client=192.168.10.99:44928(717727)), error: 104 'Connection reset by peer', sock=718
+[Mon Jul  2 11:22:26.711 2018] [22912] WARNING: bailing on failed request header (client=192.168.8.196:31878(882305)), error: 104 'Connection reset by peer', sock=906
+[Mon Jul  2 16:44:48.429 2018] [8118] caught SIGTERM, shutting down
+[Mon Jul  2 16:44:56.659 2018] [65326] watchdog: main process 65327 forked ok
+[Mon Jul  2 16:44:56.660 2018] [65327] listening on all interfaces, port=6313
+[Mon Jul  2 16:44:56.660 2018] [65327] listening on all interfaces, port=6314
+[Mon Jul  2 16:44:56.660 2018] [65327] listening on all interfaces, port=9314
+[Mon Jul  2 16:44:56.859 2018] [65327] WARNING: index 'vk_document_maintenance': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance.spl: Resource temporarily unavailable; NOT SERVING
+[Mon Jul  2 16:44:56.862 2018] [65327] WARNING: index 'vk_document_maintenance_delta': lock: failed to lock /boardreader/search/nodert_pq/idx/document_maintenance_delta.spl: Resource temporarily unavailable; NOT SERVING
+[Mon Jul  2 16:44:56.862 2018] [65327] WARNING: index 'vk_pq_rt': prealloc: failed to lock /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.lock: Resource temporarily unavailable; NOT SERVING
+[Mon Jul  2 16:44:56.863 2018] [65327] FATAL: failed to lock '/mnt/data/datart_pq/binlog//binlog.lock': 11 'Resource temporarily unavailable'
+[Mon Jul  2 16:44:56.866 2018] [65326] watchdog: main process 65327 exited cleanly (exit code 1), shutting down
+[Mon Jul  2 17:46:33.593 2018] [53657] watchdog: main process 53658 forked ok
+[Mon Jul  2 17:46:33.593 2018] [53658] listening on all interfaces, port=6313
+[Mon Jul  2 17:46:33.593 2018] [53658] listening on all interfaces, port=6314
+[Mon Jul  2 17:46:33.593 2018] [53658] listening on all interfaces, port=9314
+[Mon Jul  2 17:48:48.449 2018] [53658] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Mon Jul  2 17:48:48.449 2018] [53658] WARNING: binlog: empty binlog /mnt/data/datart_pq/binlog//binlog.001 detected, skipping
+[Mon Jul  2 17:48:48.449 2018] [53658] binlog: finished replaying total 1 in 0.000 sec
+[Mon Jul  2 17:48:48.450 2018] [53658] prereading 4 indexes
+[Mon Jul  2 17:48:48.450 2018] [53658] prereaded 3 indexes in 0.000 sec
+[Mon Jul  2 17:48:48.450 2018] [53658] accepting connections
+[Mon Jul  2 18:08:50.708 2018] [66332] WARNING: binlog: failed to unlink /mnt/data/datart_pq/binlog//binlog.001: No such file or directory (remove it manually)
+[Mon Jul  2 18:08:50.742 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3329646, current TID=3330519, ram=230.535 Mb, time delta=1202 sec, took=0.380 sec)
+[Mon Jul  2 18:28:53.468 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3330519, current TID=3331334, ram=412.636 Mb, time delta=1202 sec, took=0.788 sec)
+[Mon Jul  2 18:48:56.079 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3331334, current TID=3331875, ram=485.643 Mb, time delta=1202 sec, took=0.647 sec)
+[Mon Jul  2 19:08:59.224 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3331875, current TID=3332330, ram=528.868 Mb, time delta=1203 sec, took=0.958 sec)
+[Mon Jul  2 19:29:02.284 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3332330, current TID=3332767, ram=563.799 Mb, time delta=1203 sec, took=0.937 sec)
+[Mon Jul  2 19:49:05.136 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3332767, current TID=3333168, ram=594.814 Mb, time delta=1202 sec, took=0.888 sec)
+[Mon Jul  2 20:09:08.288 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3333168, current TID=3333616, ram=622.368 Mb, time delta=1203 sec, took=1.195 sec)
+[Mon Jul  2 20:29:12.023 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3333616, current TID=3334026, ram=648.107 Mb, time delta=1203 sec, took=1.730 sec)
+[Mon Jul  2 20:49:15.180 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3334026, current TID=3334462, ram=671.524 Mb, time delta=1203 sec, took=1.171 sec)
+[Mon Jul  2 21:09:18.504 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3334462, current TID=3334898, ram=698.312 Mb, time delta=1203 sec, took=1.336 sec)
+[Mon Jul  2 21:29:21.823 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3334898, current TID=3335339, ram=726.199 Mb, time delta=1203 sec, took=1.089 sec)
+[Mon Jul  2 21:49:24.849 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3335339, current TID=3335784, ram=754.208 Mb, time delta=1203 sec, took=1.014 sec)
+[Mon Jul  2 22:09:28.845 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3335784, current TID=3336235, ram=787.707 Mb, time delta=1203 sec, took=1.902 sec)
+[Mon Jul  2 22:29:32.331 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3336235, current TID=3336609, ram=821.878 Mb, time delta=1203 sec, took=1.532 sec)
+[Mon Jul  2 22:49:35.848 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3336609, current TID=3336926, ram=858.611 Mb, time delta=1203 sec, took=1.512 sec)
+[Mon Jul  2 23:09:40.832 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3336926, current TID=3337412, ram=908.603 Mb, time delta=1204 sec, took=2.992 sec)
+[Mon Jul  2 23:29:44.262 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3337412, current TID=3337900, ram=960.181 Mb, time delta=1203 sec, took=1.424 sec)
+[Mon Jul  2 23:49:48.490 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3337900, current TID=3338428, ram=1024.196 Mb, time delta=1204 sec, took=2.230 sec)
+[Tue Jul  3 00:09:51.976 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3338428, current TID=3338939, ram=1100.859 Mb, time delta=1203 sec, took=1.430 sec)
+[Tue Jul  3 00:15:48.072 2018] [66336] WARNING: bailing on failed request header (client=192.168.10.99:32548(298281)), error: 104 'Connection reset by peer', sock=2730
+[Tue Jul  3 00:29:56.028 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3338939, current TID=3339406, ram=1177.629 Mb, time delta=1204 sec, took=1.766 sec)
+[Tue Jul  3 00:50:00.046 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3339406, current TID=3339792, ram=1273.010 Mb, time delta=1204 sec, took=1.857 sec)
+[Tue Jul  3 01:10:03.836 2018] [66336] WARNING: bailing on failed request header (client=192.168.10.181:24478(344066)), error: 104 'Connection reset by peer', sock=2731
+[Tue Jul  3 01:10:04.963 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3339792, current TID=3340178, ram=1376.669 Mb, time delta=1204 sec, took=2.977 sec)
+[Tue Jul  3 01:30:10.340 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3340178, current TID=3340592, ram=1481.878 Mb, time delta=1205 sec, took=3.374 sec)
+[Tue Jul  3 01:50:15.053 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3340592, current TID=3340956, ram=1600.249 Mb, time delta=1204 sec, took=2.722 sec)
+[Tue Jul  3 02:10:20.812 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3340956, current TID=3341396, ram=1737.839 Mb, time delta=1205 sec, took=3.762 sec)
+[Tue Jul  3 02:30:26.590 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3341396, current TID=3341830, ram=1850.327 Mb, time delta=1205 sec, took=3.780 sec)
+[Tue Jul  3 02:50:32.649 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3341830, current TID=3342303, ram=1989.386 Mb, time delta=1206 sec, took=3.931 sec)
+[Tue Jul  3 03:19:10.911 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3342457, current TID=3342991, ram=198.814 Mb, time delta=1202 sec, took=0.416 sec)
+[Tue Jul  3 03:39:13.529 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3342991, current TID=3343439, ram=352.636 Mb, time delta=1202 sec, took=0.602 sec)
+[Tue Jul  3 03:59:18.214 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3343439, current TID=3343891, ram=505.992 Mb, time delta=1204 sec, took=2.790 sec)
+[Tue Jul  3 04:19:21.893 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3343891, current TID=3344413, ram=680.817 Mb, time delta=1203 sec, took=1.777 sec)
+[Tue Jul  3 04:39:25.410 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3344413, current TID=3344906, ram=838.103 Mb, time delta=1203 sec, took=1.399 sec)
+[Tue Jul  3 04:59:28.985 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3344906, current TID=3345375, ram=992.337 Mb, time delta=1203 sec, took=1.573 sec)
+[Tue Jul  3 05:19:33.658 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3345375, current TID=3345869, ram=1179.919 Mb, time delta=1204 sec, took=2.708 sec)
+[Tue Jul  3 05:39:38.657 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3345869, current TID=3346333, ram=1325.121 Mb, time delta=1204 sec, took=3.002 sec)
+[Tue Jul  3 05:59:44.870 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3346333, current TID=3346786, ram=1479.472 Mb, time delta=1206 sec, took=4.103 sec)
+[Tue Jul  3 06:19:51.692 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3346786, current TID=3347277, ram=1642.262 Mb, time delta=1206 sec, took=4.885 sec)
+[Tue Jul  3 06:58:05.685 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3347664, current TID=3348183, ram=191.147 Mb, time delta=1204 sec, took=0.309 sec)
+[Tue Jul  3 07:18:08.342 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3348183, current TID=3348681, ram=374.753 Mb, time delta=1202 sec, took=0.683 sec)
+[Tue Jul  3 07:48:31.628 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3348937, current TID=3349431, ram=181.875 Mb, time delta=1204 sec, took=0.282 sec)
+[Tue Jul  3 08:08:34.589 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3349431, current TID=3349937, ram=364.628 Mb, time delta=1202 sec, took=0.869 sec)
+[Tue Jul  3 08:40:07.937 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3350201, current TID=3350707, ram=183.727 Mb, time delta=1202 sec, took=0.279 sec)
+[Tue Jul  3 09:00:10.552 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3350707, current TID=3351176, ram=344.603 Mb, time delta=1202 sec, took=0.631 sec)
+[Tue Jul  3 09:32:34.085 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3351510, current TID=3352011, ram=183.605 Mb, time delta=1201 sec, took=0.265 sec)
+[Tue Jul  3 09:52:36.737 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3352011, current TID=3352491, ram=345.500 Mb, time delta=1202 sec, took=0.657 sec)
+[Tue Jul  3 12:01:05.350 2018] [53658] log reopened
+[Tue Jul  3 12:01:05.350 2018] [53657] watchdog: main process 53658 forked ok
+[Tue Jul  3 12:01:05.350 2018] [53658] query log reopened
+[Tue Jul  3 14:06:44.918 2018] [66336] WARNING: bailing on failed request header (client=192.168.10.99:37168(996977)), error: 104 'Connection reset by peer', sock=3023
+[Tue Jul  3 19:42:09.388 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3366910, current TID=3367272, ram=40.479 Mb, time delta=1200 sec, took=0.055 sec)
+[Tue Jul  3 20:04:06.726 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3367301, current TID=3367709, ram=37.215 Mb, time delta=1201 sec, took=0.132 sec)
+[Tue Jul  3 20:28:24.591 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3367806, current TID=3368204, ram=33.933 Mb, time delta=1200 sec, took=0.109 sec)
+[Tue Jul  3 20:55:52.413 2018] [66332] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3368350, current TID=3368748, ram=29.264 Mb, time delta=1204 sec, took=0.047 sec)
+[Tue Jul  3 21:07:03.090 2018] [53657] watchdog: main process 53658 killed cleanly with SIGKILL, shutting down
+[Tue Jul  3 21:18:36.706 2018] [35308] watchdog: main process 35309 forked ok
+[Tue Jul  3 21:18:36.706 2018] [35309] listening on all interfaces, port=6313
+[Tue Jul  3 21:18:36.706 2018] [35309] listening on all interfaces, port=6314
+[Tue Jul  3 21:18:36.706 2018] [35309] listening on all interfaces, port=9314
+[Tue Jul  3 21:21:48.517 2018] [35309] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Tue Jul  3 21:21:48.524 2018] [35309] WARNING: binlog: commit: unexpected tid (index=vk_pq_rt, indextid=3368902, logtid=3368904, pos=47)
+[Tue Jul  3 21:21:51.722 2018] [35309] binlog: index vk_pq_rt: recovered from tid 3368902 to tid 3368970
+[Tue Jul  3 21:21:51.722 2018] [35309] binlog: replay stats: 12414 rows in 67 commits; 0 updates, 0 reconfigure; 1 indexes
+[Tue Jul  3 21:21:51.722 2018] [35309] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 6.1 MB in 3.198 sec
+[Tue Jul  3 21:21:51.722 2018] [35309] binlog: finished replaying total 1 in 3.204 sec
+[Tue Jul  3 21:21:51.722 2018] [35309] prereading 4 indexes
+[Tue Jul  3 21:21:51.760 2018] [35309] prereaded 3 indexes in 0.038 sec
+[Tue Jul  3 21:21:51.761 2018] [35309] accepting connections
+[Tue Jul  3 21:41:48.707 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3368902, current TID=3369406, ram=60.111 Mb, time delta=1200 sec, took=0.078 sec)
+[Tue Jul  3 22:01:51.030 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3369406, current TID=3369833, ram=93.477 Mb, time delta=1202 sec, took=0.369 sec)
+[Tue Jul  3 22:21:53.487 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3369833, current TID=3370225, ram=133.067 Mb, time delta=1202 sec, took=0.453 sec)
+[Tue Jul  3 22:41:56.089 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3370225, current TID=3370640, ram=173.604 Mb, time delta=1202 sec, took=0.422 sec)
+[Tue Jul  3 23:01:58.782 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3370640, current TID=3371061, ram=219.320 Mb, time delta=1202 sec, took=0.481 sec)
+[Tue Jul  3 23:22:01.229 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3371061, current TID=3371461, ram=277.265 Mb, time delta=1202 sec, took=0.374 sec)
+[Tue Jul  3 23:42:04.114 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3371461, current TID=3371850, ram=335.075 Mb, time delta=1202 sec, took=0.869 sec)
+[Wed Jul  4 00:02:07.244 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3371850, current TID=3372234, ram=399.625 Mb, time delta=1203 sec, took=1.062 sec)
+[Wed Jul  4 00:22:10.210 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3372234, current TID=3372642, ram=484.770 Mb, time delta=1202 sec, took=0.912 sec)
+[Wed Jul  4 00:42:13.097 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3372642, current TID=3372977, ram=568.764 Mb, time delta=1202 sec, took=0.806 sec)
+[Wed Jul  4 00:56:39.060 2018] [56998] WARNING: bailing on failed request header (client=192.168.10.181:56114(180152)), error: 104 'Connection reset by peer', sock=3273
+[Wed Jul  4 01:02:16.413 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3372977, current TID=3373337, ram=654.168 Mb, time delta=1203 sec, took=1.120 sec)
+[Wed Jul  4 01:22:20.000 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3373337, current TID=3373856, ram=766.347 Mb, time delta=1203 sec, took=1.486 sec)
+[Wed Jul  4 01:42:23.465 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3373856, current TID=3374316, ram=882.411 Mb, time delta=1203 sec, took=1.389 sec)
+[Wed Jul  4 02:02:27.429 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3374316, current TID=3374682, ram=992.042 Mb, time delta=1203 sec, took=1.709 sec)
+[Wed Jul  4 02:22:32.085 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3374682, current TID=3375144, ram=1136.745 Mb, time delta=1204 sec, took=2.540 sec)
+[Wed Jul  4 02:42:36.857 2018] [56994] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3375144, current TID=3375621, ram=1262.280 Mb, time delta=1204 sec, took=2.664 sec)
+[Wed Jul  4 02:43:37.802 2018] [35309] caught SIGTERM, shutting down
+[Wed Jul  4 02:45:38.049 2018] [59581] watchdog: main process 59582 forked ok
+[Wed Jul  4 02:45:38.049 2018] [59582] listening on all interfaces, port=6313
+[Wed Jul  4 02:45:38.049 2018] [59582] listening on all interfaces, port=6314
+[Wed Jul  4 02:45:38.050 2018] [59582] listening on all interfaces, port=9314
+[Wed Jul  4 02:48:52.740 2018] [59582] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Wed Jul  4 02:48:57.462 2018] [59582] binlog: index vk_pq_rt: recovered from tid 3375621 to tid 3375650
+[Wed Jul  4 02:48:57.462 2018] [59582] binlog: replay stats: 17917 rows in 29 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 02:48:57.462 2018] [59582] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 9.1 MB in 4.721 sec
+[Wed Jul  4 02:48:57.462 2018] [59582] binlog: finished replaying total 1 in 4.721 sec
+[Wed Jul  4 02:48:57.462 2018] [59582] prereading 4 indexes
+[Wed Jul  4 02:48:57.463 2018] [59582] prereaded 3 indexes in 0.000 sec
+[Wed Jul  4 02:48:57.463 2018] [59582] accepting connections
+[Wed Jul  4 03:08:59.580 2018] [8058] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3375621, current TID=3376243, ram=1453.398 Mb, time delta=1206 sec, took=5.014 sec)
+[Wed Jul  4 03:29:04.408 2018] [8058] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3376243, current TID=3376716, ram=1606.738 Mb, time delta=1204 sec, took=2.578 sec)
+[Wed Jul  4 03:51:57.047 2018] [8058] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3376744, current TID=3377318, ram=187.935 Mb, time delta=1205 sec, took=0.288 sec)
+[Wed Jul  4 03:54:58.608 2018] [59582] caught SIGTERM, shutting down
+[Wed Jul  4 04:08:36.820 2018] [59804] watchdog: main process 59805 forked ok
+[Wed Jul  4 04:08:36.821 2018] [59805] listening on all interfaces, port=6313
+[Wed Jul  4 04:08:36.821 2018] [59805] listening on all interfaces, port=6314
+[Wed Jul  4 04:08:36.821 2018] [59805] listening on all interfaces, port=9314
+[Wed Jul  4 04:11:51.981 2018] [59805] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Wed Jul  4 04:12:08.825 2018] [59805] binlog: index vk_pq_rt: recovered from tid 3377318 to tid 3377386
+[Wed Jul  4 04:12:08.825 2018] [59805] binlog: replay stats: 59327 rows in 68 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 04:12:08.825 2018] [59805] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 28.7 MB in 16.840 sec
+[Wed Jul  4 04:12:08.825 2018] [59805] binlog: finished replaying total 1 in 16.844 sec
+[Wed Jul  4 04:12:08.826 2018] [59805] prereading 4 indexes
+[Wed Jul  4 04:12:08.826 2018] [59805] prereaded 3 indexes in 0.000 sec
+[Wed Jul  4 04:12:08.826 2018] [59805] accepting connections
+[Wed Jul  4 04:31:57.096 2018] [30032] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3377318, current TID=3378097, ram=480.869 Mb, time delta=1205 sec, took=1.118 sec)
+[Wed Jul  4 04:52:00.543 2018] [30032] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3378097, current TID=3378580, ram=640.387 Mb, time delta=1203 sec, took=1.193 sec)
+[Wed Jul  4 05:12:04.864 2018] [30032] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3378580, current TID=3379106, ram=814.592 Mb, time delta=1204 sec, took=2.312 sec)
+[Wed Jul  4 05:30:40.319 2018] [59804] watchdog: main process 59805 killed cleanly with SIGKILL, shutting down
+[Wed Jul  4 05:57:11.194 2018] [13765] watchdog: main process 13766 forked ok
+[Wed Jul  4 05:57:11.194 2018] [13766] listening on all interfaces, port=6313
+[Wed Jul  4 05:57:11.194 2018] [13766] listening on all interfaces, port=6314
+[Wed Jul  4 05:57:11.194 2018] [13766] listening on all interfaces, port=9314
+[Wed Jul  4 06:04:52.619 2018] [13766] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Wed Jul  4 06:05:58.353 2018] [13766] binlog: index vk_pq_rt: recovered from tid 3379106 to tid 3379417
+[Wed Jul  4 06:05:58.353 2018] [13766] binlog: replay stats: 256074 rows in 311 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 06:05:58.353 2018] [13766] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.2 MB in 65.729 sec
+[Wed Jul  4 06:05:58.353 2018] [13766] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Wed Jul  4 06:06:28.511 2018] [13766] binlog: index vk_pq_rt: recovered from tid 3379417 to tid 3379566
+[Wed Jul  4 06:06:28.511 2018] [13766] binlog: replay stats: 116759 rows in 149 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 06:06:28.511 2018] [13766] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 57.3 MB in 30.147 sec
+[Wed Jul  4 06:06:28.511 2018] [13766] binlog: finished replaying total 2 in 95.891 sec
+[Wed Jul  4 06:06:28.512 2018] [13766] prereading 4 indexes
+[Wed Jul  4 06:06:28.526 2018] [13766] prereaded 3 indexes in 0.014 sec
+[Wed Jul  4 06:06:28.526 2018] [13766] accepting connections
+[Wed Jul  4 06:24:58.140 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3379106, current TID=3380373, ram=1275.164 Mb, time delta=1205 sec, took=2.763 sec)
+[Wed Jul  4 07:03:02.335 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3380828, current TID=3381362, ram=194.480 Mb, time delta=1202 sec, took=0.212 sec)
+[Wed Jul  4 07:23:05.063 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3381362, current TID=3381922, ram=381.256 Mb, time delta=1202 sec, took=0.690 sec)
+[Wed Jul  4 07:43:09.167 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3381922, current TID=3382466, ram=548.240 Mb, time delta=1204 sec, took=1.950 sec)
+[Wed Jul  4 08:03:12.930 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3382466, current TID=3383013, ram=707.838 Mb, time delta=1203 sec, took=1.383 sec)
+[Wed Jul  4 08:23:16.672 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3383013, current TID=3383557, ram=882.071 Mb, time delta=1203 sec, took=1.639 sec)
+[Wed Jul  4 08:43:22.242 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3383557, current TID=3384082, ram=1049.435 Mb, time delta=1205 sec, took=3.129 sec)
+[Wed Jul  4 09:06:54.929 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3384145, current TID=3384705, ram=199.720 Mb, time delta=1204 sec, took=0.297 sec)
+[Wed Jul  4 09:26:58.425 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3384705, current TID=3385221, ram=368.916 Mb, time delta=1203 sec, took=1.421 sec)
+[Wed Jul  4 09:47:01.678 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3385221, current TID=3385751, ram=530.121 Mb, time delta=1203 sec, took=1.209 sec)
+[Wed Jul  4 10:07:04.561 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3385751, current TID=3386307, ram=700.748 Mb, time delta=1202 sec, took=0.799 sec)
+[Wed Jul  4 10:27:08.016 2018] [69164] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3386307, current TID=3386850, ram=865.866 Mb, time delta=1203 sec, took=1.371 sec)
+[Wed Jul  4 10:32:12.108 2018] [13766] caught SIGTERM, shutting down
+[Wed Jul  4 10:33:04.323 2018] [26988] watchdog: main process 26989 forked ok
+[Wed Jul  4 10:33:04.323 2018] [26989] listening on all interfaces, port=6313
+[Wed Jul  4 10:33:04.323 2018] [26989] listening on all interfaces, port=6314
+[Wed Jul  4 10:33:04.323 2018] [26989] listening on all interfaces, port=9314
+[Wed Jul  4 10:37:12.202 2018] [26989] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Wed Jul  4 10:37:38.486 2018] [26989] binlog: index vk_pq_rt: recovered from tid 3386850 to tid 3386994
+[Wed Jul  4 10:37:38.486 2018] [26989] binlog: replay stats: 98993 rows in 144 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 10:37:38.486 2018] [26989] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 50.1 MB in 26.277 sec
+[Wed Jul  4 10:37:38.486 2018] [26989] binlog: finished replaying total 1 in 26.284 sec
+[Wed Jul  4 10:37:38.486 2018] [26989] prereading 4 indexes
+[Wed Jul  4 10:37:38.486 2018] [26989] prereaded 3 indexes in 0.000 sec
+[Wed Jul  4 10:37:38.487 2018] [26989] accepting connections
+[Wed Jul  4 10:57:18.282 2018] [9389] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3386850, current TID=3387565, ram=1109.638 Mb, time delta=1206 sec, took=2.763 sec)
+[Wed Jul  4 11:10:50.191 2018] [26989] caught SIGTERM, shutting down
+[Wed Jul  4 11:10:54.209 2018] [32599] watchdog: main process 32601 forked ok
+[Wed Jul  4 11:10:54.210 2018] [32601] listening on all interfaces, port=6313
+[Wed Jul  4 11:10:54.230 2018] [32601] listening on all interfaces, port=6314
+[Wed Jul  4 11:10:54.230 2018] [32601] listening on all interfaces, port=9314
+[Wed Jul  4 11:13:19.990 2018] [32601] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Wed Jul  4 11:14:27.879 2018] [32601] binlog: index vk_pq_rt: recovered from tid 3387565 to tid 3387902
+[Wed Jul  4 11:14:27.879 2018] [32601] binlog: replay stats: 249221 rows in 337 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 11:14:27.879 2018] [32601] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.1 MB in 67.888 sec
+[Wed Jul  4 11:14:27.879 2018] [32601] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Wed Jul  4 11:14:37.965 2018] [32601] binlog: index vk_pq_rt: recovered from tid 3387902 to tid 3387949
+[Wed Jul  4 11:14:37.965 2018] [32601] binlog: replay stats: 39630 rows in 47 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 11:14:37.965 2018] [32601] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 18.7 MB in 10.086 sec
+[Wed Jul  4 11:14:37.965 2018] [32601] binlog: finished replaying total 2 in 77.975 sec
+[Wed Jul  4 11:14:37.965 2018] [32601] prereading 4 indexes
+[Wed Jul  4 11:14:37.966 2018] [32601] prereaded 3 indexes in 0.000 sec
+[Wed Jul  4 11:14:37.966 2018] [32601] accepting connections
+[Wed Jul  4 11:33:28.918 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3387565, current TID=3388556, ram=1420.771 Mb, time delta=1208 sec, took=4.063 sec)
+[Wed Jul  4 11:53:33.559 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3388556, current TID=3389110, ram=1587.816 Mb, time delta=1204 sec, took=2.564 sec)
+[Wed Jul  4 12:16:56.136 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3389158, current TID=3389819, ram=213.093 Mb, time delta=1201 sec, took=0.238 sec)
+[Wed Jul  4 12:36:58.795 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3389819, current TID=3390392, ram=395.440 Mb, time delta=1202 sec, took=0.599 sec)
+[Wed Jul  4 12:57:01.425 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3390392, current TID=3390973, ram=561.915 Mb, time delta=1202 sec, took=0.628 sec)
+[Wed Jul  4 13:17:04.547 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3390973, current TID=3391559, ram=741.108 Mb, time delta=1203 sec, took=1.136 sec)
+[Wed Jul  4 13:44:47.613 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3391772, current TID=3392377, ram=199.813 Mb, time delta=1203 sec, took=0.314 sec)
+[Wed Jul  4 14:04:50.577 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3392377, current TID=3392990, ram=404.983 Mb, time delta=1202 sec, took=0.976 sec)
+[Wed Jul  4 14:24:53.620 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3392990, current TID=3393632, ram=588.546 Mb, time delta=1203 sec, took=1.082 sec)
+[Wed Jul  4 14:44:57.440 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3393632, current TID=3394258, ram=767.044 Mb, time delta=1203 sec, took=1.803 sec)
+[Wed Jul  4 15:09:35.204 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3394383, current TID=3395045, ram=210.237 Mb, time delta=1204 sec, took=0.293 sec)
+[Wed Jul  4 15:29:38.193 2018] [58766] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3395045, current TID=3395662, ram=404.804 Mb, time delta=1202 sec, took=0.959 sec)
+[Wed Jul  4 15:57:42.494 2018] [32601] caught SIGTERM, shutting down
+[Wed Jul  4 15:57:50.676 2018] [17090] watchdog: main process 17091 forked ok
+[Wed Jul  4 15:57:50.676 2018] [17091] listening on all interfaces, port=6313
+[Wed Jul  4 15:57:50.676 2018] [17091] listening on all interfaces, port=6314
+[Wed Jul  4 15:57:50.676 2018] [17091] listening on all interfaces, port=9314
+[Wed Jul  4 15:58:05.016 2018] [17091] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Wed Jul  4 15:58:05.020 2018] [17091] WARNING: binlog: commit: unexpected tid (index=vk_pq_rt, indextid=3396075, logtid=3396084, pos=47)
+[Wed Jul  4 15:59:14.173 2018] [17091] binlog: index vk_pq_rt: recovered from tid 3396075 to tid 3396428
+[Wed Jul  4 15:59:14.173 2018] [17091] binlog: replay stats: 283817 rows in 345 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 15:59:14.173 2018] [17091] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.1 MB in 69.156 sec
+[Wed Jul  4 15:59:14.173 2018] [17091] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Wed Jul  4 15:59:20.812 2018] [17091] binlog: index vk_pq_rt: recovered from tid 3396428 to tid 3396462
+[Wed Jul  4 15:59:20.812 2018] [17091] binlog: replay stats: 26379 rows in 34 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 15:59:20.812 2018] [17091] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 11.8 MB in 6.639 sec
+[Wed Jul  4 15:59:20.812 2018] [17091] binlog: finished replaying total 2 in 75.796 sec
+[Wed Jul  4 15:59:20.813 2018] [17091] prereading 4 indexes
+[Wed Jul  4 15:59:20.813 2018] [17091] prereaded 3 indexes in 0.000 sec
+[Wed Jul  4 15:59:20.813 2018] [17091] accepting connections
+[Wed Jul  4 16:05:01.741 2018] [17091] caught SIGTERM, shutting down
+[Wed Jul  4 16:05:09.848 2018] [51814] watchdog: main process 51815 forked ok
+[Wed Jul  4 16:05:09.848 2018] [51815] listening on all interfaces, port=6313
+[Wed Jul  4 16:05:09.848 2018] [51815] listening on all interfaces, port=6314
+[Wed Jul  4 16:05:09.848 2018] [51815] listening on all interfaces, port=9314
+[Wed Jul  4 16:05:17.644 2018] [51815] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Wed Jul  4 16:05:17.646 2018] [51815] WARNING: binlog: commit: unexpected tid (index=vk_pq_rt, indextid=3396075, logtid=3396084, pos=47)
+[Wed Jul  4 16:06:23.996 2018] [51815] binlog: index vk_pq_rt: recovered from tid 3396075 to tid 3396428
+[Wed Jul  4 16:06:23.996 2018] [51815] binlog: replay stats: 283817 rows in 345 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 16:06:23.996 2018] [51815] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 128.1 MB in 66.351 sec
+[Wed Jul  4 16:06:23.996 2018] [51815] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.002
+[Wed Jul  4 16:06:30.321 2018] [51815] binlog: index vk_pq_rt: recovered from tid 3396428 to tid 3396462
+[Wed Jul  4 16:06:30.321 2018] [51815] binlog: replay stats: 26379 rows in 34 commits; 0 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 16:06:30.321 2018] [51815] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.002; 11.8 MB in 6.324 sec
+[Wed Jul  4 16:06:30.321 2018] [51815] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.003
+[Wed Jul  4 16:07:08.745 2018] [51815] binlog: index vk_pq_rt: recovered from tid 3396462 to tid 3396650
+[Wed Jul  4 16:07:08.745 2018] [51815] binlog: replay stats: 158619 rows in 187 commits; 1 updates, 0 reconfigure; 1 indexes
+[Wed Jul  4 16:07:08.745 2018] [51815] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.003; 73.0 MB in 38.423 sec
+[Wed Jul  4 16:07:08.745 2018] [51815] binlog: finished replaying total 3 in 111.100 sec
+[Wed Jul  4 16:07:08.745 2018] [51815] prereading 4 indexes
+[Wed Jul  4 16:07:08.745 2018] [51815] prereaded 3 indexes in 0.000 sec
+[Wed Jul  4 16:07:08.745 2018] [51815] accepting connections
+[Wed Jul  4 16:25:20.890 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3396075, current TID=3397182, ram=365.221 Mb, time delta=1203 sec, took=0.329 sec)
+[Wed Jul  4 16:45:23.860 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3397182, current TID=3397701, ram=499.249 Mb, time delta=1202 sec, took=0.951 sec)
+[Wed Jul  4 17:05:27.358 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3397701, current TID=3398197, ram=626.684 Mb, time delta=1203 sec, took=1.440 sec)
+[Wed Jul  4 17:25:30.934 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3398197, current TID=3398663, ram=728.205 Mb, time delta=1203 sec, took=1.568 sec)
+[Wed Jul  4 17:45:34.163 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3398663, current TID=3399083, ram=815.084 Mb, time delta=1203 sec, took=1.212 sec)
+[Wed Jul  4 18:05:37.394 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3399083, current TID=3399474, ram=896.076 Mb, time delta=1203 sec, took=1.208 sec)
+[Wed Jul  4 18:25:41.565 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3399474, current TID=3399855, ram=959.656 Mb, time delta=1204 sec, took=2.166 sec)
+[Wed Jul  4 18:45:45.597 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3399855, current TID=3400162, ram=1014.026 Mb, time delta=1204 sec, took=2.031 sec)
+[Wed Jul  4 19:05:50.943 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3400162, current TID=3400493, ram=1056.415 Mb, time delta=1205 sec, took=3.280 sec)
+[Wed Jul  4 19:25:54.840 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3400493, current TID=3400842, ram=1091.273 Mb, time delta=1203 sec, took=1.711 sec)
+[Wed Jul  4 19:45:58.493 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3400842, current TID=3401159, ram=1120.803 Mb, time delta=1203 sec, took=1.628 sec)
+[Wed Jul  4 20:06:02.084 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3401159, current TID=3401462, ram=1147.106 Mb, time delta=1203 sec, took=1.542 sec)
+[Wed Jul  4 20:26:06.526 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3401462, current TID=3401752, ram=1173.843 Mb, time delta=1204 sec, took=2.436 sec)
+[Wed Jul  4 20:46:11.096 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3401752, current TID=3402028, ram=1198.757 Mb, time delta=1204 sec, took=2.584 sec)
+[Wed Jul  4 21:06:15.257 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3402028, current TID=3402317, ram=1229.834 Mb, time delta=1204 sec, took=2.075 sec)
+[Wed Jul  4 21:26:21.324 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3402317, current TID=3402607, ram=1254.398 Mb, time delta=1206 sec, took=4.042 sec)
+[Wed Jul  4 21:46:27.422 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3402607, current TID=3402939, ram=1278.343 Mb, time delta=1206 sec, took=4.054 sec)
+[Wed Jul  4 22:06:31.280 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3402939, current TID=3403263, ram=1315.326 Mb, time delta=1203 sec, took=1.851 sec)
+[Wed Jul  4 22:26:35.295 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3403263, current TID=3403596, ram=1345.026 Mb, time delta=1204 sec, took=2.001 sec)
+[Wed Jul  4 22:46:39.816 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3403596, current TID=3403874, ram=1385.607 Mb, time delta=1204 sec, took=2.509 sec)
+[Wed Jul  4 23:06:44.386 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3403874, current TID=3404173, ram=1428.740 Mb, time delta=1204 sec, took=2.492 sec)
+[Wed Jul  4 23:26:49.236 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3404173, current TID=3404503, ram=1481.799 Mb, time delta=1204 sec, took=2.811 sec)
+[Wed Jul  4 23:46:55.738 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3404503, current TID=3404858, ram=1543.832 Mb, time delta=1206 sec, took=4.466 sec)
+[Thu Jul  5 00:23:29.613 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3405132, current TID=3405475, ram=104.277 Mb, time delta=1203 sec, took=0.156 sec)
+[Thu Jul  5 00:53:27.719 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3405606, current TID=3405984, ram=98.493 Mb, time delta=1202 sec, took=0.114 sec)
+[Thu Jul  5 01:22:51.039 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3406197, current TID=3406621, ram=126.169 Mb, time delta=1201 sec, took=0.357 sec)
+[Thu Jul  5 01:47:13.602 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3406719, current TID=3407170, ram=131.997 Mb, time delta=1204 sec, took=0.134 sec)
+[Thu Jul  5 02:10:06.140 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3407218, current TID=3407654, ram=152.164 Mb, time delta=1201 sec, took=0.204 sec)
+[Thu Jul  5 02:30:08.322 2018] [19996] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3407653, current TID=3408119, ram=149.755 Mb, time delta=1201 sec, took=0.206 sec)
+[Thu Jul  5 17:37:04.693 2018] [20000] WARNING: exiting on handshake error (client=192.168.10.37:64478(1287618)), error: 104 'Connection reset by peer', sock=10064
+[Sat Jul  7 03:45:10.220 2018] [61809] FATAL: disk chunk /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.11161: prealloc failed: failed to open /boardreader/search/nodert_pq/idx/vk_pq_rlp_rt.11161.sph: No such file or directory
+------- FATAL: CRASH DUMP -------
+[Sat Jul  7 03:45:10.718 2018] [51815]
+
+--- crashed invalid query ---
+
+--- request dump end ---
+Manticore 2.7.1 668faae@180620 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DDATADIR=/var/data -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_RLP=1 -DWITH_ZLIB=ON -DSYSCONFDIR=/etc/sphinx
+Host OS is Linux rpmbuild02.boardreader.com 3.10.0-693.21.1.vz7.47.4 #1 SMP Sat Apr 28 11:48:07 MSK 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f8cd634cef7, thread stack size = 0x40000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x4)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x4, stack=0x7f8cd6350000, stacksize=0x40000)
+Trying system backtrace:
+begin of manual symbols:
+671c48
+4d7d54
+7f9d8326b370
+7f9d83266deb
+67a409
+55ba40
+4f52e3
+6798bf
+7f9d83263dc5
+7f9d8190176d
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 10): ---
+--- BT to source lines finished ---
+--- 22 active threads ---
+thd 0, proto sphinxql, state handshake, command SYSTEM
+thd 1, proto sphinxql, state handshake, command SYSTEM
+thd 2, proto sphinxql, state query, command replace
+thd 3, proto sphinxql, state query, command replace
+thd 4, proto sphinxql, state query, command replace
+thd 5, proto sphinxql, state query, command update
+thd 6, proto sphinxql, state query, command update
+thd 7, proto sphinxql, state query, command update
+thd 8, proto sphinxql, state query, command optimize_index
+thd 9, proto sphinxql, state query, command update
+thd 10, proto sphinxql, state query, command optimize_index
+thd 11, proto sphinxql, state query, command optimize_index
+thd 12, proto sphinxql, state query, command optimize_index
+thd 13, proto sphinxql, state query, command select
+thd 14, proto sphinxql, state query, command optimize_index
+thd 15, proto sphinxql, state query, command optimize_index
+thd 16, proto sphinxql, state query, command optimize_index
+thd 17, proto sphinxql, state query, command optimize_index
+thd 18, proto sphinxql, state query, command optimize_index
+thd 19, proto sphinxql, state query, command select
+thd 20, proto sphinxql, state query, command update
+thd 21, proto sphinxql, state query, command delete
+------- CRASH DUMP END -------
+[Sat Jul  7 03:46:14.940 2018] [64428] watchdog: main process 64429 forked ok
+[Sat Jul  7 03:46:14.941 2018] [64429] listening on all interfaces, port=6313
+[Sat Jul  7 03:46:14.941 2018] [64429] listening on all interfaces, port=6314
+[Sat Jul  7 03:46:14.941 2018] [64429] listening on all interfaces, port=9314
+[Sat Jul  7 03:51:07.777 2018] [64429] binlog: replaying log /mnt/data/datart_pq/binlog//binlog.001
+[Sat Jul  7 03:51:07.793 2018] [64429] WARNING: binlog: commit: unexpected tid (index=vk_pq_rt, indextid=3454758, logtid=3454761, pos=47)
+[Sat Jul  7 03:51:33.725 2018] [64429] binlog: index vk_pq_rt: recovered from tid 3454758 to tid 3454762
+[Sat Jul  7 03:51:33.725 2018] [64429] binlog: replay stats: 2000 rows in 2 commits; 0 updates, 0 reconfigure; 1 indexes
+[Sat Jul  7 03:51:33.725 2018] [64429] binlog: finished replaying /mnt/data/datart_pq/binlog//binlog.001; 1.3 MB in 25.948 sec
+[Sat Jul  7 03:51:33.725 2018] [64429] binlog: finished replaying total 1 in 25.948 sec
+[Sat Jul  7 03:51:33.726 2018] [64429] prereading 4 indexes
+[Sat Jul  7 03:51:33.839 2018] [64429] prereaded 3 indexes in 0.113 sec
+[Sat Jul  7 03:51:33.839 2018] [64429] accepting connections
+[Sat Jul  7 04:11:37.777 2018] [58807] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3454758, current TID=3454869, ram=51.373 Mb, time delta=1230 sec, took=27.144 sec)
+[Sat Jul  7 04:32:08.490 2018] [58807] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3454869, current TID=3454981, ram=98.854 Mb, time delta=1230 sec, took=28.807 sec)
+[Sat Jul  7 04:52:36.881 2018] [58807] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3454980, current TID=3455092, ram=148.205 Mb, time delta=1228 sec, took=26.336 sec)
+[Sat Jul  7 05:13:00.783 2018] [58807] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3455092, current TID=3455203, ram=189.548 Mb, time delta=1223 sec, took=22.009 sec)
+[Sat Jul  7 05:33:21.473 2018] [58807] rt: index vk_pq_rt: ramchunk saved ok (mode=periodic, last TID=3455203, current TID=3455313, ram=238.716 Mb, time delta=1220 sec, took=18.750 sec)
+[Sat Jul  7 05:51:43.097 2018] [64429] caught SIGTERM, shutting down
