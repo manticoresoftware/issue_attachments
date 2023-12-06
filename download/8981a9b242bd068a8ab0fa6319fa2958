@@ -1,0 +1,444 @@
+[root@sehs01 ~]# gdb /usr/bin/searchd /mnt/data/cores/core.searchd.testing.19555.sehs01.sgdctroy.net.1687100161 
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-115.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /usr/bin/searchd...Reading symbols from /usr/lib/debug/usr/bin/searchd-6.0.5_230613.cdfa27310-1.el7.centos.x86_64.debug...Dwarf Error: wrong version in compilation unit header (is 5, should be 2, 3, or 4) [in module /usr/lib/debug/usr/bin/searchd-6.0.5_230613.cdfa27310-1.el7.centos.x86_64.debug]
+(no debugging symbols found)...done.
+(no debugging symbols found)...done.
+
+warning: core file may not match specified executable file.
+[New LWP 19555]
+[New LWP 19563]
+[New LWP 19583]
+[New LWP 19585]
+[New LWP 19596]
+[New LWP 19597]
+[New LWP 19599]
+[New LWP 19605]
+[New LWP 19607]
+[New LWP 19609]
+[New LWP 19613]
+[New LWP 19614]
+[New LWP 19615]
+[New LWP 19616]
+[New LWP 19617]
+[New LWP 19618]
+[New LWP 19619]
+[New LWP 46918]
+[New LWP 19581]
+[New LWP 19572]
+[New LWP 19621]
+[New LWP 19589]
+[New LWP 19565]
+[New LWP 19567]
+[New LWP 19603]
+[New LWP 19587]
+[New LWP 19592]
+[New LWP 19579]
+[New LWP 19574]
+[New LWP 19576]
+[New LWP 19577]
+[New LWP 19611]
+[New LWP 19594]
+[New LWP 19570]
+[New LWP 19601]
+
+warning: the debug information found in "/usr/lib/debug//lib64/libssl.so.1.0.2k.debug" does not match "/lib64/libssl.so.10" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libssl.so.1.0.2k.debug" does not match "/lib64/libssl.so.10" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libssl.so.1.0.2k.debug" does not match "/lib64/libssl.so.10" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libssl.so.1.0.2k.debug" does not match "/lib64/libssl.so.10" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//lib64/libcrypto.so.1.0.2k.debug" does not match "/lib64/libcrypto.so.10" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libcrypto.so.1.0.2k.debug" does not match "/lib64/libcrypto.so.10" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libcrypto.so.1.0.2k.debug" does not match "/lib64/libcrypto.so.10" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libcrypto.so.1.0.2k.debug" does not match "/lib64/libcrypto.so.10" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//lib64/libanl-2.17.so.debug" does not match "/lib64/libanl.so.1" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libanl-2.17.so.debug" does not match "/lib64/libanl.so.1" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libanl-2.17.so.debug" does not match "/lib64/libanl.so.1" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libanl-2.17.so.debug" does not match "/lib64/libanl.so.1" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//lib64/libm-2.17.so.debug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libm-2.17.so.debug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libm-2.17.so.debug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libm-2.17.so.debug" does not match "/lib64/libm.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//lib64/libdl-2.17.so.debug" does not match "/lib64/libdl.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libdl-2.17.so.debug" does not match "/lib64/libdl.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libdl-2.17.so.debug" does not match "/lib64/libdl.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libdl-2.17.so.debug" does not match "/lib64/libdl.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//lib64/libstdc++.so.6.0.19.debug" does not match "/lib64/libstdc++.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libstdc++.so.6.0.19.debug" does not match "/lib64/libstdc++.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libstdc++.so.6.0.19.debug" does not match "/lib64/libstdc++.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libstdc++.so.6.0.19.debug" does not match "/lib64/libstdc++.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//lib64/libgcc_s-4.8.5-20150702.so.1.debug" does not match "/lib64/libgcc_s.so.1" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libgcc_s-4.8.5-20150702.so.1.debug" does not match "/lib64/libgcc_s.so.1" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libgcc_s-4.8.5-20150702.so.1.debug" does not match "/lib64/libgcc_s.so.1" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libgcc_s-4.8.5-20150702.so.1.debug" does not match "/lib64/libgcc_s.so.1" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//lib64/libpthread-2.17.so.debug" does not match "/lib64/libpthread.so.0" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libpthread-2.17.so.debug" does not match "/lib64/libpthread.so.0" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libpthread-2.17.so.debug" does not match "/lib64/libpthread.so.0" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libpthread-2.17.so.debug" does not match "/lib64/libpthread.so.0" (CRC mismatch).
+
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.17.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libc-2.17.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.17.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libc-2.17.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//lib64/ld-2.17.so.debug" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/ld-2.17.so.debug" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.17.so.debug" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//ld-2.17.so.debug" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//lib64/libresolv-2.17.so.debug" does not match "/lib64/libresolv.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64/libresolv-2.17.so.debug" does not match "/lib64/libresolv.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libresolv-2.17.so.debug" does not match "/lib64/libresolv.so.2" (CRC mismatch).
+
+
+warning: the debug information found in "/usr/lib/debug/usr/lib64//libresolv-2.17.so.debug" does not match "/lib64/libresolv.so.2" (CRC mismatch).
+
+Core was generated by `/usr/bin/searchd.testing --cpustats --force-preread --coredump --config /etc/sp'.
+Program terminated with signal 6, Aborted.
+#0  0x00007f37522f9a33 in select () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-324.el7_9.x86_64 keyutils-libs-1.5.8-3.el7.x86_64 krb5-libs-1.15.1-37.el7_7.2.x86_64 libcom_err-1.42.9-16.el7.x86_64 libgcc-4.8.5-44.el7.x86_64 libselinux-2.5-14.1.el7.x86_64 libstdc++-4.8.5-44.el7.x86_64 libzstd-1.4.5-3.el7.x86_64 manticore-columnar-lib-2.0.5_230613.48b4e44-1.el7.centos.x86_64 openssl-libs-1.0.2k-25.el7_9.x86_64 pcre-8.42-14.2.x86_64
+(gdb) set pagination off
+(gdb) info threads
+  Id   Target Id         Frame 
+  35   Thread 0x7f37505dd700 (LWP 19601) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  34   Thread 0x7f3753d50700 (LWP 19570) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  33   Thread 0x7f3750661700 (LWP 19594) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  32   Thread 0x7f3750538700 (LWP 19611) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  31   Thread 0x7f3750769700 (LWP 19577) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  30   Thread 0x7f375078a700 (LWP 19576) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  29   Thread 0x7f37507ab700 (LWP 19574) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  28   Thread 0x7f3750748700 (LWP 19579) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  27   Thread 0x7f3750682700 (LWP 19592) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  26   Thread 0x7f37506c4700 (LWP 19587) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  25   Thread 0x7f37505bc700 (LWP 19603) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  24   Thread 0x7f3753d71700 (LWP 19567) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  23   Thread 0x7f3753d92700 (LWP 19565) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  22   Thread 0x7f37506a3700 (LWP 19589) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  21   Thread 0x7f3750430700 (LWP 19621) 0x00007f37525ddde2 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  20   Thread 0x7f37507cc700 (LWP 19572) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  19   Thread 0x7f3750727700 (LWP 19581) 0x00007f375223a657 in kill () from /lib64/libc.so.6
+  18   Thread 0x7f375040f700 (LWP 46918) 0x00007f3752302fd3 in epoll_wait () from /lib64/libc.so.6
+  17   Thread 0x7f3750451700 (LWP 19619) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  16   Thread 0x7f3750472700 (LWP 19618) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  15   Thread 0x7f3750493700 (LWP 19617) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  14   Thread 0x7f37504b4700 (LWP 19616) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  13   Thread 0x7f37504d5700 (LWP 19615) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  12   Thread 0x7f37504f6700 (LWP 19614) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  11   Thread 0x7f3750517700 (LWP 19613) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  10   Thread 0x7f3750559700 (LWP 19609) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  9    Thread 0x7f375057a700 (LWP 19607) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  8    Thread 0x7f375059b700 (LWP 19605) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  7    Thread 0x7f37505fe700 (LWP 19599) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  6    Thread 0x7f375061f700 (LWP 19597) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  5    Thread 0x7f3750640700 (LWP 19596) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  4    Thread 0x7f37506e5700 (LWP 19585) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  3    Thread 0x7f3750706700 (LWP 19583) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  2    Thread 0x7f3753db3700 (LWP 19563) 0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+* 1    Thread 0x7f3753f00940 (LWP 19555) 0x00007f37522f9a33 in select () from /lib64/libc.so.6
+
+(gdb)  thread apply all bt
+
+Thread 35 (Thread 0x7f37505dd700 (LWP 19601)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 34 (Thread 0x7f3753d50700 (LWP 19570)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 33 (Thread 0x7f3750661700 (LWP 19594)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 32 (Thread 0x7f3750538700 (LWP 19611)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 31 (Thread 0x7f3750769700 (LWP 19577)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 30 (Thread 0x7f375078a700 (LWP 19576)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7f37507ab700 (LWP 19574)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7f3750748700 (LWP 19579)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7f3750682700 (LWP 19592)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7f37506c4700 (LWP 19587)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7f37505bc700 (LWP 19603)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7f3753d71700 (LWP 19567)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7f3753d92700 (LWP 19565)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7f37506a3700 (LWP 19589)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7f3750430700 (LWP 19621)):
+#0  0x00007f37525ddde2 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6968cd3be in AutoEvent_T<true>::WaitEvent(int) ()
+#2  0x000055d6976fac16 in TinyTimer_c::Loop() ()
+#3  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#4  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#5  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7f37507cc700 (LWP 19572)):
+#0  0x00007f37525dda35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000055d6976d2971 in Threads::Service_t::do_run_one(CSphScopedLock<CSphMutex>&, Threads::TaskServiceThreadInfo_t&) ()
+#2  0x000055d6976d281e in Threads::Service_t::run() ()
+#3  0x000055d6976d265e in Threads::ThreadPool_c::loop(int) ()
+#4  0x000055d6976d1097 in std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) ()
+#5  0x000055d6976cfe65 in RuntimeThreadContext_t::Run(void const*) ()
+#6  0x000055d6976cff17 in ThreadProcWrapper_fn(void*) ()
+#7  0x00007f37525d9ea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00007f37523029fd in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7f3750727700 (LWP 19581)):
+#0  0x00007f375223a657 in kill () from /lib64/libc.so.6
+#1  0x000055d69684b91a in CrashLogger::HandleCrash(int) ()
+#2  <signal handler called>
+#3  0x00007f375223a387 in raise () from /lib64/libc.so.6
+#4  0x00007f375223ba78 in abort () from /lib64/libc.so.6
+#5  0x00007f375227cf67 in __libc_message () from /lib64/libc.so.6
+#6  0x00007f3752285329 in _int_free () from /lib64/libc.so.6
+#7  0x000055d6979fd1cb in UniqHLLTraits_c::Container_t::Reset() ()
+#8  0x000055d6979ff51d in UniqHLLSingle_c::Reset() ()
+#9  0x000055d696b6bc04 in CSphImplicitGroupSorter<MatchGeneric1_fn, UniqHLLSingle_c, 1, false, false>::~CSphImplicitGroupSorter() ()
+#10 0x000055d696b6bd19 in CSphImplicitGroupSorter<MatchGeneric1_fn, UniqHLLSingle_c, 1, false, false>::~CSphImplicitGroupSorter() ()
+#11 0x000055d6968621c8 in SearchHandler_c::RunLocalSearches() ()
+#12 0x000055d6968635aa in SearchHandler_c::RunSubset(int, int) ()
+#13 0x000055d69685fd84 in SearchHandler_c::RunQueries() ()
+#14 0x000055d6968864ef in HandleMysqlSelect(RowBuffer_i&, SearchHandler_c&) ()
+#15 0x000055d696896096 in ClientSession_c::Execute(std::pair<char const*, int>, RowBuffer_i&) ()
+#16 0x000055d6967efde2 in ProcessSqlQueryBuddy(std::pair<char const*, int>, unsigned char&, GenericOutputBuffer_c&) ()
+#17 0x000055d6967d5773 in SqlServe(std::unique_ptr<AsyncNetBuffer_c, std::default_delete<AsyncNetBuffer_c> >) ()
+#18 0x000055d6967d1583 in MultiServe(std::unique_ptr<AsyncNetBuffer_c, std::default_delete<AsyncNetBuffer_c> >, std::pair<int, unsigned short>, Proto_e) ()
+#19 0x000055d6967d2132 in std::_Function_handler<void (), NetActionAccept_c::Impl_c::ProcessAccept()::$_3>::_M_invoke(std::_Any_data const&) ()
+#20 0x000055d697afa5fc in Threads::CoRoutine_c::CreateContext(std::function<void ()>, std::pair<boost::context::stack_context, Threads::StackFlavour_E>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) ()
+#21 0x000055d697b1b31f in make_fcontext ()
+Cannot access memory at address 0x7f25a9e82000
+(gdb) thread 1
+[Switching to thread 1 (Thread 0x7f3753f00940 (LWP 19555))]
+#0  0x00007f37522f9a33 in select () from /lib64/libc.so.6
+(gdb) bt full
+#0  0x00007f37522f9a33 in select () from /lib64/libc.so.6
+No symbol table info available.
+#1  0x000055d6968d3b2f in sphSleepMsec(int) ()
+No symbol table info available.
+#2  0x000055d6968a1eb0 in TickHead() ()
+No symbol table info available.
+#3  0x000055d6968a8fa8 in ServiceMain(int, char**) ()
+No symbol table info available.
+#4  0x000055d6968aa13b in main ()
+No symbol table info available.
+(gdb) info locals
+No symbol table info available.
+(gdb) quit
