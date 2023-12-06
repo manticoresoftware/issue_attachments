@@ -1,0 +1,82 @@
+[root@sehs01 ~]# tail -n 500 /boardreader/log/sphinx/searchd.2.log 
+
+[Sun Jun 18 01:01:01.976 2023] [19555] log reopened
+[Sun Jun 18 01:01:01.976 2023] [19555] query log reopened
+------- FATAL: CRASH DUMP -------
+[Sun Jun 18 10:55:58.830 2023] [19555]
+
+--- crashed SphinxQL request dump ---
+SELECT COUNT(DISTINCT id) FROM boards_3month_no_timeout WHERE MATCH('money|every|brand|product') 
+AND inserted >= 1686839458 AND inserted <= 1686839758  LIMIT 100000 OPTION max_matches=100000,
+ comment='nagios'
+--- request dump end ---
+--- local index:boards_week_1
+Manticore 6.0.5 cdfa27310@230613 dev (columnar 2.0.5 48b4e44@230613) (secondary 2.0.5 48b4e44@230613)
+Handling signal 6
+-------------- backtrace begins here ---------------
+Program compiled with Clang 15.0.7
+Configured with flags: Configured with these definitions: -DDISTR_BUILD=rhel7 -DUSE_SYSLOG=1 -DWITH_GALERA=1 -DWITH_RE2=1 -DWITH_RE2_FORCE_STATIC=1 -DWITH_STEMMER=1 -DWITH_STEMMER_FORCE_STATIC=1 -DWITH_ICU=1 -DWITH_ICU_FORCE_STATIC=1 -DWITH_SSL=1 -DWITH_ZLIB=1 -DWITH_ZSTD=1 -DDL_ZSTD=1 -DZSTD_LIB=libzstd.so.1 -DWITH_CURL=1 -DDL_CURL=1 -DCURL_LIB=libcurl.so.4 -DWITH_ODBC=1 -DDL_ODBC=1 -DODBC_LIB=libodbc.so.2 -DWITH_EXPAT=1 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DWITH_ICONV=1 -DWITH_MYSQL=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DWITH_POSTGRESQL=1 -DDL_POSTGRESQL=1 -DPOSTGRESQL_LIB=libpq.so.5 -DLOCALDATADIR=/var/lib/manticore -DFULL_SHARE_DIR=/usr/share/manticore
+Built on Linux x86_64 (rhel7) (cross-compiled)
+Stack bottom = 0x7f25a9e82000, thread stack size = 0x20000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x1)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x1, stack=0x7f25a9e80000, stacksize=0x20000)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd.testing(_Z12sphBacktraceib+0x22a)[0x55d6969cbd3a]
+/usr/bin/searchd.testing(_ZN11CrashLogger11HandleCrashEi+0x355)[0x55d69684b855]
+/lib64/libpthread.so.0(+0xf630)[0x7f37525e1630]
+/lib64/libc.so.6(gsignal+0x37)[0x7f375223a387]
+/lib64/libc.so.6(abort+0x148)[0x7f375223ba78]
+/lib64/libc.so.6(+0x78f67)[0x7f375227cf67]
+/lib64/libc.so.6(+0x81329)[0x7f3752285329]
+/usr/bin/searchd.testing(_ZN15UniqHLLTraits_c11Container_t5ResetEv+0x4b)[0x55d6979fd1cb]
+/usr/bin/searchd.testing(_ZN15UniqHLLSingle_c5ResetEv+0xd)[0x55d6979ff51d]
+/usr/bin/searchd.testing(_ZN23CSphImplicitGroupSorterI16MatchGeneric1_fn15UniqHLLSingle_cLi1ELb0ELb0EED2Ev+0x44)[0x55d696b6bc04]
+/usr/bin/searchd.testing(_ZN23CSphImplicitGroupSorterI16MatchGeneric1_fn15UniqHLLSingle_cLi1ELb0ELb0EED0Ev+0x9)[0x55d696b6bd19]
+/usr/bin/searchd.testing(_ZN15SearchHandler_c16RunLocalSearchesEv+0xfd8)[0x55d6968621c8]
+/usr/bin/searchd.testing(_ZN15SearchHandler_c9RunSubsetEii+0x51a)[0x55d6968635aa]
+/usr/bin/searchd.testing(_ZN15SearchHandler_c10RunQueriesEv+0xd4)[0x55d69685fd84]
+/usr/bin/searchd.testing(_Z17HandleMysqlSelectR11RowBuffer_iR15SearchHandler_c+0x14f)[0x55d6968864ef]
+/usr/bin/searchd.testing(_ZN15ClientSession_c7ExecuteESt4pairIPKciER11RowBuffer_i+0xeb6)[0x55d696896096]
+/usr/bin/searchd.testing(_Z20ProcessSqlQueryBuddySt4pairIPKciERhR21GenericOutputBuffer_c+0x52)[0x55d6967efde2]
+/usr/bin/searchd.testing(_Z8SqlServeSt10unique_ptrI16AsyncNetBuffer_cSt14default_deleteIS0_EE+0x1073)[0x55d6967d5773]
+/usr/bin/searchd.testing(_Z10MultiServeSt10unique_ptrI16AsyncNetBuffer_cSt14default_deleteIS0_EESt4pairIitE7Proto_e+0x43)[0x55d6967d1583]
+/usr/bin/searchd.testing(+0xded132)[0x55d6967d2132]
+/usr/bin/searchd.testing(_ZZN7Threads11CoRoutine_c13CreateContextESt8functionIFvvEESt4pairIN5boost7context13stack_contextENS_14StackFlavour_EEEENUlNS6_6detail10transfer_tEE_8__invokeESB_+0x1c)[0x55d697afa5fc]
+/usr/bin/searchd.testing(make_fcontext+0x2f)[0x55d697b1b31f]
+Trying boost backtrace:
+ 0# sphBacktrace(int, bool) in /usr/bin/searchd.testing
+ 1# CrashLogger::HandleCrash(int) in /usr/bin/searchd.testing
+ 2# 0x00007F37525E1630 in /lib64/libpthread.so.0
+ 3# gsignal in /lib64/libc.so.6
+ 4# abort in /lib64/libc.so.6
+ 5# 0x00007F375227CF67 in /lib64/libc.so.6
+ 6# 0x00007F3752285329 in /lib64/libc.so.6
+ 7# UniqHLLTraits_c::Container_t::Reset() in /usr/bin/searchd.testing
+ 8# UniqHLLSingle_c::Reset() in /usr/bin/searchd.testing
+ 9# CSphImplicitGroupSorter<MatchGeneric1_fn, UniqHLLSingle_c, 1, false, false>::~CSphImplicitGroupSorter() in /usr/bin/searchd.testing
+10# CSphImplicitGroupSorter<MatchGeneric1_fn, UniqHLLSingle_c, 1, false, false>::~CSphImplicitGroupSorter() in /usr/bin/searchd.testing
+11# SearchHandler_c::RunLocalSearches() in /usr/bin/searchd.testing
+12# SearchHandler_c::RunSubset(int, int) in /usr/bin/searchd.testing
+13# SearchHandler_c::RunQueries() in /usr/bin/searchd.testing
+14# HandleMysqlSelect(RowBuffer_i&, SearchHandler_c&) in /usr/bin/searchd.testing
+15# ClientSession_c::Execute(std::pair<char const*, int>, RowBuffer_i&) in /usr/bin/searchd.testing
+16# ProcessSqlQueryBuddy(std::pair<char const*, int>, unsigned char&, GenericOutputBuffer_c&) in /usr/bin/searchd.testing
+17# SqlServe(std::unique_ptr<AsyncNetBuffer_c, std::default_delete<AsyncNetBuffer_c> >) in /usr/bin/searchd.testing
+18# MultiServe(std::unique_ptr<AsyncNetBuffer_c, std::default_delete<AsyncNetBuffer_c> >, std::pair<int, unsigned short>, Proto_e) in /usr/bin/searchd.testing
+19# 0x000055D6967D2132 in /usr/bin/searchd.testing
+20# Threads::CoRoutine_c::CreateContext(std::function<void ()>, std::pair<boost::context::stack_context, Threads::StackFlavour_E>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) in /usr/bin/searchd.testing
+21# make_fcontext in /usr/bin/searchd.testing
+
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the manual
+(https://manual.manticoresearch.com/Reporting_bugs)
+Dump with GDB via watchdog
+--- active threads ---
+thd 0 (work_9), proto mysql, state query, command select
+--- Totally 2 threads, and 1 client-working threads ---
+------- CRASH DUMP END -------
