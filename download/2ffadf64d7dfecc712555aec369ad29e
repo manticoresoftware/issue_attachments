@@ -1,0 +1,161 @@
+[Thu Aug 31 15:33:40.335 2023] [46277] WARNING: maxed out, dismissing client
+[Thu Aug 31 15:33:42.751 2023] [46269] WARNING: last message repeated 12 times
+[Thu Aug 31 15:33:42.751 2023] [46269] WARNING: send() failed: 32: Broken pipe, sock=112
+[Thu Aug 31 15:33:44.052 2023] [46299] WARNING: maxed out, dismissing client
+[Thu Aug 31 15:33:45.073 2023] [46229] WARNING: last message repeated 1 times
+[Thu Aug 31 15:33:48.840 2023] [46250] WARNING: maxed out, dismissing client
+[Thu Aug 31 15:33:50.078 2023] [46229] WARNING: last message repeated 4 times
+[Thu Aug 31 15:33:50.099 2023] [46263] WARNING: maxed out, dismissing client
+[Thu Aug 31 15:33:52.080 2023] [46229] WARNING: last message repeated 9 times
+[Thu Aug 31 15:33:52.522 2023] [46255] WARNING: maxed out, dismissing client
+[Thu Aug 31 15:33:54.161 2023] [51981] last message repeated 6 times
+[Thu Aug 31 15:33:54.161 2023] [51981] rotating table 'blogs_inc_7': started
+[Thu Aug 31 15:33:54.165 2023] [51981] RW-idx for rename to .old, acquiring...
+[Thu Aug 31 15:33:54.165 2023] [51981] RW-idx for rename to .old, acquired...
+[Thu Aug 31 15:33:54.180 2023] [51981] rotating table 'blogs_inc_7': success
+[Thu Aug 31 15:33:54.422 2023] [46249] WARNING: maxed out, dismissing client
+[Thu Aug 31 15:33:55.547 2023] [52371] last message repeated 13 times
+[Thu Aug 31 15:33:55.547 2023] [52371] rotating table 'blogs_inc_6': started
+[Thu Aug 31 15:33:55.552 2023] [52371] RW-idx for rename to .old, acquiring...
+[Thu Aug 31 15:33:55.552 2023] [52371] RW-idx for rename to .old, acquired...
+[Thu Aug 31 15:33:55.571 2023] [52371] rotating table 'blogs_inc_6': success
+[Thu Aug 31 15:33:56.162 2023] [46281] WARNING: maxed out, dismissing client
+[Thu Aug 31 15:33:59.504 2023] [46259] WARNING: last message repeated 7 times
+[Thu Aug 31 15:33:59.504 2023] [46259] WARNING: maxed out, dismissing client
+[Thu Aug 31 15:34:01.056 2023] [46274] WARNING: last message repeated 17 times
+[Thu Aug 31 15:34:01.056 2023] [46274] WARNING: conn 192.168.10.7:48922(456919), sock=693: maxed out, dismissing client
+[Thu Aug 31 15:34:01.057 2023] [46299] WARNING: maxed out, dismissing client
+[Thu Aug 31 15:34:02.055 2023] [46274] WARNING: last message repeated 25 times
+[Thu Aug 31 15:34:02.055 2023] [46274] WARNING: conn 127.0.0.1:33690(457014), sock=682: maxed out, dismissing client
+[Thu Aug 31 15:34:02.148 2023] [46256] WARNING: conn 127.0.0.1:33706(457019), sock=682: maxed out, dismissing client
+[Thu Aug 31 15:34:02.158 2023] [46239] WARNING: conn 127.0.0.1:33708(457020), sock=682: maxed out, dismissing client
+[Thu Aug 31 15:34:02.178 2023] [46269] WARNING: conn 127.0.0.1:33712(457030), sock=682: maxed out, dismissing client
+[Thu Aug 31 15:34:02.217 2023] [46277] WARNING: maxed out, dismissing client
+[Thu Aug 31 15:34:02.407 2023] [46229] last message repeated 3 times
+[Thu Aug 31 15:34:02.407 2023] [46229] caught SIGTERM, shutting down
+[Thu Aug 31 15:34:05.426 2023] [46229] WARNING: still 40 alive tasks during shutdown, after 3.019 sec
+------- FATAL: CRASH DUMP -------
+[Thu Aug 31 15:34:02.407 2023] [46229]
+
+--- crashed SphinxAPI request dump ---
+AAABIwAACRUAAAAUAAAAAQAAAUAAAAAAAABhqAAAAAYAAAAAAAAABAAAABBgcHVibGlzaGVkYCBERVNDAAAGnihA
+KHRpdGxlLGJvZHkpIChSb2Jsb3ggKCJjb250ZW50IG1vZGVyYXRpb24iIHwgIlVzZXIgc2FmZXR5IiB8
+ICJJbmFwcHJvcHJpYXRlIGNvbnRlbnQiIHwgIlBhcmVudGFsIGNvbnRyb2xzIiB8ICJDb21tdW5pdHkg
+Z3VpZGVsaW5lcyIgfCAiUmVwb3J0aW5nIHN5c3RlbSIgfCAidGVjaG5pY2FsIGlzc3VlcyIgfCAiU2Vy
+dmVyIGlzc3VlcyIgfCAiQWNjb3VudCBzZWN1cml0eSIgfCAiR2FtZSBwZXJmb3JtYW5jZSIgfCAi
+VGVjaG5pY2FsIGdsaXRjaGVzIiB8ICJDb25uZWN0aXZpdHkgcHJvYmxlbXMiIHwgc2VjdXJpdHkgfCAi
+QWNjb3VudCBhdXRoZW50aWNhdGlvbiIgfCAiT25saW5lIHNhZmV0eSIgfCAiUHJpdmFjeSBzZXR0aW5n
+cyIgfCAiQ3liZXJzZWN1cml0eSBtZWFzdXJlcyIgfCAiRGF0YSBwcm90ZWN0aW9uIiB8IGZlYXR1cmVz
+IHwgIkNoYXQgZmlsdGVycyIgfCAiVXNlciBleHBlcmllbmNlIiB8ICJBY2NvdW50IHNldHRpbmdz
+IiB8ICJNdWx0aXBsYXllciBmdW5jdGlvbmFsaXR5IiB8ICJBZ2UgcmVzdHJpY3Rpb25zIiB8IGdhbWVw
+bGF5IHwgQWNoaWV2ZW1lbnRzIHwgIkF2YXRhciBjdXN0b21pemF0aW9uIiB8ICJWaXJ0dWFsIGN1cnJl
+bmN5IiB8ICJHYW1lIG1lY2hhbmljcyIgfCAiR2FtZSB1cGRhdGVzIiB8IGNvbW11bml0eSB8IEVuZ2Fn
+ZW1lbnQgfCBGZWVkYmFjayB8IENvbGxhYm9yYXRpb24gfCBQYXJ0aWNpcGF0aW9uIHwgSW50ZXJh
+Y3Rpb24gfCAiQ29tbXVuaXR5IGV2ZW50cyIgfCAiVXNlciBmZWVkYmFjayIgfCBhY2NvdW50IHwgIkFj
+Y291bnQgc3VzcGVuc2lvbiIgfCAiQWNjb3VudCByZWNvdmVyeSIgfCAiQWNjb3VudCB2ZXJpZmljYXRp
+b24iIHwgIkFjY291bnQgbWFuYWdlbWVudCIgfCAiQWNjb3VudCBjcmVhdGlvbiIgfCBjb250ZW50IHwg
+IkNvbnRlbnQgZ3VpZGVsaW5lcyIgfCAiQ29udGVudCByZXZpZXciIHwgIkNvbnRlbnQgZmlsdGVy
+aW5nIiB8ICJDb250ZW50IHJlcG9ydGluZyIgfCBhZ2UgfCAiQWdlIGdyb3VwIHRhcmdldGluZyIgfCAi
+QWdlLWJhc2VkIHJlc3RyaWN0aW9ucyIgfCAiQWdlIHZlcmlmaWNhdGlvbiIgfCAiQWdlLXJlbGF0ZWQg
+c2V0dGluZ3MiIHwgIkFnZS1yZWxhdGVkIGNoYWxsZW5nZXMiIHwgIkFnZS1hcHByb3ByaWF0ZSBjb250
+ZW50IiB8IGJhbiB8ICJCYW4gZHVyYXRpb24iIHwgIkJhbiBlbmZvcmNlbWVudCIgfCAiQmFuIGV2
+YXNpb24iIHwgIkJhbiBub3RpZmljYXRpb25zIiB8ICJCYW4gYXBwZWFscyIgfCBwcmljZSB8ICJEaXNj
+b3VudCBjb2RlcyIgfCAiU3Vic2NyaXB0aW9uIHBsYW5zIiB8ICJQYXltZW50IG1ldGhvZHMiIHwgIklu
+LWFwcCBwdXJjaGFzZXMiIHwgIlByaWNpbmcgb3B0aW9ucyIgfCAiY3VzdG9tZXIgc2VydmljZSIgfCBU
+cm91Ymxlc2hvb3RpbmcgfCAiU3VwcG9ydCB0aWNrZXRzIiB8ICJTZXJ2aWNlIHJlcXVlc3RzIiB8
+ICJDdXN0b21lciBpbnF1aXJpZXMiIHwgIkhlbHAgZGVzayIgfCByZW1vdmFsIHwgIlJlbW92YWwgZ3Vp
+ZGVsaW5lcyIgfCAiUmVtb3ZhbCBwb2xpY2llcyIgfCAiUmVtb3ZhbCByZXF1ZXN0cyIgfCAiUmVtb3Zh
+bCBwcm9jZXNzIiB8ICJDb250ZW50IHJlbW92YWwiIHwgImN1c3RvbWVyIHNlcnZpY2UiIHwgIlJlc3Bv
+bnNlIHRpbWUiIHwgIkN1c3RvbWVyIHNhdGlzZmFjdGlvbiIgfCAiU3VwcG9ydCB0ZWFtIiB8ICJJ
+c3N1ZSByZXNvbHV0aW9uIiB8ICJMaXZlIGNoYXQiKSkpAAAAAAAAABJibG9nc19iaWdfYmxvZ3NlMTEA
+AAABAAAAAAAAAAD//////////wAAAAQAAAAJcHVibGlzaGVkAAAAAQAAAABjuKhOAAAAAGP3Cr4AAAAA
+AAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAGbW9kX2lzAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAABAAAAAAAA
+AAUAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAATY29udGVudF9wcm92aWRlcl9pZAAAAAAAAAAD
+AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAClAAAAAAAAAAEAAAABAAAAAAAAAAAAAAABAAAACmlzX2NvbW1l
+bnQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAABAAAAAAAAGGoAAAADUBn
+cm91cGJ5IGRlc2P/////AAAABQAAADIAAAAAAAAAAAAAAAAAAJxAAAAAAAAAAGI5Y2VmZDBjMjdmMmZh
+NmIyZTAwN2RiMTdhNWVlYmZmMSxxOUpSN0RnVW1zeUY2TFZzWlRKbngxNnJUa0VlTnc3SCw4MmJh
+ODU1Y2I5ODMyYmE1M2I2MjA4YTA2MjU4MzIyNwAAAAAAAAABKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAEAAAAAAAAAAAAAAApibGVuZGVkLnNvAAAABXF1ZXJ5AAAAAAAAAAAAAAABAAAAASoAAAABKgAA
+AAAAAAAAAAAAAAAAAAA=
+--- request dump end ---
+--- local index:blogs_big_1
+Manticore 6.0.5 d3e1518d3@230719 dev (columnar 2.0.5 35b042d@230620) (secondary 2.0.5 35b042d@230620)
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with Clang 15.0.7
+Configured with flags: Configured with these definitions: -DDISTR_BUILD=rhel7 -DUSE_SYSLOG=1 -DWITH_GALERA=1 -DWITH_RE2=1 -DWITH_RE2_FORCE_STATIC=1 -DWITH_STEMMER=1 -DWITH_STEMMER_FORCE_STATIC=1 -DWITH_NLJSON=1 -DWITH_UNIALGO=1 -DWITH_ICU=1 -DWITH_ICU_FORCE_STATIC=1 -DWITH_SSL=1 -DWITH_ZLIB=1 -DWITH_ZSTD=1 -DDL_ZSTD=1 -DZSTD_LIB=libzstd.so.1 -DWITH_CURL=1 -DDL_CURL=1 -DCURL_LIB=libcurl.so.4 -DWITH_ODBC=1 -DDL_ODBC=1 -DODBC_LIB=libodbc.so.2 -DWITH_EXPAT=1 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DWITH_ICONV=1 -DWITH_MYSQL=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DWITH_POSTGRESQL=1 -DDL_POSTGRESQL=1 -DPOSTGRESQL_LIB=libpq.so.5 -DLOCALDATADIR=/var/lib/manticore -DFULL_SHARE_DIR=/usr/share/manticore
+Built on Linux x86_64 (rhel7) (cross-compiled)
+Stack bottom = 0x7f5d99fc7000, thread stack size = 0x20000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x1)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x1, stack=0x7f5d99fd0000, stacksize=0x20000)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x22a)[0x55c144196d3a]
+/usr/bin/searchd(_ZN11CrashLogger11HandleCrashEi+0x355)[0x55c144015665]
+/lib64/libpthread.so.0(+0xf370)[0x7f828987c370]
+/usr/bin/searchd(_Z16sphUnpackPtrAttrPKh+0x8)[0x55c144e1d428]
+/usr/bin/searchd(_Z10SendResultiR16ISphOutputBufferRK12AggrResult_tbRK9CSphQueryt+0x119a)[0x55c1440208da]
+/usr/bin/searchd(_Z19HandleCommandSearchR16ISphOutputBuffertR13InputBuffer_c+0x378)[0x55c144034a88]
+/usr/bin/searchd(_Z8ApiServeSt10unique_ptrI16AsyncNetBuffer_cSt14default_deleteIS0_EE+0x767)[0x55c143f9d2d7]
+/usr/bin/searchd(_Z10MultiServeSt10unique_ptrI16AsyncNetBuffer_cSt14default_deleteIS0_EESt4pairIitE7Proto_e+0x12e)[0x55c143f9b35e]
+/usr/bin/searchd(+0xdefe22)[0x55c143f9be22]
+/usr/bin/searchd(_ZZN7Threads11CoRoutine_c13CreateContextESt8functionIFvvEESt4pairIN5boost7context13stack_contextENS_14StackFlavour_EEEENUlNS6_6detail10transfer_tEE_8__invokeESB_+0x1c)[0x55c1452decdc]
+/usr/bin/searchd(make_fcontext+0x2f)[0x55c1452ff1ef]
+Trying boost backtrace:
+ 0# sphBacktrace(int, bool) in /usr/bin/searchd
+ 1# CrashLogger::HandleCrash(int) in /usr/bin/searchd
+ 2# 0x00007F828987C370 in /lib64/libpthread.so.0
+ 3# sphUnpackPtrAttr(unsigned char const*) in /usr/bin/searchd
+ 4# SendResult(int, ISphOutputBuffer&, AggrResult_t const&, bool, CSphQuery const&, unsigned short) in /usr/bin/searchd
+ 5# HandleCommandSearch(ISphOutputBuffer&, unsigned short, InputBuffer_c&) in /usr/bin/searchd
+ 6# ApiServe(std::unique_ptr<AsyncNetBuffer_c, std::default_delete<AsyncNetBuffer_c> >) in /usr/bin/searchd
+ 7# MultiServe(std::unique_ptr<AsyncNetBuffer_c, std::default_delete<AsyncNetBuffer_c> >, std::pair<int, unsigned short>, Proto_e) in /usr/bin/searchd
+ 8# 0x000055C143F9BE22 in /usr/bin/searchd
+ 9# Threads::CoRoutine_c::CreateContext(std::function<void ()>, std::pair<boost::context::stack_context, Threads::StackFlavour_E>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) in /usr/bin/searchd
+10# make_fcontext in /usr/bin/searchd
+
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the manual
+(https://manual.manticoresearch.com/Reporting_bugs)
+Dump with GDB is not available
+--- BT to source lines (depth 11): ---
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+??:0
+--- BT to source lines finished ---
+--- active threads ---
+thd 0 (work_5), proto sphinx, state query, command search
+thd 1 (work_6), proto sphinx, state query, command search
+thd 2 (work_12), proto sphinx, state query, command search
+thd 3 (work_18), proto sphinx, state query, command search
+thd 4 (work_24), proto sphinx, state query, command search
+thd 5 (work_25), proto sphinx, state query, command search
+thd 6 (work_36), proto sphinx, state query, command search
+thd 7 (work_53), proto sphinx, state query, command search
+thd 8 (work_54), proto sphinx, state query, command search
+thd 9 (work_62), proto sphinx, state query, command search
+thd 10 (work_63), proto sphinx, state query, command search
+thd 11 (work_65), proto sphinx, state query, command search
+thd 12 (work_66), proto sphinx, state query, command search
+thd 13 (work_67), proto sphinx, state query, command search
+thd 14 (work_68), proto sphinx, state query, command search
+thd 15 (work_69), proto sphinx, state query, command search
+--- Totally 16 threads, and 16 client-working threads ---
+------- CRASH DUMP END -------
+[Thu Aug 31 15:35:24.757 2023] [9784] starting daemon version '6.0.5 d3e1518d3@230719 dev (columnar 2.0.5 35b042d@230620) (secondary 2.0.5 35b042d@230620)' ...
+[Thu Aug 31 15:35:24.757 2023] [9784] listening on all interfaces for sphinx and http(s), port=3332
+[Thu Aug 31 15:35:24.757 2023] [9784] listening on all interfaces for mysql, port=6332
+[Thu Aug 31 15:35:24.757 2023] [9784] listening on all interfaces for VIP mysql, port=9332
