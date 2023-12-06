@@ -1,0 +1,1046 @@
+[Thu Nov 23 15:30:31.853 2017] [19379] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:30:31.935 2017] [19379] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:30:39.773 2017] [19379] log reopened
+[Thu Nov 23 15:30:39.773 2017] [19379] query log reopened
+[Thu Nov 23 15:30:39.834 2017] [19379] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+------- FATAL: CRASH DUMP -------
+[Thu Nov 23 15:30:39.834 2017] [19379]
+
+--- crashed SphinxQL request dump ---
+SELECT id FROM blogsreaderhour_no_timeout WHERE MATCH('(@(title,body) (Arbor Terrace 
+| ArborTerraceRV | #arborterrace | Arran Lake RV Resort | ArranLakeRVResort | #ArranLakeRVResort 
+| #ArranLakeRV | Austin Lone Star RV Resort | Lone Star RV | ALSRVR | #LoneStarRV 
+| #AustinLoneStarRV | #ALSRVR | Baker Acres RV Resort | BakerAcresRvResort | #BakerAcresRvResort 
+| #BakerAcres | Big Timber Lake RV Camping Resort | bigtimberlake | #bigtimberlakerv 
+| Big Timber Lake RV | Big Tree RV Resort | Big Tree RV | BigTreeRVResort | #BigTreeRVResort 
+| #BigTreeRV | Blazing Star Resort | BlazingStarLuxuryRVResort | Blazing Star Luxury 
+RV Resort | #BlazingStarRV | #BlazingStarLuxuryRVResort | Blue Jay MH  RV Resort | 
+BlueJayMHCommunity | #BlueJayRV | #BlueJayMHCommunity | Blue Jay MH | Blue Jay RV 
+| Blue Star RV Resort | #BlueStarRVResort | #BlueStarRV | Blue Star RV | Blueberry 
+Hill RV Resort | Blueberry Hill RV | BlueberryHillRVResortFlorida | #BlueberryHillRV 
+| #BlueberryHillRVResort | Buttonwood Bay RV Resort | ButtonwoodBayRVResort | Buttonwood 
+Bay RV | #ButtonwoodBayRV | #ButtonwoodBayRVResort | Campers Haven RV Resort | CampersHavenRVResort 
+| Campers Haven RV | #CampersHaven | #CampersHavenRV | #CampersHavenRVResort | Cape 
+May KOA | LakeLaurie | #CapeMayKOA | Castaways RV Resort  Campground | Castaways RV 
+Resort | Castaways campground | Castaways RVOC | CastwaysRVOC | #CastawaysRVOC | #CastawaysRVResort 
+| Central Park MH  RV Resort | centralparkrvresort | Central Park RV | #CentralParkRVResort 
+| #CentralParkRV | Citrus Hill RV Resort | Citrus Hill RV | CitrusHillRVResort | #CitrusHillRVResort 
+| #CitrusHillRV | ClubNaples | Club Naples RV Resort | Club Naples RV | #ClubNaples 
+| #ClubNaplesRV | CountrySquireCarefreeRVResort | Country Squire MH  RV Resort | Country 
+Squire RV | #CountrySquireRV | Craigleith RV Resort  Campground | Craigleith RV | 
+#CraigleithRVResort | #CraigleithRV | #CraigleithCampground | Daytona Beach RV Resort 
+| Daytona Beach RV | DaytonaBeachRVResort | #DaytonaBeachRVResort | #DaytonaBeachRV 
+| Deer Lake Park  Campground | deer lake park | camping | deer lake | rv | Driftwood 
+RV | driftwood camping | Dunedin RV | dunedin | ellenton gardens rv | ellenton gardens 
+camping | ellenton gardens campground | fort tatham rv | fort tatham camping | fort 
+tatham campground | fort whaley rv | fort whaley camping | fort whaley campground 
+| fortwhaley | frontier town rv | frontier town camping | frontier town campground 
+| frontiertownoc | #frontiertownoc | glen haven rv | glen haven camping | glen haven 
+campground | #glenhavenrv | Goldcoaster rv | goldcoaster camping | goldcoaster campground 
+| #goldcoasterrv | Grand Lake Resort | #grandlakeresort | grand oaks rv | grand oaks 
+| grand oaks campground | grove ridge rv | grove ridge camping | grove ridge campground 
+| #groveridgerv | #groveridgeresort | groves rv | groves camping | groves campground 
+| #grovesrv | Gullivers Lake | #gulliverslake | Gwynns Island | #gwynnsislandrvresort 
+| hidden ridge rv | hidden ridge camping | hidden ridge campground | #hiddenridgerv 
+| hidden river rv | #hiddenriverrv | Hidden River RV Resort | Hidden River RV | #HiddenRiverRVResort 
+| #HiddenRiverRV | HiddenRiverRVResort | hidden valley rv | hidden valley camping 
+| hidden valley campground | #hiddenvalleyrv | Hidden Valley RV Resort  Campground 
+| Hidden Valley RV Resort | Hidden Valley RV | Hidden Valley Campground | Hidden Valley 
+Camping | Hidden Valley Camp | #HiddenValleyRVResort | #HiddenValleyCampground | #HiddenValleyRV 
+| hill country rv | #hillcountrycottage | #hillcountryrv | hillcountryrv | hill country 
+cottage and rv | hill country cottage  rv | Homosassa River RV Resort | Homosassa 
+River RV | Homosassa RV | #HomosassaRiverRVResort | #HomosassaRiverRV | #HomosassaRV 
+| homosassa rv | homosassa resort | homosassa camping | homosassa campground | horseshoe 
+cove rv | #horseshoecove | #horseshoecoverv | Horseshoe Cove RV Resort | Horseshoe 
+Cove RV | #HorseshoeCoveRVResort | #HorseshoeCoveRV | HorseshoeCoveRVResort | Indian 
+Creek Florida | Indian Creek Fort Myers | Indian Creek Ft. Myers | #IndianCreekRVFlorida | #IndianCreekFlorida | 
+IndianCreekRV | indian creek rv | indian creek resort | #indiancreekrv | #indiancreekresort 
+| Indian Creek RV Resort | Indian Creek RV | #IndianCreekRVResort | #IndianCreekRV 
+| IndianCreekRVResort | indian wells rv | #indianwellsrv | Indian Wells RV Resort 
+| Indian Wells RV | #IndianWellsRVResort | #IndianWellsRV | IndianWellsRVResort | 
+Jellystone Park at Birchwood Acres | Jellystone Birchwood | Jellystone RV Resort | 
+Jellystone RV | #JellystoneParkBirchwoodAcres | #JellystoneRVResort | #JellystoneRV 
+| NYJellystone | Jellystone Park of Western New York | Jellystone Western New York 
+| #JellystoneWesternNewYork | wnyjellystone | Kissimmee South RV Resort | Kissimmee 
+South RV | #KissimmeeSouthRV | #KissimmeeSouthRVResort | KissimmeeSouthCarefreeRVResort 
+| La Hacienda RV Resort | La Hacienda RV | #LaHaciendaRVResort | #LaHaciendaRV | LaHaciendaRVResort 
+| Lafontaine RV Resort and Campground | Lafontaine RV Resort | Lafontaine RV | Lafontaine 
+Campground | Lafontaine Camp | #LafontaineRVResort | #LafontaineRV | #LafontaineCampground 
+| Lake Avenue RV Resort and Campground | Lake Avenue RV Resort | Lake Avenue RV | 
+Lake Avenue Campground | LakeAvenueRVResort | #LakeAvenueRVResort | #LakeAvenueRV 
+| #LakeAvenueCampground | Lake In Wood Campground | Lake In Wood RV | Lake In Wood 
+Camp | Lake In Wood Camping | #LakeInWood | #LakeInWoodCampground | #LakeInWoodRV 
+| LakeInWoodCampground | Lake Rudolph Campground | Lake Rudolph Camp | Lake Rudolph 
+RV Resort | Lake Rudolph RV | Lake Rudolph Campground  RV Resort | #LakeRudolphRV 
+| #LakeRudolphCampground | #LakeRudolphRVResort | LakeSanMarinoRV | Lake San Marino 
+RV | Lake San Marino | #LakeSanMarinoRV | Lakeland RV Resort | Lakeland RV | #LakelandRVResort 
+| #LakelandRV | LakelandRVResort | Long Beach RV Resort and Campground | Long Beach 
+RV Resort | Long Beach RV | Long Beach Campground | Long Beach Camp | #LongBeachRVResort 
+| #LongBeachCampground | #LongBeachRV | LongBeachRVResort | Majestic Oaks RV Resort 
+| Majestic Oaks RV | #MajesticOaksRVResort | #MajesticOaksRV | MajesticOaksCarefreeRVResort 
+| Marco Naples RV Resort | Marco Naples RV | Marco Naples Resort | #MarcoNaplesRVResort 
+| #MarcoNaplesRV | MarcoNaplesRVResort | Mill Creek RV Florida | Mill Creek RV | Mill 
+Creek RV Resort | #MillCreekRVFlorida | #MillCreekRV | MillCreekRVResort | Naples 
+RV Resort | Naples RV | Naples Gardens RV | #NaplesRVResort | #NaplesRV | NaplesRVResort 
+| New Point RV Resort | New Point RV | New Point Campground | #NewPointRVResort | 
+#NewPointRV | #NewPointCampground | NewPointRVResort | North Lake Estates | North 
+Lake RV | #NorthLakeEstates | #NorthLakeRV | NorthLakeEstatesRVResort | Ocean Breeze 
+RV Resort | Ocean Breeze RV | Ocean Breeze Resort | #OceanBreezeRV | #OceanBreezeRVResort 
+| #OceanBreezeResort | OceanBreezeResortFL | Orange City RV Resort | Orange City RV 
+| Orange City Resort | #OrangeCityResort | #OrangeCityRVResort | #OrangeCityRV | OrangeCityRVResort 
+| Palm Creek Golf  RV Resort | Palm Creek RV | Palm Creek Golf | #PalmCreekGolfRVResort 
+| #PalmCreekRV | #PalmCreekGolf | palmcreekresort | Pecan Park RV Resort | Pecan Park 
+RV | Pecan Park Resort | #PecanParkRVResort | #PecanParkRV | #PecanParkResort | Pelican 
+RV Resort  Marina | Pelican RV Resort | Pelican RV | Pelican Marina | #PelicanRVResort 
+| #PelicanRV | #PelicanMarina | PelicanRVResort | Peters Pond RV Resort | Peters Pond 
+RV | #PetersPondRV | #PetersPondRVResort | PetersPondRVResort | Peters Pond | Pickerel 
+Park RV Resort  Campground | Pickerel Park RV Resort | Pickerel Park RV | Pickerel 
+Park Campground | Pickerel Park Camp | #PickerelParkRV | #PickerelParkCampground | 
+PickerelParkRVResort | Pleasant Lake RV Resort | Pleasant Lake RV | #PleasantLakeRVResort 
+| #PleasantLakeRV | PleasantLakeRVResort | Pleasant Lake Resort | Rainbow RV Resort 
+| Rainbow RV | #RainbowRVResort | #RainbowRV | RainbowRV | Rainbow Village of Largo 
+| Rainbow Village RV | Rainbow Largo RV | #RainbowVillageLargo | #RainbowVillageRVLargo 
+| #RainbowLargoRV | RainbowLargoRVResort | Rainbow Village of Zephyrhills | #RainbowVillageRV 
+| RainbowVillageCarefreeRVResort | Red Oaks RV Resort | Red Oaks RV | #RedOaksRVResort 
+| #RedOaksRV | RedOaksCarefreeRVResort | Riptide RV Resort  Marina | Riptide RV Resort 
+| Riptide RV | Riptide Marina | #RiptideRVResort | #RiptideRV | #RiptideMarina | RiptideRVResort 
+| Rock Crusher Canyon RV Park | Rock Crusher Canyon RV | #RockCrusherCanyonRV | #RockCrusherCanyonRVResort 
+| #RockCrusherCanyonRVPark | RockCrusherCanyonRVPark | Saco KOA | SacoOld Orchard 
+Beach KOA | Old Orchard Beach KOA | Old Orchard Beach | #SacoKOA | #OldOrchardBeachKOA 
+| SacoKOA | San Pedro RV Resort | San Pedro RV | San Pedro Marina | #SanPedroRVResort 
+| #SanPedroMarina | #SanPedroRV | Sandy Lake MH  RV Resort | Sandy Lake RV | Sandy 
+Lake RV Resort | #SandyLakeRVResort | #SandyLakeRV | SandyLakeRVResort | Sea Air Village 
+| Sea Air RV | Sea Air RV Resort | #SeaAirVillage | #SeaAirResort | SeaAirVillage 
+| Sea Breeze Resort | Sea Breeze RV | Sea Breeze RV Resort | #SeaBreezeRV | #SeaBreezeResort 
+| #SeaBreezeRVResort | Seaport RV Resort | Seaport Campground | Seaport RV | #SeaportRVResort 
+| #SeaportCampground | #SeaportRV | SeaportRVResort | Seashore Campsites  RV Resort 
+| Seashore Campsites | Seashore RV Resort | Seashore RV | SeashoreCampsites | #SeashoreCampsites 
+| #SeashoreRVResort | Settlers Rest RV Resort | Settlers Rest RV | #SettlersRest | 
+#SettlersRestRVResort | #SettlersRestRV | SettlersRestRVResort | Shady Pines MH  RV 
+Resort | Shady Pines RV Resort | Shady Pines RV | #ShadyPinesRVResort | #ShadyPinesRV 
+| ShadyPinesCarefreeRVResort | Shell Creek RV Resort  Marina | Shell Creek RV | Shell 
+Creek Marina | #ShellCreekRVResort | #ShellCreekMarina | ShellCreekRVResort | Sherkston 
+Shores Beach Resort  Campground | Sherkston Shores Campground | Sherkston Shores Camp 
+| Sherkston Shores Beach Resort | #SherkstonShoresBeachResort | #SherkstonShoresCampground 
+| SherkstonShores | Siesta Bay RV Resort | Siesta Bay RV | Siesta Bay | #SiestaBayRVResort 
+| #SiestaBayRV | #SiestaBay | SiestaBay | Silver Birches RV Resort | Silver Birches 
+RV | Silver Birches Campground | Silver Birches Camping | Silver Birches Camp | #SilverBirchesRVResort 
+| #SilverBirchesRV | #SilverBirchesCampground | Southern Charm RV Resort | Southern 
+Charm RV | #SouthernCharmRVResort | #SouthernCharmRV | SouthernCharmRVResort | Spanish 
+Main MH  RV Resort | Spanish Main RV Resort | Spanish Main RV | #SpanishMainRVResort 
+| #SpanishMainRV | SpanishMainRVResort | Sun-n-fun resort | sun n fun rv resort | 
+sun n fun campground | #sunnfunfl | Sun n Fun rv | sun-n-fun rv resort | #sunnfunflorida 
+| sun n fun sarasota | sun-n-fun sarasota | sun-n-fun | campground | #sunnfunresort 
+| Sweetwater RV Resort | Sweetwater RV | #SweetwaterRVResort | #SweetwaterRV | TampaEastRVResort 
+| Tampa East RV Resort | Tampa East RV | #TampaEastRVResort | #TampaEastRV | #TampaRV 
+| Three Lakes RV Resort | Three Lakes RV | ThreeLakesRVResort | #ThreeLakesRVResort 
+| #ThreeLakesRV | Trailside RV Resort  Campground | Trailside Campground | Trailside 
+Camping | Trailside RV Resort | #TrailsideRVResort | #TrailsideCampground | TrailsideRVResort 
+| TravelersWorldRVResort | Travelers World RV Resort | Travelers World RV | #TravelersWorldRVResort 
+| #TravelersWorldRV | TreetopsRVResort | Treetops RV Resort | Treetops RV | #TreetopsRVResort 
+| #TreetopsRV | Tropical Palms Campground | Tropical Palms RV Resort | Tropical Palms 
+Carefree | #tropicalpalmsfl | #tropicalpalmsrv | tropicalpalmsrv | Tropical Palms 
+RV | Tropical Palms Florida | Tropical Palms Orlando | Tropical Palms Kissimmee | 
+VinesRVResort | Vines RV Resort | Vines RV | #VinesRVResort | #VinesRV | Vista Del 
+Lago MH  RV Resort | Vista Del Lago RV | VistaDelLagoCarefreeCommunity | #VistaDelLagoRV 
+| WatersEdgeRVResortFL | Waters Edge RV Resort | Waters Edge RV | Waters Edge Florida 
+| #WatersEdgeRV | #WatersEdgeRVResort | #WatersEdgeFL | WestwardHoRVResort | Westward 
+Ho RV Resort | Westward Ho RV | Westward Ho Campground | Westward Ho camping | Westward Ho camp | #WestwardHoRVResort | #WestwardHoRV | #WestwardHoCampground) 
+-("assisted living" | "senior care" | Herndon | "east cobb" | "old people" | "senior 
+living" | middletown | "san jose" | "nursing assistant" | cna | "cinco ranch" | houston 
+| asheville | kingwood | rd | road | allegheny | show | shows | festival | music | 
+"new zealand" | "freedom camping fines"))') AND is_comment = 0  AND inserted > 1511449406 
+ AND inserted <= 1511450606  AND ANY(content_provider_id) IN(0, 1, 3, 165) AND mod_is 
+IN(0, 1, 5) ORDER BY id ASC LIMIT 1000 OPTION  max_matches = 1000  , comment = 'PQ 
+app. API key: ec37148a19eebc1d4721abcdd70e2975' 
+--- request dump end ---
+Sphinx 2.4.1 989752b@171115 id64-dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.2
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDATADIR=/usr/var/data -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_RLP=1 -DWITH_ZLIB=ON -DSYSCONFDIR=/usr/etc/sphinx
+Host OS is Linux rpmbuild03.boardreader.com 2.6.32-042stab120.6 #1 SMP Thu Oct 27 16:59:03 MSK 2016 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7ff6d89b6e7f, thread stack size = 0x300000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0xaf)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0xaf, stack=0x7ff6d89b0000, stacksize=0x300000)
+Trying system backtrace:
+begin of manual symbols:
+6491fa
+4cc48d
+7ff7058127e0
+53f6df
+50a5bb
+50cad9
+4eed46
+53a2c0
+515c4b
+5160f9
+516545
+4c477f
+65099f
+7ff70580aaa1
+7ff703f4f93d
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 15): ---
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/sphinxutils.cpp:2257
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:1885
+??:0
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchdha.cpp:1563
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:8677
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:7361
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:15172
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:17347
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:17841
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:17803
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:20583
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:1965
+[Thu Nov 23 15:30:40.130 2017] [10404] last message repeated 24 times
+[Thu Nov 23 15:30:40.130 2017] [10404] watchdog: main process 19379 killed dirtily with signal 11, core dumped, will be restarted
+[Thu Nov 23 15:30:40.130 2017] [10404] watchdog: main process 29450 forked ok
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/sphinxstd.cpp:675
+??:0
+??:0
+[Thu Nov 23 15:30:40.202 2017] [29450] Reloading the config
+[Thu Nov 23 15:30:40.306 2017] [29450] Reconfigure the daemon
+[Thu Nov 23 15:30:40.306 2017] [29450] listening on all interfaces, port=3318
+[Thu Nov 23 15:30:40.307 2017] [29450] listening on all interfaces, port=3319
+[Thu Nov 23 15:30:40.356 2017] [29450] WARNING: unable to init IO statistics
+[Thu Nov 23 15:30:40.356 2017] [29450] prereading 2 indexes
+[Thu Nov 23 15:30:40.378 2017] [29450] prereaded 2 indexes in 0.022 sec
+[Thu Nov 23 15:30:40.378 2017] [29450] accepting connections
+[Thu Nov 23 15:30:40.378 2017] [29450] log reopened
+[Thu Nov 23 15:30:40.378 2017] [29450] query log reopened
+[Thu Nov 23 15:30:47.992 2017] [29450] log reopened
+[Thu Nov 23 15:30:47.992 2017] [29450] query log reopened
+[Thu Nov 23 15:30:48.058 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:30:48.210 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:30:57.722 2017] [29450] log reopened
+[Thu Nov 23 15:30:57.722 2017] [29450] query log reopened
+[Thu Nov 23 15:30:57.892 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:30:58.062 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:31:03.678 2017] [29450] log reopened
+[Thu Nov 23 15:31:03.678 2017] [29450] query log reopened
+[Thu Nov 23 15:31:03.781 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:31:03.860 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:31:07.786 2017] [29450] log reopened
+[Thu Nov 23 15:31:07.786 2017] [29450] query log reopened
+[Thu Nov 23 15:31:08.124 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:31:08.286 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:31:11.680 2017] [29450] log reopened
+[Thu Nov 23 15:31:11.680 2017] [29450] query log reopened
+[Thu Nov 23 15:31:11.766 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:31:11.839 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:31:15.971 2017] [29450] log reopened
+[Thu Nov 23 15:31:15.971 2017] [29450] query log reopened
+[Thu Nov 23 15:31:16.038 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:31:16.101 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:31:19.892 2017] [29450] log reopened
+[Thu Nov 23 15:31:19.892 2017] [29450] query log reopened
+[Thu Nov 23 15:31:19.969 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:31:20.052 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:31:25.108 2017] [29450] log reopened
+[Thu Nov 23 15:31:25.108 2017] [29450] query log reopened
+[Thu Nov 23 15:31:25.189 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:31:25.253 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:31:28.174 2017] [29450] log reopened
+[Thu Nov 23 15:31:28.174 2017] [29450] query log reopened
+[Thu Nov 23 15:31:28.240 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:31:28.305 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:31:34.331 2017] [29450] log reopened
+[Thu Nov 23 15:31:34.331 2017] [29450] query log reopened
+[Thu Nov 23 15:31:34.579 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:31:34.745 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:31:43.348 2017] [29450] log reopened
+[Thu Nov 23 15:31:43.348 2017] [29450] query log reopened
+[Thu Nov 23 15:31:43.600 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:31:43.835 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:31:52.451 2017] [29450] log reopened
+[Thu Nov 23 15:31:52.451 2017] [29450] query log reopened
+[Thu Nov 23 15:31:52.531 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:31:52.655 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:32:00.661 2017] [29450] log reopened
+[Thu Nov 23 15:32:00.661 2017] [29450] query log reopened
+[Thu Nov 23 15:32:00.726 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:32:00.792 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:32:08.032 2017] [29450] log reopened
+[Thu Nov 23 15:32:08.032 2017] [29450] query log reopened
+[Thu Nov 23 15:32:08.159 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:32:08.302 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:32:13.947 2017] [29450] log reopened
+[Thu Nov 23 15:32:13.947 2017] [29450] query log reopened
+[Thu Nov 23 15:32:14.017 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:32:14.091 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:32:21.123 2017] [29450] log reopened
+[Thu Nov 23 15:32:21.123 2017] [29450] query log reopened
+[Thu Nov 23 15:32:21.200 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:32:21.287 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:32:28.947 2017] [29450] log reopened
+[Thu Nov 23 15:32:28.947 2017] [29450] query log reopened
+[Thu Nov 23 15:32:29.015 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:32:29.093 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:32:36.687 2017] [29450] log reopened
+[Thu Nov 23 15:32:36.687 2017] [29450] query log reopened
+[Thu Nov 23 15:32:36.754 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:32:36.836 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:32:44.481 2017] [29450] log reopened
+[Thu Nov 23 15:32:44.481 2017] [29450] query log reopened
+[Thu Nov 23 15:32:44.554 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:32:44.627 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:32:52.140 2017] [29450] log reopened
+[Thu Nov 23 15:32:52.140 2017] [29450] query log reopened
+[Thu Nov 23 15:32:52.210 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:32:52.292 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:33:01.059 2017] [29450] log reopened
+[Thu Nov 23 15:33:01.059 2017] [29450] query log reopened
+[Thu Nov 23 15:33:01.123 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:33:01.210 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:33:07.768 2017] [29450] log reopened
+[Thu Nov 23 15:33:07.768 2017] [29450] query log reopened
+[Thu Nov 23 15:33:07.834 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:33:07.914 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:33:14.795 2017] [29450] log reopened
+[Thu Nov 23 15:33:14.795 2017] [29450] query log reopened
+[Thu Nov 23 15:33:14.864 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:33:14.954 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:33:20.603 2017] [29450] log reopened
+[Thu Nov 23 15:33:20.603 2017] [29450] query log reopened
+[Thu Nov 23 15:33:20.690 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:33:20.794 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:33:28.485 2017] [29450] log reopened
+[Thu Nov 23 15:33:28.485 2017] [29450] query log reopened
+[Thu Nov 23 15:33:28.556 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:33:28.624 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:33:36.189 2017] [29450] log reopened
+[Thu Nov 23 15:33:36.189 2017] [29450] query log reopened
+[Thu Nov 23 15:33:36.254 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:33:36.325 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:33:44.474 2017] [29450] log reopened
+[Thu Nov 23 15:33:44.474 2017] [29450] query log reopened
+[Thu Nov 23 15:33:44.575 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:33:44.840 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:33:55.123 2017] [29450] log reopened
+[Thu Nov 23 15:33:55.123 2017] [29450] query log reopened
+[Thu Nov 23 15:33:55.197 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:33:55.279 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:34:03.522 2017] [29450] log reopened
+[Thu Nov 23 15:34:03.522 2017] [29450] query log reopened
+[Thu Nov 23 15:34:03.612 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:34:03.701 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:34:08.482 2017] [29450] log reopened
+[Thu Nov 23 15:34:08.482 2017] [29450] query log reopened
+[Thu Nov 23 15:34:08.557 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:34:08.652 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:34:11.364 2017] [29450] log reopened
+[Thu Nov 23 15:34:11.364 2017] [29450] query log reopened
+[Thu Nov 23 15:34:11.433 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:34:11.510 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:34:16.247 2017] [29450] log reopened
+[Thu Nov 23 15:34:16.247 2017] [29450] query log reopened
+[Thu Nov 23 15:34:16.312 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:34:16.390 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:34:19.308 2017] [29450] log reopened
+[Thu Nov 23 15:34:19.308 2017] [29450] query log reopened
+[Thu Nov 23 15:34:19.375 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:34:19.452 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:34:27.312 2017] [29450] log reopened
+[Thu Nov 23 15:34:27.312 2017] [29450] query log reopened
+[Thu Nov 23 15:34:27.381 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:34:27.544 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:34:35.382 2017] [29450] log reopened
+[Thu Nov 23 15:34:35.382 2017] [29450] query log reopened
+[Thu Nov 23 15:34:35.446 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:34:35.517 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:34:43.053 2017] [29450] log reopened
+[Thu Nov 23 15:34:43.053 2017] [29450] query log reopened
+[Thu Nov 23 15:34:43.113 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:34:43.292 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:34:51.513 2017] [29450] log reopened
+[Thu Nov 23 15:34:51.513 2017] [29450] query log reopened
+[Thu Nov 23 15:34:51.574 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:34:51.757 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:35:00.546 2017] [29450] log reopened
+[Thu Nov 23 15:35:00.546 2017] [29450] query log reopened
+[Thu Nov 23 15:35:00.610 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:35:00.678 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:35:09.274 2017] [29450] log reopened
+[Thu Nov 23 15:35:09.274 2017] [29450] query log reopened
+[Thu Nov 23 15:35:09.349 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:35:09.423 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:35:14.827 2017] [29450] log reopened
+[Thu Nov 23 15:35:14.827 2017] [29450] query log reopened
+[Thu Nov 23 15:35:14.890 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:35:14.962 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:35:24.220 2017] [29450] log reopened
+[Thu Nov 23 15:35:24.220 2017] [29450] query log reopened
+[Thu Nov 23 15:35:24.290 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:35:24.357 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:35:33.855 2017] [29450] log reopened
+[Thu Nov 23 15:35:33.855 2017] [29450] query log reopened
+[Thu Nov 23 15:35:34.176 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:35:34.354 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:35:45.897 2017] [29450] log reopened
+[Thu Nov 23 15:35:45.897 2017] [29450] query log reopened
+[Thu Nov 23 15:35:46.033 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:35:46.155 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:35:56.343 2017] [29450] log reopened
+[Thu Nov 23 15:35:56.343 2017] [29450] query log reopened
+[Thu Nov 23 15:35:56.525 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:35:56.817 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:36:03.827 2017] [29450] log reopened
+[Thu Nov 23 15:36:03.827 2017] [29450] query log reopened
+[Thu Nov 23 15:36:03.933 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:36:04.036 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:36:11.093 2017] [29450] log reopened
+[Thu Nov 23 15:36:11.093 2017] [29450] query log reopened
+[Thu Nov 23 15:36:11.168 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:36:11.265 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:36:16.836 2017] [29450] log reopened
+[Thu Nov 23 15:36:16.836 2017] [29450] query log reopened
+[Thu Nov 23 15:36:16.899 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:36:16.974 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:36:26.154 2017] [29450] log reopened
+[Thu Nov 23 15:36:26.154 2017] [29450] query log reopened
+[Thu Nov 23 15:36:26.250 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:36:26.350 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:36:35.168 2017] [29450] log reopened
+[Thu Nov 23 15:36:35.168 2017] [29450] query log reopened
+[Thu Nov 23 15:36:35.236 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:36:35.381 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:36:43.025 2017] [29450] log reopened
+[Thu Nov 23 15:36:43.025 2017] [29450] query log reopened
+[Thu Nov 23 15:36:43.091 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:36:43.167 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:36:50.919 2017] [29450] log reopened
+[Thu Nov 23 15:36:50.919 2017] [29450] query log reopened
+[Thu Nov 23 15:36:50.987 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:36:51.071 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:36:58.879 2017] [29450] log reopened
+[Thu Nov 23 15:36:58.879 2017] [29450] query log reopened
+[Thu Nov 23 15:36:58.949 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:36:59.022 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:37:03.102 2017] [29450] log reopened
+[Thu Nov 23 15:37:03.102 2017] [29450] query log reopened
+[Thu Nov 23 15:37:03.193 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:37:03.299 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:37:07.308 2017] [29450] log reopened
+[Thu Nov 23 15:37:07.308 2017] [29450] query log reopened
+[Thu Nov 23 15:37:07.440 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:37:07.523 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:37:11.313 2017] [29450] log reopened
+[Thu Nov 23 15:37:11.313 2017] [29450] query log reopened
+[Thu Nov 23 15:37:11.384 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:37:11.463 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:37:15.653 2017] [29450] log reopened
+[Thu Nov 23 15:37:15.653 2017] [29450] query log reopened
+[Thu Nov 23 15:37:15.718 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:37:15.793 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:37:19.273 2017] [29450] log reopened
+[Thu Nov 23 15:37:19.273 2017] [29450] query log reopened
+[Thu Nov 23 15:37:19.351 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:37:19.433 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:37:27.079 2017] [29450] log reopened
+[Thu Nov 23 15:37:27.079 2017] [29450] query log reopened
+[Thu Nov 23 15:37:27.146 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:37:27.225 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:37:34.889 2017] [29450] log reopened
+[Thu Nov 23 15:37:34.889 2017] [29450] query log reopened
+[Thu Nov 23 15:37:34.973 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:37:35.102 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:37:46.332 2017] [29450] log reopened
+[Thu Nov 23 15:37:46.332 2017] [29450] query log reopened
+[Thu Nov 23 15:37:46.580 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:37:46.711 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:37:54.721 2017] [29450] log reopened
+[Thu Nov 23 15:37:54.721 2017] [29450] query log reopened
+[Thu Nov 23 15:37:54.792 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:37:54.866 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:38:04.364 2017] [29450] log reopened
+[Thu Nov 23 15:38:04.364 2017] [29450] query log reopened
+[Thu Nov 23 15:38:04.452 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:38:04.545 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:38:08.053 2017] [29450] log reopened
+[Thu Nov 23 15:38:08.053 2017] [29450] query log reopened
+[Thu Nov 23 15:38:08.134 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:38:08.232 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:38:13.292 2017] [29450] log reopened
+[Thu Nov 23 15:38:13.292 2017] [29450] query log reopened
+[Thu Nov 23 15:38:13.359 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:38:13.433 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:38:16.292 2017] [29450] log reopened
+[Thu Nov 23 15:38:16.292 2017] [29450] query log reopened
+[Thu Nov 23 15:38:16.362 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:38:16.433 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:38:21.100 2017] [29450] log reopened
+[Thu Nov 23 15:38:21.100 2017] [29450] query log reopened
+[Thu Nov 23 15:38:21.185 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:38:21.263 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:38:29.487 2017] [29450] log reopened
+[Thu Nov 23 15:38:29.487 2017] [29450] query log reopened
+[Thu Nov 23 15:38:29.586 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:38:29.708 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:38:37.615 2017] [29450] log reopened
+[Thu Nov 23 15:38:37.615 2017] [29450] query log reopened
+[Thu Nov 23 15:38:37.681 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:38:37.771 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:38:45.614 2017] [29450] log reopened
+[Thu Nov 23 15:38:45.614 2017] [29450] query log reopened
+[Thu Nov 23 15:38:45.684 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:38:45.764 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:38:55.318 2017] [29450] log reopened
+[Thu Nov 23 15:38:55.318 2017] [29450] query log reopened
+[Thu Nov 23 15:38:55.389 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:38:55.470 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:39:03.215 2017] [29450] log reopened
+[Thu Nov 23 15:39:03.215 2017] [29450] query log reopened
+[Thu Nov 23 15:39:03.290 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:39:03.387 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:39:10.043 2017] [29450] log reopened
+[Thu Nov 23 15:39:10.043 2017] [29450] query log reopened
+[Thu Nov 23 15:39:10.163 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:39:10.259 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:39:16.460 2017] [29450] log reopened
+[Thu Nov 23 15:39:16.460 2017] [29450] query log reopened
+[Thu Nov 23 15:39:16.578 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:39:16.687 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:39:23.847 2017] [29450] log reopened
+[Thu Nov 23 15:39:23.847 2017] [29450] query log reopened
+[Thu Nov 23 15:39:23.914 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:39:23.995 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:39:29.419 2017] [29450] log reopened
+[Thu Nov 23 15:39:29.419 2017] [29450] query log reopened
+[Thu Nov 23 15:39:29.490 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:39:29.578 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:39:38.422 2017] [29450] log reopened
+[Thu Nov 23 15:39:38.422 2017] [29450] query log reopened
+[Thu Nov 23 15:39:38.494 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:39:38.563 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:39:46.477 2017] [29450] log reopened
+[Thu Nov 23 15:39:46.477 2017] [29450] query log reopened
+[Thu Nov 23 15:39:46.540 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:39:46.606 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:39:53.998 2017] [29450] log reopened
+[Thu Nov 23 15:39:53.998 2017] [29450] query log reopened
+[Thu Nov 23 15:39:54.058 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:39:54.127 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:40:02.011 2017] [29450] log reopened
+[Thu Nov 23 15:40:02.011 2017] [29450] query log reopened
+[Thu Nov 23 15:40:02.105 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:40:02.227 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:40:07.330 2017] [29450] log reopened
+[Thu Nov 23 15:40:07.330 2017] [29450] query log reopened
+[Thu Nov 23 15:40:07.418 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:40:07.509 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:40:14.897 2017] [29450] log reopened
+[Thu Nov 23 15:40:14.897 2017] [29450] query log reopened
+[Thu Nov 23 15:40:14.957 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:40:15.034 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:40:20.390 2017] [29450] log reopened
+[Thu Nov 23 15:40:20.390 2017] [29450] query log reopened
+[Thu Nov 23 15:40:20.458 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:40:20.529 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:40:27.965 2017] [29450] log reopened
+[Thu Nov 23 15:40:27.965 2017] [29450] query log reopened
+[Thu Nov 23 15:40:28.029 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:40:28.096 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:40:36.047 2017] [29450] log reopened
+[Thu Nov 23 15:40:36.047 2017] [29450] query log reopened
+[Thu Nov 23 15:40:36.116 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:40:36.196 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:40:44.067 2017] [29450] log reopened
+[Thu Nov 23 15:40:44.067 2017] [29450] query log reopened
+[Thu Nov 23 15:40:44.142 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:40:44.242 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:40:53.461 2017] [29450] log reopened
+[Thu Nov 23 15:40:53.461 2017] [29450] query log reopened
+[Thu Nov 23 15:40:53.555 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:40:53.748 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:41:02.154 2017] [29450] log reopened
+[Thu Nov 23 15:41:02.154 2017] [29450] query log reopened
+[Thu Nov 23 15:41:02.276 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:41:02.396 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:41:07.404 2017] [29450] log reopened
+[Thu Nov 23 15:41:07.404 2017] [29450] query log reopened
+[Thu Nov 23 15:41:07.472 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:41:07.550 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:41:11.649 2017] [29450] log reopened
+[Thu Nov 23 15:41:11.649 2017] [29450] query log reopened
+[Thu Nov 23 15:41:11.711 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:41:11.786 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:41:15.329 2017] [29450] log reopened
+[Thu Nov 23 15:41:15.329 2017] [29450] query log reopened
+[Thu Nov 23 15:41:15.396 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:41:15.472 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:41:19.418 2017] [29450] log reopened
+[Thu Nov 23 15:41:19.418 2017] [29450] query log reopened
+[Thu Nov 23 15:41:19.487 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:41:19.567 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:41:23.836 2017] [29450] log reopened
+[Thu Nov 23 15:41:23.836 2017] [29450] query log reopened
+[Thu Nov 23 15:41:23.918 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:41:24.001 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:41:32.576 2017] [29450] log reopened
+[Thu Nov 23 15:41:32.576 2017] [29450] query log reopened
+[Thu Nov 23 15:41:32.672 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:41:32.758 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:41:41.017 2017] [29450] log reopened
+[Thu Nov 23 15:41:41.017 2017] [29450] query log reopened
+[Thu Nov 23 15:41:41.225 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:41:41.317 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:41:49.486 2017] [29450] log reopened
+[Thu Nov 23 15:41:49.486 2017] [29450] query log reopened
+[Thu Nov 23 15:41:49.550 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:41:49.712 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:42:02.265 2017] [29450] log reopened
+[Thu Nov 23 15:42:02.265 2017] [29450] query log reopened
+[Thu Nov 23 15:42:02.599 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:42:03.024 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:42:16.130 2017] [29450] log reopened
+[Thu Nov 23 15:42:16.130 2017] [29450] query log reopened
+[Thu Nov 23 15:42:16.247 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:42:16.416 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:42:30.575 2017] [29450] log reopened
+[Thu Nov 23 15:42:30.575 2017] [29450] query log reopened
+[Thu Nov 23 15:42:30.653 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:42:30.786 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:42:41.418 2017] [29450] log reopened
+[Thu Nov 23 15:42:41.418 2017] [29450] query log reopened
+[Thu Nov 23 15:42:41.483 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:42:41.573 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:42:49.320 2017] [29450] log reopened
+[Thu Nov 23 15:42:49.320 2017] [29450] query log reopened
+[Thu Nov 23 15:42:49.395 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:42:49.478 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:42:57.420 2017] [29450] log reopened
+[Thu Nov 23 15:42:57.420 2017] [29450] query log reopened
+[Thu Nov 23 15:42:57.493 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:42:57.585 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:43:03.283 2017] [29450] log reopened
+[Thu Nov 23 15:43:03.283 2017] [29450] query log reopened
+[Thu Nov 23 15:43:03.387 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:43:03.487 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:43:10.706 2017] [29450] log reopened
+[Thu Nov 23 15:43:10.706 2017] [29450] query log reopened
+[Thu Nov 23 15:43:10.776 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:43:10.850 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:43:16.489 2017] [29450] log reopened
+[Thu Nov 23 15:43:16.489 2017] [29450] query log reopened
+[Thu Nov 23 15:43:16.559 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:43:16.640 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:43:24.257 2017] [29450] log reopened
+[Thu Nov 23 15:43:24.257 2017] [29450] query log reopened
+[Thu Nov 23 15:43:24.334 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:43:24.408 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:43:31.965 2017] [29450] log reopened
+[Thu Nov 23 15:43:31.965 2017] [29450] query log reopened
+[Thu Nov 23 15:43:32.030 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:43:32.108 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:43:39.705 2017] [29450] log reopened
+[Thu Nov 23 15:43:39.705 2017] [29450] query log reopened
+[Thu Nov 23 15:43:39.801 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:43:39.890 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:43:48.699 2017] [29450] log reopened
+[Thu Nov 23 15:43:48.699 2017] [29450] query log reopened
+[Thu Nov 23 15:43:48.768 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:43:48.855 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:43:58.849 2017] [29450] log reopened
+[Thu Nov 23 15:43:58.849 2017] [29450] query log reopened
+[Thu Nov 23 15:43:59.097 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:43:59.316 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:44:07.686 2017] [29450] log reopened
+[Thu Nov 23 15:44:07.686 2017] [29450] query log reopened
+[Thu Nov 23 15:44:07.772 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:44:07.861 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:44:17.348 2017] [29450] log reopened
+[Thu Nov 23 15:44:17.348 2017] [29450] query log reopened
+[Thu Nov 23 15:44:17.416 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:44:17.489 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:44:21.386 2017] [29450] log reopened
+[Thu Nov 23 15:44:21.386 2017] [29450] query log reopened
+[Thu Nov 23 15:44:21.538 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:44:21.879 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:44:33.528 2017] [29450] log reopened
+[Thu Nov 23 15:44:33.528 2017] [29450] query log reopened
+[Thu Nov 23 15:44:33.606 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:44:33.709 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:44:44.156 2017] [29450] log reopened
+[Thu Nov 23 15:44:44.156 2017] [29450] query log reopened
+[Thu Nov 23 15:44:44.274 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:44:44.477 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:44:52.182 2017] [29450] log reopened
+[Thu Nov 23 15:44:52.182 2017] [29450] query log reopened
+[Thu Nov 23 15:44:52.245 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:44:52.322 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:44:59.861 2017] [29450] log reopened
+[Thu Nov 23 15:44:59.861 2017] [29450] query log reopened
+[Thu Nov 23 15:44:59.926 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:45:00.003 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:45:07.302 2017] [29450] log reopened
+[Thu Nov 23 15:45:07.302 2017] [29450] query log reopened
+[Thu Nov 23 15:45:07.369 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:45:07.459 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:45:13.236 2017] [29450] log reopened
+[Thu Nov 23 15:45:13.236 2017] [29450] query log reopened
+[Thu Nov 23 15:45:13.323 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:45:13.408 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:45:20.856 2017] [29450] log reopened
+[Thu Nov 23 15:45:20.857 2017] [29450] query log reopened
+[Thu Nov 23 15:45:20.924 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:45:21.000 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:45:28.601 2017] [29450] log reopened
+[Thu Nov 23 15:45:28.601 2017] [29450] query log reopened
+[Thu Nov 23 15:45:28.664 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:45:28.742 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:45:36.374 2017] [29450] log reopened
+[Thu Nov 23 15:45:36.374 2017] [29450] query log reopened
+[Thu Nov 23 15:45:36.436 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:45:36.518 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:45:44.421 2017] [29450] log reopened
+[Thu Nov 23 15:45:44.421 2017] [29450] query log reopened
+[Thu Nov 23 15:45:44.493 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:45:44.591 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:45:52.225 2017] [29450] log reopened
+[Thu Nov 23 15:45:52.225 2017] [29450] query log reopened
+[Thu Nov 23 15:45:52.290 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:45:52.388 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:45:59.905 2017] [29450] log reopened
+[Thu Nov 23 15:45:59.905 2017] [29450] query log reopened
+[Thu Nov 23 15:45:59.979 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:46:00.059 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:46:08.195 2017] [29450] log reopened
+[Thu Nov 23 15:46:08.195 2017] [29450] query log reopened
+[Thu Nov 23 15:46:08.321 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:46:08.482 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:46:13.493 2017] [29450] log reopened
+[Thu Nov 23 15:46:13.493 2017] [29450] query log reopened
+[Thu Nov 23 15:46:13.563 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:46:13.650 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:46:17.739 2017] [29450] log reopened
+[Thu Nov 23 15:46:17.739 2017] [29450] query log reopened
+[Thu Nov 23 15:46:17.803 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:46:17.883 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:46:27.116 2017] [29450] log reopened
+[Thu Nov 23 15:46:27.116 2017] [29450] query log reopened
+[Thu Nov 23 15:46:27.344 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:46:27.576 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:46:42.321 2017] [29450] log reopened
+[Thu Nov 23 15:46:42.321 2017] [29450] query log reopened
+[Thu Nov 23 15:46:42.670 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:46:42.890 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:47:00.036 2017] [29450] log reopened
+[Thu Nov 23 15:47:00.036 2017] [29450] query log reopened
+[Thu Nov 23 15:47:00.105 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+[Thu Nov 23 15:47:00.196 2017] [29450] WARNING: nothing to rotate after SIGHUP
+[Thu Nov 23 15:47:07.639 2017] [29450] log reopened
+[Thu Nov 23 15:47:07.639 2017] [29450] query log reopened
+[Thu Nov 23 15:47:07.712 2017] [29450] caught SIGHUP (seamless=1, in_rotate=0, need_rotate=0)
+------- FATAL: CRASH DUMP -------
+[Thu Nov 23 15:47:07.712 2017] [29450]
+
+--- crashed SphinxQL request dump ---
+SELECT id FROM blogsreaderhour_no_timeout WHERE MATCH('(@(title,body) (#FedExContest 
+| #FRC001 | #FRC002 | #FRC003 | #FRC004 | #FRC005 | #FRC006 | #FRC007 | #FRC008 | 
+#FRC009 | #FRC010 | #FRC011 | #FRC012 | #FRC013 | #FRC014 | #FRC015 | #FRC016 | #FRC017 
+| #FRC018 | #FRC019 | #FRC020 | #FRC021 | #FRC022 | #FRC023 | #FRC024 | #FRC025 | 
+#FRC026 | #FRC027 | #FRC028 | #FRC029 | #FRC030 | #FRC031 | #FRC032 | #FRC033 | #FRC034 
+| #FRC035 | #FRC036 | #FRC037 | #FRC038 | #FRC039 | #FRC040 | #FRC041 | #FRC042 | 
+#FRC043 | #FRC044 | #FRC045 | #FRC046 | #FRC047 | #FRC048 | #FRC049 | #FRC050 | #FRC051 
+| #FRC052 | #FRC053 | #FRC054 | #FRC055 | #FRC056 | #FRC057 | #FRC058 | #FRC059 | 
+#FRC060 | #FRC061 | #FRC062 | #FRC063 | #FRC064 | #FRC065 | #FRC066 | #FRC067 | #FRC068 
+| #FRC069 | #FRC070 | #FRC071 | #FRC072 | #FRC073 | #FRC074 | #FRC075 | #FRC076 | 
+#FRC077 | #FRC078 | #FRC079 | #FRC080 | #FRC081 | #FRC082 | #FRC083 | #FRC084 | #FRC085 
+| #FRC086 | #FRC087 | #FRC088 | #FRC089 | #FRC090 | #FRC091 | #FRC092 | #FRC093 | 
+#FRC094 | #FRC095 | #FRC096 | #FRC097 | #FRC098 | #FRC099 | #FRC100 | #FRC101 | #FRC102 
+| #FRC103 | #FRC104 | #FRC105 | #FRC106 | #FRC107 | #FRC108 | #FRC109 | #FRC110 | 
+#FRC111 | #FRC112 | #FRC113 | #FRC114 | #FRC115 | #FRC116 | #FRC117 | #FRC118 | #FRC119 
+| #FRC120 | #FRC121 | #FRC122 | #FRC123 | #FRC124 | #FRC125 | #FRC126 | #FRC127 | 
+#FRC128 | #FRC129 | #FRC130 | #FRC131 | #FRC132 | #FRC133 | #FRC134 | #FRC135 | #FRC136 
+| #FRC137 | #FRC138 | #FRC139 | #FRC140 | #FRC141 | #FRC142 | #FRC143 | #FRC144 | 
+#FRC145 | #FRC146 | #FRC147 | #FRC148 | #FRC149 | #FRC150 | #FRC151 | #FRC152 | #FRC153 
+| #FRC154 | #FRC155 | #FRC156 | #FRC157 | #FRC158 | #FRC159 | #FRC160 | #FRC161 | 
+#FRC162 | #FRC163 | #FRC164 | #FRC165 | #FRC166 | #FRC167 | #FRC168 | #FRC169 | #FRC170 
+| #FRC171 | #FRC172 | #FRC173 | #FRC174 | #FRC175 | #FRC176 | #FRC177 | #FRC178 | 
+#FRC179 | #FRC180 | #FRC181 | #FRC182 | #FRC183 | #FRC184 | #FRC185 | #FRC186 | #FRC187 
+| #FRC188 | #FRC189 | #FRC190 | #FRC191 | #FRC192 | #FRC193 | #FRC194 | #FRC195 | 
+#FRC196 | #FRC197 | #FRC198 | #FRC199 | #FRC200 | #FRC201 | #FRC202 | #FRC203 | #FRC204 
+| #FRC205 | #FRC206 | #FRC207 | #FRC208 | #FRC209 | #FRC210 | #FRC211 | #FRC212 | 
+#FRC213 | #FRC214 | #FRC215 | #FRC216 | #FRC217 | #FRC218 | #FRC219 | #FRC220 | #FRC221 
+| #FRC222 | #FRC223 | #FRC224 | #FRC225 | #FRC226 | #FRC227 | #FRC228 | #FRC229 | 
+#FRC230 | #FRC231 | #FRC232 | #FRC233 | #FRC234 | #FRC235 | #FRC236 | #FRC237 | #FRC238 
+| #FRC239 | #FRC240 | #FRC241 | #FRC242 | #FRC243 | #FRC244 | #FRC245 | #FRC246 | 
+#FRC247 | #FRC248 | #FRC249 | #FRC250 | #FRC251 | #FRC252 | #FRC253 | #FRC254 | #FRC255 
+| #FRC256 | #FRC257 | #FRC258 | #FRC259 | #FRC260 | #FRC261 | #FRC262 | #FRC263 | 
+#FRC264 | #FRC265 | #FRC266 | #FRC267 | #FRC268 | #FRC269 | #FRC270 | #FRC271 | #FRC272 
+| #FRC273 | #FRC274 | #FRC275 | #FRC276 | #FRC277 | #FRC278 | #FRC279 | #FRC280 | 
+#FRC281 | #FRC282 | #FRC283 | #FRC284 | #FRC285 | #FRC286 | #FRC287 | #FRC288 | #FRC289 
+| #FRC290 | #FRC291 | #FRC292 | #FRC293 | #FRC294 | #FRC295 | #FRC296 | #FRC297 | 
+#FRC298 | #FRC299 | #FRC300 | #FRC301 | #FRC302 | #FRC303 | #FRC304 | #FRC305 | #FRC306 
+| #FRC307 | #FRC308 | #FRC309 | #FRC310 | #FRC311 | #FRC312 | #FRC313 | #FRC314 | 
+#FRC315 | #FRC316 | #FRC317 | #FRC318 | #FRC319 | #FRC320 | #FRC321 | #FRC322 | #FRC323 
+| #FRC324 | #FRC325 | #FRC326 | #FRC327 | #FRC328 | #FRC329 | #FRC330 | #FRC331 | 
+#FRC332 | #FRC333 | #FRC334 | #FRC335 | #FRC336 | #FRC337 | #FRC338 | #FRC339 | #FRC340 
+| #FRC341 | #FRC342 | #FRC343 | #FRC344 | #FRC345 | #FRC346 | #FRC347 | #FRC348 | 
+#FRC349 | #FRC350 | #FRC351 | #FRC352 | #FRC353 | #FRC354 | #FRC355 | #FRC356 | #FRC357 
+| #FRC358 | #FRC359 | #FRC360 | #FRC361 | #FRC362 | #FRC363 | #FRC364 | #FRC365 | 
+#FRC366 | #FRC367 | #FRC368 | #FRC369 | #FRC370 | #FRC371 | #FRC372 | #FRC373 | #FRC374 
+| #FRC375 | #FRC376 | #FRC377 | #FRC378 | #FRC379 | #FRC380 | #FRC381 | #FRC382 | 
+#FRC383 | #FRC384 | #FRC385 | #FRC386 | #FRC387 | #FRC388 | #FRC389 | #FRC390 | #FRC391 
+| #FRC392 | #FRC393 | #FRC394 | #FRC395 | #FRC396 | #FRC397 | #FRC398 | #FRC399 | #FRC400 | #FRC401 | #FRC402 | #FRC403 | #FRC404 | #FRC405 
+| #FRC406 | #FRC407 | #FRC408 | #FRC409 | #FRC410 | #FRC411 | #FRC412 | #FRC413 | 
+#FRC414 | #FRC415 | #FRC416 | #FRC417 | #FRC418 | #FRC419 | #FRC420 | #FRC421 | #FRC422 
+| #FRC423 | #FRC424 | #FRC425 | #FRC426 | #FRC427 | #FRC428 | #FRC429 | #FRC430 | 
+#FRC431 | #FRC432 | #FRC433 | #FRC434 | #FRC435 | #FRC436 | #FRC437 | #FRC438 | #FRC439 
+| #FRC440 | #FRC441 | #FRC442 | #FRC443 | #FRC444 | #FRC445 | #FRC446 | #FRC447 | 
+#FRC448 | #FRC449 | #FRC450 | #FRC451 | #FRC452 | #FRC453 | #FRC454 | #FRC455 | #FRC456 
+| #FRC457 | #FRC458 | #FRC459 | #FRC460 | #FRC461 | #FRC462 | #FRC463 | #FRC464 | 
+#FRC465 | #FRC466 | #FRC467 | #FRC468 | #FRC469 | #FRC470 | #FRC471 | #FRC472 | #FRC473 
+| #FRC474 | #FRC475 | #FRC476 | #FRC477 | #FRC478 | #FRC479 | #FRC480 | #FRC481 | 
+#FRC482 | #FRC483 | #FRC484 | #FRC485 | #FRC486 | #FRC487 | #FRC488 | #FRC489 | #FRC490 
+| #FRC491 | #FRC492 | #FRC493 | #FRC494 | #FRC495 | #FRC496 | #FRC497 | #FRC498 | 
+#FRC499 | #FRC500 | #FRC501 | #FRC502 | #FRC503 | #FRC504 | #FRC505 | #FRC506 | #FRC507 
+| #FRC508 | #FRC509 | #FRC510 | #FRC511 | #FRC512 | #FRC513 | #FRC514 | #FRC515 | 
+#FRC516 | #FRC517 | #FRC518 | #FRC519 | #FRC520 | #FRC521 | #FRC522 | #FRC523 | #FRC524 
+| #FRC525 | #FRC526 | #FRC527 | #FRC528 | #FRC529 | #FRC530 | #FRC531 | #FRC532 | 
+#FRC533 | #FRC534 | #FRC535 | #FRC536 | #FRC537 | #FRC538 | #FRC539 | #FRC540 | #FRC541 
+| #FRC542 | #FRC543 | #FRC544 | #FRC545 | #FRC546 | #FRC547 | #FRC548 | #FRC549 | 
+#FRC550 | #FRC551 | #FRC552 | #FRC553 | #FRC554 | #FRC555 | #FRC556 | #FRC557 | #FRC558 
+| #FRC559 | #FRC560 | #FRC561 | #FRC562 | #FRC563 | #FRC564 | #FRC565 | #FRC566 | 
+#FRC567 | #FRC568 | #FRC569 | #FRC570 | #FRC571 | #FRC572 | #FRC573 | #FRC574 | #FRC575 
+| #FRC576 | #FRC577 | #FRC578 | #FRC579 | #FRC580 | #FRC581 | #FRC582 | #FRC583 | 
+#FRC584 | #FRC585 | #FRC586 | #FRC587 | #FRC588 | #FRC589 | #FRC590 | #FRC591 | #FRC592 
+| #FRC593 | #FRC594 | #FRC595 | #FRC596 | #FRC597 | #FRC598 | #FRC599 | #FRC600 | 
+#FRC601 | #FRC602 | #FRC603 | #FRC604 | #FRC605 | #FRC606 | #FRC607 | #FRC608 | #FRC609 
+| #FRC610 | #FRC611 | #FRC612 | #FRC613 | #FRC614 | #FRC615 | #FRC616 | #FRC617 | 
+#FRC618 | #FRC619 | #FRC620 | #FRC621 | #FRC622 | #FRC623 | #FRC624 | #FRC625 | #FRC626 
+| #FRC627 | #FRC628 | #FRC629 | #FRC630 | #FRC631 | #FRC632 | #FRC633 | #FRC634 | 
+#FRC635 | #FRC636 | #FRC637 | #FRC638 | #FRC639 | #FRC640 | #FRC641 | #FRC642 | #FRC643 
+| #FRC644 | #FRC645 | #FRC646 | #FRC647 | #FRC648 | #FRC649 | #FRC650 | #FRC651 | 
+#FRC652 | #FRC653 | #FRC654 | #FRC655 | #FRC656 | #FRC657 | #FRC658 | #FRC659 | #FRC660 
+| #FRC661 | #FRC662 | #FRC663 | #FRC664 | #FRC665 | #FRC666 | #FRC667 | #FRC668 | 
+#FRC669 | #FRC670 | #FRC671 | #FRC672 | #FRC673 | #FRC674 | #FRC675 | #FRC676 | #FRC677 
+| #FRC678 | #FRC679 | #FRC680 | #FRC681 | #FRC682 | #FRC683 | #FRC684 | #FRC685 | 
+#FRC686 | #FRC687 | #FRC688 | #FRC689 | #FRC690 | #FRC691 | #FRC692 | #FRC693 | #FRC694 
+| #FRC695 | #FRC696 | #FRC697 | #FRC698 | #FRC699 | #FRC700 | #FRC701 | #FRC702 | 
+#FRC703 | #FRC704 | #FRC705 | #FRC706 | #FRC707 | #FRC708 | #FRC709 | #FRC710 | #FRC711 
+| #FRC712 | #FRC713 | #FRC714 | #FRC715 | #FRC716 | #FRC717 | #FRC718 | #FRC719 | 
+#FRC720 | #FRC721 | #FRC722 | #FRC723 | #FRC724 | #FRC725 | #FRC726 | #FRC727 | #FRC728 
+| #FRC729 | #FRC730 | #FRC731 | #FRC732 | #FRC733 | #FRC734 | #FRC735 | #FRC736 | 
+#FRC737 | #FRC738 | #FRC739 | #FRC740 | #FRC741 | #FRC742 | #FRC743 | #FRC744 | #FRC745 
+| #FRC746 | #FRC747 | #FRC748 | #FRC749 | #FRC750 | #FRC751 | #FRC752 | #FRC753 | 
+#FRC754 | #FRC755 | #FRC756 | #FRC757 | #FRC758 | #FRC759 | #FRC760 | #FRC761 | #FRC762 
+| #FRC763 | #FRC764 | #FRC765 | #FRC766 | #FRC767 | #FRC768 | #FRC769 | #FRC770 | 
+#FRC771 | #FRC772 | #FRC773 | #FRC774 | #FRC775 | #FRC776 | #FRC777 | #FRC778 | #FRC779 
+| #FRC780 | #FRC781 | #FRC782 | #FRC783 | #FRC784 | #FRC785 | #FRC786 | #FRC787 | 
+#FRC788 | #FRC789 | #FRC790 | #FRC791 | #FRC792 | #FRC793 | #FRC794 | #FRC795 | #FRC796 
+| #FRC797 | #FRC798 | #FRC799 | #FRC800 | #FRC801 | #FRC802 | #FRC803 | #FRC804 | #FRC805 | #FRC806 | #FRC807 | #FRC808 | #FRC809 | #FRC810 
+| #FRC811 | #FRC812 | #FRC813 | #FRC814 | #FRC815 | #FRC816 | #FRC817 | #FRC818 | 
+#FRC819 | #FRC820 | #FRC821 | #FRC822 | #FRC823 | #FRC824 | #FRC825 | #FRC826 | #FRC827 
+| #FRC828 | #FRC829 | #FRC830 | #FRC831 | #FRC832 | #FRC833 | #FRC834 | #FRC835 | 
+#FRC836 | #FRC837 | #FRC838 | #FRC839 | #FRC840 | #FRC841 | #FRC842 | #FRC843 | #FRC844 
+| #FRC845 | #FRC846 | #FRC847 | #FRC848 | #FRC849 | #FRC850 | #FRC851 | #FRC852 | 
+#FRC853 | #FRC854 | #FRC855 | #FRC856 | #FRC857 | #FRC858 | #FRC859 | #FRC860 | #FRC861 
+| #FRC862 | #FRC863 | #FRC864 | #FRC865 | #FRC866 | #FRC867 | #FRC868 | #FRC869 | 
+#FRC870 | #FRC871 | #FRC872 | #FRC873 | #FRC874 | #FRC875 | #FRC876 | #FRC877 | #FRC878 
+| #FRC879 | #FRC880 | #FRC881 | #FRC882 | #FRC883 | #FRC884 | #FRC885 | #FRC886 | 
+#FRC887 | #FRC888 | #FRC889 | #FRC890 | #FRC891 | #FRC892 | #FRC893 | #FRC894 | #FRC895 
+| #FRC896 | #FRC897 | #FRC898 | #FRC899 | #FRC900 | #FRC901 | #FRC902 | #FRC903 | 
+#FRC904 | #FRC905 | #FRC906 | #FRC907 | #FRC908 | #FRC909 | #FRC910 | #FRC911 | #FRC912 
+| #FRC913 | #FRC914 | #FRC915 | #FRC916 | #FRC917 | #FRC918 | #FRC919 | #FRC920 | 
+#FRC921 | #FRC922 | #FRC923 | #FRC924 | #FRC925 | #FRC926 | #FRC927 | #FRC928 | #FRC929 
+| #FRC930 | #FRC931 | #FRC932 | #FRC933 | #FRC934 | #FRC935 | #FRC936 | #FRC937 | 
+#FRC938 | #FRC939 | #FRC940 | #FRC941 | #FRC942 | #FRC943 | #FRC944 | #FRC945 | #FRC946 
+| #FRC947 | #FRC948 | #FRC949 | #FRC950 | #FRC951 | #FRC952 | #FRC953 | #FRC954 | 
+#FRC955 | #FRC956 | #FRC957 | #FRC958 | #FRC959 | #FRC960 | #FRC961 | #FRC962 | #FRC963 
+| #FRC964 | #FRC965 | #FRC966 | #FRC967 | #FRC968 | #FRC969 | #FRC970 | #FRC971 | 
+#FRC972 | #FRC973 | #FRC974 | #FRC975 | #FRC976 | #FRC977 | #FRC978 | #FRC979 | #FRC980 
+| #FRC981 | #FRC982 | #FRC983 | #FRC984 | #FRC985 | #FRC986 | #FRC987 | #FRC988 | 
+#FRC989 | #FRC990 | #FRC991 | #FRC992 | #FRC993 | #FRC994 | #FRC995 | #FRC996 | #FRC997 
+| #FRC998 | #FRC999 | #FRC1000 | #FRC1001 | #FRC1002 | #FRC1003 | #FRC1004 | #FRC1005 
+| #FRC1006 | #FRC1007 | #FRC1008 | #FRC1009 | #FRC1010 | #FRC1011 | #FRC1012 | #FRC1013 
+| #FRC1014 | #FRC1015 | #FRC1016 | #FRC1017 | #FRC1018 | #FRC1019 | #FRC1020 | #FRC1021 
+| #FRC1022 | #FRC1023 | #FRC1024 | #FRC1025 | #FRC1026 | #FRC1027 | #FRC1028 | #FRC1029 
+| #FRC1030 | #FRC1031 | #FRC1032 | #FRC1033 | #FRC1034 | #FRC1035 | #FRC1036 | #FRC1037 
+| #FRC1038 | #FRC1039 | #FRC1040 | #FRC1041 | #FRC1042 | #FRC1043 | #FRC1044 | #FRC1045 
+| #FRC1046 | #FRC1047 | #FRC1048 | #FRC1049 | #FRC1050 | #FRC1051 | #FRC1052 | #FRC1053 
+| #FRC1054 | #FRC1055 | #FRC1056 | #FRC1057 | #FRC1058 | #FRC1059 | #FRC1060 | #FRC1061 
+| #FRC1062 | #FRC1063 | #FRC1064 | #FRC1065 | #FRC1066 | #FRC1067 | #FRC1068 | #FRC1069 
+| #FRC1070 | #FRC1071 | #FRC1072 | #FRC1073 | #FRC1074 | #FRC1075 | #FRC1076 | #FRC1077 
+| #FRC1078 | #FRC1079 | #FRC1080 | #FRC1081 | #FRC1082 | #FRC1083 | #FRC1084 | #FRC1085 
+| #FRC1086 | #FRC1087 | #FRC1088 | #FRC1089 | #FRC1090 | #FRC1091 | #FRC1092 | #FRC1093 
+| #FRC1094 | #FRC1095 | #FRC1096 | #FRC1097 | #FRC1098 | #FRC1099 | #FRC1100 | #FRC1101 
+| #FRC1102 | #FRC1103 | #FRC1104 | #FRC1105 | #FRC1106 | #FRC1107 | #FRC1108 | #FRC1109 
+| #FRC1110 | #FRC1111 | #FRC1112 | #FRC1113 | #FRC1114 | #FRC1115 | #FRC1116 | #FRC1117 
+| #FRC1118 | #FRC1119 | #FRC1120 | #FRC1121 | #FRC1122 | #FRC1123 | #FRC1124 | #FRC1125 
+| #FRC1126 | #FRC1127 | #FRC1128 | #FRC1129 | #FRC1130 | #FRC1131 | #FRC1132 | #FRC1133 
+| #FRC1134 | #FRC1135 | #FRC1136 | #FRC1137 | #FRC1138 | #FRC1139 | #FRC1140 | #FRC1141 
+| #FRC1142 | #FRC1143 | #FRC1144 | #FRC1145 | #FRC1146 | #FRC1147 | #FRC1148 | #FRC1149 
+| #FRC1150 | #FRC1151 | #FRC1152 | #FRC1153 | #FRC1154 | #FRC1155 | #FRC1156 | #FRC1157 
+| #FRC1158 | #FRC1159 | #FRC1160 | #FRC1161 | #FRC1162 | #FRC1163 | #FRC1164 | #FRC1165 
+| #FRC1166 | #FRC1167 | #FRC1168 | #FRC1169 | #FRC1170 | #FRC1171 | #FRC1172 | #FRC1173 
+| #FRC1174 | #FRC1175 | #FRC1176 | #FRC1177 | #FRC1178 | #FRC1179 | #FRC1180 | #FRC1181 
+| #FRC1182 | #FRC1183 | #FRC1184 | #FRC1185 | #FRC1186 | #FRC1187 | #FRC1188 | #FRC1189 | #FRC1190 | #FRC1191 | #FRC1192 | #FRC1193 | #FRC1194 | #FRC1195 
+| #FRC1196 | #FRC1197 | #FRC1198 | #FRC1199 | #FRC1200 | #FRC1201 | #FRC1202 | #FRC1203 
+| #FRC1204 | #FRC1205 | #FRC1206 | #FRC1207 | #FRC1208 | #FRC1209 | #FRC1210 | #FRC1211 
+| #FRC1212 | #FRC1213 | #FRC1214 | #FRC1215 | #FRC1216 | #FRC1217 | #FRC1218 | #FRC1219 
+| #FRC1220 | #FRC1221 | #FRC1222 | #FRC1223 | #FRC1224 | #FRC1225 | #FRC1226 | #FRC1227 
+| #FRC1228 | #FRC1229 | #FRC1230 | #FRC1231 | #FRC1232 | #FRC1233 | #FRC1234 | #FRC1235 
+| #FRC1236 | #FRC1237 | #FRC1238 | #FRC1239 | #FRC1240 | #FRC1241 | #FRC1242 | #FRC1243 
+| #FRC1244 | #FRC1245 | #FRC1246 | #FRC1247 | #FRC1248 | #FRC1249 | #FRC1250 | #FRC1251 
+| #FRC1252 | #FRC1253 | #FRC1254 | #FRC1255 | #FRC1256 | #FRC1257 | #FRC1258 | #FRC1259 
+| #FRC1260 | #FRC1261 | #FRC1262 | #FRC1263 | #FRC1264 | #FRC1265 | #FRC1266 | #FRC1267 
+| #FRC1268 | #FRC1269 | #FRC1270 | #FRC1271 | #FRC1272 | #FRC1273 | #FRC1274 | #FRC1275 
+| #FRC1276 | #FRC1277 | #FRC1278 | #FRC1279 | #FRC1280 | #FRC1281 | #FRC1282 | #FRC1283 
+| #FRC1284 | #FRC1285 | #FRC1286 | #FRC1287 | #FRC1288 | #FRC1289 | #FRC1290 | #FRC1291 
+| #FRC1292 | #FRC1293 | #FRC1294 | #FRC1295 | #FRC1296 | #FRC1297 | #FRC1298 | #FRC1299 
+| #FRC1300 | #FRC1301 | #FRC1302 | #FRC1303 | #FRC1304 | #FRC1305 | #FRC1306 | #FRC1307 
+| #FRC1308 | #FRC1309 | #FRC1310 | #FRC1311 | #FRC1312 | #FRC1313 | #FRC1314 | #FRC1315 
+| #FRC1316 | #FRC1317 | #FRC1318 | #FRC1319 | #FRC1320 | #FRC1321 | #FRC1322 | #FRC1323 
+| #FRC1324 | #FRC1325 | #FRC1326 | #FRC1327 | #FRC1328 | #FRC1329 | #FRC1330 | #FRC1331 
+| #FRC1332 | #FRC1333 | #FRC1334 | #FRC1335 | #FRC1336 | #FRC1337 | #FRC1338 | #FRC1339 
+| #FRC1340 | #FRC1341 | #FRC1342 | #FRC1343 | #FRC1344 | #FRC1345 | #FRC1346 | #FRC1347 
+| #FRC1348 | #FRC1349 | #FRC1350 | #FRC1351 | #FRC1352 | #FRC1353 | #FRC1354 | #FRC1355 
+| #FRC1356 | #FRC1357 | #FRC1358 | #FRC1359 | #FRC1360 | #FRC1361 | #FRC1362 | #FRC1363 
+| #FRC1364 | #FRC1365 | #FRC1366 | #FRC1367 | #FRC1368 | #FRC1369 | #FRC1370 | #FRC1371 
+| #FRC1372 | #FRC1373 | #FRC1374 | #FRC1375 | #FRC1376 | #FRC1377 | #FRC1378 | #FRC1379 
+| #FRC1380 | #FRC1381 | #FRC1382 | #FRC1383 | #FRC1384 | #FRC1385 | #FRC1386 | #FRC1387 
+| #FRC1388 | #FRC1389 | #FRC1390 | #FRC1391 | #FRC1392 | #FRC1393 | #FRC1394 | #FRC1395 
+| #FRC1396 | #FRC1397 | #FRC1398 | #FRC1399 | #FRC1400 | #FRC1401 | #FRC1402 | #FRC1403 
+| #FRC1404 | #FRC1405 | #FRC1406 | #FRC1407 | #FRC1408 | #FRC1409 | #FRC1410 | #FRC1411 
+| #FRC1412 | #FRC1413 | #FRC1414 | #FRC1415 | #FRC1416 | #FRC1417 | #FRC1418 | #FRC1419 
+| #FRC1420 | #FRC1421 | #FRC1422 | #FRC1423 | #FRC1424 | #FRC1425 | #FRC1426 | #FRC1427 
+| #FRC1428 | #FRC1429 | #FRC1430 | #FRC1431 | #FRC1432 | #FRC1433 | #FRC1434 | #FRC1435 
+| #FRC1436 | #FRC1437 | #FRC1438 | #FRC1439 | #FRC1440 | #FRC1441 | #FRC1442 | #FRC1443 
+| #FRC1444 | #FRC1445 | #FRC1446 | #FRC1447 | #FRC1448 | #FRC1449 | #FRC1450 | #FRC1451 
+| #FRC1452 | #FRC1453 | #FRC1454 | #FRC1455 | #FRC1456 | #FRC1457 | #FRC1458 | #FRC1459 
+| #FRC1460 | #FRC1461 | #FRC1462 | #FRC1463 | #FRC1464 | #FRC1465 | #FRC1466 | #FRC1467 
+| #FRC1468 | #FRC1469 | #FRC1470 | #FRC1471 | #FRC1472 | #FRC1473 | #FRC1474 | #FRC1475 
+| #FRC1476 | #FRC1477 | #FRC1478 | #FRC1479 | #FRC1480 | #FRC1481 | #FRC1482 | #FRC1483 
+| #FRC1484 | #FRC1485 | #FRC1486 | #FRC1487 | #FRC1488 | #FRC1489 | #FRC1490 | #FRC1491 
+| #FRC1492 | #FRC1493 | #FRC1494 | #FRC1495 | #FRC1496 | #FRC1497 | #FRC1498 | #FRC1499 
+| #FRC1500 | #FRC1501 | #FRC1502 | #FRC1503 | #FRC1504 | #FRC1505 | #FRC1506 | #FRC1507 
+| #FRC1508 | #FRC1509 | #FRC1510 | #FRC1511 | #FRC1512 | #FRC1513 | #FRC1514 | #FRC1515 
+| #FRC1516 | #FRC1517 | #FRC1518 | #FRC1519 | #FRC1520 | #FRC1521 | #FRC1522 | #FRC1523 
+| #FRC1524 | #FRC1525 | #FRC1526 | #FRC1527 | #FRC1528 | #FRC1529 | #FRC1530 | #FRC1531 
+| #FRC1532 | #FRC1533 | #FRC1534 | #FRC1535 | #FRC1536 | #FRC1537 | #FRC1538 | #FRC1539 
+| #FRC1540 | #FRC1541 | #FRC1542 | #FRC1543 | #FRC1544 | #FRC1545 | #FRC1546 | #FRC1547 
+| #FRC1548 | #FRC1549 | #FRC1550 | #FRC1551 | #FRC1552 | #FRC1553 | #FRC1554 | #FRC1555 
+| #FRC1556 | #FRC1557 | #FRC1558 | #FRC1559 | #FRC1560 | #FRC1561 | #FRC1562 | #FRC1563 | 
+#FRC1564 | #FRC1565 | #FRC1566 | #FRC1567 | #FRC1568 | #FRC1569 | #FRC1570 | #FRC1571 
+| #FRC1572 | #FRC1573 | #FRC1574 | #FRC1575 | #FRC1576 | #FRC1577 | #FRC1578 | #FRC1579 
+| #FRC1580 | #FRC1581 | #FRC1582 | #FRC1583 | #FRC1584 | #FRC1585 | #FRC1586 | #FRC1587 
+| #FRC1588 | #FRC1589 | #FRC1590 | #FRC1591 | #FRC1592 | #FRC1593 | #FRC1594 | #FRC1595 
+| #FRC1596 | #FRC1597 | #FRC1598 | #FRC1599 | #FRC1600 | #FRC1601 | #FRC1602 | #FRC1603 
+| #FRC1604 | #FRC1605 | #FRC1606 | #FRC1607 | #FRC1608 | #FRC1609 | #FRC1610 | #FRC1611 
+| #FRC1612 | #FRC1613 | #FRC1614 | #FRC1615 | #FRC1616 | #FRC1617 | #FRC1618 | #FRC1619 
+| #FRC1620 | #FRC1621 | #FRC1622 | #FRC1623 | #FRC1624 | #FRC1625 | #FRC1626 | #FRC1627 
+| #FRC1628 | #FRC1629 | #FRC1630 | #FRC1631 | #FRC1632 | #FRC1633 | #FRC1634 | #FRC1635 
+| #FRC1636 | #FRC1637 | #FRC1638 | #FRC1639 | #FRC1640 | #FRC1641 | #FRC1642 | #FRC1643 
+| #FRC1644 | #FRC1645 | #FRC1646 | #FRC1647 | #FRC1648 | #FRC1649 | #FRC1650 | #FRC1651 
+| #FRC1652 | #FRC1653 | #FRC1654 | #FRC1655 | #FRC1656 | #FRC1657 | #FRC1658 | #FRC1659 
+| #FRC1660 | #FRC1661 | #FRC1662 | #FRC1663 | #FRC1664 | #FRC1665 | #FRC1666 | #FRC1667 
+| #FRC1668 | #FRC1669 | #FRC1670 | #FRC1671 | #FRC1672 | #FRC1673 | #FRC1674 | #FRC1675 
+| #FRC1676 | #FRC1677 | #FRC1678 | #FRC1679 | #FRC1680 | #FRC1681 | #FRC1682 | #FRC1683 
+| #FRC1684 | #FRC1685 | #FRC1686 | #FRC1687 | #FRC1688 | #FRC1689 | #FRC1690 | #FRC1691 
+| #FRC1692 | #FRC1693 | #FRC1694 | #FRC1695 | #FRC1696 | #FRC1697 | #FRC1698 | #FRC1699 
+| #FRC1700 | #FRC1701 | #FRC1702 | #FRC1703 | #FRC1704 | #FRC1705 | #FRC1706 | #FRC1707 
+| #FRC1708 | #FRC1709 | #FRC1710 | #FRC1711 | #FRC1712 | #FRC1713 | #FRC1714 | #FRC1715 
+| #FRC1716 | #FRC1717 | #FRC1718 | #FRC1719 | #FRC1720 | #FRC1721 | #FRC1722 | #FRC1723 
+| #FRC1724 | #FRC1725 | #FRC1726 | #FRC1727 | #FRC1728 | #FRC1729 | #FRC1730 | #FRC1731 
+| #FRC1732 | #FRC1733 | #FRC1734 | #FRC1735 | #FRC1736 | #FRC1737 | #FRC1738 | #FRC1739 
+| #FRC1740 | #FRC1741 | #FRC1742 | #FRC1743 | #FRC1744 | #FRC1745 | #FRC1746 | #FRC1747 
+| #FRC1748 | #FRC1749 | #FRC1750 | #FRC1751 | #FRC1752 | #FRC1753 | #FRC1754 | #FRC1755 
+| #FRC1756 | #FRC1757 | #FRC1758 | #FRC1759 | #FRC1760 | #FRC1761 | #FRC1762 | #FRC1763 
+| #FRC1764 | #FRC1765 | #FRC1766 | #FRC1767 | #FRC1768 | #FRC1769 | #FRC1770 | #FRC1771 
+| #FRC1772 | #FRC1773 | #FRC1774 | #FRC1775 | #FRC1776 | #FRC1777 | #FRC1778 | #FRC1779 
+| #FRC1780 | #FRC1781 | #FRC1782 | #FRC1783 | #FRC1784 | #FRC1785 | #FRC1786 | #FRC1787 
+| #FRC1788 | #FRC1789 | #FRC1790 | #FRC1791 | #FRC1792 | #FRC1793 | #FRC1794 | #FRC1795 
+| #FRC1796 | #FRC1797 | #FRC1798 | #FRC1799 | #FRC1800 | #FRC1801 | #FRC1802 | #FRC1803 
+| #FRC1804 | #FRC1805 | #FRC1806 | #FRC1807 | #FRC1808 | #FRC1809 | #FRC1810 | #FRC1811 
+| #FRC1812 | #FRC1813 | #FRC1814 | #FRC1815 | #FRC1816 | #FRC1817 | #FRC1818 | #FRC1819 
+| #FRC1820 | #FRC1821 | #FRC1822 | #FRC1823 | #FRC1824 | #FRC1825 | #FRC1826 | #FRC1827 
+| #FRC1828 | #FRC1829 | #FRC1830 | #FRC1831 | #FRC1832 | #FRC1833 | #FRC1834 | #FRC1835 
+| #FRC1836 | #FRC1837 | #FRC1838 | #FRC1839 | #FRC1840 | #FRC1841 | #FRC1842 | #FRC1843 
+| #FRC1844 | #FRC1845 | #FRC1846 | #FRC1847 | #FRC1848 | #FRC1849 | #FRC1850 | #FRC1851 
+| #FRC1852 | #FRC1853 | #FRC1854 | #FRC1855 | #FRC1856 | #FRC1857 | #FRC1858 | #FRC1859 
+| #FRC1860 | #FRC1861 | #FRC1862 | #FRC1863 | #FRC1864 | #FRC1865 | #FRC1866 | #FRC1867 
+| #FRC1868 | #FRC1869 | #FRC1870 | #FRC1871 | #FRC1872 | #FRC1873 | #FRC1874 | #FRC1875 
+| #FRC1876 | #FRC1877 | #FRC1878 | #FRC1879 | #FRC1880 | #FRC1881 | #FRC1882 | #FRC1883 
+| #FRC1884 | #FRC1885 | #FRC1886 | #FRC1887 | #FRC1888 | #FRC1889 | #FRC1890 | #FRC1891 
+| #FRC1892 | #FRC1893 | #FRC1894 | #FRC1895 | #FRC1896 | #FRC1897 | #FRC1898 | #FRC1899 
+| #FRC1900 | #FRC1901 | #FRC1902 | #FRC1903 | #FRC1904 | #FRC1905 | #FRC1906 | #FRC1907 
+| #FRC1908 | #FRC1909 | #FRC1910 | #FRC1911 | #FRC1912 | #FRC1913 | #FRC1914 | #FRC1915 
+| #FRC1916 | #FRC1917 | #FRC1918 | #FRC1919 | #FRC1920 | #FRC1921 | #FRC1922 | #FRC1923 
+| #FRC1924 | #FRC1925 | #FRC1926 | #FRC1927 | #FRC1928 | #FRC1929 | #FRC1930 | #FRC1931 | #FRC1932 
+| #FRC1933 | #FRC1934 | #FRC1935 | #FRC1936 | #FRC1937 | #FRC1938 | #FRC1939 | #FRC1940 
+| #FRC1941 | #FRC1942 | #FRC1943 | #FRC1944 | #FRC1945 | #FRC1946 | #FRC1947 | #FRC1948 
+| #FRC1949 | #FRC1950 | #FRC1951 | #FRC1952 | #FRC1953 | #FRC1954 | #FRC1955 | #FRC1956 
+| #FRC1957 | #FRC1958 | #FRC1959 | #FRC1960 | #FRC1961 | #FRC1962 | #FRC1963 | #FRC1964 
+| #FRC1965 | #FRC1966 | #FRC1967 | #FRC1968 | #FRC1969 | #FRC1970 | #FRC1971))') AND 
+is_comment = 0  AND inserted > 1511451614  AND inserted <= 1511451854  AND ANY(content_provider_id) 
+IN(0, 1, 3, 165) AND mod_is IN(0, 1, 5) ORDER BY id ASC LIMIT 1000 OPTION  max_matches 
+= 1000  , comment = 'PQ app. API key: ec37148a19eebc1d4721abcdd70e2975' 
+--- request dump end ---
+Sphinx 2.4.1 989752b@171115 id64-dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.2
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDATADIR=/usr/var/data -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_RLP=1 -DWITH_ZLIB=ON -DSYSCONFDIR=/usr/etc/sphinx
+Host OS is Linux rpmbuild03.boardreader.com 2.6.32-042stab120.6 #1 SMP Thu Oct 27 16:59:03 MSK 2016 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7ff6a27dee7f, thread stack size = 0x300000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x1e)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x1e, stack=0x7ff6a27e0000, stacksize=0x300000)
+Trying system backtrace:
+begin of manual symbols:
+6491fa
+4cc48d
+7ff7058127e0
+53f6df
+50a5bb
+50cad9
+4eed46
+53a2c0
+515c4b
+5160f9
+516545
+4c477f
+65099f
+7ff70580aaa1
+7ff703f4f93d
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+--- BT to source lines (depth 15): ---
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/sphinxutils.cpp:2257
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:1885
+??:0
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchdha.cpp:1563
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:8677
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:7361
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:15172
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:17347
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:17841
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:17803
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:20583
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/searchd.cpp:1965
+/root/rpmbuild/BUILD/sphinx-release/sphinx-2.3.3/src/sphinxstd.cpp:675
+??:0
+??:0
+[Thu Nov 23 15:47:07.941 2017] [10404] watchdog: main process 29450 killed dirtily with signal 11, core dumped, will be restarted
+[Thu Nov 23 15:47:07.942 2017] [10404] watchdog: main process 31650 forked ok
+[Thu Nov 23 15:47:08.015 2017] [31650] Reloading the config
+[Thu Nov 23 15:47:08.093 2017] [31650] Reconfigure the daemon
+[Thu Nov 23 15:47:08.093 2017] [31650] listening on all interfaces, port=3318
+[Thu Nov 23 15:47:08.093 2017] [31650] listening on all interfaces, port=3319
+[Thu Nov 23 15:47:08.107 2017] [31650] WARNING: unable to init IO statistics
+[Thu Nov 23 15:47:08.107 2017] [31650] prereading 2 indexes
+[Thu Nov 23 15:47:08.107 2017] [31650] prereaded 2 indexes in 0.000 sec
+[Thu Nov 23 15:47:08.107 2017] [31650] accepting connections
