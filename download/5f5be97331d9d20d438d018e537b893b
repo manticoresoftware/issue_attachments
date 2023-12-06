@@ -1,0 +1,862 @@
+-- Logs begin at Fri 2022-03-04 02:53:27 EST, end at Wed 2022-04-13 07:11:49 EDT. --
+Mar 05 03:33:13 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 05 03:33:13 bdb.learn4good.com searchd[2808233]: [Sat Mar  5 03:33:13.670 2022] [2808233] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 05 03:33:13 bdb.learn4good.com searchd[2808233]: [Sat Mar  5 03:33:13.672 2022] [2808233] stop: successfully sent SIGTERM to pid 153912
+Mar 05 03:33:17 bdb.learn4good.com searchd[2808233]: Manticore 4.2.1 e16a5378c@220303 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 03:33:17 bdb.learn4good.com searchd[2808233]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 03:33:17 bdb.learn4good.com searchd[2808233]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 03:33:17 bdb.learn4good.com searchd[2808233]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 03:33:17 bdb.learn4good.com systemd[1]: manticore.service: Succeeded.
+Mar 05 03:33:17 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 05 03:33:36 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.381 2022] [2810649] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: config loaded, indexes 7, clusters 0
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: SetMaxChildrenThreads to 80
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810649]: [Sat Mar  5 03:33:36.383 2022] [2810649] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810653]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810653]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810653]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810653]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: StartGlobalWorkpool
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: starting daemon version '4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: listening on 127.0.0.1:9306 for mysql
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: listening on 10.10.10.7:9306 for mysql
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: listening on 127.0.0.1:9318 for VIP mysql
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: precaching index 'admin_search_employers_rt'
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: precaching index 'cvs'
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: precaching index 'geocities'
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 03:33:36 bdb.learn4good.com searchd[2810655]: precaching index 'jobs'
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: precaching index 'jobs_completions_custom'
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: precaching index 'postal_coords'
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: precaching index 'requirements'
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: RPL: 0 clusters loaded from config
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810655]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810649]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810649]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810649]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 03:33:39 bdb.learn4good.com searchd[2810649]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 03:33:39 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2810655 which is not our child. We'll most likely not notice when it exits.
+Mar 05 03:33:39 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 05 03:33:40 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2810655 which is not our child. We'll most likely not notice when it exits.
+Mar 05 11:12:07 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 05 11:12:07 bdb.learn4good.com searchd[510287]: [Sat Mar  5 11:12:07.830 2022] [510287] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 05 11:12:07 bdb.learn4good.com searchd[510287]: [Sat Mar  5 11:12:07.831 2022] [510287] stop: successfully sent SIGTERM to pid 2810655
+Mar 05 11:12:11 bdb.learn4good.com searchd[510287]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 11:12:11 bdb.learn4good.com searchd[510287]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 11:12:11 bdb.learn4good.com searchd[510287]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 11:12:11 bdb.learn4good.com searchd[510287]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 11:12:11 bdb.learn4good.com systemd[1]: manticore.service: Succeeded.
+Mar 05 11:12:11 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 05 11:12:20 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.248 2022] [511350] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: config loaded, indexes 7, clusters 0
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: SetMaxChildrenThreads to 80
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 05 11:12:20 bdb.learn4good.com searchd[511350]: [Sat Mar  5 11:12:20.249 2022] [511350] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 05 11:12:20 bdb.learn4good.com searchd[511366]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 11:12:20 bdb.learn4good.com searchd[511366]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 11:12:20 bdb.learn4good.com searchd[511366]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 11:12:20 bdb.learn4good.com searchd[511366]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: StartGlobalWorkpool
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: starting daemon version '4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: listening on 127.0.0.1:9306 for mysql
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: listening on 10.10.10.7:9306 for mysql
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: precaching index 'admin_search_employers_rt'
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: precaching index 'cvs'
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: precaching index 'geocities'
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 11:12:20 bdb.learn4good.com searchd[511368]: precaching index 'jobs'
+Mar 05 11:12:22 bdb.learn4good.com searchd[511368]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 11:12:22 bdb.learn4good.com searchd[511368]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 11:12:22 bdb.learn4good.com searchd[511368]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 11:12:22 bdb.learn4good.com searchd[511368]: precaching index 'jobs_completions_custom'
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: precaching index 'postal_coords'
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: precaching index 'requirements'
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: RPL: 0 clusters loaded from config
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 05 11:12:23 bdb.learn4good.com searchd[511368]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 05 11:12:23 bdb.learn4good.com searchd[511350]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 11:12:23 bdb.learn4good.com searchd[511350]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 11:12:23 bdb.learn4good.com searchd[511350]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 11:12:23 bdb.learn4good.com searchd[511350]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 11:12:23 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 511368 which is not our child. We'll most likely not notice when it exits.
+Mar 05 11:12:23 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 05 14:52:55 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 05 14:52:55 bdb.learn4good.com searchd[1441283]: [Sat Mar  5 14:52:55.645 2022] [1441283] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 05 14:52:55 bdb.learn4good.com searchd[1441283]: [Sat Mar  5 14:52:55.646 2022] [1441283] stop: successfully sent SIGTERM to pid 511368
+Mar 05 14:54:25 bdb.learn4good.com systemd[1]: manticore.service: Stopping timed out. Terminating.
+Mar 05 14:54:25 bdb.learn4good.com systemd[1]: manticore.service: Control process exited, code=killed, status=15/TERM
+Mar 05 14:55:56 bdb.learn4good.com systemd[1]: manticore.service: State 'stop-sigterm' timed out. Skipping SIGKILL.
+Mar 05 14:55:56 bdb.learn4good.com systemd[1]: manticore.service: Failed with result 'timeout'.
+Mar 05 14:55:56 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 05 15:01:08 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.513 2022] [1475566] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: SetMaxChildrenThreads to 80
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475566]: [Sat Mar  5 15:01:08.515 2022] [1475566] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475567]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475567]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475567]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475567]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475569]: DEBUG: StartGlobalWorkpool
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475569]: starting daemon version '4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475569]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475569]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475569]: listening on 127.0.0.1:9306 for mysql
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475569]: listening on 10.10.10.7:9306 for mysql
+Mar 05 15:01:08 bdb.learn4good.com searchd[1475569]: bind() failed on 10.10.10.7, retrying...
+Mar 05 15:01:11 bdb.learn4good.com searchd[1475569]: bind() failed on 10.10.10.7, retrying...
+Mar 05 15:01:14 bdb.learn4good.com searchd[1475569]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 05 15:01:14 bdb.learn4good.com searchd[1475569]: RPL: 0 clusters loaded from config
+Mar 05 15:01:14 bdb.learn4good.com searchd[1475569]: DEBUG: no valid indexes to serve
+Mar 05 15:01:14 bdb.learn4good.com searchd[1475569]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 05 15:01:14 bdb.learn4good.com searchd[1475569]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 05 15:01:14 bdb.learn4good.com searchd[1475569]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 05 15:01:14 bdb.learn4good.com searchd[1475566]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 15:01:14 bdb.learn4good.com searchd[1475566]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 15:01:14 bdb.learn4good.com searchd[1475566]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 15:01:14 bdb.learn4good.com searchd[1475566]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 15:01:14 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1475569 which is not our child. We'll most likely not notice when it exits.
+Mar 05 15:01:14 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 05 15:01:26 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 05 15:01:26 bdb.learn4good.com searchd[1477153]: [Sat Mar  5 15:01:26.931 2022] [1477153] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 05 15:01:26 bdb.learn4good.com searchd[1477153]: [Sat Mar  5 15:01:26.932 2022] [1477153] stop: successfully sent SIGTERM to pid 1475569
+Mar 05 15:01:27 bdb.learn4good.com searchd[1477153]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 15:01:27 bdb.learn4good.com searchd[1477153]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 15:01:27 bdb.learn4good.com searchd[1477153]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 15:01:27 bdb.learn4good.com searchd[1477153]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 15:01:27 bdb.learn4good.com systemd[1]: manticore.service: Succeeded.
+Mar 05 15:01:27 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 05 15:01:34 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.772 2022] [1477677] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.773 2022] [1477677] DEBUG: config loaded, indexes 0, clusters 0
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.773 2022] [1477677] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.773 2022] [1477677] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.773 2022] [1477677] DEBUG: SetMaxChildrenThreads to 80
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.773 2022] [1477677] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.773 2022] [1477677] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.773 2022] [1477677] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.773 2022] [1477677] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.773 2022] [1477677] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.773 2022] [1477677] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.774 2022] [1477677] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.774 2022] [1477677] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.774 2022] [1477677] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.774 2022] [1477677] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.774 2022] [1477677] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.774 2022] [1477677] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.774 2022] [1477677] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.774 2022] [1477677] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: [Sat Mar  5 15:01:34.774 2022] [1477677] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477678]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477678]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477678]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477678]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: DEBUG: StartGlobalWorkpool
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: starting daemon version '4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: listening on 127.0.0.1:9306 for mysql
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: listening on 10.10.10.7:9306 for mysql
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: RPL: 0 clusters loaded from config
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: DEBUG: no valid indexes to serve
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477680]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 05 15:01:34 bdb.learn4good.com searchd[1477677]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 05 15:01:34 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 05 15:01:34 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 07 06:23:29 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:29 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:30 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:30 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:30 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:31 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:31 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:32 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:32 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:32 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:33 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:33 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:34 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:34 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:34 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:23:35 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 07 06:52:02 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1477680 which is not our child. We'll most likely not notice when it exits.
+Mar 10 06:31:57 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 10 06:31:57 bdb.learn4good.com searchd[3363374]: [Thu Mar 10 06:31:57.556 2022] [3363374] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 10 06:31:57 bdb.learn4good.com searchd[3363374]: [Thu Mar 10 06:31:57.557 2022] [3363374] stop: successfully sent SIGTERM to pid 1477680
+Mar 10 06:32:01 bdb.learn4good.com searchd[3363374]: Manticore 4.2.1 43de186af@220304 release (columnar 1.14.1 fce43f7@220203)
+Mar 10 06:32:01 bdb.learn4good.com searchd[3363374]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 10 06:32:01 bdb.learn4good.com searchd[3363374]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 10 06:32:01 bdb.learn4good.com searchd[3363374]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 10 06:32:01 bdb.learn4good.com systemd[1]: manticore.service: Succeeded.
+Mar 10 06:32:01 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 10 06:32:45 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.255 2022] [3370149] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: config loaded, indexes 7, clusters 1
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: SetMaxChildrenThreads to 80
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370149]: [Thu Mar 10 06:32:45.257 2022] [3370149] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370150]: Manticore 4.2.1 ffd0499d3@220309 release (columnar 1.14.1 fce43f7@220203)
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370150]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370150]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370150]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: StartGlobalWorkpool
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: starting daemon version '4.2.1 ffd0499d3@220309 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: listening on 127.0.0.1:9306 for mysql
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: listening on 10.10.10.7:9306 for mysql
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: Manticore 4.2.1 ffd0499d3@220309 release (columnar 1.14.1 fce43f7@220203)
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: precaching index 'admin_search_employers_rt'
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: precaching index 'cvs'
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: precaching index 'geocities'
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 10 06:32:45 bdb.learn4good.com searchd[3370152]: precaching index 'jobs'
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: precaching index 'jobs_completions_custom'
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: precaching index 'postal_coords'
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: precaching index 'requirements'
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: RPL: 1 clusters loaded from config
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370152]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370149]: Manticore 4.2.1 ffd0499d3@220309 release (columnar 1.14.1 fce43f7@220203)
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370149]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370149]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 10 06:32:48 bdb.learn4good.com searchd[3370149]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 10 06:32:48 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 3370152 which is not our child. We'll most likely not notice when it exits.
+Mar 10 06:32:48 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 10 06:32:50 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 3370152 which is not our child. We'll most likely not notice when it exits.
+Mar 10 06:32:50 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 3370152 which is not our child. We'll most likely not notice when it exits.
+Mar 10 06:32:50 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 3370152 which is not our child. We'll most likely not notice when it exits.
+Mar 10 06:32:51 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 3370152 which is not our child. We'll most likely not notice when it exits.
+Mar 11 09:52:12 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 3370152 which is not our child. We'll most likely not notice when it exits.
+Mar 11 09:52:12 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 3370152 which is not our child. We'll most likely not notice when it exits.
+Mar 11 09:52:13 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 3370152 which is not our child. We'll most likely not notice when it exits.
+Mar 11 09:52:13 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 3370152 which is not our child. We'll most likely not notice when it exits.
+Mar 14 09:57:29 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 14 09:57:29 bdb.learn4good.com searchd[1608170]: [Mon Mar 14 09:57:29.676 2022] [1608170] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 14 09:57:29 bdb.learn4good.com searchd[1608170]: [Mon Mar 14 09:57:29.677 2022] [1608170] stop: successfully sent SIGTERM to pid 3370152
+Mar 14 09:57:35 bdb.learn4good.com searchd[1608170]: Manticore 4.2.1 ffd0499d3@220309 release (columnar 1.14.1 fce43f7@220203)
+Mar 14 09:57:35 bdb.learn4good.com searchd[1608170]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 14 09:57:35 bdb.learn4good.com searchd[1608170]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 14 09:57:35 bdb.learn4good.com searchd[1608170]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 14 09:57:35 bdb.learn4good.com systemd[1]: manticore.service: Succeeded.
+Mar 14 09:57:35 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 14 09:58:15 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.617 2022] [1612034] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: config loaded, indexes 7, clusters 1
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: SetMaxChildrenThreads to 80
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612034]: [Mon Mar 14 09:58:15.619 2022] [1612034] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612035]: Manticore 4.2.1 4bff02358@220313 release (columnar 1.14.1 fce43f7@220203)
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612035]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612035]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612035]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: DEBUG: StartGlobalWorkpool
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: starting daemon version '4.2.1 4bff02358@220313 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: listening on 127.0.0.1:9306 for mysql
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: listening on 10.10.10.7:9306 for mysql
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: Manticore 4.2.1 4bff02358@220313 release (columnar 1.14.1 fce43f7@220203)
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: precaching index 'admin_search_employers_rt'
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: precaching index 'cvs'
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:58:15 bdb.learn4good.com searchd[1612037]: precaching index 'geocities'
+Mar 14 09:58:16 bdb.learn4good.com searchd[1612037]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:58:16 bdb.learn4good.com searchd[1612037]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:58:16 bdb.learn4good.com searchd[1612037]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:58:16 bdb.learn4good.com searchd[1612037]: precaching index 'jobs'
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: precaching index 'jobs_completions_custom'
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: precaching index 'postal_coords'
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: precaching index 'requirements'
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: RPL: 1 clusters loaded from config
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612037]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612034]: Manticore 4.2.1 4bff02358@220313 release (columnar 1.14.1 fce43f7@220203)
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612034]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612034]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 14 09:58:18 bdb.learn4good.com searchd[1612034]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 14 09:58:18 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1612037 which is not our child. We'll most likely not notice when it exits.
+Mar 14 09:58:18 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 14 09:58:19 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1612037 which is not our child. We'll most likely not notice when it exits.
+Mar 14 09:58:19 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1612037 which is not our child. We'll most likely not notice when it exits.
+Mar 14 09:58:20 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1612037 which is not our child. We'll most likely not notice when it exits.
+Mar 14 09:58:20 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 1612037 which is not our child. We'll most likely not notice when it exits.
+Mar 19 17:11:39 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 19 17:11:39 bdb.learn4good.com searchd[2544074]: [Sat Mar 19 17:11:39.825 2022] [2544074] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 19 17:11:39 bdb.learn4good.com searchd[2544074]: [Sat Mar 19 17:11:39.826 2022] [2544074] stop: successfully sent SIGTERM to pid 1613432
+Mar 19 17:11:45 bdb.learn4good.com searchd[2544074]: Manticore 4.2.1 4bff02358@220313 release (columnar 1.14.1 fce43f7@220203)
+Mar 19 17:11:45 bdb.learn4good.com searchd[2544074]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 19 17:11:45 bdb.learn4good.com searchd[2544074]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 19 17:11:45 bdb.learn4good.com searchd[2544074]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 19 17:13:15 bdb.learn4good.com systemd[1]: manticore.service: State 'stop-sigterm' timed out. Skipping SIGKILL.
+Mar 19 17:14:46 bdb.learn4good.com systemd[1]: manticore.service: State 'stop-final-sigterm' timed out. Skipping SIGKILL. Entering failed mode.
+Mar 19 17:14:46 bdb.learn4good.com systemd[1]: manticore.service: Failed with result 'timeout'.
+Mar 19 17:14:46 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 19 17:15:43 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.000 2022] [2580614] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: config loaded, indexes 7, clusters 1
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: SetMaxChildrenThreads to 80
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580614]: [Sat Mar 19 17:15:44.002 2022] [2580614] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580615]: Manticore 4.2.1 611d55d8b@220319 release (columnar 1.14.1 fce43f7@220203)
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580615]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580615]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580615]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: StartGlobalWorkpool
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: starting daemon version '4.2.1 611d55d8b@220319 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: listening on 127.0.0.1:9306 for mysql
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: listening on 10.10.10.7:9306 for mysql
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: Manticore 4.2.1 611d55d8b@220319 release (columnar 1.14.1 fce43f7@220203)
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: precaching index 'admin_search_employers_rt'
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: precaching index 'cvs'
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: precaching index 'geocities'
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:15:44 bdb.learn4good.com searchd[2580617]: precaching index 'jobs'
+Mar 19 17:15:46 bdb.learn4good.com searchd[2580617]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:15:46 bdb.learn4good.com searchd[2580617]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:15:46 bdb.learn4good.com searchd[2580617]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:15:46 bdb.learn4good.com searchd[2580617]: precaching index 'jobs_completions_custom'
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: precaching index 'postal_coords'
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: precaching index 'requirements'
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: RPL: 1 clusters loaded from config
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580617]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580614]: Manticore 4.2.1 611d55d8b@220319 release (columnar 1.14.1 fce43f7@220203)
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580614]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580614]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 19 17:15:47 bdb.learn4good.com searchd[2580614]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 19 17:15:47 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 19 17:15:47 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 19 17:15:48 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:19 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:19 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:20 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:21 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:21 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:21 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:22 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:22 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:23 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:23 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 24 14:57:24 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 2580617 which is not our child. We'll most likely not notice when it exits.
+Mar 27 11:34:03 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 27 11:34:03 bdb.learn4good.com searchd[918223]: [Sun Mar 27 11:34:03.900 2022] [918223] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 27 11:34:03 bdb.learn4good.com searchd[918223]: [Sun Mar 27 11:34:03.902 2022] [918223] stop: successfully sent SIGTERM to pid 2580617
+Mar 27 11:34:09 bdb.learn4good.com searchd[918223]: Manticore 4.2.1 611d55d8b@220319 release (columnar 1.14.1 fce43f7@220203)
+Mar 27 11:34:09 bdb.learn4good.com searchd[918223]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 27 11:34:09 bdb.learn4good.com searchd[918223]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 27 11:34:09 bdb.learn4good.com searchd[918223]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 27 11:34:09 bdb.learn4good.com systemd[1]: manticore.service: Succeeded.
+Mar 27 11:34:09 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 27 11:35:30 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.273 2022] [925077] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: config loaded, indexes 7, clusters 1
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: SetMaxChildrenThreads to 80
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.274 2022] [925077] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.275 2022] [925077] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.275 2022] [925077] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.275 2022] [925077] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.275 2022] [925077] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.275 2022] [925077] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 27 11:35:30 bdb.learn4good.com searchd[925077]: [Sun Mar 27 11:35:30.275 2022] [925077] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 27 11:35:30 bdb.learn4good.com searchd[925082]: Manticore 4.2.1 e972420c1@220323 release (columnar 1.14.1 fce43f7@220203)
+Mar 27 11:35:30 bdb.learn4good.com searchd[925082]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 27 11:35:30 bdb.learn4good.com searchd[925082]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 27 11:35:30 bdb.learn4good.com searchd[925082]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: StartGlobalWorkpool
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: starting daemon version '4.2.1 e972420c1@220323 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: listening on 127.0.0.1:9306 for mysql
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: listening on 10.10.10.7:9306 for mysql
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: Manticore 4.2.1 e972420c1@220323 release (columnar 1.14.1 fce43f7@220203)
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: precaching index 'admin_search_employers_rt'
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: precaching index 'cvs'
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: precaching index 'geocities'
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 11:35:30 bdb.learn4good.com searchd[925084]: precaching index 'jobs'
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: precaching index 'jobs_completions_custom'
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: precaching index 'postal_coords'
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: precaching index 'requirements'
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: RPL: 1 clusters loaded from config
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 27 11:35:32 bdb.learn4good.com searchd[925084]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 27 11:35:32 bdb.learn4good.com searchd[925077]: Manticore 4.2.1 e972420c1@220323 release (columnar 1.14.1 fce43f7@220203)
+Mar 27 11:35:32 bdb.learn4good.com searchd[925077]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 27 11:35:32 bdb.learn4good.com searchd[925077]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 27 11:35:32 bdb.learn4good.com searchd[925077]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 27 11:35:32 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 925084 which is not our child. We'll most likely not notice when it exits.
+Mar 27 11:35:32 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 27 11:35:32 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 925084 which is not our child. We'll most likely not notice when it exits.
+Mar 27 11:35:33 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 925084 which is not our child. We'll most likely not notice when it exits.
+Mar 30 06:16:41 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Mar 30 06:16:41 bdb.learn4good.com searchd[214594]: [Wed Mar 30 06:16:41.744 2022] [214594] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 30 06:16:41 bdb.learn4good.com searchd[214594]: [Wed Mar 30 06:16:41.746 2022] [214594] stop: successfully sent SIGTERM to pid 925084
+Mar 30 06:16:44 bdb.learn4good.com searchd[214594]: Manticore 4.2.1 e972420c1@220323 release (columnar 1.14.1 fce43f7@220203)
+Mar 30 06:16:44 bdb.learn4good.com searchd[214594]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 30 06:16:44 bdb.learn4good.com searchd[214594]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 30 06:16:44 bdb.learn4good.com searchd[214594]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 30 06:16:44 bdb.learn4good.com systemd[1]: manticore.service: Succeeded.
+Mar 30 06:16:44 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Mar 30 06:17:10 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.754 2022] [216869] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.756 2022] [216869] DEBUG: config loaded, indexes 7, clusters 1
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.756 2022] [216869] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.756 2022] [216869] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: SetMaxChildrenThreads to 80
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Mar 30 06:17:10 bdb.learn4good.com searchd[216869]: [Wed Mar 30 06:17:10.757 2022] [216869] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Mar 30 06:17:10 bdb.learn4good.com searchd[216870]: Manticore 4.2.1 c78a3c23f@220329 release (columnar 1.14.1 fce43f7@220203)
+Mar 30 06:17:10 bdb.learn4good.com searchd[216870]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 30 06:17:10 bdb.learn4good.com searchd[216870]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 30 06:17:10 bdb.learn4good.com searchd[216870]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: DEBUG: StartGlobalWorkpool
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: starting daemon version '4.2.1 c78a3c23f@220329 release (columnar 1.14.1 fce43f7@220203)' ...
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: listening on 127.0.0.1:9306 for mysql
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: listening on 10.10.10.7:9306 for mysql
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: listening on 127.0.0.1:9326 for VIP mysql
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: Manticore 4.2.1 c78a3c23f@220329 release (columnar 1.14.1 fce43f7@220203)
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: precaching index 'admin_search_employers_rt'
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:17:10 bdb.learn4good.com searchd[216872]: precaching index 'cvs'
+Mar 30 06:17:11 bdb.learn4good.com searchd[216872]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:17:11 bdb.learn4good.com searchd[216872]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:17:11 bdb.learn4good.com searchd[216872]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:17:11 bdb.learn4good.com searchd[216872]: precaching index 'geocities'
+Mar 30 06:17:11 bdb.learn4good.com searchd[216872]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:17:11 bdb.learn4good.com searchd[216872]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:17:11 bdb.learn4good.com searchd[216872]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:17:11 bdb.learn4good.com searchd[216872]: precaching index 'jobs'
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: precaching index 'jobs_completions_custom'
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: precaching index 'postal_coords'
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: precaching index 'requirements'
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: RPL: 1 clusters loaded from config
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Mar 30 06:17:12 bdb.learn4good.com searchd[216872]: DEBUG: filter stack delta is 208. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=208 to store this value persistent for this binary
+Mar 30 06:17:12 bdb.learn4good.com searchd[216869]: Manticore 4.2.1 c78a3c23f@220329 release (columnar 1.14.1 fce43f7@220203)
+Mar 30 06:17:12 bdb.learn4good.com searchd[216869]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Mar 30 06:17:12 bdb.learn4good.com searchd[216869]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Mar 30 06:17:12 bdb.learn4good.com searchd[216869]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Mar 30 06:17:12 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 216872 which is not our child. We'll most likely not notice when it exits.
+Mar 30 06:17:12 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
+Mar 30 06:17:14 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 216872 which is not our child. We'll most likely not notice when it exits.
+Apr 09 08:39:40 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Apr 09 08:39:40 bdb.learn4good.com searchd[109656]: [Sat Apr  9 08:39:40.441 2022] [109656] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Apr 09 08:39:40 bdb.learn4good.com searchd[109656]: [Sat Apr  9 08:39:40.443 2022] [109656] stop: successfully sent SIGTERM to pid 217537
+Apr 09 08:39:43 bdb.learn4good.com searchd[109656]: Manticore 4.2.1 c78a3c23f@220329 release (columnar 1.14.1 fce43f7@220203)
+Apr 09 08:39:43 bdb.learn4good.com searchd[109656]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:39:43 bdb.learn4good.com searchd[109656]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:39:43 bdb.learn4good.com searchd[109656]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:41:13 bdb.learn4good.com systemd[1]: manticore.service: State 'stop-sigterm' timed out. Skipping SIGKILL.
+Apr 09 08:42:43 bdb.learn4good.com systemd[1]: manticore.service: State 'stop-final-sigterm' timed out. Skipping SIGKILL. Entering failed mode.
+Apr 09 08:42:43 bdb.learn4good.com systemd[1]: manticore.service: Failed with result 'timeout'.
+Apr 09 08:42:43 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+Apr 09 08:43:17 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.283 2022] [124872] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: config loaded, indexes 7, clusters 1
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'read_timeout' - nothing specified, using default value 5000000
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'sphinxql_timeout' - nothing specified, using default value 900000000
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: SetMaxChildrenThreads to 80
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'read_unhinted' - nothing specified, using default value 32768
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'read_buffer' - nothing specified, using default value 262144
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'attr_flush_period' - nothing specified, using default value 0
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'rt_merge_maxiosize' - nothing specified, using default value 0
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'ha_ping_interval' - nothing specified, using default value 1000000
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'ha_period_karma' - nothing specified, using default value 60000000
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'agent_connect_timeout' - nothing specified, using default value 1000000
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'agent_query_timeout' - nothing specified, using default value 3000000
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'agent_retry_delay' - nothing specified, using default value 500000
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'docstore_cache_size' - nothing specified, using default value 16777216
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'skiplist_cache_size' - nothing specified, using default value 67108864
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'qcache_max_bytes' - nothing specified, using default value 16777216
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'qcache_thresh_msec' - nothing specified, using default value 3000000
+Apr 09 08:43:17 bdb.learn4good.com searchd[124872]: [Sat Apr  9 08:43:17.285 2022] [124872] DEBUG: 'qcache_ttl_sec' - nothing specified, using default value 60000000
+Apr 09 08:43:17 bdb.learn4good.com searchd[124873]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:43:17 bdb.learn4good.com searchd[124873]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:43:17 bdb.learn4good.com searchd[124873]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:43:17 bdb.learn4good.com searchd[124873]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: StartGlobalWorkpool
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: starting daemon version '4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)' ...
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: listening on 127.0.0.1:9306 for mysql
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: listening on 10.10.10.7:9306 for mysql
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: listening on 127.0.0.1:9326 for VIP mysql
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: precaching index 'admin_search_employers_rt'
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: precaching index 'cvs'
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: precaching index 'geocities'
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 08:43:17 bdb.learn4good.com searchd[124875]: precaching index 'jobs'
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: precaching index 'jobs_completions_custom'
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: precaching index 'postal_coords'
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: precaching index 'requirements'
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: RPL: 1 clusters loaded from config
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+Apr 09 08:43:19 bdb.learn4good.com searchd[124875]: DEBUG: filter stack delta is 224. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=224 to store this value persistent for this binary
+Apr 09 08:43:20 bdb.learn4good.com searchd[124872]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:43:20 bdb.learn4good.com searchd[124872]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:43:20 bdb.learn4good.com searchd[124872]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:43:20 bdb.learn4good.com searchd[124872]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:43:20 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 124875 which is not our child. We'll most likely not notice when it exits.
+Apr 09 08:43:20 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
+Apr 09 08:43:22 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 124875 which is not our child. We'll most likely not notice when it exits.
+Apr 09 08:43:22 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 124875 which is not our child. We'll most likely not notice when it exits.
+Apr 09 08:43:22 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 124875 which is not our child. We'll most likely not notice when it exits.
+Apr 09 08:43:24 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 124875 which is not our child. We'll most likely not notice when it exits.
+Apr 09 08:46:18 bdb.learn4good.com systemd[1]: Stopping Manticore Search Engine...
+Apr 09 08:46:21 bdb.learn4good.com searchd[138370]: [Sat Apr  9 08:46:21.941 2022] [138370] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Apr 09 08:46:21 bdb.learn4good.com searchd[138370]: [Sat Apr  9 08:46:21.943 2022] [138370] stop: successfully sent SIGTERM to pid 124875
+Apr 09 08:46:25 bdb.learn4good.com searchd[138370]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:46:25 bdb.learn4good.com searchd[138370]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:46:25 bdb.learn4good.com searchd[138370]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:46:25 bdb.learn4good.com searchd[138370]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:46:25 bdb.learn4good.com systemd[1]: manticore.service: Succeeded.
+Apr 09 08:46:25 bdb.learn4good.com systemd[1]: Stopped Manticore Search Engine.
+-- Reboot --
+Apr 09 08:53:53 bdb.learn4good.com systemd[1]: Starting Manticore Search Engine...
+Apr 09 08:53:55 bdb.learn4good.com searchd[4999]: [Sat Apr  9 08:53:55.930 2022] [4999] using config file '/etc/manticoresearch/manticore.conf' (3080 chars)...
+Apr 09 08:53:55 bdb.learn4good.com searchd[4999]: [Sat Apr  9 08:53:55.933 2022] [4999] Set max_open_files to 1048576 (previous was 1048576), hardlimit is 1048576.
+Apr 09 08:53:55 bdb.learn4good.com searchd[5003]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:53:55 bdb.learn4good.com searchd[5003]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:53:55 bdb.learn4good.com searchd[5003]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:53:55 bdb.learn4good.com searchd[5003]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: starting daemon version '4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)' ...
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: listening on 127.0.0.1:9312 for sphinx and http(s)
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: listening on 10.10.10.7:9312 for sphinx and http(s)
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: listening on 127.0.0.1:9306 for mysql
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: listening on 10.10.10.7:9306 for mysql
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: listening on 127.0.0.1:9326 for VIP mysql
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:53:55 bdb.learn4good.com searchd[5005]: precaching index 'admin_search_employers_rt'
+Apr 09 08:53:56 bdb.learn4good.com searchd[5005]: precaching index 'cvs'
+Apr 09 08:53:56 bdb.learn4good.com searchd[5005]: precaching index 'geocities'
+Apr 09 08:53:56 bdb.learn4good.com searchd[5005]: precaching index 'jobs'
+Apr 09 08:54:22 bdb.learn4good.com searchd[5005]: precaching index 'jobs_completions_custom'
+Apr 09 08:54:24 bdb.learn4good.com searchd[5005]: precaching index 'postal_coords'
+Apr 09 08:54:24 bdb.learn4good.com searchd[5005]: precaching index 'requirements'
+Apr 09 08:54:24 bdb.learn4good.com searchd[4999]: Manticore 4.2.1 d039fba84@220407 release (columnar 1.14.1 e20aa7c@220408)
+Apr 09 08:54:24 bdb.learn4good.com searchd[4999]: Copyright (c) 2001-2016, Andrew Aksyonoff
+Apr 09 08:54:24 bdb.learn4good.com searchd[4999]: Copyright (c) 2008-2016, Sphinx Technologies Inc (http://sphinxsearch.com)
+Apr 09 08:54:24 bdb.learn4good.com searchd[4999]: Copyright (c) 2017-2022, Manticore Software LTD (https://manticoresearch.com)
+Apr 09 08:54:24 bdb.learn4good.com systemd[1]: manticore.service: Supervising process 5005 which is not our child. We'll most likely not notice when it exits.
+Apr 09 08:54:24 bdb.learn4good.com systemd[1]: Started Manticore Search Engine.
