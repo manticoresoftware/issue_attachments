@@ -1,0 +1,78 @@
+
+
+#############################################################################
+## common settings
+#############################################################################
+
+common
+{
+  lemmatizer_base = /etc/manticoresearch/dict/
+  plugin_dir      = /usr/local/lib/manticore
+
+}
+
+#############################################################################
+## searchd settings
+#############################################################################
+ #Sometimes need to inspect slow queries by enabling log
+ #log = /var/log/manticore/searchd.log
+ #query_log = /var/log/manticore/query.log
+ #pid_file = /var/run/manticore/searchd.pid
+ #data_dir is used ONLY IN RT_MODE
+ #data_dir = /var/lib/manticore/data
+ #query_log_format = sphinxql
+#What you need to know:
+#- RT index is very similar to a distributed index of multiple local indexes. The local indexes are called "disk chunks"
+#- rt_mem_limit limits size of the RAM chunk
+#- RAM chunk does merging after each Insert or Delete, that's why it's more beneficial to do batch INSERTs
+#- merging larger segments take longer, that's why it may be suboptimal to have too large RAM chunk (and therefore rt_mem_limit)
+#- pseudo_sharding works on plain and RT indexes. RT index after some time gets
+#- to the state when it has multiple disk chunks which by default is limited by # of CPU cores * 2. But this introduces overhead compared to pseaudo sharding.
+#- This is how manual OPTIMIZE works (leaves cpu cores * 2 disk chunks). Auto optimize is enabled by default and works the same way by default.
+#- searchd flushes RAM chunk to disk on shutdown and periodically. Flushing tens of gigabytes may be slow.
+# the rule of thumb with rt_mem_limit if you more or less know the final size of the index is rt_mem_limit = ~ final size / CPU_cores
+
+
+searchd
+{
+
+  listen = 127.0.0.1:9312
+  listen = 10.39.138.89:9312
+  listen = 127.0.0.1:9306:mysql
+  listen = 10.39.138.89:9306:mysql
+  listen = 127.0.0.1:9318:mysql_vip
+  listen = 10.39.138.89:9315-9325:replication
+
+ server_id        = 1
+ auto_optimize    = 1
+ optimize_cutoff  = 13
+ max_open_files   = max
+ network_timeout  = 5
+ client_timeout   = 300
+ #threads          = 64 #allow daemon to auto-configure that option,  it should be set to CPU of vCPU count
+ pseudo_sharding  = 1
+ net_workers      = 1
+ read_buffer_docs = 256K
+ read_buffer_hits = 256K
+ seamless_rotate  = 1
+ preopen_indexes  = 1
+ max_packet_size  = 128M #Some jobs have large job descriptions reaching 65Kb - and insert of 10000 jobs can be a large packet
+ max_filters      = 256
+ max_filter_values= 4096
+ expansion_limit  = 10
+ rt_flush_period  = 1800
+ #Comment out time to Log all queries
+ query_log_min_msec= 60
+ data_dir         = /var/lib/manticore/data
+ pid_file         = /var/run/manticore/searchd.pid
+ log              = /var/log/manticore/searchd.log
+ binlog_path      = /var/lib/manticore/data
+ query_log        = /var/log/manticore/query.log
+ query_log_format = sphinxql
+ #query_log_commands = 1
+
+
+
+}
+
+# --eof--
