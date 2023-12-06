@@ -1,0 +1,26 @@
+Field	Type	Properties
+id	bigint	
+title	text	indexed
+summary	text	indexed
+skills	text	indexed
+education	text	indexed
+experience	text	indexed
+domain_id	uint	
+citizenship_country_id	uint	
+country_id	uint	
+state_id	uint	
+city_id	uint	
+unified_salary_amount	uint	
+jobseeker_country_id	uint	
+jobseeker_state_id	uint	
+jobseeker_city_id	uint	
+creation_date_timestamp	uint	
+education_level_order_id	uint	
+experience_level_order_id	uint	
+jobseeker_last_login_country_id	uint	
+is_suspended	bool	
+hide	bool	
+is_male	bool	
+categories	mva	
+employment_types	mva	
+languages	mva	
