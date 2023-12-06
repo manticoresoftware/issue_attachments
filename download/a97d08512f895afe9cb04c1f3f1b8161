@@ -1,0 +1,66 @@
+apt upgrade
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  cloud-init manticore manticore-dbgsym
+3 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 135 MB of archives.
+After this operation, 3300 kB disk space will be freed.
+Do you want to continue? [Y/n] Y
+Get:1 http://nova.clouds.archive.ubuntu.com/ubuntu focal-updates/main amd64 cloud-init all 22.1-14-g2e17a0d6-0ubuntu1~20.04.3 [483 kB]
+Get:2 http://repo.manticoresearch.com/repository/manticoresearch_focal_dev focal/main amd64 manticore-dbgsym amd64 4.2.1-220323-e972420c1 [106 MB]
+Get:3 http://repo.manticoresearch.com/repository/manticoresearch_focal_dev focal/main amd64 manticore amd64 4.2.1-220323-e972420c1 [29.0 MB]
+Fetched 135 MB in 5s (26.6 MB/s)
+Preconfiguring packages ...
+(Reading database ... 167710 files and directories currently installed.)
+Preparing to unpack .../manticore-dbgsym_4.2.1-220323-e972420c1_amd64.ddeb ...
+Unpacking manticore-dbgsym (4.2.1-220323-e972420c1) over (4.2.1-220319-611d55d8b) ...
+Preparing to unpack .../manticore_4.2.1-220323-e972420c1_amd64.deb ...
+Unpacking manticore (4.2.1-220323-e972420c1) over (4.2.1-220319-611d55d8b) ...
+Preparing to unpack .../cloud-init_22.1-14-g2e17a0d6-0ubuntu1~20.04.3_all.deb ...
+Unpacking cloud-init (22.1-14-g2e17a0d6-0ubuntu1~20.04.3) over (21.4-0ubuntu1~20.04.1) ...
+Setting up cloud-init (22.1-14-g2e17a0d6-0ubuntu1~20.04.3) ...
+Installing new version of config file /etc/cloud/cloud.cfg ...
+Setting up manticore (4.2.1-220323-e972420c1) ...
+Manticore Search (https://manticoresearch.com)
+
+Getting Started with Manticore Search:
+  https://manual.manticoresearch.com/Quick_start_guide
+
+Learn Manticore with interactive courses:
+  https://play.manticoresearch.com/
+
+To start Manticore Search service:
+  > systemctl start manticore
+
+Configuration file:
+   /etc/manticoresearch/manticore.conf
+
+Job for manticore.service failed because the service did not take the steps required by its unit configuration.
+See "systemctl status manticore.service" and "journalctl -xe" for details.
+invoke-rc.d: initscript manticore, action "start" failed.
+● manticore.service - Manticore Search Engine
+     Loaded: loaded (/run/systemd/generator.early/manticore.service; generated)
+     Active: activating (auto-restart) (Result: protocol) since Sun 2022-03-27 11:26:09 EDT; 12ms ago
+    Process: 2321886 ExecStartPre=/usr/bin/install -omanticore -gmanticore -m755 -d /var/run/manticore (code=exited, status=0/SUCCESS)
+    Process: 2321887 ExecStart=/usr/bin/searchd --config /etc/manticoresearch/manticore.conf $_ADDITIONAL_SEARCHD_PARAMS (code=exited, status=0/SUCCESS)
+dpkg: error processing package manticore (--configure):
+ installed manticore package post-installation script subprocess returned error exit status 1
+dpkg: dependency problems prevent configuration of manticore-dbgsym:
+ manticore-dbgsym depends on manticore (= 4.2.1-220323-e972420c1); however:
+  Package manticore is not configured yet.
+
+dpkg: error processing package manticore-dbgsym (--configure):
+ dependency problems - leaving unconfigured
+Processing triggers for systemd (245.4-4ubuntu3.15) ...
+No apport report written because the error message indicates its a followup error from a previous failure.
+                                                                                                          Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for rsyslog (8.2001.0-1ubuntu1.1) ...
+Errors were encountered while processing:
+ manticore
+ manticore-dbgsym
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+root@web2:/home/ubuntu#
+
