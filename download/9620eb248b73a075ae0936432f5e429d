@@ -1,0 +1,229 @@
+[Sun Oct 13 05:49:07.835 2019] [20391] rotating index 'newsinc_rlp_node2': started
+[Sun Oct 13 05:49:08.043 2019] [20391] rotating index 'newsinc_rlp_node2': success
+[Sun Oct 13 05:49:11.732 2019] [20405] rotating index 'linkshour_node3': started
+[Sun Oct 13 05:49:11.973 2019] [20405] rotating index 'linkshour_node3': success
+[Sun Oct 13 05:49:16.252 2019] [20399] rotating index 'blogsinc_node2': started
+[Sun Oct 13 05:49:16.468 2019] [20399] rotating index 'blogsinc_node2': success
+[Sun Oct 13 05:49:17.624 2019] [20399] rotating index 'blogsitesinc_node4': started
+[Sun Oct 13 05:49:17.862 2019] [20399] rotating index 'blogsitesinc_node4': success
+[Sun Oct 13 05:49:18.474 2019] [20397] rotating index 'linksinc_node4': started
+[Sun Oct 13 05:49:18.731 2019] [20397] rotating index 'linksinc_node4': success
+[Sun Oct 13 05:49:20.784 2019] [20394] rotating index 'blogsinc_rlp_node4': started
+[Sun Oct 13 05:49:21.001 2019] [20394] rotating index 'blogsinc_rlp_node4': success
+[Sun Oct 13 05:49:21.819 2019] [20400] rotating index 'newsinc_node3': started
+[Sun Oct 13 05:49:22.051 2019] [20400] rotating index 'newsinc_node3': success
+[Sun Oct 13 05:49:25.883 2019] [20391] rotating index 'linksinc_node3': started
+[Sun Oct 13 05:49:26.108 2019] [20391] rotating index 'linksinc_node3': success
+[Sun Oct 13 05:49:28.076 2019] [20392] rotating index 'newsinc_node4': started
+[Sun Oct 13 05:49:28.311 2019] [20392] rotating index 'newsinc_node4': success
+[Sun Oct 13 05:49:29.142 2019] [20396] rotating index 'blogsinc_rlp_node2': started
+[Sun Oct 13 05:49:29.371 2019] [20396] rotating index 'blogsinc_rlp_node2': success
+[Sun Oct 13 05:49:31.044 2019] [20407] rotating index 'blogsinc_node4': started
+[Sun Oct 13 05:49:31.264 2019] [20407] rotating index 'blogsinc_node4': success
+[Sun Oct 13 05:49:35.357 2019] [20397] rotating index 'blogsitesinc_node2': started
+[Sun Oct 13 05:49:35.564 2019] [20397] rotating index 'blogsitesinc_node2': success
+[Sun Oct 13 05:49:40.920 2019] [20411] rotating index 'newsinc_rlp_node1': started
+[Sun Oct 13 05:49:41.178 2019] [20411] rotating index 'newsinc_rlp_node1': success
+[Sun Oct 13 05:49:41.193 2019] [20402] rotating index 'newsinc_node2': started
+[Sun Oct 13 05:49:41.453 2019] [20402] rotating index 'newsinc_node2': success
+[Sun Oct 13 05:49:41.964 2019] [20405] rotating index 'newsinc_rlp_node3': started
+[Sun Oct 13 05:49:42.191 2019] [20405] rotating index 'newsinc_rlp_node3': success
+[Sun Oct 13 05:49:42.969 2019] [20404] rotating index 'blogsinc_rlp_node3': started
+[Sun Oct 13 05:49:43.159 2019] [15073] WARNING: INTERNAL: out-of-range in ThinMMapReader_c: trying to read at 131464256, from mmap of 68884312, query most probably would FAIL; report the fact to dev!
+[Sun Oct 13 05:49:43.159 2019] [15073] WARNING: INTERNAL: out-of-range in ThinMMapReader_c: trying to read at 272646401, from mmap of 68884312, query most probably would FAIL; report the fact to dev!
+------- FATAL: CRASH DUMP -------
+[Sun Oct 13 05:49:42.801 2019] [20037]
+
+--- crashed SphinxAPI request dump ---
+AAABIQAABaYAAAARAAAAAQAAAEQAAAAAAAAnEAAAAAYAAAAAAAAAAgAAAAlwdWJsaXNoZWQAAAM9QCh0aXRsZSxi
+b2R5KSAoKCgoInVrInwiZ2IifCJicml0aXNoInwiZW5nbGFuZCIpICgoInVuaXZlcnNpdHkiICJ2aXNh
+Iil8KCJ2aXNhIiAidW5pdmVyc2l0eSIpfCgiY2FzIiAidW5pdmVyc2l0eSIpfCgidGllciIgIjQiICJ2
+aXNhIil8KCJzdHVkZW50IiAidmlzYSIpKSl8KCgidWsifCJnYiJ8ImVuZ2xhbmQifCgiZ3JlYXQiICJi
+cml0YWluIikpICgoInZpc2EiICJhcHBsaWNhdGlvbiIgImNlbnRyZSIpfCgidmlzYSIgImN1c3Rv
+bWVyIiAic2VydmljZSIpfCgic29wcmEiICJzdGVyaWEiKSkpfCgoInVrInwiZ2IifCJicml0aXNoInwi
+ZW5nbGFuZCJ8KCJncmVhdCIgImJyaXRhaW4iKSkgKCgidmlzYSIgInNlbGYiICJ1cGxvYWQiKXwoImNh
+cyIgImxldHRlciIpKSl8KCgidWsifCJnYiIpICgidmZzInwidGxzIikpfCgoInVrInwiZ2IifCJlbmds
+YW5kIikgKCJ0bHNjb250YWN0InwoInZpc2EiICJzY2FuIikpKXwiI3N0dWR5aW50aGV1ayJ8KCJl
+ZG9zc2llciIgInNvbG8iKXwoImVuZ2xhbmQiICgidmZzInwidGxzIikpfCIjZG9udGJlbGF0ZWZvcmNs
+YXNzInwoImdyZWF0IiAiYnJpdGFpbiIgInZpc2EiICgic2NhbiJ8InN0dWRlbnQiKSl8KCJncmVhdCIg
+ImJyaXRhaW4iICJ1bml2ZXJzaXR5IiAoImNhcyJ8InZpc2EiKSl8KCJicml0aXNoIiAidmlzYSIgInNj
+YW4iICgiYXNzaXN0ZWQifCJhc3Npc3QiKSl8KCJncmVhdCIgImJyaXRhaW4iICgidmZzInwidGxz
+InwidGxzY29udGFjdCJ8KCJ0aWVyIiAiNCIgInZpYSIpKSkpIC0oInRscyJ8KCJ0aW1lcyIgImxpdGVy
+YXJ5IiAic3VwcGxlbWVudCIpKSl8ImJyX2NhY2hlXzUzNDUxMzExNl80OTY4MDA0IgAAAAAAAAAPbmV3
+czNtb250aGJzZTExAAAAAQAAAAAAAAAA//////////8AAAADAAAAE2NvbnRlbnRfcHJvdmlkZXJfaWQA
+AAAAAAAACQAAAAAAAAABAAAAAAAAAAMAAAAAAAAAEgAAAAAAAABjAAAAAAAAAHgAAAAAAAAApQAA
+AAAAAACmAAAAAAAAAOEAAAAAAAAA4gAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAlwdWJsaXNoZWQA
+AAABAAAAAF2iSjoAAAAAXaLy+gAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAZtb2RfaXMAAAAAAAAA
+AwAAAAAAAAAAAAAAAAAAAAEAAAAAAAAABQAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAn
+EAAAAAtAZ3JvdXAgZGVzYwAAAAAAAAADAAAAMgAAAAAAAAAAAAAAAAAATiAAAAAAAAAAYjNmNDVk
+ODAwOWNlMjQ1M2JjYWRkYzdiNjBmZDcyNzk1LENGNlFkZ2d5YmNyNDFYUTI3ZTVVc2ZTYmtMbklkUmdy
+LGJiNGRmMzk1NzBlNWY2ZDA3ZmVjMTZlODkzYTUyZDg4AAAAAAAAAAEqAA9CQAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAApibGVuZGVkLnNvAAAABXF1ZXJ5AAAAAAAAAAAAAAABAAAA
+ASoAAAABKgAAAAAAAAAAAAAAAAAAAAA=
+--- request dump end ---
+--- local index:newsday_node4
+Manticore 3.1.3 367a3d0@190830 dev
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DUSE_SSL=ON -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DLOCALDATADIR=/var/data -DFULL_SHARE_DIR=/usr/share/manticore -DICU_IS_SHARED=1 -DDL_ICU=1 -DICU_LIB=libicuuc.so.50 -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=ON -DWITH_ICONV=ON -DWITH_MYSQL=ON -DWITH_ODBC=ON -DWITH_RE2=1 -DWITH_STEMMER=ON -DWITH_ZLIB=ON -DGALERA_SOVERSION=31 -DSYSCONFDIR=etc/sphinx
+Host OS is Linux rpmbuild02.sgdctroy.net 3.10.0-693.21.1.vz7.48.2 #1 SMP Wed May 23 10:04:13 MSK 2018 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f6e01a2bdf7, thread stack size = 0x100000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x7ebc44019dd0)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x7ebc44019dd0, stack=0x7f6e01a30000, stacksize=0x100000)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x9e)[0x6c5d9e]
+/usr/bin/searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x1de)[0x5352ae]
+/lib64/libpthread.so.0(+0xf370)[0x7f7f33d5d370]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN13MatchExtendedILb1ELb0ELb0EEEvP16CSphQueryContextPK9CSphQueryiPP15ISphMatchSorterP10ISphRankerii+0x194)[0x662144]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN16ParsedMultiQueryEPK9CSphQueryP15CSphQueryResultiPP15ISphMatchSorterRK9XQQuery_tP8CSphDictRK18CSphMultiQueryArgsP18CSphQueryNodeCacheRK20SphWordStatChecker_t+0xabe)[0x6264fe]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN10MultiQueryEPK9CSphQueryP15CSphQueryResultiPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x67e)[0x649eee]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN12MultiQueryExEiPK9CSphQueryPP15CSphQueryResultPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x92c)[0x64aa5c]
+/usr/bin/searchd(_ZN15SearchHandler_c16RunLocalSearchMTER13LocalSearch_tRN7Threads13ThreadLocal_tE+0x3a8)[0x53bbf8]
+/usr/bin/searchd(_Z21LocalSearchThreadFuncPv+0xa0)[0x53bd40]
+/usr/bin/searchd(_ZN16SphCrashLogger_c13ThreadWrapperEPv+0x58)[0x5341b8]
+/usr/bin/searchd(_Z20sphThreadProcWrapperPv+0x35)[0x6cbf65]
+/lib64/libpthread.so.0(+0x7dc5)[0x7f7f33d55dc5]
+/lib64/libc.so.6(clone+0x6d)[0x7f7f3236d76d]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+[Sun Oct 13 05:49:43.161 2019] [20036] watchdog: got USR1, performing dump of child's stack
+Will run gdb on /usr/bin/searchd, pid 20037
+[Sun Oct 13 05:49:43.200 2019] [20404] rotating index 'blogsinc_rlp_node3': success
+--- 7 active threads ---
+thd 0, proto sphinxapi, state query, command search
+thd 1, proto sphinxapi, state query, command search
+thd 2, proto sphinxapi, state query, command search
+thd 3, proto sphinxapi, state query, command search
+thd 4, proto sphinxapi, state query, command search
+thd 5, proto sphinxapi, state query, command search
+thd 6, proto sphinxapi, state query, command search
+------- CRASH DUMP END -------
+[Sun Oct 13 05:50:17.372 2019] [20036] watchdog: main process 20037 killed dirtily with signal 11, core dumped, will be restarted
+[Sun Oct 13 05:50:17.372 2019] [20036] watchdog: got error 10, No child processes
+[Sun Oct 13 05:50:17.372 2019] [20036] watchdog: main process 27161 forked ok
+[Sun Oct 13 05:50:17.433 2019] [27161] listening on all interfaces, port=3312
+[Sun Oct 13 05:50:17.433 2019] [27161] listening on all interfaces, port=6312
+[Sun Oct 13 05:50:17.433 2019] [27161] listening on all interfaces, port=9312
+[Sun Oct 13 05:50:17.506 2019] [27161] rotating index 'blogsinc_node1': success
+[Sun Oct 13 05:50:17.615 2019] [27161] rotating index 'linksinc_node1': success
+[Sun Oct 13 05:50:17.692 2019] [27161] rotating index 'blogsitesinc_node1': success
+[Sun Oct 13 05:50:17.809 2019] [27161] rotating index 'newshour_node2': success
+[Sun Oct 13 05:50:17.929 2019] [27161] rotating index 'linksinc_node2': success
+[Sun Oct 13 05:50:18.096 2019] [27161] rotating index 'blogsinc_node3': success
+[Sun Oct 13 05:50:18.290 2019] [27161] rotating index 'blogsitesinc_node3': success
+[Sun Oct 13 05:50:18.512 2019] [27161] rotating index 'newsinc_rlp_node4': success
+[Sun Oct 13 05:50:18.549 2019] [27161] applying killlist of index 'blogs3month_node1'
+[Sun Oct 13 05:50:18.723 2019] [27161] applying killlist of index 'blogs3month_rlp_node1'
+[Sun Oct 13 05:50:18.739 2019] [27161] applying killlist of index 'blogsweek_node1'
+[Sun Oct 13 05:50:18.925 2019] [27161] applying killlist of index 'blogsweek_rlp_node1'
+[Sun Oct 13 05:50:18.930 2019] [27161] applying killlist of index 'blogsday_node1'
+[Sun Oct 13 05:50:18.996 2019] [27161] applying killlist of index 'blogsday_rlp_node1'
+[Sun Oct 13 05:50:18.996 2019] [27161] applying killlist of index 'blogshour_node1'
+[Sun Oct 13 05:50:19.003 2019] [27161] applying killlist of index 'blogshour_rlp_node1'
+[Sun Oct 13 05:50:19.003 2019] [27161] applying killlist of index 'blogsinc_node1'
+[Sun Oct 13 05:50:19.004 2019] [27161] applying killlist of index 'blogsinc_rlp_node1'
+[Sun Oct 13 05:50:19.004 2019] [27161] applying killlist of index 'news3month_node1'
+[Sun Oct 13 05:50:19.006 2019] [27161] applying killlist of index 'news3month_rlp_node1'
+[Sun Oct 13 05:50:19.006 2019] [27161] applying killlist of index 'newsweek_node1'
+[Sun Oct 13 05:50:19.008 2019] [27161] applying killlist of index 'newsweek_rlp_node1'
+[Sun Oct 13 05:50:19.008 2019] [27161] applying killlist of index 'newsday_node1'
+[Sun Oct 13 05:50:19.008 2019] [27161] applying killlist of index 'newsday_rlp_node1'
+[Sun Oct 13 05:50:19.008 2019] [27161] applying killlist of index 'newshour_node1'
+[Sun Oct 13 05:50:19.008 2019] [27161] applying killlist of index 'newshour_rlp_node1'
+[Sun Oct 13 05:50:19.009 2019] [27161] applying killlist of index 'newsinc_node1'
+[Sun Oct 13 05:50:19.009 2019] [27161] applying killlist of index 'newsinc_rlp_node1'
+[Sun Oct 13 05:50:19.037 2019] [27161] applying killlist of index 'links3month_node1'
+[Sun Oct 13 05:50:19.299 2019] [27161] applying killlist of index 'linksweek_node1'
+[Sun Oct 13 05:50:19.492 2019] [27161] applying killlist of index 'linksday_node1'
+[Sun Oct 13 05:50:19.537 2019] [27161] applying killlist of index 'linkshour_node1'
+[Sun Oct 13 05:50:19.541 2019] [27161] applying killlist of index 'linksinc_node1'
+[Sun Oct 13 05:50:19.542 2019] [27161] applying killlist of index 'blogsitesinc_node1'
+[Sun Oct 13 05:50:19.556 2019] [27161] applying killlist of index 'blogs3month_node2'
+[Sun Oct 13 05:50:19.712 2019] [27161] applying killlist of index 'blogs3month_rlp_node2'
+[Sun Oct 13 05:50:19.730 2019] [27161] applying killlist of index 'blogsweek_node2'
+[Sun Oct 13 05:50:19.894 2019] [27161] applying killlist of index 'blogsweek_rlp_node2'
+[Sun Oct 13 05:50:19.898 2019] [27161] applying killlist of index 'blogsday_node2'
+[Sun Oct 13 05:50:19.969 2019] [27161] applying killlist of index 'blogsday_rlp_node2'
+[Sun Oct 13 05:50:19.970 2019] [27161] applying killlist of index 'blogshour_node2'
+[Sun Oct 13 05:50:19.977 2019] [27161] applying killlist of index 'blogshour_rlp_node2'
+[Sun Oct 13 05:50:19.977 2019] [27161] applying killlist of index 'blogsinc_node2'
+[Sun Oct 13 05:50:19.978 2019] [27161] applying killlist of index 'blogsinc_rlp_node2'
+[Sun Oct 13 05:50:19.978 2019] [27161] applying killlist of index 'news3month_node2'
+[Sun Oct 13 05:50:19.980 2019] [27161] applying killlist of index 'news3month_rlp_node2'
+[Sun Oct 13 05:50:19.980 2019] [27161] applying killlist of index 'newsweek_node2'
+[Sun Oct 13 05:50:19.981 2019] [27161] applying killlist of index 'newsweek_rlp_node2'
+[Sun Oct 13 05:50:19.981 2019] [27161] applying killlist of index 'newsday_node2'
+[Sun Oct 13 05:50:19.981 2019] [27161] applying killlist of index 'newsday_rlp_node2'
+[Sun Oct 13 05:50:19.981 2019] [27161] applying killlist of index 'newshour_node2'
+[Sun Oct 13 05:50:19.981 2019] [27161] applying killlist of index 'newshour_rlp_node2'
+[Sun Oct 13 05:50:19.981 2019] [27161] applying killlist of index 'newsinc_node2'
+[Sun Oct 13 05:50:19.981 2019] [27161] applying killlist of index 'newsinc_rlp_node2'
+[Sun Oct 13 05:50:20.002 2019] [27161] applying killlist of index 'links3month_node2'
+[Sun Oct 13 05:50:20.235 2019] [27161] applying killlist of index 'linksweek_node2'
+[Sun Oct 13 05:50:20.450 2019] [27161] applying killlist of index 'linksday_node2'
+[Sun Oct 13 05:50:20.512 2019] [27161] applying killlist of index 'linkshour_node2'
+[Sun Oct 13 05:50:20.516 2019] [27161] applying killlist of index 'linksinc_node2'
+[Sun Oct 13 05:50:20.517 2019] [27161] applying killlist of index 'blogsitesinc_node2'
+[Sun Oct 13 05:50:20.533 2019] [27161] applying killlist of index 'blogs3month_node3'
+[Sun Oct 13 05:50:20.700 2019] [27161] applying killlist of index 'blogs3month_rlp_node3'
+[Sun Oct 13 05:50:20.718 2019] [27161] applying killlist of index 'blogsweek_node3'
+[Sun Oct 13 05:50:20.913 2019] [27161] applying killlist of index 'blogsweek_rlp_node3'
+[Sun Oct 13 05:50:20.917 2019] [27161] applying killlist of index 'blogsday_node3'
+[Sun Oct 13 05:50:20.976 2019] [27161] applying killlist of index 'blogsday_rlp_node3'
+[Sun Oct 13 05:50:20.977 2019] [27161] applying killlist of index 'blogshour_node3'
+[Sun Oct 13 05:50:20.983 2019] [27161] applying killlist of index 'blogshour_rlp_node3'
+[Sun Oct 13 05:50:20.983 2019] [27161] applying killlist of index 'blogsinc_node3'
+[Sun Oct 13 05:50:20.983 2019] [27161] applying killlist of index 'blogsinc_rlp_node3'
+[Sun Oct 13 05:50:20.983 2019] [27161] applying killlist of index 'news3month_node3'
+[Sun Oct 13 05:50:20.986 2019] [27161] applying killlist of index 'news3month_rlp_node3'
+[Sun Oct 13 05:50:20.986 2019] [27161] applying killlist of index 'newsweek_node3'
+[Sun Oct 13 05:50:20.988 2019] [27161] applying killlist of index 'newsweek_rlp_node3'
+[Sun Oct 13 05:50:20.988 2019] [27161] applying killlist of index 'newsday_node3'
+[Sun Oct 13 05:50:20.988 2019] [27161] applying killlist of index 'newsday_rlp_node3'
+[Sun Oct 13 05:50:20.988 2019] [27161] applying killlist of index 'newshour_node3'
+[Sun Oct 13 05:50:20.988 2019] [27161] applying killlist of index 'newshour_rlp_node3'
+[Sun Oct 13 05:50:20.988 2019] [27161] applying killlist of index 'newsinc_node3'
+[Sun Oct 13 05:50:20.988 2019] [27161] applying killlist of index 'newsinc_rlp_node3'
+[Sun Oct 13 05:50:21.010 2019] [27161] applying killlist of index 'links3month_node3'
+[Sun Oct 13 05:50:21.287 2019] [27161] applying killlist of index 'linksweek_node3'
+[Sun Oct 13 05:50:21.494 2019] [27161] applying killlist of index 'linksday_node3'
+[Sun Oct 13 05:50:21.546 2019] [27161] applying killlist of index 'linkshour_node3'
+[Sun Oct 13 05:50:21.551 2019] [27161] applying killlist of index 'linksinc_node3'
+[Sun Oct 13 05:50:21.552 2019] [27161] applying killlist of index 'blogsitesinc_node3'
+[Sun Oct 13 05:50:21.568 2019] [27161] applying killlist of index 'blogs3month_node4'
+[Sun Oct 13 05:50:21.780 2019] [27161] applying killlist of index 'blogs3month_rlp_node4'
+[Sun Oct 13 05:50:21.795 2019] [27161] applying killlist of index 'blogsweek_node4'
+[Sun Oct 13 05:50:21.949 2019] [27161] applying killlist of index 'blogsweek_rlp_node4'
+[Sun Oct 13 05:50:21.952 2019] [27161] applying killlist of index 'blogsday_node4'
+[Sun Oct 13 05:50:22.026 2019] [27161] applying killlist of index 'blogsday_rlp_node4'
+[Sun Oct 13 05:50:22.027 2019] [27161] applying killlist of index 'blogshour_node4'
+[Sun Oct 13 05:50:22.036 2019] [27161] applying killlist of index 'blogshour_rlp_node4'
+[Sun Oct 13 05:50:22.036 2019] [27161] applying killlist of index 'blogsinc_node4'
+[Sun Oct 13 05:50:22.036 2019] [27161] applying killlist of index 'blogsinc_rlp_node4'
+[Sun Oct 13 05:50:22.036 2019] [27161] applying killlist of index 'news3month_node4'
+[Sun Oct 13 05:50:22.038 2019] [27161] applying killlist of index 'news3month_rlp_node4'
+[Sun Oct 13 05:50:22.038 2019] [27161] applying killlist of index 'newsweek_node4'
+[Sun Oct 13 05:50:22.039 2019] [27161] applying killlist of index 'newsweek_rlp_node4'
+[Sun Oct 13 05:50:22.039 2019] [27161] applying killlist of index 'newsday_node4'
+[Sun Oct 13 05:50:22.039 2019] [27161] applying killlist of index 'newsday_rlp_node4'
+[Sun Oct 13 05:50:22.039 2019] [27161] applying killlist of index 'newshour_node4'
+[Sun Oct 13 05:50:22.039 2019] [27161] applying killlist of index 'newshour_rlp_node4'
+[Sun Oct 13 05:50:22.039 2019] [27161] applying killlist of index 'newsinc_node4'
+[Sun Oct 13 05:50:22.040 2019] [27161] applying killlist of index 'newsinc_rlp_node4'
+[Sun Oct 13 05:50:22.060 2019] [27161] applying killlist of index 'links3month_node4'
+[Sun Oct 13 05:50:22.321 2019] [27161] applying killlist of index 'linksweek_node4'
+[Sun Oct 13 05:50:22.499 2019] [27161] applying killlist of index 'linksday_node4'
+[Sun Oct 13 05:50:22.550 2019] [27161] applying killlist of index 'linkshour_node4'
+[Sun Oct 13 05:50:22.554 2019] [27161] applying killlist of index 'linksinc_node4'
+[Sun Oct 13 05:50:22.555 2019] [27161] applying killlist of index 'blogsitesinc_node4'
+[Sun Oct 13 05:50:22.560 2019] [27161] prereading 130 indexes
+[Sun Oct 13 05:50:45.324 2019] [27161] prereaded 128 indexes in 22.764 sec
+[Sun Oct 13 05:50:45.324 2019] [27161] accepting connections
+
