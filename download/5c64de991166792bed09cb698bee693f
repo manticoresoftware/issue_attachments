@@ -1,0 +1,839 @@
+[Sun Oct 13 05:49:48.741 2019] [70412] rotating index 'blogsinc_node1': started
+[Sun Oct 13 05:49:48.962 2019] [70412] rotating index 'blogsinc_node1': success
+[Sun Oct 13 05:49:50.655 2019] [70418] rotating index 'blogsitesinc_node3': started
+[Sun Oct 13 05:49:50.903 2019] [70418] rotating index 'blogsitesinc_node3': success
+[Sun Oct 13 05:49:51.807 2019] [70418] rotating index 'newsinc_rlp_node4': started
+[Sun Oct 13 05:49:52.045 2019] [70418] rotating index 'newsinc_rlp_node4': success
+[Sun Oct 13 05:49:52.676 2019] [70404] rotating index 'newshour_node2': started
+[Sun Oct 13 05:49:52.909 2019] [70404] rotating index 'newshour_node2': success
+[Sun Oct 13 05:49:53.265 2019] [70404] rotating index 'linksinc_node2': started
+[Sun Oct 13 05:49:53.498 2019] [70404] rotating index 'linksinc_node2': success
+[Sun Oct 13 05:49:56.273 2019] [70407] rotating index 'blogsinc_node3': started
+[Sun Oct 13 05:49:56.502 2019] [70407] rotating index 'blogsinc_node3': success
+[Sun Oct 13 05:50:17.429 2019] [38474] WARNING: INTERNAL: out-of-range in ThinMMapReader_c: trying to read at 131464256, from mmap of 68884312, query most probably would FAIL; report the fact to dev!
+[Sun Oct 13 05:50:17.429 2019] [38474] WARNING: INTERNAL: out-of-range in ThinMMapReader_c: trying to read at 272646401, from mmap of 68884312, query most probably would FAIL; report the fact to dev!
+------- FATAL: CRASH DUMP -------
+[Sun Oct 13 05:50:17.333 2019] [69995]
+
+--- crashed SphinxAPI request dump ---
+AAABIQAABaYAAAARAAAAAQAAAEQAAAAAAAAnEAAAAAYAAAAAAAAAAgAAAAlwdWJsaXNoZWQAAAM9QCh0aXRsZSxi
+b2R5KSAoKCgoInVrInwiZ2IifCJicml0aXNoInwiZW5nbGFuZCIpICgoInVuaXZlcnNpdHkiICJ2aXNh
+Iil8KCJ2aXNhIiAidW5pdmVyc2l0eSIpfCgiY2FzIiAidW5pdmVyc2l0eSIpfCgidGllciIgIjQiICJ2
+aXNhIil8KCJzdHVkZW50IiAidmlzYSIpKSl8KCgidWsifCJnYiJ8ImVuZ2xhbmQifCgiZ3JlYXQiICJi
+cml0YWluIikpICgoInZpc2EiICJhcHBsaWNhdGlvbiIgImNlbnRyZSIpfCgidmlzYSIgImN1c3Rv
+bWVyIiAic2VydmljZSIpfCgic29wcmEiICJzdGVyaWEiKSkpfCgoInVrInwiZ2IifCJicml0aXNoInwi
+ZW5nbGFuZCJ8KCJncmVhdCIgImJyaXRhaW4iKSkgKCgidmlzYSIgInNlbGYiICJ1cGxvYWQiKXwoImNh
+cyIgImxldHRlciIpKSl8KCgidWsifCJnYiIpICgidmZzInwidGxzIikpfCgoInVrInwiZ2IifCJlbmds
+YW5kIikgKCJ0bHNjb250YWN0InwoInZpc2EiICJzY2FuIikpKXwiI3N0dWR5aW50aGV1ayJ8KCJl
+ZG9zc2llciIgInNvbG8iKXwoImVuZ2xhbmQiICgidmZzInwidGxzIikpfCIjZG9udGJlbGF0ZWZvcmNs
+YXNzInwoImdyZWF0IiAiYnJpdGFpbiIgInZpc2EiICgic2NhbiJ8InN0dWRlbnQiKSl8KCJncmVhdCIg
+ImJyaXRhaW4iICJ1bml2ZXJzaXR5IiAoImNhcyJ8InZpc2EiKSl8KCJicml0aXNoIiAidmlzYSIgInNj
+YW4iICgiYXNzaXN0ZWQifCJhc3Npc3QiKSl8KCJncmVhdCIgImJyaXRhaW4iICgidmZzInwidGxz
+InwidGxzY29udGFjdCJ8KCJ0aWVyIiAiNCIgInZpYSIpKSkpIC0oInRscyJ8KCJ0aW1lcyIgImxpdGVy
+YXJ5IiAic3VwcGxlbWVudCIpKSl8ImJyX2NhY2hlXzUzNDUxMzExNl80OTY4MDA0IgAAAAAAAAAPbmV3
+czNtb250aGJzZTExAAAAAQAAAAAAAAAA//////////8AAAADAAAAE2NvbnRlbnRfcHJvdmlkZXJfaWQA
+AAAAAAAACQAAAAAAAAABAAAAAAAAAAMAAAAAAAAAEgAAAAAAAABjAAAAAAAAAHgAAAAAAAAApQAA
+AAAAAACmAAAAAAAAAOEAAAAAAAAA4gAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAlwdWJsaXNoZWQA
+AAABAAAAAF2iSjoAAAAAXaLy+gAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAZtb2RfaXMAAAAAAAAA
+AwAAAAAAAAAAAAAAAAAAAAEAAAAAAAAABQAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAn
+EAAAAAtAZ3JvdXAgZGVzYwAAAAAAAAADAAAAMgAAAAAAAAAAAAAAAAAATiAAAAAAAAAAYjNmNDVk
+ODAwOWNlMjQ1M2JjYWRkYzdiNjBmZDcyNzk1LENGNlFkZ2d5YmNyNDFYUTI3ZTVVc2ZTYmtMbklkUmdy
+LGJiNGRmMzk1NzBlNWY2ZDA3ZmVjMTZlODkzYTUyZDg4AAAAAAAAAAEqAA9CQAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAApibGVuZGVkLnNvAAAABXF1ZXJ5AAAAAAAAAAAAAAABAAAA
+ASoAAAABKgAAAAAAAAAAAAAAAAAAAAA=
+--- request dump end ---
+--- local index:newsday_node4
+Manticore 3.1.3 f60af0a@191010 release
+Handling signal 11
+-------------- backtrace begins here ---------------
+Program compiled with 4.8.5
+Configured with flags: Configured by CMake with these definitions: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DDISTR_BUILD=rhel7 -DUSE_SSL=ON -DDL_UNIXODBC=1 -DUNIXODBC_LIB=libodbc.so.2 -DDL_EXPAT=1 -DEXPAT_LIB=libexpat.so.1 -DUSE_LIBICONV=1 -DDL_MYSQL=1 -DMYSQL_LIB=libmysqlclient.so.18 -DDL_PGSQL=1 -DPGSQL_LIB=libpq.so.5 -DLOCALDATADIR=/var/data -DFULL_SHARE_DIR=/usr/share/manticore -DICU_IS_SHARED=1 -DDL_ICU=1 -DICU_LIB=libicuuc.so.50 -DUSE_BISON=ON -DUSE_FLEX=ON -DUSE_SYSLOG=1 -DWITH_EXPAT=1 -DWITH_ICONV=ON -DWITH_MYSQL=1 -DWITH_ODBC=ON -DWITH_PGSQL=1 -DWITH_RE2=1 -DWITH_STEMMER=1 -DWITH_ZLIB=ON -DGALERA_SOVERSION=31 -DSYSCONFDIR=etc/sphinx
+Host OS is Linux runner-72989761-project-3858465-concurrent-0 4.19.23-coreos-r1 #1 SMP Mon Feb 25 23:40:01 -00 2019 x86_64 x86_64 x86_64 GNU/Linux
+Stack bottom = 0x7f3521f68dff, thread stack size = 0x100000
+Trying manual backtrace:
+Something wrong with thread stack, manual backtrace may be incorrect (fp=0x7eb57400aea0)
+Wrong stack limit or frame pointer, manual backtrace failed (fp=0x7eb57400aea0, stack=0x7f3521f70000, stacksize=0x100000)
+Trying system backtrace:
+begin of system symbols:
+/usr/bin/searchd(_Z12sphBacktraceib+0x90)[0x6beae0]
+/usr/bin/searchd(_ZN16SphCrashLogger_c11HandleCrashEi+0x1ce)[0x5332ce]
+/lib64/libpthread.so.0(+0xf370)[0x7f7866cbd370]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN13MatchExtendedILb1ELb0ELb0EEEvP16CSphQueryContextPK9CSphQueryiPP15ISphMatchSorterP10ISphRankerii+0x194)[0x65b464]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN16ParsedMultiQueryEPK9CSphQueryP15CSphQueryResultiPP15ISphMatchSorterRK9XQQuery_tP8CSphDictRK18CSphMultiQueryArgsP18CSphQueryNodeCacheRK20SphWordStatChecker_t+0xac0)[0x620500]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN10MultiQueryEPK9CSphQueryP15CSphQueryResultiPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x64e)[0x643cbe]
+/usr/bin/searchd(_ZNK13CSphIndex_VLN12MultiQueryExEiPK9CSphQueryPP15CSphQueryResultPP15ISphMatchSorterRK18CSphMultiQueryArgs+0x8af)[0x64479f]
+/usr/bin/searchd(_ZN15SearchHandler_c16RunLocalSearchMTER13LocalSearch_tRN7Threads13ThreadLocal_tE+0x378)[0x539bb8]
+/usr/bin/searchd(_Z21LocalSearchThreadFuncPv+0x90)[0x539ce0]
+/usr/bin/searchd(_ZN16SphCrashLogger_c13ThreadWrapperEPv+0x48)[0x532288]
+/usr/bin/searchd(_Z20sphThreadProcWrapperPv+0x25)[0x6c4c25]
+/lib64/libpthread.so.0(+0x7dc5)[0x7f7866cb5dc5]
+/lib64/libc.so.6(clone+0x6d)[0x7f78654d076d]
+-------------- backtrace ends here ---------------
+Please, create a bug report in our bug tracker (https://github.com/manticoresoftware/manticore/issues)
+and attach there:
+a) searchd log, b) searchd binary, c) searchd symbols.
+Look into the chapter 'Reporting bugs' in the documentation
+(http://docs.manticoresearch.com/latest/html/reporting_bugs.html)
+[Sun Oct 13 05:50:17.431 2019] [65776] watchdog: got USR1, performing dump of child's stack
+Will run gdb on /usr/bin/searchd, pid 69995
+[New LWP 38549]
+[New LWP 38548]
+[New LWP 38547]
+[New LWP 38546]
+[New LWP 38545]
+[New LWP 38544]
+[New LWP 38514]
+[New LWP 38513]
+[New LWP 38512]
+[New LWP 38511]
+[New LWP 38500]
+[New LWP 38497]
+[New LWP 38474]
+[New LWP 56200]
+[New LWP 6988]
+[New LWP 70418]
+[New LWP 70417]
+[New LWP 70416]
+[New LWP 70415]
+[New LWP 70414]
+[New LWP 70413]
+[New LWP 70412]
+[New LWP 70411]
+[New LWP 70410]
+[New LWP 70409]
+[New LWP 70408]
+[New LWP 70407]
+[New LWP 70406]
+[New LWP 70405]
+[New LWP 70404]
+[New LWP 70403]
+[New LWP 70402]
+[New LWP 70401]
+[New LWP 70400]
+[New LWP 70399]
+[New LWP 70397]
+[New LWP 70396]
+[New LWP 70395]
+[New LWP 70394]
+[New LWP 70393]
+[New LWP 69998]
+[New LWP 69997]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007f78654c7bd3 in select () from /lib64/libc.so.6
+  Id   Target Id         Frame 
+  43   Thread 0x7f78670cc700 (LWP 69997) "TaskSched" 0x00007f7866cb9a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  42   Thread 0x7f7862006700 (LWP 69998) "TaskW_1" 0x00007f7866cb9a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  41   Thread 0x7eb57d6e7700 (LWP 70393) "netloop_0" 0x00007f7866cb6ef7 in pthread_join () from /lib64/libpthread.so.0
+  40   Thread 0x7eb57d5e3700 (LWP 70394) "netloop_1" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  39   Thread 0x7eb57d4df700 (LWP 70395) "netloop_2" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  38   Thread 0x7eb57d3db700 (LWP 70396) "netloop_3" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  37   Thread 0x7eb57d2d7700 (LWP 70397) "netloop_4" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  36   Thread 0x7eb57d1d3700 (LWP 70399) "netloop_5" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  35   Thread 0x7eb57d0cf700 (LWP 70400) "netloop_6" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  34   Thread 0x7eb57cfcb700 (LWP 70401) "netloop_7" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  33   Thread 0x7eb57cec7700 (LWP 70402) "netloop_8" 0x00007f7866cb6ef7 in pthread_join () from /lib64/libpthread.so.0
+  32   Thread 0x7eb57cdc3700 (LWP 70403) "netloop_9" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  31   Thread 0x7eb57ccbf700 (LWP 70404) "netloop_10" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  30   Thread 0x7eb57cbbb700 (LWP 70405) "netloop_11" 0x00007f7866cb6ef7 in pthread_join () from /lib64/libpthread.so.0
+  29   Thread 0x7eb57cab7700 (LWP 70406) "netloop_12" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  28   Thread 0x7eb57c9b3700 (LWP 70407) "netloop_13" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  27   Thread 0x7eb57c8af700 (LWP 70408) "netloop_14" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  26   Thread 0x7eb57c7ab700 (LWP 70409) "netloop_15" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  25   Thread 0x7eb57c6a7700 (LWP 70410) "netloop_16" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  24   Thread 0x7eb57c5a3700 (LWP 70411) "netloop_17" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  23   Thread 0x7eb57c49f700 (LWP 70412) "netloop_18" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  22   Thread 0x7eb57c39b700 (LWP 70413) "netloop_19" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  21   Thread 0x7eb57c297700 (LWP 70414) "netloop_20" 0x00007f7866cb6ef7 in pthread_join () from /lib64/libpthread.so.0
+  20   Thread 0x7eb57c193700 (LWP 70415) "netloop_21" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  19   Thread 0x7eb57c08f700 (LWP 70416) "netloop_22" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  18   Thread 0x7eb57bf8b700 (LWP 70417) "netloop_23" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  17   Thread 0x7eb57be87700 (LWP 70418) "netloop_24" 0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  16   Thread 0x7eb57bd83700 (LWP 6988) "TickPool_0" 0x00007f78654d0d43 in epoll_wait () from /lib64/libc.so.6
+  15   Thread 0x7eb57a3dc700 (LWP 56200) "TaskW_2" 0x00007f7866cb9a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+  14   Thread 0x7f3521f69700 (LWP 38474) "LocalSearch" 0x00007f78654c7bd3 in select () from /lib64/libc.so.6
+  13   Thread 0x7eb57b053700 (LWP 38497) "LocalSearch" 0x00000000005f8c07 in sphGetRowAttr(unsigned int const*, CSphAttrLocator const&) [clone .isra.31] ()
+  12   Thread 0x7f673bc62700 (LWP 38500) "LocalSearch" 0x000000000079ae2a in Filter_Values::Eval(CSphMatch const&) const ()
+  11   Thread 0x7f3521a7d700 (LWP 38511) "LocalSearch" 0x000000000081f397 in ExtOr_c::GetDocsChunk() ()
+  10   Thread 0x7eb57aa11700 (LWP 38512) "LocalSearch" 0x000000000083c816 in ExtTerm_T<true>::GetDocsChunk() ()
+  9    Thread 0x7f673bb5e700 (LWP 38513) "LocalSearch" 0x0000000000820452 in ExtAnd_c::GetDocsChunk() ()
+  8    Thread 0x7f464f598700 (LWP 38514) "LocalSearch" 0x00000000005f9460 in ThinMMapReader_c::UnzipInt() ()
+  7    Thread 0x7f6737e27700 (LWP 38544) "LocalSearch" 0x00007f78655291ea in __memmove_ssse3_back () from /lib64/libc.so.6
+  6    Thread 0x7f673acae700 (LWP 38545) "LocalSearch" 0x00007f7865529310 in __memmove_ssse3_back () from /lib64/libc.so.6
+  5    Thread 0x7f67381e2700 (LWP 38546) "LocalSearch" 0x00007f786552931a in __memmove_ssse3_back () from /lib64/libc.so.6
+  4    Thread 0x7eb57b76b700 (LWP 38547) "LocalSearch" 0x000000000063a903 in DiskIndexQwordSetup_c::Setup(ISphQword*) const ()
+  3    Thread 0x7f6736c3d700 (LWP 38548) "LocalSearch" 0x00007f78655293b5 in __memmove_ssse3_back () from /lib64/libc.so.6
+  2    Thread 0x7f673898b700 (LWP 38549) "LocalSearch" 0x000000000063a855 in DiskIndexQwordSetup_c::Setup(ISphQword*) const ()
+* 1    Thread 0x7f78670ce840 (LWP 69995) "searchd" 0x00007f78654c7bd3 in select () from /lib64/libc.so.6
+
+Thread 43 (Thread 0x7f78670cc700 (LWP 69997)):
+#0  0x00007f7866cb9a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c5776 in AutoEvent_T<true>::WaitEvent(int) ()
+#2  0x00000000005e95ba in LazyJobs_c::WorkerFunc(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 42 (Thread 0x7f7862006700 (LWP 69998)):
+#0  0x00007f7866cb9a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c5626 in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000005e8b34 in LazyJobs_c::TheadPoolWorker(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 41 (Thread 0x7eb57d6e7700 (LWP 70393)):
+#0  0x00007f7866cb6ef7 in pthread_join () from /lib64/libpthread.so.0
+#1  0x00000000006c51fe in sphThreadJoin(unsigned long*) ()
+#2  0x0000000000577498 in SearchHandler_c::RunLocalSearchesParallel() ()
+#3  0x0000000000577d75 in SearchHandler_c::RunLocalSearches() ()
+#4  0x000000000058a3bc in SearchHandler_c::RunSubset(int, int) ()
+#5  0x000000000058b265 in SearchHandler_c::RunQueries() ()
+#6  0x000000000058b580 in HandleCommandSearch(CachedOutputBuffer_c&, unsigned short, InputBuffer_c&, Threads::ThdDesc_t&) ()
+#7  0x000000000058ecb4 in LoopClientSphinx(SearchdCommand_e, unsigned short, int, Threads::ThdDesc_t&, InputBuffer_c&, CachedOutputBuffer_c&, bool) ()
+#8  0x000000000058f6be in ThdJobAPI_t::Call() ()
+#9  0x00000000006c9390 in CSphThdPool::Tick(void*) ()
+#10 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#11 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 40 (Thread 0x7eb57d5e3700 (LWP 70394)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 39 (Thread 0x7eb57d4df700 (LWP 70395)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 38 (Thread 0x7eb57d3db700 (LWP 70396)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 37 (Thread 0x7eb57d2d7700 (LWP 70397)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 36 (Thread 0x7eb57d1d3700 (LWP 70399)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 35 (Thread 0x7eb57d0cf700 (LWP 70400)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 34 (Thread 0x7eb57cfcb700 (LWP 70401)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 33 (Thread 0x7eb57cec7700 (LWP 70402)):
+#0  0x00007f7866cb6ef7 in pthread_join () from /lib64/libpthread.so.0
+#1  0x00000000006c51fe in sphThreadJoin(unsigned long*) ()
+#2  0x0000000000577498 in SearchHandler_c::RunLocalSearchesParallel() ()
+#3  0x0000000000577d75 in SearchHandler_c::RunLocalSearches() ()
+#4  0x000000000058a3bc in SearchHandler_c::RunSubset(int, int) ()
+#5  0x000000000058b265 in SearchHandler_c::RunQueries() ()
+#6  0x000000000058b580 in HandleCommandSearch(CachedOutputBuffer_c&, unsigned short, InputBuffer_c&, Threads::ThdDesc_t&) ()
+#7  0x000000000058ecb4 in LoopClientSphinx(SearchdCommand_e, unsigned short, int, Threads::ThdDesc_t&, InputBuffer_c&, CachedOutputBuffer_c&, bool) ()
+#8  0x000000000058f6be in ThdJobAPI_t::Call() ()
+#9  0x00000000006c9390 in CSphThdPool::Tick(void*) ()
+#10 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#11 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 32 (Thread 0x7eb57cdc3700 (LWP 70403)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 31 (Thread 0x7eb57ccbf700 (LWP 70404)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 30 (Thread 0x7eb57cbbb700 (LWP 70405)):
+#0  0x00007f7866cb6ef7 in pthread_join () from /lib64/libpthread.so.0
+#1  0x00000000006c51fe in sphThreadJoin(unsigned long*) ()
+#2  0x0000000000577498 in SearchHandler_c::RunLocalSearchesParallel() ()
+#3  0x0000000000577d75 in SearchHandler_c::RunLocalSearches() ()
+#4  0x000000000058a3bc in SearchHandler_c::RunSubset(int, int) ()
+#5  0x000000000058b265 in SearchHandler_c::RunQueries() ()
+#6  0x000000000058b580 in HandleCommandSearch(CachedOutputBuffer_c&, unsigned short, InputBuffer_c&, Threads::ThdDesc_t&) ()
+#7  0x000000000058ecb4 in LoopClientSphinx(SearchdCommand_e, unsigned short, int, Threads::ThdDesc_t&, InputBuffer_c&, CachedOutputBuffer_c&, bool) ()
+#8  0x000000000058f6be in ThdJobAPI_t::Call() ()
+#9  0x00000000006c9390 in CSphThdPool::Tick(void*) ()
+#10 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#11 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7eb57cab7700 (LWP 70406)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7eb57c9b3700 (LWP 70407)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7eb57c8af700 (LWP 70408)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7eb57c7ab700 (LWP 70409)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7eb57c6a7700 (LWP 70410)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7eb57c5a3700 (LWP 70411)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7eb57c49f700 (LWP 70412)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7eb57c39b700 (LWP 70413)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7eb57c297700 (LWP 70414)):
+#0  0x00007f7866cb6ef7 in pthread_join () from /lib64/libpthread.so.0
+#1  0x00000000006c51fe in sphThreadJoin(unsigned long*) ()
+#2  0x0000000000577498 in SearchHandler_c::RunLocalSearchesParallel() ()
+#3  0x0000000000577d75 in SearchHandler_c::RunLocalSearches() ()
+#4  0x000000000058a3bc in SearchHandler_c::RunSubset(int, int) ()
+#5  0x000000000058b265 in SearchHandler_c::RunQueries() ()
+#6  0x000000000058b580 in HandleCommandSearch(CachedOutputBuffer_c&, unsigned short, InputBuffer_c&, Threads::ThdDesc_t&) ()
+#7  0x000000000058ecb4 in LoopClientSphinx(SearchdCommand_e, unsigned short, int, Threads::ThdDesc_t&, InputBuffer_c&, CachedOutputBuffer_c&, bool) ()
+#8  0x000000000058f6be in ThdJobAPI_t::Call() ()
+#9  0x00000000006c9390 in CSphThdPool::Tick(void*) ()
+#10 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#11 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#12 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7eb57c193700 (LWP 70415)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7eb57c08f700 (LWP 70416)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7eb57bf8b700 (LWP 70417)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7eb57be87700 (LWP 70418)):
+#0  0x00007f7866cb96d5 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c569b in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000006c931f in CSphThdPool::Tick(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7eb57bd83700 (LWP 6988)):
+#0  0x00007f78654d0d43 in epoll_wait () from /lib64/libc.so.6
+#1  0x00000000005c184e in EpollEvents_c::Wait(int) ()
+#2  0x000000000059c52b in CSphNetLoop::LoopNetPoll() ()
+#3  0x000000000059ccff in CSphNetLoop::ThdLoop(void*) ()
+#4  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#5  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 15 (Thread 0x7eb57a3dc700 (LWP 56200)):
+#0  0x00007f7866cb9a82 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00000000006c5626 in AutoEvent_T<false>::WaitEvent(int) ()
+#2  0x00000000005e8b34 in LazyJobs_c::TheadPoolWorker(void*) ()
+#3  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#4  0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7f3521f69700 (LWP 38474)):
+#0  0x00007f78654c7bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f8d54 in sphSleepMsec(int) [clone .part.66] ()
+#2  0x00000000006beb51 in sphBacktrace(int, bool) ()
+#3  0x00000000005332ce in SphCrashLogger_c::HandleCrash(int) ()
+#4  <signal handler called>
+#5  0x000000000065b464 in void CSphIndex_VLN::MatchExtended<true, false, false>(CSphQueryContext*, CSphQuery const*, int, ISphMatchSorter**, ISphRanker*, int, int) const ()
+#6  0x0000000000620500 in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#7  0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#8  0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#9  0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#10 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#11 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#12 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#13 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7eb57b053700 (LWP 38497)):
+#0  0x00000000005f8c07 in sphGetRowAttr(unsigned int const*, CSphAttrLocator const&) [clone .isra.31] ()
+#1  0x00000000005fdb30 in MatchesToNewSchema_c::Process(CSphMatch*) ()
+#2  0x0000000000730d68 in CSphMatchQueue<MatchGeneric2_fn, false>::Finalize(ISphMatchProcessor&, bool) ()
+#3  0x00000000006331d5 in PooledAttrsToPtrAttrs(ISphMatchSorter**, int, unsigned char const*) ()
+#4  0x0000000000643cf9 in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#5  0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#6  0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#7  0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#8  0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#9  0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#10 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#11 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7f673bc62700 (LWP 38500)):
+#0  0x000000000079ae2a in Filter_Values::Eval(CSphMatch const&) const ()
+#1  0x0000000000795775 in Filter_And::Eval(CSphMatch const&) const ()
+#2  0x00000000005fdead in CSphIndex_VLN::EarlyReject(CSphQueryContext*, CSphMatch&) const ()
+#3  0x00000000007a94fc in ExtRanker_T<true>::GetFilteredDocs() ()
+#4  0x00000000007a9177 in ExtRanker_WeightSum_c<true>::GetMatches() ()
+#5  0x000000000065b39b in void CSphIndex_VLN::MatchExtended<true, false, false>(CSphQueryContext*, CSphQuery const*, int, ISphMatchSorter**, ISphRanker*, int, int) const ()
+#6  0x0000000000620500 in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#7  0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#8  0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#9  0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#10 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#11 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#12 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#13 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#14 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7f3521a7d700 (LWP 38511)):
+#0  0x000000000081f397 in ExtOr_c::GetDocsChunk() ()
+#1  0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#2  0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#3  0x0000000000820511 in ExtAnd_c::GetDocsChunk() ()
+#4  0x000000000081f415 in ExtOr_c::GetDocsChunk() ()
+#5  0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#6  0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#7  0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#8  0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#9  0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#10 0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#11 0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#12 0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#13 0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#14 0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#15 0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#16 0x0000000000820a01 in ExtAndNot_c::GetDocsChunk() ()
+#17 0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#18 0x0000000000820a01 in ExtAndNot_c::GetDocsChunk() ()
+#19 0x00000000007a9470 in ExtRanker_T<true>::GetFilteredDocs() ()
+#20 0x00000000007b3702 in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::GetMatches() ()
+#21 0x000000000065b39b in void CSphIndex_VLN::MatchExtended<true, false, false>(CSphQueryContext*, CSphQuery const*, int, ISphMatchSorter**, ISphRanker*, int, int) const ()
+#22 0x0000000000620500 in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#23 0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#24 0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#25 0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#26 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#27 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#28 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#29 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#30 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7eb57aa11700 (LWP 38512)):
+#0  0x000000000083c816 in ExtTerm_T<true>::GetDocsChunk() ()
+#1  0x0000000000820511 in ExtAnd_c::GetDocsChunk() ()
+#2  0x0000000000820511 in ExtAnd_c::GetDocsChunk() ()
+#3  0x000000000081f415 in ExtOr_c::GetDocsChunk() ()
+#4  0x0000000000820a01 in ExtAndNot_c::GetDocsChunk() ()
+#5  0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#6  0x0000000000820a01 in ExtAndNot_c::GetDocsChunk() ()
+#7  0x00000000007a9470 in ExtRanker_T<true>::GetFilteredDocs() ()
+#8  0x00000000007b3702 in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::GetMatches() ()
+#9  0x000000000065b39b in void CSphIndex_VLN::MatchExtended<true, false, false>(CSphQueryContext*, CSphQuery const*, int, ISphMatchSorter**, ISphRanker*, int, int) const ()
+#10 0x0000000000620500 in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#11 0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#12 0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#13 0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#14 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#15 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#16 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#17 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#18 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7f673bb5e700 (LWP 38513)):
+#0  0x0000000000820452 in ExtAnd_c::GetDocsChunk() ()
+#1  0x0000000000820511 in ExtAnd_c::GetDocsChunk() ()
+#2  0x000000000081f415 in ExtOr_c::GetDocsChunk() ()
+#3  0x0000000000820a01 in ExtAndNot_c::GetDocsChunk() ()
+#4  0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#5  0x0000000000820a01 in ExtAndNot_c::GetDocsChunk() ()
+#6  0x00000000007a9470 in ExtRanker_T<true>::GetFilteredDocs() ()
+#7  0x00000000007b3702 in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::GetMatches() ()
+#8  0x000000000065b39b in void CSphIndex_VLN::MatchExtended<true, false, false>(CSphQueryContext*, CSphQuery const*, int, ISphMatchSorter**, ISphRanker*, int, int) const ()
+#9  0x0000000000620500 in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#10 0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#11 0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#12 0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#13 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#14 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#15 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#16 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#17 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7f464f598700 (LWP 38514)):
+#0  0x00000000005f9460 in ThinMMapReader_c::UnzipInt() ()
+#1  0x0000000000657552 in DiskIndexQword_c<true, false>::GetNextDoc() ()
+#2  0x000000000083c878 in ExtTerm_T<true>::GetDocsChunk() ()
+#3  0x0000000000820511 in ExtAnd_c::GetDocsChunk() ()
+#4  0x0000000000820511 in ExtAnd_c::GetDocsChunk() ()
+#5  0x000000000081f415 in ExtOr_c::GetDocsChunk() ()
+#6  0x0000000000820a01 in ExtAndNot_c::GetDocsChunk() ()
+#7  0x000000000081f3f9 in ExtOr_c::GetDocsChunk() ()
+#8  0x0000000000820a01 in ExtAndNot_c::GetDocsChunk() ()
+#9  0x00000000007a9470 in ExtRanker_T<true>::GetFilteredDocs() ()
+#10 0x00000000007b3702 in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::GetMatches() ()
+#11 0x000000000065b39b in void CSphIndex_VLN::MatchExtended<true, false, false>(CSphQueryContext*, CSphQuery const*, int, ISphMatchSorter**, ISphRanker*, int, int) const ()
+#12 0x0000000000620500 in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#13 0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#14 0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#15 0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#16 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#17 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#18 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#19 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#20 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7f6737e27700 (LWP 38544)):
+#0  0x00007f78655291ea in __memmove_ssse3_back () from /lib64/libc.so.6
+#1  0x000000000063a9ac in DiskIndexQwordSetup_c::Setup(ISphQword*) const ()
+#2  0x0000000000821b47 in CreateQueryWord(XQKeyword_t const&, ISphQwordSetup const&, CSphDict*) ()
+#3  0x00000000008378e5 in ExtMultiAnd_T<true, false>::ExtMultiAnd_T(VecTraits_T<XQNode_t*> const&, ISphQwordSetup const&) ()
+#4  0x000000000082a2fb in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#5  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#6  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#7  0x000000000079e0b0 in ExtRanker_c::ExtRanker_c(XQQuery_t const&, ISphQwordSetup const&, bool, bool, bool) ()
+#8  0x00000000007aadbb in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::ExtRanker_State_T(XQQuery_t const&, ISphQwordSetup const&, bool, bool) ()
+#9  0x00000000007a026c in sphCreateRanker(XQQuery_t const&, CSphQuery const*, CSphQueryResult*, ISphQwordSetup const&, CSphQueryContext const&, ISphSchema const&) ()
+#10 0x000000000062001c in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#11 0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#12 0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#13 0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#14 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#15 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#16 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#17 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#18 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7f673acae700 (LWP 38545)):
+#0  0x00007f7865529310 in __memmove_ssse3_back () from /lib64/libc.so.6
+#1  0x000000000063a9ac in DiskIndexQwordSetup_c::Setup(ISphQword*) const ()
+#2  0x0000000000821b47 in CreateQueryWord(XQKeyword_t const&, ISphQwordSetup const&, CSphDict*) ()
+#3  0x00000000008378e5 in ExtMultiAnd_T<true, false>::ExtMultiAnd_T(VecTraits_T<XQNode_t*> const&, ISphQwordSetup const&) ()
+#4  0x000000000082a2fb in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#5  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#6  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#7  0x000000000079e0b0 in ExtRanker_c::ExtRanker_c(XQQuery_t const&, ISphQwordSetup const&, bool, bool, bool) ()
+#8  0x00000000007aadbb in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::ExtRanker_State_T(XQQuery_t const&, ISphQwordSetup const&, bool, bool) ()
+#9  0x00000000007a026c in sphCreateRanker(XQQuery_t const&, CSphQuery const*, CSphQueryResult*, ISphQwordSetup const&, CSphQueryContext const&, ISphSchema const&) ()
+#10 0x000000000062001c in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#11 0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#12 0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#13 0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#14 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#15 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#16 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#17 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#18 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7f67381e2700 (LWP 38546)):
+#0  0x00007f786552931a in __memmove_ssse3_back () from /lib64/libc.so.6
+#1  0x000000000063a9ac in DiskIndexQwordSetup_c::Setup(ISphQword*) const ()
+#2  0x0000000000821b47 in CreateQueryWord(XQKeyword_t const&, ISphQwordSetup const&, CSphDict*) ()
+#3  0x00000000008378e5 in ExtMultiAnd_T<true, false>::ExtMultiAnd_T(VecTraits_T<XQNode_t*> const&, ISphQwordSetup const&) ()
+#4  0x000000000082a2fb in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#5  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#6  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#7  0x000000000079e0b0 in ExtRanker_c::ExtRanker_c(XQQuery_t const&, ISphQwordSetup const&, bool, bool, bool) ()
+#8  0x00000000007aadbb in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::ExtRanker_State_T(XQQuery_t const&, ISphQwordSetup const&, bool, bool) ()
+#9  0x00000000007a026c in sphCreateRanker(XQQuery_t const&, CSphQuery const*, CSphQueryResult*, ISphQwordSetup const&, CSphQueryContext const&, ISphSchema const&) ()
+#10 0x000000000062001c in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#11 0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#12 0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#13 0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#14 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#15 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#16 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#17 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#18 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7eb57b76b700 (LWP 38547)):
+#0  0x000000000063a903 in DiskIndexQwordSetup_c::Setup(ISphQword*) const ()
+#1  0x0000000000821b47 in CreateQueryWord(XQKeyword_t const&, ISphQwordSetup const&, CSphDict*) ()
+#2  0x00000000008378e5 in ExtMultiAnd_T<true, false>::ExtMultiAnd_T(VecTraits_T<XQNode_t*> const&, ISphQwordSetup const&) ()
+#3  0x000000000082a2fb in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#4  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#5  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#6  0x000000000079e0b0 in ExtRanker_c::ExtRanker_c(XQQuery_t const&, ISphQwordSetup const&, bool, bool, bool) ()
+#7  0x00000000007aadbb in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::ExtRanker_State_T(XQQuery_t const&, ISphQwordSetup const&, bool, bool) ()
+#8  0x00000000007a026c in sphCreateRanker(XQQuery_t const&, CSphQuery const*, CSphQueryResult*, ISphQwordSetup const&, CSphQueryContext const&, ISphSchema const&) ()
+#9  0x000000000062001c in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#10 0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#11 0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#12 0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#13 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#14 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#15 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#16 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#17 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7f6736c3d700 (LWP 38548)):
+#0  0x00007f78655293b5 in __memmove_ssse3_back () from /lib64/libc.so.6
+#1  0x000000000063a9ac in DiskIndexQwordSetup_c::Setup(ISphQword*) const ()
+#2  0x0000000000821b47 in CreateQueryWord(XQKeyword_t const&, ISphQwordSetup const&, CSphDict*) ()
+#3  0x000000000082b59c in ExtNode_i* CreateMultiNode<ExtNWay_T<FSMphrase_c> >(XQNode_t const*, ISphQwordSetup const&, bool, bool) [clone .constprop.239] ()
+#4  0x000000000082941a in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#5  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#6  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#7  0x000000000079e0b0 in ExtRanker_c::ExtRanker_c(XQQuery_t const&, ISphQwordSetup const&, bool, bool, bool) ()
+#8  0x00000000007aadbb in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::ExtRanker_State_T(XQQuery_t const&, ISphQwordSetup const&, bool, bool) ()
+#9  0x00000000007a026c in sphCreateRanker(XQQuery_t const&, CSphQuery const*, CSphQueryResult*, ISphQwordSetup const&, CSphQueryContext const&, ISphSchema const&) ()
+#10 0x000000000062001c in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#11 0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#12 0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#13 0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#14 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#15 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#16 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#17 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#18 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7f673898b700 (LWP 38549)):
+#0  0x000000000063a855 in DiskIndexQwordSetup_c::Setup(ISphQword*) const ()
+#1  0x0000000000821b47 in CreateQueryWord(XQKeyword_t const&, ISphQwordSetup const&, CSphDict*) ()
+#2  0x000000000082b59c in ExtNode_i* CreateMultiNode<ExtNWay_T<FSMphrase_c> >(XQNode_t const*, ISphQwordSetup const&, bool, bool) [clone .constprop.239] ()
+#3  0x000000000082941a in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#4  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#5  0x0000000000829086 in ExtNode_i::Create(XQNode_t const*, ISphQwordSetup const&, bool) ()
+#6  0x000000000079e0b0 in ExtRanker_c::ExtRanker_c(XQQuery_t const&, ISphQwordSetup const&, bool, bool, bool) ()
+#7  0x00000000007aadbb in ExtRanker_State_T<RankerState_Proximity_fn<true, true>, true>::ExtRanker_State_T(XQQuery_t const&, ISphQwordSetup const&, bool, bool) ()
+#8  0x00000000007a026c in sphCreateRanker(XQQuery_t const&, CSphQuery const*, CSphQueryResult*, ISphQwordSetup const&, CSphQueryContext const&, ISphSchema const&) ()
+#9  0x000000000062001c in CSphIndex_VLN::ParsedMultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, XQQuery_t const&, CSphDict*, CSphMultiQueryArgs const&, CSphQueryNodeCache*, SphWordStatChecker_t const&) const ()
+#10 0x0000000000643cbe in CSphIndex_VLN::MultiQuery(CSphQuery const*, CSphQueryResult*, int, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#11 0x000000000064479f in CSphIndex_VLN::MultiQueryEx(int, CSphQuery const*, CSphQueryResult**, ISphMatchSorter**, CSphMultiQueryArgs const&) const ()
+#12 0x0000000000539bb8 in SearchHandler_c::RunLocalSearchMT(LocalSearch_t&, Threads::ThreadLocal_t&) ()
+#13 0x0000000000539ce0 in LocalSearchThreadFunc(void*) ()
+#14 0x0000000000532288 in SphCrashLogger_c::ThreadWrapper(void*) ()
+#15 0x00000000006c4c25 in sphThreadProcWrapper(void*) ()
+#16 0x00007f7866cb5dc5 in start_thread () from /lib64/libpthread.so.0
+#17 0x00007f78654d076d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f78670ce840 (LWP 69995)):
+#0  0x00007f78654c7bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f8d54 in sphSleepMsec(int) [clone .part.66] ()
+#2  0x0000000000581932 in TickHead() ()
+#3  0x000000000058468a in ServiceMain(int, char**) ()
+#4  0x000000000052fff9 in main ()
+
+Main thread:
+#0  0x00007f78654c7bd3 in select () from /lib64/libc.so.6
+#1  0x00000000005f8d54 in sphSleepMsec(int) [clone .part.66] ()
+#2  0x0000000000581932 in TickHead() ()
+#3  0x000000000058468a in ServiceMain(int, char**) ()
+#4  0x000000000052fff9 in main ()
+
+Local variables:
+No symbol table info available.
+--- 9 active threads ---
+thd 0, proto sphinxapi, state query, command search
+thd 1, proto sphinxapi, state query, command search
+thd 2, proto sphinxapi, state query, command search
+thd 3, proto sphinxapi, state query, command search
+thd 4, proto sphinxapi, state query, command search
+thd 5, proto sphinxapi, state query, command search
+thd 6, proto sphinxapi, state query, command search
+thd 7, proto sphinxapi, state query, command search
+thd 8, proto sphinxapi, state query, command search
+------- CRASH DUMP END -------
+[Sun Oct 13 05:50:52.837 2019] [65776] watchdog: main process 69995 killed dirtily with signal 11, core dumped, will be restarted
+[Sun Oct 13 05:50:52.837 2019] [65776] watchdog: got error 10, No child processes
+[Sun Oct 13 05:50:52.837 2019] [65776] watchdog: main process 42429 forked ok
+[Sun Oct 13 05:50:52.900 2019] [42429] listening on all interfaces, port=3312
+[Sun Oct 13 05:50:52.900 2019] [42429] listening on all interfaces, port=6312
+[Sun Oct 13 05:50:52.900 2019] [42429] listening on all interfaces, port=9312
+[Sun Oct 13 05:50:53.226 2019] [42429] applying killlist of index 'blogs3month_node1'
+[Sun Oct 13 05:50:53.404 2019] [42429] applying killlist of index 'blogs3month_rlp_node1'
+[Sun Oct 13 05:50:53.422 2019] [42429] applying killlist of index 'blogsweek_node1'
+[Sun Oct 13 05:50:53.608 2019] [42429] applying killlist of index 'blogsweek_rlp_node1'
+[Sun Oct 13 05:50:53.613 2019] [42429] applying killlist of index 'blogsday_node1'
+[Sun Oct 13 05:50:53.680 2019] [42429] applying killlist of index 'blogsday_rlp_node1'
+[Sun Oct 13 05:50:53.681 2019] [42429] applying killlist of index 'blogshour_node1'
+[Sun Oct 13 05:50:53.688 2019] [42429] applying killlist of index 'blogshour_rlp_node1'
+[Sun Oct 13 05:50:53.688 2019] [42429] applying killlist of index 'blogsinc_node1'
+[Sun Oct 13 05:50:53.689 2019] [42429] applying killlist of index 'blogsinc_rlp_node1'
+[Sun Oct 13 05:50:53.689 2019] [42429] applying killlist of index 'news3month_node1'
+[Sun Oct 13 05:50:53.691 2019] [42429] applying killlist of index 'news3month_rlp_node1'
+[Sun Oct 13 05:50:53.691 2019] [42429] applying killlist of index 'newsweek_node1'
+[Sun Oct 13 05:50:53.693 2019] [42429] applying killlist of index 'newsweek_rlp_node1'
+[Sun Oct 13 05:50:53.693 2019] [42429] applying killlist of index 'newsday_node1'
+[Sun Oct 13 05:50:53.693 2019] [42429] applying killlist of index 'newsday_rlp_node1'
+[Sun Oct 13 05:50:53.694 2019] [42429] applying killlist of index 'newshour_node1'
+[Sun Oct 13 05:50:53.694 2019] [42429] applying killlist of index 'newshour_rlp_node1'
+[Sun Oct 13 05:50:53.694 2019] [42429] applying killlist of index 'newsinc_node1'
+[Sun Oct 13 05:50:53.694 2019] [42429] applying killlist of index 'newsinc_rlp_node1'
+[Sun Oct 13 05:50:53.724 2019] [42429] applying killlist of index 'links3month_node1'
+[Sun Oct 13 05:50:53.986 2019] [42429] applying killlist of index 'linksweek_node1'
+[Sun Oct 13 05:50:54.181 2019] [42429] applying killlist of index 'linksday_node1'
+[Sun Oct 13 05:50:54.227 2019] [42429] applying killlist of index 'linkshour_node1'
+[Sun Oct 13 05:50:54.231 2019] [42429] applying killlist of index 'linksinc_node1'
+[Sun Oct 13 05:50:54.232 2019] [42429] applying killlist of index 'blogsitesinc_node1'
+[Sun Oct 13 05:50:54.249 2019] [42429] applying killlist of index 'blogs3month_node2'
+[Sun Oct 13 05:50:54.415 2019] [42429] applying killlist of index 'blogs3month_rlp_node2'
+[Sun Oct 13 05:50:54.433 2019] [42429] applying killlist of index 'blogsweek_node2'
+[Sun Oct 13 05:50:54.624 2019] [42429] applying killlist of index 'blogsweek_rlp_node2'
+[Sun Oct 13 05:50:54.629 2019] [42429] applying killlist of index 'blogsday_node2'
+[Sun Oct 13 05:50:54.713 2019] [42429] applying killlist of index 'blogsday_rlp_node2'
+[Sun Oct 13 05:50:54.714 2019] [42429] applying killlist of index 'blogshour_node2'
+[Sun Oct 13 05:50:54.723 2019] [42429] applying killlist of index 'blogshour_rlp_node2'
+[Sun Oct 13 05:50:54.723 2019] [42429] applying killlist of index 'blogsinc_node2'
+[Sun Oct 13 05:50:54.724 2019] [42429] applying killlist of index 'blogsinc_rlp_node2'
+[Sun Oct 13 05:50:54.724 2019] [42429] applying killlist of index 'news3month_node2'
+[Sun Oct 13 05:50:54.726 2019] [42429] applying killlist of index 'news3month_rlp_node2'
+[Sun Oct 13 05:50:54.726 2019] [42429] applying killlist of index 'newsweek_node2'
+[Sun Oct 13 05:50:54.727 2019] [42429] applying killlist of index 'newsweek_rlp_node2'
+[Sun Oct 13 05:50:54.728 2019] [42429] applying killlist of index 'newsday_node2'
+[Sun Oct 13 05:50:54.728 2019] [42429] applying killlist of index 'newsday_rlp_node2'
+[Sun Oct 13 05:50:54.728 2019] [42429] applying killlist of index 'newshour_node2'
+[Sun Oct 13 05:50:54.728 2019] [42429] applying killlist of index 'newshour_rlp_node2'
+[Sun Oct 13 05:50:54.728 2019] [42429] applying killlist of index 'newsinc_node2'
+[Sun Oct 13 05:50:54.728 2019] [42429] applying killlist of index 'newsinc_rlp_node2'
+[Sun Oct 13 05:50:54.754 2019] [42429] applying killlist of index 'links3month_node2'
+[Sun Oct 13 05:50:55.056 2019] [42429] applying killlist of index 'linksweek_node2'
+[Sun Oct 13 05:50:55.297 2019] [42429] applying killlist of index 'linksday_node2'
+[Sun Oct 13 05:50:55.373 2019] [42429] applying killlist of index 'linkshour_node2'
+[Sun Oct 13 05:50:55.379 2019] [42429] applying killlist of index 'linksinc_node2'
+[Sun Oct 13 05:50:55.380 2019] [42429] applying killlist of index 'blogsitesinc_node2'
+[Sun Oct 13 05:50:55.401 2019] [42429] applying killlist of index 'blogs3month_node3'
+[Sun Oct 13 05:50:55.596 2019] [42429] applying killlist of index 'blogs3month_rlp_node3'
+[Sun Oct 13 05:50:55.617 2019] [42429] applying killlist of index 'blogsweek_node3'
+[Sun Oct 13 05:50:55.834 2019] [42429] applying killlist of index 'blogsweek_rlp_node3'
+[Sun Oct 13 05:50:55.838 2019] [42429] applying killlist of index 'blogsday_node3'
+[Sun Oct 13 05:50:55.901 2019] [42429] applying killlist of index 'blogsday_rlp_node3'
+[Sun Oct 13 05:50:55.902 2019] [42429] applying killlist of index 'blogshour_node3'
+[Sun Oct 13 05:50:55.909 2019] [42429] applying killlist of index 'blogshour_rlp_node3'
+[Sun Oct 13 05:50:55.910 2019] [42429] applying killlist of index 'blogsinc_node3'
+[Sun Oct 13 05:50:55.910 2019] [42429] applying killlist of index 'blogsinc_rlp_node3'
+[Sun Oct 13 05:50:55.910 2019] [42429] applying killlist of index 'news3month_node3'
+[Sun Oct 13 05:50:55.913 2019] [42429] applying killlist of index 'news3month_rlp_node3'
+[Sun Oct 13 05:50:55.913 2019] [42429] applying killlist of index 'newsweek_node3'
+[Sun Oct 13 05:50:55.914 2019] [42429] applying killlist of index 'newsweek_rlp_node3'
+[Sun Oct 13 05:50:55.914 2019] [42429] applying killlist of index 'newsday_node3'
+[Sun Oct 13 05:50:55.915 2019] [42429] applying killlist of index 'newsday_rlp_node3'
+[Sun Oct 13 05:50:55.915 2019] [42429] applying killlist of index 'newshour_node3'
+[Sun Oct 13 05:50:55.915 2019] [42429] applying killlist of index 'newshour_rlp_node3'
+[Sun Oct 13 05:50:55.915 2019] [42429] applying killlist of index 'newsinc_node3'
+[Sun Oct 13 05:50:55.915 2019] [42429] applying killlist of index 'newsinc_rlp_node3'
+[Sun Oct 13 05:50:55.940 2019] [42429] applying killlist of index 'links3month_node3'
+[Sun Oct 13 05:50:56.250 2019] [42429] applying killlist of index 'linksweek_node3'
+[Sun Oct 13 05:50:56.480 2019] [42429] applying killlist of index 'linksday_node3'
+[Sun Oct 13 05:50:56.538 2019] [42429] applying killlist of index 'linkshour_node3'
+[Sun Oct 13 05:50:56.544 2019] [42429] applying killlist of index 'linksinc_node3'
+[Sun Oct 13 05:50:56.545 2019] [42429] applying killlist of index 'blogsitesinc_node3'
+[Sun Oct 13 05:50:56.562 2019] [42429] applying killlist of index 'blogs3month_node4'
+[Sun Oct 13 05:50:56.775 2019] [42429] applying killlist of index 'blogs3month_rlp_node4'
+[Sun Oct 13 05:50:56.791 2019] [42429] applying killlist of index 'blogsweek_node4'
+[Sun Oct 13 05:50:56.945 2019] [42429] applying killlist of index 'blogsweek_rlp_node4'
+[Sun Oct 13 05:50:56.949 2019] [42429] applying killlist of index 'blogsday_node4'
+[Sun Oct 13 05:50:57.029 2019] [42429] applying killlist of index 'blogsday_rlp_node4'
+[Sun Oct 13 05:50:57.030 2019] [42429] applying killlist of index 'blogshour_node4'
+[Sun Oct 13 05:50:57.040 2019] [42429] applying killlist of index 'blogshour_rlp_node4'
+[Sun Oct 13 05:50:57.040 2019] [42429] applying killlist of index 'blogsinc_node4'
+[Sun Oct 13 05:50:57.041 2019] [42429] applying killlist of index 'blogsinc_rlp_node4'
+[Sun Oct 13 05:50:57.041 2019] [42429] applying killlist of index 'news3month_node4'
+[Sun Oct 13 05:50:57.043 2019] [42429] applying killlist of index 'news3month_rlp_node4'
+[Sun Oct 13 05:50:57.043 2019] [42429] applying killlist of index 'newsweek_node4'
+[Sun Oct 13 05:50:57.044 2019] [42429] applying killlist of index 'newsweek_rlp_node4'
+[Sun Oct 13 05:50:57.044 2019] [42429] applying killlist of index 'newsday_node4'
+[Sun Oct 13 05:50:57.044 2019] [42429] applying killlist of index 'newsday_rlp_node4'
+[Sun Oct 13 05:50:57.044 2019] [42429] applying killlist of index 'newshour_node4'
+[Sun Oct 13 05:50:57.045 2019] [42429] applying killlist of index 'newshour_rlp_node4'
+[Sun Oct 13 05:50:57.045 2019] [42429] applying killlist of index 'newsinc_node4'
+[Sun Oct 13 05:50:57.045 2019] [42429] applying killlist of index 'newsinc_rlp_node4'
+[Sun Oct 13 05:50:57.065 2019] [42429] applying killlist of index 'links3month_node4'
+[Sun Oct 13 05:50:57.307 2019] [42429] applying killlist of index 'linksweek_node4'
+[Sun Oct 13 05:50:57.483 2019] [42429] applying killlist of index 'linksday_node4'
+[Sun Oct 13 05:50:57.533 2019] [42429] applying killlist of index 'linkshour_node4'
+[Sun Oct 13 05:50:57.537 2019] [42429] applying killlist of index 'linksinc_node4'
+[Sun Oct 13 05:50:57.538 2019] [42429] applying killlist of index 'blogsitesinc_node4'
+[Sun Oct 13 05:50:57.543 2019] [42429] prereading 130 indexes
+[Sun Oct 13 05:51:21.743 2019] [42429] prereaded 128 indexes in 24.200 sec
+[Sun Oct 13 05:51:21.743 2019] [42429] accepting connections
+
