@@ -1,0 +1,74 @@
+Since manticore does not start well with Empty DATA folder, tried again dropping indexes instead of wiping out DATA folder.
+NODE 4 tried dropping tiny tables, few MB, - fast, bigger - 2 Gb - fast, 8 Gb - last one - got stuck
+Node 3 tried goin immediately dropping index which is aroung 8 Gb - got stuck. In 5 minutes nothing happenedm files from index disk folder are gone.
+Did not even try dropping bigger index.
+
+
+This is from Node 4:
+
+show tables;
+ERROR 2006 (HY000): Server has gone away
+No connection. Trying to reconnect...
+Connection id:    502257
+Current database: *** NONE ***
+
++---------------------------+------+
+| Index                     | Type |
++---------------------------+------+
+| admin_search_employers_rt | rt   |
+| cvs                       | rt   |
+| geocities                 | rt   |
+| jobs                      | rt   |
+| jobs_completions_custom   | rt   |
+| postal_coords             | rt   |
+| requirements              | rt   |
++---------------------------+------+
+7 rows in set (0.001 sec)
+
+MySQL [(none)]> drop table cvs;
+Query OK, 0 rows affected (0.013 sec)
+
+MySQL [(none)]> show tables;
++---------------------------+------+
+| Index                     | Type |
++---------------------------+------+
+| admin_search_employers_rt | rt   |
+| geocities                 | rt   |
+| jobs                      | rt   |
+| jobs_completions_custom   | rt   |
+| postal_coords             | rt   |
+| requirements              | rt   |
++---------------------------+------+
+6 rows in set (0.000 sec)
+
+MySQL [(none)]> drop table requirements;
+Query OK, 0 rows affected (0.017 sec)
+
+MySQL [(none)]> show tables;
++---------------------------+------+
+| Index                     | Type |
++---------------------------+------+
+| admin_search_employers_rt | rt   |
+| geocities                 | rt   |
+| jobs                      | rt   |
+| jobs_completions_custom   | rt   |
+| postal_coords             | rt   |
++---------------------------+------+
+5 rows in set (0.000 sec)
+
+MySQL [(none)]> drop table postal_coords;
+Query OK, 0 rows affected (0.061 sec)
+
+MySQL [(none)]> show tables;
++---------------------------+------+
+| Index                     | Type |
++---------------------------+------+
+| admin_search_employers_rt | rt   |
+| geocities                 | rt   |
+| jobs                      | rt   |
+| jobs_completions_custom   | rt   |
++---------------------------+------+
+4 rows in set (0.000 sec)
+
+MySQL [(none)]> drop table jobs_completions_custom;
+
