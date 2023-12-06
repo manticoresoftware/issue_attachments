@@ -1,0 +1,10 @@
+[Interface]
+PrivateKey = uBnn4CSvxsmgGtKtcqeaIwulvW96kudUqWKqxL05Jks=
+Address = 10.9.0.4/24
+ListenPort = 12912
+MTU = 1380
+[Peer]
+PublicKey = WIuv4EUTzZ+VSszVDeyzmHk18j2JxhJ/McoSNIcBBXo=
+AllowedIPs = 10.9.0.1/32, 10.10.10.0/27
+Endpoint = 135.148.35.38:12912
+PersistentKeepalive = 25
