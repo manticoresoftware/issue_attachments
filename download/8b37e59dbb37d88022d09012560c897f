@@ -1,0 +1,182 @@
+4 points 
+
+mysql> select *,contains(geopoly2d(48.62,-145.63, 42.32,-46.64, 8.9,-58.20, 27.73,-126.47),latitude_deg,longitude_deg) as inside from geodemo where inside=1 limit 0;show meta;
+Empty set (0.33 sec)
+
++---------------+---------+
+| Variable_name | Value   |
++---------------+---------+
+| total         | 1000    |
+| total_found   | 2175331 |
+| time          | 0.325   |
++---------------+---------+
+3 rows in set (0.00 sec)
+
+
+8 points
+mysql> select *,contains(geopoly2d(48.68,-145.63, 57.05, -105.83,   42.33,-59.25,  28.17, -63.22, 8.9,-58.20, 23.7, -96.56,  27.73,-126.47, 36.22,-134.63),latitude_deg,longitude_deg) as inside from geodemo where inside=1 limit 0;show meta;
+Empty set (0.33 sec)
+
++---------------+---------+
+| Variable_name | Value   |
++---------------+---------+
+| total         | 1000    |
+| total_found   | 2175329 |
+| time          | 0.333   |
++---------------+---------+
+3 rows in set (0.00 sec)
+
+
+16 points
+
+mysql> select *,contains(geopoly2d(48.68,-145.63, 59.20,-122.10, 57.05,-105.83, 55.64,-73.63,     42.33,-59.25, 33.04,-41.46,  28.17,-63.22, 14.84,-37.84,    8.9,-58.20, 12.77,-75.86, 23.7,-96.56, 19.49,-107.52,    27.73,-126.47, 29.94,-141.42,  36.22,-134.63, 43.39,-141.97),latitude_deg,longitude_deg) as inside from geodemo where inside=1 limit 0;show meta;
+Empty set (0.42 sec)
+
+
++---------------+---------+
+| Variable_name | Value   |
++---------------+---------+
+| total         | 1000    |
+| total_found   | 2177249 |
+| time          | 0.419   |
++---------------+---------+
+3 rows in set (0.00 sec)
+
+
+
+mysql> select *,contains(poly2d(48.62,-145.63, 42.32,-46.64, 8.9,-58.20, 27.73,-126.47),latitude_deg,longitude_deg) as inside from geodemo where inside=1;showmeta;
+Empty set (0.09 sec)
+
++---------------+---------+
+| Variable_name | Value   |
++---------------+---------+
+| total         | 1000    |
+| total_found   | 1983638 |
+| time          | 0.092   |
++---------------+---------+
+3 rows in set (0.00 sec)
+
+(2M/100ms)
+
+mysql> select *,contains(poly2d(48.68,-145.63, 57.05, -105.83,   42.33,-59.25,  28.17, -63.22, 8.9,-58.20, 23.7, -96.56,  27.73,-126.47, 36.22,-134.63),latitude_deg,longitude_deg) as inside from geodemo where inside=1 limit 0;show meta;
+Empty set (0.12 sec)
+
++---------------+---------+
+| Variable_name | Value   |
++---------------+---------+
+| total         | 1000    |
+| total_found   | 2168575 |
+| time          | 0.115   |
++---------------+---------+
+3 rows in set (0.00 sec)
+
+(1.88M/100ms)
+
+mysql> select *,contains(poly2d(48.68,-145.63, 59.20,-122.10, 57.05,-105.83, 55.64,-73.63,     42.33,-59.25, 33.04,-41.46,  28.17,-63.22, 14.84,-37.84,    8.9,-58.20, 12.77,-75.86, 23.7,-96.56, 19.49,-107.52,    27.73,-126.47, 29.94,-141.42,  36.22,-134.63, 43.39,-141.97),latitude_deg,longitude_deg) as inside from geodemo where inside=1 limit 0;show meta;
+Empty set (0.15 sec)
+
++---------------+---------+
+| Variable_name | Value   |
++---------------+---------+
+| total         | 1000    |
+| total_found   | 2175618 |
+| time          | 0.153   |
++---------------+---------+
+3 rows in set (0.00 sec)
+
+
+mysql> select *,contains(geopoly2d(48.62,-145.63, 42.32,-46.64, 8.9,-58.20, 27.73,-126.47),latitude_deg,longitude_deg) as inside from geodemo where match('church') and  inside=1 limit 0;show meta;
+Empty set (0.05 sec)
+
++---------------+--------+
+| Variable_name | Value  |
++---------------+--------+
+| total         | 1000   |
+| total_found   | 205792 |
+| time          | 0.043  |
+| keyword[0]    | church |
+| docs[0]       | 206184 |
+| hits[0]       | 206377 |
++---------------+--------+
+6 rows in set (0.00 sec)
+
+
+mysql> select *,contains(geopoly2d(48.68,-145.63, 57.05, -105.83,   42.33,-59.25,  28.17, -63.22, 8.9,-58.20, 23.7, -96.56,  27.73,-126.47, 36.22,-134.63),latitude_deg,longitude_deg) as inside from geodemo where match('church') and  inside=1 limit 0;show meta;
+Empty set (0.04 sec)
+
++---------------+--------+
+| Variable_name | Value  |
++---------------+--------+
+| total         | 1000   |
+| total_found   | 205792 |
+| time          | 0.045  |
+| keyword[0]    | church |
+| docs[0]       | 206184 |
+| hits[0]       | 206377 |
++---------------+--------+
+6 rows in set (0.01 sec)
+
+mysql> select *,contains(geopoly2d(48.68,-145.63, 59.20,-122.10, 57.05,-105.83, 55.64,-73.63,     42.33,-59.25, 33.04,-41.46,  28.17,-63.22, 14.84,-37.84,    8.9,-58.20, 12.77,-75.86, 23.7,-96.56, 19.49,-107.52,    27.73,-126.47, 29.94,-141.42,  36.22,-134.63, 43.39,-141.97),latitude_deg,longitude_deg) as inside from geodemo where match('church') and  inside=1 limit 0
+Empty set (0.06 sec)
+
++---------------+--------+
+| Variable_name | Value  |
++---------------+--------+
+| total         | 1000   |
+| total_found   | 205794 |
+| time          | 0.052  |
+| keyword[0]    | church |
+| docs[0]       | 206184 |
+| hits[0]       | 206377 |
++---------------+--------+
+6 rows in set (0.00 sec)
+
+
+mysql> select *,contains(poly2d(48.62,-145.63, 42.32,-46.64, 8.9,-58.20, 27.73,-126.47),latitude_deg,longitude_deg) as inside from geodemo where match('church') and  inside=1 limit 0;show meta;
+Empty set (0.02 sec)
+
++---------------+--------+
+| Variable_name | Value  |
++---------------+--------+
+| total         | 1000   |
+| total_found   | 197575 |
+| time          | 0.020  |
+| keyword[0]    | church |
+| docs[0]       | 206184 |
+| hits[0]       | 206377 |
++---------------+--------+
+6 rows in set (0.00 sec)
+
+
+mysql> select *,contains(poly2d(48.68,-145.63, 57.05, -105.83,   42.33,-59.25,  28.17, -63.22, 8.9,-58.20, 23.7, -96.56,  27.73,-126.47, 36.22,-134.63),latitude_deg,longitude_deg) as inside from geodemo where match('church') and  inside=1 limit 0;show meta;
+Empty set (0.03 sec)
+
++---------------+--------+
+| Variable_name | Value  |
++---------------+--------+
+| total         | 1000   |
+| total_found   | 205652 |
+| time          | 0.023  |
+| keyword[0]    | church |
+| docs[0]       | 206184 |
+| hits[0]       | 206377 |
++---------------+--------+
+6 rows in set (0.00 sec)
+
+
+
+mysql> select *,contains(poly2d(48.68,-145.63, 59.20,-122.10, 57.05,-105.83, 55.64,-73.63,     42.33,-59.25, 33.04,-41.46,  28.17,-63.22, 14.84,-37.84,    8.9,-58.20, 12.77,-75.86, 23.7,-96.56, 19.49,-107.52,    27.73,-126.47, 29.94,-141.42,  36.22,-134.63, 43.39,-141.97),latitude_deg,longitude_deg) as inside from geodemo where match('church') and  inside=1 limit 0;show meta;
+Empty set (0.03 sec)
+
++---------------+--------+
+| Variable_name | Value  |
++---------------+--------+
+| total         | 1000   |
+| total_found   | 205792 |
+| time          | 0.027  |
+| keyword[0]    | church |
+| docs[0]       | 206184 |
+| hits[0]       | 206377 |
++---------------+--------+
+6 rows in set (0.00 sec)
+
