@@ -1,0 +1,43 @@
+source test
+{
+    type        = mysql
+    sql_host    = localhost
+    sql_user    = sphinx
+    sql_pass    = sphinx
+    sql_db      = test
+    sql_attr_uint = att
+    sql_query   = \
+        SELECT 1 as id, 1 as att, "King's College London" name
+}
+
+common
+{
+    plugin_dir = /usr/libexec/sphinx
+}
+
+index boardreader
+{
+     source          = test
+     path            = /tmp/test1591
+     charset_table   = a..z, A..Z, 0..9, '
+     index_token_filter = blended.so:blended
+     mlock           = 1
+     inplace_enable  = 1
+     preopen         = 1
+}
+
+searchd
+{
+    listen              = 1591:mysql41
+    log                 = /tmp/searchd1591.log
+    query_log           = /tmp/query1591.log
+    read_timeout        = 1
+    max_children        = 50
+    pid_file            = /tmp/searchd1591.pid
+    binlog_path = # disable logging
+}
+
+indexer
+{
+    mem_limit            = 512M
+}
