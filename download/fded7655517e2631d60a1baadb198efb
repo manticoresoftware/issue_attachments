@@ -1,0 +1,648 @@
+Wed Feb 22 11:53:14 EST 2023
+--------------
+show status like '%cluster%'
+--------------
+
+Counter	Value
+command_cluster	499
+cluster_name	jobsite
+cluster_jobsite_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_conf_id	69
+cluster_jobsite_status	primary
+cluster_jobsite_size	5
+cluster_jobsite_local_index	0
+cluster_jobsite_node_state	synced
+cluster_jobsite_nodes_set	10.10.10.7:9312,147.135.93.205:9312,10.10.10.5:9312,10.10.10.3:9312,10.10.10.1:9312
+cluster_jobsite_nodes_view	web4:9312,web4:9315:replication,web5:9312,web5:9315:replication,web3:9312,web3:9315:replication,web2:9312,web2:9315:replication,web1:9312,web1:9315:replication
+cluster_jobsite_indexes_count	8
+cluster_jobsite_indexes	admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements
+cluster_jobsite_local_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_protocol_version	9
+cluster_jobsite_last_applied	1337610
+cluster_jobsite_last_committed	1337610
+cluster_jobsite_replicated	65845
+cluster_jobsite_replicated_bytes	29773909000
+cluster_jobsite_repl_keys	20661422
+cluster_jobsite_repl_keys_bytes	166914304
+cluster_jobsite_repl_data_bytes	17644404014
+cluster_jobsite_repl_other_bytes	0
+cluster_jobsite_received	367481
+cluster_jobsite_received_bytes	132644240195
+cluster_jobsite_local_commits	65844
+cluster_jobsite_local_cert_failures	1
+cluster_jobsite_local_replays	0
+cluster_jobsite_local_send_queue	0
+cluster_jobsite_local_send_queue_max	3
+cluster_jobsite_local_send_queue_min	0
+cluster_jobsite_local_send_queue_avg	0.00084389
+cluster_jobsite_local_recv_queue	0
+cluster_jobsite_local_recv_queue_max	26
+cluster_jobsite_local_recv_queue_min	0
+cluster_jobsite_local_recv_queue_avg	0.07014784
+cluster_jobsite_local_cached_downto	1337351
+cluster_jobsite_flow_control_paused_ns	0
+cluster_jobsite_flow_control_paused	0.000000
+cluster_jobsite_flow_control_sent	0
+cluster_jobsite_flow_control_recv	0
+cluster_jobsite_flow_control_interval	[ 224, 224 ]
+cluster_jobsite_flow_control_interval_low	224
+cluster_jobsite_flow_control_interval_high	224
+cluster_jobsite_flow_control_status	OFF
+cluster_jobsite_cert_deps_distance	9.218056
+cluster_jobsite_apply_oooe	0.00761758
+cluster_jobsite_apply_oool	0.00000280
+cluster_jobsite_apply_window	1.00761759
+cluster_jobsite_commit_oooe	0.000000
+cluster_jobsite_commit_oool	0.000000
+cluster_jobsite_commit_window	1.00154030
+cluster_jobsite_local_state	4
+cluster_jobsite_local_state_comment	Synced
+cluster_jobsite_cert_index_size	592
+cluster_jobsite_cert_bucket_count	172934
+cluster_jobsite_gcache_pool_size	16778512
+cluster_jobsite_causal_reads	0
+cluster_jobsite_cert_interval	0.17020240
+cluster_jobsite_open_transactions	0
+cluster_jobsite_open_connections	0
+cluster_jobsite_ist_receive_status	
+cluster_jobsite_ist_receive_seqno_start	0
+cluster_jobsite_ist_receive_seqno_current	0
+cluster_jobsite_ist_receive_seqno_end	0
+cluster_jobsite_incoming_addresses	web4:9312,web4:9315:replication,web5:9312,web5:9315:replication,web3:9312,web3:9315:replication,web2:9312,web2:9315:replication,web1:9312,web1:9315:replication
+cluster_jobsite_cluster_weight	5
+cluster_jobsite_desync_count	0
+cluster_jobsite_evs_delayed	
+cluster_jobsite_evs_evict_list	
+cluster_jobsite_evs_repl_latency	0/0/0/0/0
+cluster_jobsite_evs_state	OPERATIONAL
+cluster_jobsite_gcomm_uuid	14a9ecc1-ad4f-11ed-b404-b747ba51fc00
+72 rows in set
+
+Bye
+Wed Feb 22 11:55:36 EST 2023
+--------------
+show status like '%cluster%'
+--------------
+
+Counter	Value
+command_cluster	499
+cluster_name	jobsite
+cluster_jobsite_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_conf_id	70
+cluster_jobsite_status	primary
+cluster_jobsite_size	4
+cluster_jobsite_local_index	0
+cluster_jobsite_node_state	synced
+cluster_jobsite_nodes_set	10.10.10.7:9312,147.135.93.205:9312,10.10.10.5:9312,10.10.10.3:9312,10.10.10.1:9312
+cluster_jobsite_nodes_view	web4:9312,web4:9315:replication,web3:9312,web3:9315:replication,web2:9312,web2:9315:replication,web1:9312,web1:9315:replication
+cluster_jobsite_indexes_count	8
+cluster_jobsite_indexes	admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements
+cluster_jobsite_local_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_protocol_version	9
+cluster_jobsite_last_applied	1337624
+cluster_jobsite_last_committed	1337624
+cluster_jobsite_replicated	65845
+cluster_jobsite_replicated_bytes	29773909000
+cluster_jobsite_repl_keys	20661422
+cluster_jobsite_repl_keys_bytes	166914304
+cluster_jobsite_repl_data_bytes	17644404014
+cluster_jobsite_repl_other_bytes	0
+cluster_jobsite_received	367496
+cluster_jobsite_received_bytes	132644773822
+cluster_jobsite_local_commits	65844
+cluster_jobsite_local_cert_failures	1
+cluster_jobsite_local_replays	0
+cluster_jobsite_local_send_queue	0
+cluster_jobsite_local_send_queue_max	3
+cluster_jobsite_local_send_queue_min	0
+cluster_jobsite_local_send_queue_avg	0.00084389
+cluster_jobsite_local_recv_queue	0
+cluster_jobsite_local_recv_queue_max	26
+cluster_jobsite_local_recv_queue_min	0
+cluster_jobsite_local_recv_queue_avg	0.07014498
+cluster_jobsite_local_cached_downto	1337365
+cluster_jobsite_flow_control_paused_ns	0
+cluster_jobsite_flow_control_paused	0.000000
+cluster_jobsite_flow_control_sent	0
+cluster_jobsite_flow_control_recv	0
+cluster_jobsite_flow_control_interval	[ 200, 200 ]
+cluster_jobsite_flow_control_interval_low	200
+cluster_jobsite_flow_control_interval_high	200
+cluster_jobsite_flow_control_status	OFF
+cluster_jobsite_cert_deps_distance	9.218336
+cluster_jobsite_apply_oooe	0.00761728
+cluster_jobsite_apply_oool	0.00000280
+cluster_jobsite_apply_window	1.00761724
+cluster_jobsite_commit_oooe	0.000000
+cluster_jobsite_commit_oool	0.000000
+cluster_jobsite_commit_window	1.00154030
+cluster_jobsite_local_state	4
+cluster_jobsite_local_state_comment	Synced
+cluster_jobsite_cert_index_size	96
+cluster_jobsite_cert_bucket_count	172934
+cluster_jobsite_gcache_pool_size	16778512
+cluster_jobsite_causal_reads	0
+cluster_jobsite_cert_interval	0.17019573
+cluster_jobsite_open_transactions	0
+cluster_jobsite_open_connections	0
+cluster_jobsite_ist_receive_status	
+cluster_jobsite_ist_receive_seqno_start	0
+cluster_jobsite_ist_receive_seqno_current	0
+cluster_jobsite_ist_receive_seqno_end	0
+cluster_jobsite_incoming_addresses	web4:9312,web4:9315:replication,web3:9312,web3:9315:replication,web2:9312,web2:9315:replication,web1:9312,web1:9315:replication
+cluster_jobsite_cluster_weight	4
+cluster_jobsite_desync_count	0
+cluster_jobsite_evs_delayed	
+cluster_jobsite_evs_evict_list	
+cluster_jobsite_evs_repl_latency	0/0/0/0/0
+cluster_jobsite_evs_state	OPERATIONAL
+cluster_jobsite_gcomm_uuid	14a9ecc1-ad4f-11ed-b404-b747ba51fc00
+72 rows in set
+
+Bye
+Wed Feb 22 12:01:49 EST 2023
+--------------
+show status like '%cluster%'
+--------------
+
+Counter	Value
+command_cluster	500
+cluster_name	jobsite
+cluster_jobsite_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_conf_id	71
+cluster_jobsite_status	primary
+cluster_jobsite_size	5
+cluster_jobsite_local_index	0
+cluster_jobsite_node_state	synced
+cluster_jobsite_nodes_set	10.10.10.7:9312,147.135.93.205:9312,10.10.10.5:9312,10.10.10.3:9312,10.10.10.1:9312
+cluster_jobsite_nodes_view	web4:9312,web4:9315:replication,web5:9312,web5:9315:replication,web3:9312,web3:9315:replication,web2:9312,web2:9315:replication,web1:9312,web1:9315:replication
+cluster_jobsite_indexes_count	8
+cluster_jobsite_indexes	admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements
+cluster_jobsite_local_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_protocol_version	9
+cluster_jobsite_last_applied	1337655
+cluster_jobsite_last_committed	1337655
+cluster_jobsite_replicated	65845
+cluster_jobsite_replicated_bytes	29773909000
+cluster_jobsite_repl_keys	20661422
+cluster_jobsite_repl_keys_bytes	166914304
+cluster_jobsite_repl_data_bytes	17644404014
+cluster_jobsite_repl_other_bytes	0
+cluster_jobsite_received	367532
+cluster_jobsite_received_bytes	132646391005
+cluster_jobsite_local_commits	65844
+cluster_jobsite_local_cert_failures	1
+cluster_jobsite_local_replays	0
+cluster_jobsite_local_send_queue	0
+cluster_jobsite_local_send_queue_max	3
+cluster_jobsite_local_send_queue_min	0
+cluster_jobsite_local_send_queue_avg	0.00084388
+cluster_jobsite_local_recv_queue	0
+cluster_jobsite_local_recv_queue_max	26
+cluster_jobsite_local_recv_queue_min	0
+cluster_jobsite_local_recv_queue_avg	0.07013811
+cluster_jobsite_local_cached_downto	1337393
+cluster_jobsite_flow_control_paused_ns	0
+cluster_jobsite_flow_control_paused	0.000000
+cluster_jobsite_flow_control_sent	0
+cluster_jobsite_flow_control_recv	0
+cluster_jobsite_flow_control_interval	[ 224, 224 ]
+cluster_jobsite_flow_control_interval_low	224
+cluster_jobsite_flow_control_interval_high	224
+cluster_jobsite_flow_control_status	OFF
+cluster_jobsite_cert_deps_distance	9.218042
+cluster_jobsite_apply_oooe	0.00761662
+cluster_jobsite_apply_oool	0.00000280
+cluster_jobsite_apply_window	1.00761664
+cluster_jobsite_commit_oooe	0.000000
+cluster_jobsite_commit_oool	0.000000
+cluster_jobsite_commit_window	1.00154018
+cluster_jobsite_local_state	4
+cluster_jobsite_local_state_comment	Synced
+cluster_jobsite_cert_index_size	184
+cluster_jobsite_cert_bucket_count	172934
+cluster_jobsite_gcache_pool_size	16778512
+cluster_jobsite_causal_reads	0
+cluster_jobsite_cert_interval	0.17018095
+cluster_jobsite_open_transactions	0
+cluster_jobsite_open_connections	0
+cluster_jobsite_ist_receive_status	
+cluster_jobsite_ist_receive_seqno_start	0
+cluster_jobsite_ist_receive_seqno_current	0
+cluster_jobsite_ist_receive_seqno_end	0
+cluster_jobsite_incoming_addresses	web4:9312,web4:9315:replication,web5:9312,web5:9315:replication,web3:9312,web3:9315:replication,web2:9312,web2:9315:replication,web1:9312,web1:9315:replication
+cluster_jobsite_cluster_weight	5
+cluster_jobsite_desync_count	0
+cluster_jobsite_evs_delayed	
+cluster_jobsite_evs_evict_list	
+cluster_jobsite_evs_repl_latency	0/0/0/0/0
+cluster_jobsite_evs_state	OPERATIONAL
+cluster_jobsite_gcomm_uuid	14a9ecc1-ad4f-11ed-b404-b747ba51fc00
+72 rows in set
+
+Bye
+Wed Feb 22 12:04:21 EST 2023
+--------------
+show status like '%cluster%'
+--------------
+
+Counter	Value
+command_cluster	2
+cluster_name	jobsite
+cluster_jobsite_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_conf_id	73
+cluster_jobsite_status	primary
+cluster_jobsite_size	5
+cluster_jobsite_local_index	3
+cluster_jobsite_node_state	synced
+cluster_jobsite_nodes_set	10.10.10.7:9312,147.135.93.205:9312,10.10.10.5:9312,10.10.10.3:9312,10.10.10.1:9312
+cluster_jobsite_nodes_view	web5:9312,web5:9315:replication,web3:9312,web3:9315:replication,web2:9312,web2:9315:replication,web4:9312,web4:9317:replication,web1:9312,web1:9315:replication
+cluster_jobsite_indexes_count	8
+cluster_jobsite_indexes	admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements
+cluster_jobsite_local_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_protocol_version	9
+cluster_jobsite_last_applied	1337667
+cluster_jobsite_last_committed	1337667
+cluster_jobsite_replicated	0
+cluster_jobsite_replicated_bytes	0
+cluster_jobsite_repl_keys	0
+cluster_jobsite_repl_keys_bytes	0
+cluster_jobsite_repl_data_bytes	0
+cluster_jobsite_repl_other_bytes	0
+cluster_jobsite_received	7
+cluster_jobsite_received_bytes	202059
+cluster_jobsite_local_commits	0
+cluster_jobsite_local_cert_failures	0
+cluster_jobsite_local_replays	0
+cluster_jobsite_local_send_queue	0
+cluster_jobsite_local_send_queue_max	1
+cluster_jobsite_local_send_queue_min	0
+cluster_jobsite_local_send_queue_avg	0.000000
+cluster_jobsite_local_recv_queue	0
+cluster_jobsite_local_recv_queue_max	1
+cluster_jobsite_local_recv_queue_min	0
+cluster_jobsite_local_recv_queue_avg	0.000000
+cluster_jobsite_local_cached_downto	1337664
+cluster_jobsite_flow_control_paused_ns	0
+cluster_jobsite_flow_control_paused	0.000000
+cluster_jobsite_flow_control_sent	0
+cluster_jobsite_flow_control_recv	0
+cluster_jobsite_flow_control_interval	[ 224, 224 ]
+cluster_jobsite_flow_control_interval_low	224
+cluster_jobsite_flow_control_interval_high	224
+cluster_jobsite_flow_control_status	OFF
+cluster_jobsite_cert_deps_distance	2.250000
+cluster_jobsite_apply_oooe	0.000000
+cluster_jobsite_apply_oool	0.000000
+cluster_jobsite_apply_window	1.000000
+cluster_jobsite_commit_oooe	0.000000
+cluster_jobsite_commit_oool	0.000000
+cluster_jobsite_commit_window	1.000000
+cluster_jobsite_local_state	4
+cluster_jobsite_local_state_comment	Synced
+cluster_jobsite_cert_index_size	64
+cluster_jobsite_cert_bucket_count	128
+cluster_jobsite_gcache_pool_size	203112
+cluster_jobsite_causal_reads	0
+cluster_jobsite_cert_interval	0.000000
+cluster_jobsite_open_transactions	0
+cluster_jobsite_open_connections	0
+cluster_jobsite_ist_receive_status	
+cluster_jobsite_ist_receive_seqno_start	0
+cluster_jobsite_ist_receive_seqno_current	0
+cluster_jobsite_ist_receive_seqno_end	0
+cluster_jobsite_incoming_addresses	web5:9312,web5:9315:replication,web3:9312,web3:9315:replication,web2:9312,web2:9315:replication,web4:9312,web4:9317:replication,web1:9312,web1:9315:replication
+cluster_jobsite_cluster_weight	5
+cluster_jobsite_desync_count	0
+cluster_jobsite_evs_delayed	
+cluster_jobsite_evs_evict_list	
+cluster_jobsite_evs_repl_latency	0.0138522/0.0140049/0.0140995/8.4542e-05/5
+cluster_jobsite_evs_state	OPERATIONAL
+cluster_jobsite_gcomm_uuid	d69847fc-b2d2-11ed-9cd9-2f959c3bf322
+72 rows in set
+
+Bye
+Wed Feb 22 12:06:34 EST 2023
+--------------
+show status like '%cluster%'
+--------------
+
+Counter	Value
+command_cluster	3
+cluster_name	jobsite
+cluster_jobsite_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_conf_id	75
+cluster_jobsite_status	primary
+cluster_jobsite_size	5
+cluster_jobsite_local_index	3
+cluster_jobsite_node_state	synced
+cluster_jobsite_nodes_set	10.10.10.7:9312,147.135.93.205:9312,10.10.10.5:9312,10.10.10.3:9312,10.10.10.1:9312
+cluster_jobsite_nodes_view	web3:9312,web3:9317:replication,web5:9312,web5:9315:replication,web2:9312,web2:9315:replication,web4:9312,web4:9317:replication,web1:9312,web1:9315:replication
+cluster_jobsite_indexes_count	8
+cluster_jobsite_indexes	admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements
+cluster_jobsite_local_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_protocol_version	9
+cluster_jobsite_last_applied	1337675
+cluster_jobsite_last_committed	1337675
+cluster_jobsite_replicated	0
+cluster_jobsite_replicated_bytes	0
+cluster_jobsite_repl_keys	0
+cluster_jobsite_repl_keys_bytes	0
+cluster_jobsite_repl_data_bytes	0
+cluster_jobsite_repl_other_bytes	0
+cluster_jobsite_received	17
+cluster_jobsite_received_bytes	682868
+cluster_jobsite_local_commits	0
+cluster_jobsite_local_cert_failures	0
+cluster_jobsite_local_replays	0
+cluster_jobsite_local_send_queue	0
+cluster_jobsite_local_send_queue_max	1
+cluster_jobsite_local_send_queue_min	0
+cluster_jobsite_local_send_queue_avg	0.000000
+cluster_jobsite_local_recv_queue	0
+cluster_jobsite_local_recv_queue_max	1
+cluster_jobsite_local_recv_queue_min	0
+cluster_jobsite_local_recv_queue_avg	0.000000
+cluster_jobsite_local_cached_downto	1337664
+cluster_jobsite_flow_control_paused_ns	0
+cluster_jobsite_flow_control_paused	0.000000
+cluster_jobsite_flow_control_sent	0
+cluster_jobsite_flow_control_recv	0
+cluster_jobsite_flow_control_interval	[ 224, 224 ]
+cluster_jobsite_flow_control_interval_low	224
+cluster_jobsite_flow_control_interval_high	224
+cluster_jobsite_flow_control_status	OFF
+cluster_jobsite_cert_deps_distance	2.750000
+cluster_jobsite_apply_oooe	0.000000
+cluster_jobsite_apply_oool	0.000000
+cluster_jobsite_apply_window	1.000000
+cluster_jobsite_commit_oooe	0.000000
+cluster_jobsite_commit_oool	0.000000
+cluster_jobsite_commit_window	1.000000
+cluster_jobsite_local_state	4
+cluster_jobsite_local_state_comment	Synced
+cluster_jobsite_cert_index_size	73
+cluster_jobsite_cert_bucket_count	258
+cluster_jobsite_gcache_pool_size	683200
+cluster_jobsite_causal_reads	0
+cluster_jobsite_cert_interval	0.000000
+cluster_jobsite_open_transactions	0
+cluster_jobsite_open_connections	0
+cluster_jobsite_ist_receive_status	
+cluster_jobsite_ist_receive_seqno_start	0
+cluster_jobsite_ist_receive_seqno_current	0
+cluster_jobsite_ist_receive_seqno_end	0
+cluster_jobsite_incoming_addresses	web3:9312,web3:9317:replication,web5:9312,web5:9315:replication,web2:9312,web2:9315:replication,web4:9312,web4:9317:replication,web1:9312,web1:9315:replication
+cluster_jobsite_cluster_weight	5
+cluster_jobsite_desync_count	0
+cluster_jobsite_evs_delayed	
+cluster_jobsite_evs_evict_list	
+cluster_jobsite_evs_repl_latency	0/0/0/0/0
+cluster_jobsite_evs_state	OPERATIONAL
+cluster_jobsite_gcomm_uuid	d69847fc-b2d2-11ed-9cd9-2f959c3bf322
+72 rows in set
+
+Bye
+Wed Feb 22 12:09:06 EST 2023
+--------------
+show status like '%cluster%'
+--------------
+
+Counter	Value
+command_cluster	4
+cluster_name	jobsite
+cluster_jobsite_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_conf_id	78
+cluster_jobsite_status	primary
+cluster_jobsite_size	4
+cluster_jobsite_local_index	3
+cluster_jobsite_node_state	synced
+cluster_jobsite_nodes_set	10.10.10.7:9312,147.135.93.205:9312,10.10.10.5:9312,10.10.10.3:9312,10.10.10.1:9312
+cluster_jobsite_nodes_view	web3:9312,web3:9317:replication,web5:9312,web5:9315:replication,web2:9312,web2:9317:replication,web4:9312,web4:9317:replication
+cluster_jobsite_indexes_count	8
+cluster_jobsite_indexes	admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements
+cluster_jobsite_local_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_protocol_version	9
+cluster_jobsite_last_applied	1337683
+cluster_jobsite_last_committed	1337683
+cluster_jobsite_replicated	0
+cluster_jobsite_replicated_bytes	0
+cluster_jobsite_repl_keys	0
+cluster_jobsite_repl_keys_bytes	0
+cluster_jobsite_repl_data_bytes	0
+cluster_jobsite_repl_other_bytes	0
+cluster_jobsite_received	28
+cluster_jobsite_received_bytes	1183785
+cluster_jobsite_local_commits	0
+cluster_jobsite_local_cert_failures	0
+cluster_jobsite_local_replays	0
+cluster_jobsite_local_send_queue	0
+cluster_jobsite_local_send_queue_max	1
+cluster_jobsite_local_send_queue_min	0
+cluster_jobsite_local_send_queue_avg	0.000000
+cluster_jobsite_local_recv_queue	0
+cluster_jobsite_local_recv_queue_max	1
+cluster_jobsite_local_recv_queue_min	0
+cluster_jobsite_local_recv_queue_avg	0.000000
+cluster_jobsite_local_cached_downto	1337664
+cluster_jobsite_flow_control_paused_ns	0
+cluster_jobsite_flow_control_paused	0.000000
+cluster_jobsite_flow_control_sent	0
+cluster_jobsite_flow_control_recv	0
+cluster_jobsite_flow_control_interval	[ 200, 200 ]
+cluster_jobsite_flow_control_interval_low	200
+cluster_jobsite_flow_control_interval_high	200
+cluster_jobsite_flow_control_status	OFF
+cluster_jobsite_cert_deps_distance	2.550000
+cluster_jobsite_apply_oooe	0.000000
+cluster_jobsite_apply_oool	0.000000
+cluster_jobsite_apply_window	1.000000
+cluster_jobsite_commit_oooe	0.000000
+cluster_jobsite_commit_oool	0.000000
+cluster_jobsite_commit_window	1.000000
+cluster_jobsite_local_state	4
+cluster_jobsite_local_state_comment	Synced
+cluster_jobsite_cert_index_size	58
+cluster_jobsite_cert_bucket_count	258
+cluster_jobsite_gcache_pool_size	1183072
+cluster_jobsite_causal_reads	0
+cluster_jobsite_cert_interval	0.000000
+cluster_jobsite_open_transactions	0
+cluster_jobsite_open_connections	0
+cluster_jobsite_ist_receive_status	
+cluster_jobsite_ist_receive_seqno_start	0
+cluster_jobsite_ist_receive_seqno_current	0
+cluster_jobsite_ist_receive_seqno_end	0
+cluster_jobsite_incoming_addresses	web3:9312,web3:9317:replication,web5:9312,web5:9315:replication,web2:9312,web2:9317:replication,web4:9312,web4:9317:replication
+cluster_jobsite_cluster_weight	4
+cluster_jobsite_desync_count	0
+cluster_jobsite_evs_delayed	
+cluster_jobsite_evs_evict_list	
+cluster_jobsite_evs_repl_latency	0.0136093/0.013765/0.0139208/0.000155788/2
+cluster_jobsite_evs_state	OPERATIONAL
+cluster_jobsite_gcomm_uuid	d69847fc-b2d2-11ed-9cd9-2f959c3bf322
+72 rows in set
+
+Bye
+Wed Feb 22 12:11:43 EST 2023
+--------------
+show status like '%cluster%'
+--------------
+
+Counter	Value
+command_cluster	5
+cluster_name	jobsite
+cluster_jobsite_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_conf_id	79
+cluster_jobsite_status	primary
+cluster_jobsite_size	5
+cluster_jobsite_local_index	4
+cluster_jobsite_node_state	synced
+cluster_jobsite_nodes_set	10.10.10.7:9312,147.135.93.205:9312,10.10.10.5:9312,10.10.10.3:9312,10.10.10.1:9312
+cluster_jobsite_nodes_view	web3:9312,web3:9317:replication,web5:9312,web5:9315:replication,web2:9312,web2:9317:replication,web1:9312,web1:9317:replication,web4:9312,web4:9317:replication
+cluster_jobsite_indexes_count	8
+cluster_jobsite_indexes	admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements
+cluster_jobsite_local_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_protocol_version	9
+cluster_jobsite_last_applied	1337683
+cluster_jobsite_last_committed	1337683
+cluster_jobsite_replicated	0
+cluster_jobsite_replicated_bytes	0
+cluster_jobsite_repl_keys	0
+cluster_jobsite_repl_keys_bytes	0
+cluster_jobsite_repl_data_bytes	0
+cluster_jobsite_repl_other_bytes	0
+cluster_jobsite_received	29
+cluster_jobsite_received_bytes	1184364
+cluster_jobsite_local_commits	0
+cluster_jobsite_local_cert_failures	0
+cluster_jobsite_local_replays	0
+cluster_jobsite_local_send_queue	0
+cluster_jobsite_local_send_queue_max	1
+cluster_jobsite_local_send_queue_min	0
+cluster_jobsite_local_send_queue_avg	0.000000
+cluster_jobsite_local_recv_queue	0
+cluster_jobsite_local_recv_queue_max	1
+cluster_jobsite_local_recv_queue_min	0
+cluster_jobsite_local_recv_queue_avg	0.000000
+cluster_jobsite_local_cached_downto	1337664
+cluster_jobsite_flow_control_paused_ns	0
+cluster_jobsite_flow_control_paused	0.000000
+cluster_jobsite_flow_control_sent	0
+cluster_jobsite_flow_control_recv	0
+cluster_jobsite_flow_control_interval	[ 224, 224 ]
+cluster_jobsite_flow_control_interval_low	224
+cluster_jobsite_flow_control_interval_high	224
+cluster_jobsite_flow_control_status	OFF
+cluster_jobsite_cert_deps_distance	2.550000
+cluster_jobsite_apply_oooe	0.000000
+cluster_jobsite_apply_oool	0.000000
+cluster_jobsite_apply_window	1.000000
+cluster_jobsite_commit_oooe	0.000000
+cluster_jobsite_commit_oool	0.000000
+cluster_jobsite_commit_window	1.000000
+cluster_jobsite_local_state	4
+cluster_jobsite_local_state_comment	Synced
+cluster_jobsite_cert_index_size	58
+cluster_jobsite_cert_bucket_count	258
+cluster_jobsite_gcache_pool_size	1183072
+cluster_jobsite_causal_reads	0
+cluster_jobsite_cert_interval	0.000000
+cluster_jobsite_open_transactions	0
+cluster_jobsite_open_connections	0
+cluster_jobsite_ist_receive_status	
+cluster_jobsite_ist_receive_seqno_start	0
+cluster_jobsite_ist_receive_seqno_current	0
+cluster_jobsite_ist_receive_seqno_end	0
+cluster_jobsite_incoming_addresses	web3:9312,web3:9317:replication,web5:9312,web5:9315:replication,web2:9312,web2:9317:replication,web1:9312,web1:9317:replication,web4:9312,web4:9317:replication
+cluster_jobsite_cluster_weight	5
+cluster_jobsite_desync_count	0
+cluster_jobsite_evs_delayed	
+cluster_jobsite_evs_evict_list	
+cluster_jobsite_evs_repl_latency	0/0/0/0/0
+cluster_jobsite_evs_state	OPERATIONAL
+cluster_jobsite_gcomm_uuid	d69847fc-b2d2-11ed-9cd9-2f959c3bf322
+72 rows in set
+
+Bye
+Wed Feb 22 12:12:44 EST 2023
+--------------
+show status like '%cluster%'
+--------------
+
+Counter	Value
+command_cluster	5
+cluster_name	jobsite
+cluster_jobsite_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_conf_id	79
+cluster_jobsite_status	primary
+cluster_jobsite_size	5
+cluster_jobsite_local_index	4
+cluster_jobsite_node_state	synced
+cluster_jobsite_nodes_set	10.10.10.7:9312,147.135.93.205:9312,10.10.10.5:9312,10.10.10.3:9312,10.10.10.1:9312
+cluster_jobsite_nodes_view	web3:9312,web3:9317:replication,web5:9312,web5:9315:replication,web2:9312,web2:9317:replication,web1:9312,web1:9317:replication,web4:9312,web4:9317:replication
+cluster_jobsite_indexes_count	8
+cluster_jobsite_indexes	admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements
+cluster_jobsite_local_state_uuid	5dd25110-a231-11ed-b359-128f814d31ed
+cluster_jobsite_protocol_version	9
+cluster_jobsite_last_applied	1337683
+cluster_jobsite_last_committed	1337683
+cluster_jobsite_replicated	0
+cluster_jobsite_replicated_bytes	0
+cluster_jobsite_repl_keys	0
+cluster_jobsite_repl_keys_bytes	0
+cluster_jobsite_repl_data_bytes	0
+cluster_jobsite_repl_other_bytes	0
+cluster_jobsite_received	29
+cluster_jobsite_received_bytes	1184364
+cluster_jobsite_local_commits	0
+cluster_jobsite_local_cert_failures	0
+cluster_jobsite_local_replays	0
+cluster_jobsite_local_send_queue	0
+cluster_jobsite_local_send_queue_max	1
+cluster_jobsite_local_send_queue_min	0
+cluster_jobsite_local_send_queue_avg	0.000000
+cluster_jobsite_local_recv_queue	0
+cluster_jobsite_local_recv_queue_max	1
+cluster_jobsite_local_recv_queue_min	0
+cluster_jobsite_local_recv_queue_avg	0.000000
+cluster_jobsite_local_cached_downto	1337664
+cluster_jobsite_flow_control_paused_ns	0
+cluster_jobsite_flow_control_paused	0.000000
+cluster_jobsite_flow_control_sent	0
+cluster_jobsite_flow_control_recv	0
+cluster_jobsite_flow_control_interval	[ 224, 224 ]
+cluster_jobsite_flow_control_interval_low	224
+cluster_jobsite_flow_control_interval_high	224
+cluster_jobsite_flow_control_status	OFF
+cluster_jobsite_cert_deps_distance	2.550000
+cluster_jobsite_apply_oooe	0.000000
+cluster_jobsite_apply_oool	0.000000
+cluster_jobsite_apply_window	1.000000
+cluster_jobsite_commit_oooe	0.000000
+cluster_jobsite_commit_oool	0.000000
+cluster_jobsite_commit_window	1.000000
+cluster_jobsite_local_state	4
+cluster_jobsite_local_state_comment	Synced
+cluster_jobsite_cert_index_size	58
+cluster_jobsite_cert_bucket_count	258
+cluster_jobsite_gcache_pool_size	1183072
+cluster_jobsite_causal_reads	0
+cluster_jobsite_cert_interval	0.000000
+cluster_jobsite_open_transactions	0
+cluster_jobsite_open_connections	0
+cluster_jobsite_ist_receive_status	
+cluster_jobsite_ist_receive_seqno_start	0
+cluster_jobsite_ist_receive_seqno_current	0
+cluster_jobsite_ist_receive_seqno_end	0
+cluster_jobsite_incoming_addresses	web3:9312,web3:9317:replication,web5:9312,web5:9315:replication,web2:9312,web2:9317:replication,web1:9312,web1:9317:replication,web4:9312,web4:9317:replication
+cluster_jobsite_cluster_weight	5
+cluster_jobsite_desync_count	0
+cluster_jobsite_evs_delayed	
+cluster_jobsite_evs_evict_list	
+cluster_jobsite_evs_repl_latency	0/0/0/0/0
+cluster_jobsite_evs_state	OPERATIONAL
+cluster_jobsite_gcomm_uuid	d69847fc-b2d2-11ed-9cd9-2f959c3bf322
+72 rows in set
+
+Bye
