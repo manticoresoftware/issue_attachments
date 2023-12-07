@@ -1,0 +1,55 @@
+version: '2.1'
+services:
+  node-tmg1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "node-tmg1"
+    cap_add:
+      - IPC_LOCK
+      - NET_ADMIN
+    networks:
+      - manticore-tmg      
+  node-tmg2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "node-tmg2"
+    cap_add:
+      - IPC_LOCK
+      - NET_ADMIN
+    networks:
+      - manticore-tmg      
+  node-tmg3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "node-tmg3"
+    cap_add:
+      - IPC_LOCK
+      - NET_ADMIN
+    networks:
+      - manticore-tmg      
+  node-tmg4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "node-tmg4"
+    cap_add:
+      - IPC_LOCK
+      - NET_ADMIN
+    networks:
+      - manticore-tmg      
+  node-tmg5:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "node-tmg5"
+    cap_add:
+      - IPC_LOCK
+      - NET_ADMIN
+    networks:
+      - manticore-tmg      
+networks:
+  manticore-tmg:
+    driver: bridge
