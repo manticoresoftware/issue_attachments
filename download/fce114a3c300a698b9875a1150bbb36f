@@ -1,0 +1,457 @@
+root@bdb:/var/log/manticore# zgrep -B 150 'shutting' searchd.log
+[Sun Oct  2 05:44:19.372 2022] [3780479] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 421133
+[Sun Oct  2 05:44:19.377 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 421133 after 421133 from 1
+[Sun Oct  2 05:44:19.377 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 421133
+[Sun Oct  2 05:44:19.377 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 421133
+[Sun Oct  2 05:44:19.377 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 421133
+[Sun Oct  2 05:44:19.414 2022] [3780573] RPL: writeset at apply, seq 421135, size 96663, flags 1, on commit
+[Sun Oct  2 05:44:19.415 2022] [3780573] RPL: rt trx, index 'jobs_completions_custom'
+[Sun Oct  2 05:44:19.415 2022] [3780573] RPL: writeset at commit, seq 421135, flags 1
+[Sun Oct  2 05:44:19.415 2022] [3780573] RPL: commit, index 'jobs_completions_custom', uid 0, queries 0, tags
+[Sun Oct  2 05:44:19.418 2022] [3780573] RPL: seq 421135, committed 1, isolated 0
+[Sun Oct  2 05:44:19.513 2022] [3780573] RPL: writeset at apply, seq 421136, size 1022310, flags 1, on commit
+[Sun Oct  2 05:44:19.515 2022] [3780573] RPL: rt trx, index 'jobs'
+[Sun Oct  2 05:44:19.515 2022] [3780573] RPL: writeset at commit, seq 421136, flags 1
+[Sun Oct  2 05:44:19.515 2022] [3780573] RPL: commit, index 'jobs', uid 0, queries 0, tags
+[Sun Oct  2 05:44:19.547 2022] [3780573] RPL: seq 421136, committed 1, isolated 0
+[Sun Oct  2 05:44:19.699 2022] [3780573] RPL: writeset at apply, seq 421137, size 134067, flags 1, on commit
+[Sun Oct  2 05:44:19.699 2022] [3780573] RPL: rt trx, index 'admin_search_employers_rt'
+[Sun Oct  2 05:44:19.699 2022] [3780573] RPL: writeset at commit, seq 421137, flags 1
+[Sun Oct  2 05:44:19.699 2022] [3780573] RPL: commit, index 'admin_search_employers_rt', uid 0, queries 0, tags
+[Sun Oct  2 05:44:19.703 2022] [3780573] RPL: seq 421137, committed 1, isolated 0
+[Sun Oct  2 05:44:19.718 2022] [3780573] RPL: writeset at apply, seq 421138, size 36919, flags 1, on commit
+[Sun Oct  2 05:44:19.719 2022] [3780573] RPL: rt trx, index 'jobs_completions_custom'
+[Sun Oct  2 05:44:19.719 2022] [3780573] RPL: writeset at commit, seq 421138, flags 1
+[Sun Oct  2 05:44:19.719 2022] [3780573] RPL: commit, index 'jobs_completions_custom', uid 0, queries 0, tags
+[Sun Oct  2 05:44:19.720 2022] [3780573] RPL: seq 421138, committed 1, isolated 0
+[Sun Oct  2 05:44:20.382 2022] [3780573] RPL: writeset at apply, seq 421139, size 343929, flags 1, on commit
+[Sun Oct  2 05:44:20.383 2022] [3780573] RPL: rt trx, index 'jobs'
+[Sun Oct  2 05:44:20.383 2022] [3780573] RPL: writeset at commit, seq 421139, flags 1
+[Sun Oct  2 05:44:20.383 2022] [3780573] RPL: commit, index 'jobs', uid 0, queries 0, tags
+[Sun Oct  2 05:44:20.398 2022] [3780573] RPL: seq 421139, committed 1, isolated 0
+[Sun Oct  2 05:44:20.437 2022] [3780573] RPL: writeset at apply, seq 421140, size 43119, flags 1, on commit
+[Sun Oct  2 05:44:20.437 2022] [3780573] RPL: rt trx, index 'admin_search_employers_rt'
+[Sun Oct  2 05:44:20.437 2022] [3780573] RPL: writeset at commit, seq 421140, flags 1
+[Sun Oct  2 05:44:20.437 2022] [3780573] RPL: commit, index 'admin_search_employers_rt', uid 0, queries 0, tags
+[Sun Oct  2 05:44:20.439 2022] [3780573] RPL: seq 421140, committed 1, isolated 0
+[Sun Oct  2 05:44:20.451 2022] [3780573] RPL: writeset at apply, seq 421141, size 11493, flags 1, on commit
+[Sun Oct  2 05:44:20.451 2022] [3780573] RPL: rt trx, index 'jobs_completions_custom'
+[Sun Oct  2 05:44:20.451 2022] [3780573] RPL: writeset at commit, seq 421141, flags 1
+[Sun Oct  2 05:44:20.451 2022] [3780573] RPL: commit, index 'jobs_completions_custom', uid 0, queries 0, tags
+[Sun Oct  2 05:44:20.451 2022] [3780573] RPL: seq 421141, committed 1, isolated 0
+[Sun Oct  2 05:44:20.451 2022] [3780479] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 421140
+[Sun Oct  2 05:44:20.452 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 421140 after 421140 from 4
+[Sun Oct  2 05:44:20.452 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 421140
+[Sun Oct  2 05:44:20.452 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 421140
+[Sun Oct  2 05:44:20.452 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 421140
+[Sun Oct  2 05:44:22.317 2022] [3780573] RPL: writeset at apply, seq 421142, size 14024, flags 1, on commit
+[Sun Oct  2 05:44:22.317 2022] [3780573] RPL: rt trx, index 'jobs'
+[Sun Oct  2 05:44:22.317 2022] [3780573] RPL: writeset at commit, seq 421142, flags 1
+[Sun Oct  2 05:44:22.317 2022] [3780573] RPL: commit, index 'jobs', uid 0, queries 0, tags
+[Sun Oct  2 05:44:22.318 2022] [3780573] RPL: seq 421142, committed 1, isolated 0
+[Sun Oct  2 05:44:22.321 2022] [3780573] RPL: writeset at apply, seq 421143, size 834, flags 1, on commit
+[Sun Oct  2 05:44:22.321 2022] [3780573] RPL: rt trx, index 'admin_search_employers_rt'
+[Sun Oct  2 05:44:22.322 2022] [3780573] RPL: writeset at commit, seq 421143, flags 1
+[Sun Oct  2 05:44:22.322 2022] [3780573] RPL: commit, index 'admin_search_employers_rt', uid 0, queries 0, tags
+[Sun Oct  2 05:44:22.322 2022] [3780573] RPL: seq 421143, committed 1, isolated 0
+[Sun Oct  2 05:44:22.323 2022] [3780573] RPL: writeset at apply, seq 421144, size 237, flags 1, on commit
+[Sun Oct  2 05:44:22.323 2022] [3780573] RPL: rt trx, index 'jobs_completions_custom'
+[Sun Oct  2 05:44:22.323 2022] [3780573] RPL: writeset at commit, seq 421144, flags 1
+[Sun Oct  2 05:44:22.323 2022] [3780573] RPL: commit, index 'jobs_completions_custom', uid 0, queries 0, tags
+[Sun Oct  2 05:44:22.323 2022] [3780573] RPL: seq 421144, committed 1, isolated 0
+[Sun Oct  2 05:44:24.898 2022] [3780573] RPL: writeset at apply, seq 421145, size 2876131, flags 1, on commit
+[Sun Oct  2 05:44:24.904 2022] [3780573] RPL: rt trx, index 'jobs'
+[Sun Oct  2 05:44:24.904 2022] [3780573] RPL: writeset at commit, seq 421145, flags 1
+[Sun Oct  2 05:44:24.904 2022] [3780573] RPL: commit, index 'jobs', uid 0, queries 0, tags
+[Sun Oct  2 05:44:24.965 2022] [3780573] RPL: seq 421145, committed 1, isolated 0
+[Sun Oct  2 05:44:25.330 2022] [3780573] RPL: writeset at apply, seq 421146, size 366562, flags 1, on commit
+[Sun Oct  2 05:44:25.331 2022] [3780573] RPL: rt trx, index 'admin_search_employers_rt'
+[Sun Oct  2 05:44:25.331 2022] [3780573] RPL: writeset at commit, seq 421146, flags 1
+[Sun Oct  2 05:44:25.331 2022] [3780573] RPL: commit, index 'admin_search_employers_rt', uid 0, queries 0, tags
+[Sun Oct  2 05:44:25.343 2022] [3780573] RPL: seq 421146, committed 1, isolated 0
+[Sun Oct  2 05:44:25.410 2022] [3780573] RPL: writeset at apply, seq 421147, size 100870, flags 1, on commit
+[Sun Oct  2 05:44:25.410 2022] [3780573] RPL: rt trx, index 'jobs_completions_custom'
+[Sun Oct  2 05:44:25.410 2022] [3780573] RPL: writeset at commit, seq 421147, flags 1
+[Sun Oct  2 05:44:25.410 2022] [3780573] RPL: commit, index 'jobs_completions_custom', uid 0, queries 0, tags
+[Sun Oct  2 05:44:25.414 2022] [3780573] RPL: seq 421147, committed 1, isolated 0
+[Sun Oct  2 05:44:25.414 2022] [3780479] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 421146
+[Sun Oct  2 05:44:25.416 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 421146 after 421146 from 4
+[Sun Oct  2 05:44:25.416 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 421146
+[Sun Oct  2 05:44:25.417 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 421146
+[Sun Oct  2 05:44:25.417 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 421146
+[Sun Oct  2 05:44:28.226 2022] [3780573] RPL: writeset at apply, seq 421148, size 210757, flags 1, on commit
+[Sun Oct  2 05:44:28.227 2022] [3780573] RPL: rt trx, index 'jobs'
+[Sun Oct  2 05:44:28.227 2022] [3780573] RPL: writeset at commit, seq 421148, flags 1
+[Sun Oct  2 05:44:28.227 2022] [3780573] RPL: commit, index 'jobs', uid 0, queries 0, tags
+[Sun Oct  2 05:44:28.236 2022] [3780573] RPL: seq 421148, committed 1, isolated 0
+[Sun Oct  2 05:44:28.261 2022] [3780573] RPL: writeset at apply, seq 421149, size 19650, flags 1, on commit
+[Sun Oct  2 05:44:28.261 2022] [3780573] RPL: rt trx, index 'admin_search_employers_rt'
+[Sun Oct  2 05:44:28.261 2022] [3780573] RPL: writeset at commit, seq 421149, flags 1
+[Sun Oct  2 05:44:28.261 2022] [3780573] RPL: commit, index 'admin_search_employers_rt', uid 0, queries 0, tags
+[Sun Oct  2 05:44:28.262 2022] [3780573] RPL: seq 421149, committed 1, isolated 0
+[Sun Oct  2 05:44:28.266 2022] [3780573] RPL: writeset at apply, seq 421150, size 5907, flags 1, on commit
+[Sun Oct  2 05:44:28.266 2022] [3780573] RPL: rt trx, index 'jobs_completions_custom'
+[Sun Oct  2 05:44:28.266 2022] [3780573] RPL: writeset at commit, seq 421150, flags 1
+[Sun Oct  2 05:44:28.266 2022] [3780573] RPL: commit, index 'jobs_completions_custom', uid 0, queries 0, tags
+[Sun Oct  2 05:44:28.267 2022] [3780573] RPL: seq 421150, committed 1, isolated 0
+[Sun Oct  2 05:44:28.816 2022] [3780573] RPL: writeset at apply, seq 421151, size 3260843, flags 1, on commit
+[Sun Oct  2 05:44:28.823 2022] [3780573] RPL: rt trx, index 'jobs'
+[Sun Oct  2 05:44:28.823 2022] [3780573] RPL: writeset at commit, seq 421151, flags 1
+[Sun Oct  2 05:44:28.823 2022] [3780573] RPL: commit, index 'jobs', uid 0, queries 0, tags
+[Sun Oct  2 05:44:28.888 2022] [3780573] RPL: seq 421151, committed 1, isolated 0
+[Sun Oct  2 05:44:28.908 2022] [3780573] RPL: writeset at apply, seq 421152, size 3219871, flags 1, on commit
+[Sun Oct  2 05:44:28.910 2022] [3780573] RPL: rt trx, index 'jobs'
+[Sun Oct  2 05:44:28.910 2022] [3780573] RPL: writeset at commit, seq 421152, flags 1
+[Sun Oct  2 05:44:28.910 2022] [3780573] RPL: commit, index 'jobs', uid 0, queries 0, tags
+[Sun Oct  2 05:44:28.965 2022] [3780573] RPL: seq 421152, committed 1, isolated 0
+[Sun Oct  2 05:44:29.228 2022] [3780573] RPL: writeset at apply, seq 421153, size 340083, flags 1, on commit
+[Sun Oct  2 05:44:29.228 2022] [3780573] RPL: rt trx, index 'admin_search_employers_rt'
+[Sun Oct  2 05:44:29.229 2022] [3780573] RPL: writeset at commit, seq 421153, flags 1
+[Sun Oct  2 05:44:29.229 2022] [3780573] RPL: commit, index 'admin_search_employers_rt', uid 0, queries 0, tags
+[Sun Oct  2 05:44:29.239 2022] [3780573] RPL: seq 421153, committed 1, isolated 0
+[Sun Oct  2 05:44:29.239 2022] [3780479] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 421152
+[Sun Oct  2 05:44:29.275 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 421152 after 421152 from 0
+[Sun Oct  2 05:44:29.276 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 421152
+[Sun Oct  2 05:44:29.276 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 421152
+[Sun Oct  2 05:44:29.276 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 421152
+[Sun Oct  2 05:44:29.288 2022] [3780573] RPL: writeset at apply, seq 421154, size 88874, flags 1, on commit
+[Sun Oct  2 05:44:29.289 2022] [3780573] RPL: rt trx, index 'jobs_completions_custom'
+[Sun Oct  2 05:44:29.289 2022] [3780573] RPL: writeset at commit, seq 421154, flags 1
+[Sun Oct  2 05:44:29.289 2022] [3780573] RPL: commit, index 'jobs_completions_custom', uid 0, queries 0, tags
+[Sun Oct  2 05:44:29.292 2022] [3780573] RPL: seq 421154, committed 1, isolated 0
+[Sun Oct  2 05:44:29.325 2022] [3780573] RPL: writeset at apply, seq 421155, size 363778, flags 1, on commit
+[Sun Oct  2 05:44:29.326 2022] [3780573] RPL: rt trx, index 'admin_search_employers_rt'
+[Sun Oct  2 05:44:29.326 2022] [3780573] RPL: writeset at commit, seq 421155, flags 1
+[Sun Oct  2 05:44:29.326 2022] [3780573] RPL: commit, index 'admin_search_employers_rt', uid 0, queries 0, tags
+[Sun Oct  2 05:44:29.336 2022] [3780573] RPL: seq 421155, committed 1, isolated 0
+[Sun Oct  2 05:44:29.379 2022] [3780573] RPL: writeset at apply, seq 421156, size 96239, flags 1, on commit
+[Sun Oct  2 05:44:29.379 2022] [3780573] RPL: rt trx, index 'jobs_completions_custom'
+[Sun Oct  2 05:44:29.379 2022] [3780573] RPL: writeset at commit, seq 421156, flags 1
+[Sun Oct  2 05:44:29.379 2022] [3780573] RPL: commit, index 'jobs_completions_custom', uid 0, queries 0, tags
+[Sun Oct  2 05:44:29.382 2022] [3780573] RPL: seq 421156, committed 1, isolated 0
+[Sun Oct  2 05:44:29.382 2022] [3780479] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 421155
+[Sun Oct  2 05:44:29.383 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 421155 after 421155 from 1
+[Sun Oct  2 05:44:29.383 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 421155
+[Sun Oct  2 05:44:29.384 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 421155
+[Sun Oct  2 05:44:29.384 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 421155
+[Sun Oct  2 05:44:29.515 2022] [3780573] RPL: writeset at apply, seq 421157, size 1235319, flags 1, on commit
+[Sun Oct  2 05:44:29.517 2022] [3780573] RPL: rt trx, index 'jobs'
+[Sun Oct  2 05:44:29.517 2022] [3780573] RPL: writeset at commit, seq 421157, flags 1
+[Sun Oct  2 05:44:29.517 2022] [3780573] RPL: commit, index 'jobs', uid 0, queries 0, tags
+[Sun Oct  2 05:44:29.551 2022] [3780573] RPL: seq 421157, committed 1, isolated 0
+[Sun Oct  2 05:44:29.757 2022] [3780573] RPL: writeset at apply, seq 421158, size 184201, flags 1, on commit
+[Sun Oct  2 05:44:29.757 2022] [3780573] RPL: rt trx, index 'admin_search_employers_rt'
+[Sun Oct  2 05:44:29.757 2022] [3780573] RPL: writeset at commit, seq 421158, flags 1
+[Sun Oct  2 05:44:29.757 2022] [3780573] RPL: commit, index 'admin_search_employers_rt', uid 0, queries 0, tags
+[Sun Oct  2 05:44:29.761 2022] [3780573] RPL: seq 421158, committed 1, isolated 0
+[Sun Oct  2 05:44:29.784 2022] [3780573] RPL: writeset at apply, seq 421159, size 51066, flags 1, on commit
+[Sun Oct  2 05:44:29.784 2022] [3780573] RPL: rt trx, index 'jobs_completions_custom'
+[Sun Oct  2 05:44:29.784 2022] [3780573] RPL: writeset at commit, seq 421159, flags 1
+[Sun Oct  2 05:44:29.784 2022] [3780573] RPL: commit, index 'jobs_completions_custom', uid 0, queries 0, tags
+[Sun Oct  2 05:44:29.785 2022] [3780573] RPL: seq 421159, committed 1, isolated 0
+[Sun Oct  2 05:44:32.435 2022] [3672605] caught SIGTERM, shutting down
+--
+joined {
+        }
+left {
+        }
+partitioned {
+        241cc090,0
+        25d2b400,0
+        2e253d4c,0
+        fd3f0c60,0
+        }
+)
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=27916ffd,ru=fd3f0c60,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://10.10.10.9:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7fc06003a670,ts=1255873910088584
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=27916ffd,ru=25d2b400,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://10.10.10.5:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7fc0b4113340,ts=1255873910101635
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=27916ffd,ru=241cc090,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://10.10.10.3:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7fc0b4126d80,ts=1255873910392753
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=27916ffd,ru=2e253d4c,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://10.10.10.1:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7fc0b4342510,ts=1255873910118084
+[Sun Oct  2 05:44:32.438 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():684: member: 0 uuid: 27916ffd segment: 0
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: 27916ffd shift_to: PRIM -> TRANS prim 0 last prim view_id(PRIM,241cc090,7) to_seq 8267815
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_view():621: 27916ffd Current view of cluster as seen by this node
+view ((empty))
+[Sun Oct  2 05:44:32.438 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():698: my index 0
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: 27916ffd shift_to: TRANS -> NON_PRIM prim 0 last prim view_id(PRIM,241cc090,7) to_seq 8267815
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:deliver_view():233: Current view of cluster as seen by this node
+view ((empty))
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:handle_up():485: handle_up: self leave
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1573: GMCast::handle_stable_view: Current view of cluster as seen by this node
+view ((empty))
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=27916ffd,ru=fd3f0c60,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://10.10.10.9:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7fc06003a670,ts=1255873910088584
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=27916ffd,ru=25d2b400,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://10.10.10.5:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7fc0b4113340,ts=1255873910101635
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=27916ffd,ru=241cc090,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://10.10.10.3:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7fc0b4126d80,ts=1255873910392753
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=27916ffd,ru=2e253d4c,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://10.10.10.1:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7fc0b4342510,ts=1255873910118084
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: 27916ffd shift_to: NON_PRIM -> CLOSED prim 0 last prim view_id(PRIM,241cc090,7) to_seq 8267815
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:close():365: gmcast 27916ffd close
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:close():208: closing 0x7fc06003a778 state 2 send_q size 0
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:close():208: closing 0x7fc0b4113448 state 2 send_q size 0
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:close():208: closing 0x7fc0b4126e88 state 2 send_q size 0
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:close():208: closing 0x7fc0b4342618 state 2 send_q size 0
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/protonet.cpp:erase():26: erase pstack 0x7fc0b43194c8
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():357: gcomm: closed
+[Sun Oct  2 05:44:32.438 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():358:
+profile name: gcs_gcomm
+
+point                                   count     calendar  cpu
+----------------------------------------------------------------------
+
+tot count         : 0
+tot calendar time : 0.000
+tot thread cputime: 0.000
+tot ct since ctor : -1662830097.578
+[Sun Oct  2 05:44:32.438 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():414: New COMPONENT: primary = no, bootstrap = no, my_idx = 0, memb_num = 1
+[Sun Oct  2 05:44:32.438 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():428: #281: Saving SYNCED over SYNCED
+[Sun Oct  2 05:44:32.438 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_set_fc_limits():856: Flow-control interval: [100, 100]
+[Sun Oct  2 05:44:32.438 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.hpp:gcs_sm_continue():452: Trying to continue unpaused monitor
+[Sun Oct  2 05:44:32.438 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_handle_act_conf():976: Received NON-PRIMARY.
+[Sun Oct  2 05:44:32.439 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting SYNCED -> OPEN (TO: 421159)
+[Sun Oct  2 05:44:32.439 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:gcomm_recv():779: gcomm recv: self leave
+[Sun Oct  2 05:44:32.439 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():434: Received self-leave message.
+[Sun Oct  2 05:44:32.439 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_set_fc_limits():856: Flow-control interval: [0, 0]
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:drain_common():420: draining up to 421159
+[Sun Oct  2 05:44:32.439 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.hpp:gcs_sm_continue():452: Trying to continue unpaused monitor
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:drain_common():420: draining up to 421159
+[Sun Oct  2 05:44:32.439 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_handle_act_conf():972: Received SELF-LEAVE. Closing connection.
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: new cluster membership: 0(1), global seqno: 421159, status non-primary, gap 0
+[Sun Oct  2 05:44:32.439 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting OPEN -> CLOSED (TO: 421159)
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL:
+'daemon_3672621_jobsite', '10.10.10.7:9312,10.10.10.7:9315:replication' *
+
+[Sun Oct  2 05:44:32.439 2022] [3780572] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_recv_thread():1461: RECV thread exiting 0: Success
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:drain_common():420: draining up to 421159
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: last message repeated 1 times
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: new cluster membership: -1(0), global seqno: 421159, status non-primary, gap 0
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL:
+
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:write_file():282: Saving state: fd3f4606-3c95-11ed-88b7-3f5cbdea9b05:421159
+[Sun Oct  2 05:44:32.439 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_close():1248: recv_thread() joined.
+[Sun Oct  2 05:44:32.439 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_close():1254: Closing replication queue.
+[Sun Oct  2 05:44:32.439 2022] [3672611] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_close():1277: Closing slave action queue.
+[Sun Oct  2 05:44:32.439 2022] [3672611] DEBUG: disconnect from cluster jobsite invoked
+[Sun Oct  2 05:44:32.439 2022] [3672611] DEBUG: ReplicateClustersDelete done
+[Sun Oct  2 05:44:32.439 2022] [3672605] 705 Waiting clients to finish ... (0)
+[Sun Oct  2 05:44:32.439 2022] [3672605] 717 Unlock indexes ...
+[Sun Oct  2 05:44:32.439 2022] [3672636] 725 Abandon local indexes list ...
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/gcs_action_source.cpp:dispatch():142: Received SELF-LEAVE. Closing connection.
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:async_recv():461: Slave thread exit. Return code: 0
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: receiver jobsite done, code 0, success
+[Sun Oct  2 05:44:32.439 2022] [3780573] DEBUG: cluster jobsite wait to finish
+[Sun Oct  2 05:44:32.439 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:~ReplicatorSMM():299: dtor state: CLOSED
+[Sun Oct  2 05:44:32.440 2022] [3672625] WARNING: rt compress: index jobs: failed to merge /var/lib/manticore/data/jobs/jobs.13764 (interrupted because of shutdown)
+[Sun Oct  2 05:44:32.440 2022] [3672625] WARNING: rt: index jobs: optimization terminated chunk(s) 4 ( left 8 ) in 2m 35.9s
+[Sun Oct  2 05:44:32.448 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:~Monitor():75: mon: entered 419042 oooe fraction 0 oool fraction 2.3864e-06
+[Sun Oct  2 05:44:32.455 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:~Monitor():75: mon: entered 419042 oooe fraction 0.00251287 oool fraction 2.3864e-06
+[Sun Oct  2 05:44:32.461 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:~Monitor():75: mon: entered 535584 oooe fraction 0 oool fraction 9.3356e-06
+[Sun Oct  2 05:44:32.461 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():927: cert index usage at exit 0
+[Sun Oct  2 05:44:32.461 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():928: cert trx map usage at exit 4
+[Sun Oct  2 05:44:32.461 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():929: deps set usage at exit 0
+[Sun Oct  2 05:44:32.461 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():935: avg deps dist 4.58781
+[Sun Oct  2 05:44:32.461 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():936: avg cert interval 0.013189
+[Sun Oct  2 05:44:32.461 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():937: cert index size 863
+[Sun Oct  2 05:44:32.461 2022] [3780479] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():46: Service thread queue flushed.
+[Sun Oct  2 05:44:32.461 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/wsdb.cpp:~Wsdb():55: wsdb trx map usage 0 conn query map usage 0
+[Sun Oct  2 05:44:32.461 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/wsdb.cpp:~Wsdb():57: MemPool(LocalTrxHandle): hit ratio: 0.998937, misses: 84, in use: 0, in pool: 84
+[Sun Oct  2 05:44:32.462 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/gcs_action_source.hpp:~GcsActionSource():38: MemPool(SlaveTrxHandle): hit ratio: 0.997606, misses: 814, in use: 0, in pool: 814
+[Sun Oct  2 05:44:32.462 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting CLOSED -> DESTROYED (TO: 421159)
+[Sun Oct  2 05:44:32.462 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_core.cpp:gcs_core_destroy():1202: Calling backend.destroy()
+[Sun Oct  2 05:44:32.462 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:~AsioTcpSocket():30: dtor for 0x7fc0b4126e88
+[Sun Oct  2 05:44:32.462 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:~AsioTcpSocket():30: dtor for 0x7fb804003418
+[Sun Oct  2 05:44:32.462 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:~AsioTcpSocket():30: dtor for 0x7fc06003a778
+[Sun Oct  2 05:44:32.462 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:~AsioTcpSocket():30: dtor for 0x7fc0b4113448
+[Sun Oct  2 05:44:32.462 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:~AsioTcpSocket():30: dtor for 0x7fc0b4342618
+[Sun Oct  2 05:44:32.462 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcache/src/GCache.cpp:~GCache():77:
+GCache mallocs : 419972
+GCache reallocs: 0
+GCache frees   : 419972
+[Sun Oct  2 05:44:32.462 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_mmap.cpp:sync():109: Flushing memory map to disk...
+[Sun Oct  2 05:44:32.463 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_mmap.cpp:unmap():124: Memory unmapped: 0x7fb822e0d000 (16778536 bytes)
+[Sun Oct  2 05:44:32.463 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:sync():240: Flushing file '/var/lib/manticore/data/galera.cache'
+[Sun Oct  2 05:44:32.463 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:sync():246: Flushed file '/var/lib/manticore/data/galera.cache'
+[Sun Oct  2 05:44:32.463 2022] [3780573] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:~FileDescriptor():233: Closed  file '/var/lib/manticore/data/galera.cache'
+[Sun Oct  2 05:44:32.464 2022] [3780573] DEBUG: cluster jobsite finished, cluster deleted lib 0x7fc074088b60 unloaded
+[Sun Oct  2 05:44:32.464 2022] [3780573] DEBUG: Detached::RemoveThread called for 3780573
+[Sun Oct  2 05:44:32.464 2022] [3780573] DEBUG: Terminated thread 3780573, 'jobsite_repl_0'
+[Sun Oct  2 05:44:32.469 2022] [3672636] rt: index listings: ramchunk saved in 0.029 sec
+[Sun Oct  2 05:44:32.513 2022] [3672636] rt: index postal_coords: ramchunk saved in 0.037 sec
+[Sun Oct  2 05:44:32.541 2022] [3672636] rt: index requirements: ramchunk saved in 0.009 sec
+[Sun Oct  2 05:44:32.612 2022] [3672636] rt: index jobs_completions_custom: ramchunk saved in 0.069 sec
+[Sun Oct  2 05:44:32.886 2022] [3672636] rt: index admin_search_employers_rt: ramchunk saved in 0.143 sec
+[Sun Oct  2 05:44:33.345 2022] [3672636] rt: index cvs: ramchunk saved in 0.002 sec
+[Sun Oct  2 05:44:33.446 2022] [3672607] DEBUG: SaveMeta: Done (/var/lib/manticore/data/binlog.meta.new)
+[Sun Oct  2 05:44:33.446 2022] [3672607] rt: index jobs: ramchunk saved in 0.096 sec
+[Sun Oct  2 05:44:36.032 2022] [3672607] rt: index geocities: ramchunk saved in 0.018 sec
+[Sun Oct  2 05:44:36.089 2022] [3672607] 729 Abandon distr indexes list ...
+[Sun Oct  2 05:44:36.089 2022] [3672605] 733 Shutdown alone threads (if any) ...
+[Sun Oct  2 05:44:36.089 2022] [3672605] 736 Shutdown main work pool ...
+[Sun Oct  2 05:44:36.233 2022] [3672605] 741 Remove local indexes list ...
+[Sun Oct  2 05:44:36.233 2022] [3672605] 744 Remove distr indexes list ...
+[Sun Oct  2 05:44:36.233 2022] [3672605] 748 Finish IO stats collecting ...
+[Sun Oct  2 05:44:36.233 2022] [3672605] 751 Finish RT serving ...
+[Sun Oct  2 05:44:36.233 2022] [3672605] 754 Shutdown docstore ...
+[Sun Oct  2 05:44:36.233 2022] [3672605] 757 Shutdown skip cache ...
+[Sun Oct  2 05:44:36.238 2022] [3672605] 760 Shutdown global IDFs ...
+[Sun Oct  2 05:44:36.238 2022] [3672605] 763 Shutdown aot ...
+[Sun Oct  2 05:44:36.239 2022] [3672605] 766 Shutdown columnar ...
+[Sun Oct  2 05:44:36.239 2022] [3672605] 769 Shutdown listeners ...
+[Sun Oct  2 05:44:36.239 2022] [3672605] 774 Close persistent sockets ...
+[Sun Oct  2 05:44:36.239 2022] [3672605] 778 Release (close) pid file ...
+[Sun Oct  2 05:44:36.239 2022] [3672605] 787 Shutdown hazard pointers ...
+[Sun Oct  2 05:44:36.239 2022] [3672605] DEBUG: hazard::Shutdown() done
+[Sun Oct  2 05:44:36.239 2022] [3672605] 793 Shutdown wordforms ...
+[Sun Oct  2 05:44:36.239 2022] [3672605] shutdown daemon version '5.0.3 79a994220@220924 dev (columnar 1.16.1 2cc9cbe@220918) (secondary 1.16.1 2cc9cbe@220918)' ...
+[Sun Oct  2 05:44:36.239 2022] [3672605] shutdown complete
+[Sun Oct  2 05:44:36.240 2022] [3672605] DEBUG: ~LazyNetEvents_c. Shutdown=1
+[Sun Oct  2 05:44:36.272 2022] [3672604] watchdog: main process 3672605 exited cleanly (exit code 0), shutting down
+root@bdb:/var/log/manticore# zgrep -A 150 'exited cleanly' searchd.log
+[Sun Oct  2 05:44:36.272 2022] [3672604] watchdog: main process 3672605 exited cleanly (exit code 0), shutting down
+[Sun Oct  2 05:46:08.934 2022] [2390971] watchdog: main process 2390972 forked ok
+[Sun Oct  2 05:46:08.935 2022] [2390972] DEBUG: StartGlobalWorkpool
+[Sun Oct  2 05:46:08.936 2022] [2390972] starting daemon version '5.0.3 d2a39f776@221001 dev (columnar 1.16.1 abd8d4d@220927)' ...
+[Sun Oct  2 05:46:08.936 2022] [2390972] listening on 127.0.0.1:9312 for sphinx and http(s)
+[Sun Oct  2 05:46:08.936 2022] [2390972] listening on 10.10.10.7:9312 for sphinx and http(s)
+[Sun Oct  2 05:46:08.936 2022] [2390972] listening on 127.0.0.1:9306 for mysql
+[Sun Oct  2 05:46:08.936 2022] [2390972] listening on 10.10.10.7:9306 for mysql
+[Sun Oct  2 05:46:08.936 2022] [2390972] listening on 127.0.0.1:9326 for VIP mysql
+[Sun Oct  2 05:46:08.937 2022] [2390974] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:08.937 2022] [2390974] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Sun Oct  2 05:46:08.937 2022] [2390974] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:08.963 2022] [2390974] WARNING: '/var/lib/manticore/data/listings/listings.5' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:08.976 2022] [2390974] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:08.976 2022] [2390974] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Sun Oct  2 05:46:08.976 2022] [2390974] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:08.981 2022] [2390974] WARNING: '/var/lib/manticore/data/postal_coords/postal_coords.11' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:08.985 2022] [2390974] WARNING: '/var/lib/manticore/data/postal_coords/postal_coords.13' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:09.029 2022] [2390974] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:09.029 2022] [2390974] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Sun Oct  2 05:46:09.029 2022] [2390974] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:09.030 2022] [2390974] WARNING: '/var/lib/manticore/data/requirements/requirements.2' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:09.037 2022] [2390974] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:09.037 2022] [2390974] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Sun Oct  2 05:46:09.037 2022] [2390974] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:09.059 2022] [2390974] WARNING: '/var/lib/manticore/data/jobs_completions_custom/jobs_completions_custom.448' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:09.113 2022] [2390974] WARNING: '/var/lib/manticore/data/jobs_completions_custom/jobs_completions_custom.447' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:09.226 2022] [2390974] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:09.226 2022] [2390974] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Sun Oct  2 05:46:09.226 2022] [2390974] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:09.323 2022] [2390974] WARNING: '/var/lib/manticore/data/admin_search_employers_rt/admin_search_employers_rt.2781' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:09.422 2022] [2390974] WARNING: '/var/lib/manticore/data/admin_search_employers_rt/admin_search_employers_rt.2780' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:09.672 2022] [2390974] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:09.672 2022] [2390974] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Sun Oct  2 05:46:09.672 2022] [2390974] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:09.675 2022] [2390974] WARNING: '/var/lib/manticore/data/cvs/cvs.12' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:09.677 2022] [2390974] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:09.677 2022] [2390974] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Sun Oct  2 05:46:09.677 2022] [2390974] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:09.990 2022] [2390974] WARNING: '/var/lib/manticore/data/jobs/jobs.13772' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:10.326 2022] [2390974] WARNING: '/var/lib/manticore/data/jobs/jobs.13764' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:10.640 2022] [2390974] WARNING: '/var/lib/manticore/data/jobs/jobs.13765' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:10.954 2022] [2390974] WARNING: '/var/lib/manticore/data/jobs/jobs.13766' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:11.352 2022] [2390974] WARNING: '/var/lib/manticore/data/jobs/jobs.13767' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:11.661 2022] [2390974] WARNING: '/var/lib/manticore/data/jobs/jobs.13768' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:11.991 2022] [2390974] WARNING: '/var/lib/manticore/data/jobs/jobs.13769' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:12.322 2022] [2390974] WARNING: '/var/lib/manticore/data/jobs/jobs.13771' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:12.490 2022] [2390974] DEBUG: 'embedded_limit' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:12.490 2022] [2390974] DEBUG: 'attr_update_reserve' - nothing specified, using default value 131072
+[Sun Oct  2 05:46:12.490 2022] [2390974] DEBUG: 'docstore_block_size' - nothing specified, using default value 16384
+[Sun Oct  2 05:46:12.520 2022] [2390974] WARNING: '/var/lib/manticore/data/geocities/geocities.24' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:12.551 2022] [2390974] WARNING: '/var/lib/manticore/data/geocities/geocities.27' secondary index library not loaded; secondary index(es) disabled
+[Sun Oct  2 05:46:12.574 2022] [2390974] RPL: 1 clusters loaded from config
+[Sun Oct  2 05:46:12.583 2022] [2390972] DEBUG: expression stack for creation is 176. Consider to add env MANTICORE_KNOWN_CREATE_SIZE=176 to store this value persistent for this binary
+[Sun Oct  2 05:46:12.585 2022] [2390972] DEBUG: expression stack for eval/deletion is 32. Consider to add env MANTICORE_KNOWN_EXPR_SIZE=32 to store this value persistent for this binary
+[Sun Oct  2 05:46:12.605 2022] [2390972] DEBUG: filter stack delta is 224. Consider to add env MANTICORE_KNOWN_FILTER_SIZE=224 to store this value persistent for this binary
+[Sun Oct  2 05:46:12.605 2022] [2390972] DEBUG: 'binlog_max_log_size' - nothing specified, using default value 268435456
+[Sun Oct  2 05:46:12.605 2022] [2390972] DEBUG: uid-short server_id 4, started 108035172, seed 290042905567952896
+[Sun Oct  2 05:46:12.605 2022] [2391003] DEBUG: SaveMeta: Done (/var/lib/manticore/data/binlog.meta.new)
+[Sun Oct  2 05:46:12.605 2022] [2391004] prereading 8 indexes
+[Sun Oct  2 05:46:12.605 2022] [2391004] DEBUG: prereading index 'listings'
+[Sun Oct  2 05:46:12.605 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/listings/listings.5'(/var/lib/manticore/data/listings/listings.5)
+[Sun Oct  2 05:46:12.606 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:12.606 2022] [2391004] DEBUG: preread index 'listings' in 0.001 sec
+[Sun Oct  2 05:46:12.606 2022] [2391004] DEBUG: prereading index 'postal_coords'
+[Sun Oct  2 05:46:12.606 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/postal_coords/postal_coords.11'(/var/lib/manticore/data/postal_coords/postal_coords.11)
+[Sun Oct  2 05:46:12.613 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:12.613 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/postal_coords/postal_coords.13'(/var/lib/manticore/data/postal_coords/postal_coords.13)
+[Sun Oct  2 05:46:12.619 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:12.619 2022] [2391004] DEBUG: preread index 'postal_coords' in 0.012 sec
+[Sun Oct  2 05:46:12.619 2022] [2391004] DEBUG: prereading index 'requirements'
+[Sun Oct  2 05:46:12.619 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/requirements/requirements.2'(/var/lib/manticore/data/requirements/requirements.2)
+[Sun Oct  2 05:46:12.619 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:12.619 2022] [2391004] DEBUG: preread index 'requirements' in 0.000 sec
+[Sun Oct  2 05:46:12.619 2022] [2391004] DEBUG: prereading index 'jobs_completions_custom'
+[Sun Oct  2 05:46:12.619 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/jobs_completions_custom/jobs_completions_custom.448'(/var/lib/manticore/data/jobs_completions_custom/jobs_completions_custom.448)
+[Sun Oct  2 05:46:12.678 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:12.678 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/jobs_completions_custom/jobs_completions_custom.447'(/var/lib/manticore/data/jobs_completions_custom/jobs_completions_custom.447)
+[Sun Oct  2 05:46:12.768 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:12.769 2022] [2391004] DEBUG: preread index 'jobs_completions_custom' in 0.150 sec
+[Sun Oct  2 05:46:12.769 2022] [2391004] DEBUG: prereading index 'admin_search_employers_rt'
+[Sun Oct  2 05:46:12.769 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/admin_search_employers_rt/admin_search_employers_rt.2781'(/var/lib/manticore/data/admin_search_employers_rt/admin_search_employers_rt.2781)
+[Sun Oct  2 05:46:12.997 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:12.997 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/admin_search_employers_rt/admin_search_employers_rt.2780'(/var/lib/manticore/data/admin_search_employers_rt/admin_search_employers_rt.2780)
+[Sun Oct  2 05:46:13.250 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.253 2022] [2391004] DEBUG: preread index 'admin_search_employers_rt' in 0.483 sec
+[Sun Oct  2 05:46:13.253 2022] [2391004] DEBUG: prereading index 'cvs'
+[Sun Oct  2 05:46:13.253 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/cvs/cvs.12'(/var/lib/manticore/data/cvs/cvs.12)
+[Sun Oct  2 05:46:13.253 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.254 2022] [2391004] DEBUG: preread index 'cvs' in 0.001 sec
+[Sun Oct  2 05:46:13.254 2022] [2391004] DEBUG: prereading index 'jobs'
+[Sun Oct  2 05:46:13.254 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/jobs/jobs.13772'(/var/lib/manticore/data/jobs/jobs.13772)
+[Sun Oct  2 05:46:13.305 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.305 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/jobs/jobs.13764'(/var/lib/manticore/data/jobs/jobs.13764)
+[Sun Oct  2 05:46:13.357 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.357 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/jobs/jobs.13765'(/var/lib/manticore/data/jobs/jobs.13765)
+[Sun Oct  2 05:46:13.407 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.407 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/jobs/jobs.13766'(/var/lib/manticore/data/jobs/jobs.13766)
+[Sun Oct  2 05:46:13.457 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.457 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/jobs/jobs.13767'(/var/lib/manticore/data/jobs/jobs.13767)
+[Sun Oct  2 05:46:13.508 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.508 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/jobs/jobs.13768'(/var/lib/manticore/data/jobs/jobs.13768)
+[Sun Oct  2 05:46:13.555 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.556 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/jobs/jobs.13769'(/var/lib/manticore/data/jobs/jobs.13769)
+[Sun Oct  2 05:46:13.607 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.607 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/jobs/jobs.13771'(/var/lib/manticore/data/jobs/jobs.13771)
+[Sun Oct  2 05:46:13.653 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.672 2022] [2391004] DEBUG: preread index 'jobs' in 0.418 sec
+[Sun Oct  2 05:46:13.672 2022] [2391004] DEBUG: prereading index 'geocities'
+[Sun Oct  2 05:46:13.672 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/geocities/geocities.24'(/var/lib/manticore/data/geocities/geocities.24)
+[Sun Oct  2 05:46:13.712 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.712 2022] [2391004] DEBUG: CSphIndex_VLN::Preread invoked '/var/lib/manticore/data/geocities/geocities.27'(/var/lib/manticore/data/geocities/geocities.27)
+[Sun Oct  2 05:46:13.755 2022] [2391004] DEBUG: Preread successfully finished
+[Sun Oct  2 05:46:13.756 2022] [2391004] DEBUG: preread index 'geocities' in 0.084 sec
+[Sun Oct  2 05:46:13.756 2022] [2391004] preread 8 indexes in 1.151 sec
+[Sun Oct  2 05:46:13.757 2022] [2391012] RPL: wsrep_load(): loading provider library '/usr/share/manticore/modules/libgalera_manticore.so'
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: wsrep_load(): Galera 3.37(rXXXX) by Codership Oy <info@codership.com> loaded successfully.
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: node incoming '10.10.10.7:9312,10.10.10.7:9315:replication', listen '10.10.10.7:9315', nodes 'gcomm://10.10.10.5:9315,10.10.10.1:9315', name 'daemon_2391012_jobsite'
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: cluster 'jobsite', new 0, indexes 'admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements', nodes '10.10.10.1:9312,10.10.10.3:9312,10.10.10.5:9312,10.10.10.7:9312,10.10.10.9:9312'
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: CRC-32C: using hardware acceleration.
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_log.c:gu_conf_debug_on():58: Turning debug logging on
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():89: read comment: # GALERA saved state
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():94: read version: 2.1
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():101: read saved state uuid: fd3f4606-3c95-11ed-88b7-3f5cbdea9b05
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():112: read saved state seqno: 421159
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():117: read safe_to_bootstrap: 0
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():121: Found saved state: fd3f4606-3c95-11ed-88b7-3f5cbdea9b05:421159, safe_to_bootstrap: 0
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:SavedState():136: Initialized current_len_ to 117
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:constructor_common():204: Opened file '/var/lib/manticore/data/galera.cache', size: 134219048
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:constructor_common():205: File descriptor: 182
+[Sun Oct  2 05:46:13.762 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:prealloc():304: Preallocating 117440512/134219048 bytes in '/var/lib/manticore/data/galera.cache'...
+[Sun Oct  2 05:46:13.763 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_mmap.cpp:MMap():74: Memory mapped: 0x7fe3b7fff000 (134219048 bytes)
+[Sun Oct  2 05:46:13.767 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_create():318: Requesting recv queue len: 936977060
+[Sun Oct  2 05:46:13.767 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fifo.c:gu_fifo_create():128: Creating FIFO buffer of 1073741824 elements of size 56, memory min used: 524552, max used: 60130066696
+[Sun Oct  2 05:46:13.768 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_gcs.hpp:Gcs():90: Passing config to GCS: base_dir = /var/lib/manticore/data; base_host = 10.10.10.7; base_port = 9315; cert.log_conflicts = yes; cert.optimistic_pa = yes; debug = on; evs.auto_evict = 0; evs.delay_margin = PT1S; evs.delayed_keep_period = PT30S; evs.inactive_check_period = PT0.5S; evs.inactive_timeout = PT15S; evs.join_retrans_period = PT1S; evs.max_install_timeouts = 3; evs.send_window = 10; evs.stats_report_period = PT1M; evs.suspect_timeout = PT5S; evs.user_send_window = 4; evs.view_forget_timeout = PT24H; gcache.dir = /var/lib/manticore/data; gcache.freeze_purge_at_seqno = -1; gcache.keep_pages_count = 0; gcache.keep_pages_size = 0; gcache.mem_size = 0; gcache.name = /var/lib/manticore/data/galera.cache; gcache.page_size = 128M; gcache.recover = no; gcache.size = 128M; gcomm.thread_prio = ; gcs.fc_debug = 0; gcs.fc_factor = 1; gcs.fc_
+[Sun Oct  2 05:46:13.768 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: ist.recv_bind not set.
+[Sun Oct  2 05:46:13.769 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: ist.recv_addr not set.
+[Sun Oct  2 05:46:13.769 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_uri.cpp:parse():158: URI: tcp://10.10.10.7:9315
+[Sun Oct  2 05:46:13.790 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:ReplicatorSMM():275: End state: fd3f4606-3c95-11ed-88b7-3f5cbdea9b05:421159 #################
+[Sun Oct  2 05:46:13.790 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcache/src/GCache_seqno.cpp:seqno_reset():37: GCache history reset: fd3f4606-3c95-11ed-88b7-3f5cbdea9b05:0 -> fd3f4606-3c95-11ed-88b7-3f5cbdea9b05:421159
+[Sun Oct  2 05:46:13.791 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:assign_initial_position():989: Assign initial position for certification: 421159, protocol version: -1
+[Sun Oct  2 05:46:13.791 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:connect():333: Setting initial position to fd3f4606-3c95-11ed-88b7-3f5cbdea9b05:421159
+[Sun Oct  2 05:46:13.791 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_core.cpp:gcs_core_open():198: Initializing backend IO layer
+[Sun Oct  2 05:46:13.791 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_uri.cpp:parse():158: URI: pc://10.10.10.5:9315,10.10.10.1:9315
+[Sun Oct  2 05:46:13.791 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/protonet.cpp:create():72: protonet asio version 0
+[Sun Oct  2 05:46:13.791 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/datagram.cpp:checksum_type():26: Using CRC-32C for message checksums.
+[Sun Oct  2 05:46:13.791 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: socket.ssl not set.
+[Sun Oct  2 05:46:13.791 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:GCommConn():215: backend: asio
+[Sun Oct  2 05:46:13.791 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:connect():279: gcomm thread scheduling priority set to other:0
+[Sun Oct  2 05:46:13.791 2022] [2391012] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_config.hpp:get():125: pc.linger not set.
+[Sun Oct  2 05:46:13.791 2022] [2391012] WARNING: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/view.cpp:read_file():403: Fail to access the file (/var/lib/manticore/data/gvwstate.dat) error (No such file or directory). It is possible if node is booting for first time or re-booting after a graceful shutdown
+root@bdb:/var/log/manticore#
