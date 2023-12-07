@@ -1,0 +1,190 @@
+  Id   Target Id                           Frame 
+* 1    Thread 0x7f39d92ffc40 (LWP 2362872) __pthread_kill_implementation (no_tid=0, signo=6, threadid=139886433664064) at ./nptl/pthread_kill.c:44
+
+Thread 1 (Thread 0x7f39d92ffc40 (LWP 2362872)):
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=139886433664064) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=139886433664064) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=139886433664064, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007f39d9343476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007f39d93297f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007f39d95edbbe in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#6  0x00007f39d95f924c in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#7  0x00007f39d95f92b7 in std::terminate() () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#8  0x00007f39d95f9518 in __cxa_throw () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#9  0x000055b06324aa44 in nlohmann::detail::json_sax_dom_parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > > >::parse_error<nlohmann::detail::parse_error> (this=0x7ffdabc26ab0, ex=...) at nljson-src/include/nlohmann/detail/input/json_sax.hpp:274
+#10 nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char const*> >::parse (this=this@entry=0x7ffdabc26be0, strict=<optimized out>, result=...) at nljson-src/include/nlohmann/detail/input/parser.hpp:123
+#11 0x000055b063247f35 in nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >::parse<char const*&>(char const*&, std::function<bool (int, nlohmann::detail::parse_event_t, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&)>, bool, bool) (i=@0x7ffdabc26d58: 0x55b065751820 "{\n\t\"clusters\":\t{\n\t\t}\n\t},\n\t\"indexes\":\t{\n\t\t\"admin_search_employers_rt\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"admin_search_employers_rt\"\n\t\t},\n\t\t\"cvs\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"cvs\"\n\t\t},\n\t\t\"geocities\":\t{\n"..., cb=..., allow_exceptions=true, ignore_comments=false) at nljson-src/include/nlohmann/json.hpp:3658
+#12 0x000055b0632285f3 in LoadCompatHttp (sData=sData@entry=0x55b065751820 "{\n\t\"clusters\":\t{\n\t\t}\n\t},\n\t\"indexes\":\t{\n\t\t\"admin_search_employers_rt\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"admin_search_employers_rt\"\n\t\t},\n\t\t\"cvs\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"cvs\"\n\t\t},\n\t\t\"geocities\":\t{\n"...) at /builds/manticoresearch/dev/src/searchdhttpcompat.cpp:448
+#13 0x000055b0631d67af in ConfigRead (sConfigPath=..., sError=..., dClusters=..., dIndexes=...) at /builds/manticoresearch/dev/src/searchdconfig.cpp:498
+#14 LoadConfigInt (hConf=..., sConfigFile=..., sError=...) at /builds/manticoresearch/dev/src/searchdconfig.cpp:802
+#15 0x000055b0632c32d3 in ServiceMain (argc=argc@entry=6, argv=argv@entry=0x7ffdabc28c08) at /builds/manticoresearch/dev/src/searchd.cpp:19911
+#16 0x000055b0632c5d2b in mainimpl (argc=6, argv=0x7ffdabc28c08) at /builds/manticoresearch/dev/src/searchd.cpp:20417
+#17 main (argc=6, argv=0x7ffdabc28c08) at /builds/manticoresearch/dev/src/searchd.cpp:20423
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=139886433664064) at ./nptl/pthread_kill.c:44
+        tid = <optimized out>
+        ret = 0
+        pd = 0x7f39d92ffc40
+        old_mask = {__val = {1103806595328, 1112396529922, 72903127086465280, 74029044173439236, 256, 257, 18446744073709551615, 4294967295, 1103806595328, 1112396529922, 72903127086465280, 74029044173439236, 256, 257, 18446744073709551615, 4294967295}}
+        ret = <optimized out>
+        pd = <optimized out>
+        old_mask = <optimized out>
+        ret = <optimized out>
+        tid = <optimized out>
+        ret = <optimized out>
+        resultvar = <optimized out>
+        resultvar = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+        __futex = <optimized out>
+        resultvar = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+        __futex = <optimized out>
+        __private = <optimized out>
+        __oldval = <optimized out>
+        result = <optimized out>
+#1  __pthread_kill_internal (signo=6, threadid=139886433664064) at ./nptl/pthread_kill.c:78
+No locals.
+#2  __GI___pthread_kill (threadid=139886433664064, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+No locals.
+#3  0x00007f39d9343476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+        ret = <optimized out>
+#4  0x00007f39d93297f3 in __GI_abort () at ./stdlib/abort.c:79
+        save_stage = 1
+        act = {__sigaction_handler = {sa_handler = 0xd68, sa_sigaction = 0xd68}, sa_mask = {__val = {139886434238317, 139886435874464, 138, 139886435874464, 139886434238317, 94216104693512, 139886435874464, 1, 139886435874595, 3432, 139886434245217, 94216104693512, 10, 139886435874464, 94216104695904, 140727485099360}}, sa_flags = -1413322264, sa_restorer = 0x55b06573cf08}
+        sigs = {__val = {32, 0, 2, 9223372036854775814, 29, 114, 139886436792448, 140727485098192, 0, 0, 0, 0, 0, 0, 4294967295, 139886434238317}}
+#5  0x00007f39d95edbbe in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#6  0x00007f39d95f924c in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#7  0x00007f39d95f92b7 in std::terminate() () from /lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#8  0x00007f39d95f9518 in __cxa_throw () from /lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#9  0x000055b06324aa44 in nlohmann::detail::json_sax_dom_parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > > >::parse_error<nlohmann::detail::parse_error> (this=0x7ffdabc26ab0, ex=...) at nljson-src/include/nlohmann/detail/input/json_sax.hpp:274
+No locals.
+#10 nlohmann::detail::parser<nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >, nlohmann::detail::iterator_input_adapter<char const*> >::parse (this=this@entry=0x7ffdabc26be0, strict=<optimized out>, result=...) at nljson-src/include/nlohmann/detail/input/parser.hpp:123
+        sdp = {root = @0x7ffdabc26d10, ref_stack = std::vector of length 0, capacity 2, object_element = 0x55b06573dad0, errored = true, allow_exceptions = true}
+#11 0x000055b063247f35 in nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >::parse<char const*&>(char const*&, std::function<bool (int, nlohmann::detail::parse_event_t, nlohmann::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> > >&)>, bool, bool) (i=@0x7ffdabc26d58: 0x55b065751820 "{\n\t\"clusters\":\t{\n\t\t}\n\t},\n\t\"indexes\":\t{\n\t\t\"admin_search_employers_rt\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"admin_search_employers_rt\"\n\t\t},\n\t\t\"cvs\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"cvs\"\n\t\t},\n\t\t\"geocities\":\t{\n"..., cb=..., allow_exceptions=true, ignore_comments=false) at nljson-src/include/nlohmann/json.hpp:3658
+        result = <optimized out>
+#12 0x000055b0632285f3 in LoadCompatHttp (sData=sData@entry=0x55b065751820 "{\n\t\"clusters\":\t{\n\t\t}\n\t},\n\t\"indexes\":\t{\n\t\t\"admin_search_employers_rt\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"admin_search_employers_rt\"\n\t\t},\n\t\t\"cvs\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"cvs\"\n\t\t},\n\t\t\"geocities\":\t{\n"...) at /builds/manticoresearch/dev/src/searchdhttpcompat.cpp:448
+        tRaw = {m_type = nlohmann::detail::value_t::object, m_value = {object = 0x55b06573d780, array = 0x55b06573d780, string = 0x55b06573d780, binary = 0x55b06573d780, boolean = 128, number_integer = 94216104695680, number_unsigned = 94216104695680, number_float = 4.654894061511764e-310}}
+        iLoadedItems = <optimized out>
+#13 0x000055b0631d67af in ConfigRead (sConfigPath=..., sError=..., dClusters=..., dIndexes=...) at /builds/manticoresearch/dev/src/searchdconfig.cpp:498
+        tConfigFile = {<FileReader_c> = {<CSphReader> = {_vptr$CSphReader = 0x55b063ba23a0 <vtable for CSphAutoreader+16>, m_pProfile = 0x0, m_eProfileState = SPH_QSTATE_IO, m_iFD = 3, m_sFilename = {m_sValue = 0x55b06573d720 "/var/lib/manticore/data/manticore.json", static EMPTY = "", static SAFETY_GAP = 4}, m_iBuffUsed = 588, m_iPos = 0, m_pBuff = 0x7f39d8bee010 "{\n\t\"clusters\":\t{\n\t\t}\n\t},\n\t\"indexes\":\t{\n\t\t\"admin_search_employers_rt\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"admin_search_employers_rt\"\n\t\t},\n\t\t\"cvs\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"cvs\"\n\t\t},\n\t\t\"geocities\":\t{\n"..., m_iBuffPos = 588, m_iSizeHint = 32180, m_iBufSize = 262144, m_bBufOwned = true, m_iReadUnhinted = 32768, m_bError = false, m_sError = {m_sValue = 0x0, static EMPTY = <same as static member of an already seen type>, static SAFETY_GAP = 4}}, <No data fields>}, <No data fields>}
+        tRoot = {m_pRoot = 0x55b065738ec0, m_bOwner = true}
+        tIndexes = {m_pRoot = 0x0, m_bOwner = false}
+        tClusters = {m_pRoot = 0x0, m_bOwner = false}
+        iSize = 588
+        dData = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<unsigned char>> = {m_pData = 0x55b065751820 "{\n\t\"clusters\":\t{\n\t\t}\n\t},\n\t\"indexes\":\t{\n\t\t\"admin_search_employers_rt\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"admin_search_employers_rt\"\n\t\t},\n\t\t\"cvs\":\t{\n\t\t\t\"type\":\t\"rt\",\n\t\t\t\"path\":\t\"cvs\"\n\t\t},\n\t\t\"geocities\":\t{\n"..., m_iCount = 589}, <sph::DefaultStorage_T<unsigned char>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = false}, <No data fields>}
+        __begin1 = <optimized out>
+        __end1 = <optimized out>
+        __range1 = <optimized out>
+        i = <optimized out>
+        tIndex = <optimized out>
+        sWarning = <optimized out>
+        iExists = <optimized out>
+        tItem = <optimized out>
+        __begin1 = <optimized out>
+        __end1 = <optimized out>
+        __range1 = <optimized out>
+        tIt = <optimized out>
+        tCluster = <optimized out>
+        sClusterError = <optimized out>
+        sClusterWarning = <optimized out>
+        bParsed = <optimized out>
+        iExists = <optimized out>
+        tItem = <optimized out>
+#14 LoadConfigInt (hConf=..., sConfigFile=..., sError=...) at /builds/manticoresearch/dev/src/searchdconfig.cpp:802
+        hSearchd = <optimized out>
+        tCfgWLock = <optimized out>
+#15 0x000055b0632c32d3 in ServiceMain (argc=argc@entry=6, argv=argv@entry=0x7ffdabc28c08) at /builds/manticoresearch/dev/src/searchd.cpp:19911
+        sError = {m_sValue = 0x0, static EMPTY = "", static SAFETY_GAP = 4}
+        conf = {m_dHash = {0x0 <repeats 256 times>}, m_pFirstByOrder = 0x0, m_pLastByOrder = 0x0, m_iLength = 0}
+        dOptIndexes = {<VecTraits_T<CSphString>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<CSphString>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+        dConfig = {<VecTraits_T<char>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<char>> = {static is_sized = false, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+        dListenerDescs = {<VecTraits_T<ListenerDesc_t>> = {m_pData = 0x55b06573d4e0, m_iCount = 139886444636137}, <sph::DefaultStorage_T<ListenerDesc_t>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 479}
+        dExactIndexes = {<VecTraits_T<CSphString>> = {m_pData = 0x55b06573d760, m_iCount = 94216104704960}, <sph::DefaultStorage_T<CSphString>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 3644}
+        bColumnarError = <optimized out>
+        bSecondaryError = <optimized out>
+        bOptStop = <optimized out>
+        bOptStopWait = <optimized out>
+        bOptStatus = <optimized out>
+        bOptPIDFile = true
+        iOptPort = <optimized out>
+        bOptPort = <optimized out>
+        sOptListen = <optimized out>
+        bOptListen = <optimized out>
+        bTestMode = <optimized out>
+        bOptDebugQlog = <optimized out>
+        bForcedPreread = <optimized out>
+        bNewCluster = <optimized out>
+        bNewClusterForce = <optimized out>
+        bForcePseudoSharding = <optimized out>
+        szCmdConfigFile = <optimized out>
+        uReplayFlags = <optimized out>
+        i = <optimized out>
+        hSearchdpre = @0x55b065742668: {<CSphOrderedHash<CSphVariant, CSphString, CSphStrHashFunc, 256>> = {m_dHash = {0x0 <repeats 11 times>, 0x55b065743c70, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55b0657439f0, 0x0, 0x55b065743770, 0x0, 0x55b065744450, 0x0 <repeats 15 times>, 0x55b065743ef0, 0x0, 0x0, 0x0, 0x0, 0x55b065743b30, 0x0 <repeats 12 times>, 0x55b065743bd0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55b065743950, 0x0, 0x0, 0x0, 0x55b0657436c0, 0x0 <repeats 70 times>, 0x55b065744250, 0x0, 0x0, 0x55b065743a90, 0x0, 0x0, 0x0, 0x0, 0x55b065743260, 0x0, 0x55b065743f90, 0x55b0657440f0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55b065743300, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55b0657438b0, 0x0, 0x55b065744040, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55b065743440, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55b065743e50, 0x0, 0x55b0657431c0, 0x0 <repeats 13 times>, 0x55b0657441a0, 0x0, 0x0, 0x0, 0x55b0657433a0, 0x0 <repeats 15 times>, 0x55b065744300, 0x0, 0x0, 0x0, 0x55b065743620, 0x0 <repeats 13 times>, 0x55b065743810, 0x0, 0x55b065743db0, 0x0, 0x55b065743580, 0x0, 0x0, 0x0, 0x55b065743120, 0x0, 0x0, 0x0, 0x0, 0x55b0657434e0, 0x0, 0x0, 0x0, 0x0, 0x55b065742ed0, 0x0, 0x0}, m_pFirstByOrder = 0x55b065742ed0, m_pLastByOrder = 0x55b065744450, m_iLength = 32}, m_iTag = 36}
+        bVisualLoad = <optimized out>
+        bWatched = <optimized out>
+        iDevNull = <optimized out>
+        hSearchd = <optimized out>
+        iRtFlushPeriodUs = <optimized out>
+        thMain = <optimized out>
+        wFakeLock = <optimized out>
+        hConf = <optimized out>
+#16 0x000055b0632c5d2b in mainimpl (argc=6, argv=0x7ffdabc28c08) at /builds/manticoresearch/dev/src/searchd.cpp:20417
+        cTopOfMainStack = 0 '\000'
+#17 main (argc=6, argv=0x7ffdabc28c08) at /builds/manticoresearch/dev/src/searchd.cpp:20423
+No locals.
+tid = <optimized out>
+ret = 0
+pd = 0x7f39d92ffc40
+old_mask = {__val = {1103806595328, 1112396529922, 72903127086465280, 74029044173439236, 256, 257, 18446744073709551615, 4294967295, 1103806595328, 1112396529922, 72903127086465280, 74029044173439236, 256, 257, 18446744073709551615, 4294967295}}
+ret = <optimized out>
+pd = <optimized out>
+old_mask = <optimized out>
+ret = <optimized out>
+tid = <optimized out>
+ret = <optimized out>
+resultvar = <optimized out>
+resultvar = <optimized out>
+__arg3 = <optimized out>
+__arg2 = <optimized out>
+__arg1 = <optimized out>
+_a3 = <optimized out>
+_a2 = <optimized out>
+_a1 = <optimized out>
+__futex = <optimized out>
+resultvar = <optimized out>
+__arg3 = <optimized out>
+__arg2 = <optimized out>
+__arg1 = <optimized out>
+_a3 = <optimized out>
+_a2 = <optimized out>
+_a1 = <optimized out>
+__futex = <optimized out>
+__private = <optimized out>
+__oldval = <optimized out>
+result = <optimized out>
+
+
+Fatal signal: Segmentation fault
+----- Backtrace -----
+Backtrace unavailable
+---------------------
+A fatal error internal to GDB has been detected, further
+debugging is not possible.  GDB will now terminate.
+
+This is a bug, please report it.  For instructions, see:
+<https://www.gnu.org/software/gdb/bugs/>.
+
+No core file now.
