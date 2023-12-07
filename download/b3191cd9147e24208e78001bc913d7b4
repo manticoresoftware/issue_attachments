@@ -1,0 +1,1001 @@
+tail -n 1000 searchd.log
+[Fri Jan  6 04:44:46.494 2023] [3628148] DEBUG: 100 Continue sent
+[Fri Jan  6 04:44:46.640 2023] [3628140] RPL: replicating 1, seq 100324, commands 275
+[Fri Jan  6 04:44:46.671 2023] [3628140] RPL: committed seq 100324
+[Fri Jan  6 04:44:46.927 2023] [3628143] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:44:46.927 2023] [3628143] DEBUG: QueryDiskChunks 0, Jb/Chunk: 1/6
+[Fri Jan  6 04:44:46.928 2023] [3628143] DEBUG: QueryDiskChunks 0, Jb/Chunk: 2/5
+[Fri Jan  6 04:44:46.928 2023] [3628143] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:44:47.405 2023] [3628140] DEBUG: RunLocalSearches cloned context 0
+[Fri Jan  6 04:44:47.405 2023] [3628140] DEBUG: QueryDiskChunks cloned context 0 (job 0)
+[Fri Jan  6 04:44:47.405 2023] [3628140] DEBUG: QueryDiskChunks 0, Jb/Chunk: 0/7
+[Fri Jan  6 04:44:47.405 2023] [3628140] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:44:47.463 2023] [3628142] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:44:47.463 2023] [3628142] DEBUG: QueryDiskChunks 0, Jb/Chunk: 1/6
+[Fri Jan  6 04:44:47.463 2023] [3628142] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:44:48.391 2023] [3628139] DEBUG: 100 Continue sent
+[Fri Jan  6 04:44:48.579 2023] [3628129] RPL: replicating 1, seq 100325, commands 309
+[Fri Jan  6 04:44:48.622 2023] [3628129] RPL: committed seq 100325
+[Fri Jan  6 04:44:49.122 2023] [3628147] RPL: replicating 1, seq 100326, commands 33
+[Fri Jan  6 04:44:49.125 2023] [3628147] RPL: committed seq 100326
+[Fri Jan  6 04:44:50.468 2023] [3628131] DEBUG: 100 Continue sent
+[Fri Jan  6 04:44:50.535 2023] [3628137] RPL: replicating 1, seq 100327, commands 33
+[Fri Jan  6 04:44:50.535 2023] [3628137] RPL: committed seq 100327
+[Fri Jan  6 04:44:50.554 2023] [3628137] RPL: replicating 1, seq 100328, commands 33
+[Fri Jan  6 04:44:50.554 2023] [3628137] RPL: committed seq 100328
+[Fri Jan  6 04:44:50.647 2023] [3628129] RPL: replicating 1, seq 100329, commands 273
+[Fri Jan  6 04:44:50.693 2023] [3628129] RPL: committed seq 100329
+[Fri Jan  6 04:44:50.693 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100328
+[Fri Jan  6 04:44:50.718 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100328 after 100328 from 3
+[Fri Jan  6 04:44:50.718 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100328
+[Fri Jan  6 04:44:50.719 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100328
+[Fri Jan  6 04:44:50.719 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100328
+[Fri Jan  6 04:44:50.773 2023] [3628129] RPL: replicating 1, seq 100330, commands 95
+[Fri Jan  6 04:44:50.788 2023] [3628129] RPL: committed seq 100330
+[Fri Jan  6 04:44:51.239 2023] [3628129] RPL: replicating 1, seq 100331, commands 387
+[Fri Jan  6 04:44:51.243 2023] [3628129] RPL: committed seq 100331
+[Fri Jan  6 04:44:51.255 2023] [3628131] RPL: replicating 1, seq 100332, commands 68
+[Fri Jan  6 04:44:51.268 2023] [3628131] RPL: committed seq 100332
+[Fri Jan  6 04:44:51.284 2023] [3628142] RPL: replicating 1, seq 100333, commands 387
+[Fri Jan  6 04:44:51.285 2023] [3628142] RPL: committed seq 100333
+[Fri Jan  6 04:44:52.260 2023] [3628131] DEBUG: 100 Continue sent
+[Fri Jan  6 04:44:52.403 2023] [3628136] RPL: replicating 1, seq 100334, commands 308
+[Fri Jan  6 04:44:52.430 2023] [3628136] RPL: committed seq 100334
+[Fri Jan  6 04:44:52.430 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100333
+[Fri Jan  6 04:44:52.453 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100333 after 100333 from 0
+[Fri Jan  6 04:44:52.453 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100333
+[Fri Jan  6 04:44:52.453 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100333
+[Fri Jan  6 04:44:52.453 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100333
+[Fri Jan  6 04:44:53.234 2023] [3628140] RPL: replicating 1, seq 100335, commands 181
+[Fri Jan  6 04:44:53.236 2023] [3628140] RPL: committed seq 100335
+[Fri Jan  6 04:44:53.270 2023] [3628142] RPL: replicating 1, seq 100336, commands 181
+[Fri Jan  6 04:44:53.271 2023] [3628142] RPL: committed seq 100336
+[Fri Jan  6 04:44:53.394 2023] [3628140] RPL: replicating 1, seq 100337, commands 41
+[Fri Jan  6 04:44:53.399 2023] [3628140] RPL: committed seq 100337
+[Fri Jan  6 04:44:53.438 2023] [3628140] RPL: replicating 1, seq 100338, commands 40
+[Fri Jan  6 04:44:53.473 2023] [3628144] RPL: committed seq 100338
+[Fri Jan  6 04:44:53.474 2023] [3628140] RPL: replicating 1, seq 100339, commands 41
+[Fri Jan  6 04:44:53.474 2023] [3628140] RPL: committed seq 100339
+[Fri Jan  6 04:44:53.485 2023] [3628141] RPL: replicating 1, seq 100340, commands 51
+[Fri Jan  6 04:44:53.491 2023] [3628141] RPL: committed seq 100340
+[Fri Jan  6 04:44:53.492 2023] [3628140] RPL: replicating 1, seq 100341, commands 41
+[Fri Jan  6 04:44:53.492 2023] [3628140] RPL: committed seq 100341
+[Fri Jan  6 04:44:53.521 2023] [3628144] RPL: replicating 1, seq 100342, commands 40
+[Fri Jan  6 04:44:53.522 2023] [3628144] RPL: committed seq 100342
+[Fri Jan  6 04:44:53.538 2023] [3628142] RPL: replicating 1, seq 100343, commands 51
+[Fri Jan  6 04:44:53.539 2023] [3628142] RPL: committed seq 100343
+[Fri Jan  6 04:44:53.540 2023] [3628144] RPL: replicating 1, seq 100344, commands 40
+[Fri Jan  6 04:44:53.540 2023] [3628144] RPL: committed seq 100344
+[Fri Jan  6 04:44:53.558 2023] [3628141] RPL: replicating 1, seq 100345, commands 51
+[Fri Jan  6 04:44:53.558 2023] [3628141] RPL: committed seq 100345
+[Fri Jan  6 04:44:53.623 2023] [3628133] DEBUG: 100 Continue sent
+[Fri Jan  6 04:44:53.636 2023] [3628136] RPL: replicating 1, seq 100346, commands 180
+[Fri Jan  6 04:44:53.656 2023] [3628136] RPL: committed seq 100346
+[Fri Jan  6 04:44:53.678 2023] [3628142] DEBUG: 100 Continue sent
+[Fri Jan  6 04:44:53.757 2023] [3628136] RPL: replicating 1, seq 100347, commands 275
+[Fri Jan  6 04:44:53.786 2023] [3628136] RPL: committed seq 100347
+[Fri Jan  6 04:44:53.786 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100346
+[Fri Jan  6 04:44:53.788 2023] [3628133] RPL: replicating 1, seq 100348, commands 180
+[Fri Jan  6 04:44:53.790 2023] [3628133] RPL: committed seq 100348
+[Fri Jan  6 04:44:53.806 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100346 after 100346 from 0
+[Fri Jan  6 04:44:53.806 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100346
+[Fri Jan  6 04:44:53.806 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100346
+[Fri Jan  6 04:44:53.806 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100346
+[Fri Jan  6 04:44:53.817 2023] [3628136] RPL: replicating 1, seq 100349, commands 180
+[Fri Jan  6 04:44:53.818 2023] [3628136] RPL: committed seq 100349
+[Fri Jan  6 04:44:53.879 2023] [3628144] RPL: replicating 1, seq 100350, commands 306
+[Fri Jan  6 04:44:53.924 2023] [3628144] RPL: committed seq 100350
+[Fri Jan  6 04:44:53.976 2023] [3628144] RPL: replicating 1, seq 100351, commands 275
+[Fri Jan  6 04:44:53.979 2023] [3628144] RPL: committed seq 100351
+[Fri Jan  6 04:44:54.014 2023] [3628136] RPL: replicating 1, seq 100352, commands 275
+[Fri Jan  6 04:44:54.015 2023] [3628136] RPL: committed seq 100352
+[Fri Jan  6 04:44:54.015 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100351
+[Fri Jan  6 04:44:54.018 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100351 after 100351 from 1
+[Fri Jan  6 04:44:54.018 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100351
+[Fri Jan  6 04:44:54.018 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100351
+[Fri Jan  6 04:44:54.018 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100351
+[Fri Jan  6 04:44:54.136 2023] [3628132] RPL: replicating 1, seq 100353, commands 306
+[Fri Jan  6 04:44:54.140 2023] [3628132] RPL: committed seq 100353
+[Fri Jan  6 04:44:54.178 2023] [3628144] RPL: replicating 1, seq 100354, commands 306
+[Fri Jan  6 04:44:54.180 2023] [3628144] RPL: committed seq 100354
+[Fri Jan  6 04:44:54.283 2023] [3628142] RPL: replicating 1, seq 100355, commands 68
+[Fri Jan  6 04:44:54.284 2023] [3628142] RPL: committed seq 100355
+[Fri Jan  6 04:44:54.305 2023] [3628136] RPL: replicating 1, seq 100356, commands 68
+[Fri Jan  6 04:44:54.305 2023] [3628136] RPL: committed seq 100356
+[Fri Jan  6 04:44:55.002 2023] [3628148] RPL: replicating 1, seq 100357, commands 95
+[Fri Jan  6 04:44:55.003 2023] [3628148] RPL: committed seq 100357
+[Fri Jan  6 04:44:55.030 2023] [3628144] RPL: replicating 1, seq 100358, commands 95
+[Fri Jan  6 04:44:55.030 2023] [3628144] RPL: committed seq 100358
+[Fri Jan  6 04:44:55.326 2023] [3628147] DEBUG: 100 Continue sent
+[Fri Jan  6 04:44:55.328 2023] [3628135] RPL: replicating 1, seq 100359, commands 2
+[Fri Jan  6 04:44:55.328 2023] [3628135] RPL: committed seq 100359
+[Fri Jan  6 04:44:55.401 2023] [3628135] RPL: replicating 1, seq 100360, commands 2
+[Fri Jan  6 04:44:55.402 2023] [3628135] RPL: committed seq 100360
+[Fri Jan  6 04:44:55.417 2023] [3628147] RPL: replicating 1, seq 100361, commands 2
+[Fri Jan  6 04:44:55.417 2023] [3628148] RPL: committed seq 100361
+[Fri Jan  6 04:44:55.523 2023] [3628144] RPL: replicating 1, seq 100362, commands 306
+[Fri Jan  6 04:44:55.569 2023] [3628144] RPL: committed seq 100362
+[Fri Jan  6 04:44:55.569 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100361
+[Fri Jan  6 04:44:55.597 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100361 after 100361 from 0
+[Fri Jan  6 04:44:55.597 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100361
+[Fri Jan  6 04:44:55.598 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100361
+[Fri Jan  6 04:44:55.598 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100361
+[Fri Jan  6 04:44:55.677 2023] [3628140] RPL: replicating 1, seq 100363, commands 248
+[Fri Jan  6 04:44:55.680 2023] [3628140] RPL: committed seq 100363
+[Fri Jan  6 04:44:55.710 2023] [3628140] RPL: replicating 1, seq 100364, commands 8
+[Fri Jan  6 04:44:55.711 2023] [3628140] RPL: committed seq 100364
+[Fri Jan  6 04:44:55.719 2023] [3628133] RPL: replicating 1, seq 100365, commands 248
+[Fri Jan  6 04:44:55.720 2023] [3628133] RPL: committed seq 100365
+[Fri Jan  6 04:44:56.038 2023] [3628133] RPL: replicating 1, seq 100366, commands 8
+[Fri Jan  6 04:44:56.038 2023] [3628133] RPL: committed seq 100366
+[Fri Jan  6 04:44:56.054 2023] [3628147] RPL: replicating 1, seq 100367, commands 8
+[Fri Jan  6 04:44:56.054 2023] [3628147] RPL: committed seq 100367
+[Fri Jan  6 04:44:56.339 2023] [3628139] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:44:56.339 2023] [3628139] DEBUG: QueryDiskChunks 0, Jb/Chunk: 1/6
+[Fri Jan  6 04:44:56.339 2023] [3628139] DEBUG: QueryDiskChunks 0, Jb/Chunk: 2/5
+[Fri Jan  6 04:44:56.340 2023] [3628139] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:44:56.340 2023] [3628139] DEBUG: QueryDiskChunks 0, Jb/Chunk: 4/3
+[Fri Jan  6 04:44:56.341 2023] [3628139] DEBUG: QueryDiskChunks 0, Jb/Chunk: 5/2
+[Fri Jan  6 04:44:56.341 2023] [3628139] DEBUG: QueryDiskChunks 0, Jb/Chunk: 6/1
+[Fri Jan  6 04:44:56.341 2023] [3628139] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:44:56.902 2023] [3628140] RPL: replicating 1, seq 100368, commands 53
+[Fri Jan  6 04:44:56.907 2023] [3628140] RPL: committed seq 100368
+[Fri Jan  6 04:44:57.047 2023] [3628147] RPL: replicating 1, seq 100369, commands 56
+[Fri Jan  6 04:44:57.054 2023] [3628147] RPL: committed seq 100369
+[Fri Jan  6 04:44:57.200 2023] [3628133] RPL: replicating 1, seq 100370, commands 3
+[Fri Jan  6 04:44:57.200 2023] [3628133] RPL: committed seq 100370
+[Fri Jan  6 04:44:57.212 2023] [3628129] RPL: replicating 1, seq 100371, commands 3
+[Fri Jan  6 04:44:57.212 2023] [3628129] RPL: committed seq 100371
+[Fri Jan  6 04:44:57.213 2023] [3628133] RPL: replicating 1, seq 100372, commands 3
+[Fri Jan  6 04:44:57.213 2023] [3628133] RPL: committed seq 100372
+[Fri Jan  6 04:44:57.231 2023] [3628140] RPL: replicating 1, seq 100373, commands 20
+[Fri Jan  6 04:44:57.234 2023] [3628140] RPL: committed seq 100373
+[Fri Jan  6 04:44:57.244 2023] [3628136] RPL: replicating 1, seq 100374, commands 20
+[Fri Jan  6 04:44:57.244 2023] [3628136] RPL: committed seq 100374
+[Fri Jan  6 04:44:57.246 2023] [3628133] RPL: replicating 1, seq 100375, commands 20
+[Fri Jan  6 04:44:57.246 2023] [3628133] RPL: committed seq 100375
+[Fri Jan  6 04:44:57.343 2023] [3628135] DEBUG: 100 Continue sent
+[Fri Jan  6 04:44:57.456 2023] [3628140] RPL: last message repeated 3 times
+[Fri Jan  6 04:44:57.456 2023] [3628140] RPL: replicating 1, seq 100376, commands 267
+[Fri Jan  6 04:44:57.492 2023] [3628140] RPL: committed seq 100376
+[Fri Jan  6 04:44:57.507 2023] [3628136] RPL: replicating 1, seq 100377, commands 287
+[Fri Jan  6 04:44:57.554 2023] [3628136] RPL: committed seq 100377
+[Fri Jan  6 04:44:57.554 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100376
+[Fri Jan  6 04:44:57.569 2023] [3628133] RPL: replicating 1, seq 100378, commands 304
+[Fri Jan  6 04:44:57.576 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100376 after 100376 from 0
+[Fri Jan  6 04:44:57.576 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100376
+[Fri Jan  6 04:44:57.576 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100376
+[Fri Jan  6 04:44:57.576 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100376
+[Fri Jan  6 04:44:57.623 2023] [3628133] RPL: committed seq 100378
+[Fri Jan  6 04:44:57.638 2023] [3628135] RPL: replicating 1, seq 100379, commands 310
+[Fri Jan  6 04:44:57.680 2023] [3628135] RPL: committed seq 100379
+[Fri Jan  6 04:44:57.682 2023] [3628140] RPL: replicating 1, seq 100380, commands 286
+[Fri Jan  6 04:44:57.685 2023] [3628140] RPL: committed seq 100380
+[Fri Jan  6 04:44:57.687 2023] [3628135] RPL: replicating 1, seq 100381, commands 267
+[Fri Jan  6 04:44:57.690 2023] [3628135] RPL: committed seq 100381
+[Fri Jan  6 04:44:57.690 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100380
+[Fri Jan  6 04:44:57.692 2023] [3628140] RPL: replicating 1, seq 100382, commands 287
+[Fri Jan  6 04:44:57.694 2023] [3628140] RPL: committed seq 100382
+[Fri Jan  6 04:44:57.705 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100380 after 100380 from 3
+[Fri Jan  6 04:44:57.705 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100380
+[Fri Jan  6 04:44:57.705 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100380
+[Fri Jan  6 04:44:57.705 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100380
+[Fri Jan  6 04:44:57.706 2023] [3628133] RPL: replicating 1, seq 100383, commands 267
+[Fri Jan  6 04:44:57.707 2023] [3628133] RPL: committed seq 100383
+[Fri Jan  6 04:44:57.710 2023] [3628147] RPL: replicating 1, seq 100384, commands 287
+[Fri Jan  6 04:44:57.710 2023] [3628147] RPL: committed seq 100384
+[Fri Jan  6 04:44:57.711 2023] [3628140] RPL: replicating 1, seq 100385, commands 286
+[Fri Jan  6 04:44:57.712 2023] [3628140] RPL: committed seq 100385
+[Fri Jan  6 04:44:57.712 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100384
+[Fri Jan  6 04:44:57.714 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100384 after 100384 from 1
+[Fri Jan  6 04:44:57.714 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100384
+[Fri Jan  6 04:44:57.714 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100384
+[Fri Jan  6 04:44:57.714 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100384
+[Fri Jan  6 04:44:57.727 2023] [3628133] DEBUG: 100 Continue sent
+[Fri Jan  6 04:44:57.743 2023] [3628136] RPL: replicating 1, seq 100386, commands 304
+[Fri Jan  6 04:44:57.747 2023] [3628136] RPL: committed seq 100386
+[Fri Jan  6 04:44:57.766 2023] [3628135] RPL: replicating 1, seq 100387, commands 304
+[Fri Jan  6 04:44:57.767 2023] [3628135] RPL: committed seq 100387
+[Fri Jan  6 04:44:57.788 2023] [3628140] RPL: replicating 1, seq 100388, commands 310
+[Fri Jan  6 04:44:57.791 2023] [3628140] RPL: committed seq 100388
+[Fri Jan  6 04:44:57.809 2023] [3628133] RPL: replicating 1, seq 100389, commands 310
+[Fri Jan  6 04:44:57.810 2023] [3628133] RPL: committed seq 100389
+[Fri Jan  6 04:44:57.810 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100388
+[Fri Jan  6 04:44:57.814 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100388 after 100388 from 1
+[Fri Jan  6 04:44:57.814 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100388
+[Fri Jan  6 04:44:57.814 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100388
+[Fri Jan  6 04:44:57.814 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100388
+[Fri Jan  6 04:44:57.878 2023] [3628129] RPL: replicating 1, seq 100390, commands 405
+[Fri Jan  6 04:44:57.908 2023] [3628129] RPL: committed seq 100390
+[Fri Jan  6 04:44:58.088 2023] [3628140] RPL: replicating 1, seq 100391, commands 275
+[Fri Jan  6 04:44:58.091 2023] [3628140] RPL: committed seq 100391
+[Fri Jan  6 04:44:58.136 2023] [3628129] RPL: replicating 1, seq 100392, commands 275
+[Fri Jan  6 04:44:58.136 2023] [3628129] RPL: committed seq 100392
+[Fri Jan  6 04:44:58.521 2023] [3628131] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:44:58.521 2023] [3628131] DEBUG: QueryDiskChunks 0, Jb/Chunk: 1/6
+[Fri Jan  6 04:44:58.522 2023] [3628131] DEBUG: QueryDiskChunks 0, Jb/Chunk: 2/5
+[Fri Jan  6 04:44:58.522 2023] [3628131] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:44:59.220 2023] [3628136] RPL: replicating 1, seq 100393, commands 53
+[Fri Jan  6 04:44:59.220 2023] [3628136] RPL: committed seq 100393
+[Fri Jan  6 04:44:59.240 2023] [3628135] RPL: replicating 1, seq 100394, commands 53
+[Fri Jan  6 04:44:59.240 2023] [3628135] RPL: committed seq 100394
+[Fri Jan  6 04:44:59.240 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100393
+[Fri Jan  6 04:44:59.241 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100393 after 100393 from 3
+[Fri Jan  6 04:44:59.241 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100393
+[Fri Jan  6 04:44:59.241 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100393
+[Fri Jan  6 04:44:59.241 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100393
+[Fri Jan  6 04:44:59.517 2023] [3628136] RPL: replicating 1, seq 100395, commands 56
+[Fri Jan  6 04:44:59.518 2023] [3628136] RPL: committed seq 100395
+[Fri Jan  6 04:44:59.537 2023] [3628135] RPL: replicating 1, seq 100396, commands 56
+[Fri Jan  6 04:44:59.537 2023] [3628135] RPL: committed seq 100396
+[Fri Jan  6 04:45:00.549 2023] [3628133] DEBUG: RunLocalSearches cloned context 0
+[Fri Jan  6 04:45:00.549 2023] [3628133] DEBUG: QueryDiskChunks cloned context 0 (job 0)
+[Fri Jan  6 04:45:00.549 2023] [3628133] DEBUG: QueryDiskChunks 0, Jb/Chunk: 0/7
+[Fri Jan  6 04:45:00.550 2023] [3628133] DEBUG: QueryDiskChunks 0, Jb/Chunk: 1/6
+[Fri Jan  6 04:45:00.550 2023] [3628133] DEBUG: QueryDiskChunks 0, Jb/Chunk: 2/5
+[Fri Jan  6 04:45:00.550 2023] [3628133] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:45:00.550 2023] [3628133] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:45:00.554 2023] [3628135] RPL: replicating 1, seq 100397, commands 31
+[Fri Jan  6 04:45:00.558 2023] [3628135] RPL: committed seq 100397
+[Fri Jan  6 04:45:00.566 2023] [3628141] DEBUG: RunLocalSearches cloned context 0
+[Fri Jan  6 04:45:00.566 2023] [3628141] DEBUG: QueryDiskChunks cloned context 0 (job 0)
+[Fri Jan  6 04:45:00.566 2023] [3628141] DEBUG: QueryDiskChunks 0, Jb/Chunk: 0/7
+[Fri Jan  6 04:45:00.566 2023] [3628141] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:45:00.636 2023] [3628135] RPL: replicating 1, seq 100398, commands 4
+[Fri Jan  6 04:45:00.637 2023] [3628135] RPL: committed seq 100398
+[Fri Jan  6 04:45:00.825 2023] [3628140] RPL: replicating 1, seq 100399, commands 4
+[Fri Jan  6 04:45:00.825 2023] [3628140] RPL: committed seq 100399
+[Fri Jan  6 04:45:00.841 2023] [3628136] RPL: replicating 1, seq 100400, commands 4
+[Fri Jan  6 04:45:00.841 2023] [3628136] RPL: committed seq 100400
+[Fri Jan  6 04:45:01.880 2023] [3628135] RPL: replicating 1, seq 100401, commands 31
+[Fri Jan  6 04:45:01.881 2023] [3628135] RPL: committed seq 100401
+[Fri Jan  6 04:45:01.897 2023] [3628140] RPL: replicating 1, seq 100402, commands 31
+[Fri Jan  6 04:45:01.897 2023] [3628140] RPL: committed seq 100402
+[Fri Jan  6 04:45:02.004 2023] [3628147] RPL: replicating 1, seq 100403, commands 278
+[Fri Jan  6 04:45:02.035 2023] [3628147] RPL: committed seq 100403
+[Fri Jan  6 04:45:02.081 2023] [3628147] DEBUG: 100 Continue sent
+[Fri Jan  6 04:45:02.278 2023] [3628135] RPL: replicating 1, seq 100404, commands 301
+[Fri Jan  6 04:45:02.322 2023] [3628135] RPL: committed seq 100404
+[Fri Jan  6 04:45:02.478 2023] [3628147] RPL: replicating 1, seq 100405, commands 52
+[Fri Jan  6 04:45:02.488 2023] [3628147] RPL: committed seq 100405
+[Fri Jan  6 04:45:02.529 2023] [3628140] RPL: replicating 1, seq 100406, commands 309
+[Fri Jan  6 04:45:02.534 2023] [3628140] RPL: committed seq 100406
+[Fri Jan  6 04:45:02.534 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100405
+[Fri Jan  6 04:45:02.540 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100405 after 100405 from 3
+[Fri Jan  6 04:45:02.540 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100405
+[Fri Jan  6 04:45:02.541 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100405
+[Fri Jan  6 04:45:02.541 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100405
+[Fri Jan  6 04:45:02.541 2023] [3628147] RPL: replicating 1, seq 100407, commands 52
+[Fri Jan  6 04:45:02.542 2023] [3628147] RPL: committed seq 100407
+[Fri Jan  6 04:45:02.561 2023] [3628146] RPL: replicating 1, seq 100408, commands 52
+[Fri Jan  6 04:45:02.561 2023] [3628146] RPL: committed seq 100408
+[Fri Jan  6 04:45:02.579 2023] [3628135] RPL: replicating 1, seq 100409, commands 309
+[Fri Jan  6 04:45:02.581 2023] [3628135] RPL: committed seq 100409
+[Fri Jan  6 04:45:02.788 2023] [3628135] DEBUG: 100 Continue sent
+[Fri Jan  6 04:45:02.991 2023] [3628140] RPL: replicating 1, seq 100410, commands 309
+[Fri Jan  6 04:45:03.041 2023] [3628140] RPL: committed seq 100410
+[Fri Jan  6 04:45:03.840 2023] [3628129] DEBUG: RunLocalSearches cloned context 0
+[Fri Jan  6 04:45:03.840 2023] [3628129] DEBUG: QueryDiskChunks cloned context 0 (job 0)
+[Fri Jan  6 04:45:03.840 2023] [3628129] DEBUG: QueryDiskChunks 0, Jb/Chunk: 0/7
+[Fri Jan  6 04:45:03.841 2023] [3628129] DEBUG: QueryDiskChunks 0, Jb/Chunk: 1/6
+[Fri Jan  6 04:45:03.841 2023] [3628129] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:45:03.856 2023] [3628146] DEBUG: RunLocalSearches cloned context 0
+[Fri Jan  6 04:45:03.856 2023] [3628146] DEBUG: QueryDiskChunks cloned context 0 (job 0)
+[Fri Jan  6 04:45:03.856 2023] [3628146] DEBUG: QueryDiskChunks 0, Jb/Chunk: 0/7
+[Fri Jan  6 04:45:03.856 2023] [3628146] DEBUG: QueryDiskChunks 0, Jb/Chunk: 1/6
+[Fri Jan  6 04:45:03.856 2023] [3628146] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:45:04.411 2023] [3628140] RPL: replicating 1, seq 100411, commands 2
+[Fri Jan  6 04:45:04.412 2023] [3628140] RPL: committed seq 100411
+[Fri Jan  6 04:45:04.426 2023] [3628140] DEBUG: RunLocalSearches cloned context 0
+[Fri Jan  6 04:45:04.426 2023] [3628140] DEBUG: QueryDiskChunks cloned context 0 (job 0)
+[Fri Jan  6 04:45:04.426 2023] [3628140] DEBUG: QueryDiskChunks 0, Jb/Chunk: 0/1
+[Fri Jan  6 04:45:04.426 2023] [3628140] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:45:04.608 2023] [3628140] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:45:04.608 2023] [3628140] DEBUG: QueryDiskChunks 0, Jb/Chunk: 1/0
+[Fri Jan  6 04:45:04.608 2023] [3628140] DEBUG: QueryDiskChunks processed in 0 thread(s)
+[Fri Jan  6 04:45:04.618 2023] [3628140] DEBUG: RunLocalSearches processed in 1 thread(s)
+[Fri Jan  6 04:45:04.619 2023] [3628140] RPL: replicating 1, seq 100412, commands 2
+[Fri Jan  6 04:45:04.619 2023] [3628140] RPL: committed seq 100412
+[Fri Jan  6 04:45:04.634 2023] [3628135] RPL: replicating 1, seq 100413, commands 2
+[Fri Jan  6 04:45:04.634 2023] [3628135] RPL: committed seq 100413
+[Fri Jan  6 04:45:04.800 2023] [3628140] RPL: replicating 1, seq 100414, commands 273
+[Fri Jan  6 04:45:04.803 2023] [3628140] RPL: committed seq 100414
+[Fri Jan  6 04:45:04.844 2023] [3628140] RPL: replicating 1, seq 100415, commands 273
+[Fri Jan  6 04:45:04.845 2023] [3628140] RPL: committed seq 100415
+[Fri Jan  6 04:45:04.845 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100414
+[Fri Jan  6 04:45:04.847 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100414 after 100414 from 3
+[Fri Jan  6 04:45:04.847 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100414
+[Fri Jan  6 04:45:04.848 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100414
+[Fri Jan  6 04:45:04.848 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100414
+[Fri Jan  6 04:45:04.973 2023] [3628133] DEBUG: 100 Continue sent
+[Fri Jan  6 04:45:05.072 2023] [3628140] RPL: replicating 1, seq 100416, commands 173
+[Fri Jan  6 04:45:05.095 2023] [3628140] RPL: committed seq 100416
+[Fri Jan  6 04:45:05.098 2023] [3628140] RPL: replicating 1, seq 100417, commands 308
+[Fri Jan  6 04:45:05.101 2023] [3628140] RPL: committed seq 100417
+[Fri Jan  6 04:45:05.149 2023] [3628140] RPL: replicating 1, seq 100418, commands 308
+[Fri Jan  6 04:45:05.150 2023] [3628140] RPL: committed seq 100418
+[Fri Jan  6 04:45:05.178 2023] [3628133] RPL: replicating 1, seq 100419, commands 313
+[Fri Jan  6 04:45:05.238 2023] [3628133] RPL: committed seq 100419
+[Fri Jan  6 04:45:05.238 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():74: Reported last committed: 100418
+[Fri Jan  6 04:45:05.252 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_last_msg():654: New COMMIT CUT 100418 after 100418 from 3
+[Fri Jan  6 04:45:05.252 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1044: purging index up to 100418
+[Fri Jan  6 04:45:05.252 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:purge_trxs_upto_():1051: releasing seqno from gcache 100418
+[Fri Jan  6 04:45:05.252 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:process_commit_cut():1462: Got commit cut from GCS: 100418
+[Fri Jan  6 04:45:05.326 2023] [3628133] RPL: replicating 1, seq 100420, commands 2
+[Fri Jan  6 04:45:05.326 2023] [3628133] RPL: committed seq 100420
+[Fri Jan  6 04:45:05.401 2023] [3628139] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:45:05.401 2023] [3628139] DEBUG: QueryDiskChunks 0, Jb/Chunk: 7/0
+[Fri Jan  6 04:45:05.401 2023] [3628139] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:45:05.478 2023] [3628128] caught SIGTERM, shutting down
+[Fri Jan  6 04:45:05.478 2023] [3628128] 666 Shut down mini timer ...
+[Fri Jan  6 04:45:05.479 2023] [3628128] 669 Shut down flushing mutable ...
+[Fri Jan  6 04:45:05.479 2023] [3628128] 673 Wait preread (if any) finished ...
+[Fri Jan  6 04:45:05.479 2023] [3628128] 677 Finally save tables ...
+[Fri Jan  6 04:45:05.479 2023] [3628128] 684 Save json config ...
+[Fri Jan  6 04:45:05.479 2023] [3628141] DEBUG: config saved, tables 8, clusters 1
+[Fri Jan  6 04:45:05.479 2023] [3628128] 689 Stop netloop processing ...
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: StopNetLoop()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: TerminateSessions() (0x556ce7496430) invoked
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.479 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.480 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying ()
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: SockWrapper_c::Impl_c::NetLoopDestroying () will resume sleeping job
+[Fri Jan  6 04:45:05.481 2023] [3628128] DEBUG: StopNetLoop() succeeded
+[Fri Jan  6 04:45:05.481 2023] [3628128] 697 Stop netloop pool ...
+[Fri Jan  6 04:45:05.481 2023] [3628141] DEBUG: AsyncNetInputBuffer_c::AppendData: got SIGTERM, return -1
+[Fri Jan  6 04:45:05.483 2023] [3628128] last message repeated 3 times
+[Fri Jan  6 04:45:05.483 2023] [3628128] 705 Invoke shutdown callbacks ...
+[Fri Jan  6 04:45:05.483 2023] [3628141] DEBUG: AsyncNetInputBuffer_c::AppendData: got SIGTERM, return -1
+[Fri Jan  6 04:45:05.534 2023] [3628139] DEBUG: last message repeated 100 times
+[Fri Jan  6 04:45:05.534 2023] [3628139] DEBUG: AsyncNetInputBuffer_c::AppendData: got SIGTERM, return -1
+[Fri Jan  6 04:45:05.551 2023] [3628139] DEBUG: last message repeated 44 times
+[Fri Jan  6 04:45:05.551 2023] [3628139] DEBUG: ReplicateClustersDelete invoked
+[Fri Jan  6 04:45:05.552 2023] [3628139] DEBUG: ReplicateClustersDelete for jobsite
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.cpp:gcs_sm_close():80: Closing send monitor...
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.cpp:gcs_sm_close():110: Closed send monitor.
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():331: gcomm: terminating thread
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():334: gcomm: joining thread
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():344: gcomm: closing backend
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc.cpp:close():187: PC/EVS Proto leaving
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_proto.hpp:close():290: evs::proto(92e5d21f, OPERATIONAL, view_id(REG,07e47911,8)) closing in state 5
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_view():621: 92e5d21f Current view of cluster as seen by this node
+view (view_id(TRANS,07e47911,8)
+memb {
+        92e5d21f,0
+        }
+joined {
+        }
+left {
+        }
+partitioned {
+        07e47911,0
+        5f317222,0
+        f3717066,0
+        }
+)
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_trans():523: 92e5d21f
+
+ current view Current view of cluster as seen by this node
+view (view_id(REG,07e47911,8)
+memb {
+        07e47911,0
+        5f317222,0
+        92e5d21f,0
+        f3717066,0
+        }
+joined {
+        07e47911,0
+        5f317222,0
+        f3717066,0
+        }
+left {
+        }
+partitioned {
+        }
+)
+
+ next view Current view of cluster as seen by this node
+view (view_id(TRANS,07e47911,8)
+memb {
+        92e5d21f,0
+        }
+joined {
+        }
+left {
+        }
+partitioned {
+        07e47911,0
+        5f317222,0
+        f3717066,0
+        }
+)
+
+ pc view Current view of cluster as seen by this node
+view (view_id(PRIM,07e47911,8)
+memb {
+        07e47911,0
+        5f317222,0
+        92e5d21f,0
+        f3717066,0
+        }
+joined {
+        }
+left {
+        }
+partitioned {
+        }
+)
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:deliver_view():233: Current view of cluster as seen by this node
+view (view_id(NON_PRIM,07e47911,8)
+memb {
+        92e5d21f,0
+        }
+joined {
+        }
+left {
+        }
+partitioned {
+        07e47911,0
+        5f317222,0
+        f3717066,0
+        }
+)
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1573: GMCast::handle_stable_view: Current view of cluster as seen by this node
+view (view_id(NON_PRIM,07e47911,8)
+memb {
+        92e5d21f,0
+        }
+joined {
+        }
+left {
+        }
+partitioned {
+        07e47911,0
+        5f317222,0
+        f3717066,0
+        }
+)
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=92e5d21f,ru=f3717066,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://135.148.35.88:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7f7c5033b300,ts=316100260565631
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=92e5d21f,ru=07e47911,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://135.148.35.89:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7f7c50343b50,ts=316100260791990
+[Fri Jan  6 04:45:05.552 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():684: member: 0 uuid: 92e5d21f segment: 0
+[Fri Jan  6 04:45:05.552 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=92e5d21f,ru=5f317222,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://135.148.35.94:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7f7c5034c400,ts=316100260590792
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: 92e5d21f shift_to: PRIM -> TRANS prim 0 last prim view_id(PRIM,07e47911,8) to_seq 1749900
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:fill_cmp_msg():698: my index 0
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:handle_view():621: 92e5d21f Current view of cluster as seen by this node
+view ((empty))
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: 92e5d21f shift_to: TRANS -> NON_PRIM prim 0 last prim view_id(PRIM,07e47911,8) to_seq 1749900
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:deliver_view():233: Current view of cluster as seen by this node
+view ((empty))
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:handle_up():485: handle_up: self leave
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1573: GMCast::handle_stable_view: Current view of cluster as seen by this node
+view ((empty))
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=92e5d21f,ru=f3717066,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://135.148.35.88:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7f7c5033b300,ts=316100260565631
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=92e5d21f,ru=07e47911,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://135.148.35.89:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7f7c50343b50,ts=316100260791990
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:handle_stable_view():1679: proto: v=0,lu=92e5d21f,ru=5f317222,ls=0,rs=0,la=tcp://0.0.0.0:9315,ra=tcp://135.148.35.94:9315,mc=,gn=jobsite,ch=0,st=OK,pr=1,tp=0x7f7c5034c400,ts=316100260590792
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/pc_proto.cpp:shift_to():392: 92e5d21f shift_to: NON_PRIM -> CLOSED prim 0 last prim view_id(PRIM,07e47911,8) to_seq 1749900
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/gmcast.cpp:close():365: gmcast 92e5d21f close
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:close():208: closing 0x7f7c5033b408 state 2 send_q size 0
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:close():208: closing 0x7f7c50343c58 state 2 send_q size 0
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:close():208: closing 0x7f7c5034c508 state 2 send_q size 0
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/protonet.cpp:erase():26: erase pstack 0x7f7c50324838
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/evs_input_map2.cpp:clear():224: discarding 2 messages from recovery index
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():357: gcomm: closed
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:close():358:
+profile name: gcs_gcomm
+
+point                                   count     calendar  cpu
+----------------------------------------------------------------------
+
+tot count         : 0
+tot calendar time : 0.000
+tot thread cputime: 0.000
+tot ct since ctor : -1672682108.436
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():414: New COMPONENT: primary = no, bootstrap = no, my_idx = 0, memb_num = 1
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():428: #281: Saving SYNCED over NON-PRIMARY
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_set_fc_limits():856: Flow-control interval: [100, 100]
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.hpp:gcs_sm_continue():452: Trying to continue unpaused monitor
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_handle_act_conf():976: Received NON-PRIMARY.
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting SYNCED -> OPEN (TO: 100420)
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_gcomm.cpp:gcomm_recv():779: gcomm recv: self leave
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_group.cpp:gcs_group_handle_comp_msg():434: Received self-leave message.
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_set_fc_limits():856: Flow-control interval: [0, 0]
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_sm.hpp:gcs_sm_continue():452: Trying to continue unpaused monitor
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_handle_act_conf():972: Received SELF-LEAVE. Closing connection.
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting OPEN -> CLOSED (TO: 100420)
+[Fri Jan  6 04:45:05.553 2023] [3628462] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_recv_thread():1461: RECV thread exiting 0: Success
+[Fri Jan  6 04:45:05.553 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:drain_common():420: draining up to 100420
+[Fri Jan  6 04:45:05.553 2023] [3628463] RPL: last message repeated 1 times
+[Fri Jan  6 04:45:05.553 2023] [3628463] RPL: new cluster membership: 0(1), global seqno: 100420, status non-primary, gap 0
+[Fri Jan  6 04:45:05.553 2023] [3628463] RPL:
+'daemon_3628145_jobsite', '147.135.93.205:9312,147.135.93.205:9315:replication' *
+
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_close():1248: recv_thread() joined.
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_close():1254: Closing replication queue.
+[Fri Jan  6 04:45:05.553 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:drain_common():420: draining up to 100420
+[Fri Jan  6 04:45:05.553 2023] [3628139] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:_close():1277: Closing slave action queue.
+[Fri Jan  6 04:45:05.553 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:drain_common():420: draining up to 100420
+[Fri Jan  6 04:45:05.553 2023] [3628139] DEBUG: disconnect from cluster jobsite invoked
+[Fri Jan  6 04:45:05.553 2023] [3628463] RPL: new cluster membership: -1(0), global seqno: 100420, status non-primary, gap 0
+[Fri Jan  6 04:45:05.553 2023] [3628139] DEBUG: ReplicateClustersDelete done
+[Fri Jan  6 04:45:05.553 2023] [3628463] RPL:
+
+[Fri Jan  6 04:45:05.553 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/saved_state.cpp:write_file():282: Saving state: 5f31b670-8cb3-11ed-b1c2-d2901fe19903:100420
+[Fri Jan  6 04:45:05.553 2023] [3628128] 708 Waiting clients to finish ... (18)
+[Fri Jan  6 04:45:05.554 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/gcs_action_source.cpp:dispatch():142: Received SELF-LEAVE. Closing connection.
+[Fri Jan  6 04:45:05.554 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:async_recv():461: Slave thread exit. Return code: 0
+[Fri Jan  6 04:45:05.554 2023] [3628463] RPL: receiver jobsite done, code 0, success
+[Fri Jan  6 04:45:05.554 2023] [3628463] DEBUG: cluster jobsite wait to finish
+[Fri Jan  6 04:45:05.554 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/replicator_smm.cpp:~ReplicatorSMM():299: dtor state: CLOSED
+[Fri Jan  6 04:45:05.557 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:~Monitor():75: mon: entered 440 oooe fraction 0 oool fraction 0
+[Fri Jan  6 04:45:05.563 2023] [3628463] RPL: last message repeated 1 times
+[Fri Jan  6 04:45:05.563 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/monitor.hpp:~Monitor():75: mon: entered 549 oooe fraction 0 oool fraction 0
+[Fri Jan  6 04:45:05.563 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():927: cert index usage at exit 0
+[Fri Jan  6 04:45:05.563 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():928: cert trx map usage at exit 2
+[Fri Jan  6 04:45:05.563 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():929: deps set usage at exit 0
+[Fri Jan  6 04:45:05.563 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():935: avg deps dist 5.68864
+[Fri Jan  6 04:45:05.563 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():936: avg cert interval 0
+[Fri Jan  6 04:45:05.563 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/certification.cpp:~Certification():937: cert index size 315
+[Fri Jan  6 04:45:05.563 2023] [3628389] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/galera_service_thd.cpp:thd_func():46: Service thread queue flushed.
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/wsdb.cpp:~Wsdb():55: wsdb trx map usage 0 conn query map usage 0
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/wsdb.cpp:~Wsdb():57: MemPool(LocalTrxHandle): hit ratio: 0.952273, misses: 21, in use: 0, in pool: 21
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galera/src/gcs_action_source.hpp:~GcsActionSource():38: MemPool(SlaveTrxHandle): hit ratio: 0, misses: 0, in use: 0, in pool: 0
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs.cpp:gcs_shift_state():649: Shifting CLOSED -> DESTROYED (TO: 100420)
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcs/src/gcs_core.cpp:gcs_core_destroy():1202: Calling backend.destroy()
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:~AsioTcpSocket():30: dtor for 0x7f7c50343c58
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:~AsioTcpSocket():30: dtor for 0x7f7c5031fc68
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:~AsioTcpSocket():30: dtor for 0x7f7c5033b408
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcomm/src/asio_tcp.cpp:~AsioTcpSocket():30: dtor for 0x7f7c5034c508
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/gcache/src/GCache.cpp:~GCache():77:
+GCache mallocs : 440
+GCache reallocs: 0
+GCache frees   : 440
+[Fri Jan  6 04:45:05.564 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_mmap.cpp:sync():109: Flushing memory map to disk...
+[Fri Jan  6 04:45:05.659 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_mmap.cpp:unmap():124: Memory unmapped: 0x7f749ffff000 (134219048 bytes)
+[Fri Jan  6 04:45:05.660 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:sync():240: Flushing file '/var/lib/manticore/data/galera.cache'
+[Fri Jan  6 04:45:05.661 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:sync():246: Flushed file '/var/lib/manticore/data/galera.cache'
+[Fri Jan  6 04:45:05.661 2023] [3628463] RPL: /builds/manticoresearch/dev/build/galera-build/galera_populate-prefix/src/galera_populate/galerautils/src/gu_fdesc.cpp:~FileDescriptor():233: Closed  file '/var/lib/manticore/data/galera.cache'
+[Fri Jan  6 04:45:05.661 2023] [3628463] DEBUG: cluster jobsite finished, cluster deleted lib 0x7f7c5c0098a0 unloaded
+[Fri Jan  6 04:45:05.661 2023] [3628463] DEBUG: Detached::RemoveThread called for 3628463
+[Fri Jan  6 04:45:05.661 2023] [3628463] DEBUG: Terminated thread 3628463, 'jobsite_repl_0'
+[Fri Jan  6 04:45:13.644 2023] [3628146] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:45:13.644 2023] [3628146] DEBUG: QueryDiskChunks 0, Jb/Chunk: 2/5
+[Fri Jan  6 04:45:13.644 2023] [3628146] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:45:13.719 2023] [3628129] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:45:13.719 2023] [3628129] DEBUG: QueryDiskChunks 0, Jb/Chunk: 2/5
+[Fri Jan  6 04:45:13.719 2023] [3628129] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:47:05.511 2023] [3628128] WARNING: still 18 alive tasks during shutdown, after 120.033 sec
+[Fri Jan  6 04:47:05.511 2023] [3628128] 720 Unlock tables ...
+[Fri Jan  6 04:47:05.511 2023] [3628141] 728 Abandon local tables list ...
+[Fri Jan  6 04:47:05.857 2023] [3628141] rt: table admin_search_employers_rt: ramchunk saved in 0.345 sec
+[Fri Jan  6 04:47:06.188 2023] [3628141] rt: table cvs: ramchunk saved in 0.008 sec
+[Fri Jan  6 04:47:06.234 2023] [3628141] rt: table geocities: ramchunk saved in 0.042 sec
+[Fri Jan  6 04:47:06.532 2023] [3628141] rt: table jobs_completions_custom: ramchunk saved in 0.207 sec
+[Fri Jan  6 04:47:06.652 2023] [3628141] rt: table listings: ramchunk saved in 0.017 sec
+[Fri Jan  6 04:47:06.745 2023] [3628141] rt: table postal_coords: ramchunk saved in 0.086 sec
+[Fri Jan  6 04:47:06.772 2023] [3628141] rt: table requirements: ramchunk saved in 0.003 sec
+[Fri Jan  6 04:47:06.774 2023] [3628141] 732 Abandon distr tables list ...
+[Fri Jan  6 04:47:06.774 2023] [3628128] 736 Shutdown alone threads (if any) ...
+[Fri Jan  6 04:47:06.774 2023] [3628128] 739 Shutdown main work pool ...
+[Fri Jan  6 04:48:05.732 2023] [3661442] watchdog: main process 3661443 forked ok
+[Fri Jan  6 04:48:05.733 2023] [3661443] FATAL: failed to lock '/var/lib/manticore/data/binlog.lock': 11 'Resource temporarily unavailable'
+[Fri Jan  6 04:48:05.733 2023] [3661442] watchdog: main process 3661443 exited cleanly (exit code 1), shutting down
+[Fri Jan  6 04:52:00.655 2023] [3628132] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:00.655 2023] [3628132] DEBUG: QueryDiskChunks 0, Jb/Chunk: 2/5
+[Fri Jan  6 04:52:00.656 2023] [3628132] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:00.656 2023] [3628132] DEBUG: QueryDiskChunks 0, Jb/Chunk: 4/3
+[Fri Jan  6 04:52:00.656 2023] [3628132] DEBUG: QueryDiskChunks 0, Jb/Chunk: 5/2
+[Fri Jan  6 04:52:00.657 2023] [3628132] DEBUG: QueryDiskChunks 0, Jb/Chunk: 6/1
+[Fri Jan  6 04:52:00.657 2023] [3628132] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:03.889 2023] [3628130] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:03.890 2023] [3628130] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:03.890 2023] [3628130] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:12.551 2023] [3628132] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:12.551 2023] [3628132] DEBUG: QueryDiskChunks 0, Jb/Chunk: 7/0
+[Fri Jan  6 04:52:12.552 2023] [3628132] DEBUG: QueryDiskChunks processed in 0 thread(s)
+[Fri Jan  6 04:52:12.556 2023] [3628132] DEBUG: RunLocalSearches processed in 1 thread(s)
+[Fri Jan  6 04:52:12.556 2023] [3628132] DEBUG: SIGTERM in SockWrapper_c::Send
+[Fri Jan  6 04:52:12.557 2023] [3628132] DEBUG: AsyncNetInputBuffer_c::AppendData: got SIGTERM, return -1
+[Fri Jan  6 04:52:15.245 2023] [3628140] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:15.245 2023] [3628140] DEBUG: QueryDiskChunks processed in 0 thread(s)
+[Fri Jan  6 04:52:15.247 2023] [3628140] DEBUG: RunLocalSearches processed in 1 thread(s)
+[Fri Jan  6 04:52:15.247 2023] [3628140] DEBUG: SIGTERM in SockWrapper_c::Send
+[Fri Jan  6 04:52:15.247 2023] [3628140] DEBUG: AsyncNetInputBuffer_c::AppendData: got SIGTERM, return -1
+[Fri Jan  6 04:52:17.841 2023] [3628143] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:17.841 2023] [3628143] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:17.841 2023] [3628143] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:20.870 2023] [3628145] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:20.870 2023] [3628145] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:20.870 2023] [3628145] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:21.302 2023] [3628144] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:21.302 2023] [3628144] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:21.302 2023] [3628144] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:23.453 2023] [3628136] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:23.453 2023] [3628136] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:23.453 2023] [3628136] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:31.174 2023] [3628148] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:31.174 2023] [3628148] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:31.174 2023] [3628148] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:34.311 2023] [3628147] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:34.311 2023] [3628147] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:34.311 2023] [3628147] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:35.894 2023] [3628138] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:35.894 2023] [3628138] DEBUG: QueryDiskChunks 0, Jb/Chunk: 1/6
+[Fri Jan  6 04:52:35.894 2023] [3628138] DEBUG: QueryDiskChunks 0, Jb/Chunk: 2/5
+[Fri Jan  6 04:52:35.894 2023] [3628138] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:36.678 2023] [3628131] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:36.678 2023] [3628131] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:36.678 2023] [3628131] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:41.351 2023] [3628137] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:41.351 2023] [3628137] DEBUG: QueryDiskChunks 0, Jb/Chunk: 2/5
+[Fri Jan  6 04:52:41.351 2023] [3628137] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:41.352 2023] [3628137] DEBUG: QueryDiskChunks 0, Jb/Chunk: 4/3
+[Fri Jan  6 04:52:41.352 2023] [3628137] DEBUG: QueryDiskChunks 0, Jb/Chunk: 5/2
+[Fri Jan  6 04:52:41.352 2023] [3628137] DEBUG: QueryDiskChunks 0, Jb/Chunk: 6/1
+[Fri Jan  6 04:52:41.352 2023] [3628137] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:41.609 2023] [3628142] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:41.609 2023] [3628142] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:41.609 2023] [3628142] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:51.419 2023] [3628146] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:51.419 2023] [3628146] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:51.419 2023] [3628146] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:52:51.985 2023] [3628137] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:51.985 2023] [3628137] DEBUG: QueryDiskChunks 0, Jb/Chunk: 7/0
+[Fri Jan  6 04:52:51.985 2023] [3628137] DEBUG: QueryDiskChunks processed in 0 thread(s)
+[Fri Jan  6 04:52:51.987 2023] [3628137] DEBUG: RunLocalSearches processed in 1 thread(s)
+[Fri Jan  6 04:52:51.987 2023] [3628137] DEBUG: SIGTERM in SockWrapper_c::Send
+[Fri Jan  6 04:52:51.987 2023] [3628137] DEBUG: AsyncNetInputBuffer_c::AppendData: got SIGTERM, return -1
+[Fri Jan  6 04:52:53.991 2023] [3628129] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:52:53.991 2023] [3628129] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:52:53.991 2023] [3628129] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:53:26.446 2023] [3628133] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:53:26.446 2023] [3628133] DEBUG: QueryDiskChunks 0, Jb/Chunk: 1/6
+[Fri Jan  6 04:53:26.446 2023] [3628133] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:53:37.366 2023] [3628135] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:53:37.366 2023] [3628135] DEBUG: QueryDiskChunks 0, Jb/Chunk: 4/3
+[Fri Jan  6 04:53:37.367 2023] [3628135] DEBUG: QueryDiskChunks 0, Jb/Chunk: 5/2
+[Fri Jan  6 04:53:37.367 2023] [3628135] DEBUG: QueryDiskChunks 0, Jb/Chunk: 6/1
+[Fri Jan  6 04:53:37.367 2023] [3628135] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:53:40.731 2023] [3628134] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:53:40.731 2023] [3628134] DEBUG: QueryDiskChunks 0, Jb/Chunk: 2/5
+[Fri Jan  6 04:53:40.732 2023] [3628134] DEBUG: QueryDiskChunks 0, Jb/Chunk: 3/4
+[Fri Jan  6 04:53:40.733 2023] [3628134] DEBUG: QueryDiskChunks 0, Jb/Chunk: 4/3
+[Fri Jan  6 04:53:40.733 2023] [3628134] DEBUG: QueryDiskChunks 0, Jb/Chunk: 5/2
+[Fri Jan  6 04:53:40.734 2023] [3628134] DEBUG: QueryDiskChunks 0, Jb/Chunk: 6/1
+[Fri Jan  6 04:53:40.734 2023] [3628134] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:53:49.046 2023] [3628135] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:53:49.046 2023] [3628135] DEBUG: QueryDiskChunks 0, Jb/Chunk: 7/0
+[Fri Jan  6 04:53:49.046 2023] [3628135] DEBUG: RunSplitQuery cloned context 0
+[Fri Jan  6 04:53:52.289 2023] [3628134] DEBUG: RunSplitQuery processed in 0 thread(s)
+[Fri Jan  6 04:53:52.289 2023] [3628134] DEBUG: QueryDiskChunks 0, Jb/Chunk: 7/0
+[Fri Jan  6 04:53:52.291 2023] [3628134] DEBUG: QueryDiskChunks processed in 0 thread(s)
+[Fri Jan  6 04:53:52.292 2023] [3628134] DEBUG: RunLocalSearches processed in 1 thread(s)
+[Fri Jan  6 04:53:52.292 2023] [3628134] DEBUG: SIGTERM in SockWrapper_c::Send
+[Fri Jan  6 04:53:52.292 2023] [3628134] DEBUG: AsyncNetInputBuffer_c::AppendData: got SIGTERM, return -1
