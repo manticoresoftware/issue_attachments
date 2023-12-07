@@ -1,0 +1,8 @@
+FROM manticoresearch/manticore:dev
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update && apt-get install -y \
+ curl vim mc iproute2 net-tools iputils-ping
+
+
