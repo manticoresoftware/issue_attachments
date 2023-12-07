@@ -1,0 +1,51 @@
+{
+	"clusters":	{
+		"jobsite":	{
+			"nodes":	"54.39.219.250:9312,147.135.93.205:9312,135.148.35.89:9312,135.148.35.88:9312,135.148.35.94:9312,10.10.10.3:9312,10.10.10.9:9312,10.10.10.10:9312,10.10.10.1:9312",
+			"options":	"",
+			"indexes":	["admin_search_employers_rt", "cvs", "geocities", "jobs", "jobs_completions_custom", "listings", "postal_coords", "requirements"]
+		}
+	},
+	"indexes":	{
+		"admin_search_employers_rt":	{
+			"type":	"rt",
+			"path":	"admin_search_employers_rt"
+		},
+		"cvs":	{
+			"type":	"rt",
+			"path":	"cvs"
+		},
+		"geocities":	{
+			"type":	"rt",
+			"path":	"geocities"
+		},
+		"jobs":	{
+			"type":	"rt",
+			"path":	"jobs"
+		},
+		"jobs_completions_custom":	{
+			"type":	"rt",
+			"path":	"jobs_completions_custom"
+		},
+		"listings":	{
+			"type":	"rt",
+			"path":	"listings"
+		},
+		"postal_coords":	{
+			"type":	"rt",
+			"path":	"postal_coords"
+		},
+		"requirements":	{
+			"type":	"rt",
+			"path":	"requirements"
+		}
+	},
+	"log_management":	{
+		"tables":	{
+		},
+		"settings":	{
+			"enabled":	false,
+			"version_string":	"ElasticSearch 7.4.1"
+		}
+	}
+}
