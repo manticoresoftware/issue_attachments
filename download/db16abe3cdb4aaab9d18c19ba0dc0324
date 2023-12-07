@@ -1,0 +1,584 @@
+  Id   Target Id                                          Frame 
+* 1    Thread 0x7fea3e314c40 (LWP 1153468) "searchd"      __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1153469, futex_word=0x7fea3dc44910) at ./nptl/futex-internal.c:57
+  2    Thread 0x7fea3dc44640 (LWP 1153469) "work_0"       __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  3    Thread 0x7fea3dc23640 (LWP 1153470) "work_1"       __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  4    Thread 0x7fea3dc02640 (LWP 1153471) "work_2"       __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  5    Thread 0x7fea3dbe1640 (LWP 1153472) "work_3"       __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  6    Thread 0x7fea3dbc0640 (LWP 1153473) "work_4"       __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  7    Thread 0x7fea3db9f640 (LWP 1153474) "work_5"       __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  8    Thread 0x7fea3db7e640 (LWP 1153475) "work_6"       __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  9    Thread 0x7fea3db5d640 (LWP 1153476) "work_7"       __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  10   Thread 0x7fea3db3c640 (LWP 1153477) "work_8"       __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  11   Thread 0x7fea3db1b640 (LWP 1153478) "work_9"       __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e50) at ./nptl/futex-internal.c:57
+  12   Thread 0x7fea3dafa640 (LWP 1153479) "work_10"      __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e50) at ./nptl/futex-internal.c:57
+  13   Thread 0x7fea3dad9640 (LWP 1153480) "work_11"      __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  14   Thread 0x7fea3dab8640 (LWP 1153481) "work_12"      __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  15   Thread 0x7fea3da97640 (LWP 1153482) "work_13"      __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  16   Thread 0x7fea3da76640 (LWP 1153483) "work_14"      __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  17   Thread 0x7fea3da55640 (LWP 1153484) "work_15"      __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e50) at ./nptl/futex-internal.c:57
+  18   Thread 0x7fea3da34640 (LWP 1153485) "work_16"      __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  19   Thread 0x7fea3da13640 (LWP 1153486) "work_17"      __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  20   Thread 0x7fea3d9f2640 (LWP 1153487) "work_18"      __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  21   Thread 0x7fea3d9d1640 (LWP 1153488) "work_19"      __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+  22   Thread 0x7fe251fff640 (LWP 1153685) "AgentsPoller" 0x00007fea3e43bfde in epoll_wait (epfd=198, events=0x7fea0c00b930, maxevents=257, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+
+Thread 22 (Thread 0x7fe251fff640 (LWP 1153685) "AgentsPoller"):
+#0  0x00007fea3e43bfde in epoll_wait (epfd=198, events=0x7fea0c00b930, maxevents=257, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x000055ea20c57642 in NetEventsFlavour_c::events_wait (this=0x55ea216e6f30 <LazyPoller()::dEvents>, iTimeoutUS=<optimized out>) at /builds/manticoresearch/dev/src/searchdha.cpp:3069
+#2  LazyNetEvents_c::EventTick (this=this@entry=0x55ea216e6f30 <LazyPoller()::dEvents>) at /builds/manticoresearch/dev/src/searchdha.cpp:3391
+#3  0x000055ea20c574d8 in LazyNetEvents_c::EventLoop (this=0x55ea216e6f30 <LazyPoller()::dEvents>) at /builds/manticoresearch/dev/src/searchdha.cpp:3316
+#4  LazyNetEvents_c::LazyNetEvents_c(int)::{lambda()#1}::operator()() const (this=<optimized out>) at /builds/manticoresearch/dev/src/searchdha.cpp:3524
+#5  std::__invoke_impl<void, LazyNetEvents_c::LazyNetEvents_c(int)::{lambda()#1}&>(std::__invoke_other, LazyNetEvents_c::LazyNetEvents_c(int)::{lambda()#1}&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#6  std::__invoke_r<void, LazyNetEvents_c::LazyNetEvents_c(int)::{lambda()#1}&>(LazyNetEvents_c::LazyNetEvents_c(int)::{lambda()#1}&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#7  std::_Function_handler<void (), LazyNetEvents_c::LazyNetEvents_c(int)::{lambda()#1}>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#8  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0xc6) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#9  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0xc6) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#10 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#11 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#12 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#13 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0xc6) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#14 RuntimeThreadContext_t::Run (this=0x7fea0c011970, pStack=pStack@entry=0x7fe251ffed87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#15 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0xc6) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#16 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#17 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 21 (Thread 0x7fea3d9d1640 (LWP 1153488) "work_19"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d468b0, pStack=pStack@entry=0x7fea3d9d0d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 20 (Thread 0x7fea3d9f2640 (LWP 1153487) "work_18"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d46690, pStack=pStack@entry=0x7fea3d9f1d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 19 (Thread 0x7fea3da13640 (LWP 1153486) "work_17"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d46470, pStack=pStack@entry=0x7fea3da12d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 18 (Thread 0x7fea3da34640 (LWP 1153485) "work_16"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d46250, pStack=pStack@entry=0x7fea3da33d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 17 (Thread 0x7fea3da55640 (LWP 1153484) "work_15"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e50) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e50) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e50, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e50) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e50) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e50) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d46030, pStack=pStack@entry=0x7fea3da54d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e50) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 16 (Thread 0x7fea3da76640 (LWP 1153483) "work_14"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d45e10, pStack=pStack@entry=0x7fea3da75d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 15 (Thread 0x7fea3da97640 (LWP 1153482) "work_13"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d45bf0, pStack=pStack@entry=0x7fea3da96d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 14 (Thread 0x7fea3dab8640 (LWP 1153481) "work_12"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d459d0, pStack=pStack@entry=0x7fea3dab7d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 13 (Thread 0x7fea3dad9640 (LWP 1153480) "work_11"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d457b0, pStack=pStack@entry=0x7fea3dad8d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 12 (Thread 0x7fea3dafa640 (LWP 1153479) "work_10"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e50) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e50) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e50, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e50) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e50) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e50) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d3ea00, pStack=pStack@entry=0x7fea3daf9d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e50) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 11 (Thread 0x7fea3db1b640 (LWP 1153478) "work_9"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e50) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e50) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e50, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e50) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e50) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e50) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d3e7e0, pStack=pStack@entry=0x7fea3db1ad87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e50) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 10 (Thread 0x7fea3db3c640 (LWP 1153477) "work_8"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d3e5e0, pStack=pStack@entry=0x7fea3db3bd87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 9 (Thread 0x7fea3db5d640 (LWP 1153476) "work_7"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d3e3e0, pStack=pStack@entry=0x7fea3db5cd87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 8 (Thread 0x7fea3db7e640 (LWP 1153475) "work_6"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d3e1e0, pStack=pStack@entry=0x7fea3db7dd87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 7 (Thread 0x7fea3db9f640 (LWP 1153474) "work_5"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d3dfe0, pStack=pStack@entry=0x7fea3db9ed87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 6 (Thread 0x7fea3dbc0640 (LWP 1153473) "work_4"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d3dde0, pStack=pStack@entry=0x7fea3dbbfd87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 5 (Thread 0x7fea3dbe1640 (LWP 1153472) "work_3"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d50af0, pStack=pStack@entry=0x7fea3dbe0d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 4 (Thread 0x7fea3dc02640 (LWP 1153471) "work_2"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d38270, pStack=pStack@entry=0x7fea3dc01d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 3 (Thread 0x7fea3dc23640 (LWP 1153470) "work_1"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d38300, pStack=pStack@entry=0x7fea3dc22d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 2 (Thread 0x7fea3dc44640 (LWP 1153469) "work_0"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x55ea21d50e54) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x55ea21d50e54, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3a9ac1 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x55ea21d50df8, cond=0x55ea21d50e28) at ./nptl/pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0x55ea21d50e28, mutex=0x55ea21d50df8) at ./nptl/pthread_cond_wait.c:627
+#5  0x000055ea211f4491 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x55ea21d50e28, dLock=...) at /builds/manticoresearch/dev/src/event.h:241
+#6  Threads::Service_t::do_run_one (this=this@entry=0x55ea21d50df0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:342
+#7  0x000055ea211f433e in Threads::Service_t::run (this=this@entry=0x55ea21d50df0) at /builds/manticoresearch/dev/src/threadutils.cpp:323
+#8  0x000055ea211f416e in Threads::ThreadPool_c::loop (this=0x55ea21d50de0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:745
+#9  0x000055ea211f2ae7 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#10 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1803
+#11 std::__invoke_impl<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(std::__invoke_other, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__f=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:61
+#12 std::__invoke_r<void, Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&>(Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4&) (__fn=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h:111
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:290
+#14 0x000055ea211f1805 in std::function<void ()>::operator()() const (this=0x55ea21d50e54) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h:590
+#15 RuntimeThreadContext_t::Run (this=0x55ea21d4ff50, pStack=pStack@entry=0x7fea3dc43d87) at /builds/manticoresearch/dev/src/threadutils.cpp:1587
+#16 0x000055ea211f18b7 in ThreadProcWrapper_fn (pArg=0x55ea21d50e54) at /builds/manticoresearch/dev/src/threadutils.cpp:1612
+#17 0x00007fea3e3aab43 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#18 0x00007fea3e43ca00 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 1 (Thread 0x7fea3e314c40 (LWP 1153468) "searchd"):
+#0  __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1153469, futex_word=0x7fea3dc44910) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=128, abstime=0x0, clockid=0, expected=1153469, futex_word=0x7fea3dc44910) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7fea3dc44910, expected=1153469, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=128) at ./nptl/futex-internal.c:139
+#3  0x00007fea3e3ac6a4 in __pthread_clockjoin_ex (threadid=140644035348032, thread_return=0x0, clockid=0, abstime=0x0, block=<optimized out>) at ./nptl/pthread_join_common.c:105
+#4  0x000055ea211f3d0a in Threads::Join (pThread=0x55ea21d3d430) at /builds/manticoresearch/dev/src/threadutils.cpp:1405
+#5  Threads::ThreadPool_c::StopAll (this=0x55ea21d50de0) at /builds/manticoresearch/dev/src/threadutils.cpp:849
+#6  0x000055ea20d1a0c4 in Shutdown () at /builds/manticoresearch/dev/src/searchd.cpp:742
+#7  0x000055ea20d6e484 in CheckSignals () at /builds/manticoresearch/dev/src/searchd.cpp:18525
+#8  0x000055ea20d6e49a in TickHead () at /builds/manticoresearch/dev/src/searchd.cpp:18560
+#9  0x000055ea20d750f9 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffd99648b88) at /builds/manticoresearch/dev/src/searchd.cpp:20179
+#10 0x000055ea20d7624b in mainimpl (argc=7, argv=0x7ffd99648b88) at /builds/manticoresearch/dev/src/searchd.cpp:20228
+#11 main (argc=7, argv=0x7ffd99648b88) at /builds/manticoresearch/dev/src/searchd.cpp:20234
+#0  __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1153469, futex_word=0x7fea3dc44910) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=128, abstime=0x0, clockid=0, expected=1153469, futex_word=0x7fea3dc44910) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 265
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7fea3dc44910, expected=1153469, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=128) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007fea3e3ac6a4 in __pthread_clockjoin_ex (threadid=140644035348032, thread_return=0x0, clockid=0, abstime=0x0, block=<optimized out>) at ./nptl/pthread_join_common.c:105
+        ret = <optimized out>
+        _buffer = {__routine = 0x7fea3e3ac550 <cleanup>, __arg = 0x7fea3dc44c68, __canceltype = 0, __prev = 0x0}
+        tid = <optimized out>
+        pd = 0x7fea3dc44640
+        self = <optimized out>
+        result = 0
+        pd_result = <optimized out>
+#4  0x000055ea211f3d0a in Threads::Join (pThread=0x55ea21d3d430) at /builds/manticoresearch/dev/src/threadutils.cpp:1405
+No locals.
+#5  Threads::ThreadPool_c::StopAll (this=0x55ea21d50de0) at /builds/manticoresearch/dev/src/threadutils.cpp:849
+        dThread = @0x55ea21d3d430: 140644035348032
+        __range2 = @0x55ea21d50e90: {<VecTraits_T<unsigned long>> = {m_pData = 0x55ea21d3d430, m_iCount = 20}, <sph::DefaultStorage_T<unsigned long>> = {static is_sized = false, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 32}
+        __begin2 = 0x55ea21d3d430
+        __end2 = 0x55ea21d3d4d0
+        dLock = {<ISphNoncopyable> = {<No data fields>}, m_tMutexRef = @0x55ea21d50ea8, m_bLocked = false}
+#6  0x000055ea20d1a0c4 in Shutdown () at /builds/manticoresearch/dev/src/searchd.cpp:742
+        sPipeName = {m_sValue = 0x55ea21dbfca0 "/tmp/searchd_1153468", static EMPTY = "", static SAFETY_GAP = 4}
+        fdStopwait = 2125
+        bAttrsSaveOk = true
+        tmShutStarted = <optimized out>
+        pPool = 0xfffffffffffffe00
+#7  0x000055ea20d6e484 in CheckSignals () at /builds/manticoresearch/dev/src/searchd.cpp:18525
+No locals.
+#8  0x000055ea20d6e49a in TickHead () at /builds/manticoresearch/dev/src/searchd.cpp:18560
+        tmSleep = <optimized out>
+#9  0x000055ea20d750f9 in ServiceMain (argc=argc@entry=7, argv=argv@entry=0x7ffd99648b88) at /builds/manticoresearch/dev/src/searchd.cpp:20179
+        sError = {m_sValue = 0x0, static EMPTY = <same as static member of an already seen type>, static SAFETY_GAP = 4}
+        conf = {m_dHash = {0x0 <repeats 256 times>}, m_pFirstByOrder = 0x0, m_pLastByOrder = 0x0, m_iLength = 0}
+        dOptIndexes = {<VecTraits_T<CSphString>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<CSphString>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+        dConfig = {<VecTraits_T<char>> = {m_pData = 0x55ea21d3f380 "\n\n", '#' <repeats 77 times>, "\n## common settings\n", '#' <repeats 77 times>, "\n\ncommon\n{\nlemmatizer_ba"..., m_iCount = 3467}, <sph::DefaultStorage_T<char>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 4096}
+        dListenerDescs = {<VecTraits_T<ListenerDesc_t>> = {m_pData = 0x55ea21d46b28, m_iCount = 8}, <sph::DefaultStorage_T<ListenerDesc_t>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}
+        dExactIndexes = {<VecTraits_T<CSphString>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<CSphString>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+        bColumnarError = <optimized out>
+        bSecondaryError = <optimized out>
+        bOptStop = <optimized out>
+        bOptStopWait = <optimized out>
+        bOptStatus = <optimized out>
+        bOptPIDFile = <optimized out>
+        iOptPort = <optimized out>
+        bOptPort = <optimized out>
+        sOptListen = <optimized out>
+        bOptListen = <optimized out>
+        bTestMode = <optimized out>
+        bOptDebugQlog = <optimized out>
+        bForcedPreread = <optimized out>
+        bNewCluster = <optimized out>
+        bNewClusterForce = <optimized out>
+        bForcePseudoSharding = <optimized out>
+        szCmdConfigFile = <optimized out>
+        uReplayFlags = <optimized out>
+        i = <optimized out>
+        hSearchdpre = <optimized out>
+        bVisualLoad = <optimized out>
+        bWatched = <optimized out>
+        iDevNull = 3
+        hSearchd = @0x55ea21d41df8: {<CSphOrderedHash<CSphVariant, CSphString, CSphStrHashFunc, 256>> = {m_dHash = {0x0 <repeats 11 times>, 0x55ea21d43550, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55ea21d432d0, 0x0, 0x55ea21d43050, 0x0 <repeats 17 times>, 0x55ea21d437d0, 0x0, 0x0, 0x0, 0x0, 0x55ea21d43410, 0x0 <repeats 12 times>, 0x55ea21d434b0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55ea21d43230, 0x0, 0x0, 0x0, 0x55ea21d42fa0, 0x0 <repeats 70 times>, 0x55ea21d43b20, 0x0, 0x0, 0x55ea21d43370, 0x0, 0x0, 0x0, 0x0, 0x55ea21d42b40, 0x0, 0x55ea21d43870, 0x55ea21d439c0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55ea21d42be0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55ea21d43190, 0x0, 0x55ea21d43910, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55ea21d42d20, 0x0, 0x0, 0x0, 0x0, 0x0, 0x55ea21d43730, 0x0, 0x55ea21d42aa0, 0x0 <repeats 13 times>, 0x55ea21d43a70, 0x0, 0x0, 0x0, 0x55ea21d42c80, 0x0 <repeats 15 times>, 0x55ea21d43bd0, 0x0, 0x0, 0x0, 0x55ea21d42f00, 0x0 <repeats 13 times>, 0x55ea21d430f0, 0x0, 0x55ea21d43690, 0x0, 0x55ea21d42e60, 0x0, 0x0, 0x0, 0x55ea21d42650, 0x0, 0x0, 0x0, 0x0, 0x55ea21d42dc0, 0x0, 0x0, 0x0, 0x0, 0x55ea21d426f0, 0x0, 0x0}, m_pFirstByOrder = 0x55ea21d42650, m_pLastByOrder = 0x55ea21d43c80, m_iLength = 31}, m_iTag = 38}
+        iRtFlushPeriodUs = <optimized out>
+        thMain = <optimized out>
+        wFakeLock = <optimized out>
+        hConf = <optimized out>
+#10 0x000055ea20d7624b in mainimpl (argc=7, argv=0x7ffd99648b88) at /builds/manticoresearch/dev/src/searchd.cpp:20228
+        cTopOfMainStack = 0 '\000'
+#11 main (argc=7, argv=0x7ffd99648b88) at /builds/manticoresearch/dev/src/searchd.cpp:20234
+No locals.
+sc_cancel_oldtype = 0
+sc_ret = <optimized out>
+resultvar = <optimized out>
+__arg6 = <optimized out>
+__arg5 = <optimized out>
+__arg4 = <optimized out>
+__arg3 = <optimized out>
+__arg2 = <optimized out>
+__arg1 = <optimized out>
+_a6 = <optimized out>
+_a5 = <optimized out>
+_a4 = <optimized out>
+_a3 = <optimized out>
+_a2 = <optimized out>
+_a1 = <optimized out>
+Detaching from program: /usr/bin/searchd, process 1153468
+[Inferior 1 (process 1153468) detached]
