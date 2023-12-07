@@ -1,0 +1,65 @@
+  Id   Target Id                                     Frame 
+* 1    Thread 0x7f7c9275ac40 (LWP 3628127) "searchd" 0x00007f7c9284645a in __GI___wait4 (pid=-1, stat_loc=0x7ffc36585024, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+
+Thread 1 (Thread 0x7f7c9275ac40 (LWP 3628127) "searchd"):
+#0  0x00007f7c9284645a in __GI___wait4 (pid=-1, stat_loc=0x7ffc36585024, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+#1  0x0000556ce53c80f5 in SetWatchDog (iDevNull=iDevNull@entry=3) at /builds/manticoresearch/dev/src/searchd.cpp:18434
+#2  0x0000556ce53cdb30 in ServiceMain (argc=argc@entry=6, argv=argv@entry=0x7ffc36585c78) at /builds/manticoresearch/dev/src/searchd.cpp:19750
+#3  0x0000556ce53d025b in mainimpl (argc=6, argv=0x7ffc36585c78) at /builds/manticoresearch/dev/src/searchd.cpp:20228
+#4  main (argc=6, argv=0x7ffc36585c78) at /builds/manticoresearch/dev/src/searchd.cpp:20234
+#0  0x00007f7c9284645a in __GI___wait4 (pid=-1, stat_loc=0x7ffc36585024, options=0, usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:30
+        sc_ret = -512
+        sc_ret = <optimized out>
+#1  0x0000556ce53c80f5 in SetWatchDog (iDevNull=iDevNull@entry=3) at /builds/manticoresearch/dev/src/searchd.cpp:18434
+        iStatus = 0
+        iPid = <optimized out>
+        EFork::Startup = EFork::Startup
+        EFork::Disabled = EFork::Disabled
+        EFork::Restart = EFork::Restart
+        eReincarnate = EFork::Disabled
+        bShutdown = <optimized out>
+        bStreamsActive = false
+        iChild = 3628128
+#2  0x0000556ce53cdb30 in ServiceMain (argc=argc@entry=6, argv=argv@entry=0x7ffc36585c78) at /builds/manticoresearch/dev/src/searchd.cpp:19750
+        sError = {m_sValue = 0x0, static EMPTY = "", static SAFETY_GAP = 4}
+        conf = {m_dHash = {0x0 <repeats 256 times>}, m_pFirstByOrder = 0x0, m_pLastByOrder = 0x0, m_iLength = 0}
+        dOptIndexes = {<VecTraits_T<CSphString>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<CSphString>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+        dConfig = {<VecTraits_T<char>> = {m_pData = 0x556ce7463380 "\n\n", '#' <repeats 77 times>, "\n## common settings\n", '#' <repeats 77 times>, "\n\ncommon\n{\nlemmatizer_ba"..., m_iCount = 3467}, <sph::DefaultStorage_T<char>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 4096}
+        dListenerDescs = {<VecTraits_T<ListenerDesc_t>> = {m_pData = 0x556ce74695e0, m_iCount = 140173009875596}, <sph::DefaultStorage_T<ListenerDesc_t>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 140173012125544}
+        dExactIndexes = {<VecTraits_T<CSphString>> = {m_pData = 0x556ce74695c0, m_iCount = 93926224966528}, <sph::DefaultStorage_T<CSphString>> = {static is_sized = <optimized out>, static is_constructed = true, static is_owned = <optimized out>}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 3467}
+        bColumnarError = <optimized out>
+        bSecondaryError = <optimized out>
+        bOptStop = <optimized out>
+        bOptStopWait = <optimized out>
+        bOptStatus = <optimized out>
+        bOptPIDFile = true
+        iOptPort = <optimized out>
+        bOptPort = <optimized out>
+        sOptListen = <optimized out>
+        bOptListen = <optimized out>
+        bTestMode = <optimized out>
+        bOptDebugQlog = <optimized out>
+        bForcedPreread = <optimized out>
+        bNewCluster = <optimized out>
+        bNewClusterForce = <optimized out>
+        bForcePseudoSharding = <optimized out>
+        szCmdConfigFile = <optimized out>
+        uReplayFlags = <optimized out>
+        i = <optimized out>
+        hSearchdpre = @0x556ce7465df8: {<CSphOrderedHash<CSphVariant, CSphString, CSphStrHashFunc, 256>> = {m_dHash = {0x0 <repeats 11 times>, 0x556ce7467550, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x556ce74672d0, 0x0, 0x556ce7467050, 0x0 <repeats 17 times>, 0x556ce74677d0, 0x0, 0x0, 0x0, 0x0, 0x556ce7467410, 0x0 <repeats 12 times>, 0x556ce74674b0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x556ce7467230, 0x0, 0x0, 0x0, 0x556ce7466fa0, 0x0 <repeats 70 times>, 0x556ce7467b20, 0x0, 0x0, 0x556ce7467370, 0x0, 0x0, 0x0, 0x0, 0x556ce7466b40, 0x0, 0x556ce7467870, 0x556ce74679c0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x556ce7466be0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x556ce7467190, 0x0, 0x556ce7467910, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x556ce7466d20, 0x0, 0x0, 0x0, 0x0, 0x0, 0x556ce7467730, 0x0, 0x556ce7466aa0, 0x0 <repeats 13 times>, 0x556ce7467a70, 0x0, 0x0, 0x0, 0x556ce7466c80, 0x0 <repeats 15 times>, 0x556ce7467bd0, 0x0, 0x0, 0x0, 0x556ce7466f00, 0x0 <repeats 13 times>, 0x556ce74670f0, 0x0, 0x556ce7467690, 0x0, 0x556ce7466e60, 0x0, 0x0, 0x0, 0x556ce7466650, 0x0, 0x0, 0x0, 0x0, 0x556ce7466dc0, 0x0, 0x0, 0x0, 0x0, 0x556ce74666f0, 0x0, 0x0}, m_pFirstByOrder = 0x556ce7466650, m_pLastByOrder = 0x556ce7467c80, m_iLength = 31}, m_iTag = 38}
+        bVisualLoad = true
+        bWatched = true
+        iDevNull = 3
+        hSearchd = <optimized out>
+        iRtFlushPeriodUs = <optimized out>
+        thMain = <optimized out>
+        wFakeLock = <optimized out>
+        hConf = <optimized out>
+#3  0x0000556ce53d025b in mainimpl (argc=6, argv=0x7ffc36585c78) at /builds/manticoresearch/dev/src/searchd.cpp:20228
+        cTopOfMainStack = 0 '\000'
+#4  main (argc=6, argv=0x7ffc36585c78) at /builds/manticoresearch/dev/src/searchd.cpp:20234
+No locals.
+sc_ret = -512
+sc_ret = <optimized out>
+Detaching from program: /usr/bin/searchd, process 3628127
+[Inferior 1 (process 3628127) detached]
