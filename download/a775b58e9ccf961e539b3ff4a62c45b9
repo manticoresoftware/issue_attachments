@@ -1,0 +1,1059 @@
+  Id   Target Id                           Frame 
+* 1    Thread 0x7f31b399d700 (LWP 3393103) 0x0000000000deccd7 in CSphSchemaHelper::CloneMatchSpecial (this=0x7f315017ab60, tDst=..., rhs=..., dSpecials=...) at /builds/manticoresearch/dev/src/schema/helper.cpp:136
+  2    Thread 0x7f31b3b6b700 (LWP 3393088) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  3    Thread 0x7f31b3b29700 (LWP 3393090) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  4    Thread 0x7f31b3ae7700 (LWP 3393093) 0x00007f31b41c2fcb in __GI___select (nfds=0, readfds=0x0, writefds=0x0, exceptfds=0x0, timeout=0x7f31b3ae5a08) at ../sysdeps/unix/sysv/linux/select.c:41
+  5    Thread 0x7f31b3b4a700 (LWP 3393089) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  6    Thread 0x7f31b3aa5700 (LWP 3393095) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  7    Thread 0x7f31b3a84700 (LWP 3393096) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+  8    Thread 0x7f31b3a42700 (LWP 3393098) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+  9    Thread 0x7f31b40a9800 (LWP 3393087) 0x00007f31b41c2fcb in __GI___select (nfds=0, readfds=0x0, writefds=0x0, exceptfds=0x0, timeout=0x7ffcc9ee9c98) at ../sysdeps/unix/sysv/linux/select.c:41
+  10   Thread 0x7f31b395b700 (LWP 3393105) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+  11   Thread 0x7f31b3a00700 (LWP 3393100) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  12   Thread 0x7f31b39df700 (LWP 3393101) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  13   Thread 0x7f31b3919700 (LWP 3393107) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  14   Thread 0x7f31b38d7700 (LWP 3393109) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  15   Thread 0x7f31b38f8700 (LWP 3393108) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+  16   Thread 0x7f31b3685700 (LWP 3393127) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  17   Thread 0x7f31b3b08700 (LWP 3393091) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  18   Thread 0x7f31abae7700 (LWP 3393092) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  19   Thread 0x7f31b39be700 (LWP 3393102) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+  20   Thread 0x7f31b393a700 (LWP 3393106) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  21   Thread 0x7f31b3ac6700 (LWP 3393094) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  22   Thread 0x7f31b3a63700 (LWP 3393097) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  23   Thread 0x7f31b3895700 (LWP 3393111) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  24   Thread 0x7f31b3874700 (LWP 3393112) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  25   Thread 0x7f31b3832700 (LWP 3393114) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  26   Thread 0x7f31b37cf700 (LWP 3393117) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+  27   Thread 0x7f31b378d700 (LWP 3393119) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  28   Thread 0x7f31b37ae700 (LWP 3393118) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  29   Thread 0x7f31b3811700 (LWP 3393115) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  30   Thread 0x7f31b397c700 (LWP 3393104) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  31   Thread 0x7f31b376c700 (LWP 3393120) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+  32   Thread 0x7f31b37f0700 (LWP 3393116) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+  33   Thread 0x7f31b3a21700 (LWP 3393099) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  34   Thread 0x7f31b374b700 (LWP 3393121) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  35   Thread 0x7f31b3709700 (LWP 3393123) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  36   Thread 0x7f31b36e8700 (LWP 3393124) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+  37   Thread 0x7f31b36c7700 (LWP 3393125) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+  38   Thread 0x7f31b3853700 (LWP 3393113) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  39   Thread 0x7f31b372a700 (LWP 3393122) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  40   Thread 0x7f31b38b6700 (LWP 3393110) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  41   Thread 0x7f31b3664700 (LWP 3393128) futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7f31b3663da8, clockid=<optimized out>, expected=0, futex_word=0xf0fb9c <g_TinyTimer()::tTimer+156>) at ../sysdeps/nptl/futex-internal.h:320
+  42   Thread 0x7f31b36a6700 (LWP 3393126) futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+  43   Thread 0x7f2cb1a94700 (LWP 3393265) 0x00007f31b41cd46e in epoll_wait (epfd=163, events=0x286d190, maxevents=12, timeout=299041) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+
+Thread 43 (Thread 0x7f2cb1a94700 (LWP 3393265)):
+#0  0x00007f31b41cd46e in epoll_wait (epfd=163, events=0x286d190, maxevents=12, timeout=299041) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x000000000055e894 in NetPooller_c::Impl_c::poll_events (this=0x281aa20, pEvents=0x286d190, timeoutMs=299041, iEventNum=<optimized out>) at /builds/manticoresearch/dev/src/searchdha.cpp:4207
+#2  NetPooller_c::Impl_c::Wait (this=0x281aa20, timeoutMs=299041) at /builds/manticoresearch/dev/src/searchdha.cpp:4145
+#3  0x00000000005adfdf in CSphNetLoop::Impl_c::Poll (this=this@entry=0x281a530, tmLastWait=<optimized out>, tmLastWait@entry=1659368282403499) at /builds/manticoresearch/dev/src/networking_daemon.cpp:226
+#4  0x00000000005ad99a in CSphNetLoop::Impl_c::LoopNetPoll (this=0x281a530) at /builds/manticoresearch/dev/src/networking_daemon.cpp:239
+#5  0x0000000000626335 in ServiceMain(int, char**)::$_57::operator()() const (this=<optimized out>) at /builds/manticoresearch/dev/src/searchd.cpp:19842
+#6  Threads::details::CompletionHandler_c<ServiceMain(int, char**)::$_57>::DoComplete(void*, Threads::details::SchedulerOperation_t*) (pOwner=0x281baf0, pBase=<optimized out>) at /builds/manticoresearch/dev/src/threadutils_impl.h:235
+#7  0x0000000000ab6e89 in Threads::details::SchedulerOperation_t::Complete (this=0x281bf40, pOwner=0x281baf0) at /builds/manticoresearch/dev/src/threadutils_impl.h:191
+#8  Threads::Service_t::do_run_one (this=this@entry=0x281baf0, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:345
+#9  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x281baf0) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#10 0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x281bae0, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#11 0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0xa3) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#12 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0xa3) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#13 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#14 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2806b38) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#15 RuntimeThreadContext_t::Run (this=0x2806ac0, pStack=pStack@entry=0x7f2cb1a93e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#16 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0xa3) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#17 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#18 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 42 (Thread 0x7f31b36a6700 (LWP 3393126)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2818f58) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2818ee0, pStack=pStack@entry=0x7f31b36a5e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 41 (Thread 0x7f31b3664700 (LWP 3393128)):
+#0  futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7f31b3663da8, clockid=<optimized out>, expected=0, futex_word=0xf0fb9c <g_TinyTimer()::tTimer+156>) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7f31b3663da8, clockid=<optimized out>, mutex=0xf0fba0 <g_TinyTimer()::tTimer+160>, cond=0xf0fb70 <g_TinyTimer()::tTimer+112>) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0xf0fb70 <g_TinyTimer()::tTimer+112>, mutex=0xf0fba0 <g_TinyTimer()::tTimer+160>, abstime=0x7f31b3663da8) at pthread_cond_wait.c:665
+#3  0x00000000006ed47e in AutoEvent_T<true>::WaitEvent (this=0xf0fb68 <g_TinyTimer()::tTimer+104>, iMsec=<optimized out>) at /builds/manticoresearch/dev/src/sphinxstd.cpp:1434
+#4  0x0000000000adaa50 in TinyTimer_c::Loop (this=0xf0fb00 <g_TinyTimer()::tTimer>) at /builds/manticoresearch/dev/src/mini_timer.cpp:176
+#5  0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2819498) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#6  RuntimeThreadContext_t::Run (this=0x2819420, pStack=pStack@entry=0x7f31b3663e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#7  0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0xf0fb9c <g_TinyTimer()::tTimer+156>) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#8  0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#9  0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 40 (Thread 0x7f31b38b6700 (LWP 3393110)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2816c58) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2816be0, pStack=pStack@entry=0x7f31b38b5e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 39 (Thread 0x7f31b372a700 (LWP 3393122)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2818698) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2818620, pStack=pStack@entry=0x7f31b3729e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 38 (Thread 0x7f31b3853700 (LWP 3393113)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x28172e8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2817270, pStack=pStack@entry=0x7f31b3852e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 37 (Thread 0x7f31b36c7700 (LWP 3393125)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d984) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2818d28) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2818cb0, pStack=pStack@entry=0x7f31b36c6e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 36 (Thread 0x7f31b36e8700 (LWP 3393124)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d984) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2818af8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2818a80, pStack=pStack@entry=0x7f31b36e7e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 35 (Thread 0x7f31b3709700 (LWP 3393123)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x28188c8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2818850, pStack=pStack@entry=0x7f31b3708e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 34 (Thread 0x7f31b374b700 (LWP 3393121)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2818468) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x28183f0, pStack=pStack@entry=0x7f31b374ae27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 33 (Thread 0x7f31b3a21700 (LWP 3393099)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2815448) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x28153d0, pStack=pStack@entry=0x7f31b3a20e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 32 (Thread 0x7f31b37f0700 (LWP 3393116)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d984) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2817978) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2817900, pStack=pStack@entry=0x7f31b37efe27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 31 (Thread 0x7f31b376c700 (LWP 3393120)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d984) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2818238) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x28181c0, pStack=pStack@entry=0x7f31b376be27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 30 (Thread 0x7f31b397c700 (LWP 3393104)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2815f38) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2815ec0, pStack=pStack@entry=0x7f31b397be27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 29 (Thread 0x7f31b3811700 (LWP 3393115)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2817748) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x28176d0, pStack=pStack@entry=0x7f31b3810e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 28 (Thread 0x7f31b37ae700 (LWP 3393118)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2817dd8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2817d60, pStack=pStack@entry=0x7f31b37ade27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 27 (Thread 0x7f31b378d700 (LWP 3393119)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2818008) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2817f90, pStack=pStack@entry=0x7f31b378ce27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 26 (Thread 0x7f31b37cf700 (LWP 3393117)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d984) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2817ba8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2817b30, pStack=pStack@entry=0x7f31b37cee27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 25 (Thread 0x7f31b3832700 (LWP 3393114)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2817518) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x28174a0, pStack=pStack@entry=0x7f31b3831e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 24 (Thread 0x7f31b3874700 (LWP 3393112)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x28170b8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2817040, pStack=pStack@entry=0x7f31b3873e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 23 (Thread 0x7f31b3895700 (LWP 3393111)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2816e88) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2816e10, pStack=pStack@entry=0x7f31b3894e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 22 (Thread 0x7f31b3a63700 (LWP 3393097)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2814fe8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2814f70, pStack=pStack@entry=0x7f31b3a62e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 21 (Thread 0x7f31b3ac6700 (LWP 3393094)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2814998) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2814920, pStack=pStack@entry=0x7f31b3ac5e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 20 (Thread 0x7f31b393a700 (LWP 3393106)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2816398) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2816320, pStack=pStack@entry=0x7f31b3939e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 19 (Thread 0x7f31b39be700 (LWP 3393102)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d984) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2815ad8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2815a60, pStack=pStack@entry=0x7f31b39bde27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 18 (Thread 0x7f31abae7700 (LWP 3393092)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x280d238) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x280d1c0, pStack=pStack@entry=0x7f31abae6e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 17 (Thread 0x7f31b3b08700 (LWP 3393091)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x280d028) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x280cfb0, pStack=pStack@entry=0x7f31b3b07e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 16 (Thread 0x7f31b3685700 (LWP 3393127)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2819188) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2819110, pStack=pStack@entry=0x7f31b3684e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 15 (Thread 0x7f31b38f8700 (LWP 3393108)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d984) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x28167f8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2816780, pStack=pStack@entry=0x7f31b38f7e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 14 (Thread 0x7f31b38d7700 (LWP 3393109)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2816a28) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x28169b0, pStack=pStack@entry=0x7f31b38d6e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 13 (Thread 0x7f31b3919700 (LWP 3393107)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x28165c8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2816550, pStack=pStack@entry=0x7f31b3918e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 12 (Thread 0x7f31b39df700 (LWP 3393101)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x28158a8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2815830, pStack=pStack@entry=0x7f31b39dee27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 11 (Thread 0x7f31b3a00700 (LWP 3393100)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2815678) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2815600, pStack=pStack@entry=0x7f31b39ffe27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 10 (Thread 0x7f31b395b700 (LWP 3393105)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d984) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2816168) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x28160f0, pStack=pStack@entry=0x7f31b395ae27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 9 (Thread 0x7f31b40a9800 (LWP 3393087)):
+#0  0x00007f31b41c2fcb in __GI___select (nfds=0, readfds=0x0, writefds=0x0, exceptfds=0x0, timeout=0x7ffcc9ee9c98) at ../sysdeps/unix/sysv/linux/select.c:41
+#1  0x0000000000640b3f in sphSleepMsec (iMsec=iMsec@entry=500) at /builds/manticoresearch/dev/src/sphinx.cpp:1411
+#2  0x0000000000615c67 in TickHead () at /builds/manticoresearch/dev/src/searchd.cpp:18431
+#3  0x000000000061bd5d in ServiceMain (argc=argc@entry=6, argv=<optimized out>, argv@entry=0x7ffcc9eea888) at /builds/manticoresearch/dev/src/searchd.cpp:19865
+#4  0x000000000061cc16 in mainimpl (argc=6, argv=0x7ffcc9eea888) at /builds/manticoresearch/dev/src/searchd.cpp:19914
+#5  main (argc=0, argv=0x7ffcc9eea888) at /builds/manticoresearch/dev/src/searchd.cpp:19920
+
+Thread 8 (Thread 0x7f31b3a42700 (LWP 3393098)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d984) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2815218) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x28151a0, pStack=pStack@entry=0x7f31b3a41e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 7 (Thread 0x7f31b3a84700 (LWP 3393096)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d984) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d984) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2814db8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2814d40, pStack=pStack@entry=0x7f31b3a83e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d984) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 6 (Thread 0x7f31b3aa5700 (LWP 3393095)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x2814ba8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x2814b30, pStack=pStack@entry=0x7f31b3aa4e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 5 (Thread 0x7f31b3b4a700 (LWP 3393089)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x280ded8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x280de60, pStack=pStack@entry=0x7f31b3b49e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 4 (Thread 0x7f31b3ae7700 (LWP 3393093)):
+#0  0x00007f31b41c2fcb in __GI___select (nfds=0, readfds=0x0, writefds=0x0, exceptfds=0x0, timeout=0x7f31b3ae5a08) at ../sysdeps/unix/sysv/linux/select.c:41
+#1  0x0000000000640b3f in sphSleepMsec (iMsec=iMsec@entry=3000) at /builds/manticoresearch/dev/src/sphinx.cpp:1411
+#2  0x00000000006e31f2 in DumpGdb (iFD=4) at /builds/manticoresearch/dev/src/sphinxutils.cpp:2550
+#3  sphBacktrace (iFD=4, bSafe=<optimized out>) at /builds/manticoresearch/dev/src/sphinxutils.cpp:2864
+#4  0x00000000005c41af in CrashLogger::HandleCrash (sig=6) at /builds/manticoresearch/dev/src/searchd.cpp:1112
+#5  <signal handler called>
+#6  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:50
+#7  0x00007f31b40d0859 in __GI_abort () at abort.c:79
+#8  0x00007f31b413b26e in __libc_message (action=action@entry=do_abort, fmt=fmt@entry=0x7f31b4265298 "%s\n") at ../sysdeps/posix/libc_fatal.c:155
+#9  0x00007f31b41432fc in malloc_printerr (str=str@entry=0x7f31b4267600 "free(): invalid next size (fast)") at malloc.c:5347
+#10 0x00007f31b4144bac in _int_free (av=0x7f3194000020, p=0x7f3194158b90, have_lock=0) at malloc.c:4249
+#11 0x0000000000ab58f7 in std::_Function_base::_Base_manager<Threads::WithCopiedCrashQuery(std::function<void ()>)::$_5>::_M_destroy(std::_Any_data&, std::integral_constant<bool, false>) (__victim=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:191
+#12 std::_Function_base::_Base_manager<Threads::WithCopiedCrashQuery(std::function<void ()>)::$_5>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) (__dest=..., __source=..., __op=<optimized out>) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:215
+#13 0x0000000000ad9c5a in std::_Function_base::~_Function_base (this=0x7f31940049b8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:260
+#14 myinfo::OwnMini(std::function<void ()>)::$_2::~$_2() (this=0x7f31940049b0) at /builds/manticoresearch/dev/src/task_info.cpp:148
+#15 std::_Function_base::_Base_manager<myinfo::OwnMini(std::function<void ()>)::$_2>::_M_destroy(std::_Any_data&, std::integral_constant<bool, false>) (__victim=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:191
+#16 std::_Function_base::_Base_manager<myinfo::OwnMini(std::function<void ()>)::$_2>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) (__dest=..., __source=..., __op=<optimized out>) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:215
+#17 0x0000000000ed82f5 in std::_Function_base::~_Function_base (this=0x7f319410e900) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:260
+#18 Threads::CoRoutine_c::~CoRoutine_c (this=0x7f319410e8f8) at /builds/manticoresearch/dev/src/coroutine.cpp:59
+#19 Threads::Coro::Worker_c::~Worker_c (this=0x7f319410e8d0) at /builds/manticoresearch/dev/src/coroutine.cpp:212
+#20 Threads::Coro::Worker_c::Resume (this=this@entry=0x7f319410e8d0) at /builds/manticoresearch/dev/src/coroutine.cpp:452
+#21 0x0000000000ed800e in Threads::Coro::Worker_c::Run (this=0x7f319410e8d0) at /builds/manticoresearch/dev/src/coroutine.cpp:327
+#22 Threads::Coro::Worker_c::DoComplete (pOwner=<optimized out>, pBase=0x7f319410e8d0) at /builds/manticoresearch/dev/src/coroutine.cpp:268
+#23 0x0000000000ab6e89 in Threads::details::SchedulerOperation_t::Complete (this=0x7f319410e8d0, pOwner=0x280d920) at /builds/manticoresearch/dev/src/threadutils_impl.h:191
+#24 Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:345
+#25 0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#26 0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#27 0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x2) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#28 Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x2) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#29 std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#30 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x280d448) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#31 RuntimeThreadContext_t::Run (this=0x280d3d0, pStack=pStack@entry=0x7f31b3ae6e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#32 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x2) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#33 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#34 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 3 (Thread 0x7f31b3b29700 (LWP 3393090)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x280ce18) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x280cda0, pStack=pStack@entry=0x7f31b3b28e27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 2 (Thread 0x7f31b3b6b700 (LWP 3393088)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x280d980) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x280d928, cond=0x280d958) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x280d958, mutex=0x280d928) at pthread_cond_wait.c:647
+#3  0x0000000000ab6dd1 in sph::Event_c::Wait<CSphScopedLock<CSphMutex> > (this=0x280d958, dLock=...) at /builds/manticoresearch/dev/src/event.h:240
+#4  Threads::Service_t::do_run_one (this=this@entry=0x280d920, dLock=..., this_thread=...) at /builds/manticoresearch/dev/src/threadutils.cpp:331
+#5  0x0000000000ab6c8e in Threads::Service_t::run (this=this@entry=0x280d920) at /builds/manticoresearch/dev/src/threadutils.cpp:312
+#6  0x0000000000ab6a75 in Threads::ThreadPool_c::loop (this=0x280d910, iChild=<optimized out>) at /builds/manticoresearch/dev/src/threadutils.cpp:734
+#7  0x0000000000ab5767 in std::function<void ()>::operator()() const (this=0x280d980) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#8  Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4::operator()() const (this=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1729
+#9  std::_Function_handler<void (), Threads::CreateQ(unsigned long*, std::function<void ()>, bool, char const*, int)::$_4>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#10 0x0000000000ab4c5c in std::function<void ()>::operator()() const (this=0x280dcc8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#11 RuntimeThreadContext_t::Run (this=0x280dc50, pStack=pStack@entry=0x7f31b3b6ae27) at /builds/manticoresearch/dev/src/threadutils.cpp:1575
+#12 0x0000000000ab4d44 in ThreadProcWrapper_fn (pArg=0x280d980) at /builds/manticoresearch/dev/src/threadutils.cpp:1607
+#13 0x00007f31b42a8609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#14 0x00007f31b41cd133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 1 (Thread 0x7f31b399d700 (LWP 3393103)):
+#0  0x0000000000deccd7 in CSphSchemaHelper::CloneMatchSpecial (this=0x7f315017ab60, tDst=..., rhs=..., dSpecials=...) at /builds/manticoresearch/dev/src/schema/helper.cpp:136
+#1  0x000000000076d210 in MatchCloner_t::CloneKeepingAggrs (this=this@entry=0x7f315007ddb8, tDst=..., tSrc=...) at /builds/manticoresearch/dev/src/sphinxsort.cpp:2155
+#2  0x00000000007c93c2 in CSphKBufferGroupSorter<MatchGeneric2_fn, false, false, false>::PushIntoExistingGroup (this=<optimized out>, tGroup=..., tEntry=..., bGrouped=true, pAttr=0x0, uGroupKey=<optimized out>) at /builds/manticoresearch/dev/src/sphinxsort.cpp:2817
+#3  CSphKBufferGroupSorter<MatchGeneric2_fn, false, false, false>::PushEx<true> (this=<optimized out>, tEntry=..., uGroupKey=659, pAttr=0x0) at /builds/manticoresearch/dev/src/sphinxsort.cpp:2851
+#4  MultiValueGroupSorterTraits_T<CSphKBufferGroupSorter<MatchGeneric2_fn, false, false, false> >::PushGrouped (this=<optimized out>, tEntry=..., bNewSet=<optimized out>) at /builds/manticoresearch/dev/src/sphinxsort.cpp:3889
+#5  0x00000000007b6acb in CSphKBufferGroupSorter<MatchGeneric2_fn, false, false, false>::MoveTo (this=0x7f3178002e50, pRhs=0x7f315007dbb0, bCopyMeta=<optimized out>) at /builds/manticoresearch/dev/src/sphinxsort.cpp:2762
+#6  0x0000000000dcfbab in DiskChunkSearcherCtx_t::MergeChild (this=0x7f2cac089300, tChild=...) at /builds/manticoresearch/dev/src/chunksearchctx.cpp:30
+#7  0x00000000006b425e in Threads::ClonableCtx_T<DiskChunkSearcherCtx_t, DiskChunkSearcherCloneCtx_t>::Finalize()::{lambda(DiskChunkSearcherCtx_t)#1}::operator()(DiskChunkSearcherCtx_t) const (tContext=..., this=<optimized out>) at /builds/manticoresearch/dev/src/detail/coroutine_impl.h:118
+#8  Threads::ClonableCtx_T<DiskChunkSearcherCtx_t, DiskChunkSearcherCloneCtx_t>::ForAll<Threads::ClonableCtx_T<DiskChunkSearcherCtx_t, DiskChunkSearcherCloneCtx_t>::Finalize()::{lambda(DiskChunkSearcherCtx_t)#1}>(Threads::ClonableCtx_T<DiskChunkSearcherCtx_t, DiskChunkSearcherCloneCtx_t>::Finalize()::{lambda(DiskChunkSearcherCtx_t)#1}, bool) (this=<optimized out>, fnProcess=..., bIncludeRoot=<optimized out>) at /builds/manticoresearch/dev/src/detail/coroutine_impl.h:111
+#9  0x00000000009a8f1d in Threads::ClonableCtx_T<DiskChunkSearcherCtx_t, DiskChunkSearcherCloneCtx_t>::Finalize (this=0x7f2cac089300) at /builds/manticoresearch/dev/src/detail/coroutine_impl.h:118
+#10 QueryDiskChunks (tQuery=..., tResult=..., tArgs=..., tGuard=..., dSorters=..., pProfiler=0x0, bGotLocalDF=<optimized out>, pLocalDocs=0x0, iTotalDocs=7726959, tSSTransform=..., tmMaxTimer=0, szIndexName=<optimized out>) at /builds/manticoresearch/dev/src/sphinxrt.cpp:7337
+#11 RtIndex_c::MultiQuery (this=<optimized out>, tResult=..., tQuery=..., dAllSorters=..., tArgs=...) at /builds/manticoresearch/dev/src/sphinxrt.cpp:7829
+#12 0x00000000006b0a62 in CSphIndexStub::MultiQueryEx (this=0x7f3066f301e0, iQueries=<optimized out>, pQueries=<optimized out>, pResults=<optimized out>, ppSorters=<optimized out>, tArgs=...) at /builds/manticoresearch/dev/src/sphinx.h:1297
+#13 0x00000000006212c8 in SearchHandler_c::RunLocalSearches()::$_7::operator()() const (this=<optimized out>) at /builds/manticoresearch/dev/src/searchd.cpp:6078
+#14 std::_Function_handler<void (), SearchHandler_c::RunLocalSearches()::$_7>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#15 0x0000000000ad9dd2 in std::function<void ()>::operator()() const (this=0x7f31500081f8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#16 myinfo::OwnMiniNoCount(std::function<void ()>)::$_3::operator()() const (this=0x7f31500081f0) at /builds/manticoresearch/dev/src/task_info.cpp:161
+#17 std::_Function_handler<void (), myinfo::OwnMiniNoCount(std::function<void ()>)::$_3>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#18 0x0000000000ed576c in std::function<void ()>::operator()() const (this=0x7f2cac08ab90) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#19 Threads::Coro::ExecuteN(int, std::function<void ()>&&) (iConcurrency=iConcurrency@entry=1, fnWorker=...) at /builds/manticoresearch/dev/src/coroutine.cpp:773
+#20 0x00000000005da763 in SearchHandler_c::RunLocalSearches (this=this@entry=0x7f2cac08c020) at /builds/manticoresearch/dev/src/searchd.cpp:5994
+#21 0x00000000005db582 in SearchHandler_c::RunSubset (this=this@entry=0x7f2cac08c020, iStart=iStart@entry=0, iEnd=iEnd@entry=1) at /builds/manticoresearch/dev/src/searchd.cpp:6983
+#22 0x00000000005d83e3 in SearchHandler_c::RunQueries (this=this@entry=0x7f2cac08c020) at /builds/manticoresearch/dev/src/searchd.cpp:5496
+#23 0x00000000005fd2d5 in HandleMysqlSelect (dRows=..., tHandler=...) at /builds/manticoresearch/dev/src/searchd.cpp:12733
+#24 0x000000000060a74d in ClientSession_c::Execute (this=0x7f2cac08dd68, sQuery=..., tOut=...) at /builds/manticoresearch/dev/src/searchd.cpp:16063
+#25 0x000000000061085f in session::Execute (sQuery={...}, tOut=...) at /builds/manticoresearch/dev/src/searchd.cpp:16447
+#26 0x000000000056ba2f in HttpRawSqlHandler_c::Process (this=0x7f31501976e0) at /builds/manticoresearch/dev/src/searchdhttp.cpp:1399
+#27 0x0000000000565db9 in ProcessHttpQuery (eEndpoint=<optimized out>, tSource=..., tOptions=..., dResult=..., bNeedHttpResponse=true, eRequestType=<optimized out>, sInvalidEndpoint=...) at /builds/manticoresearch/dev/src/searchdhttp.cpp:1985
+#28 0x00000000005660f2 in HttpRequestParser_c::ProcessClientHttp (this=<optimized out>, tIn=..., dResult=...) at /builds/manticoresearch/dev/src/searchdhttp.cpp:2032
+#29 0x00000000005b1560 in HttpServe (pBuf=...) at /builds/manticoresearch/dev/src/netreceive_http.cpp:139
+#30 0x00000000005aee98 in MultiServe (pBuf=std::unique_ptr<class AsyncNetBuffer_c> = {...}, tConn={...}, eProto=Proto_e::SPHINX) at /builds/manticoresearch/dev/src/net_action_accept.cpp:94
+#31 0x00000000005af985 in NetActionAccept_c::Impl_c::ProcessAccept(unsigned int, CSphNetLoop*)::$_3::operator()() (this=0x7f2cac0467e0) at /builds/manticoresearch/dev/src/net_action_accept.cpp:244
+#32 std::_Function_handler<void (), NetActionAccept_c::Impl_c::ProcessAccept(unsigned int, CSphNetLoop*)::$_3>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+#33 0x0000000000ed848c in std::function<void ()>::operator()() const (this=0x7f2cac046a30) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+#34 Threads::CoRoutine_c::WorkerLowest (this=0x7f2cac046a28, tCtx=<optimized out>) at /builds/manticoresearch/dev/src/coroutine.cpp:85
+#35 Threads::CoRoutine_c::CreateContext(std::function<void ()>, VecTraits_T<unsigned char>)::{lambda(boost::context::detail::transfer_t)#1}::operator()(boost::context::detail::transfer_t) const (pT=..., this=<optimized out>) at /builds/manticoresearch/dev/src/coroutine.cpp:118
+#36 Threads::CoRoutine_c::CreateContext(std::function<void ()>, VecTraits_T<unsigned char>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) (pT=...) at /builds/manticoresearch/dev/src/coroutine.cpp:117
+#37 0x0000000000ef5eff in make_fcontext ()
+#38 0x0000000000000000 in ?? ()
+#0  0x0000000000deccd7 in CSphSchemaHelper::CloneMatchSpecial (this=0x7f315017ab60, tDst=..., rhs=..., dSpecials=...) at /builds/manticoresearch/dev/src/schema/helper.cpp:136
+        i = <optimized out>
+        __range1 = @0x7f315017ab68: {<VecTraits_T<int>> = {m_pData = 0x7f31500008d0, m_iCount = 0}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+        __begin1 = 0x7f3194000958
+        __end1 = 0x7f31940008cc
+#1  0x000000000076d210 in MatchCloner_t::CloneKeepingAggrs (this=this@entry=0x7f315007ddb8, tDst=..., tSrc=...) at /builds/manticoresearch/dev/src/sphinxsort.cpp:2155
+No locals.
+#2  0x00000000007c93c2 in CSphKBufferGroupSorter<MatchGeneric2_fn, false, false, false>::PushIntoExistingGroup (this=<optimized out>, tGroup=..., tEntry=..., bGrouped=true, pAttr=0x0, uGroupKey=<optimized out>) at /builds/manticoresearch/dev/src/sphinxsort.cpp:2817
+        tLocCount = <optimized out>
+#3  CSphKBufferGroupSorter<MatchGeneric2_fn, false, false, false>::PushEx<true> (this=<optimized out>, tEntry=..., uGroupKey=659, pAttr=0x0) at /builds/manticoresearch/dev/src/sphinxsort.cpp:2851
+        pMatch = 0x7f311406d4b8
+        tLocCount = <optimized out>
+        tNew = <optimized out>
+        ppMatch = <optimized out>
+        pMatch = <optimized out>
+#4  MultiValueGroupSorterTraits_T<CSphKBufferGroupSorter<MatchGeneric2_fn, false, false, false> >::PushGrouped (this=<optimized out>, tEntry=..., bNewSet=<optimized out>) at /builds/manticoresearch/dev/src/sphinxsort.cpp:3889
+No locals.
+#5  0x00000000007b6acb in CSphKBufferGroupSorter<MatchGeneric2_fn, false, false, false>::MoveTo (this=0x7f3178002e50, pRhs=0x7f315007dbb0, bCopyMeta=<optimized out>) at /builds/manticoresearch/dev/src/sphinxsort.cpp:2762
+        iMatch = <optimized out>
+        __range2 = @0x7f3178002fa0: {<VecTraits_T<int>> = {m_pData = 0x7f313c0b91c0, m_iCount = 154}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <sph::TightRelimit> = {<sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, static GROW = 1.20000005, static SANE_SIZE = 1789569634, static SLOW_GROW_TRESHOLD = 1024}, m_iLimit = 4394}
+        __begin0 = 0x7f313c0b924c
+        __end0 = 0x7f313c0b9428
+        dRhs = @0x7f315007dbb0: {<KBufferGroupSorter_T<MatchGeneric2_fn, false, false>> = {<CSphMatchQueueTraits> = {<MatchSorter_c> = {<ISphMatchSorter> = {_vptr$ISphMatchSorter = 0x271458 <vtable for MultiValueGroupSorter_T<MatchGeneric2_fn, false, false, false>+16>}, m_pSchema = {m_tState = {m_pPtr = 0x7f311400bd70}}, m_tState = {static MAX_ATTRS = 5, m_eKeypart = {SPH_KEYPART_WEIGHT, SPH_KEYPART_ROWID, SPH_KEYPART_ROWID, SPH_KEYPART_ROWID, SPH_KEYPART_ROWID}, m_tLocator = {{m_iBitOffset = -1, m_iBitCount = -1, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, {m_iBitOffset = -1, m_iBitCount = -1, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, {m_iBitOffset = -1, m_iBitCount = -1, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, {m_iBitOffset = -1, m_iBitCount = -1, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, {m_iBitOffset = -1, m_iBitCount = -1, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}}, m_dAttrs = {-1, -1, -1, -1, -1}, m_uAttrDesc = 1, m_iNow = 1659368279, m_fnStrCmp = 0xaf3a70 <CollateLibcCI(std::pair<unsigned char const*, int>, std::pair<unsigned char const*, int>, bool)>, m_dRemapped = {static SIZEBITS = 32, static STATICSIZE = 4, static MASK = 31, static SHIFT = 5, m_pData = 0x7f315007dc78, m_dStatic = {0, 0, 0, 0}, m_iElements = 5}}, m_dTransformed = {<VecTraits_T<CSphString>> = {m_pData = 0x7f3150172518, m_iCount = 3}, <sph::DefaultStorage_T<CSphString>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_pColumnar = 0x0, m_bRandomize = false, m_iTotal = 181, m_iMatchCapacity = 4000, m_tJustPushed = {m_tID = 4294967295, m_iTag = 0}, m_dJustPopped = {<VecTraits_T<RowTagged_t>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<RowTagged_t>> = {static is_constructed = true, static is_owned = false}, <sph::TightRelimit> = {<sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, static GROW = 1.20000005, static SANE_SIZE = 1789569634, static SLOW_GROW_TRESHOLD = 1024}, m_iLimit = 0}}, <ISphNoncopyable> = {<No data fields>}, m_iSize = 4000, m_dData = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<CSphMatch>> = {m_pData = 0x7f311406c3d8, m_iCount = 4000}, <sph::DefaultStorage_T<CSphMatch>> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_dIData = {<VecTraits_T<int>> = {m_pData = 0x7f31140a8080, m_iCount = 181}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <sph::TightRelimit> = {<sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, static GROW = 1.20000005, static SANE_SIZE = 1789569634, static SLOW_GROW_TRESHOLD = 1024}, m_iLimit = 4394}}, <BaseGroupSorter_c> = {<BlobPool_c> = {_vptr$BlobPool_c = 0x271560 <vtable for MultiValueGroupSorter_T<MatchGeneric2_fn, false, false, false>+280>, m_pBlobPool = 0x7f2cbd3ba000 <error: Cannot access memory at address 0x7f2cbd3ba000>}, <CSphGroupSorterSettings> = {m_tLocGroupby = {m_iBitOffset = 0, m_iBitCount = 32, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, m_tLocCount = {m_iBitOffset = 32, m_iBitCount = 64, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, m_tLocDistinct = {m_iBitOffset = -1, m_iBitCount = -1, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, m_tLocGroupbyStr = {m_iBitOffset = -1, m_iBitCount = -1, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, m_bDistinct = false, m_pGrouper = {m_pPtr = 0x7f3150178ef0}, m_pDistinctFetcher = {m_pPtr = 0x0}, m_bImplicit = false, m_pAggrFilterTrait = {m_tState = {m_pPtr = 0x0}}, m_bJson = false, m_iMaxMatches = 1000}, m_tPregroup = {m_dRowBuf = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<unsigned int>> = {m_pData = 0x7f315007e040, m_iCount = 3}, <sph::DefaultStorage_T<unsigned int>> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_dAttrsGrp = {<VecTraits_T<CSphAttrLocator>> = {m_pData = 0x7f3150182680, m_iCount = 2}, <sph::DefaultStorage_T<CSphAttrLocator>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_dAttrsPtr = {<VecTraits_T<CSphAttrLocator>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<CSphAttrLocator>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_dMyPtrRows = {<VecTraits_T<int>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_dOtherPtrRows = {<VecTraits_T<int>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_pSchema = 0x7f315017ab60, m_bPtrRowsCommited = true}, m_dAggregates = {<VecTraits_T<AggrFunc_i*>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<AggrFunc_i*>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}, m_eGroupBy = SPH_GROUPBY_ATTR, m_iLimit = 1000, m_tUniq = {<sph::Vector_T<SphGroupedValue_t, sph::DefaultCopy_T<SphGroupedValue_t>, sph::DefaultRelimit, sph::DefaultStorage_T<SphGroupedValue_t> >> = {<VecTraits_T<SphGroupedValue_t>> = {m_pData = 0x7f315019a7c0, m_iCount = 0}, <sph::DefaultStorage_T<SphGroupedValue_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 16384}, m_iCountPos = 0, m_bSorted = true}, m_bSortByDistinct = false, m_tGroupSorter = {<CSphMatchComparatorState> = {static MAX_ATTRS = 5, m_eKeypart = {SPH_KEYPART_INT, SPH_KEYPART_INT, SPH_KEYPART_ROWID, SPH_KEYPART_ROWID, SPH_KEYPART_ROWID}, m_tLocator = {{m_iBitOffset = 32, m_iBitCount = 64, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, {m_iBitOffset = 0, m_iBitCount = 32, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, {m_iBitOffset = -1, m_iBitCount = -1, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, {m_iBitOffset = -1, m_iBitCount = -1, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}, {m_iBitOffset = -1, m_iBitCount = -1, m_iBlobAttrId = -1, m_iBlobRowOffset = 1, m_nBlobAttrs = 0, m_bDynamic = true}}, m_dAttrs = {-1, -1, -1, -1, -1}, m_uAttrDesc = 1, m_iNow = 0, m_fnStrCmp = 0xaf3a70 <CollateLibcCI(std::pair<unsigned char const*, int>, std::pair<unsigned char const*, int>, bool)>, m_dRemapped = {static SIZEBITS = 32, static STATICSIZE = 4, static MASK = 31, static SHIFT = 5, m_pData = 0x7f315007df60, m_dStatic = {0, 0, 0, 0}, m_iElements = 5}}, <MatchSortAccessor_t> = {_vptr$MatchSortAccessor_t = 0x270858 <vtable for GroupSorter_fn<MatchGeneric2_fn>+16>, m_tMedian = {<ISphNoncopyable> = {<No data fields>}, m_tRowID = 4294967295, m_pStatic = 0x0, m_pDynamic = 0x0, m_iWeight = 0, m_iTag = 0}}, m_dBase = @0x7f315007dcf0}, m_tSubSorter = {<ISphNoncopyable> = {<No data fields>}, m_dBase = @0x7f315007dcf0, m_tState = @0x7f315007dbc0, m_pComp = 0x7f31500089c0}, m_dAvgs = {<VecTraits_T<AggrFunc_i*>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<AggrFunc_i*>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_bAvgFinal = false, m_dDistictKeys = {<VecTraits_T<long>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<long>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, static GROUPBY_FACTOR = 4}, m_bMatchesFinalized = false, m_iMaxUsed = -1, m_hGroup2Match = {m_iSize = 4096, m_iUsed = 181, m_iMaxUsed = 3481, m_pHash = 0x7f311408b7e0, static LOAD_FACTOR = 0.850000024}, m_bUpdateDistinct = true, m_bMerge = true}
+        bUniqUpdated = <optimized out>
+#6  0x0000000000dcfbab in DiskChunkSearcherCtx_t::MergeChild (this=0x7f2cac089300, tChild=...) at /builds/manticoresearch/dev/src/chunksearchctx.cpp:30
+        i = 0
+        _bound = <optimized out>
+        tChildRes = <optimized out>
+#7  0x00000000006b425e in Threads::ClonableCtx_T<DiskChunkSearcherCtx_t, DiskChunkSearcherCloneCtx_t>::Finalize()::{lambda(DiskChunkSearcherCtx_t)#1}::operator()(DiskChunkSearcherCtx_t) const (tContext=..., this=<optimized out>) at /builds/manticoresearch/dev/src/detail/coroutine_impl.h:118
+No locals.
+#8  Threads::ClonableCtx_T<DiskChunkSearcherCtx_t, DiskChunkSearcherCloneCtx_t>::ForAll<Threads::ClonableCtx_T<DiskChunkSearcherCtx_t, DiskChunkSearcherCloneCtx_t>::Finalize()::{lambda(DiskChunkSearcherCtx_t)#1}>(Threads::ClonableCtx_T<DiskChunkSearcherCtx_t, DiskChunkSearcherCloneCtx_t>::Finalize()::{lambda(DiskChunkSearcherCtx_t)#1}, bool) (this=<optimized out>, fnProcess=..., bIncludeRoot=<optimized out>) at /builds/manticoresearch/dev/src/detail/coroutine_impl.h:111
+        tCtx = {m_dSorters = @0x7f3194000958, m_tMeta = @0xffffffff9406f060}
+        i = <optimized out>
+        __begin2 = 0x7f316401e2e0
+        __end2 = 0x7f316401e318
+        __range2 = <optimized out>
+        dOrder = <optimized out>
+        iWorkThreads = <optimized out>
+#9  0x00000000009a8f1d in Threads::ClonableCtx_T<DiskChunkSearcherCtx_t, DiskChunkSearcherCloneCtx_t>::Finalize (this=0x7f2cac089300) at /builds/manticoresearch/dev/src/detail/coroutine_impl.h:118
+No locals.
+#10 QueryDiskChunks (tQuery=..., tResult=..., tArgs=..., tGuard=..., dSorters=..., pProfiler=0x0, bGotLocalDF=<optimized out>, pLocalDocs=0x0, iTotalDocs=7726959, tSSTransform=..., tmMaxTimer=0, szIndexName=<optimized out>) at /builds/manticoresearch/dev/src/sphinxrt.cpp:7337
+        tClonableCtx = {m_dParentContext = {m_dSorters = @0x7f2cac089050, m_tMeta = @0x7f31500a7038}, m_dChildrenContexts = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<Optional_T<DiskChunkSearcherCloneCtx_t> >> = {m_pData = 0x7f315011a470, m_iCount = 31}, <sph::DefaultStorage_T<Optional_T<DiskChunkSearcherCloneCtx_t> >> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_dJobIds = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<int>> = {m_pData = 0x7f31500032b0, m_iCount = 31}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_iTasks = {<std::__atomic_base<int>> = {static _S_alignment = 4, _M_i = 8}, <No data fields>}, m_bDisabled = false}
+        dSplits = {<VecTraits_T<int>> = {m_pData = 0x7f3150028f00, m_iCount = 8}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}
+        bInterrupt = {_M_base = {static _S_alignment = 1, _M_i = false}}
+        iCurChunk = {<std::__atomic_base<int>> = {static _S_alignment = 4, _M_i = -9}, <No data fields>}
+        iJobs = <optimized out>
+        iConcurrency = <optimized out>
+        iStart = <optimized out>
+        dMetrics = <optimized out>
+        iTotalMetric = <optimized out>
+        iSingleSplit = <optimized out>
+        iLeft = <optimized out>
+        i = <optimized out>
+        i = <optimized out>
+#11 RtIndex_c::MultiQuery (this=<optimized out>, tResult=..., tQuery=..., dAllSorters=..., tArgs=...) at /builds/manticoresearch/dev/src/sphinxrt.cpp:7829
+        dSorters = {<VecTraits_T<ISphMatchSorter*>> = {m_pData = 0x7f3150178f30, m_iCount = 1}, <sph::DefaultStorage_T<ISphMatchSorter*>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}
+        tProf = {m_pProfile = 0x0, m_eOldState = SPH_QSTATE_UNKNOWN}
+        tRtData = {m_pChunks = {m_pPtr = 0x0}, m_pSegs = {m_pPtr = 0x0}}
+        tGuard = {m_tSegmentsAndChunks = {m_pChunks = {m_pPtr = 0x7f2fe08d2160}, m_pSegs = {m_pPtr = 0x7f3066f30b30}}, m_dDiskChunks = @0x7f2fe08d2160, m_dRamSegs = @0x7f3066f30b30}
+        pDict = {m_pPtr = 0x7f3150170e70}
+        hLocalDocs = {m_dHash = {0x0 <repeats 256 times>}, m_pFirstByOrder = 0x0, m_pLastByOrder = 0x0, m_iLength = 0}
+        dTimerGuard = {<EnqueuedTimeout_t> = {m_iTimeoutTimeUS = -1, m_iTimeoutIdx = -1}, _vptr$MiniTimer_c = 0x2b8cb8 <vtable for MiniTimer_c+16>, m_tLink = {<boost::intrusive::generic_hook<boost::intrusive::CircularSListAlgorithms, boost::intrusive::slist_node_traits<void*>, boost::intrusive::member_tag, boost::intrusive::safe_link, boost::intrusive::NoBaseHookId>> = {<boost::intrusive::slist_node<void*>> = {next_ = 0x0}, <boost::intrusive::hook_tags_definer<boost::intrusive::generic_hook<boost::intrusive::CircularSListAlgorithms, boost::intrusive::slist_node_traits<void*>, boost::intrusive::member_tag, boost::intrusive::safe_link, boost::intrusive::NoBaseHookId>, 0>> = {<No data fields>}, <No data fields>}, <No data fields>}, m_szName = 0x20db4b "mini-timer"}
+        tSSTransform = {m_dDiskChunkData = {<VecTraits_T<SorterSchemaTransform_c::DiskChunkData_t>> = {m_pData = 0x7f31500a0c30, m_iCount = 8}, <sph::DefaultStorage_T<SorterSchemaTransform_c::DiskChunkData_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_bFinalizeSorters = true}
+        dSorterSchemas = {<VecTraits_T<ISphSchema const*>> = {m_pData = 0x75e76f <CSphMatchQueue<MatchGeneric5_fn, false>::PushT<CSphMatch const&, CSphMatchQueue<MatchGeneric5_fn, false>::Push(VecTraits_T<CSphMatch const> const&)::{lambda(CSphMatch&, CSphMatch const&)#1}>(CSphMatch const&, CSphMatchQueue<MatchGeneric5_fn, false>::Push(VecTraits_T<CSphMatch const> const&)::{lambda(CSphMatch&, CSphMatch const&)#1}&&)+3215>, m_iCount = 0}, <sph::DefaultStorage_T<ISphSchema const*>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+        tCtx = {<ISphNoncopyable> = {<No data fields>}, m_tQuery = @0x7f2cac089050, m_iWeights = 1342861368, m_dWeights = {32561, 1343333488, 32561, 31, 0, 1342190256, 32561, 31, 0, 8, 0 <repeats 246 times>}, m_uPackedFactorFlags = 0, m_pFilter = std::unique_ptr<ISphFilter> = {get() = 0x0}, m_pWeightFilter = std::unique_ptr<ISphFilter> = {get() = 0x0}, m_bSkipQCache = false, m_dCalcFilter = {<VecTraits_T<CSphQueryContext::CalcItem_t>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<CSphQueryContext::CalcItem_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_dCalcSort = {<VecTraits_T<CSphQueryContext::CalcItem_t>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<CSphQueryContext::CalcItem_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_dCalcFinal = {<VecTraits_T<CSphQueryContext::CalcItem_t>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<CSphQueryContext::CalcItem_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_dCalcFilterPtrAttrs = {<VecTraits_T<int>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_dCalcSortPtrAttrs = {<VecTraits_T<int>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_pIndexData = 0x0, m_pProfile = 0x0, m_pLocalDocs = 0x0, m_iTotalDocs = 0, m_dUserVals = {<VecTraits_T<SharedPtr_T<sph::Vector_T<long, sph::DefaultCopy_T<long>, sph::DefaultRelimit, sph::DefaultStorage_T<long> >, Deleter_T<sph::Vector_T<long, sph::DefaultCopy_T<long>, sph::DefaultRelimit, sph::DefaultStorage_T<long> >*, ETYPE::SINGLE>, ISphRefcountedMT> >> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<SharedPtr_T<sph::Vector_T<long, sph::DefaultCopy_T<long>, sph::DefaultRelimit, sph::DefaultStorage_T<long> >, Deleter_T<sph::Vector_T<long, sph::DefaultCopy_T<long>, sph::DefaultRelimit, sph::DefaultStorage_T<long> >*, ETYPE::SINGLE>, ISphRefcountedMT> >> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}
+        tTermSetup = {<ISphQwordSetup> = {<ISphNoncopyable> = {<No data fields>}, _vptr$ISphQwordSetup = 0x7f3150028310, m_pIndex = 0x1, m_iDynamicRowitems = 10198928, m_iMaxTimer = 10196944, m_pWarning = 0x0, m_pCtx = 0x0, m_pNodeCache = 0x0, m_pZoneChecker = 0x0, m_pStats = 0x0, m_bSetQposMask = false, m_pDict = {m_pPtr = 0x0}, m_bHasWideFields = false}, m_tGuard = @0x0, m_iSeg = 0}
+        tQueryStats = {m_pNanoBudget = 0x0, m_iFetchedDocs = 0, m_iFetchedHits = 0, m_iSkips = 0}
+        dFiltered = {<VecTraits_T<unsigned char>> = {m_pData = 0xfffffff7 <error: Cannot access memory at address 0xfffffff7>, m_iCount = 0}, <sph::DefaultStorage_T<unsigned char>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+        tParsed = {<ISphNoncopyable> = {<No data fields>}, m_sParseError = {m_sValue = 0x0, static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}, m_sParseWarning = {m_sValue = 0x0, static EMPTY = <same as static member of an already seen type>, static SAFETY_GAP = 4}, m_dZones = {<VecTraits_T<CSphString>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<CSphString>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_pRoot = 0x0, m_bNeedSZlist = false, m_bSingleWord = false, m_bEmpty = false}
+        tPayloads = {m_dPayloads = {<VecTraits_T<ISphSubstringPayload*>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<ISphSubstringPayload*>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}
+        tMeta = @0x7f31500a7038: {_vptr$CSphQueryResultMeta = 0x25b1b8 <vtable for AggrResult_t+16>, m_iQueryTime = 0, m_iRealQueryTime = 0, m_iCpuTime = 0, m_iMultiplier = 1, m_hWordStats = {m_dHash = {0x0 <repeats 78 times>, 0x7f3194105a30, 0x0 <repeats 163 times>, 0x7f3194002500, 0x0 <repeats 13 times>}, m_pFirstByOrder = 0x7f3194002500, m_pLastByOrder = 0x7f3194105a30, m_iLength = 2}, m_iMatches = 0, m_iTotalMatches = 0, m_bTotalMatchesApprox = false, m_tIOStats = {m_iReadTime = 0, m_iReadOps = 0, m_iReadBytes = 0, m_iWriteTime = 0, m_iWriteOps = 0, m_iWriteBytes = 0, m_bEnabled = false, m_pPrev = 0x0}, m_iAgentCpuTime = 0, m_tAgentIOStats = {m_iReadTime = 0, m_iReadOps = 0, m_iReadBytes = 0, m_iWriteTime = 0, m_iWriteOps = 0, m_iWriteBytes = 0, m_bEnabled = false, m_pPrev = 0x0}, m_iPredictedTime = 0, m_iAgentPredictedTime = 0, m_iAgentFetchedDocs = 0, m_iAgentFetchedHits = 0, m_iAgentFetchedSkips = 0, m_tStats = {m_pNanoBudget = 0x0, m_iFetchedDocs = 0, m_iFetchedHits = 0, m_iSkips = 0}, m_bHasPrediction = false, m_sError = {m_sValue = 0x0, static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}, m_sWarning = {m_sValue = 0x0, static EMPTY = <same as static member of an already seen type>, static SAFETY_GAP = 4}, m_pProfile = 0x0, m_dUsedIterators = {<VecTraits_T<IteratorDesc_t>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<IteratorDesc_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}
+        tmQueryStart = <optimized out>
+        tmCpuQueryStart = <optimized out>
+        pProfiler = <optimized out>
+        dDiskChunks = <optimized out>
+        pLocalDocs = 0x0
+        iTotalDocs = 7726959
+        bGotLocalDF = <optimized out>
+        tmMaxTimer = 0
+        iMaxSchemaIndex = <optimized out>
+        tMaxSorterSchema = <optimized out>
+        iNanoBudget = <optimized out>
+        sModifiedQuery = <optimized out>
+        pQueryParser = <optimized out>
+        iStackNeed = <optimized out>
+        bFullscan = <optimized out>
+        iMatchPoolSize = <optimized out>
+        bResult = <optimized out>
+#12 0x00000000006b0a62 in CSphIndexStub::MultiQueryEx (this=0x7f3066f301e0, iQueries=<optimized out>, pQueries=<optimized out>, pResults=<optimized out>, ppSorters=<optimized out>, tArgs=...) at /builds/manticoresearch/dev/src/sphinx.h:1297
+        i = <optimized out>
+        bResult = false
+#13 0x00000000006212c8 in SearchHandler_c::RunLocalSearches()::$_7::operator()() const (this=<optimized out>) at /builds/manticoresearch/dev/src/searchd.cpp:6078
+        pIndex = {<ISphNoncopyable> = {<No data fields>}, m_pServedKeeper = {m_pPtr = 0x7f3066d27260}, m_tRunningIndex = @0x7f30664195d0}
+        tQueueRes = {<ISphNoncopyable> = {<No data fields>}, m_uPackedFactorFlags = 0, m_bZonespanlist = false, m_bAlowMulti = false}
+        tMultiArgs = {<ISphNoncopyable> = {<No data fields>}, m_iIndexWeight = 1, m_iTag = 0, m_uPackedFactorFlags = 0, m_bLocalDF = false, m_pLocalDocs = 0x0, m_iTotalDocs = 0, m_bModifySorterSchemas = true, m_bFinalizeSorters = true, m_iSplit = 32}
+        bCanBeCloned = <optimized out>
+        pServed = {m_pPtr = 0x7f3066d27260}
+        bResult = false
+        iCpuTime = 0
+        pExtra = <optimized out>
+        dNAggrResults = <optimized out>
+        dLocal = <optimized out>
+        tMqMeta = {_vptr$CSphQueryResultMeta = 0x256ff8 <vtable for CSphQueryResultMeta+16>, m_iQueryTime = 0, m_iRealQueryTime = 0, m_iCpuTime = 0, m_iMultiplier = 1, m_hWordStats = {m_dHash = {0x0 <repeats 256 times>}, m_pFirstByOrder = 0x0, m_pLastByOrder = 0x0, m_iLength = 0}, m_iMatches = 0, m_iTotalMatches = 0, m_bTotalMatchesApprox = false, m_tIOStats = {m_iReadTime = 0, m_iReadOps = 0, m_iReadBytes = 0, m_iWriteTime = 0, m_iWriteOps = 0, m_iWriteBytes = 0, m_bEnabled = false, m_pPrev = 0x0}, m_iAgentCpuTime = 0, m_tAgentIOStats = {m_iReadTime = 0, m_iReadOps = 0, m_iReadBytes = 0, m_iWriteTime = 0, m_iWriteOps = 0, m_iWriteBytes = 0, m_bEnabled = false, m_pPrev = 0x0}, m_iPredictedTime = 0, m_iAgentPredictedTime = 0, m_iAgentFetchedDocs = 0, m_iAgentFetchedHits = 0, m_iAgentFetchedSkips = 0, m_tStats = {m_pNanoBudget = 0x0, m_iFetchedDocs = 0, m_iFetchedHits = 0, m_iSkips = 0}, m_bHasPrediction = false, m_sError = {m_sValue = 0x0, static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}, m_sWarning = {m_sValue = 0x0, static EMPTY = <same as static member of an already seen type>, static SAFETY_GAP = 4}, m_pProfile = 0x0, m_dUsedIterators = {<VecTraits_T<IteratorDesc_t>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<IteratorDesc_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}
+        tMqRes = {m_pMeta = 0x7f2cac08a1e0, m_pBlobPool = 0x0, m_pDocstore = 0x0, m_pColumnar = 0x0}
+        dNResults = <optimized out>
+        dNFailuresSet = <optimized out>
+        sLocal = <optimized out>
+        szParent = <optimized out>
+        iOrderTag = <optimized out>
+        iIndexWeight = <optimized out>
+        dSorters = {<VecTraits_T<ISphMatchSorter*>> = {m_pData = 0x7f315009d4d0, m_iCount = 1}, <sph::DefaultStorage_T<ISphMatchSorter*>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}
+        tThrottler = {static tmThrotleTimeQuantumMs = 100, m_tmNextThrottleTimestamp = 1659368279517630, m_tmThrottlePeriodMs = 100, m_dTimerGuard = {<EnqueuedTimeout_t> = {m_iTimeoutTimeUS = 1659368279517630, m_iTimeoutIdx = -1}, _vptr$MiniTimer_c = 0x2b8cb8 <vtable for MiniTimer_c+16>, m_tLink = {<boost::intrusive::generic_hook<boost::intrusive::CircularSListAlgorithms, boost::intrusive::slist_node_traits<void*>, boost::intrusive::member_tag, boost::intrusive::safe_link, boost::intrusive::NoBaseHookId>> = {<boost::intrusive::slist_node<void*>> = {next_ = 0x0}, <boost::intrusive::hook_tags_definer<boost::intrusive::generic_hook<boost::intrusive::CircularSListAlgorithms, boost::intrusive::slist_node_traits<void*>, boost::intrusive::member_tag, boost::intrusive::safe_link, boost::intrusive::NoBaseHookId>, 0>> = {<No data fields>}, <No data fields>}, <No data fields>}, m_szName = 0x20db4b "mini-timer"}, m_bSameThread = true}
+        iJob = <optimized out>
+        tCtx = <optimized out>
+        pServed = <optimized out>
+        tMqMeta = <optimized out>
+        tMqRes = <optimized out>
+        iCpuTime = <optimized out>
+        pExtra = <optimized out>
+        dNResults = <optimized out>
+        dNAggrResults = <optimized out>
+        dNFailuresSet = <optimized out>
+        sLocal = <optimized out>
+        dLocal = <optimized out>
+        szParent = <optimized out>
+        iOrderTag = <optimized out>
+        iIndexWeight = <optimized out>
+        bResult = <optimized out>
+        iLocal = <optimized out>
+        pIndex = <optimized out>
+        tQueueRes = <optimized out>
+        tMultiArgs = <optimized out>
+        bCanBeCloned = <optimized out>
+        i = <optimized out>
+        iQTimeForStats = <optimized out>
+        tNRes = <optimized out>
+        pSorter = <optimized out>
+        pDocstore = <optimized out>
+        i = <optimized out>
+        __range2 = <optimized out>
+        __begin2 = <optimized out>
+        __end2 = <optimized out>
+        pSorter = <optimized out>
+#14 std::_Function_handler<void (), SearchHandler_c::RunLocalSearches()::$_7>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+No locals.
+#15 0x0000000000ad9dd2 in std::function<void ()>::operator()() const (this=0x7f31500081f8) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+No locals.
+#16 myinfo::OwnMiniNoCount(std::function<void ()>)::$_3::operator()() const (this=0x7f31500081f0) at /builds/manticoresearch/dev/src/task_info.cpp:161
+        _ = {m_pInfo = {<ISphNoncopyable> = {<No data fields>}, m_pPtr = {_M_b = {_M_p = 0x7f3150019900}}}}
+#17 std::_Function_handler<void (), myinfo::OwnMiniNoCount(std::function<void ()>)::$_3>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+No locals.
+#18 0x0000000000ed576c in std::function<void ()>::operator()() const (this=0x7f2cac08ab90) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+No locals.
+#19 Threads::Coro::ExecuteN(int, std::function<void ()>&&) (iConcurrency=iConcurrency@entry=1, fnWorker=...) at /builds/manticoresearch/dev/src/coroutine.cpp:773
+        dWaiter = {m_tState = {m_pPtr = 0x7f30664195e0}}
+#20 0x00000000005da763 in SearchHandler_c::RunLocalSearches (this=this@entry=0x7f2cac08c020) at /builds/manticoresearch/dev/src/searchd.cpp:5994
+        dLocalIndexes = {<VecTraits_T<CSphRefcountedPtr<ServedIndex_c const> >> = {m_pData = 0x7f3150010118, m_iCount = 1}, <sph::DefaultStorage_T<CSphRefcountedPtr<ServedIndex_c const> >> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}
+        tGlobalSorters = {m_dQueries = @0x7f2cac08d188, m_dSorters = {<VecTraits_T<sph::Vector_T<GlobalSorters_c::SorterData_t, sph::DefaultCopy_T<GlobalSorters_c::SorterData_t>, sph::DefaultRelimit, sph::DefaultStorage_T<GlobalSorters_c::SorterData_t> > >> = {m_pData = 0x7f31500037f8, m_iCount = 1}, <sph::DefaultStorage_T<sph::Vector_T<GlobalSorters_c::SorterData_t, sph::DefaultCopy_T<GlobalSorters_c::SorterData_t>, sph::DefaultRelimit, sph::DefaultStorage_T<GlobalSorters_c::SorterData_t> > >> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_bNeedGlobalSorters = false}
+        dSplits = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<int>> = {m_pData = 0x7f3150009d50, m_iCount = 1}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <No data fields>}
+        dOrder = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<int>> = {m_pData = 0x7f31500198e0, m_iCount = 1}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <No data fields>}
+        dCtx = {m_dParentContext = {m_tHook = @0x7f2cac08c928, m_pExtra = 0x0, m_dFailuresSet = @0x7f2cac08d1b8, m_dAggrResults = @0x7f2cac08d198, m_dResults = @0x7f2cac08d1a8}, m_dChildrenContexts = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<Optional_T<LocalSearchClone_t> >> = {m_pData = 0x7f3150007070, m_iCount = 31}, <sph::DefaultStorage_T<Optional_T<LocalSearchClone_t> >> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_dJobIds = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<int>> = {m_pData = 0x7f3150009180, m_iCount = 31}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_iTasks = {<std::__atomic_base<int>> = {static _S_alignment = 4, _M_i = 1}, <No data fields>}, m_bDisabled = false}
+        iTotalSuccesses = {<std::__atomic_base<int>> = {static _S_alignment = 4, _M_i = 0}, <No data fields>}
+        iCurJob = {<std::__atomic_base<int>> = {static _S_alignment = 4, _M_i = 1}, <No data fields>}
+        tmLocal = 1659368279417621
+        iQueries = <optimized out>
+        iNumLocals = 1
+        pMainExtra = <optimized out>
+        iConcurrency = <optimized out>
+        iJobs = 1
+        iTotalSuccessesInt = <optimized out>
+        bSingle = <optimized out>
+#21 0x00000000005db582 in SearchHandler_c::RunSubset (this=this@entry=0x7f2cac08c020, iStart=iStart@entry=0, iEnd=iEnd@entry=1) at /builds/manticoresearch/dev/src/searchd.cpp:6983
+        pTlsQueryInfo = {m_pInfo = {<ISphNoncopyable> = {<No data fields>}, m_pPtr = {_M_b = {_M_p = 0x7f3150198f20}}}}
+        tProf = {m_pProfile = 0x0, m_eOldState = SPH_QSTATE_UNKNOWN}
+        dRemotes = {<ISphNoncopyable> = {<No data fields>}, <sph::Vector_T<AgentConn_t*, sph::DefaultCopy_T<AgentConn_t*>, sph::DefaultRelimit, sph::DefaultStorage_T<AgentConn_t*> >> = {<VecTraits_T<AgentConn_t*>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<AgentConn_t*>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, <No data fields>}
+        dDistrServedByAgent = {<VecTraits_T<DistrServedByAgent_t>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<DistrServedByAgent_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+        tIO = {m_iReadTime = 4294967295, m_iReadOps = 0, m_iReadBytes = 0, m_iWriteTime = 0, m_iWriteOps = 0, m_iWriteBytes = 4294967295, m_bEnabled = false, m_pPrev = 0x0}
+        iQueries = 1
+        pQueryInfo = <optimized out>
+        tmSubset = -1659368279417614
+        tmLocal = -1659368279417621
+        tmCpu = <optimized out>
+        tFirst = <optimized out>
+        iDivideLimits = 1
+        tParser = std::unique_ptr<ReplyParser_i> = {get() = 0x0}
+        tReporter = {m_pPtr = 0x0}
+        tReqBuilder = std::unique_ptr<SearchRequestBuilder_c> = {get() = 0x0}
+#22 0x00000000005d83e3 in SearchHandler_c::RunQueries (this=this@entry=0x7f2cac08c020) at /builds/manticoresearch/dev/src/searchd.cpp:5496
+        iStart = <optimized out>
+#23 0x00000000005fd2d5 in HandleMysqlSelect (dRows=..., tHandler=...) at /builds/manticoresearch/dev/src/searchd.cpp:12733
+        sError = {m_sValue = 0x0, static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}
+        dAgentTimes = {<VecTraits_T<long>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<long>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+#24 0x000000000060a74d in ClientSession_c::Execute (this=0x7f2cac08dd68, sQuery=..., tOut=...) at /builds/manticoresearch/dev/src/searchd.cpp:16063
+        tHandler = {m_dQueries = {<VecTraits_T<CSphQuery>> = {m_pData = 0x7f315009f418, m_iCount = 1}, <sph::DefaultStorage_T<CSphQuery>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_dAggrResults = {<VecTraits_T<AggrResult_t>> = {m_pData = 0x7f31500a7038, m_iCount = 1}, <sph::DefaultStorage_T<AggrResult_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_dQueryIndexStats = {<VecTraits_T<StatsPerQuery_t>> = {m_pData = 0x7f3150190c98, m_iCount = 1}, <sph::DefaultStorage_T<StatsPerQuery_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_dFailuresSet = {<VecTraits_T<SearchFailuresLog_c>> = {m_pData = 0x7f3150171ca8, m_iCount = 1}, <sph::DefaultStorage_T<SearchFailuresLog_c>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_dAgentTimes = {<VecTraits_T<sph::Vector_T<long, sph::DefaultCopy_T<long>, sph::DefaultRelimit, sph::DefaultStorage_T<long> > >> = {m_pData = 0x7f315000d4b8, m_iCount = 1}, <sph::DefaultStorage_T<sph::Vector_T<long, sph::DefaultCopy_T<long>, sph::DefaultRelimit, sph::DefaultStorage_T<long> > >> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_dAcquired = {<ISphNoncopyable> = {<No data fields>}, m_hIndexes = {m_dHash = {0x0 <repeats 197 times>, 0x7f3150004410, 0x0 <repeats 58 times>}, m_pFirstByOrder = 0x7f3150004410, m_pLastByOrder = 0x7f3150004410, m_iLength = 1}}, m_dTables = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<ISphTableFunc*>> = {m_pData = 0x7f315000b440, m_iCount = 1}, <sph::DefaultStorage_T<ISphTableFunc*>> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_pStmt = 0x7f3150049e98, m_bMultiQueue = false, m_bFacetQueue = false, m_dLocal = {<VecTraits_T<LocalIndex_t>> = {m_pData = 0x7f31500197d8, m_iCount = 1}, <sph::DefaultStorage_T<LocalIndex_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_dExtraSchema = {<VecTraits_T<CSphString>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<CSphString>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_pCollectedDocs = 0x0, m_pProfile = 0x0, m_eQueryType = QUERY_SQL, m_pQueryParser = std::unique_ptr<QueryParser_i> = {get() = 0x7f31500056e0}, m_bNeedDocIDs = false, m_tHook = {<ISphExprHook> = {_vptr$ISphExprHook = 0x2b79e8 <vtable for ExprHook_c+16>}, m_pIndex = 0x7f3066f301e0, m_pProfiler = 0x0, m_eQueryType = QUERY_SQL}, m_hLocalDocs = {m_dHash = {0x0 <repeats 256 times>}, m_pFirstByOrder = 0x0, m_pLastByOrder = 0x0, m_iLength = 0}, m_iTotalDocs = 0, m_bGotLocalDF = false, m_bMaster = true, m_bFederatedUser = false, m_bQueryLog = true, m_dResults = {<VecTraits_T<CSphQueryResult>> = {m_pData = 0x7f3150092d90, m_iCount = 1}, <sph::DefaultStorage_T<CSphQueryResult>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_dNQueries = {m_pData = 0x7f315009f418, m_iCount = 1}, m_dNAggrResults = {m_pData = 0x7f31500a7038, m_iCount = 1}, m_dNResults = {m_pData = 0x7f3150092d90, m_iCount = 1}, m_dNFailuresSet = {m_pData = 0x7f3150171ca8, m_iCount = 1}}
+        dStmt = {<VecTraits_T<SqlStmt_t>> = {m_pData = 0x7f3150049e98, m_iCount = 1}, <sph::DefaultStorage_T<SqlStmt_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}
+        tLogGuard = {m_tmStarted = 0, m_bLogDone = false}
+        tSess = <optimized out>
+        tCrashQuery = <optimized out>
+        bParsedOK = <optimized out>
+        eStmt = <optimized out>
+        ePrevStmt = <optimized out>
+        pStmt = 0x7f3150049e98
+#25 0x000000000061085f in session::Execute (sQuery={...}, tOut=...) at /builds/manticoresearch/dev/src/searchd.cpp:16447
+        tSess = @0x7f3194000958: {m_sError = {m_sValue = 0x7f319406e7a0 "@\252", static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}, m_tLastMeta = {_vptr$CSphQueryResultMeta = 0x7f319406ed80, m_iQueryTime = -1811480336, m_iRealQueryTime = 32561, m_iCpuTime = 139850914254560, m_iMultiplier = 1409290448, m_hWordStats = {m_dHash = {0x7f312824c030, 0x7f3194178dd0, 0x7f3194003f60, 0x7f319400f280, 0x7f3194131110, 0x7f31700118e0, 0x7f31500930d0, 0x7f3184074f90, 0x7f3194179db0, 0x7f31941358a0, 0x7f319417afb0, 0x7f318c050b20, 0x7f317000b9a0, 0x7f3194001190, 0x7f319417cae0, 0x7f318800a9a0, 0x0, 0x7f313c0896e0, 0x7f3194108e00, 0x7f3170001e70, 0x7f319417d3c0, 0x7f319400e0f0, 0x7f3194105cb0, 0x7f319417d580, 0x7f31940031a0, 0x7f31580a9510, 0x7f3194118830, 0x7f319400a210, 0x7f319410b1d0, 0x7f3180011dd0, 0x7f3194004aa0, 0x0, 0x0, 0x7f3194009410, 0x7f3194136e60, 0x7f3194009ed0, 0x7f317807b540, 0x7f31ac069dd0, 0x7f319417cc40, 0x7f3194137fc0, 0x0, 0x7f3194106500, 0x7f3194137b30, 0x0, 0x0, 0x0, 0x0, 0x7f3178045e50, 0x0, 0x7f3134066030, 0x7f3194108a60, 0x0, 0x0, 0x7f3194107470, 0x7f319406fd10, 0x0, 0x0, 0x7f319410a8e0, 0x0, 0x205, 0x7f31940096a0, 0x7f31100008d0, 0x65676e6172227b5b, 0x61657263227b3a22, 0x7461645f6e6f6974, 0x7473656d69745f65, 0x67227b3a22706d61, 0x343536313a226574, 0x7d7d303030363530, 0x61757165227b2c7d, 0x6f70227b3a22736c, 0x70615f676e697473, 0x6175676e616c5f70, 0x313a2264695f6567, 0x757165227b2c7d7d, 0x69227b3a22736c61, 0x6e65707375735f73, 0x7d7d303a22646564, 0x65676e6172227b2c, 0x69707865227b3a22, 0x5f657461645f7972, 0x6d617473656d6974, 0x657467227b3a2270, 0x3134393536313a22, 0x2c7d7d7d30303832, 0x736c61757165227b, 0x616d6f64227b3a22, 0x313a2264695f6e69, 0x74616d227b2c7d7d, 0x6f6a227b3a226863, 0x6f67657461635f62, 0x3a227364695f7972, 0x3235646974616322, 0x616d227b2c7d7d22, 0x73227b3a22686374, 0x5f64695f65746174, 0x223a22646c656966, 0x3664696574617473, 0x7865746c6c756631, 0x6965746174737c74, 0x746c6c7566363364, 0x746174737c747865, 0x6c75663035646965, 0x7d7d22747865746c, 0x5f7473756d222c5d, 0x227b5b3a22746f6e, 0x3a22736c61757165, 0x31313a226469227b, 0x3433373838333639, 0x757165227b2c7d7d, 0x69227b3a22736c61, 0x33363931313a2264, 0x2c7d7d3632373639, 0x736c61757165227b, 0x3a226469227b3a22, 0x3731353230373131, 0x65227b2c7d7d3034, 0x7b3a22736c617571, 0x79616c7073696422, 0x227375746174735f, 0x7d7d5d7d7d323a, 0x0, 0x0, 0x265, 0x7f3194138a50, 0x7f31940008d0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x100000100000100, 0x7f3194000d00, 0x2b8900 <vtable for CSphTokenizerSettings+16>, 0x2, 0x0, 0x7f3100000002, 0xf091d0 <CSphString::EMPTY>, 0xf091d0 <CSphString::EMPTY>, 0xf091d0 <CSphString::EMPTY>, 0x7f3100000000, 0xf091d0 <CSphString::EMPTY>, 0xf091d0 <CSphString::EMPTY>, 0xf091d0 <CSphString::EMPTY>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x100, 0x7f3194001970, 0x7f3194001983, 0x7f3194001983, 0x0, 0x7f3194001983, 0x7972747375640000, 0x2a, 0x114, 0x3a332068632031, 0x0, 0x9f60005eea5, 0x9f60005f38a, 0x9f60005f3e0, 0x9f60005f7be, 0x9f60005f8e4, 0x9f60006b102, 0x9f60006c9f5, 0x9f600077090, 0x9f600079a0e, 0x9f60007a874, 0xd1700007f001511, 0x4200000f0000df00, 0x7f3194000e58, 0x2af000100000000, 0xc9000280000f8b00, 0x64e0000280000, 0x60d000a7f000c75, 0x6c00055b000f8000, 0x40021000c, 0x3e947ae1, 0x0, 0x0, 0x0, 0x81, 0x7f319410e9b0, 0x7f319417d870, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x7f3194005100, 0x0, 0x0, 0x5, 0x7f319400fa00, 0x0, 0x260, 0x1d5...}, m_pFirstByOrder = 0x0, m_pLastByOrder = 0x155, m_iLength = -1810583088}, m_iMatches = -1811937072, m_iTotalMatches = 7809652358725663579, m_bTotalMatchesApprox = 115, m_tIOStats = {m_iReadTime = 8102082792024598900, m_iReadOps = 1851878495, m_iReadBytes = 9021055447987740517, m_iWriteTime = 7022643873138289789, m_iWriteOps = 975336300, m_iWriteBytes = 7236833184878785375, m_bEnabled = 101, m_pPrev = 0x2265676e6172227b}, m_iAgentCpuTime = 8244244255273548602, m_tAgentIOStats = {m_iReadTime = 8385532581711732601, m_iReadOps = 1936026985, m_iReadBytes = 2478515156246280738, m_iWriteTime = 3616729396065743162, m_iWriteOps = 2100310072, m_iWriteBytes = 2482446985449268514, m_bEnabled = 58, m_pPrev = 0x7d313a2264695f6e}, m_iPredictedTime = 7166460028411128957, m_iAgentPredictedTime = 7022364310910935656, m_iAgentFetchedDocs = 1767859572, m_iAgentFetchedHits = 1768316772, m_iAgentFetchedSkips = 577006693, m_tStats = {m_pNanoBudget = 0x6635336469657461, m_iFetchedDocs = 1953262709, m_iFetchedHits = 578058341, m_iSkips = 2066513277}, m_bHasPrediction = 99, m_sError = {m_sValue = 0x7461636275735f62 <error: Cannot access memory at address 0x7461636275735f62>, static EMPTY = <same as static member of an already seen type>, static SAFETY_GAP = 4}, m_sWarning = {m_sValue = 0x64695f79726f6765 <error: Cannot access memory at address 0x64695f79726f6765>, static EMPTY = <same as static member of an already seen type>, static SAFETY_GAP = 4}, m_pProfile = 0x63627573223a2273, m_dUsedIterators = {<VecTraits_T<IteratorDesc_t>> = {m_pData = 0x3433303164697461, m_iCount = 8461456848841440546}, <sph::DefaultStorage_T<IteratorDesc_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 4189038625349923955}}, m_tAcc = {m_pAcc = std::unique_ptr<RtAccum_t> = {get() = 0x6c61757165227b5b}}, m_tPercolateMeta = {<iQueryResult> = {_vptr$iQueryResult = 0x736964227b3a2273}, m_dResult = {<ISphNoncopyable> = {<No data fields>}, m_bGetDocs = 112, m_bGetQuery = 108, m_bGetFilters = 97, m_iQueriesMatched = 1635021663, m_iQueriesFailed = 577992052, m_iDocsMatched = 2105356858, m_tmTotal = 8224093, m_bVerbose = false, m_iEarlyOutQueries = 0, m_iTotalQueries = 277, m_iOnlyTerms = 0, m_tmSetup = 8, m_sMessages = {<ISphNoncopyable> = {<No data fields>}, m_sWarnings = {<ISphNoncopyable> = {<No data fields>}, static GROW_STEP = 64 '@', m_szBuffer = 0x0, m_iSize = 0, m_iUsed = 1, m_dDelimiters = {<VecTraits_T<StringBuilder_c::LazyComma_c>> = {m_pData = 0x2e208b5c, m_iCount = 0}, <sph::DefaultStorage_T<StringBuilder_c::LazyComma_c>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}, m_sErrors = {<ISphNoncopyable> = {<No data fields>}, static GROW_STEP = 64 '@', m_szBuffer = 0x100000000 <error: Cannot access memory at address 0x100000000>, m_iSize = 0, m_iUsed = 0, m_dDelimiters = {<VecTraits_T<StringBuilder_c::LazyComma_c>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<StringBuilder_c::LazyComma_c>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 4294967296}}, m_sDel = 0x0, m_sPref = 0x0, m_sTerm = 0x0}, m_dQueryDesc = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<PercolateQueryDesc>> = {m_pData = 0x100000000, m_iCount = 0}, <sph::DefaultStorage_T<PercolateQueryDesc>> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_dDocs = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<int>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_dQueryDT = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<int>> = {m_pData = 0x100000000, m_iCount = 0}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <No data fields>}}, m_dDocids = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<long>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<long>> = {static is_constructed = true, static is_owned = false}, <No data fields>}}, m_eLastStmt = STMT_PARSE_ERROR, m_bFederatedUser = true, m_sFederatedQuery = {m_sValue = 0x0, static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}, m_bAutoCommit = false, m_bInTransaction = false, m_dLastIds = {<VecTraits_T<long>> = {m_pData = 0x0, m_iCount = 4294967296}, <sph::DefaultStorage_T<long>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_tProfile = {_vptr$QueryProfile_c = 0x0, m_eState = SPH_QSTATE_UNKNOWN, m_tmStamp = 4294967296, m_dSwitches = {0, 0, 85, 0, 1, 0, -1811938784, 32561, 32, 0, 36, 0, -1811934176, 32561, 0, 32561, 64, 0, 36, 0, -1811934144, 32561, 53, 0, 1953722224, 1600613993, 1601204321, 1735287148, 1701273973, 6580575, 0, 0, 128, 0, 53}, m_tmTotal = {7232633058882517093, 7308613718829790305, 482871440499, 0, 139850913158304, 53, 139850914301456, 139850914224752, 4629700416936869888, 6428848, 6425760, 53, 139850914696272, 0, 0, 139850913607104, 139850914254688, 37, 6879637024156117348, 126948300911731, 139850913153024, 85, 2, 139850913153152, 139850913158464, 139848430125056, 352, 36, 139850914680352, 139848430125056, 384, 53, 7592908895655128932, 100, 0}, m_dPlan = {<VecTraits_T<unsigned char>> = {m_pData = 0x0, m_iCount = 48}, <sph::DefaultStorage_T<unsigned char>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 69}}, m_tLastProfile = {_vptr$QueryProfile_c = 0x7f3100000000, m_eState = 1879093440, m_tmStamp = 0, m_dSwitches = {0, 0, 0, 1075052544, 1, 0, 1, 0, 37, 0, -1810804032, 32561, 468, 0, 512, 0, 197, 0, -1811883040, 32561, -1811937072, 32561, 0, 32561, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}, m_tmTotal = {0, 0, 0, 0, 0, 0, 0, 0, 139850914509272, 1, 8, -4294967296, 0, 0, 37, 139850914715504, 0, 32, 37, 139850913216720, 0, 7632997, 133, 139850309223648, 139850309175504, 0, 0, 139849369681680, 3, 8, 139845862359608, 139851315997880, 2, 8, 0}, m_dPlan = {<VecTraits_T<unsigned char>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<unsigned char>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 128}}}
+#26 0x000000000056ba2f in HttpRawSqlHandler_c::Process (this=0x7f31501976e0) at /builds/manticoresearch/dev/src/searchdhttp.cpp:1399
+        tOut = {<RowBuffer_i> = {<ISphNoncopyable> = {<No data fields>}, _vptr$RowBuffer_i = 0x243678 <vtable for JsonRowBuffer_c+16>}, m_dBuf = {<EscapedStringBuilder_T<EscapeJsonString_t>> = {<StringBuilder_c> = {<ISphNoncopyable> = {<No data fields>}, static GROW_STEP = 64 '@', m_szBuffer = 0x0, m_iSize = 0, m_iUsed = 0, m_dDelimiters = {<VecTraits_T<StringBuilder_c::LazyComma_c>> = {m_pData = 0x7f314800cb10, m_iCount = 1}, <sph::DefaultStorage_T<StringBuilder_c::LazyComma_c>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}}, <No data fields>}, <No data fields>}, m_dColumns = {<VecTraits_T<std::pair<CSphString, MysqlColumnType_e> >> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<std::pair<CSphString, MysqlColumnType_e> >> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_iExpectedColumns = 0, m_iTotalRows = 0, m_iCol = 0, m_bError = false, m_sError = {m_sValue = 0x0, static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}}
+#27 0x0000000000565db9 in ProcessHttpQuery (eEndpoint=<optimized out>, tSource=..., tOptions=..., dResult=..., bNeedHttpResponse=true, eRequestType=<optimized out>, sInvalidEndpoint=...) at /builds/manticoresearch/dev/src/searchdhttp.cpp:1985
+        pHandler = <optimized out>
+#28 0x00000000005660f2 in HttpRequestParser_c::ProcessClientHttp (this=<optimized out>, tIn=..., dResult=...) at /builds/manticoresearch/dev/src/searchdhttp.cpp:2032
+        pSource = std::unique_ptr<CharStream_c> = {get() = 0x7f3150005670}
+        eEndpoint = SPH_HTTP_ENDPOINT_SQL
+#29 0x00000000005b1560 in HttpServe (pBuf=...) at /builds/manticoresearch/dev/src/netreceive_http.cpp:139
+        tParser = {<ISphNoncopyable> = {<No data fields>}, m_bKeepAlive = true, m_szError = 0x0, m_sEndpoint = {m_sValue = 0x7f3150008eb0 "sql", static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}, m_sUrl = {<ISphNoncopyable> = {<No data fields>}, static GROW_STEP = 64 '@', m_szBuffer = 0x7f2fe16d3570 "", m_iSize = 128, m_iUsed = 0, m_dDelimiters = {<VecTraits_T<StringBuilder_c::LazyComma_c>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<StringBuilder_c::LazyComma_c>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}, m_sCurField = {<ISphNoncopyable> = {<No data fields>}, static GROW_STEP = 64 '@', m_szBuffer = 0x7f3164021520 "", m_iSize = 128, m_iUsed = 0, m_dDelimiters = {<VecTraits_T<StringBuilder_c::LazyComma_c>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<StringBuilder_c::LazyComma_c>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}, m_sCurValue = {<ISphNoncopyable> = {<No data fields>}, static GROW_STEP = 64 '@', m_szBuffer = 0x7f3164004270 "", m_iSize = 128, m_iUsed = 0, m_dDelimiters = {<VecTraits_T<StringBuilder_c::LazyComma_c>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<StringBuilder_c::LazyComma_c>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}, m_hOptions = {m_dHash = {0x0, 0x0, 0x7f3150196eb0, 0x0 <repeats 120 times>, 0x7f315007d940, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x7f315001b5e0, 0x0 <repeats 23 times>, 0x7f3150049c50, 0x0 <repeats 11 times>, 0x7f31501925c0, 0x0, 0x7f3150172420, 0x0 <repeats 23 times>, 0x7f315019a620, 0x0 <repeats 39 times>, 0x7f315000eb30, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x7f315000ced0, 0x0 <repeats 13 times>}, m_pFirstByOrder = 0x7f315019a620, m_pLastByOrder = 0x7f315000eb30, m_iLength = 9}, m_eType = HTTP_POST, m_bHeaderDone = true, m_bBodyDone = true, m_dParsedBodies = {<VecTraits_T<std::pair<char const*, int> >> = {m_pData = 0x7f3150176a70, m_iCount = 1}, <sph::DefaultStorage_T<std::pair<char const*, int> >> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}, m_iParsedBodyLength = 523, m_iLastParsed = 670, m_tParserSettings = {on_message_begin = 0x564670 <HttpRequestParser_c::cbMessageBegin(http_parser*)>, on_url = 0x5644f0 <HttpRequestParser_c::cbParserUrl(http_parser*, char const*, unsigned long)>, on_status = 0x564690 <HttpRequestParser_c::cbMessageStatus(http_parser*, char const*, unsigned long)>, on_header_field = 0x564520 <HttpRequestParser_c::cbParserHeaderField(http_parser*, char const*, unsigned long)>, on_header_value = 0x564550 <HttpRequestParser_c::cbParserHeaderValue(http_parser*, char const*, unsigned long)>, on_headers_complete = 0x564580 <HttpRequestParser_c::cbParseHeaderCompleted(http_parser*)>, on_body = 0x5645d0 <HttpRequestParser_c::cbParserBody(http_parser*, char const*, unsigned long)>, on_message_complete = 0x564680 <HttpRequestParser_c::cbMessageComplete(http_parser*)>}, m_tParser = {type = 0, flags = 0, state = 18, header_state = 10, index = 0, nread = 0, content_length = 0, http_major = 1, http_minor = 1, status_code = 0, method = 3, http_errno = 0, upgrade = 0, data = 0x7f2cac08d3a0}}
+        dResult = {<VecTraits_T<unsigned char>> = {m_pData = 0x7f2fe1850aa0 "HTTP/1.1 200 OK\r\nServer: 5.0.3 77114928e@220801 dev (columnar 1.16.1 637ddc6@220727) (secondary 1.16.1 637ddc6@220727)\r\nContent-Type: application/json; charset=UTF-8\r\nContent-Length: 123\r\n\r\n{\"took\":5,"..., m_iCount = 0}, <sph::DefaultStorage_T<unsigned char>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 512}
+        HttpReply = {dResult = @0x7f2cac08d350, tOut = @0x7f2cac045fd0}
+        tSess = @0x7f2cac046110: {<MiniTaskInfo_t> = {<TaskInfo_t> = {static m_eTask = 1 '\001', m_pPrev = {_M_b = {_M_p = 0x0}}, m_eType = 3 '\003'}, static m_eTask = 2 '\002', m_tmStart = 1659368279417495, m_sCommand = 0x23b8fe "select", m_pHazardDescription = {<ISphNoncopyable> = {<No data fields>}, m_pPtr = {_M_b = {_M_p = 0x0}}}, m_iDescriptionLen = 0}, static m_eTask = 3 '\003', m_eTaskState = TaskState_e::QUERY, m_eProto = Proto_e::HTTP, m_iConnID = 432, m_sClientName = {m_sValue = 0x7f2cac069c10 "10.10.10.3:54040", static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}, m_bSsl = false, m_bVip = false, m_bReadOnly = false, m_bOptimizeById = true, m_iThrottlingPeriodMS = -1, m_iDistThreads = 0, m_iDesiredStack = -1, m_iTimeoutS = -1, m_eCollation = SPH_COLLATION_LIBC_CI, m_eProfile = NONE, m_bPersistent = true, static m_iClients = {<std::__atomic_base<int>> = {static _S_alignment = 4, _M_i = 7}, <No data fields>}, static m_iVips = {<std::__atomic_base<int>> = {static _S_alignment = 4, _M_i = 0}, <No data fields>}, m_pSession = 0x7f2cac08dd68}
+        bICanSSL = <optimized out>
+        tCrashQuery = <optimized out>
+        iCID = 432
+        sClientIP = 0x7f2cac069c10 "10.10.10.3:54040"
+        tIn = @0x7f2cac044f90: {<sph::Vector_T<unsigned char, sph::DefaultCopy_T<unsigned char>, sph::DefaultRelimit, sph::LazyStorage_T<unsigned char, 4096> >> = {<VecTraits_T<unsigned char>> = {m_pData = 0x7f2ca3fff010 "POST /sql HTTP/1.1\r\nHost: 10.10.10.3:9312\r\nAccept: */*\r\nAccept-Encoding: deflate, gzip, br\r\nContent-Type: application/json\r\nContent-Length: 523\r\n\r\nmode=raw&query=SELECT GROUPBY() AS crit, COUNT(*) AS "..., m_iCount = 670}, <sph::LazyStorage_T<unsigned char, 4096>> = {static iSTATICSIZE = 4096, static is_constructed = true, static is_owned = true, m_dData = "\000\000\000\000\000\000\000\000\340\060\000\254,\177\000\000\001\000\000\000\000\000\000\000\222\335Z\000\000\000\000\000p\245\201\002\000\000\000\000\001EV\000\000\000\000\000\340\060\000\254,\177\000\000\000o\215\322\000\000\000\000\240\037\000\000\177\003\000\000@\036\000\254,\177\000\000\001\000\000\000\000\000\000\000\000o\215ҟa\273T\240\037\000\000\177\003\000\000\340n\004\254,\177\000\000\001\000\000\000\000\000\000\000\000o\215ҟa\273T\240\037\000\000\177\003\000\000\344\002[\000\000\000\000\000\006\201\201\002\000\000\000\000\250P\004\254,\177\000\000\020r\004\254,\177\000\000\000\000\000\000\000\000\000\000\377^\357\000\000\000\000\000W\001[\000\000\000\000\000\340P\004\254,\177\000\000\340n"...}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 134217728}, <InputBuffer_c> = {_vptr$InputBuffer_c = 0x256ef8 <vtable for AsyncBufferedSocket_c+16>, m_pBuf = 0x7f2ca3fff010 "POST /sql HTTP/1.1\r\nHost: 10.10.10.3:9312\r\nAccept: */*\r\nAccept-Encoding: deflate, gzip, br\r\nContent-Type: application/json\r\nContent-Length: 523\r\n\r\nmode=raw&query=SELECT GROUPBY() AS crit, COUNT(*) AS "..., m_pCur = 0x7f2ca3fff2ae "", m_bError = false, m_iLen = 670}, static NET_MINIBUFFER_SIZE = 4096, m_bIntr = false}
+        tOut = @0x7f2cac045fd0: {<ISphOutputBuffer> = {_vptr$ISphOutputBuffer = 0x256f58 <vtable for AsyncBufferedSocket_c+112>, m_dBuf = {<VecTraits_T<unsigned char>> = {m_pData = 0x7f317c078430 "HTTP/1.1 200 OK\r\nServer: 5.0.3 77114928e@220801 dev (columnar 1.16.1 637ddc6@220727) (secondary 1.16.1 637ddc6@220727)\r\nContent-Type: application/json; charset=UTF-8\r\nContent-Length: 123\r\n\r\n{\"took\":4,"..., m_iCount = 0}, <sph::DefaultStorage_T<unsigned char>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 512}}, m_pProfile = 0x0, m_bError = false}
+        bINeedSSL = <optimized out>
+        bHeNeedSSL = <optimized out>
+#30 0x00000000005aee98 in MultiServe (pBuf=std::unique_ptr<AsyncNetBuffer_c> = {...}, tConn={...}, eProto=Proto_e::SPHINX) at /builds/manticoresearch/dev/src/net_action_accept.cpp:94
+        tSess = @0x7f2cac046110: {<MiniTaskInfo_t> = {<TaskInfo_t> = {static m_eTask = 1 '\001', m_pPrev = {_M_b = {_M_p = 0x0}}, m_eType = 3 '\003'}, static m_eTask = 2 '\002', m_tmStart = 1659368279417495, m_sCommand = 0x23b8fe "select", m_pHazardDescription = {<ISphNoncopyable> = {<No data fields>}, m_pPtr = {_M_b = {_M_p = 0x0}}}, m_iDescriptionLen = 0}, static m_eTask = 3 '\003', m_eTaskState = TaskState_e::QUERY, m_eProto = Proto_e::HTTP, m_iConnID = 432, m_sClientName = {m_sValue = 0x7f2cac069c10 "10.10.10.3:54040", static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}, m_bSsl = false, m_bVip = false, m_bReadOnly = false, m_bOptimizeById = true, m_iThrottlingPeriodMS = -1, m_iDistThreads = 0, m_iDesiredStack = -1, m_iTimeoutS = -1, m_eCollation = SPH_COLLATION_LIBC_CI, m_eProfile = NONE, m_bPersistent = true, static m_iClients = {<std::__atomic_base<int>> = {static _S_alignment = 4, _M_i = 7}, <No data fields>}, static m_iVips = {<std::__atomic_base<int>> = {static _S_alignment = 4, _M_i = 0}, <No data fields>}, m_pSession = 0x7f2cac08dd68}
+        eMultiProto = <optimized out>
+#31 0x00000000005af985 in NetActionAccept_c::Impl_c::ProcessAccept(unsigned int, CSphNetLoop*)::$_3::operator()() (this=0x7f2cac0467e0) at /builds/manticoresearch/dev/src/net_action_accept.cpp:244
+        pInfo = {<ScopedInfo_T<ClientTaskInfo_t, RefCount_t>> = {m_pInfo = {<ISphNoncopyable> = {<No data fields>}, m_pPtr = {_M_b = {_M_p = 0x7f2cac046110}}}}, m_bVip = false}
+        tSession = {m_sError = {m_sValue = 0xf091d0 <CSphString::EMPTY> "", static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}, m_tLastMeta = {_vptr$CSphQueryResultMeta = 0x256ff8 <vtable for CSphQueryResultMeta+16>, m_iQueryTime = 0, m_iRealQueryTime = 0, m_iCpuTime = 0, m_iMultiplier = 1, m_hWordStats = {m_dHash = {0x0 <repeats 256 times>}, m_pFirstByOrder = 0x0, m_pLastByOrder = 0x0, m_iLength = 0}, m_iMatches = 0, m_iTotalMatches = 0, m_bTotalMatchesApprox = false, m_tIOStats = {m_iReadTime = 0, m_iReadOps = 0, m_iReadBytes = 0, m_iWriteTime = 0, m_iWriteOps = 0, m_iWriteBytes = 0, m_bEnabled = false, m_pPrev = 0x0}, m_iAgentCpuTime = 0, m_tAgentIOStats = {m_iReadTime = 0, m_iReadOps = 0, m_iReadBytes = 0, m_iWriteTime = 0, m_iWriteOps = 0, m_iWriteBytes = 0, m_bEnabled = false, m_pPrev = 0x0}, m_iPredictedTime = 0, m_iAgentPredictedTime = 0, m_iAgentFetchedDocs = 0, m_iAgentFetchedHits = 0, m_iAgentFetchedSkips = 0, m_tStats = {m_pNanoBudget = 0x0, m_iFetchedDocs = 0, m_iFetchedHits = 0, m_iSkips = 0}, m_bHasPrediction = false, m_sError = {m_sValue = 0x0, static EMPTY = <same as static member of an already seen type>, static SAFETY_GAP = 4}, m_sWarning = {m_sValue = 0x0, static EMPTY = <same as static member of an already seen type>, static SAFETY_GAP = 4}, m_pProfile = 0x0, m_dUsedIterators = {<VecTraits_T<IteratorDesc_t>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<IteratorDesc_t>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}, m_tAcc = {m_pAcc = std::unique_ptr<RtAccum_t> = {get() = 0x0}}, m_tPercolateMeta = {<iQueryResult> = {_vptr$iQueryResult = 0x2438b0 <vtable for CPqResult+16>}, m_dResult = {<ISphNoncopyable> = {<No data fields>}, m_bGetDocs = false, m_bGetQuery = false, m_bGetFilters = true, m_iQueriesMatched = 0, m_iQueriesFailed = 0, m_iDocsMatched = 0, m_tmTotal = 0, m_bVerbose = false, m_iEarlyOutQueries = 0, m_iTotalQueries = 0, m_iOnlyTerms = 0, m_tmSetup = 0, m_sMessages = {<ISphNoncopyable> = {<No data fields>}, m_sWarnings = {<ISphNoncopyable> = {<No data fields>}, static GROW_STEP = 64 '@', m_szBuffer = 0x0, m_iSize = 0, m_iUsed = 0, m_dDelimiters = {<VecTraits_T<StringBuilder_c::LazyComma_c>> = {m_pData = 0x7f3164080810, m_iCount = 1}, <sph::DefaultStorage_T<StringBuilder_c::LazyComma_c>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}}, m_sErrors = {<ISphNoncopyable> = {<No data fields>}, static GROW_STEP = 64 '@', m_szBuffer = 0x0, m_iSize = 0, m_iUsed = 0, m_dDelimiters = {<VecTraits_T<StringBuilder_c::LazyComma_c>> = {m_pData = 0x7f316403f2b0, m_iCount = 1}, <sph::DefaultStorage_T<StringBuilder_c::LazyComma_c>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 8}}, m_sDel = 0x238d13 ", ", m_sPref = 0x0, m_sTerm = 0x0}, m_dQueryDesc = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<PercolateQueryDesc>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<PercolateQueryDesc>> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_dDocs = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<int>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <No data fields>}, m_dQueryDT = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<int>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <No data fields>}}, m_dDocids = {<ISphNoncopyable> = {<No data fields>}, <VecTraits_T<long>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<long>> = {static is_constructed = true, static is_owned = false}, <No data fields>}}, m_eLastStmt = STMT_SELECT, m_bFederatedUser = false, m_sFederatedQuery = {m_sValue = 0x0, static EMPTY = 0xf091d0 <CSphString::EMPTY> "", static SAFETY_GAP = 4}, m_bAutoCommit = true, m_bInTransaction = false, m_dLastIds = {<VecTraits_T<long>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<long>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}, m_tProfile = {_vptr$QueryProfile_c = 0x2438e0 <vtable for QueryProfile_c+16>, m_eState = SPH_QSTATE_TOTAL, m_tmStamp = 1659368279367848, m_dSwitches = {0 <repeats 35 times>}, m_tmTotal = {0 <repeats 35 times>}, m_dPlan = {<VecTraits_T<unsigned char>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<unsigned char>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}, m_tLastProfile = {_vptr$QueryProfile_c = 0x2438e0 <vtable for QueryProfile_c+16>, m_eState = SPH_QSTATE_TOTAL, m_tmStamp = 1659368279367848, m_dSwitches = {0 <repeats 35 times>}, m_tmTotal = {0 <repeats 35 times>}, m_dPlan = {<VecTraits_T<unsigned char>> = {m_pData = 0x0, m_iCount = 0}, <sph::DefaultStorage_T<unsigned char>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}}}
+#32 std::_Function_handler<void (), NetActionAccept_c::Impl_c::ProcessAccept(unsigned int, CSphNetLoop*)::$_3>::_M_invoke(std::_Any_data const&) (__functor=...) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:300
+No locals.
+#33 0x0000000000ed848c in std::function<void ()>::operator()() const (this=0x7f2cac046a30) at /sysroot/root/usr/lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/std_function.h:688
+No locals.
+#34 Threads::CoRoutine_c::WorkerLowest (this=0x7f2cac046a28, tCtx=<optimized out>) at /builds/manticoresearch/dev/src/coroutine.cpp:85
+No locals.
+#35 Threads::CoRoutine_c::CreateContext(std::function<void ()>, VecTraits_T<unsigned char>)::{lambda(boost::context::detail::transfer_t)#1}::operator()(boost::context::detail::transfer_t) const (pT=..., this=<optimized out>) at /builds/manticoresearch/dev/src/coroutine.cpp:118
+No locals.
+#36 Threads::CoRoutine_c::CreateContext(std::function<void ()>, VecTraits_T<unsigned char>)::{lambda(boost::context::detail::transfer_t)#1}::__invoke(boost::context::detail::transfer_t) (pT=...) at /builds/manticoresearch/dev/src/coroutine.cpp:117
+No locals.
+#37 0x0000000000ef5eff in make_fcontext ()
+No symbol table info available.
+#38 0x0000000000000000 in ?? ()
+No symbol table info available.
+i = <optimized out>
+__range1 = @0x7f315017ab68: {<VecTraits_T<int>> = {m_pData = 0x7f31500008d0, m_iCount = 0}, <sph::DefaultStorage_T<int>> = {static is_constructed = true, static is_owned = false}, <sph::DefaultRelimit> = {static SANE_SIZE = 1073741823, static MAGIC_INITIAL_LIMIT = 8}, m_iLimit = 0}
+__begin1 = 0x7f3194000958
+__end1 = 0x7f31940008cc
+No core file now.
+Undefined command: "exit".  Try "help".
