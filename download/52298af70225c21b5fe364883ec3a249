@@ -1,0 +1,190 @@
+TID	Name	Proto	State	Connection from	ConnID	This/prev job time	Jobs done	Thread status	Chain	Info
+717178	jobsite_repl_0		-	wsrep web3-l4g:9312,web3-l4g:9315:replication	-1	31s	6149	working	Repl 	
+712843	work_0	http	-	127.0.0.1:49784	61262	14h	135380	working	Mini Mini Query Conn 	1 ch 5: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198385}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712844	work_1	mysql	query	127.0.0.1:52030	669271	539us	395358	working	Conn 	show threads option format=all
+712845	work_2	http	-	127.0.0.1:50206	61310	14h	142119	working	Mini Mini Query Conn 	1 ch 7: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198390}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712846	work_3	http	net_read	127.0.0.1:52522	61181	14h	142587	working	Mini Mini Mini Query Conn 	1 ch 1: 1 ch 5: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198385}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712847	work_4	http	net_read	127.0.0.1:50644	61365	14h	141563	working	Mini Mini Query Conn 	4 ch 7: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198400}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712848	work_5		-		-1	28ms (prev)	386036	idling		
+712849	work_6	http	-	10.10.10.1:49472	126935	12h	160289	working	Mini Mini Query Conn 	3 ch 2: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"in":{"any(accepted_countries)":[0,500]}},{"match":{"state_id_field":"stateid69fulltext"}},{"query_string":"@!(additional_locations) \\"special ed teacher Remote \\\\/ Online\\"/0.6"}]}}" comment="" index="jobs"
+712850	work_7		-		-1	4ms (prev)	390905	idling		
+712851	work_8	http	-	127.0.0.1:49784	61262	14h	143011	working	Mini Mini Query Conn 	1 ch 0: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198385}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712852	work_9	http	net_read	127.0.0.1:53060	61248	14h	141380	working	Mini Mini Query Conn 	1 ch 2: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198390}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712853	work_10	http	-	127.0.0.1:49784	61262	14h	143191	working	Mini Mini Query Conn 	1 ch 7: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198385}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712854	work_11	http	-	127.0.0.1:49784	61262	14h	141107	working	Mini Mini Query Conn 	1 ch 2: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198385}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712855	work_12	http	net_read	127.0.0.1:52522	61181	14h	142040	working	Mini Mini Mini Query Conn 	1 ch 1: 1 ch 2: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198385}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712856	work_13		-		-1	42us (prev)	392661	idling		
+712857	work_14	http	-	10.10.10.1:53766	127519	12h	162550	working	Mini Mini Query Conn 	4 ch 2: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"in":{"any(accepted_countries)":[0,500]}},{"match":{"state_id_field":"stateid69fulltext"}},{"query_string":"@!(additional_locations) \\"special ed teacher Remote \\\\/ Online\\"/0.6"}]}}" comment="" index="jobs"
+712858	work_15		-		-1	61ms (prev)	379606	idling		
+712859	work_16	http	net_read	127.0.0.1:50082	61293	14h	143309	working	Mini Mini Query Conn 	4 ch 7: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198394}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712860	work_17	http	net_read	127.0.0.1:27302	61482	14h	141716	working	Mini Mini Query Conn 	4 ch 7: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198412}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712861	work_18	http	net_read	127.0.0.1:53060	61248	14h	140406	working	Mini Mini Mini Query Conn 	1 ch 1: 5 ch 7: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198390}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712862	work_19		-		-1	34us (prev)	392643	idling		
+712863	work_20	http	-	127.0.0.1:27860	61548	14h	142963	working	Mini Mini Query Conn 	1 ch 7: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198412}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712864	work_21	http	-	127.0.0.1:50694	61370	14h	142267	working	Mini Mini Query Conn 	1 ch 7: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198394}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712865	work_22	http	net_read	127.0.0.1:53060	61248	14h	141919	working	Mini Mini Query Conn 	1 ch 5: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198390}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712866	work_23	http	-	127.0.0.1:56928	61419	14h	143136	working	Mini Mini Query Conn 	1 ch 7: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198400}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712867	work_24	http	net_read	127.0.0.1:53060	61248	14h	142512	working	Mini Mini Query Conn 	1 ch 0: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198390}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712868	work_25	http	-	10.10.10.1:63908	132539	12h	161231	working	Mini Mini Query Conn 	3 ch 2: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"in":{"any(accepted_countries)":[0,500]}},{"match":{"state_id_field":"stateid69fulltext"}},{"query_string":"@!(additional_locations) \\"special ed teacher Remote \\\\/ Online\\"/0.6"}]}}" comment="" index="jobs"
+712869	work_26	http	net_read	127.0.0.1:52522	61181	14h	142001	working	Mini Mini Mini Query Conn 	1 ch 1: 1 ch 0: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198385}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712870	work_27	http	net_read	127.0.0.1:50082	61293	14h	142495	working	Mini Mini Query Conn 	1 ch 0: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198394}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712871	work_28	http	net_read	127.0.0.1:52420	452292	5h	299869	working	Mini Mini Query Conn 	14 ch 1: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"in":{"any(accepted_countries)":[0,500]}},{"match":{"state_id_field":"stateid33fulltext"}},{"query_string":"@!(additional_locations) \\"Chilis olive street Restaurant\\\\/Food Service\\"/0.6"}]}}" comment="" index="jobs"
+712872	work_29	http	net_read	127.0.0.1:50082	61293	14h	142998	working	Mini Mini Query Conn 	1 ch 2: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198394}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712873	work_30	http	-	10.10.10.1:62994	141651	12h	168786	working	Mini Mini Query Conn 	4 ch 2: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"in":{"any(accepted_countries)":[0,500]}},{"match":{"state_id_field":"stateid69fulltext"}},{"query_string":"@!(additional_locations) \\"special ed teacher Remote \\\\/ Online\\"/0.6"}]}}" comment="" index="jobs"
+712874	work_31	http	-	10.10.10.1:40868	132837	12h	154957	working	Mini Mini Query Conn 	4 ch 2: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"in":{"any(accepted_countries)":[0,500]}},{"match":{"state_id_field":"stateid69fulltext"}},{"query_string":"@!(additional_locations) \\"special ed teacher Remote \\\\/ Online\\"/0.6"}]}}" comment="" index="jobs"
+712875	work_32	http	-	10.10.10.1:52792	125736	12h	161153	working	Mini Mini Query Conn 	3 ch 2: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"in":{"any(accepted_countries)":[0,500]}},{"match":{"state_id_field":"stateid69fulltext"}},{"query_string":"@!(additional_locations) \\"special ed teacher Remote \\\\/ Online\\"/0.6"}]}}" comment="" index="jobs"
+712876	work_33		-		-1	12ms (prev)	382012	idling		
+712877	work_34	http	net_read	127.0.0.1:50082	61293	14h	141517	working	Mini Mini Query Conn 	1 ch 5: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198394}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712878	work_35		-		-1	24ms (prev)	390246	idling		
+712879	work_36	http	-	10.10.10.1:58646	127465	12h	161226	working	Mini Mini Query Conn 	3 ch 2: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"in":{"any(accepted_countries)":[0,500]}},{"match":{"state_id_field":"stateid69fulltext"}},{"query_string":"@!(additional_locations) \\"special ed teacher Remote \\\\/ Online\\"/0.6"}]}}" comment="" index="jobs"
+712880	work_37		-		-1	15ms (prev)	394258	idling		
+712881	work_38	http	net_read	127.0.0.1:52522	61181	14h	138772	working	Mini Mini Mini Query Conn 	1 ch 1: 1 ch 7: api-search query="{"bool":{"must":[{"range":{"creation_date_timestamp":{"gte":1701198385}}},{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"equals":{"country_id":500}},{"query_string":"@!(additional_locations) \\"project manager remote möglich engineer\\"/0.6"}]}}" comment="" index="jobs"
+712882	work_39	http	-	127.0.0.1:53274	452395	5h	298818	working	Mini Mini Query Conn 	11 ch 1: api-search query="{"bool":{"must":[{"equals":{"is_suspended":0}},{"range":{"expiry_date_timestamp":{"gte":1701320400}}},{"equals":{"domain_id":1}},{"in":{"any(accepted_countries)":[0,500]}},{"match":{"state_id_field":"stateid33fulltext"}},{"query_string":"@!(additional_locations) \\"Chilis olive street Restaurant\\\\/Food Service\\"/0.6"}]}}" comment="" index="jobs"
+713158	TickPool_0		-		-1	3us (prev)	0	idling	Listen 	tick:  5649973  works:  0  state:  in polling
+712883	Timer		-		-1	-	0	idling		
+id	proto	state	host	connid	killed	last cmd
+2	http	net_read	127.0.0.1:53060	61248	0	call
+3	http	net_read	127.0.0.1:50082	61293	0	call
+4	http	net_read	127.0.0.1:50644	61365	0	call
+5	http	net_read	127.0.0.1:27302	61482	0	call
+6	http	net_read	127.0.0.1:52420	452292	0	call
+7	http	net_idle	127.0.0.1:52910	669058	0	show_tables
+8	http	net_idle	10.10.10.3:33444	669063	0	show_tables
+9	http	net_idle	10.10.10.11:64442	669111	0	show_tables
+10	http	net_idle	10.10.10.1:55506	669222	0	show_tables
+11	mysql	query	127.0.0.1:52040	669272	0	select * from @@system.sessions
+1	http	net_read	127.0.0.1:52522	61181	0	call
+Counter	Value
+uptime	55547
+connections	669273
+maxed_out	0
+version	6.2.13 949a248c0@231122 dev (columnar 2.2.5 c323cec@231127) (secondary 2.2.5 c323cec@231127) (knn 2.2.5 c323cec@231127)
+mysql_version	6.2.13 949a248c0@231122 dev (columnar 2.2.5 c323cec@231127) (secondary 2.2.5 c323cec@231127) (knn 2.2.5 c323cec@231127)
+command_search	1026173
+command_excerpt	0
+command_update	0
+command_keywords	859
+command_persist	0
+command_status	214138
+command_flushattrs	0
+command_sphinxql	0
+command_ping	0
+command_delete	2429
+command_set	0
+command_insert	750370
+command_replace	1500768
+command_commit	4560
+command_suggest	0
+command_json	0
+command_callpq	0
+command_cluster	115
+command_getfield	0
+agent_connect	3
+agent_tfo	0
+agent_retry	0
+queries	1621018
+dist_queries	0
+workers_total	40
+workers_active	42
+workers_clients	24
+workers_clients_vip	0
+work_queue_length	83
+load	31.29 31.62 31.53
+load_primary	0.00 0.02 0.01
+load_secondary	0.00 0.00 0.00
+query_wall	21355.598
+query_cpu	OFF
+dist_wall	0.000
+dist_local	0.000
+dist_wait	0.000
+query_reads	OFF
+query_readkb	OFF
+query_readtime	OFF
+avg_query_wall	0.013
+avg_query_cpu	OFF
+avg_dist_wall	0.000
+avg_dist_local	0.000
+avg_dist_wait	0.000
+avg_query_reads	OFF
+avg_query_readkb	OFF
+avg_query_readtime	OFF
+qcache_max_bytes	16777216
+qcache_thresh_msec	3000
+qcache_ttl_sec	60
+qcache_cached_queries	0
+qcache_used_bytes	0
+qcache_hits	0
+cluster_name	jobsite
+cluster_jobsite_state_uuid	1a17a31d-7a6f-11ee-a765-b3f8a8e15481
+cluster_jobsite_conf_id	125
+cluster_jobsite_status	primary
+cluster_jobsite_size	3
+cluster_jobsite_local_index	2
+cluster_jobsite_node_state	synced
+cluster_jobsite_nodes_set	web1-l4g:9312,web2-l4g:9312,web3-l4g:9312
+cluster_jobsite_nodes_view	web1-l4g:9312,web1-l4g:9315:replication,web2-l4g:9312,web2-l4g:9315:replication,web3-l4g:9312,web3-l4g:9315:replication
+cluster_jobsite_indexes_count	8
+cluster_jobsite_indexes	admin_search_employers_rt,cvs,geocities,jobs,jobs_completions_custom,listings,postal_coords,requirements
+cluster_jobsite_local_state_uuid	1a17a31d-7a6f-11ee-a765-b3f8a8e15481
+cluster_jobsite_protocol_version	9
+cluster_jobsite_last_applied	747795
+cluster_jobsite_last_committed	747795
+cluster_jobsite_replicated	6989
+cluster_jobsite_replicated_bytes	7290424168
+cluster_jobsite_repl_keys	4095438
+cluster_jobsite_repl_keys_bytes	32940936
+cluster_jobsite_repl_data_bytes	2127521817
+cluster_jobsite_repl_other_bytes	0
+cluster_jobsite_received	12385
+cluster_jobsite_received_bytes	7384052416
+cluster_jobsite_local_commits	6989
+cluster_jobsite_local_cert_failures	0
+cluster_jobsite_local_replays	0
+cluster_jobsite_local_send_queue	0
+cluster_jobsite_local_send_queue_max	2
+cluster_jobsite_local_send_queue_min	0
+cluster_jobsite_local_send_queue_avg	0.00016510
+cluster_jobsite_local_recv_queue	0
+cluster_jobsite_local_recv_queue_max	2
+cluster_jobsite_local_recv_queue_min	0
+cluster_jobsite_local_recv_queue_avg	0.00072669
+cluster_jobsite_local_cached_downto	747693
+cluster_jobsite_flow_control_paused_ns	0
+cluster_jobsite_flow_control_paused	0.000000
+cluster_jobsite_flow_control_sent	0
+cluster_jobsite_flow_control_recv	0
+cluster_jobsite_flow_control_interval	[ 173, 173 ]
+cluster_jobsite_flow_control_interval_low	173
+cluster_jobsite_flow_control_interval_high	173
+cluster_jobsite_flow_control_status	OFF
+cluster_jobsite_cert_deps_distance	4.815769
+cluster_jobsite_apply_oooe	0.00191096
+cluster_jobsite_apply_oool	0.000000
+cluster_jobsite_apply_window	1.00191092
+cluster_jobsite_commit_oooe	0.000000
+cluster_jobsite_commit_oool	0.000000
+cluster_jobsite_commit_window	1.00014150
+cluster_jobsite_local_state	4
+cluster_jobsite_local_state_comment	Synced
+cluster_jobsite_cert_index_size	210
+cluster_jobsite_cert_bucket_count	10274
+cluster_jobsite_gcache_pool_size	16777352
+cluster_jobsite_causal_reads	0
+cluster_jobsite_cert_interval	0.00346804
+cluster_jobsite_open_transactions	0
+cluster_jobsite_open_connections	0
+cluster_jobsite_ist_receive_status	
+cluster_jobsite_ist_receive_seqno_start	0
+cluster_jobsite_ist_receive_seqno_current	0
+cluster_jobsite_ist_receive_seqno_end	0
+cluster_jobsite_incoming_addresses	web1-l4g:9312,web1-l4g:9315:replication,web2-l4g:9312,web2-l4g:9315:replication,web3-l4g:9312,web3-l4g:9315:replication
+cluster_jobsite_cluster_weight	3
+cluster_jobsite_desync_count	0
+cluster_jobsite_evs_delayed	
+cluster_jobsite_evs_evict_list	
+cluster_jobsite_evs_repl_latency	0/0/0/0/0
+cluster_jobsite_evs_state	OPERATIONAL
+cluster_jobsite_gcomm_uuid	9362e247-8edc-11ee-9a13-aa6e19ffd72a
+mantico+  712841  0.0  0.0  57760  5188 ?        S    Nov29   0:00 /usr/bin/searchd --config /etc/manticoresearch/manticore.conf --coredump --logreplication --force-preread
+mantico+  712842 2635 20.2 114504380 107111636 ? SLl  Nov29 24397:11 /usr/bin/searchd --config /etc/manticoresearch/manticore.conf --coredump --logreplication --force-preread
+root     1317512  0.0  0.0   7004  2148 pts/0    S+   03:52   0:00 grep --color=auto searchd
